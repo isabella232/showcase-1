@@ -1,0 +1,91 @@
+labs:
+
+    DCL:
+        name:   Distributed Computing Lab
+        prof:   Rachid Guerraoui
+        email:  rachid.guerraoui@epfl.ch
+
+    DEDIS:
+        name:   Decentralized and Distributed Systems
+        prof:   Bryan Ford
+        email:  bryan.ford@epfl.ch
+
+    DSLAB:
+        name:   Dependable Systems Lab
+        prof:   George Candea
+        email:  george.candea@epfl.ch
+
+    GRJET:
+        name:   Arithmetic Geometry, Number Theory and Cryptology
+        prof:   Dimitar Jetchev
+        email:  dimitar.jetchev@epfl.ch
+
+    HexHive:
+        name:   HexHive Group
+        prof:   Mathias Payer
+        email:  mathias.payer@epfl.ch
+
+    IVRL:
+        name:   Image and Visual Representation Lab
+        prof:   Sabine Süsstrunk
+        email:  sabine.susstrunk@epfl.ch
+
+    LARA:
+        name:   Lab for Automated Reasoning and Analysis
+        prof:   Viktor Kunčak
+        email:  viktor.kuncak@epfl.ch
+
+    LCA1:
+        name:   Laboratory for Security and Privacy
+        prof:   Jean-Pierre Hubaux
+        email:  jean-pierre.hubaux@epfl.ch
+
+    LCA2:
+        name:   Computer Communications and Applications Laboratory 2
+        prof:   Jean-Yves Le Boudec
+        email:  jean-yves.leboudec@epfl.ch
+
+    LCA4:
+        name:   Computer Communications and Applications Laboratory 4
+        prof:   Matthias Grossglauser
+        email:  matthias.grossglauser@epfl.ch
+
+    LSIR:
+        name:   Distributed Information Systems Laboratory
+        prof:   Karl Aberer
+        email:  karl.aberer@epfl.ch
+
+    LTS4:
+        name:   Signal Processing Laboratory
+        prof:   Pascal Frossard
+        email:  pascal.frossard@epfl.ch
+
+    MLO:
+        name:   Machine Learning and Optimization Laboratory
+        prof:   Martin Jaggi
+        email:  martin.jaggi@epfl.ch
+
+    MMSPG:
+        name:   Multimedia Signal Processing Group
+        prof:   Touradj Ebrahimi
+        email:  touradj.ebrahimi@epfl.ch
+
+    NAL:
+        name:   Network Architecture Lab
+        prof:   Katerina Argyraki
+        email:  katerina.argyraki@epfl.ch
+
+    PARSA:
+        name:   Parallel Systems Architecture Lab
+        prof:   Babak Falsafi
+        email:  babak.falsafi@epfl.ch
+
+    SLAB:
+        name:   Salathé Lab
+        prof:   Marcel Salathé
+        email:  marcel.salathe@epfl.ch
+
+    SPRING:
+        name:   Security and Privacy Engineering Laboratory
+        prof:   Carmela Troncoso
+        email:  carmela.troncoso@epfl.ch

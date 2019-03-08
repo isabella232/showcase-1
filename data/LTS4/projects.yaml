@@ -1,0 +1,37 @@
+projects:
+
+    - name:         DeepFool
+      description:  Simple algorithm to find the minimum adversarial perturbations in deep networks
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LTS4/DeepFool
+      contacts:
+          - name:   Seyed Moosavi
+            email:  seyed.moosavi@epfl.ch
+
+    - name:         ManiFool
+      description:  Algorithm for evaluating the invariance properties of deep networks
+      code:
+          type: Personal GitHub
+          url:  https://github.com/moosavism/ManiFool
+      contacts:
+          - name:   Seyed Moosavi
+            email:  seyed.moosavi@epfl.ch
+
+    - name:         Universal
+      description:  Universal adversarial perturbations
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LTS4/universal
+      contacts:
+          - name:   Seyed Moosavi
+            email:  seyed.moosavi@epfl.ch
+
+    - name:         SafeAI
+      description:  Framework for attacking and defending deep neuronal networks
+      code:
+          type: Private GitHub
+          url:  
+      contacts:
+          - name:   Apostolos Modas
+            email:  apostolos.modas@epfl.ch

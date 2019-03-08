@@ -1,0 +1,11 @@
+projects:
+
+    - name:         Inpher
+      description:  Make predictions without revealing the past
+      url:          https://www.inpher.io/mainproducts/
+      code:
+          type: Commercial
+          url:  https://www.inpher.io/
+      contacts:
+          - name:   Dimitar Jetchev
+            email:  dimitar.jetchev@epfl.ch

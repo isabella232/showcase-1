@@ -1,0 +1,40 @@
+projects:
+
+    - name:         PriFi
+      description:  Anonymous communication system
+      code:
+          type: Lab GitHub
+          url:  https://github.com/dedis/prifi
+      contacts:
+          - name:   Ludovic Barman
+            email:  ludovic.barman@epfl.ch
+
+    - name:         Unlynx
+      description:  Privacy-preserving data sharing
+      code:
+          type: Lab GitHub
+          url:  https://github.com/lca1/unlynx
+      contacts:
+
+    - name:         Medco
+      description:  Privacy-preserving cohort exploration
+      code:
+          type: Private c4science
+          url:  http://c4science.ch/w/medco
+      contacts:
+
+    - name:         PriFi Chat
+      description:  
+      code:
+          type: 
+          url:  
+      contacts:
+          - name:   Ludovic Barman
+            email:  ludovic.barman@epfl.ch
+
+    - name:         PDCi2b2
+      description:  Private data characterization for i2b2
+      code:
+          type: 
+          url:  
+      contacts:

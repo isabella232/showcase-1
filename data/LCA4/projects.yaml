@@ -1,0 +1,16 @@
+projects:
+
+    - name:         Sidekick
+      url:          http://sidekick.epfl.ch/
+      description:  Real-time predictions of the success of Kickstarter campaigns
+      code:
+          type: 
+          url:  
+      contacts:
+
+    - name:         Choix
+      description:  Python library that provides inference algorithms for models based on Luce's choice axiom
+      code:
+          type: Personal GitHub
+          url:  https://github.com/lucasmaystre/choix
+      contacts:

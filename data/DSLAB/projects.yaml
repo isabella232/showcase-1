@@ -1,0 +1,52 @@
+projects:
+
+    - name:         s2e
+      description:  Platform for writing tools that analyze the properties and behavior of software systems
+      url:          http://s2e.systems/
+      code:
+          type: Project GitHub
+          url:  https://github.com/s2e
+      contacts:
+          - name:   Vitaly Chipounov
+            email:  vitaly@cyberheaven.io
+
+    - name:         ASAP
+      description:  Makes it possible to use powerful software protection mechanisms at a low performance overhead
+      url:          http://dslab.epfl.ch/proj/asap/
+      code:
+          type: Lab GitHub
+          url:  https://github.com/dslab-epfl/asap
+      contact:      
+      contacts:
+          - name:   Jonas Wagner
+            email:  ltlygwayh@gmail.com
+
+    - name:         Cloud 9
+      description:  Parallel symbolic execution engine that scales on shared-nothing clusters of commodity hardware
+      url:          http://cloud9.epfl.ch/
+      code:
+          type: Lab GitHub
+          url:  https://github.com/dslab-epfl/cloud9
+      contacts:
+          - name:   Stefan Bucur
+            email:  stefan.bucur@gmail.com
+
+    - name:         Dimmunix
+      description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocls that they previously encountered
+      url:          http://dslab.epfl.ch/proj/dimmunix/
+      code:
+          type: Google Code
+          url:  https://code.google.com/archive/p/dimmunix/
+      contacts:
+          - name:   Horatiu Jula
+            url:        https://www.linkedin.com/in/horatiu-jula-63a02a7
+
+    - name:         Failure Sketching
+      description:  Automated debugging technique
+      url:          http://dslab.epfl.ch/proj/gist/
+      code:
+          type: 
+          url:  
+      contacts:
+          - name:   Baris Kasici
+            email:  barisk@umich.edu

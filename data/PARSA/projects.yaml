@@ -1,0 +1,19 @@
+projects:
+
+    - name:         CloudSuite
+      description:  Benchmark suite for cloud services
+      url:          http://cloudsuite.ch/
+      code:
+          type: Lab GitHub
+          url:  https://github.com/parsa-epfl/cloudsuite
+      contacts:
+          - name:   Hossein Ajallooiean
+
+    - name:         QFlex
+      description:  Full-system cycle-accurate computer architecture simulator of multi-node computer systems
+      url:          https://parsa-epfl.github.io/qflex/
+      code:
+          type: Lab GitHub
+          url:  https://github.com/parsa-epfl/qflex
+      contacts:
+          - name:   Hossein Ajallooiean

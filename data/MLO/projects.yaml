@@ -1,0 +1,10 @@
+projects:
+
+    - name:         sent2vec
+      description:  Library that delivers numerical representations (features) for short texts or sentences, which can be used as input to any machine learning task later on
+      code:
+          type: Lab GitHub
+          url:  https://github.com/epfml/sent2vec
+      contacts:
+          - name:   Martin Jaggi
+            email:  martin.jaggi@epfl.ch

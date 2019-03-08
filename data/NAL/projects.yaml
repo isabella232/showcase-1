@@ -1,0 +1,18 @@
+projects:
+
+    - name:         VigNAT
+      description:  Formally verified and performant software NAT, a pioneer network function of the Vigor approach
+      url:          https://vignat.github.io/
+      code:
+          type: Project GitHub
+          url:  https://github.com/vignat/vignat
+      contacts:
+          - name:     Arseniy Zaostrovnykh
+            email:    arseniy.zaostrovnykh@epfl.ch
+
+    - name:         LINE
+      description:  Network emulator designed for realism, accuracy and powerful measurement capabilities
+      code:
+          type: Lab GitHub
+          url:  https://github.com/nal-epfl/line
+      contacts:

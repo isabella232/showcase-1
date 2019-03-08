@@ -1,0 +1,27 @@
+projects:
+
+    - name:         Stainless
+      description:  Verification framework for a subset of the Scala programming language
+      code:
+          type: Lab GitHub
+          url:  https://github.com/epfl-lara/stainless
+      contacts:
+          - name:   Viktor Kunčak
+            email:  viktor.kuncak@epfl.ch
+          - name:   Nicolas Voirol
+            email:  nicolas.voirol@epfl.ch
+          - name:   Jad Hamza
+            email:  jad.hamza@epfl.ch
+
+    - name:         Inox
+      description:  Constraint solver for Stainless
+      code:
+          type: Lab GitHub
+          url:  https://github.com/epfl-lara/inox
+      contacts:
+          - name:   Viktor Kunčak
+            email:  viktor.kuncak@epfl.ch
+          - name:   Nicolas Voirol
+            email:  nicolas.voirol@epfl.ch
+          - name:   Jad Hamza
+            email:  jad.hamza@epfl.ch

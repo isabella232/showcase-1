@@ -1,0 +1,19 @@
+projects:
+
+    - name:         PriBot
+      url:          https://pribot.org/
+      description:  Automated Analysis of Privacy Policies
+      code:
+          type: Private Lab GitHub
+          url:  
+      contacts:
+          - name:     Hamza Karkous
+
+    - name:         PrivySeal
+      url:          https://privyseal.epfl.ch/#!/
+      description:  Privacy Assistant for Installing Cloud Apps
+      code:
+          type: Private Lab GitHub
+          url:  
+      contacts:
+          - name:     Hamza Karkous

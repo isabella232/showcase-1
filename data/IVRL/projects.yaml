@@ -1,0 +1,34 @@
+projects:
+
+    - name:         SLIC Superpixels
+      description:  Superpixels are becoming increasingly popular for use in computer vision applications
+      url:          https://ivrl.epfl.ch/research/superpixels
+      code:
+          type: EPFL Link
+          url:  https://ivrl.epfl.ch/research/superpixels
+      contacts:
+
+    - name:         FASA
+      description:  Fast, Accurate and Size-Aware Satient Object Detection
+      url:          https://ivrl.epfl.ch/research/saliency/fast_saliency
+      code:
+          type: EPFL Link
+          url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/research/saliency/fast_saliency/FASA_Source_Code.zip
+      contact:      
+      contacts:
+
+    - name:         Image Completion
+      description:  Complete an image whose 99% pixels are randomly missing
+      url:          https://ivrl.epfl.ch/research/image_completion
+      code:
+          type: EPFL Link
+          url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/supplementary_material/EFAN/fan_icassp17.zip
+      contacts:
+
+    - name:         IAPBWC
+      description:  Verification framework for a subset of the Scala programming language
+      url:          http://ivrlwww.epfl.ch/~bjin/project_aesthetics/Image_Aesthetics.html
+      code:
+          type: EPFL Link
+          url:  http://ivrlwww.epfl.ch/~bjin/project_aesthetics/files/Script_Aesthetics_release.zip
+      contacts:

@@ -1,0 +1,24 @@
+projects:
+
+    - name:         MVTIL
+      description:  Multiversion Timestamp Locking (MVTL), a new family of concurrency control algorithms
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LPD-EPFL/MVTIL
+      contacts:
+
+    - name:         libNVRAM
+      description:  Log-Free Concurrent Data Structures
+      code:
+          type: Lab Download
+          url:  http://dcl.epfl.ch/site/nvram
+      contacts:
+
+    - name:         FloDB
+      description:  Unlocking Memory in Persistent Key-Value Stores
+      url:          http://dcl.epfl.ch/site/flodb
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LPD-EPFL/flodb
+      contacts:
+

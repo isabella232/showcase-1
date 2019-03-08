@@ -1,0 +1,18 @@
+projects:
+
+    - name:         iprp
+      description:  IP Parallel Redundancy Protocol
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LCA2-EPFL/iprp
+      contacts:
+          - name:   Maaz Mashood
+
+    - name:         commelec-api
+      description:  API for the Commelec real-time microgrid framework
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LCA2-EPFL/commelec-api
+      contacts:
+          - name:   Jagdish Achara
+            email:  jagdish.achara@epfl.ch

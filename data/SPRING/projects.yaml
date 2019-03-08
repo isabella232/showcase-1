@@ -1,0 +1,20 @@
+projects:
+
+    - name:         ClaimChain
+      description:  Prove your identity with regards to others
+      url:          https://claimchain.github.io/
+      code:
+          type: Project GitHub
+          url:  https://github.com/claimchain/claimchain-simulations
+      contacts:
+          - name:   Bogdan Kulynych
+            email:  bogdan.kulynych@epfl.ch
+
+    - name:         Hippiepug
+      description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
+      code:
+          type: Project GitHub
+          url:  https://github.com/spring-epfl/hippiepug
+      contacts:
+          - name:   Bogdan Kulynych
+            email:  bogdan.kulynych@epfl.ch
