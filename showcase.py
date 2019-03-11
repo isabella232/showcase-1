@@ -1,12 +1,18 @@
+#!/usr/bin/env python3
+
 import os
 import yaml
 import glob
 
-from bottle import route, run, template, abort, redirect
+from bottle import route, run, template, abort, redirect, static_file
 
 DATA_PATH = 'data'
 LABS_FILENAME = 'labs.yaml'
 PROJECTS_FILENAME = 'projects.yaml'
+
+@route('/css/<filename>')
+def server_css(filename):
+    return static_file(filename, root='./css/')
 
 @route('/')
 def index():
