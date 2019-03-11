@@ -24,6 +24,10 @@ def load_data():
 
     return labs
 
+@bottle.route('/robots.txt')
+def server_robots():
+    return bottle.static_file('robots.txt', root='./')
+
 @bottle.route('/css/<filename>')
 def server_css(filename):
     return bottle.static_file(filename, root='./css/')
