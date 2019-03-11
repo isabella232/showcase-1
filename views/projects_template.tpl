@@ -41,7 +41,7 @@
                     %url = project.get('url')
                     %code = project['code']
                     %contacts = project['contacts']
-                    <td><a href="/lab_projects/{{lab}}">{{lab}}</a></td>
+                    <td><a href="/projects/{{lab}}">{{lab}}</a></td>
                     %if url:
                         <td><a href="{{url}}">{{name}}</a></td>
                     %else:

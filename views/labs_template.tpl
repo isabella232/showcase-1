@@ -17,7 +17,7 @@
 <body>
     <div align="center">
         <h1>Participating EPFL Laboratories</h1>
-        <a href="/lab_projects/">View all projects</a>
+        <a href="/projects/">View all projects</a>
         <table id="labs" class="display" style="width:100%">
             <thead>
                 <tr>
@@ -29,7 +29,7 @@
             <tbody>
                 %for k, v in data['labs'].items():
                 <tr>
-                    <td><a href="/lab_projects/{{k}}">{{k}}</a></td>
+                    <td><a href="/projects/{{k}}">{{k}}</a></td>
                     <td>{{v['name']}}</td>
                     <td><a href="mailto:{{v['email']}}">{{v['prof']}}</a></td>
                 </tr>
