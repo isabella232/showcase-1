@@ -27,11 +27,11 @@
                 </tr>
             </thead>
             <tbody>
-                %for k, v in data['labs'].items():
+                %for lab_id, lab in labs.items():
                 <tr>
-                    <td><a href="/projects/{{k}}">{{k}}</a></td>
-                    <td>{{v['name']}}</td>
-                    <td><a href="mailto:{{v['email']}}">{{v['prof']}}</a></td>
+                    <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
+                    <td>{{lab['name']}}</td>
+                    <td><a href="mailto:{{lab['email']}}">{{lab['prof']}}</a></td>
                 </tr>
                 %end
             </tbody>
