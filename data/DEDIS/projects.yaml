@@ -3,7 +3,7 @@ projects:
     - name:         Calypso
       description:  Encrypted storage with access control
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/cothority/tree/master/calypso
       contacts:
           - name:   Jeff Allen
@@ -12,7 +12,7 @@ projects:
     - name:         Kyber
       description:  Cryptographic library
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/kyber
       contacts:
           - name:   Jeff Allen
@@ -21,7 +21,7 @@ projects:
     - name:         Personhood.online
       description:  Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/personhood.online
       contacts:
           - name:   Linus Gasser
@@ -30,7 +30,7 @@ projects:
     - name:         Omniledger
       description:  Ethereum-like blockchain implementation based on skipchains
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  http://github.com/dedis/cothority/tree/master/omniledger
       contacts:
           - name:   Kelong Cong
@@ -39,7 +39,7 @@ projects:
     - name:         Onet
       description:  Communication protocols
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  http://github.com/dedis/onet
       contacts:
           - name:   Jeff Allen
@@ -48,7 +48,7 @@ projects:
     - name:         E-voting
       description:  E-voting using a blockchain
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/cothority/tree/master/evoting
       contacts:
           - name:   Jeff Allen
@@ -57,7 +57,7 @@ projects:
     - name:         DRand
       description:  Publicly verifiable randomness
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/drand
       contacts:
           - name:   Nicolas Gailly
@@ -66,14 +66,14 @@ projects:
     - name:         DEDIS / protobuf
       description:  Protobuf v2 implementation
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/protobuf
       contacts:
 
     - name:         Crux
       description:  Locality-preserving publishing service
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  https://github.com/dedis/paper_crux/tree/crux_service
       contacts:
           - name:   Cristina Basescu
@@ -82,7 +82,7 @@ projects:
     - name:         Distributed Document
       description:  Editing documents in a distributed way
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  
       contacts:
           - name:   Kirill Nikitin
@@ -91,7 +91,7 @@ projects:
     - name:         Purbs
       description:  
       code:
-          type: Public GitHub
+          type: Lab GitHub
           url:  http://github.com/dedis/purbs
       contacts:
           - name:   Kirill Nikitin
