@@ -6,7 +6,7 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" class="init">
         $(document).ready(function() {
-            $('#projects').DataTable( {
+            table = $('#projects').DataTable( {
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollY": "60vmin",
@@ -29,6 +29,7 @@
                     <th>Project name</th>
                     <th>Description</th>
                     <th>Source code</th>
+                    <th>Tags</th>
                     <th>Contact</th>
                 </tr>
             </thead>
@@ -41,6 +42,10 @@
                             %description = project['description']
                             %url = project.get('url')
                             %code = project['code']
+                            %tags = project['tags']
+                            %if tags is None:
+                                %tags = []
+                            %end
                             %contacts = project['contacts']
                             <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
                             %if url:
@@ -54,6 +59,11 @@
                             %else:
                             <td>{{code['type']}}</td>
                             %end
+                            <td class="tags">
+                                %for tag in tags:
+                                <button onclick="javascript:table.search('{{tag}}').draw()">{{tag}}</button>
+                                %end
+                            </td>
                             <td>
                                 %if contacts is None:
                                 N/A
@@ -85,6 +95,7 @@
                     <th>Project name</th>
                     <th>Description</th>
                     <th>Source code</th>
+                    <th>Tags</th>
                     <th>Contact</th>
                 </tr>
             </tfoot>

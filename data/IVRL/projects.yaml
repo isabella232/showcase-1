@@ -7,6 +7,8 @@ projects:
           type: EPFL Link
           url:  https://ivrl.epfl.ch/research/superpixels
       contacts:
+      tags:
+          - Computer Vision
 
     - name:         FASA
       description:  Fast, Accurate and Size-Aware Satient Object Detection
@@ -16,6 +18,8 @@ projects:
           url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/research/saliency/fast_saliency/FASA_Source_Code.zip
       contact:      
       contacts:
+      tags:
+          - Computer Vision
 
     - name:         Image Completion
       description:  Complete an image whose 99% pixels are randomly missing
@@ -24,11 +28,16 @@ projects:
           type: EPFL Link
           url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/supplementary_material/EFAN/fan_icassp17.zip
       contacts:
+      tags:
+          - Computer Vision
 
     - name:         IAPBWC
-      description:  Verification framework for a subset of the Scala programming language
+      description:  Trained regression model that improves the prediction accuracy of the aesthetic scores over state-of-the-art algorithms
       url:          http://ivrlwww.epfl.ch/~bjin/project_aesthetics/Image_Aesthetics.html
       code:
           type: EPFL Link
           url:  http://ivrlwww.epfl.ch/~bjin/project_aesthetics/files/Script_Aesthetics_release.zip
       contacts:
+      tags:
+          - Machine learning
+          - Prediction

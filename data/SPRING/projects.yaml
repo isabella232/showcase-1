@@ -9,6 +9,8 @@ projects:
       contacts:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
+      tags:
+          - Blockchain
 
     - name:         Hippiepug
       description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
@@ -18,3 +20,5 @@ projects:
       contacts:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
+      tags:
+          - Blockchain

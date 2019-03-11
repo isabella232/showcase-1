@@ -8,3 +8,5 @@ projects:
       contacts:
           - name:   Martin Jaggi
             email:  martin.jaggi@epfl.ch
+      tags:
+          - Machine Learning

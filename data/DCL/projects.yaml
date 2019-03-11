@@ -6,6 +6,8 @@ projects:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/MVTIL
       contacts:
+      tags:
+          - Concurrency
 
     - name:         libNVRAM
       description:  Log-Free Concurrent Data Structures
@@ -13,6 +15,8 @@ projects:
           type: Lab Download
           url:  http://dcl.epfl.ch/site/nvram
       contacts:
+      tags:
+          - Storage
 
     - name:         FloDB
       description:  Unlocking Memory in Persistent Key-Value Stores
@@ -21,4 +25,7 @@ projects:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/flodb
       contacts:
+      tags:
+          - Concurrency
+          - Storage
 

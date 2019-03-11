@@ -7,3 +7,5 @@ projects:
           type: 
           url:  
       contacts:
+      tags:
+          - Privacy

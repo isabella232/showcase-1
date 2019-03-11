@@ -9,6 +9,7 @@ projects:
       contacts:
           - name:   Vitaly Chipounov
             email:  vitaly@cyberheaven.io
+      tags:
 
     - name:         ASAP
       description:  Makes it possible to use powerful software protection mechanisms at a low performance overhead
@@ -20,6 +21,8 @@ projects:
       contacts:
           - name:   Jonas Wagner
             email:  ltlygwayh@gmail.com
+      tags:
+          - Security
 
     - name:         Cloud 9
       description:  Parallel symbolic execution engine that scales on shared-nothing clusters of commodity hardware
@@ -30,9 +33,11 @@ projects:
       contacts:
           - name:   Stefan Bucur
             email:  stefan.bucur@gmail.com
+      tags:
+          - Symbolic execution
 
     - name:         Dimmunix
-      description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocls that they previously encountered
+      description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocks that they previously encountered
       url:          http://dslab.epfl.ch/proj/dimmunix/
       code:
           type: Google Code
@@ -40,6 +45,8 @@ projects:
       contacts:
           - name:   Horatiu Jula
             url:        https://www.linkedin.com/in/horatiu-jula-63a02a7
+      tags:
+          - Concurrency
 
     - name:         Failure Sketching
       description:  Automated debugging technique
@@ -50,3 +57,5 @@ projects:
       contacts:
           - name:   Baris Kasici
             email:  barisk@umich.edu
+      tags:
+          - Debug

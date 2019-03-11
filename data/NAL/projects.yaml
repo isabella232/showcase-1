@@ -9,6 +9,9 @@ projects:
       contacts:
           - name:     Arseniy Zaostrovnykh
             email:    arseniy.zaostrovnykh@epfl.ch
+      tags:
+          - Verification
+          - Network
 
     - name:         LINE
       description:  Network emulator designed for realism, accuracy and powerful measurement capabilities
@@ -16,3 +19,5 @@ projects:
           type: Lab GitHub
           url:  https://github.com/nal-epfl/line
       contacts:
+      tags:
+          - Network

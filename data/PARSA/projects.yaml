@@ -8,6 +8,8 @@ projects:
           url:  https://github.com/parsa-epfl/cloudsuite
       contacts:
           - name:   Hossein Ajallooiean
+      tags:
+          - Cloud
 
     - name:         QFlex
       description:  Full-system cycle-accurate computer architecture simulator of multi-node computer systems
@@ -17,3 +19,5 @@ projects:
           url:  https://github.com/parsa-epfl/qflex
       contacts:
           - name:   Hossein Ajallooiean
+      tags:
+          - Simulation

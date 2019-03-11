@@ -8,6 +8,8 @@ projects:
           url:  
       contacts:
           - name:     Hamza Karkous
+      tags:
+          - Privacy
 
     - name:         PrivySeal
       url:          https://privyseal.epfl.ch/#!/
@@ -17,3 +19,5 @@ projects:
           url:  
       contacts:
           - name:     Hamza Karkous
+      tags:
+          - Privacy

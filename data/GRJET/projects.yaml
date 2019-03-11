@@ -9,3 +9,5 @@ projects:
       contacts:
           - name:   Dimitar Jetchev
             email:  dimitar.jetchev@epfl.ch
+      tags:
+          - Prediction

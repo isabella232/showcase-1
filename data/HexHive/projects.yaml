@@ -8,6 +8,8 @@ projects:
       contacts:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
+      tags:
+          - Fuzzing
 
     - name:         BOPC
       description:  Block Oriented Programming Compiler
@@ -18,6 +20,8 @@ projects:
       contacts:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
+      tags:
+          - Compiler
 
     - name:         CFIXX
       description:  
@@ -27,6 +31,7 @@ projects:
       contacts:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
+      tags:
 
     - name:         HexType
       description:  Efficient detection of Type Confusion Errors for C++
@@ -36,3 +41,4 @@ projects:
       contacts:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
+      tags:

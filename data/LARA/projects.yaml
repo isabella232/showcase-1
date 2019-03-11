@@ -12,6 +12,8 @@ projects:
             email:  nicolas.voirol@epfl.ch
           - name:   Jad Hamza
             email:  jad.hamza@epfl.ch
+      tags:
+          - Verification
 
     - name:         Inox
       description:  Constraint solver for Stainless
@@ -25,3 +27,5 @@ projects:
             email:  nicolas.voirol@epfl.ch
           - name:   Jad Hamza
             email:  jad.hamza@epfl.ch
+      tags:
+          - Solver
