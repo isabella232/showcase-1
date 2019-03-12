@@ -24,10 +24,6 @@ table.dataTable tbody tr td {
     color: black;
 }
 
-table.dataTable tbody tr td.tags {
-    text-align: center;
-}
-
 table.dataTable button {
     border: none;
     border-radius: 4px;

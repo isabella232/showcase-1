@@ -18,7 +18,7 @@
     <div align="center">
         <h1>Participating EPFL Laboratories</h1>
         <a href="/projects/">View all projects</a>
-        <table id="labs" class="display" style="width:100%">
+        <table id="labs" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
                     <th>Lab ID</th>
@@ -31,7 +31,7 @@
                 <tr>
                     <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
                     <td>{{lab['name']}}</td>
-                    <td><a href="mailto:{{lab['email']}}">{{lab['prof']}}</a></td>
+                    <td class="dt-nowrap"><a href="mailto:{{lab['email']}}">{{lab['prof']}}</a></td>
                 </tr>
                 %end
             </tbody>

@@ -22,7 +22,7 @@
             <h1>Projects at <em>{{selected_lab_id}}</em></h1>
         %end
         <a href="/labs/">Back to list of labs</a>
-        <table id="projects" class="display" style="width:100%">
+        <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
                     <th>Lab</th>
@@ -49,22 +49,22 @@
                             %contacts = project['contacts']
                             <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
                             %if url:
-                            <td><a href="{{url}}">{{name}}</a></td>
+                            <td class="dt-nowrap"><a href="{{url}}">{{name}}</a></td>
                             %else:
                             <td>{{name}}</td>
                             %end
                             <td>{{description}}</td>
                             %if code['url']:
-                            <td><a href="{{code['url']}}">{{code['type']}}</a></td>
+                            <td class="dt-nowrap"><a href="{{code['url']}}">{{code['type']}}</a></td>
                             %else:
                             <td>{{code['type']}}</td>
                             %end
-                            <td class="tags">
+                            <td class="dt-center">
                                 %for tag in tags:
                                 <button onclick="javascript:table.search('{{tag}}').draw()">{{tag}}</button>
                                 %end
                             </td>
-                            <td>
+                            <td class="dt-nowrap">
                                 %if contacts is None:
                                 N/A
                                 %else:
