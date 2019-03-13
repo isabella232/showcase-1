@@ -42,7 +42,10 @@
                 <tr>
                     <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                     <td>{{ lab['name'] }}</td>
-                    <td class="dt-nowrap"><a href="mailto:{{ lab['email'] }}">{{ lab['prof'] }}</a></td>
+                    <td class="dt-nowrap">
+                        % prof = lab['prof']
+                        <a href="mailto:{{ prof['email'] }}">{{ prof['name'] }}</a>
+                    </td>
                 </tr>
                 % end
             </tbody>
