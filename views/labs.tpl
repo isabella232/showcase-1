@@ -28,7 +28,7 @@
                 </tr>
             </thead>
             <tbody>
-                %for lab_id, lab in labs.items():
+                % for lab_id, lab in labs.items():
                 <tr>
                     <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
                     <td>{{lab['name']}}</td>
@@ -37,7 +37,7 @@
                         % include('contacts.tpl', contacts=lab['contacts'])
                     </td>
                 </tr>
-                %end
+                % end
             </tbody>
             <tfoot>
                 <tr>

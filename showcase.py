@@ -37,13 +37,13 @@ def index():
     bottle.redirect('/labs/')
 
 @bottle.route('/labs/')
-@bottle.view('labs_template')
+@bottle.view('labs')
 def labs():
     return dict(labs=load_data())
 
 @bottle.route('/projects/')
 @bottle.route('/projects/<lab_id>')
-@bottle.view('projects_template')
+@bottle.view('projects')
 def projects(lab_id=None):
     labs = load_data()
     if lab_id and lab_id not in labs:

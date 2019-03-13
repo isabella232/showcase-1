@@ -37,11 +37,11 @@
 </head>
 <body>
     <div align="center">
-        %if selected_lab_id is None:
+        % if selected_lab_id is None:
             <h1>All projects</h1>
-        %else:
+        % else:
             <h1>Projects at <em>{{selected_lab_id}}</em></h1>
-        %end
+        % end
         <a href="/labs/">Back to list of labs</a>
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
@@ -56,44 +56,46 @@
                 </tr>
             </thead>
             <tbody>
-                %for lab_id, lab in labs.items():
-                    %if selected_lab_id is None or selected_lab_id == lab_id:
-                        %for project in lab['projects']:
+                % for lab_id, lab in labs.items():
+                    % if selected_lab_id is None or selected_lab_id == lab_id:
+                        % for project in lab['projects']:
                         <tr>
-                            %name = project['name']
-                            %description = project['description']
-                            %url = project.get('url')
-                            %code = project['code']
-                            %tags = project['tags']
-                            %if tags is None:
-                                %tags = []
-                            %end
-                            %contacts = project['contacts']
+                            <%
+                            name = project['name']
+                            description = project['description']
+                            url = project.get('url')
+                            code = project['code']
+                            tags = project['tags']
+                            if tags is None:
+                                tags = []
+                            end
+                            contacts = project['contacts']
+                            %>
                             <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
-                            %if url:
+                            % if url:
                             <td class="dt-nowrap"><a href="{{url}}">{{name}}</a></td>
-                            %else:
+                            % else:
                             <td>{{name}}</td>
-                            %end
+                            % end
                             <td>{{description}}</td>
-                            %if code['url']:
                             <td>&lt;LANGUAGE&gt;</td>
+                            % if code['url']:
                             <td class="dt-nowrap"><a href="{{code['url']}}">{{code['type']}}</a></td>
-                            %else:
+                            % else:
                             <td>{{code['type']}}</td>
-                            %end
+                            % end
                             <td class="dt-center">
-                                %for tag in tags:
+                                % for tag in tags:
                                 <button onclick="javascript:set_search('{{tag}}')">{{tag}}</button>
-                                %end
+                                % end
                             </td>
                             <td class="dt-nowrap">
                                 % include('contacts.tpl', contacts=contacts)
                             </td>
                         </tr>
-                        %end
-                    %end
-                %end
+                        % end
+                    % end
+                % end
             </tbody>
             <tfoot>
                 <tr>
