@@ -21,8 +21,11 @@
                     // 'copy',
                     // 'csv',
                     // 'print',
-                    { text: "Clear search", action: function(e, dt, node, config) {set_search("");}},
-                    ],
+                    {
+                        text: "Clear search",
+                        action: function(e, dt, node, config) { set_search(""); }
+                    },
+                ],
             } );
 
             // Hide "extra" columns by default
@@ -40,7 +43,7 @@
         % if selected_lab_id is None:
             <h1>All projects</h1>
         % else:
-            <h1>Projects at <em>{{selected_lab_id}}</em></h1>
+            <h1>Projects at <em>{{ selected_lab_id }}</em></h1>
         % end
         <a href="/labs/">Back to list of labs</a>
         <table id="projects" class="display cell-border" style="width:100%">
@@ -71,22 +74,22 @@
                             end
                             contacts = project['contacts']
                             %>
-                            <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
+                            <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                             % if url:
-                            <td class="dt-nowrap"><a href="{{url}}">{{name}}</a></td>
+                            <td class="dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
                             % else:
-                            <td>{{name}}</td>
+                            <td>{{ name }}</td>
                             % end
-                            <td>{{description}}</td>
+                            <td>{{ description }}</td>
                             <td>&lt;LANGUAGE&gt;</td>
                             % if code['url']:
-                            <td class="dt-nowrap"><a href="{{code['url']}}">{{code['type']}}</a></td>
+                            <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code['type'] }}</a></td>
                             % else:
-                            <td>{{code['type']}}</td>
+                            <td>{{ code['type'] }}</td>
                             % end
                             <td class="dt-center">
                                 % for tag in tags:
-                                <button onclick="javascript:set_search('{{tag}}')">{{tag}}</button>
+                                <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
                                 % end
                             </td>
                             <td class="dt-nowrap">

@@ -2,16 +2,35 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css"/>
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.colVis.min.js"></script>
     <script type="text/javascript" class="init">
         $(document).ready(function() {
-            $('#labs').DataTable( {
+            var table = $('#labs').DataTable( {
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollY": "60vmin",
+                "dom": "Bfrtip",
+                "buttons": [
+                    { text: "Columns", extend: 'colvis' },
+                    {
+                        text: "Clear search",
+                        action: function(e, dt, node, config) { set_search(""); }
+                    },
+                ],
             } );
+
+            // Hide "extra" columns by default
+            table.columns(".extra").visible(false);
         } );
+
+        function set_search(text) {
+            var table = $('#labs').DataTable();
+            table.search(text).draw();
+        }
     </script>
 </head>
 <body>
@@ -25,17 +44,19 @@
                     <th>Full name</th>
                     <th>Professor</th>
                     <th>Contact</th>
+                    <th class="extra">Notes</th>
                 </tr>
             </thead>
             <tbody>
                 % for lab_id, lab in labs.items():
                 <tr>
-                    <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
-                    <td>{{lab['name']}}</td>
-                    <td class="dt-nowrap"><a href="mailto:{{lab['email']}}">{{lab['prof']}}</a></td>
+                    <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
+                    <td>{{ lab['name'] }}</td>
+                    <td class="dt-nowrap"><a href="mailto:{{ lab['email'] }}">{{ lab['prof'] }}</a></td>
                     <td class="dt-nowrap">
                         % include('contacts.tpl', contacts=lab['contacts'])
                     </td>
+                    <td>{{ lab['notes'] if 'notes' in lab else '' }}</td>
                 </tr>
                 % end
             </tbody>
@@ -45,6 +66,7 @@
                     <th>Full name</th>
                     <th>Professor</th>
                     <th>Contact</th>
+                    <th>Notes</th>
                 </tr>
             </tfoot>
         </table>
