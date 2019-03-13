@@ -13,14 +13,6 @@
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollY": "60vmin",
-                "dom": "Bfrtip",
-                "buttons": [
-                    { text: "Columns", extend: 'colvis' },
-                    {
-                        text: "Clear search",
-                        action: function(e, dt, node, config) { set_search(""); }
-                    },
-                ],
             } );
 
             // Hide "extra" columns by default
@@ -43,8 +35,6 @@
                     <th>Lab</th>
                     <th>Full name</th>
                     <th>Professor</th>
-                    <th>Contact</th>
-                    <th class="extra">Notes</th>
                 </tr>
             </thead>
             <tbody>
@@ -53,10 +43,6 @@
                     <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                     <td>{{ lab['name'] }}</td>
                     <td class="dt-nowrap"><a href="mailto:{{ lab['email'] }}">{{ lab['prof'] }}</a></td>
-                    <td class="dt-nowrap">
-                        % include('contacts.tpl', contacts=lab['contacts'])
-                    </td>
-                    <td>{{ lab['notes'] if 'notes' in lab else '' }}</td>
                 </tr>
                 % end
             </tbody>
@@ -65,8 +51,6 @@
                     <th>Lab</th>
                     <th>Full name</th>
                     <th>Professor</th>
-                    <th>Contact</th>
-                    <th>Notes</th>
                 </tr>
             </tfoot>
         </table>
