@@ -21,9 +21,10 @@
         <table id="labs" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
-                    <th>Lab ID</th>
-                    <th>Name</th>
+                    <th>Lab</th>
+                    <th>Full name</th>
                     <th>Professor</th>
+                    <th>Contact</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,14 +33,18 @@
                     <td><a href="/projects/{{lab_id}}">{{lab_id}}</a></td>
                     <td>{{lab['name']}}</td>
                     <td class="dt-nowrap"><a href="mailto:{{lab['email']}}">{{lab['prof']}}</a></td>
+                    <td class="dt-nowrap">
+                        % include('contacts.tpl', contacts=lab['contacts'])
+                    </td>
                 </tr>
                 %end
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Lab ID</th>
-                    <th>Name</th>
+                    <th>Lab</th>
+                    <th>Full name</th>
                     <th>Professor</th>
+                    <th>Contact</th>
                 </tr>
             </tfoot>
         </table>
