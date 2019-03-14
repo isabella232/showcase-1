@@ -55,6 +55,8 @@
                     <th class="extra">Language</th>
                     <th>Source code</th>
                     <th>Tags</th>
+                    <th class="extra">License</th>
+                    <th class="extra">Paper</th>
                     <th>Contact</th>
                 </tr>
             </thead>
@@ -66,12 +68,15 @@
                             <%
                             name = project['name']
                             description = project['description']
+                            language = project.get('language', '')
                             url = project.get('url')
                             code = project['code']
                             tags = project['tags']
                             if tags is None:
                                 tags = []
                             end
+                            license = project.get('license', '')
+                            paper_url = project.get('paper_url')
                             contacts = project['contacts']
                             %>
                             <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
@@ -81,7 +86,7 @@
                             <td>{{ name }}</td>
                             % end
                             <td>{{ description if description else 'N/A' }}</td>
-                            <td>&lt;LANGUAGE&gt;</td>
+                            <td>{{ language }}</td>
                             % if code['url']:
                             <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code['type'] }}</a></td>
                             % else:
@@ -90,6 +95,12 @@
                             <td class="dt-center">
                                 % for tag in tags:
                                 <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                % end
+                            </td>
+                            <td>{{ license }}</td>
+                            <td>
+                                % if paper_url:
+                                <a href="{{ paper_url }}">link</a>
                                 % end
                             </td>
                             <td class="dt-nowrap">
@@ -108,6 +119,8 @@
                     <th>Language</th>
                     <th>Source code</th>
                     <th>Tags</th>
+                    <th>License</th>
+                    <th>Paper</th>
                     <th>Contact</th>
                 </tr>
             </tfoot>

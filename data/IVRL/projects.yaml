@@ -10,6 +10,7 @@ projects:
       tags:
           - Computer Vision
           - Image Detection
+      language: C++
 
     - name:         FASA
       description:  Fast, Accurate and Size-Aware Satient Object Detection
@@ -33,6 +34,7 @@ projects:
           - Computer Vision
           - Completion
           - Fast
+      language: MatLab
 
     - name:         IAPBWC
       description:  Trained regression model that improves the prediction accuracy of the aesthetic scores over state-of-the-art algorithms
@@ -44,3 +46,4 @@ projects:
           - Computer Vision
           - Aesthetic
           - Image Cropping
+      language: MatLab

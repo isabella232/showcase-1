@@ -13,6 +13,8 @@ projects:
           - Software Verification
           - NAT
           - Network
+      language: C
+      paper_url:    https://vignat.github.io/vignat-paper.pdf
 
     - name:         LINE
       description:  Network emulator designed for realism, accuracy and powerful measurement capabilities
@@ -24,3 +26,5 @@ projects:
           - Network
           - Emulator
           - Measurement
+      language: C++
+      license:  GPLv2

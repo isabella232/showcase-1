@@ -12,6 +12,9 @@ projects:
           - Cloud
           - Benchmark
           - Test
+      language: Dockerfiles
+      paper_url:    https://dl.acm.org/citation.cfm?id=2150982
+      license:  CloudSuite, others
 
     - name:         DCA
       description:  Architecture to prevent hardware side-channels
@@ -47,3 +50,7 @@ projects:
           - Network
           - CPU
           - Architecture
+      language: C, C++
+      paper_url:    https://infoscience.epfl.ch/record/112669/files/simflex.pdf
+      notes: >
+          Some issues with regard to Oracle licenses

@@ -12,6 +12,9 @@ projects:
       tags:
           - Public Key
           - Privacy
+      language: Python
+      paper_url:    https://arxiv.org/abs/1707.06279
+      license:  MIT
 
     - name:         Lightnion
       description:  Anonymous communication in browsers via the Tor network
@@ -45,3 +48,5 @@ projects:
             email:  bogdan.kulynych@epfl.ch
       tags:
           - Blockchain
+      language: Python
+      license:  MIT

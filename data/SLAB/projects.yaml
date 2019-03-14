@@ -12,3 +12,4 @@ projects:
           - Switzerland
           - API
           - Barcode
+      language: Javascript

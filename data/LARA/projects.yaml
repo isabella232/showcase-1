@@ -16,6 +16,9 @@ projects:
           - Software Verification
           - Scala
           - Ethereum
+      language: Scala
+      paper_url:    http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+      license:  AGPLv3
 
     - name:         Inox
       description:  Constraint solver for Stainless
@@ -32,3 +35,7 @@ projects:
       tags:
           - Constraint Solver
           - Software Verification
+      language: Scala
+      license:  AGPLv3
+      notes: >
+           Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/

@@ -13,6 +13,8 @@ projects:
           - Network
           - Privacy Preserving
           - MIxed Networks
+      language: GoLang
+      license:  AGPLv3
 
     - name:         Unlynx
       description:  Privacy-preserving data sharing
@@ -24,6 +26,8 @@ projects:
           - Privacy Preserving
           - Protocol
           - Medical Data
+      language: GoLang
+      license:  non-commercial
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
@@ -35,6 +39,8 @@ projects:
       tags:
           - Privacy Preserving
           - Medical Data
+      language: GoLang
+      license:  non-commercial
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2

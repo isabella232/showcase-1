@@ -12,6 +12,9 @@ projects:
           - Privacy Policy
           - Artificial Intelligence
           - Natural Language
+      language: Python, Javascript
+      paper_url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
+      license:  commercial
 
     - name:         PrivySeal
       description:  Privacy Assistant for Installing Cloud Apps
@@ -24,6 +27,8 @@ projects:
       tags:
           - Data Analysis
           - Google Drive
+      language: Javascript, Python
+      paper_url:    https://infoscience.epfl.ch/record/218003
 
     - name:         Artificial-Intelligence Drive
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers

@@ -12,6 +12,8 @@ projects:
           - Machine Learning
           - Deep Networks
           - Adversarial
+      language: MatLab, Python
+      paper_url:    https://arxiv.org/abs/1511.04599
 
     - name:         ManiFool
       description:  Algorithm for evaluating the invariance properties of deep networks
@@ -24,6 +26,8 @@ projects:
       tags:
           - Machine Learning
           - Deep Networks
+      language: Python
+      paper_url:    https://arxiv.org/abs/1711.09115
 
     - name:         Universal
       description:  Universal adversarial perturbations
@@ -38,6 +42,8 @@ projects:
           - Machine Learning
           - Deep Networks
           - Perturbations
+      language: MatLab, Python
+      paper_url:    http://arxiv.org/pdf/1610.08401
 
     - name:         SafeAI
       description:  Framework for attacking and defending deep neuronal networks
