@@ -10,7 +10,30 @@ projects:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
       tags:
-          - Blockchain
+          - Public Key
+          - Privacy
+
+    - name:         Lightnion
+      description:  Anonymous communication in browsers via the Tor network
+      code:
+          type: Private GitHub
+          url:  
+      contacts:
+      tags:
+          - Tor
+          - Privacy
+          - Network
+          - Javascript
+
+    - name:         Trickster
+      description:  Sophisticated attacks on Machine Learning models
+      code:
+          type: Lab GitHub
+          url:  https://github.com/spring-epfl/trickster
+      contacts:
+      tags:
+          - Machine Learning
+          - Attack
 
     - name:         Hippiepug
       description:  Sublinear-traversal blockchains and efficient key-value Merkle trees

@@ -1,9 +1,13 @@
 projects:
 
     - name:         FoodRepo
-      description:  ??
+      description:  Open-access database on barcoded food products sold in Switzerland
       code:
           type: Lab GitHub
           url:  https://github.com/salathegroup
       contacts:
       tags:
+          - Database
+          - Switzerland
+          - API
+          - Barcode

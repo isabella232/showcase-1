@@ -10,4 +10,7 @@ projects:
           - name:   Dimitar Jetchev
             email:  dimitar.jetchev@epfl.ch
       tags:
-          - Prediction
+          - Privacy
+          - Statistics
+          - Machine Learning
+          - Secret

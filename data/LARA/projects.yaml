@@ -13,7 +13,9 @@ projects:
           - name:   Jad Hamza
             email:  jad.hamza@epfl.ch
       tags:
-          - Verification
+          - Software Verification
+          - Scala
+          - Ethereum
 
     - name:         Inox
       description:  Constraint solver for Stainless
@@ -28,4 +30,5 @@ projects:
           - name:   Jad Hamza
             email:  jad.hamza@epfl.ch
       tags:
-          - Solver
+          - Constraint Solver
+          - Software Verification

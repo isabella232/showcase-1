@@ -10,6 +10,29 @@ projects:
           - name:   Hossein Ajallooiean
       tags:
           - Cloud
+          - Benchmark
+          - Test
+
+    - name:         DCA
+      description:  Architecture to prevent hardware side-channels
+      code:
+          type: 
+          url:  
+      contacts:
+      tags:
+          - Architecture
+          - Side-Channels
+
+    - name:         ARMFlex
+      description:  Emulation platform for software bugs and vulnerability detection
+      code:
+          type: 
+          url:  
+      contacts:
+      tags:
+          - Emulator
+          - FPGA
+          - ARM
 
     - name:         QFlex
       description:  Full-system cycle-accurate computer architecture simulator of multi-node computer systems
@@ -20,4 +43,7 @@ projects:
       contacts:
           - name:   Hossein Ajallooiean
       tags:
-          - Simulation
+          - Simulator
+          - Network
+          - CPU
+          - Architecture

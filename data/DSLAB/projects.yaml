@@ -10,6 +10,9 @@ projects:
           - name:   Vitaly Chipounov
             email:  vitaly@cyberheaven.io
       tags:
+          - Code Analysis
+          - Static Code Checking
+          - Attack Vectors
 
     - name:         ASAP
       description:  Makes it possible to use powerful software protection mechanisms at a low performance overhead
@@ -22,7 +25,9 @@ projects:
           - name:   Jonas Wagner
             email:  ltlygwayh@gmail.com
       tags:
-          - Security
+          - Software Protection
+          - LLVM
+          - Buffer Overflows
 
     - name:         Cloud 9
       description:  Parallel symbolic execution engine that scales on shared-nothing clusters of commodity hardware
@@ -34,7 +39,8 @@ projects:
           - name:   Stefan Bucur
             email:  stefan.bucur@gmail.com
       tags:
-          - Symbolic execution
+          - Cloud
+          - Performance
 
     - name:         Dimmunix
       description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocks that they previously encountered
@@ -46,7 +52,10 @@ projects:
           - name:   Horatiu Jula
             url:        https://www.linkedin.com/in/horatiu-jula-63a02a7
       tags:
+          - Deadlock
           - Concurrency
+          - Immunity
+          - Java
 
     - name:         Failure Sketching
       description:  Automated debugging technique
@@ -59,3 +68,5 @@ projects:
             email:  barisk@umich.edu
       tags:
           - Debug
+          - Failure
+          - Verification

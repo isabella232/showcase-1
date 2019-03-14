@@ -10,6 +10,8 @@ projects:
             email:  mathias.payer@epfl.ch
       tags:
           - Fuzzing
+          - Debug
+          - Failure
 
     - name:         BOPC
       description:  Block Oriented Programming Compiler
@@ -21,7 +23,9 @@ projects:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
       tags:
-          - Compiler
+          - Exploit
+          - Code
+          - Attack Surface
 
     - name:         CFIXX
       description:  
@@ -32,6 +36,9 @@ projects:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
       tags:
+          - C++
+          - Exploit
+          - Protection
 
     - name:         HexType
       description:  Efficient detection of Type Confusion Errors for C++
@@ -42,3 +49,6 @@ projects:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
       tags:
+          - C++
+          - Type Safety
+          - Sanitization

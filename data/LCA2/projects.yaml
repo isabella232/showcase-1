@@ -8,7 +8,9 @@ projects:
       contacts:
           - name:   Maaz Mashood
       tags:
-          - Communication
+          - Network
+          - Real-Time
+          - Parallel Transmission
 
     - name:         commelec-api
       description:  API for the Commelec real-time microgrid framework
@@ -19,3 +21,7 @@ projects:
           - name:   Jagdish Achara
             email:  jagdish.achara@epfl.ch
       tags:
+          - Network
+          - Message Format
+          - Encoding
+          - Decoding

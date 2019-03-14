@@ -7,6 +7,7 @@ projects:
           url:  https://github.com/LPD-EPFL/MVTIL
       contacts:
       tags:
+          - Database
           - Concurrency
 
     - name:         libNVRAM
@@ -16,7 +17,10 @@ projects:
           url:  http://dcl.epfl.ch/site/nvram
       contacts:
       tags:
-          - Storage
+          - NVRAM
+          - Data Structures
+          - Concurrency
+          - Transient Failures
 
     - name:         FloDB
       description:  Unlocking Memory in Persistent Key-Value Stores
@@ -26,6 +30,57 @@ projects:
           url:  https://github.com/LPD-EPFL/flodb
       contacts:
       tags:
-          - Concurrency
-          - Storage
+          - Key-Value Store
+          - Server
+          - Database
+
+    - name:         MobNet
+      description:  Framework for Machine Learning on Android
+      code:
+          type: Private GitHub
+          url:  
+      contacts:
+      tags:
+          - Federated Learning
+          - Android
+          - Edge ML
+
+    - name:         AggregaThor
+      description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LPD-EPFL/AggregaThor
+      contacts:
+      tags:
+          - Robust SGD
+          - Distributed ML
+          - Byzantine Resilience
+          - Gradient Aggregation
+          - TensorFlow
+          - UDP
+
+    - name:         Robust RDMA
+      description:  Better fault-tolerance and performance of consensus using RDMA
+      code:
+          type: 
+          url:  
+      contacts:
+      tags:
+          - RDMA
+          - Consensus
+          - Byzantine Resilience
+          - Fault-Tolerance
+          - Communication Complexity
+
+    - name:         AT2
+      description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
+      code:
+          type: Private GitHub
+          url:  
+      contacts:
+      tags:
+          - Blockchain
+          - Cryptocurrencies
+          - Scalability
+          - Decentralization
 

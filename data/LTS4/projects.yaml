@@ -9,7 +9,9 @@ projects:
           - name:   Seyed Moosavi
             email:  seyed.moosavi@epfl.ch
       tags:
-          - Network
+          - Machine Learning
+          - Deep Networks
+          - Adversarial
 
     - name:         ManiFool
       description:  Algorithm for evaluating the invariance properties of deep networks
@@ -20,7 +22,8 @@ projects:
           - name:   Seyed Moosavi
             email:  seyed.moosavi@epfl.ch
       tags:
-          - Network
+          - Machine Learning
+          - Deep Networks
 
     - name:         Universal
       description:  Universal adversarial perturbations
@@ -31,6 +34,9 @@ projects:
           - name:   Seyed Moosavi
             email:  seyed.moosavi@epfl.ch
       tags:
+          - Machine Learning
+          - Deep Networks
+          - Perturbations
 
     - name:         SafeAI
       description:  Framework for attacking and defending deep neuronal networks
@@ -41,4 +47,5 @@ projects:
           - name:   Apostolos Modas
             email:  apostolos.modas@epfl.ch
       tags:
-          - Neuronal Networks
+          - Machine Learning
+          - Deep Networks

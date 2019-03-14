@@ -1,6 +1,6 @@
 projects:
 
-    - name:         SLIC Superpixels
+    - name:         SLICO Superpixels
       description:  Superpixels are becoming increasingly popular for use in computer vision applications
       url:          https://ivrl.epfl.ch/research/superpixels
       code:
@@ -9,6 +9,7 @@ projects:
       contacts:
       tags:
           - Computer Vision
+          - Image Detection
 
     - name:         FASA
       description:  Fast, Accurate and Size-Aware Satient Object Detection
@@ -20,6 +21,7 @@ projects:
       contacts:
       tags:
           - Computer Vision
+          - Object Detection
 
     - name:         Image Completion
       description:  Complete an image whose 99% pixels are randomly missing
@@ -30,6 +32,8 @@ projects:
       contacts:
       tags:
           - Computer Vision
+          - Completion
+          - Fast
 
     - name:         IAPBWC
       description:  Trained regression model that improves the prediction accuracy of the aesthetic scores over state-of-the-art algorithms
@@ -39,5 +43,6 @@ projects:
           url:  http://ivrlwww.epfl.ch/~bjin/project_aesthetics/files/Script_Aesthetics_release.zip
       contacts:
       tags:
-          - Machine learning
-          - Prediction
+          - Computer Vision
+          - Aesthetic
+          - Image Cropping

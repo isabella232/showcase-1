@@ -8,7 +8,9 @@ projects:
           url:  
       contacts:
       tags:
-          - Prediction
+          - Predictor
+          - Data Mining
+          - Machine Learning
 
     - name:         Choix
       description:  Python library that provides inference algorithms for models based on Luce's choice axiom
@@ -17,4 +19,5 @@ projects:
           url:  https://github.com/lucasmaystre/choix
       contacts:
       tags:
+          - Data Mining
           - Inference

@@ -9,7 +9,10 @@ projects:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
       tags:
+          - Blockchain
+          - Private
           - Encryption
+          - Access Control
 
     - name:         Kyber
       description:  Cryptographic library
@@ -21,6 +24,7 @@ projects:
             email:  jeff.allen@epfl.ch
       tags:
           - Encryption
+          - Low-Level
 
     - name:         Personhood.online
       description:  Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
@@ -31,7 +35,11 @@ projects:
           - name:   Linus Gasser
             email:  linus.gasser@epfl.ch
       tags:
-          - Blockchain
+          - Mobile
+          - iOS
+          - Android
+          - Personhood
+          - ByzCoin
 
     - name:         Omniledger
       description:  Ethereum-like blockchain implementation based on skipchains
@@ -43,6 +51,9 @@ projects:
             email:  kelong.cong@epfl.ch
       tags:
           - Blockchain
+          - Sharding
+          - Performance
+          - Proof-of-consensus
 
     - name:         Onet
       description:  Communication protocols
@@ -53,7 +64,10 @@ projects:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
       tags:
-          - Communication
+          - Low-Level
+          - Network
+          - Protocols
+          - Simulator
 
     - name:         E-voting
       description:  E-voting using a blockchain
@@ -64,7 +78,10 @@ projects:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
       tags:
+          - E-Voting
           - Blockchain
+          - Anonymous
+          - Shuffle
 
     - name:         DRand
       description:  Publicly verifiable randomness
@@ -75,7 +92,8 @@ projects:
           - name:   Nicolas Gailly
             email:  nicolas.gailly@epfl.ch
       tags:
-          - Blockchain
+          - Randomness
+          - Decentralization
 
     - name:         DEDIS / protobuf
       description:  Protobuf v2 implementation
@@ -84,7 +102,8 @@ projects:
           url:  https://github.com/dedis/protobuf
       contacts:
       tags:
-          - Marshalling
+          - Protobuf
+          - GoLang
 
     - name:         Crux
       description:  Locality-preserving publishing service
@@ -95,9 +114,11 @@ projects:
           - name:   Cristina Basescu
             email:  cristina.basescu@epfl.ch
       tags:
-          - Publishing
+          - Decentralization
+          - Publish-Subscribe
+          - Locality
 
-    - name:         Distributed Document
+    - name:         PeerDoc
       description:  Editing documents in a distributed way
       code:
           type: Lab GitHub
@@ -106,10 +127,11 @@ projects:
           - name:   Kirill Nikitin
             email:  kirill.nikitin@epfl.ch
       tags:
-          - Distributed
+          - Decentralization
+          - Document Editing
 
     - name:         Purbs
-      description:  
+      description:  Metadata leakage prevention for encrypted communication and storage
       code:
           type: Lab GitHub
           url:  http://github.com/dedis/purbs
@@ -117,13 +139,19 @@ projects:
           - name:   Kirill Nikitin
             email:  kirill.nikitin@epfl.ch
       tags:
+          - Encryption
+          - Data At Rest
+          - Data In Transit
 
     - name:         Slingshot
       description:  Scanning incoming emails for infected attachments
+      url:          https://slingshot.dedis.ch/
       code:
           type: 
           url:  
       contacts:
           - name:     Stevens Le Blond
       tags:
-          - Security
+          - Email
+          - Protection
+          - Attack

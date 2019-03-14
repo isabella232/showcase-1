@@ -9,7 +9,9 @@ projects:
       contacts:
           - name:     Hamza Karkous
       tags:
-          - Privacy
+          - Privacy Policy
+          - Artificial Intelligence
+          - Natural Language
 
     - name:         PrivySeal
       url:          https://privyseal.epfl.ch/#!/
@@ -20,4 +22,27 @@ projects:
       contacts:
           - name:     Hamza Karkous
       tags:
-          - Privacy
+          - Data Analysis
+          - Google Drive
+
+    - name:         Artificial-Intelligence Drive
+      description:  Platform for speeding up the development of Artificial-Intelligence classifiers
+      code:
+          type: Private GitHub
+          url:  
+      contacts:
+      tags:
+          - Image Classification
+          - Test Classification
+          - Artificial Intelligence
+
+    - name:         SciLens
+      description:  Helper for science news evaluation
+      code:
+          type: Private GitHub
+          url:  
+      contacts:
+      tags:
+          - Test Classification
+          - Fake News
+          - Natural Language

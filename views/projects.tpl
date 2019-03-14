@@ -80,12 +80,12 @@
                             % else:
                             <td>{{ name }}</td>
                             % end
-                            <td>{{ description }}</td>
+                            <td>{{ description if description else 'N/A' }}</td>
                             <td>&lt;LANGUAGE&gt;</td>
                             % if code['url']:
                             <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code['type'] }}</a></td>
                             % else:
-                            <td>{{ code['type'] }}</td>
+                            <td>{{ code['type'] if code['type'] else 'N/A' }}</td>
                             % end
                             <td class="dt-center">
                                 % for tag in tags:

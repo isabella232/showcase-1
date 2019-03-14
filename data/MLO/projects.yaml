@@ -10,3 +10,5 @@ projects:
             email:  martin.jaggi@epfl.ch
       tags:
           - Machine Learning
+          - Text
+          - Features

@@ -9,7 +9,10 @@ projects:
           - name:   Ludovic Barman
             email:  ludovic.barman@epfl.ch
       tags:
-          - Privacy
+          - Wifi
+          - Network
+          - Privacy Preserving
+          - MIxed Networks
 
     - name:         Unlynx
       description:  Privacy-preserving data sharing
@@ -18,7 +21,9 @@ projects:
           url:  https://github.com/lca1/unlynx
       contacts:
       tags:
-          - Privacy
+          - Privacy Preserving
+          - Protocol
+          - Medical Data
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
@@ -27,18 +32,8 @@ projects:
           url:  http://c4science.ch/w/medco
       contacts:
       tags:
-          - Privacy
-
-    - name:         PriFi Chat
-      description:  
-      code:
-          type: 
-          url:  
-      contacts:
-          - name:   Ludovic Barman
-            email:  ludovic.barman@epfl.ch
-      tags:
-          - Privacy
+          - Privacy Preserving
+          - Medical Data
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
@@ -47,4 +42,6 @@ projects:
           url:  
       contacts:
       tags:
-          - Privacy
+          - i2b2
+          - Medical Data
+          - Privacy Preserving

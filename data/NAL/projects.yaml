@@ -10,7 +10,8 @@ projects:
           - name:     Arseniy Zaostrovnykh
             email:    arseniy.zaostrovnykh@epfl.ch
       tags:
-          - Verification
+          - Software Verification
+          - NAT
           - Network
 
     - name:         LINE
@@ -21,3 +22,5 @@ projects:
       contacts:
       tags:
           - Network
+          - Emulator
+          - Measurement
