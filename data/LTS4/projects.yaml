@@ -27,6 +27,7 @@ projects:
 
     - name:         Universal
       description:  Universal adversarial perturbations
+      url:          https://arxiv.org/pdf/1610.08401.pdf
       code:
           type: Lab GitHub
           url:  https://github.com/LTS4/universal

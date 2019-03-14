@@ -121,7 +121,7 @@ projects:
     - name:         PeerDoc
       description:  Editing documents in a distributed way
       code:
-          type: Lab GitHub
+          type: Public GitHub
           url:  
       contacts:
           - name:   Kirill Nikitin

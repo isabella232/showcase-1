@@ -2,7 +2,7 @@ projects:
 
     - name:         VigNAT
       description:  Formally verified and performant software NAT, a pioneer network function of the Vigor approach
-      url:          https://vignat.github.io/
+      url:          http://ecocloud.ch/project/vignat/
       code:
           type: Project GitHub
           url:  https://github.com/vignat/vignat

@@ -61,8 +61,8 @@ projects:
       description:  Automated debugging technique
       url:          http://dslab.epfl.ch/proj/gist/
       code:
-          type: 
-          url:  
+          type:     Lab GitHub
+          url:      https://github.com/dslab-epfl/bugbase
       contacts:
           - name:   Baris Kasici
             email:  barisk@umich.edu

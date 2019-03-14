@@ -2,6 +2,7 @@ projects:
 
     - name:         iprp
       description:  IP Parallel Redundancy Protocol
+      url:          https://infoscience.epfl.ch/record/216985/files/07406725.pdf
       code:
           type: Lab GitHub
           url:  https://github.com/LCA2-EPFL/iprp

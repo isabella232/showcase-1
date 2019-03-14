@@ -2,10 +2,10 @@ projects:
 
     - name:         SLICO Superpixels
       description:  Superpixels are becoming increasingly popular for use in computer vision applications
-      url:          https://ivrl.epfl.ch/research/superpixels
+      url:          https://ivrl.epfl.ch/research-2/research-current/research-superpixels/#SLICO
       code:
-          type: EPFL Link
-          url:  https://ivrl.epfl.ch/research/superpixels
+          type: Lab Download
+          url:  https://ivrl.epfl.ch/wp-content/uploads/2018/08/SLICSuperpixels_VC2008_SLICO_15Jun2013.zip
       contacts:
       tags:
           - Computer Vision
@@ -13,9 +13,8 @@ projects:
 
     - name:         FASA
       description:  Fast, Accurate and Size-Aware Satient Object Detection
-      url:          https://ivrl.epfl.ch/research/saliency/fast_saliency
       code:
-          type: EPFL Link
+          type: Lab Download
           url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/research/saliency/fast_saliency/FASA_Source_Code.zip
       contact:      
       contacts:
@@ -25,9 +24,9 @@ projects:
 
     - name:         Image Completion
       description:  Complete an image whose 99% pixels are randomly missing
-      url:          https://ivrl.epfl.ch/research/image_completion
+      url:          https://ivrl.epfl.ch/research-2/research-current/research-image_completion/
       code:
-          type: EPFL Link
+          type: Lab Download
           url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/supplementary_material/EFAN/fan_icassp17.zip
       contacts:
       tags:
@@ -37,9 +36,8 @@ projects:
 
     - name:         IAPBWC
       description:  Trained regression model that improves the prediction accuracy of the aesthetic scores over state-of-the-art algorithms
-      url:          http://ivrlwww.epfl.ch/~bjin/project_aesthetics/Image_Aesthetics.html
       code:
-          type: EPFL Link
+          type: Lab Download
           url:  http://ivrlwww.epfl.ch/~bjin/project_aesthetics/files/Script_Aesthetics_release.zip
       contacts:
       tags:

@@ -27,9 +27,10 @@ projects:
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
+      url:          https://medco.epfl.ch/
       code:
-          type: Private c4science
-          url:  http://c4science.ch/w/medco
+          type: Lab GitHub
+          url:  https://medco.epfl.ch/software/
       contacts:
       tags:
           - Privacy Preserving
@@ -37,9 +38,10 @@ projects:
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
+      url:          https://github.com/JLRgithub/PDCi2b2/wiki
       code:
-          type: 
-          url:  
+          type:     Personal GitHub
+          url:      https://github.com/JLRgithub/PDCi2b2
       contacts:
       tags:
           - i2b2
