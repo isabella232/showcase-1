@@ -16,6 +16,7 @@ projects:
       language: C
       type: Application, Library
       paper_url:    https://vignat.github.io/vignat-paper.pdf
+      maturity: 3
 
     - name:         LINE
       description:  Network emulator designed for realism, accuracy and powerful measurement capabilities
@@ -30,3 +31,4 @@ projects:
       language: C++
       type: Application
       license:  GPLv2
+      maturity: 2

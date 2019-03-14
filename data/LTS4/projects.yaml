@@ -16,6 +16,7 @@ projects:
       type: Application
       type: Application
       paper_url:    https://arxiv.org/abs/1511.04599
+      maturity: 2
 
     - name:         ManiFool
       description:  Algorithm for evaluating the invariance properties of deep networks
@@ -31,6 +32,7 @@ projects:
       language: Python
       type: Application
       paper_url:    https://arxiv.org/abs/1711.09115
+      maturity: 2
 
     - name:         Universal
       description:  Universal adversarial perturbations
@@ -48,6 +50,7 @@ projects:
       language: MatLab, Python
       type: Application
       paper_url:    http://arxiv.org/pdf/1610.08401
+      maturity: 1
 
     - name:         SafeAI
       description:  Framework for attacking and defending deep neuronal networks
@@ -61,3 +64,4 @@ projects:
           - Machine Learning
           - Deep Networks
       type: Application
+      maturity: 1

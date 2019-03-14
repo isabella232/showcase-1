@@ -16,6 +16,7 @@ projects:
       language: GoLang
       type: Application
       license:  AGPLv2
+      maturity: 2
 
     - name:         Kyber
       description:  Cryptographic library
@@ -31,6 +32,7 @@ projects:
       language: GoLang
       type: Library
       license:  MPL 2.0
+      maturity: 3
 
     - name:         Personhood.online
       description:  Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
@@ -49,6 +51,7 @@ projects:
       language: Javascript
       type: Application
       license:  AGPLv2
+      maturity: 2
 
     - name:         Omniledger
       description:  Ethereum-like blockchain implementation based on skipchains
@@ -66,6 +69,7 @@ projects:
       language: GoLang
       type: Application, Library
       license:  AGPLv3
+      maturity: 2
 
     - name:         Onet
       description:  Communication protocols
@@ -83,6 +87,7 @@ projects:
       language: GoLang
       type: Library
       license:  AGPLv2
+      maturity: 2
 
     - name:         E-voting
       description:  E-voting using a blockchain
@@ -100,6 +105,7 @@ projects:
       language: GoLang
       type: Application
       license:  AGPLv2
+      maturity: 2
 
     - name:         DRand
       description:  Publicly verifiable randomness
@@ -115,6 +121,7 @@ projects:
       language: GoLang
       type: Application
       license:  MIT
+      maturity: 2
 
     - name:         DEDIS / protobuf
       description:  Protobuf v2 implementation
@@ -128,6 +135,7 @@ projects:
       language: GoLang
       type: Library
       license:  GPLv2
+      maturity: 2
 
     - name:         Crux
       description:  Locality-preserving publishing service
@@ -144,6 +152,7 @@ projects:
       language: GoLang
       type: Application
       license:  AGPLv2
+      maturity: 1
 
     - name:         PeerDoc
       description:  Editing documents in a distributed way
@@ -158,6 +167,7 @@ projects:
           - Document Editing
       language: GoLang
       type: Application
+      maturity: 1
 
     - name:         Purbs
       description:  Metadata leakage prevention for encrypted communication and storage
@@ -172,6 +182,7 @@ projects:
           - Data At Rest
           - Data In Transit
       type: Library
+      maturity: 1
 
     - name:         Slingshot
       description:  Scanning incoming emails for infected attachments
@@ -186,3 +197,4 @@ projects:
           - Protection
           - Attack
       type: Application
+      maturity: 2

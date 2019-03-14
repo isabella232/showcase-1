@@ -16,6 +16,7 @@ projects:
       language: GoLang
       type: Application, Library
       license:  AGPLv3
+      maturity: 2
 
     - name:         Unlynx
       description:  Privacy-preserving data sharing
@@ -30,6 +31,7 @@ projects:
       language: GoLang
       type: Application
       license:  non-commercial
+      maturity: 2
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
@@ -44,6 +46,7 @@ projects:
       language: GoLang
       type: Application
       license:  non-commercial
+      maturity: 2
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
@@ -57,3 +60,4 @@ projects:
           - Medical Data
           - Privacy Preserving
       type: Application
+      maturity: 2

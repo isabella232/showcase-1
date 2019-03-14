@@ -16,3 +16,4 @@ projects:
           - Secret
       license:  commercial
       type: Platform
+      maturity: 3

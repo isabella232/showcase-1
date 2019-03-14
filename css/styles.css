@@ -24,6 +24,18 @@ table.dataTable tbody tr td {
     color: black;
 }
 
+table.dataTable tbody tr td.showcase {
+    background-color: red;
+}
+
+table.dataTable tbody tr td.incubator {
+    background-color: yellow;
+}
+
+table.dataTable tbody tr td.market {
+    background-color: green;
+}
+
 table.dataTable button {
     border: none;
     border-radius: 4px;

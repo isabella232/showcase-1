@@ -51,6 +51,7 @@
                 <tr>
                     <th>Lab</th>
                     <th>Project name</th>
+                    <th class="extra">Maturity Level</th>
                     <th>Description</th>
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
@@ -68,6 +69,7 @@
                         <tr>
                             <%
                             name = project['name']
+                            maturity = project.get('maturity')
                             description = project['description']
                             language = project.get('language', '')
                             proj_type = project.get('type', '')
@@ -87,6 +89,8 @@
                             % else:
                             <td>{{ name }}</td>
                             % end
+                            % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                            <td class="{{ maturity_map.get(maturity) }}"></td>
                             <td>{{ description if description else 'N/A' }}</td>
                             <td>{{ language }}</td>
                             <td>{{ proj_type }}</td>
@@ -118,6 +122,7 @@
                 <tr>
                     <th>Lab</th>
                     <th>Project name</th>
+                    <th>Maturity Level</th>
                     <th>Description</th>
                     <th>Language</th>
                     <th>Type</th>

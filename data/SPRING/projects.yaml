@@ -16,6 +16,7 @@ projects:
       type: Library
       paper_url:    https://arxiv.org/abs/1707.06279
       license:  MIT
+      maturity: 1
 
     - name:         Lightnion
       description:  Anonymous communication in browsers via the Tor network
@@ -29,6 +30,7 @@ projects:
           - Network
           - Javascript
       type: Library
+      maturity: 1
 
     - name:         Trickster
       description:  Sophisticated attacks on Machine Learning models
@@ -40,6 +42,7 @@ projects:
           - Machine Learning
           - Attack
       type: Library
+      maturity: 2
 
     - name:         Hippiepug
       description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
@@ -54,3 +57,4 @@ projects:
       language: Python
       type: Library
       license:  MIT
+      maturity: 2

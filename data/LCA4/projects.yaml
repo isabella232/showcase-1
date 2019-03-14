@@ -12,6 +12,7 @@ projects:
           - Data Mining
           - Machine Learning
       type: Application
+      maturity: 3
 
     - name:         Choix
       description:  Python library that provides inference algorithms for models based on Luce's choice axiom
@@ -24,3 +25,4 @@ projects:
           - Inference
       language: Python
       type: Library
+      maturity: 1

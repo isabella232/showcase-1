@@ -16,6 +16,7 @@ projects:
       type: Application
       paper_url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
       license:  commercial
+      maturity: 1
 
     - name:         PrivySeal
       description:  Privacy Assistant for Installing Cloud Apps
@@ -31,6 +32,7 @@ projects:
       language: Javascript, Python
       type: Application
       paper_url:    https://infoscience.epfl.ch/record/218003
+      maturity: 3
 
     - name:         Artificial-Intelligence Drive
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers
@@ -43,6 +45,7 @@ projects:
           - Test Classification
           - Artificial Intelligence
       type: Application
+      maturity: 2
 
     - name:         SciLens
       description:  Helper for science news evaluation
@@ -55,3 +58,4 @@ projects:
           - Fake News
           - Natural Language
       type: Application
+      maturity: 2

@@ -11,3 +11,4 @@ projects:
           - Privacy
           - Photo
       type: Application
+      maturity: 2

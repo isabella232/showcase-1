@@ -20,6 +20,7 @@ projects:
       type: Library, Application
       paper_url:    http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
       license:  AGPLv3
+      maturity: 2
 
     - name:         Inox
       description:  Constraint solver for Stainless
@@ -41,3 +42,4 @@ projects:
       license:  AGPLv3
       notes: >
            Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
+      maturity: 2

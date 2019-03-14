@@ -13,3 +13,4 @@ projects:
           - Text
           - Features
       type: Library
+      maturity: 1

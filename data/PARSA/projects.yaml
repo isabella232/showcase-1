@@ -16,6 +16,7 @@ projects:
       type: Application
       paper_url:    https://dl.acm.org/citation.cfm?id=2150982
       license:  CloudSuite, others
+      maturity: 1
 
     - name:         DCA
       description:  Architecture to prevent hardware side-channels
@@ -56,3 +57,4 @@ projects:
       paper_url:    https://infoscience.epfl.ch/record/112669/files/simflex.pdf
       notes: >
           Some issues with regard to Oracle licenses
+      maturity: 2

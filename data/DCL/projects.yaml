@@ -10,6 +10,7 @@ projects:
           - Database
           - Concurrency
       type: Application
+      maturity: 1
 
     - name:         libNVRAM
       description:  Log-Free Concurrent Data Structures
@@ -23,6 +24,7 @@ projects:
           - Concurrency
           - Transient Failures
       type: Library, Application
+      maturity: 1
 
     - name:         FloDB
       description:  Unlocking Memory in Persistent Key-Value Stores
@@ -36,6 +38,7 @@ projects:
           - Server
           - Database
       type: Application
+      maturity: 1
 
     - name:         MobNet
       description:  Framework for Machine Learning on Android
@@ -48,6 +51,7 @@ projects:
           - Android
           - Edge ML
       type: Library, Application
+      maturity: 1
 
     - name:         AggregaThor
       description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
@@ -63,6 +67,7 @@ projects:
           - TensorFlow
           - UDP
       type: Library, Application
+      maturity: 1
 
     - name:         Robust RDMA
       description:  Better fault-tolerance and performance of consensus using RDMA
@@ -77,6 +82,7 @@ projects:
           - Fault-Tolerance
           - Communication Complexity
       type: Library
+      maturity: 1
 
     - name:         AT2
       description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
@@ -90,4 +96,4 @@ projects:
           - Scalability
           - Decentralization
       type: Library, Application
-
+      maturity: 1

@@ -13,6 +13,7 @@ projects:
           - Real-Time
           - Parallel Transmission
       type: Application
+      maturity: 2
 
     - name:         commelec-api
       description:  API for the Commelec real-time microgrid framework
@@ -28,3 +29,4 @@ projects:
           - Encoding
           - Decoding
       type: Library
+      maturity: 2

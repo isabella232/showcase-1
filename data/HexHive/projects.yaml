@@ -14,6 +14,7 @@ projects:
           - Failure
       language: Python
       type: Application
+      maturity: 2
 
     - name:         BOPC
       description:  Block Oriented Programming Compiler
@@ -31,6 +32,7 @@ projects:
       language: Python
       type: Application
       paper_url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
+      maturity: 2
 
     - name:         CFIXX
       description:  
@@ -46,6 +48,7 @@ projects:
           - Protection
       language: C++
       type: Application
+      maturity: 1
 
     - name:         HexType
       description:  Efficient detection of Type Confusion Errors for C++
@@ -61,3 +64,4 @@ projects:
           - Sanitization
       language: C++
       type: Application
+      maturity: 2

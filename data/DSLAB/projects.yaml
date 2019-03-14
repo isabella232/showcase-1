@@ -14,6 +14,7 @@ projects:
           - Static Code Checking
           - Attack Vectors
       type: Library
+      maturity: 1
 
     - name:         ASAP
       description:  Makes it possible to use powerful software protection mechanisms at a low performance overhead
@@ -30,6 +31,7 @@ projects:
           - LLVM
           - Buffer Overflows
       type: Library
+      maturity: 2
 
     - name:         Cloud 9
       description:  Parallel symbolic execution engine that scales on shared-nothing clusters of commodity hardware
@@ -44,6 +46,7 @@ projects:
           - Cloud
           - Performance
       type: Application
+      maturity: 2
 
     - name:         Dimmunix
       description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocks that they previously encountered
@@ -60,6 +63,7 @@ projects:
           - Immunity
           - Java
       type: Library
+      maturity: 2
 
     - name:         Failure Sketching
       description:  Automated debugging technique
@@ -75,3 +79,4 @@ projects:
           - Failure
           - Verification
       type: Application
+      maturity: 3
