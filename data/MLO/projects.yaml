@@ -12,3 +12,4 @@ projects:
           - Machine Learning
           - Text
           - Features
+      type: Library

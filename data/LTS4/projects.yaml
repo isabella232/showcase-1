@@ -13,6 +13,8 @@ projects:
           - Deep Networks
           - Adversarial
       language: MatLab, Python
+      type: Application
+      type: Application
       paper_url:    https://arxiv.org/abs/1511.04599
 
     - name:         ManiFool
@@ -27,6 +29,7 @@ projects:
           - Machine Learning
           - Deep Networks
       language: Python
+      type: Application
       paper_url:    https://arxiv.org/abs/1711.09115
 
     - name:         Universal
@@ -43,6 +46,7 @@ projects:
           - Deep Networks
           - Perturbations
       language: MatLab, Python
+      type: Application
       paper_url:    http://arxiv.org/pdf/1610.08401
 
     - name:         SafeAI
@@ -56,3 +60,4 @@ projects:
       tags:
           - Machine Learning
           - Deep Networks
+      type: Application

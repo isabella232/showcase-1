@@ -12,6 +12,7 @@ projects:
           - Network
           - Real-Time
           - Parallel Transmission
+      type: Application
 
     - name:         commelec-api
       description:  API for the Commelec real-time microgrid framework
@@ -26,3 +27,4 @@ projects:
           - Message Format
           - Encoding
           - Decoding
+      type: Library

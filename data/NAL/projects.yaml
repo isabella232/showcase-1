@@ -14,6 +14,7 @@ projects:
           - NAT
           - Network
       language: C
+      type: Application, Library
       paper_url:    https://vignat.github.io/vignat-paper.pdf
 
     - name:         LINE
@@ -27,4 +28,5 @@ projects:
           - Emulator
           - Measurement
       language: C++
+      type: Application
       license:  GPLv2

@@ -17,6 +17,7 @@ projects:
           - Scala
           - Ethereum
       language: Scala
+      type: Library, Application
       paper_url:    http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
       license:  AGPLv3
 
@@ -36,6 +37,7 @@ projects:
           - Constraint Solver
           - Software Verification
       language: Scala
+      type: Library, Application
       license:  AGPLv3
       notes: >
            Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/

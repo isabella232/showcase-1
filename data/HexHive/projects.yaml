@@ -13,6 +13,7 @@ projects:
           - Debug
           - Failure
       language: Python
+      type: Application
 
     - name:         BOPC
       description:  Block Oriented Programming Compiler
@@ -28,6 +29,7 @@ projects:
           - Code
           - Attack Surface
       language: Python
+      type: Application
       paper_url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
 
     - name:         CFIXX
@@ -43,6 +45,7 @@ projects:
           - Exploit
           - Protection
       language: C++
+      type: Application
 
     - name:         HexType
       description:  Efficient detection of Type Confusion Errors for C++
@@ -57,3 +60,4 @@ projects:
           - Type Safety
           - Sanitization
       language: C++
+      type: Application

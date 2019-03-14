@@ -13,6 +13,7 @@ projects:
           - Code Analysis
           - Static Code Checking
           - Attack Vectors
+      type: Library
 
     - name:         ASAP
       description:  Makes it possible to use powerful software protection mechanisms at a low performance overhead
@@ -28,6 +29,7 @@ projects:
           - Software Protection
           - LLVM
           - Buffer Overflows
+      type: Library
 
     - name:         Cloud 9
       description:  Parallel symbolic execution engine that scales on shared-nothing clusters of commodity hardware
@@ -41,6 +43,7 @@ projects:
       tags:
           - Cloud
           - Performance
+      type: Application
 
     - name:         Dimmunix
       description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocks that they previously encountered
@@ -56,6 +59,7 @@ projects:
           - Concurrency
           - Immunity
           - Java
+      type: Library
 
     - name:         Failure Sketching
       description:  Automated debugging technique
@@ -70,3 +74,4 @@ projects:
           - Debug
           - Failure
           - Verification
+      type: Application

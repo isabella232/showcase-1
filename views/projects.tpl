@@ -53,6 +53,7 @@
                     <th>Project name</th>
                     <th>Description</th>
                     <th class="extra">Language</th>
+                    <th class="extra">Type</th>
                     <th>Source code</th>
                     <th>Tags</th>
                     <th class="extra">License</th>
@@ -69,6 +70,7 @@
                             name = project['name']
                             description = project['description']
                             language = project.get('language', '')
+                            proj_type = project.get('type', '')
                             url = project.get('url')
                             code = project['code']
                             tags = project['tags']
@@ -87,6 +89,7 @@
                             % end
                             <td>{{ description if description else 'N/A' }}</td>
                             <td>{{ language }}</td>
+                            <td>{{ proj_type }}</td>
                             % if code['url']:
                             <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code['type'] }}</a></td>
                             % else:
@@ -117,6 +120,7 @@
                     <th>Project name</th>
                     <th>Description</th>
                     <th>Language</th>
+                    <th>Type</th>
                     <th>Source code</th>
                     <th>Tags</th>
                     <th>License</th>

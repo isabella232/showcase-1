@@ -13,6 +13,7 @@ projects:
           - Public Key
           - Privacy
       language: Python
+      type: Library
       paper_url:    https://arxiv.org/abs/1707.06279
       license:  MIT
 
@@ -27,6 +28,7 @@ projects:
           - Privacy
           - Network
           - Javascript
+      type: Library
 
     - name:         Trickster
       description:  Sophisticated attacks on Machine Learning models
@@ -37,6 +39,7 @@ projects:
       tags:
           - Machine Learning
           - Attack
+      type: Library
 
     - name:         Hippiepug
       description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
@@ -49,4 +52,5 @@ projects:
       tags:
           - Blockchain
       language: Python
+      type: Library
       license:  MIT

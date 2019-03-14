@@ -14,6 +14,7 @@ projects:
           - Encryption
           - Access Control
       language: GoLang
+      type: Application
       license:  AGPLv2
 
     - name:         Kyber
@@ -28,6 +29,7 @@ projects:
           - Encryption
           - Low-Level
       language: GoLang
+      type: Library
       license:  MPL 2.0
 
     - name:         Personhood.online
@@ -45,6 +47,7 @@ projects:
           - Personhood
           - ByzCoin
       language: Javascript
+      type: Application
       license:  AGPLv2
 
     - name:         Omniledger
@@ -61,6 +64,7 @@ projects:
           - Performance
           - Proof-of-consensus
       language: GoLang
+      type: Application, Library
       license:  AGPLv3
 
     - name:         Onet
@@ -77,6 +81,7 @@ projects:
           - Protocols
           - Simulator
       language: GoLang
+      type: Library
       license:  AGPLv2
 
     - name:         E-voting
@@ -93,6 +98,7 @@ projects:
           - Anonymous
           - Shuffle
       language: GoLang
+      type: Application
       license:  AGPLv2
 
     - name:         DRand
@@ -107,6 +113,7 @@ projects:
           - Randomness
           - Decentralization
       language: GoLang
+      type: Application
       license:  MIT
 
     - name:         DEDIS / protobuf
@@ -119,6 +126,7 @@ projects:
           - Protobuf
           - GoLang
       language: GoLang
+      type: Library
       license:  GPLv2
 
     - name:         Crux
@@ -134,6 +142,7 @@ projects:
           - Publish-Subscribe
           - Locality
       language: GoLang
+      type: Application
       license:  AGPLv2
 
     - name:         PeerDoc
@@ -148,6 +157,7 @@ projects:
           - Decentralization
           - Document Editing
       language: GoLang
+      type: Application
 
     - name:         Purbs
       description:  Metadata leakage prevention for encrypted communication and storage
@@ -161,6 +171,7 @@ projects:
           - Encryption
           - Data At Rest
           - Data In Transit
+      type: Library
 
     - name:         Slingshot
       description:  Scanning incoming emails for infected attachments
@@ -174,3 +185,4 @@ projects:
           - Email
           - Protection
           - Attack
+      type: Application

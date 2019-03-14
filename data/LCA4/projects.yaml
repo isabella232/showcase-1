@@ -11,6 +11,7 @@ projects:
           - Predictor
           - Data Mining
           - Machine Learning
+      type: Application
 
     - name:         Choix
       description:  Python library that provides inference algorithms for models based on Luce's choice axiom
@@ -22,3 +23,4 @@ projects:
           - Data Mining
           - Inference
       language: Python
+      type: Library

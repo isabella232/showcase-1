@@ -10,3 +10,4 @@ projects:
       tags:
           - Privacy
           - Photo
+      type: Application

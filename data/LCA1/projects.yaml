@@ -14,6 +14,7 @@ projects:
           - Privacy Preserving
           - MIxed Networks
       language: GoLang
+      type: Application, Library
       license:  AGPLv3
 
     - name:         Unlynx
@@ -27,6 +28,7 @@ projects:
           - Protocol
           - Medical Data
       language: GoLang
+      type: Application
       license:  non-commercial
 
     - name:         Medco
@@ -40,6 +42,7 @@ projects:
           - Privacy Preserving
           - Medical Data
       language: GoLang
+      type: Application
       license:  non-commercial
 
     - name:         PDCi2b2
@@ -53,3 +56,4 @@ projects:
           - i2b2
           - Medical Data
           - Privacy Preserving
+      type: Application

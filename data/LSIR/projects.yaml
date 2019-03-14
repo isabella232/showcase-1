@@ -13,6 +13,7 @@ projects:
           - Artificial Intelligence
           - Natural Language
       language: Python, Javascript
+      type: Application
       paper_url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
       license:  commercial
 
@@ -28,6 +29,7 @@ projects:
           - Data Analysis
           - Google Drive
       language: Javascript, Python
+      type: Application
       paper_url:    https://infoscience.epfl.ch/record/218003
 
     - name:         Artificial-Intelligence Drive
@@ -40,6 +42,7 @@ projects:
           - Image Classification
           - Test Classification
           - Artificial Intelligence
+      type: Application
 
     - name:         SciLens
       description:  Helper for science news evaluation
@@ -51,3 +54,4 @@ projects:
           - Test Classification
           - Fake News
           - Natural Language
+      type: Application

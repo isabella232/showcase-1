@@ -13,6 +13,7 @@ projects:
           - Benchmark
           - Test
       language: Dockerfiles
+      type: Application
       paper_url:    https://dl.acm.org/citation.cfm?id=2150982
       license:  CloudSuite, others
 
@@ -51,6 +52,7 @@ projects:
           - CPU
           - Architecture
       language: C, C++
+      type: Toolset
       paper_url:    https://infoscience.epfl.ch/record/112669/files/simflex.pdf
       notes: >
           Some issues with regard to Oracle licenses
