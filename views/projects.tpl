@@ -18,7 +18,7 @@
                 "scrollY": "60vmin",
                 "dom": "Bfrtip",
                 "buttons": [
-                    { text: "Show", extend: 'colvis' },
+                    { text: "Columns", extend: 'colvis' },
                     // 'copy',
                     // 'csv',
                     // 'print',
@@ -93,9 +93,9 @@
                             %>
                             <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                             % if url:
-                            <td class="dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
+                            <td class="proj_name dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
                             % else:
-                            <td>{{ name }}</td>
+                            <td class="proj_name dt-nowrap">{{ name }}</td>
                             % end
                             % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
                             <td class="{{ maturity_map.get(maturity) }}"></td>
