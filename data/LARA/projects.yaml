@@ -5,6 +5,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/epfl-lara/stainless
+      doc:  http://stainless.epfl.ch/
       contacts:
           - name:   Viktor Kunčak
             email:  viktor.kuncak@epfl.ch

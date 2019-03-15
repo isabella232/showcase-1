@@ -6,6 +6,7 @@ projects:
       code:
           type: Project GitHub
           url:  https://github.com/vignat/vignat
+      lines_of_code:    50000 / 4000
       contacts:
           - name:     Arseniy Zaostrovnykh
             email:    arseniy.zaostrovnykh@epfl.ch
@@ -23,7 +24,6 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/nal-epfl/line
-      contacts:
       tags:
           - Network
           - Emulator

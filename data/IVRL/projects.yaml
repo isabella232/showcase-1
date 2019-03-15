@@ -6,7 +6,6 @@ projects:
       code:
           type: Lab Download
           url:  https://ivrl.epfl.ch/wp-content/uploads/2018/08/SLICSuperpixels_VC2008_SLICO_15Jun2013.zip
-      contacts:
       tags:
           - Computer Vision
           - Image Detection
@@ -20,7 +19,6 @@ projects:
           type: Lab Download
           url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/research/saliency/fast_saliency/FASA_Source_Code.zip
       contact:      
-      contacts:
       tags:
           - Computer Vision
           - Object Detection
@@ -33,7 +31,6 @@ projects:
       code:
           type: Lab Download
           url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/supplementary_material/EFAN/fan_icassp17.zip
-      contacts:
       tags:
           - Computer Vision
           - Completion
@@ -47,7 +44,6 @@ projects:
       code:
           type: Lab Download
           url:  http://ivrlwww.epfl.ch/~bjin/project_aesthetics/files/Script_Aesthetics_release.zip
-      contacts:
       tags:
           - Computer Vision
           - Aesthetic

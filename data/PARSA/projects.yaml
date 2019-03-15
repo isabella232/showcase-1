@@ -6,6 +6,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/parsa-epfl/cloudsuite
+      doc: http://cloudsuite.ch/
       contacts:
           - name:   Hossein Ajallooiean
       tags:
@@ -20,20 +21,12 @@ projects:
 
     - name:         DCA
       description:  Architecture to prevent hardware side-channels
-      code:
-          type: 
-          url:  
-      contacts:
       tags:
           - Architecture
           - Side-Channels
 
     - name:         ARMFlex
       description:  Emulation platform for software bugs and vulnerability detection
-      code:
-          type: 
-          url:  
-      contacts:
       tags:
           - Emulator
           - FPGA
@@ -45,6 +38,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/parsa-epfl/qflex
+      lines_of_code:    'Flexus: 50000, Qemu: 100000'
       contacts:
           - name:   Hossein Ajallooiean
       tags:

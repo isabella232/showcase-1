@@ -5,6 +5,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/cothority/tree/master/calypso
+      lines_of_code:    6500 / 1500
       contacts:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
@@ -23,6 +24,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/kyber
+      lines_of_code:    17000 / 4000
       contacts:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
@@ -39,6 +41,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/personhood.online
+      lines_of_code:    9000 / 2000
       contacts:
           - name:   Linus Gasser
             email:  linus.gasser@epfl.ch
@@ -76,6 +79,7 @@ projects:
       code:
           type: Lab GitHub
           url:  http://github.com/dedis/onet
+      lines_of_code:    15000 / 3000
       contacts:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
@@ -94,6 +98,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/cothority/tree/master/evoting
+      lines_of_code:    1700 / 200
       contacts:
           - name:   Jeff Allen
             email:  jeff.allen@epfl.ch
@@ -112,6 +117,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/drand
+      lines_of_code:    1000 / 200
       contacts:
           - name:   Nicolas Gailly
             email:  nicolas.gailly@epfl.ch
@@ -128,7 +134,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/protobuf
-      contacts:
+      lines_of_code:    2000 / 300
       tags:
           - Protobuf
           - GoLang
@@ -142,6 +148,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/paper_crux/tree/crux_service
+      lines_of_code:    2100 / 700
       contacts:
           - name:   Cristina Basescu
             email:  cristina.basescu@epfl.ch
@@ -158,7 +165,6 @@ projects:
       description:  Editing documents in a distributed way
       code:
           type: Public GitHub
-          url:  
       contacts:
           - name:   Kirill Nikitin
             email:  kirill.nikitin@epfl.ch
@@ -187,9 +193,6 @@ projects:
     - name:         Slingshot
       description:  Scanning incoming emails for infected attachments
       url:          https://slingshot.dedis.ch/
-      code:
-          type: 
-          url:  
       contacts:
           - name:     Stevens Le Blond
       tags:

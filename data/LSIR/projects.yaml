@@ -5,7 +5,6 @@ projects:
       url:          https://pribot.org/
       code:
           type: Private GitHub
-          url:  
       contacts:
           - name:     Hamza Karkous
       tags:
@@ -23,7 +22,6 @@ projects:
       url:          https://privyseal.epfl.ch/#!/
       code:
           type: Private GitHub
-          url:  
       contacts:
           - name:     Hamza Karkous
       tags:
@@ -38,8 +36,6 @@ projects:
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers
       code:
           type: Private GitHub
-          url:  
-      contacts:
       tags:
           - Image Classification
           - Test Classification
@@ -51,8 +47,6 @@ projects:
       description:  Helper for science news evaluation
       code:
           type: Private GitHub
-          url:  
-      contacts:
       tags:
           - Test Classification
           - Fake News

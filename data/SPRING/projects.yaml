@@ -22,8 +22,6 @@ projects:
       description:  Anonymous communication in browsers via the Tor network
       code:
           type: Private GitHub
-          url:  
-      contacts:
       tags:
           - Tor
           - Privacy
@@ -37,7 +35,6 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/spring-epfl/trickster
-      contacts:
       tags:
           - Machine Learning
           - Attack

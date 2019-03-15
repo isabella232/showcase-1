@@ -34,7 +34,7 @@ def server_css(filename):
 
 @bottle.route('/')
 def index():
-    bottle.redirect('/labs/')
+    bottle.redirect('/projects/')
 
 @bottle.route('/labs/')
 @bottle.view('labs')

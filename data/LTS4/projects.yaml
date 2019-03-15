@@ -56,7 +56,6 @@ projects:
       description:  Framework for attacking and defending deep neuronal networks
       code:
           type: Private GitHub
-          url:  
       contacts:
           - name:   Apostolos Modas
             email:  apostolos.modas@epfl.ch

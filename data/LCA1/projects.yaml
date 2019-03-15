@@ -5,6 +5,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/prifi
+      lines_of_code:    16000
       contacts:
           - name:   Ludovic Barman
             email:  ludovic.barman@epfl.ch
@@ -23,7 +24,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/lca1/unlynx
-      contacts:
+      lines_of_code:    11000
       tags:
           - Privacy Preserving
           - Protocol
@@ -39,7 +40,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://medco.epfl.ch/software/
-      contacts:
+      lines_of_code:    16000
       tags:
           - Privacy Preserving
           - Medical Data
@@ -54,7 +55,7 @@ projects:
       code:
           type:     Personal GitHub
           url:      https://github.com/JLRgithub/PDCi2b2
-      contacts:
+      lines_of_code:    5000 - 10000
       tags:
           - i2b2
           - Medical Data

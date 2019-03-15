@@ -3,10 +3,6 @@ projects:
     - name:         ProShare
       description:  Share your photos, protecting sensible regions and hiding secret messages
       url:          http://grebproshare.epfl.ch/
-      code:
-          type: 
-          url:  
-      contacts:
       tags:
           - Privacy
           - Photo

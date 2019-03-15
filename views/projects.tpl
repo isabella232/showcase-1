@@ -17,7 +17,7 @@
                 "scrollY": "60vmin",
                 "dom": "Bfrtip",
                 "buttons": [
-                    { text: "Columns", extend: 'colvis' },
+                    { text: "Show", extend: 'colvis' },
                     // 'copy',
                     // 'csv',
                     // 'print',
@@ -41,21 +41,24 @@
 <body>
     <div align="center">
         % if selected_lab_id is None:
-            <h1>All projects</h1>
+        <h1>All projects</h1>
         % else:
-            <h1>Projects at <em>{{ selected_lab_id }}</em></h1>
+        <h1>{{ labs[selected_lab_id]['name'] }}</h1>
+        <a href="/projects/">All projects</a>
         % end
-        <a href="/labs/">Back to list of labs</a>
+        <a href="/labs/">List of labs</a>
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
                     <th>Lab</th>
-                    <th>Project name</th>
-                    <th class="extra">Maturity Level</th>
+                    <th>Name</th>
+                    <th class="extra">Maturity</th>
                     <th>Description</th>
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
                     <th>Source code</th>
+                    <th class="extra">LOC</th>
+                    <th class="extra">Documentation</th>
                     <th>Tags</th>
                     <th class="extra">License</th>
                     <th class="extra">Paper</th>
@@ -70,18 +73,17 @@
                             <%
                             name = project['name']
                             maturity = project.get('maturity')
-                            description = project['description']
+                            description = project.get('description', '')
                             language = project.get('language', '')
                             proj_type = project.get('type', '')
                             url = project.get('url')
-                            code = project['code']
-                            tags = project['tags']
-                            if tags is None:
-                                tags = []
-                            end
+                            code = project.get('code', {})
+                            loc = project.get('lines_of_code', '')
+                            doc = project.get('doc')
+                            tags = project.get('tags', [])
                             license = project.get('license', '')
                             paper_url = project.get('paper_url')
-                            contacts = project['contacts']
+                            contacts = project.get('contacts', [])
                             %>
                             <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                             % if url:
@@ -91,21 +93,27 @@
                             % end
                             % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
                             <td class="{{ maturity_map.get(maturity) }}"></td>
-                            <td>{{ description if description else 'N/A' }}</td>
-                            <td>{{ language }}</td>
+                            <td>{{ description }}</td>
+                            <td class="dt-center">{{ language }}</td>
                             <td>{{ proj_type }}</td>
-                            % if code['url']:
-                            <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code['type'] }}</a></td>
+                            % if 'url' in code:
+                            <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
                             % else:
-                            <td>{{ code['type'] if code['type'] else 'N/A' }}</td>
+                            <td>{{ code.get('type', '') }}</td>
                             % end
+                            <td class="dt-center">{{ loc }}</td>
+                            <td class="dt-center">
+                                % if doc:
+                                <a href="{{ doc }}">link</a>
+                                % end
+                            </td>
                             <td class="dt-center">
                                 % for tag in tags:
                                 <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
                                 % end
                             </td>
-                            <td>{{ license }}</td>
-                            <td>
+                            <td class="dt-center">{{ license }}</td>
+                            <td class="dt-center">
                                 % if paper_url:
                                 <a href="{{ paper_url }}">link</a>
                                 % end
@@ -121,12 +129,14 @@
             <tfoot>
                 <tr>
                     <th>Lab</th>
-                    <th>Project name</th>
-                    <th>Maturity Level</th>
+                    <th>Name</th>
+                    <th>Maturity</th>
                     <th>Description</th>
                     <th>Language</th>
                     <th>Type</th>
                     <th>Source code</th>
+                    <th>LOC</th>
+                    <th>Documentation</th>
                     <th>Tags</th>
                     <th>License</th>
                     <th>Paper</th>

@@ -5,7 +5,6 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/MVTIL
-      contacts:
       tags:
           - Database
           - Concurrency
@@ -17,7 +16,6 @@ projects:
       code:
           type: Lab Download
           url:  http://dcl.epfl.ch/site/nvram
-      contacts:
       tags:
           - NVRAM
           - Data Structures
@@ -32,7 +30,6 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/flodb
-      contacts:
       tags:
           - Key-Value Store
           - Server
@@ -44,8 +41,6 @@ projects:
       description:  Framework for Machine Learning on Android
       code:
           type: Private GitHub
-          url:  
-      contacts:
       tags:
           - Federated Learning
           - Android
@@ -58,7 +53,6 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/AggregaThor
-      contacts:
       tags:
           - Robust SGD
           - Distributed ML
@@ -71,10 +65,6 @@ projects:
 
     - name:         Robust RDMA
       description:  Better fault-tolerance and performance of consensus using RDMA
-      code:
-          type: 
-          url:  
-      contacts:
       tags:
           - RDMA
           - Consensus
@@ -88,8 +78,6 @@ projects:
       description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
       code:
           type: Private GitHub
-          url:  
-      contacts:
       tags:
           - Blockchain
           - Cryptocurrencies

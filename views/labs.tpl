@@ -28,7 +28,7 @@
 <body>
     <div align="center">
         <h1>Participating EPFL Laboratories</h1>
-        <a href="/projects/">View all projects</a>
+        <a href="/projects/">All projects</a>
         <table id="labs" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
