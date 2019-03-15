@@ -14,6 +14,7 @@
             var table = $('#projects').DataTable( {
                 "paging": false,
                 "scrollCollapse": true,
+                "scrollX": true,
                 "scrollY": "60vmin",
                 "dom": "Bfrtip",
                 "buttons": [
