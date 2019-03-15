@@ -2,6 +2,10 @@ projects:
 
     - name:         iprp
       description:  IP Parallel Redundancy Protocol
+      layman_desc: >
+          IPRP allows parallel transmission of data over a network for hard
+          real time applications with simply installing an app on both the
+          server and the client.
       url:          https://infoscience.epfl.ch/record/216985/files/07406725.pdf
       code:
           type: Lab GitHub
@@ -17,6 +21,10 @@ projects:
 
     - name:         commelec-api
       description:  API for the Commelec real-time microgrid framework
+      layman_desc: >
+          This project defines a message format, based on Cap'n Proto, for
+          encoding certain mathematical objects (i.e., real-valued symbolic
+          expressions, sets and set-valued functions) as sequences of bytes.
       code:
           type: Lab GitHub
           url:  https://github.com/LCA2-EPFL/commelec-api

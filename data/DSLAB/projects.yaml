@@ -2,6 +2,11 @@ projects:
 
     - name:         s2e
       description:  Platform for writing tools that analyze the properties and behavior of software systems
+      layman_desc: >
+          S²E is a platform for writing tools that analyze the properties and
+          behavior of software systems. S²E comes as a modular library that
+          gives virtual machines symbolic execution and program analysis
+          capabilities.
       url:          http://s2e.systems/
       code:
           type: Project GitHub
@@ -17,7 +22,10 @@ projects:
       maturity: 1
 
     - name:         ASAP
-      description:  Makes it possible to use powerful software protection mechanisms at a low performance overhead
+      description:  Low overhead software protection
+      layman_desc: >
+          Makes it possible to use powerful software protection mechanisms at a
+          low performance overhead.
       url:          http://dslab.epfl.ch/proj/asap/
       code:
           type: Lab GitHub
@@ -34,7 +42,10 @@ projects:
       maturity: 2
 
     - name:         Cloud 9
-      description:  Parallel symbolic execution engine that scales on shared-nothing clusters of commodity hardware
+      description:  Scalable symbolic execution
+      layman_desc: >
+          Parallel symbolic execution engine that scales on shared-nothing
+          clusters of commodity hardware.
       url:          http://cloud9.epfl.ch/
       code:
           type: Lab GitHub
@@ -49,7 +60,10 @@ projects:
       maturity: 2
 
     - name:         Dimmunix
-      description:  Enables general-purpose applications to defend themselves against deadlock bugs, i.e. avoid deadlocks that they previously encountered
+      description:  P{rotection against deadlock bugs
+      layman_desc: >
+          Enables general-purpose applications to defend themselves against
+          deadlock bugs, i.e. avoid deadlocks that they previously encountered.
       url:          http://dslab.epfl.ch/proj/dimmunix/
       code:
           type: Google Code
@@ -67,6 +81,13 @@ projects:
 
     - name:         Failure Sketching
       description:  Automated debugging technique
+      layman_desc: >
+          Failure sketching is an automated debugging technique that provides
+          developers with an explanation (“failure sketch”) of the root cause
+          of a failure that occurred in production. A failure sketch only
+          contains program statements that lead to the failure, and it clearly
+          shows the differences between failing and successful runs; these
+          differences guide developers to the root cause.
       url:          http://dslab.epfl.ch/proj/gist/
       code:
           type:     Lab GitHub

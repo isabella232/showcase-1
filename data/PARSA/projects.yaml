@@ -2,6 +2,11 @@ projects:
 
     - name:         CloudSuite
       description:  Benchmark suite for cloud services
+      layman_desc: >
+          CloudSuite is a benchmark suite for cloud services. The third release
+          consists of eight applications that have been selected based on their
+          popularity in today's datacenters. The benchmarks are based on
+          real-world software stacks and represent real-world setups.
       url:          http://cloudsuite.ch/
       code:
           type: Lab GitHub
@@ -21,19 +26,30 @@ projects:
 
     - name:         DCA
       description:  Architecture to prevent hardware side-channels
+      layman_desc: >
+          The defense-centric architecture project seeks designs for manycore
+          chips that enable partitionable resources to avoid side channels
+          through hardware.
       tags:
           - Architecture
           - Side-Channels
 
     - name:         ARMFlex
       description:  Emulation platform for software bugs and vulnerability detection
+      layman_desc: >
+          We provide a full-system ARM emulation platform on FPGA’s to allow
+          for zero-overhead hardware instrumentation to detect software bugs
+          and vulnerabilities.
       tags:
           - Emulator
           - FPGA
           - ARM
 
     - name:         QFlex
-      description:  Full-system cycle-accurate computer architecture simulator of multi-node computer systems
+      description:  Accurate computer architecture simulator
+      layman_desc: >
+          QFlex is a full-system cycle-accurate computer architecture simulator
+          of multi-node computer systems.
       url:          https://parsa-epfl.github.io/qflex/
       code:
           type: Lab GitHub

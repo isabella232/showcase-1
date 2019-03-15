@@ -2,6 +2,9 @@ projects:
 
     - name:         DeepFool
       description:  Simple algorithm to find the minimum adversarial perturbations in deep networks
+      layman_desc: >
+          DeepFool is a simple algorithm to find the minimum perturbations
+          needed in deep networks to change the outcome of its decision.
       code:
           type: Lab GitHub
           url:  https://github.com/LTS4/DeepFool
@@ -36,6 +39,10 @@ projects:
 
     - name:         Universal
       description:  Universal adversarial perturbations
+      layman_desc: >
+          Proposing a universal (image-agnostic) and very small perturbation
+          vector that causes natural images to be misclassified with high
+          probability in a deep neuronal network.
       url:          https://arxiv.org/pdf/1610.08401.pdf
       code:
           type: Lab GitHub
@@ -54,6 +61,9 @@ projects:
 
     - name:         SafeAI
       description:  Framework for attacking and defending deep neuronal networks
+      layman_desc: >
+          SafeArtificial Intelligence is a framework that allows testing out
+          different attacks and defenses on a neuronal network.
       code:
           type: Private GitHub
       contacts:

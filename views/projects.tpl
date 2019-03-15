@@ -45,6 +45,7 @@
         % else:
         <h1>{{ labs[selected_lab_id]['name'] }}</h1>
         <a href="/projects/">All projects</a>
+        &emsp;
         % end
         <a href="/labs/">List of labs</a>
         <table id="projects" class="display cell-border" style="width:100%">
@@ -54,6 +55,8 @@
                     <th>Name</th>
                     <th class="extra">Maturity</th>
                     <th>Description</th>
+                    <th class="extra">Technical description</th>
+                    <th class="extra">Layman description</th>
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
                     <th>Source code</th>
@@ -74,6 +77,8 @@
                             name = project['name']
                             maturity = project.get('maturity')
                             description = project.get('description', '')
+                            tech_desc = project.get('tech_desc', '')
+                            layman_desc = project.get('layman_desc', '')
                             language = project.get('language', '')
                             proj_type = project.get('type', '')
                             url = project.get('url')
@@ -94,6 +99,8 @@
                             % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
                             <td class="{{ maturity_map.get(maturity) }}"></td>
                             <td>{{ description }}</td>
+                            <td>{{ tech_desc }}</td>
+                            <td>{{ layman_desc }}</td>
                             <td class="dt-center">{{ language }}</td>
                             <td>{{ proj_type }}</td>
                             % if 'url' in code:
@@ -132,6 +139,8 @@
                     <th>Name</th>
                     <th>Maturity</th>
                     <th>Description</th>
+                    <th>Technical description</th>
+                    <th>Layman description</th>
                     <th>Language</th>
                     <th>Type</th>
                     <th>Source code</th>

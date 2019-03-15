@@ -25,6 +25,9 @@ projects:
 
     - name:         Inox
       description:  Constraint solver for Stainless
+      layman_desc: >
+          Inox can be used to prove constraints on methods in a program, to
+          attest the correctness of these parts.
       code:
           type: Lab GitHub
           url:  https://github.com/epfl-lara/inox

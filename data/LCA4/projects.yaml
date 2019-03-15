@@ -3,6 +3,10 @@ projects:
     - name:         Sidekick
       url:          http://sidekick.epfl.ch/
       description:  Real-time predictions of the success of Kickstarter campaigns
+      layman_desc: >
+          This website shows real-time predictions of the success of
+          Kickstarter campaigns by looking at the money raised over time and
+          how much coverage it gets on platforms like Twitter.
       tags:
           - Predictor
           - Data Mining
@@ -11,7 +15,7 @@ projects:
       maturity: 3
 
     - name:         Choix
-      description:  Python library that provides inference algorithms for models based on Luce's choice axiom
+      description:  Library that provides inference algorithms for models based on Luce's choice axiom
       code:
           type: Personal GitHub
           url:  https://github.com/lucasmaystre/choix

@@ -2,6 +2,9 @@ projects:
 
     - name:         ClaimChain
       description:  Prove your identity with regards to others
+      layman_desc: >
+          A decentralized public key distribution system with an emphasis on
+          privacy preservation.
       url:          https://claimchain.github.io/
       code:
           type: Project GitHub
@@ -20,6 +23,12 @@ projects:
 
     - name:         Lightnion
       description:  Anonymous communication in browsers via the Tor network
+      layman_desc: >
+          A Javascript library for browsers for anonymous communication via the
+          Tor network. The library connects to the Tor network to enable
+          websites to send and retrieve data anonymously (e.g. send sensitive
+          information without identifying the user) without requiring users to
+          install special software such as the Tor browser.
       code:
           type: Private GitHub
       tags:
@@ -32,6 +41,11 @@ projects:
 
     - name:         Trickster
       description:  Sophisticated attacks on Machine Learning models
+      layman_desc: >
+          Trickster allows to attack machine learning models where the attack
+          needs to be more sophisticated than simply adding some noise to an
+          image. One example is to evade an abuse detection model, for example,
+          social media bot detection, or a malware detector.
       code:
           type: Lab GitHub
           url:  https://github.com/spring-epfl/trickster
@@ -43,6 +57,10 @@ projects:
 
     - name:         Hippiepug
       description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
+      layman_desc: >
+          This library provides implementations of two cryptographic data
+          structures: fast traversal blockchain structure, and a verifiable
+          dictionary, implemented as a key-value Merkle tree.
       code:
           type: Project GitHub
           url:  https://github.com/spring-epfl/hippiepug

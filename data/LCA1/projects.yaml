@@ -2,6 +2,9 @@ projects:
 
     - name:         PriFi
       description:  Anonymous communication system
+      layman_desc: >
+          PriFi provides a network access mechanism for protecting members of
+          an organization who access the Internet while on-site.
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/prifi
@@ -21,6 +24,10 @@ projects:
 
     - name:         Unlynx
       description:  Privacy-preserving data sharing
+      layman_desc: >
+          Unlynx offers a series of independent protocols that when combined
+          offer a verifiably-secure and safe way to share sensitive data (e.g.,
+          medical data).
       code:
           type: Lab GitHub
           url:  https://github.com/lca1/unlynx
@@ -36,6 +43,11 @@ projects:
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
+      layman_desc: >
+          MedCo enables privacy-preserving cohort exploration by providing ways
+          of querying medical datasets with end-to-end encryption of queries,
+          data at rest, in transfer and during computation, all the while
+          guaranteeing differential privacy.
       url:          https://medco.epfl.ch/
       code:
           type: Lab GitHub
@@ -51,6 +63,10 @@ projects:
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
+      layman_desc: >
+          This project shares data from I2B2 in a privacy preserving, fully
+          encrypted way, so that hospitals can let researchers access their
+          patients data without risking to leak any private information.
       url:          https://github.com/JLRgithub/PDCi2b2/wiki
       code:
           type:     Personal GitHub

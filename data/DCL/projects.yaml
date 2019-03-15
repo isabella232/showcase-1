@@ -2,6 +2,9 @@ projects:
 
     - name:         MVTIL
       description:  Multiversion Timestamp Locking (MVTL), a new family of concurrency control algorithms
+      layman_desc: >
+          Improving performance of distributed databases by allowing read
+          accesses to lag behind the latest version of the data.
       code:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/MVTIL
@@ -13,6 +16,9 @@ projects:
 
     - name:         libNVRAM
       description:  Log-Free Concurrent Data Structures
+      layman_desc: >
+          Storing data structures in non-volatile RAM such that transient
+          failures don't corrupt the data.
       code:
           type: Lab Download
           url:  http://dcl.epfl.ch/site/nvram
@@ -26,6 +32,9 @@ projects:
 
     - name:         FloDB
       description:  Unlocking Memory in Persistent Key-Value Stores
+      layman_desc: >
+          High performance key-value store for servers with high amount of RAM
+          and lots of CPUs.
       url:          http://dcl.epfl.ch/site/flodb
       code:
           type: Lab GitHub
@@ -38,7 +47,9 @@ projects:
       maturity: 1
 
     - name:         MobNet
-      description:  Framework for Machine Learning on Android
+      description:  Machine Learning on Android
+      layman_desc: >
+          MobNet is a framework for machine learning on android devices.
       code:
           type: Private GitHub
       tags:
@@ -50,6 +61,13 @@ projects:
 
     - name:         AggregaThor
       description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
+      tech_desc: >
+          Framework built over TensorFlow implementing state-of-the-art
+          Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
+          Modular approach allows most of its components to be reused in other
+          projects. Unreliable communication channels are supported, providing
+          a performance speed-up over standard TensorFlow in saturated
+          networks.
       code:
           type: Lab GitHub
           url:  https://github.com/LPD-EPFL/AggregaThor
@@ -65,6 +83,12 @@ projects:
 
     - name:         Robust RDMA
       description:  Better fault-tolerance and performance of consensus using RDMA
+      tech_desc: >
+          Leveraging Remote Direct Memory Access (RDMA) to improve the
+          fault-tolerance and performance of consensus, compared to existing
+          protocols. In some cases, RDMA allows us to circumvent existing
+          theoretical lower bounds (solving Byzantine consensus with 2f+1
+          replicas, for instance).
       tags:
           - RDMA
           - Consensus
@@ -76,6 +100,13 @@ projects:
 
     - name:         AT2
       description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
+      tech_desc: >
+          We replace consensus with a lightweight building block -- a
+          broadcast-based primitive -- to obtain a full-fledged asset transfer
+          system (cryptocurrency). This system is more efficient and more
+          scalable compared with Bitcoin and consensus-based solutions. AT2 is
+          the first system to bypass consensus algorithms for implementing
+          asset transfers.
       code:
           type: Private GitHub
       tags:

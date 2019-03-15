@@ -1,7 +1,11 @@
 projects:
 
     - name:         FoodRepo
-      description:  Open-access database on barcoded food products sold in Switzerland
+      description:  Database of barcoded food products
+      layman_desc: >
+          Food Repo is an open access database on information about barcoded
+          food products sold in Switzerland. Accessible through an open API, it
+          is the largest open data source on Swiss products.
       url:          https://www.foodrepo.org/
       code:
           type: Lab GitHub

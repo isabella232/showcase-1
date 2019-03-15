@@ -2,6 +2,10 @@ projects:
 
     - name:         PriBot
       description:  Automated Analysis of Privacy Policies
+      layman_desc: >
+          Pribot uses an automated framework for privacy policy analysis
+          (Polisis). It enables scalable, dynamic, and multi-dimensional
+          queries on natural language privacy policies.
       url:          https://pribot.org/
       code:
           type: Private GitHub
@@ -19,6 +23,9 @@ projects:
 
     - name:         PrivySeal
       description:  Privacy Assistant for Installing Cloud Apps
+      layman_desc: >
+          PrivySeal provides a personalized set of insights about your data on
+          google drive before you install other apps.
       url:          https://privyseal.epfl.ch/#!/
       code:
           type: Private GitHub
@@ -34,6 +41,9 @@ projects:
 
     - name:         Artificial-Intelligence Drive
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers
+      layman_desc: >
+          The platform aims at accelerating the process of building Artificial
+          Intelligence classifiers for image and text classification.
       code:
           type: Private GitHub
       tags:
@@ -45,6 +55,10 @@ projects:
 
     - name:         SciLens
       description:  Helper for science news evaluation
+      layman_desc: >
+          A platform that automatically generates indicators using weakly
+          supervised learning, effectively helping non-experts to evaluate more
+          accurately the quality of a science news article.
       code:
           type: Private GitHub
       tags:
