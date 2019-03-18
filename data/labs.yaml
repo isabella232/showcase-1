@@ -62,13 +62,6 @@ labs:
             - name:     Nicolas Voirol
               email:    nicolas.voirol@epfl.ch
 
-    LASEC:
-        name:   Security and Cryptography Laboratory
-        prof:
-            name:   Serge Vaudenay
-            email:  serge.vaudenay@epfl.ch
-        contacts:
-
     LCA1:
         name:   Laboratory for Security and Privacy
         prof:
