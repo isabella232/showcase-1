@@ -3,6 +3,11 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css"/>
+            % if selected_lab_id is None:
+            <title>C4DT showcase projects</title>
+            % else:
+            <title>C4DT showcase - {{ labs[selected_lab_id]['name'] }}</title>
+            % end
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
@@ -10,11 +15,6 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
     <script type="text/javascript" class="init">
-            % if selected_lab_id is None:
-            <title>C4DT showcase projects</title>
-            % else:
-            <title>C4DT showcase - {{ labs[selected_lab_id]['name'] }}</title>
-            % end
 
         $(document).ready(function() {
             var table = $('#projects').DataTable( {
