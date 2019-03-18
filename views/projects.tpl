@@ -10,6 +10,12 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
     <script type="text/javascript" class="init">
+            % if selected_lab_id is None:
+            <title>C4DT showcase projects</title>
+            % else:
+            <title>C4DT showcase - {{ labs[selected_lab_id]['name'] }}</title>
+            % end
+
         $(document).ready(function() {
             var table = $('#projects').DataTable( {
                 "paging": false,

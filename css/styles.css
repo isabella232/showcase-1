@@ -28,15 +28,15 @@ table.dataTable tbody tr td {
 }
 
 table.dataTable tbody tr td.showcase {
-    background-color: #f53F06;
+    background-color: #ffcccc;
 }
 
 table.dataTable tbody tr td.incubator {
-    background-color: #EAF011;
+    background-color: #ffffcc;
 }
 
 table.dataTable tbody tr td.market {
-    background-color: #5CF011;
+    background-color: #ccffcc;
 }
 
 table.dataTable tbody tr td.proj_name  {

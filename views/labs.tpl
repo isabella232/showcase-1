@@ -8,6 +8,7 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.colVis.min.js"></script>
     <script type="text/javascript" class="init">
+    <title>C4DT showcase labs</title>
         $(document).ready(function() {
             var table = $('#labs').DataTable( {
                 "paging": false,
