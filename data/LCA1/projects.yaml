@@ -40,6 +40,11 @@ projects:
       type: Application
       license:  non-commercial
       maturity: 2
+      contacts:
+          - name:   David Froelicher
+            email:  david.froelicher@epfl.ch
+          - name:   Joao de Sá
+            email:  joao.gomesdesaesousa@epfl.ch
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
@@ -60,6 +65,9 @@ projects:
       type: Application
       license:  non-commercial
       maturity: 2
+      contacts:
+          - name:   Mickaël Misbach
+            email:  mickael.misbach@epfl.ch
 
     - name:         Drynx
       description:  Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
@@ -81,6 +89,11 @@ projects:
       type: Application
       license:  non-commercial
       maturity: 2
+      contacts:
+          - name:   David Froelicher
+            email:  david.froelicher@epfl.ch
+          - name:   Joao de Sá
+            email:  joao.gomesdesaesousa@epfl.ch
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
