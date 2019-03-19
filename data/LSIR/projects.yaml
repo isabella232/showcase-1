@@ -37,7 +37,7 @@ projects:
       language: Javascript, Python
       type: Application
       paper_url:    https://infoscience.epfl.ch/record/218003
-      maturity: 3
+      maturity: 2
 
     - name:         Artificial-Intelligence Drive
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers
