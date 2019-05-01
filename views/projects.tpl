@@ -21,7 +21,7 @@
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollX": true,
-                "scrollY": "60vmin",
+                "scrollY": "80vh",
                 "dom": "Bfrtip",
                 "buttons": [
                     { text: "Columns", extend: 'colvis' },
