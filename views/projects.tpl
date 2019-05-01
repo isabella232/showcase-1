@@ -58,7 +58,8 @@
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
-                    <th>Lab</th>
+                    <th>Professor</th>
+                    <th class="extra">Lab</th>
                     <th>Name</th>
                     <th class="extra">Maturity</th>
                     <th>Description</th>
@@ -81,6 +82,7 @@
                         % for project in lab['projects']:
                         <tr>
                             <%
+                            prof = lab['prof']
                             name = project['name']
                             maturity = project.get('maturity')
                             description = project.get('description', '')
@@ -97,6 +99,9 @@
                             paper_url = project.get('paper_url')
                             contacts = project.get('contacts', [])
                             %>
+                            <td class="dt-nowrap">
+                                % include('contacts.tpl', contacts=[prof])
+                            </td>
                             <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                             % if url:
                             <td class="proj_name dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
@@ -142,6 +147,7 @@
             </tbody>
             <tfoot>
                 <tr>
+                    <th>Professor</th>
                     <th>Lab</th>
                     <th>Name</th>
                     <th>Maturity</th>
