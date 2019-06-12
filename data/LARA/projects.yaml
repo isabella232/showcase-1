@@ -2,10 +2,17 @@ projects:
 
     - name:         Stainless
       description:  Verification framework for a subset of the Scala programming language
+      layman_desc: >
+          Stainless is a tool for verifying Scala programs developed by the
+          LARA. It can verify that your program is correct for all inputs, it
+          can report inputs for which your program fails when they exist, and
+          it can prove that functions do not loop. As an example application,
+          Stainless can perform verification of Smart Contracts.
+      url:  http://stainless.epfl.ch/
       code:
           type: Lab GitHub
           url:  https://github.com/epfl-lara/stainless
-      doc:  http://stainless.epfl.ch/
+      doc:  https://epfl-lara.github.io/stainless/installation.html
       contacts:
           - name:   Viktor Kunčak
             email:  viktor.kuncak@epfl.ch
