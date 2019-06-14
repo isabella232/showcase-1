@@ -66,8 +66,10 @@ projects:
     - name:         Omniledger
       description:  Ethereum-like blockchain implementation based on skipchains
       layman_desc: >
-          High performance blockchain allowing pre-compiled smart contracts, as
-          well as Ethereum smart contracts.
+          OmniLedger is a high performance blockchain solution developed by the
+          DEDIS-lab. It supports pre-compiled smart contracts, as well as
+          Ethereum smart contracts. Combined with Calypso, it allows management
+          of access to secure and private data in a fully audited way.
       code:
           type: Lab GitHub
           url:  http://github.com/dedis/cothority/tree/master/omniledger
@@ -81,6 +83,13 @@ projects:
           - Proof-of-consensus
       language: GoLang
       type: Application, Library
+      papers:
+          - title:  'Enhancing Bitcoin Security and Performance  with Strong Consistency via Collective Signing'
+            url:    https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf
+          - title:  'OmniLedger: A Secure, Scale-Out, Decentralized Ledger via Sharding'
+            url:    https://eprint.iacr.org/2017/406.pdf
+          - title:  'Verifiable Management of Private Data under Byzantine Failures'
+            url:    https://eprint.iacr.org/2018/209.pdf
       license:  AGPLv3
       maturity: 2
 

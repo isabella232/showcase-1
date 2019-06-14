@@ -26,7 +26,13 @@ projects:
           - Ethereum
       language: Scala
       type: Library, Application
-      paper_url:    http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+      papers:
+          - title:  'Satisfiability Modulo Recursive Programs'
+            url:    http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+          - title:  'Counter-Example Complete Verification for Higher-Order Functions'
+            url:    http://lara.epfl.ch/~kuncak/papers/VoirolETAL15CounterExampleCompleteVerificationHigherOrderFunctions.pdf
+          - title:  'System FR as Foundations for Stainless'
+            url:    https://arxiv.org/pdf/1904.03482.pdf
       license:  AGPLv3
       maturity: 2
 

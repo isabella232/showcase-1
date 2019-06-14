@@ -18,7 +18,9 @@ projects:
       language: MatLab, Python
       type: Application
       type: Application
-      paper_url:    https://arxiv.org/abs/1511.04599
+      papers:
+          - title:  'DeepFool: a simple and accurate method to fool deep neural networks'
+            url:    https://arxiv.org/abs/1511.04599
       maturity: 2
 
     - name:         ManiFool
@@ -34,7 +36,9 @@ projects:
           - Deep Networks
       language: Python
       type: Application
-      paper_url:    https://arxiv.org/abs/1711.09115
+      papers:
+          - title:  'Geometric robustness of deep networks: analysis and improvement'
+            url:    https://arxiv.org/abs/1711.09115
       maturity: 2
 
     - name:         Universal
@@ -56,7 +60,9 @@ projects:
           - Perturbations
       language: MatLab, Python
       type: Application
-      paper_url:    http://arxiv.org/pdf/1610.08401
+      papers:
+          - title:  'Universal adversarial perturbations'
+            url:    https://arxiv.org/pdf/1610.08401.pdf
       maturity: 1
 
     - name:         SafeAI

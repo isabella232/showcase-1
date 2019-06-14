@@ -8,7 +8,9 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/prifi
-      paper_url: https://arxiv.org/pdf/1710.10237
+      papers:
+          - title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
+            url:    https://arxiv.org/pdf/1710.10237.pdf
       lines_of_code:    16000
       contacts:
           - name:   Ludovic Barman
@@ -32,7 +34,9 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/lca1/unlynx
-      paper_url: https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
+      papers:
+          - title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
+            url:    https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
       lines_of_code:    11000
       tags:
           - Privacy Preserving
@@ -73,7 +77,7 @@ projects:
 
     - name:         Drynx
       description:  Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
-      tech_desc: >
+      layman_desc: >
           Drynx is a library for simulating a privacy-preserving and verifiable 
           data sharing/querying tool. It offers a series of independent 
           protocols that when combined offer a verifiably-secure and safe 
@@ -83,7 +87,9 @@ projects:
           type: Lab GitHub
           url:  https://github.com/lca1/drynx
       lines_of_code:    16000
-      paper_url: https://arxiv.org/pdf/1902.03785
+      papers:
+          - title:  'Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets'
+            url:    https://arxiv.org/pdf/1902.03785.pdf
       tags:
           - Privacy Preserving
           - Medical Data

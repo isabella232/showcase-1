@@ -41,7 +41,9 @@ projects:
           - Attack Surface
       language: Python
       type: Application
-      paper_url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
+      papers:
+          - title:  'Block Oriented Programming: Automating Data-Only attacks'
+            url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
       maturity: 2
 
     - name:         CFIXX

@@ -72,7 +72,7 @@
                     <th class="extra">Documentation</th>
                     <th>Tags</th>
                     <th class="extra">License</th>
-                    <th class="extra">Paper</th>
+                    <th class="extra">Papers</th>
                     <th>Contact</th>
                 </tr>
             </thead>
@@ -96,7 +96,7 @@
                             doc = project.get('doc')
                             tags = project.get('tags', [])
                             license = project.get('license', '')
-                            paper_url = project.get('paper_url')
+                            papers = project.get('papers', [])
                             contacts = project.get('contacts', [])
                             %>
                             <td class="dt-nowrap">
@@ -133,9 +133,7 @@
                             </td>
                             <td class="dt-center">{{ license }}</td>
                             <td class="dt-center">
-                                % if paper_url:
-                                <a href="{{ paper_url }}">link</a>
-                                % end
+                                % include('papers.tpl', papers=papers)
                             </td>
                             <td class="dt-nowrap">
                                 % include('contacts.tpl', contacts=contacts)
@@ -161,7 +159,7 @@
                     <th>Documentation</th>
                     <th>Tags</th>
                     <th>License</th>
-                    <th>Paper</th>
+                    <th>Papers</th>
                     <th>Contact</th>
                 </tr>
             </tfoot>

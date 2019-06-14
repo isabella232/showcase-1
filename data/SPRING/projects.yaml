@@ -17,7 +17,9 @@ projects:
           - Privacy
       language: Python
       type: Library
-      paper_url:    https://arxiv.org/abs/1707.06279
+      papers:
+          - title:  'ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging'
+            url:    https://arxiv.org/abs/1707.06279
       license:  MIT
       maturity: 1
 

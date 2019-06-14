@@ -17,7 +17,9 @@ projects:
           - Natural Language
       language: Python, Javascript
       type: Application
-      paper_url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
+      papers:
+          - title:  'Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning'
+            url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
       license:  commercial
       maturity: 1
 
@@ -36,7 +38,9 @@ projects:
           - Google Drive
       language: Javascript, Python
       type: Application
-      paper_url:    https://infoscience.epfl.ch/record/218003
+      papers:
+          - title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
+            url:    https://infoscience.epfl.ch/record/218003
       maturity: 2
 
     - name:         Artificial-Intelligence Drive

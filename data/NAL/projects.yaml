@@ -19,7 +19,9 @@ projects:
           - Network
       language: C
       type: Application, Library
-      paper_url:    https://vignat.github.io/vignat-paper.pdf
+      papers:
+          - title:  'A Formally Verified NAT'
+            url:    https://vignat.github.io/vignat-paper.pdf
       maturity: 3
 
     - name:         LINE
