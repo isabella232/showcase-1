@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 import codecs
-import glob
 import os
 
 import bottle
 import yaml
 
-DATA_PATH = 'data'
+ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(ROOT_PATH, 'data')
 LABS_FILENAME = 'labs.yaml'
 PROJECTS_FILENAME = 'projects.yaml'
 
