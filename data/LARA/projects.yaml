@@ -35,6 +35,18 @@ projects:
             url:    https://arxiv.org/pdf/1904.03482.pdf
       license:  AGPLv3
       maturity: 2
+      in_incubator: true
+      c4dt_contact:
+          name:  Christian Grigis
+          email: christian.grigis@epfl.ch
+      other_info:
+          - type:  Video
+            title: Tools for Verified Scala at Scala Days 2017
+            url:   https://www.youtube.com/watch?v=d4VeFa0z_Lo
+      demo:
+          title: Stainless-OmniLedger demonstrator
+          url:   https://demo.c4dt.org/stainless
+          code:  https://github.com/c4dt/service-stainless
 
     - name:         Inox
       description:  Constraint solver for Stainless

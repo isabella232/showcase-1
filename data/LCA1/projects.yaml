@@ -103,6 +103,10 @@ projects:
             email:  david.froelicher@epfl.ch
           - name:   Joao de Sá
             email:  joao.gomesdesaesousa@epfl.ch
+      in_incubator: true
+      c4dt_contact:
+          name:  Linus Gasser
+          email: linus.gasser@epfl.ch
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
