@@ -1,28 +1,8 @@
 #!/usr/bin/env python3
 
-import codecs
-import os
-
 import bottle
-import yaml
 
-ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(ROOT_PATH, 'data')
-LABS_FILENAME = 'labs.yaml'
-PROJECTS_FILENAME = 'projects.yaml'
-
-def load_data():
-    with codecs.open(os.path.join(DATA_PATH, LABS_FILENAME),
-            encoding='utf-8') as f:
-        labs = yaml.load(f)['labs']
-
-    for lab_id, lab in labs.items():
-        with codecs.open(os.path.join(DATA_PATH, lab_id, PROJECTS_FILENAME),
-                encoding='utf-8') as f:
-            projects = yaml.load(f)['projects']
-        lab['projects'] = projects
-
-    return labs
+import data
 
 @bottle.route('/robots.txt')
 def server_robots():
@@ -39,13 +19,13 @@ def index():
 @bottle.route('/labs/')
 @bottle.view('labs')
 def labs():
-    return dict(labs=load_data())
+    return dict(labs=data.load())
 
 @bottle.route('/projects/')
 @bottle.route('/projects/<lab_id>')
 @bottle.view('projects')
 def projects(lab_id=None):
-    labs = load_data()
+    labs = data.load()
     if lab_id and lab_id not in labs:
         bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
 
