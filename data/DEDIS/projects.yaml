@@ -84,11 +84,11 @@ projects:
       language: GoLang
       type: Application, Library
       papers:
-          - title:  'Enhancing Bitcoin Security and Performance  with Strong Consistency via Collective Signing'
+          - title:  'Enhancing Bitcoin performance'
             url:    https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf
-          - title:  'OmniLedger: A Secure, Scale-Out, Decentralized Ledger via Sharding'
+          - title:  'OmniLedger - Scaling out Blockchains'
             url:    https://eprint.iacr.org/2017/406.pdf
-          - title:  'Verifiable Management of Private Data under Byzantine Failures'
+          - title:  'Calypso - Auditable Sharing of Private Data over Blockchains'
             url:    https://eprint.iacr.org/2018/209.pdf
       license:  AGPLv3
       maturity: 2
