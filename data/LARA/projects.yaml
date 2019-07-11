@@ -43,6 +43,9 @@ projects:
           - type:  Video
             title: Tools for Verified Scala at Scala Days 2017
             url:   https://www.youtube.com/watch?v=d4VeFa0z_Lo
+          - type:  Video
+            title: Formal verification of Scala programs with Stainless at Typelevel Summit 2019
+            url:   https://www.youtube.com/watch?v=K1ZwpumSHCc
       demo:
           title: Stainless-OmniLedger demonstrator
           url:   https://demo.c4dt.org/stainless
