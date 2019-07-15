@@ -63,7 +63,7 @@ projects:
       license:  AGPLv2
       maturity: 2
 
-    - name:         Omniledger
+    - name:         OmniLedger
       description:  Ethereum-like blockchain implementation based on skipchains
       layman_desc: >
           OmniLedger is a high performance blockchain solution developed by the
