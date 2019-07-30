@@ -16,6 +16,8 @@ projects:
       language: C++
       type: Application
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         FASA
       description:  Fast, Accurate and Size-Aware Satient Object Detection
@@ -32,6 +34,8 @@ projects:
           - Object Detection
       type: Application
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Image Completion
       description:  Complete an image whose 99% pixels are randomly missing
@@ -50,6 +54,8 @@ projects:
       language: MatLab
       type: Application
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         IAPBWC
       description:  Improved aesthetic scores
@@ -65,3 +71,5 @@ projects:
       language: MatLab
       type: Application
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29

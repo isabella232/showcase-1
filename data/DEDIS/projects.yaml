@@ -21,6 +21,7 @@ projects:
       type: Application
       license:  AGPLv2
       maturity: 2
+      added: 2019-03-18
 
     - name:         Kyber
       description:  Cryptographic library
@@ -41,6 +42,7 @@ projects:
       type: Library
       license:  MPL 2.0
       maturity: 3
+      added: 2019-03-18
 
     - name:         Personhood.online
       description:  Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
@@ -62,6 +64,7 @@ projects:
       type: Application
       license:  AGPLv2
       maturity: 2
+      added: 2019-03-18
 
     - name:         OmniLedger
       description:  Ethereum-like blockchain implementation based on skipchains
@@ -107,6 +110,7 @@ projects:
           title: OmniLedger access control
           url:   https://demo.c4dt.org/omniledger
           code:  https://github.com/c4dt/omniledger
+      added: 2019-03-18
 
     - name:         Onet
       description:  Communication protocols
@@ -130,6 +134,7 @@ projects:
       type: Library
       license:  AGPLv2
       maturity: 2
+      added: 2019-03-18
 
     - name:         E-voting
       description:  E-voting using a blockchain
@@ -153,6 +158,7 @@ projects:
       type: Application
       license:  AGPLv2
       maturity: 2
+      added: 2019-03-18
 
     - name:         DRand
       description:  Publicly verifiable randomness
@@ -175,6 +181,7 @@ projects:
       type: Application
       license:  MIT
       maturity: 2
+      added: 2019-03-18
 
     - name:         DEDIS / protobuf
       description:  Protobuf v2 implementation
@@ -192,6 +199,7 @@ projects:
       type: Library
       license:  GPLv2
       maturity: 2
+      added: 2019-03-18
 
     - name:         Crux
       description:  Locality-preserving publishing service
@@ -214,6 +222,7 @@ projects:
       type: Application
       license:  AGPLv2
       maturity: 1
+      added: 2019-03-18
 
     - name:         PeerDoc
       description:  Editing documents in a distributed way
@@ -231,6 +240,7 @@ projects:
       language: GoLang
       type: Application
       maturity: 1
+      added: 2019-03-18
 
     - name:         Purbs
       description:  Metadata leakage prevention for encrypted communication and storage
@@ -249,6 +259,7 @@ projects:
           - Data In Transit
       type: Library
       maturity: 1
+      added: 2019-03-18
 
     - name:         Slingshot
       description:  Scanning incoming emails for infected attachments
@@ -261,3 +272,23 @@ projects:
           - Attack
       type: Application
       maturity: 2
+      added: 2019-03-18
+
+    - name: Threshold Logical Clocks
+      description: Solving the consensus problem in a new way by creating a global clock
+      url: https://arxiv.org/abs/1907.07010
+      code:
+        type: Lab GitHub
+        url: https://github.com/dedis/tlc
+        latest: 2019-07-22
+      contacts:
+        - name: Bryan Ford
+          email: bryan.ford@epfl.ch
+      tags:
+        - Byzantine Fault Tolerance
+        - Consensus
+        - Global clocks
+      type:
+        - Application
+      maturity: 1
+      added: 2019-07-26

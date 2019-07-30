@@ -13,15 +13,20 @@ projects:
           - Machine Learning
       type: Application
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Choix
       description:  Library that provides inference algorithms for models based on Luce's choice axiom
       code:
           type: Personal GitHub
           url:  https://github.com/lucasmaystre/choix
+          latest: 2019-07-06
       tags:
           - Data Mining
           - Inference
       language: Python
       type: Library
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29

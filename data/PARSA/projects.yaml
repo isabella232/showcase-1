@@ -11,6 +11,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/parsa-epfl/cloudsuite
+          latest: 2019-03-17
       doc: http://cloudsuite.ch/
       contacts:
           - name:   Hossein Ajallooiean
@@ -25,6 +26,8 @@ projects:
             url:    https://dl.acm.org/citation.cfm?id=2150982
       license:  CloudSuite, others
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         DCA
       description:  Architecture to prevent hardware side-channels
@@ -35,6 +38,8 @@ projects:
       tags:
           - Architecture
           - Side-Channels
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         ARMFlex
       description:  Emulation platform for software bugs and vulnerability detection
@@ -46,6 +51,8 @@ projects:
           - Emulator
           - FPGA
           - ARM
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         QFlex
       description:  Accurate computer architecture simulator
@@ -56,6 +63,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/parsa-epfl/qflex
+          latest: 2019-02-26
       lines_of_code:    'Flexus: 50000, Qemu: 100000'
       contacts:
           - name:   Hossein Ajallooiean
@@ -72,3 +80,5 @@ projects:
       notes: >
           Some issues with regard to Oracle licenses
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29

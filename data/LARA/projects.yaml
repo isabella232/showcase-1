@@ -12,6 +12,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/epfl-lara/stainless
+          latest: 2019-07-25
       doc:  https://epfl-lara.github.io/stainless/installation.html
       contacts:
           - name:   Viktor Kunčak
@@ -50,6 +51,8 @@ projects:
           title: Stainless-OmniLedger demonstrator
           url:   https://demo.c4dt.org/stainless
           code:  https://github.com/c4dt/service-stainless
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Inox
       description:  Constraint solver for Stainless
@@ -75,3 +78,5 @@ projects:
       notes: >
            Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29

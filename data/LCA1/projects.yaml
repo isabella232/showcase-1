@@ -1,4 +1,26 @@
 projects:
+    - name: LattiGo
+      description: CRT accelerated lattice-based cryptography library in Golang
+      tech_desc: >
+        toolbox of lattice-based cryptographic primitives for Go. The library
+        is still at an experimental stage and should be used for research
+        purposes only.
+      code:
+        type: Lab GitHub
+        url: https://github.com/lca1/lattigo
+        latest: 2019-07-26
+      contacts:
+        - name: Jean-Philippe Bossuat
+          email: jean-philippe.bossuat@epfl.ch
+      tags:
+        - Cryptography
+        - Lattice Based Crypto
+      language: GoLang
+      type: Library
+      license: Apache License v2
+      maturity: 0
+      added: 2019-08-15
+      updated: 2019-07-29
 
     - name:         PriFi
       description:  Anonymous communication system
@@ -8,6 +30,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/prifi
+          latest: 2019-07-01
       papers:
           - title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
             url:    https://arxiv.org/pdf/1710.10237.pdf
@@ -24,6 +47,8 @@ projects:
       type: Application, Library
       license:  AGPLv3
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Unlynx
       description:  Privacy-preserving data sharing
@@ -34,6 +59,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/lca1/unlynx
+          latest: 2019-04-30
       papers:
           - title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
             url:    https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
@@ -51,6 +77,8 @@ projects:
             email:  david.froelicher@epfl.ch
           - name:   Joao de Sá
             email:  joao.gomesdesaesousa@epfl.ch
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Medco
       description:  Privacy-preserving cohort exploration
@@ -63,6 +91,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://medco.epfl.ch/software/
+          latest: 2019-05-02
       lines_of_code:    16000
       tags:
           - Privacy Preserving
@@ -74,6 +103,8 @@ projects:
       contacts:
           - name:   Mickaël Misbach
             email:  mickael.misbach@epfl.ch
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Drynx
       description:  Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
@@ -86,6 +117,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/lca1/drynx
+          latest: 2019-07-10
       lines_of_code:    16000
       papers:
           - title:  'Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets'
@@ -107,6 +139,8 @@ projects:
       c4dt_contact:
           name:  Linus Gasser
           email: linus.gasser@epfl.ch
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         PDCi2b2
       description:  Private data characterization for i2b2
@@ -118,6 +152,7 @@ projects:
       code:
           type:     Personal GitHub
           url:      https://github.com/JLRgithub/PDCi2b2
+          latest: 2018-02-12
       lines_of_code:    5000 - 10000
       tags:
           - i2b2
@@ -125,3 +160,5 @@ projects:
           - Privacy Preserving
       type: Application
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29

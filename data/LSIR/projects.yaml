@@ -22,6 +22,8 @@ projects:
             url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
       license:  commercial
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         PrivySeal
       description:  Privacy Assistant for Installing Cloud Apps
@@ -42,6 +44,8 @@ projects:
           - title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
             url:    https://infoscience.epfl.ch/record/218003
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Artificial-Intelligence Drive
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers
@@ -56,6 +60,8 @@ projects:
           - Artificial Intelligence
       type: Application
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         SciLens
       description:  Helper for science news evaluation
@@ -71,3 +77,5 @@ projects:
           - Natural Language
       type: Application
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29

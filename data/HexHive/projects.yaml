@@ -20,6 +20,7 @@ projects:
       language: Python
       type: Application
       maturity: 2
+      added: 2019-03-18
 
     - name:         BOPC
       description:  Block Oriented Programming Compiler
@@ -45,6 +46,7 @@ projects:
           - title:  'Block Oriented Programming: Automating Data-Only attacks'
             url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
       maturity: 2
+      added: 2019-03-18
 
     - name:         CFIXX
       description:  Protection for C++ internal code pointers
@@ -64,6 +66,7 @@ projects:
       language: C++
       type: Application
       maturity: 1
+      added: 2019-03-18
 
     - name:         HexType
       description:  Efficient detection of Type Confusion Errors for C++
@@ -85,3 +88,4 @@ projects:
       language: C++
       type: Application
       maturity: 2
+      added: 2019-03-18

@@ -16,3 +16,5 @@ projects:
           - API
           - Barcode
       language: Javascript
+      added: 2019-03-18
+      updated: 2019-07-29

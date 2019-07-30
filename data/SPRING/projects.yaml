@@ -9,6 +9,7 @@ projects:
       code:
           type: Project GitHub
           url:  https://github.com/claimchain/claimchain-simulations
+          latest: 2018-10-13
       contacts:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
@@ -22,6 +23,8 @@ projects:
             url:    https://arxiv.org/abs/1707.06279
       license:  MIT
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Lightnion
       description:  Anonymous communication in browsers via the Tor network
@@ -32,7 +35,9 @@ projects:
           information without identifying the user) without requiring users to
           install special software such as the Tor browser.
       code:
-          type: Private GitHub
+          type: Lab GitHub
+          url: https://github.com/spring-epfl/lightnion
+          latest: 2019-07-09
       tags:
           - Tor
           - Privacy
@@ -40,6 +45,8 @@ projects:
           - Javascript
       type: Library
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Trickster
       description:  Sophisticated attacks on Machine Learning models
@@ -51,11 +58,14 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/spring-epfl/trickster
+          latest: 2019-04-18
       tags:
           - Machine Learning
           - Attack
       type: Library
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Hippiepug
       description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
@@ -66,6 +76,7 @@ projects:
       code:
           type: Project GitHub
           url:  https://github.com/spring-epfl/hippiepug
+          latest: 2018-04-28
       contacts:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
@@ -75,3 +86,22 @@ projects:
       type: Library
       license:  MIT
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
+
+    - name: MCSAuditing
+      description: Evaluation code for mobile crowdsourcing privacy
+      tech_desc:  This tool implements the evaluation framework described in the paper
+      code:
+        type: Lab GitHub
+        url: https://github.com/spring-epfl/MCSAuditing
+        latest: 2019-05-28
+      tags:
+        - Location Privacy
+        - Privacy
+      language: Python
+      type: Application
+      license: GPL-v3
+      maturity: 1
+      added: 2019-07-30
+      updated: 2019-07-30
