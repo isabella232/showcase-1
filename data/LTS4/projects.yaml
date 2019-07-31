@@ -8,6 +8,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LTS4/DeepFool
+          latest: 2018-09-07
       contacts:
           - name:   Seyed Moosavi
             email:  seyed.moosavi@epfl.ch
@@ -22,12 +23,15 @@ projects:
           - title:  'DeepFool: a simple and accurate method to fool deep neural networks'
             url:    https://arxiv.org/abs/1511.04599
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         ManiFool
       description:  Algorithm for evaluating the invariance properties of deep networks
       code:
           type: Personal GitHub
           url:  https://github.com/moosavism/ManiFool
+          latest: 2018-01-24
       contacts:
           - name:   Seyed Moosavi
             email:  seyed.moosavi@epfl.ch
@@ -40,6 +44,8 @@ projects:
           - title:  'Geometric robustness of deep networks: analysis and improvement'
             url:    https://arxiv.org/abs/1711.09115
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         Universal
       description:  Universal adversarial perturbations
@@ -51,6 +57,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LTS4/universal
+          latest: 2017-10-23
       contacts:
           - name:   Seyed Moosavi
             email:  seyed.moosavi@epfl.ch
@@ -64,6 +71,8 @@ projects:
           - title:  'Universal adversarial perturbations'
             url:    https://arxiv.org/pdf/1610.08401.pdf
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         SafeAI
       description:  Framework for attacking and defending deep neuronal networks
@@ -80,3 +89,5 @@ projects:
           - Deep Networks
       type: Application
       maturity: 1
+      added: 2019-03-18
+      updated: 2019-07-29

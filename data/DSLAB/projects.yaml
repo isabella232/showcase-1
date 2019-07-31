@@ -1,5 +1,83 @@
 projects:
 
+    - name: Vigor
+      description: A Formally Verified Performant NAT
+      tech_desc: >
+        We present a NAT written in C and proven to be semantically correct according to RFC 3022,
+        as well as crash-free and memory-safe. There exists a lot of recent work on network
+        verification, but it mostly assumes models of network functions and proves properties
+        specific to network configuration, such as reachability and absence of loops. Our proof
+        applies directly to the C code of a network function, and it demonstrates the absence
+        of implementation bugs.
+      url: https://vignat.github.io/
+      code:
+        type: Project Github
+        url: https://github.com/vignat/vignat
+        latest: 2018-02-19
+      contacts:
+        - name: Arseniy Zaostrovnykh
+          email: arseniy.zaostrovnykh@epfl.ch
+      tags:
+        - NAT
+        - Verified Softwawre
+      type: Application
+      maturity: 2
+      added: 2019-07-26
+
+    - name: Bolt
+      description: Performance Contracts for Software Network Functions
+      tech_desc: >
+        In this work, we propose the notion of performance contracts for NFs. A performance
+        contract enables users to predict and scrutinize NF performance at fine granularities
+        without having to run them. It providers users with an abstraction that enables them
+        to easily parameterize arbitrary input workloads, whether typical, exceptional or
+        adversarial.
+      url: https://bolt-perf-contracts.github.io/
+      code:
+        type: Project GitHub
+        url: https://github.com/bolt-perf-contracts/bolt
+        latest: 2019-06-06
+      contacts:
+        - name: Rishabh Iyer
+          email: rishabh.iyer@epfl.ch
+      tags:
+        - Software Network
+        - Computer Network
+        - Performance
+      type: Application
+      papers:
+        - name: Performance Contracts for Software Network Functions
+          url: https://dslab.epfl.ch/pubs/bolt.pdf
+      maturity: 1
+      added: 2019-07-26
+
+    - name: CPI
+      description: Fast and precise control-flow hijack protection
+      tech_desc: >
+        Code-Pointer Integrity (CPI) is a property of C/C++ programs that guarantees absence
+        of control-flow hijack attacks by requiring integrity of all direct and indirect
+        pointers to code. Code-Pointer Separation (CPS) is a simplified version of CPI that
+        provides strong protection against such attacks in practice. SafeStack is a component
+        of CPI/CPS, which can be used independently and protects against stack-based
+        control-flow hijacks.
+      url: https://dslab.epfl.ch/proj/cpi/
+      code:
+        type: Project GitHub
+        url: https://github.com/cpi-llvm
+        latest: 2015-11-16
+      contacts:
+        - name: http://volodymyrkuznetsov.info/
+          url: http://volodymyrkuznetsov.info/
+      tags:
+        - Computer Network
+        - Security
+      type: Application
+      papers:
+        - name: Code-Pointer Integrity
+          url: http://dslab.epfl.ch/pubs/cpi.pdf
+      maturity: 1
+      added: 2019-07-26
+
     - name:         s2e
       description:  Platform for writing tools that analyze the properties and behavior of software systems
       layman_desc: >
@@ -20,6 +98,7 @@ projects:
           - Attack Vectors
       type: Library
       maturity: 1
+      added: 2019-03-18
 
     - name:         ASAP
       description:  Low overhead software protection
@@ -30,7 +109,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dslab-epfl/asap
-      contact:      
+      contact:
       contacts:
           - name:   Jonas Wagner
             email:  ltlygwayh@gmail.com
@@ -40,6 +119,7 @@ projects:
           - Buffer Overflows
       type: Library
       maturity: 2
+      added: 2019-03-18
 
     - name:         Cloud 9
       description:  Scalable symbolic execution
@@ -58,6 +138,7 @@ projects:
           - Performance
       type: Application
       maturity: 2
+      added: 2019-03-18
 
     - name:         Dimmunix
       description:  P{rotection against deadlock bugs
@@ -78,6 +159,7 @@ projects:
           - Java
       type: Library
       maturity: 2
+      added: 2019-03-18
 
     - name:         Failure Sketching
       description:  Automated debugging technique
@@ -101,3 +183,4 @@ projects:
           - Verification
       type: Application
       maturity: 3
+      added: 2019-03-18

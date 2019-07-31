@@ -10,6 +10,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LCA2-EPFL/iprp
+          latest: 2017-10-03
       contacts:
           - name:   Maaz Mashood
       tags:
@@ -18,6 +19,8 @@ projects:
           - Parallel Transmission
       type: Application
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
 
     - name:         commelec-api
       description:  API for the Commelec real-time microgrid framework
@@ -28,6 +31,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/LCA2-EPFL/commelec-api
+          latest: 2017-06-29
       contacts:
           - name:   Jagdish Achara
             email:  jagdish.achara@epfl.ch
@@ -38,3 +42,23 @@ projects:
           - Decoding
       type: Library
       maturity: 2
+      added: 2019-03-18
+      updated: 2019-07-29
+
+    - name: T-RECS
+      desription: T-RECS is a software testbed for multi-agent real-time control of electric grids.
+      tech_desc: >
+        T-RECS is a software testbed for multi-agent real-time control of electric grids. T-RECS uses
+        software containers to run each agent in a virtual environment. Agents are networked via Mininet,
+        so real packets are exchanged using TCP/IP.
+      code:
+        type: Lab GitHub
+        url: https://github.com/LCA2-EPFL/T-RECS
+        latest: 2019-06-06
+      tags:
+        - Power
+        - Network
+      type: Simulation
+      maturity: 1
+      added: 2019-07-29
+      updated: 2019-07-29

@@ -5,6 +5,7 @@ labs:
         prof:
             name:   Rachid Guerraoui
             email:  rachid.guerraoui@epfl.ch
+        url: https://dcl.epfl.ch/site/
         contacts:
 
     DEDIS:
@@ -17,6 +18,7 @@ labs:
               email:    jeff.allen@epfl.ch
             - name:     Philipp Svetolik Jovanovic
               email:    philipp.jovanovic@epfl.ch
+        url: https://dedis.epfl.ch
 
     DSLAB:
         name:   Dependable Systems Lab
@@ -28,6 +30,7 @@ labs:
               email:    arseniy.zaostrovnykh@epfl.ch
             - name:     Beatriz Descloux
               email:    beatriz.descloux@epfl.ch
+        url: https://dslab.epfl.ch
 
     GRJET:
         name:   Arithmetic Geometry, Number Theory and Cryptology
@@ -35,6 +38,7 @@ labs:
             name:   Dimitar Jetchev
             email:  dimitar.jetchev@epfl.ch
         contacts:
+        url: http://grjet.epfl.ch/
 
     HexHive:
         name:   HexHive Group
@@ -42,6 +46,15 @@ labs:
             name:   Mathias Payer
             email:  mathias.payer@epfl.ch
         contacts:
+        url: https://hexhive.epfl.ch/
+
+    INDY:
+        name:   Computer Communications and Applications Laboratory 4
+        prof:
+            name:   Matthias Grossglauser
+            email:  matthias.grossglauser@epfl.ch
+        contacts:
+        url: https://indy.epfl.ch/
 
     IVRL:
         name:   Image and Visual Representation Lab
@@ -50,6 +63,7 @@ labs:
             email:  sabine.susstrunk@epfl.ch
         contacts:
             - name:     Siavash Arjomand Bigdeli
+        url: https://ivrl.epfl.ch/
 
     LARA:
         name:   Lab for Automated Reasoning and Analysis
@@ -61,6 +75,7 @@ labs:
               email:    jad.hamza@epfl.ch
             - name:     Nicolas Voirol
               email:    nicolas.voirol@epfl.ch
+        url: https://lara.epfl.ch
 
     LCA1:
         name:   Laboratory for Security and Privacy
@@ -70,6 +85,7 @@ labs:
         contacts:
             - name:     Juan Ramón Troncoso-Pastoriza
               email:    juan.troncoso-pastoriza@epfl.ch
+        url: https://lca1.epfl.ch
 
     LCA2:
         name:   Computer Communications and Applications Laboratory 2
@@ -77,13 +93,7 @@ labs:
             name:   Jean-Yves Le Boudec
             email:  jean-yves.leboudec@epfl.ch
         contacts:
-
-    LCA4:
-        name:   Computer Communications and Applications Laboratory 4
-        prof:
-            name:   Matthias Grossglauser
-            email:  matthias.grossglauser@epfl.ch
-        contacts:
+        url: http://lca.epfl.ch/
 
     LSIR:
         name:   Distributed Information Systems Laboratory
@@ -94,6 +104,7 @@ labs:
             - name:     Hamza Karkous
             - name:     Rémi Philippe Lebret
               email:    remi.lebret@epfl.ch
+        url: http://lsir.epfl.ch
 
     LTS4:
         name:   Signal Processing Laboratory
@@ -105,6 +116,7 @@ labs:
               email:    seyed.moosavi@epfl.ch
         notes: >
             Seyed will graduate in January 2019.
+        url: https://lts4.epfl.ch/
 
     MLO:
         name:   Machine Learning and Optimization Laboratory
@@ -116,6 +128,7 @@ labs:
               email:    aymeric.dieuleveut@epfl.ch
             - name:     Mikhail Langovoy
               email:    mikhail.langovoy@epfl.ch
+        url: https://mlo.epfl.ch
 
     MMSPG:
         name:   Multimedia Signal Processing Group
@@ -123,6 +136,7 @@ labs:
             name:   Touradj Ebrahimi
             email:  touradj.ebrahimi@epfl.ch
         contacts:
+        url: https://mmspg.epfl.ch/
 
     NAL:
         name:   Network Architecture Lab
@@ -132,6 +146,7 @@ labs:
         contacts:
             - name:     Luis David Pedrosa
               email:    luis.pedrosa@epfl.ch
+        url: https://www.epfl.ch/labs/nal/
 
     PARSA:
         name:   Parallel Systems Architecture Lab
@@ -140,6 +155,7 @@ labs:
             email:  babak.falsafi@epfl.ch
         contacts:
             - name:     Hossein Ajallooiean
+        url: https://parsa.epfl.ch/
 
     SLAB:
         name:   Salathé Lab
@@ -149,6 +165,7 @@ labs:
         contacts:
             - name:     Chloé Allémann
               email:    chloe.allemann@epfl.ch
+        url: https://www.epfl.ch/labs/salathelab/
 
     SPRING:
         name:   Security and Privacy Engineering Laboratory
@@ -158,3 +175,4 @@ labs:
         contacts:
             - name:     Wouter Lueks
               email:    wouter.lueks@epfl.ch
+        url: https://spring.epfl.ch
