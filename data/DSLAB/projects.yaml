@@ -46,7 +46,7 @@ projects:
         - Performance
       type: Application
       papers:
-        - name: Performance Contracts for Software Network Functions
+        - title: Performance Contracts for Software Network Functions
           url: https://dslab.epfl.ch/pubs/bolt.pdf
       maturity: 1
       added: 2019-07-26
@@ -73,7 +73,7 @@ projects:
         - Security
       type: Application
       papers:
-        - name: Code-Pointer Integrity
+        - title: Code-Pointer Integrity
           url: http://dslab.epfl.ch/pubs/cpi.pdf
       maturity: 1
       added: 2019-07-26

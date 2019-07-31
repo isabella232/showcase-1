@@ -34,7 +34,7 @@ projects:
       url: https://github.com/epfml/cola
       latest: 2019-01-20
     papers:
-      - title: COLA: Decentralized Linear Learning
+      - title: "COLA: Decentralized Linear Learning"
         url: https://arxiv.org/abs/1808.04883
     tags:
       - Machine Learning
@@ -61,23 +61,23 @@ projects:
     updated: 2019-07-30
 
   - name:         sent2vec
-      description:  Numerical representations for short texts
-      layman_desc: >
+    description:  Numerical representations for short texts
+    layman_desc: >
         Library that delivers numerical representations (features) for short
         texts or sentences, which can be used as input to any machine
         learning task later on.
-      code:
-        type: Lab GitHub
-        url:  https://github.com/epfml/sent2vec
-        latest: 2019-06-03
-      contacts:
-        - name:   Martin Jaggi
-          email:  martin.jaggi@epfl.ch
-      tags:
-        - Machine Learning
-        - Text
-        - Features
-      type: Library
-      maturity: 1
-      added: 2019-03-18
-      updated: 2019-07-29
+    code:
+      type: Lab GitHub
+      url:  https://github.com/epfml/sent2vec
+      latest: 2019-06-03
+    contacts:
+      - name:   Martin Jaggi
+        email:  martin.jaggi@epfl.ch
+    tags:
+      - Machine Learning
+      - Text
+      - Features
+    type: Library
+    maturity: 1
+    added: 2019-03-18
+    updated: 2019-07-29
