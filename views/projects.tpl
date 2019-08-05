@@ -61,6 +61,8 @@
                     <th>Professor</th>
                     <th class="extra">Lab</th>
                     <th>Name</th>
+                    <th class="extra">Date added</th>
+                    <th class="extra">Date updated</th>
                     <th class="extra">Maturity</th>
                     <th>Description</th>
                     <th class="extra">Technical description</th>
@@ -68,6 +70,7 @@
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
                     <th>Source code</th>
+                    <th class="extra">Date last commit</th>
                     <th class="extra">LOC</th>
                     <th class="extra">Documentation</th>
                     <th>Tags</th>
@@ -83,6 +86,8 @@
                             <%
                             prof = lab['prof']
                             name = project['name']
+                            date_added = project.get('added', '')
+                            date_updated = project.get('updated', '')
                             maturity = project.get('maturity', 0)
                             description = project.get('description', '')
                             tech_desc = project.get('tech_desc', '')
@@ -91,6 +96,7 @@
                             proj_type = project.get('type', '')
                             url = project.get('url')
                             code = project.get('code', {})
+                            date_last_commit = code.get('latest', '')
                             loc = project.get('lines_of_code', '')
                             doc = project.get('doc')
                             tags = project.get('tags', [])
@@ -112,6 +118,8 @@
                                 % else:
                                 <td class="proj_name dt-nowrap">{{ name }}</td>
                                 % end
+                                <td>{{ date_added }}</td>
+                                <td>{{ date_updated }}</td>
                                 % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
                                 <td id="{{ maturity_map.get(maturity) }}">{{ maturity }}</td>
                                 <td>{{ description }}</td>
@@ -124,6 +132,7 @@
                                 % else:
                                 <td>{{ code.get('type', '') }}</td>
                                 % end
+                                <td>{{ date_last_commit }}</td>
                                 <td class="dt-center">{{ loc }}</td>
                                 <td class="dt-center">
                                     % if doc:
@@ -152,6 +161,8 @@
                     <th>Professor</th>
                     <th>Lab</th>
                     <th>Name</th>
+                    <th>Date added</th>
+                    <th>Date updated</th>
                     <th>Maturity</th>
                     <th>Description</th>
                     <th>Technical description</th>
@@ -159,6 +170,7 @@
                     <th>Language</th>
                     <th>Type</th>
                     <th>Source code</th>
+                    <th>Date last commit</th>
                     <th>LOC</th>
                     <th>Documentation</th>
                     <th>Tags</th>
