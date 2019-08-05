@@ -80,11 +80,10 @@
                 % for lab_id, lab in labs.items():
                     % if selected_lab_id is None or selected_lab_id == lab_id:
                         % for project in lab['projects']:
-                        <tr>
                             <%
                             prof = lab['prof']
                             name = project['name']
-                            maturity = project.get('maturity')
+                            maturity = project.get('maturity', 0)
                             description = project.get('description', '')
                             tech_desc = project.get('tech_desc', '')
                             layman_desc = project.get('layman_desc', '')
@@ -98,47 +97,52 @@
                             license = project.get('license', '')
                             papers = project.get('papers', [])
                             contacts = project.get('contacts', [])
+
+                            if maturity == 0:
+                                continue
+                            end
                             %>
-                            <td class="dt-nowrap">
-                                % include('contacts.tpl', contacts=[prof])
-                            </td>
-                            <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
-                            % if url:
-                            <td class="proj_name dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
-                            % else:
-                            <td class="proj_name dt-nowrap">{{ name }}</td>
-                            % end
-                            % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                            <td id="{{ maturity_map.get(maturity) }}">{{ maturity }}</td>
-                            <td>{{ description }}</td>
-                            <td>{{ tech_desc }}</td>
-                            <td>{{ layman_desc }}</td>
-                            <td class="dt-center">{{ language }}</td>
-                            <td>{{ proj_type }}</td>
-                            % if 'url' in code:
-                            <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
-                            % else:
-                            <td>{{ code.get('type', '') }}</td>
-                            % end
-                            <td class="dt-center">{{ loc }}</td>
-                            <td class="dt-center">
-                                % if doc:
-                                <a href="{{ doc }}">link</a>
+                            <tr>
+                                <td class="dt-nowrap">
+                                    % include('contacts.tpl', contacts=[prof])
+                                </td>
+                                <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
+                                % if url:
+                                <td class="proj_name dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
+                                % else:
+                                <td class="proj_name dt-nowrap">{{ name }}</td>
                                 % end
-                            </td>
-                            <td class="dt-center">
-                                % for tag in tags:
-                                <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                                <td id="{{ maturity_map.get(maturity) }}">{{ maturity }}</td>
+                                <td>{{ description }}</td>
+                                <td>{{ tech_desc }}</td>
+                                <td>{{ layman_desc }}</td>
+                                <td class="dt-center">{{ language }}</td>
+                                <td>{{ proj_type }}</td>
+                                % if 'url' in code:
+                                <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
+                                % else:
+                                <td>{{ code.get('type', '') }}</td>
                                 % end
-                            </td>
-                            <td class="dt-center">{{ license }}</td>
-                            <td class="dt-center">
-                                % include('papers.tpl', papers=papers)
-                            </td>
-                            <td class="dt-nowrap">
-                                % include('contacts.tpl', contacts=contacts)
-                            </td>
-                        </tr>
+                                <td class="dt-center">{{ loc }}</td>
+                                <td class="dt-center">
+                                    % if doc:
+                                    <a href="{{ doc }}">link</a>
+                                    % end
+                                </td>
+                                <td class="dt-center">
+                                    % for tag in tags:
+                                    <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                    % end
+                                </td>
+                                <td class="dt-center">{{ license }}</td>
+                                <td class="dt-center">
+                                    % include('papers.tpl', papers=papers)
+                                </td>
+                                <td class="dt-nowrap">
+                                    % include('contacts.tpl', contacts=contacts)
+                                </td>
+                            </tr>
                         % end
                     % end
                 % end
