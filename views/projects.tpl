@@ -109,7 +109,7 @@
                             <td class="proj_name dt-nowrap">{{ name }}</td>
                             % end
                             % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                            <td class="{{ maturity_map.get(maturity) }}"></td>
+                            <td id="{{ maturity_map.get(maturity) }}">{{ maturity }}</td>
                             <td>{{ description }}</td>
                             <td>{{ tech_desc }}</td>
                             <td>{{ layman_desc }}</td>
