@@ -145,7 +145,7 @@
                                     % end
                                 </td>
                                 <td class="dt-center">{{ license }}</td>
-                                <td class="dt-center">
+                                <td>
                                     % include('papers.tpl', papers=papers)
                                 </td>
                                 <td class="dt-nowrap">
