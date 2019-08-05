@@ -1,4 +1,8 @@
-language: minimal
+language: python
+python:
+    - "3.5"
+install:
+    - pip install -r requirements.txt
 
 addons:
   ssh_known_hosts: c4dtsrv1.epfl.ch
@@ -18,6 +22,9 @@ notifications:
 
 jobs:
   include:
+    - stage: test
+      script: pytest
+
     - stage: trigger downstream
       jdk: oraclejdk8
       script: |
