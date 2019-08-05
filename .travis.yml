@@ -1,37 +1,39 @@
 language: python
 python:
     - "3.5"
-install:
-    - pip install -r requirements.txt
 
 addons:
-  ssh_known_hosts: c4dtsrv1.epfl.ch
+    ssh_known_hosts: c4dtsrv1.epfl.ch
 
-before_deploy:
-  - echo "$DEPLOY_SSH_KEY" > "$HOME/.ssh/id_ed25519"
-  - chmod 600 "$HOME/.ssh/id_ed25519"
-
-deploy:
-  provider: script
-  script: ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
-  on:
-    branch: master
-
-notifications:
-  email: false
+stages:
+    - test
+    - name: deploy
+      if: branch = master
+    - name: trigger_downstream
+      if: branch = master AND type != pull_request
 
 jobs:
-  include:
-    - stage: test
-      script: pytest
+    include:
+        - stage: test
+          script: pytest
+          install: pip install -r requirements.txt
 
-    - stage: trigger downstream
-      jdk: oraclejdk8
-      script: |
-        echo "TRAVIS_BRANCH=$TRAVIS_BRANCH TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST"
-        if [[ ($TRAVIS_BRANCH == master) &&
-              ($TRAVIS_PULL_REQUEST == false) ]] ; then
-          curl -LO --retry 3 https://raw.github.com/mernst/plume-lib/master/bin/trigger-travis.sh
-          sh trigger-travis.sh --pro c4dt demo $TRAVIS_ACCESS_TOKEN
-          sh trigger-travis.sh --pro c4dt incubator $TRAVIS_ACCESS_TOKEN
-        fi
+        - stage: deploy
+          install: skip
+          script: skip
+          before_deploy:
+              - echo "$DEPLOY_SSH_KEY" > "$HOME/.ssh/id_ed25519"
+              - chmod 600 "$HOME/.ssh/id_ed25519"
+          deploy:
+              provider: script
+              script: ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
+
+        - stage: trigger_downstream
+          jdk: oraclejdk8
+          script: |
+              curl -LO --retry 3 https://raw.github.com/mernst/plume-lib/master/bin/trigger-travis.sh
+              sh trigger-travis.sh --pro c4dt demo $TRAVIS_ACCESS_TOKEN
+              sh trigger-travis.sh --pro c4dt incubator $TRAVIS_ACCESS_TOKEN
+
+notifications:
+    email: false
