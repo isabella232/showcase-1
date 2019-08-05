@@ -107,6 +107,12 @@
                             if maturity == 0:
                                 continue
                             end
+
+                            import datetime
+                            today = datetime.datetime.now().date()
+                            if date_added > today:
+                                continue
+                            end
                             %>
                             <tr>
                                 <td class="dt-nowrap">
