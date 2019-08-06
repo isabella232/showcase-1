@@ -43,7 +43,7 @@
                 <tr>
                     <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                     <td>
-                        <a href="{{ lab['url'] }}">{{ lab['name'] }} </a>
+                        <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
                     </td>
                     <td class="dt-nowrap">
                         % prof = lab['prof']

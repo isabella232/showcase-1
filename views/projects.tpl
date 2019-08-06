@@ -116,7 +116,7 @@
                             %>
                             <tr>
                                 <td class="dt-nowrap">
-                                    % include('contacts.tpl', contacts=[prof])
+                                    <a href="{{ lab['url'] }}">{{ prof['name'] }}</a>
                                 </td>
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                                 % if url:
