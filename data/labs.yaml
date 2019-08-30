@@ -1,9 +1,12 @@
+# This is a list of labs. The name of the professor needs to have a _ between the first and the
+# last name, so that the table can be correctly sorted according to the last name.
+
 labs:
 
     DCL:
         name:   Distributed Computing Lab
         prof:
-            name:   Rachid Guerraoui
+            name:   Rachid_Guerraoui
             email:  rachid.guerraoui@epfl.ch
         url: https://dcl.epfl.ch/site/
         contacts:
@@ -11,7 +14,7 @@ labs:
     DEDIS:
         name:   Decentralized and Distributed Systems
         prof:
-            name:   Bryan Ford
+            name:   Bryan_Ford
             email:  bryan.ford@epfl.ch
         contacts:
             - name:     Jeff Allen
@@ -23,7 +26,7 @@ labs:
     DSLAB:
         name:   Dependable Systems Lab
         prof:
-            name:   George Candea
+            name:   George_Candea
             email:  george.candea@epfl.ch
         contacts:
             - name:     Arseniy Zaostrovnykh
@@ -35,7 +38,7 @@ labs:
     HexHive:
         name:   HexHive Group
         prof:
-            name:   Mathias Payer
+            name:   Mathias_Payer
             email:  mathias.payer@epfl.ch
         contacts:
         url: https://hexhive.epfl.ch/
@@ -43,7 +46,7 @@ labs:
     INDY:
         name:   Computer Communications and Applications Laboratory 4
         prof:
-            name:   Matthias Grossglauser
+            name:   Matthias_Grossglauser
             email:  matthias.grossglauser@epfl.ch
         contacts:
         url: https://indy.epfl.ch/
@@ -51,7 +54,7 @@ labs:
     IVRL:
         name:   Image and Visual Representation Lab
         prof:
-            name:   Sabine Süsstrunk
+            name:   Sabine_Süsstrunk
             email:  sabine.susstrunk@epfl.ch
         contacts:
             - name:     Siavash Arjomand Bigdeli
@@ -60,7 +63,7 @@ labs:
     LARA:
         name:   Lab for Automated Reasoning and Analysis
         prof:
-            name:   Viktor Kunčak
+            name:   Viktor_Kunčak
             email:  viktor.kuncak@epfl.ch
         contacts:
             - name:     Jad Hamza
@@ -72,7 +75,7 @@ labs:
     LCA1:
         name:   Laboratory for Security and Privacy
         prof:
-            name:   Jean-Pierre Hubaux
+            name:   Jean-Pierre_Hubaux
             email:  jean-pierre.hubaux@epfl.ch
         contacts:
             - name:     Juan Ramón Troncoso-Pastoriza
@@ -82,7 +85,7 @@ labs:
     LCA2:
         name:   Computer Communications and Applications Laboratory 2
         prof:
-            name:   Jean-Yves Le Boudec
+            name:   Jean-Yves_Le Boudec
             email:  jean-yves.leboudec@epfl.ch
         contacts:
         url: http://lca.epfl.ch/
@@ -90,7 +93,7 @@ labs:
     LSIR:
         name:   Distributed Information Systems Laboratory
         prof:
-            name:   Karl Aberer
+            name:   Karl_Aberer
             email:  karl.aberer@epfl.ch
         contacts:
             - name:     Hamza Karkous
@@ -101,7 +104,7 @@ labs:
     LTS4:
         name:   Signal Processing Laboratory
         prof:
-            name:   Pascal Frossard
+            name:   Pascal_Frossard
             email:  pascal.frossard@epfl.ch
         contacts:
             - name:     Seyed Moosavi
@@ -113,7 +116,7 @@ labs:
     MLO:
         name:   Machine Learning and Optimization Laboratory
         prof:
-            name:   Martin Jaggi
+            name:   Martin_Jaggi
             email:  martin.jaggi@epfl.ch
         contacts:
             - name:     Aymeric Dieuleveut
@@ -125,7 +128,7 @@ labs:
     MMSPG:
         name:   Multimedia Signal Processing Group
         prof:
-            name:   Touradj Ebrahimi
+            name:   Touradj_Ebrahimi
             email:  touradj.ebrahimi@epfl.ch
         contacts:
         url: https://mmspg.epfl.ch/
@@ -133,7 +136,7 @@ labs:
     NAL:
         name:   Network Architecture Lab
         prof:
-            name:   Katerina Argyraki
+            name:   Katerina_Argyraki
             email:  katerina.argyraki@epfl.ch
         contacts:
             - name:     Luis David Pedrosa
@@ -143,7 +146,7 @@ labs:
     PARSA:
         name:   Parallel Systems Architecture Lab
         prof:
-            name:   Babak Falsafi
+            name:   Babak_Falsafi
             email:  babak.falsafi@epfl.ch
         contacts:
             - name:     Hossein Ajallooiean
@@ -152,7 +155,7 @@ labs:
     SLAB:
         name:   Salathé Lab
         prof:
-            name:   Marcel Salathé
+            name:   Marcel_Salathé
             email:  marcel.salathe@epfl.ch
         contacts:
             - name:     Chloé Allémann
@@ -162,7 +165,7 @@ labs:
     SPRING:
         name:   Security and Privacy Engineering Laboratory
         prof:
-            name:   Carmela Troncoso
+            name:   Carmela_Troncoso
             email:  carmela.troncoso@epfl.ch
         contacts:
             - name:     Wouter Lueks

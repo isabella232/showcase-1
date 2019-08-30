@@ -20,7 +20,7 @@
 
             // Define a custom ordering
             const order_lastname = (a, b) => {
-              return a.match(/ \S*$/)[0].localeCompare(b.match(/ \S*$/));
+              return a.match(/_.*?$/)[0].localeCompare(b.match(/_.*?$/));
             }
             $.extend( $.fn.dataTable.ext.type.order, {
               "Professor-asc": (a, b) => {
@@ -48,7 +48,15 @@
                     },
                 ],
                 "columnDefs": [
-                    { targets: [0], type: "Professor" }
+                    { targets: [0],
+                      type: "Professor",
+                      render: (data, type, row) => {
+                        if (type === "sort"){
+                          return data;
+                        } else {
+                          return data.replace(/_/g, " ");
+                        }
+                      }}
                 ],
             } );
 
