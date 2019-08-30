@@ -8,9 +8,9 @@ import data
 def server_robots():
     return bottle.static_file('robots.txt', root='./')
 
-@bottle.route('/css/<filename>')
-def server_css(filename):
-    return bottle.static_file(filename, root='./css/')
+@bottle.route('/resources/<filename>')
+def server_resources(filename):
+    return bottle.static_file(filename, root='./resources/')
 
 @bottle.route('/')
 def index():

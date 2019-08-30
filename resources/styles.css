@@ -4,6 +4,21 @@ body {
     font-size: medium;
 }
 
+h1 {
+    text-align: center;
+}
+
+img.float_left {
+    width: 15%;
+    float: left;
+}
+
+.intro {
+    padding-left:20%;
+    padding-right:20%;
+    position: relative;
+}
+
 input {
     background-color: #F0F0F0;
     font-family: Arial, sans-serif;

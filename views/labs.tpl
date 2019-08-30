@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css"/>
     <title>C4DT showcase labs</title>

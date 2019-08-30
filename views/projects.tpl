@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css"/>
             % if selected_lab_id is None:
@@ -63,15 +63,36 @@
     </script>
 </head>
 <body>
-    <div align="center">
-        % if selected_lab_id is None:
-        <h1>All projects</h1>
-        % else:
-        <h1>{{ labs[selected_lab_id]['name'] }}</h1>
-        <a href="/projects/">All projects</a>
-        &emsp;
+    <img class="float_left" src="/resources/c4dt_logo.png">
+    <div class="intro">
+    % if selected_lab_id is None:
+    <h1>C4DT affiliated labs projects</h1>
+        <p>This page presents all projects from the labs affiliated to the Center for Digital Trust.
+    % else:
+    <h1>C4DT affiliated lab {{ labs[selected_lab_id]['name'] }} projects</h1>
+        <p>This page presents all projects from the {{ labs[selected_lab_id]['name'] }} lab.
+    % end
+    The <a href="https://c4dt.org">Center for Digital Trust (C4DT)</a> is cooperating with industrial partners
+    and labs from the EPFL to establish trustworthy digital services. As part of C4DT's mission, the
+    <strong>showcase</strong> lists all projects that are being worked on in the EPFL labs affiliated with
+    C4DT.</p>
+    <p>This page is part of the C4DT Factory that works on producing quality software for our industrial partners to
+    use. The other two pages are:
+    <ul>
+    <li>The <a href="https://incubator.c4dt.org">Incubator</a> with a shortlist of EPFL labs projects that are worked
+    on by the C4DT Factory</li>
+    <li>Some <a href="https://demo.c4dt.org">Demonstrators</a> available to our partners and that show the
+    EPFL labs' software in a more understandable fashion.</li>
+    </ul>
+    </p>
+    <p>For questions, please contact <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></p>
+    </div>
+    <p style="text-align: center;">
+        % if selected_lab_id:
+            <a href="/projects/">All projects</a><br><br>
         % end
-        <a href="/labs/">List of labs</a>
+        <a href="/labs/">List of labs</a></p>
+
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
