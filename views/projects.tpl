@@ -17,6 +17,20 @@
     <script type="text/javascript" class="init">
 
         $(document).ready(function() {
+
+            // Define a custom ordering
+            const order_lastname = (a, b) => {
+              return a.match(/ \S*$/)[0].localeCompare(b.match(/ \S*$/));
+            }
+            $.extend( $.fn.dataTable.ext.type.order, {
+              "Professor-asc": (a, b) => {
+                return order_lastname(a, b);
+              },
+              "Professor-desc": (a, b) => {
+                return order_lastname(b, a);
+              }
+            });
+
             var table = $('#projects').DataTable( {
                 "paging": false,
                 "scrollCollapse": true,
@@ -32,6 +46,9 @@
                         text: "Clear search",
                         action: function(e, dt, node, config) { set_search(""); }
                     },
+                ],
+                "columnDefs": [
+                    { targets: [0], type: "Professor" }
                 ],
             } );
 
