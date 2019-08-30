@@ -32,14 +32,6 @@ labs:
               email:    beatriz.descloux@epfl.ch
         url: https://dslab.epfl.ch
 
-    GRJET:
-        name:   Arithmetic Geometry, Number Theory and Cryptology
-        prof:
-            name:   Dimitar Jetchev
-            email:  dimitar.jetchev@epfl.ch
-        contacts:
-        url: http://grjet.epfl.ch/
-
     HexHive:
         name:   HexHive Group
         prof:
