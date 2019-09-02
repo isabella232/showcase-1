@@ -32,7 +32,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/HexHive/BOPC
-      contact:      
+      contact:
       contacts:
           - name:   Mathias Payer
             email:  mathias.payer@epfl.ch
@@ -89,3 +89,30 @@ projects:
       type: Application
       maturity: 2
       added: 2019-03-18
+
+    - name: RetroWrite
+      description: Retrofitting compiler passes though binary rewriting
+      layman_desc: >
+        RetroWrite can analyze the security of closed source binaries by applying
+        an efficient fuzzying technique that usually only works when the source
+        code is available. This makes it possible to trigger more errors than the
+        default binary fuzzers available, while being much faster in finding these
+        errors.
+      code:
+        type: Lab GitHub
+        url: https://github.com/HexHive/retrowrite
+      contacts:
+        - name: Mathias Payer
+          email: mathias.payer@epfl.ch
+      tags:
+        - Binary
+        - Fuzzing
+        - Efficient
+      language: Python
+      type: Application
+      maturity: 2
+      added: 2019-09-02
+      papers:
+        - title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
+          url: https://nebelwelt.net/publications/files/20Oakland.pdf
+

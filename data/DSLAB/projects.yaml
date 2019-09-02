@@ -20,6 +20,9 @@ projects:
       tags:
         - NAT
         - Verified Softwawre
+      papers:
+        - title: "Verifying Software Network Functions with No Verification Expertise"
+          url: https://dslab.epfl.ch/pubs/vigor.pdf
       type: Application
       maturity: 2
       added: 2019-07-26
