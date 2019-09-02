@@ -14,6 +14,13 @@
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollY": "60vmin",
+                "columnDefs": [
+                    { targets: [2],
+                      type: "Professor",
+                      render: (data, type, row) => {
+                        return data.replace(/_/g, " ");
+                      }}
+                ],
             } );
 
             // Hide "extra" columns by default
