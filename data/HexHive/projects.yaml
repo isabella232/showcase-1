@@ -114,5 +114,5 @@ projects:
       added: 2019-09-02
       papers:
         - title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
-          url: https://nebelwelt.net/publications/files/20Oakland.pdf
+          url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
 
