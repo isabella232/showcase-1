@@ -1,26 +1,43 @@
 projects:
-    - name: LattiGo
-      description: CRT accelerated lattice-based cryptography library in Golang
+    - name: Lattigo
+      description: CRT-accelerated lattice-based cryptography library in Golang
       tech_desc: >
-        toolbox of lattice-based cryptographic primitives for Go. The library
-        is still at an experimental stage and should be used for research
-        purposes only.
+        Toolbox of lattice-based cryptographic primitives for Go implementing
+        the BFV and CKKS schemes and their distributed version.
+        The library is still at an experimental stage and should be used for
+        research purposes only.
+      layman_desc: >
+          Homomorphic encryption refers to cryptographic schemes that allow to
+          compute directly on the encrypted data, without requiring the data to
+          be decrypted first. It therefore enables a set of operations
+          (polynomial evaluation and approximations of non-polynomial
+          functions) to be "blindly" performed by an untrustworthy party on
+          encrypted sensitive data, with a controlled computational overhead.
+          This technology is very promising as an enabler for secure data
+          sharing, and in particular, in the case of secure multi-party
+          computations, where several entities want to collaboratively compute
+          a function on their confidential or sensitive data, without revealing
+          to each other anything else than the result of this computation.
       code:
         type: Lab GitHub
         url: https://github.com/lca1/lattigo
-        latest: 2019-07-26
+        latest: 2019-09-02
       contacts:
         - name: Jean-Philippe Bossuat
           email: jean-philippe.bossuat@epfl.ch
+        - name: Lattigo mailing list
+          email: lattigo@listes.epfl.ch
       tags:
         - Cryptography
         - Lattice Based Crypto
+        - Homomorphic Encryption
+        - Secure Multi-party Computation
       language: GoLang
       type: Library
       license: Apache License v2
-      maturity: 0
+      maturity: 1
       added: 2019-08-15
-      updated: 2019-07-29
+      updated: 2019-09-04
 
     - name:         PriFi
       description:  Anonymous communication system
