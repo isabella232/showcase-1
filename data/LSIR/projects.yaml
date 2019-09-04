@@ -51,6 +51,7 @@ projects:
 
     - name:         Artificial-Intelligence Drive
       description:  Platform for speeding up the development of Artificial-Intelligence classifiers
+      url:          https://modemos.epfl.ch/
       layman_desc: >
           The platform aims at accelerating the process of building Artificial
           Intelligence classifiers for image and text classification.
@@ -70,6 +71,7 @@ projects:
 
     - name:         SciLens
       description:  Helper for science news evaluation
+      url:          http://scilens.epfl.ch/
       layman_desc: >
           A platform that automatically generates indicators using weakly
           supervised learning, effectively helping non-experts to evaluate more
