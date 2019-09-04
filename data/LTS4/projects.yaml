@@ -47,6 +47,36 @@ projects:
       added: 2019-03-18
       updated: 2019-07-29
 
+    - name:         SparseFool
+      description:  Geometry-inspired sparse attack on deep networks
+      layman_desc: >
+          Deep Neural Networks have achieved extraordinary results on image
+          classification tasks, but have been shown tobe vulnerable to attacks
+          with carefully crafted perturbations of the input data. Although most
+          attacks usually change values of many image’s pixels, it has been
+          shown that deep networks are also vulnerable to sparse alterations
+          of the input.
+          SparseFool implements an efficient algorithm to compute and control
+          sparse alterations.
+      code:
+          type: Lab GitHub
+          url:  https://github.com/LTS4/SparseFool
+          latest: 2019-06-05
+      contacts:
+          - name:   Apostolos Modas
+            email:  apostolos.modas@epfl.ch
+      tags:
+          - Machine Learning
+          - Deep Networks
+      language: Python
+      type: Application
+      papers:
+          - title:  'SparseFool: a few pixels make a big difference'
+            url:    https://arxiv.org/abs/1811.02248
+      maturity: 1
+      added: 2019-09-04
+      updated: 2019-09-04
+
     - name:         Universal
       description:  Universal adversarial perturbations
       layman_desc: >
