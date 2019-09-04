@@ -18,7 +18,6 @@ projects:
           - Adversarial
       language: MatLab, Python
       type: Application
-      type: Application
       papers:
           - title:  'DeepFool: a simple and accurate method to fool deep neural networks'
             url:    https://arxiv.org/abs/1511.04599
