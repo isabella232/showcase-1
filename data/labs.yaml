@@ -72,8 +72,8 @@ labs:
               email:    nicolas.voirol@epfl.ch
         url: https://lara.epfl.ch
 
-    LCA1:
-        name:   Laboratory for Security and Privacy
+    LDS:
+        name:   Laboratory for Data Security (formerly LCA1)
         prof:
             name:   Jean-Pierre_Hubaux
             email:  jean-pierre.hubaux@epfl.ch
