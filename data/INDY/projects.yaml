@@ -1,21 +1,5 @@
 projects:
 
-    - name:         Sidekick
-      url:          http://sidekick.epfl.ch/
-      description:  Real-time predictions of the success of Kickstarter campaigns
-      layman_desc: >
-          This website shows real-time predictions of the success of
-          Kickstarter campaigns by looking at the money raised over time and
-          how much coverage it gets on platforms like Twitter.
-      tags:
-          - Predictor
-          - Data Mining
-          - Machine Learning
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
-
     - name:         Choix
       description:  Library that provides inference algorithms for models based on Luce's choice axiom
       code:
@@ -30,3 +14,23 @@ projects:
       maturity: 1
       added: 2019-03-18
       updated: 2019-07-29
+
+    - name:         Who is that?
+      url:          https://who-is-th.at/
+      description:  Machine Learning framework to search a database via similarity samples
+      layman_desc: >
+          Use machine learning to organize a collection of objects (e.g. faces
+          of actors) so as to make them interactively searchable via similarity
+          queries.
+          The approach combines concepts from representation learning,
+          reinforcement learing, discrete-choice theory and bayesian inference.
+      contacts:
+          - name:   Daniyar Chumbalov
+            email:  daniyar.chumbalov@epfl.ch
+      tags:
+          - Predictor
+          - Machine Learning
+      type: Library
+      maturity: 1
+      added: 2019-09-09
+      updated: 2019-09-09
