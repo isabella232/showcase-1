@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/c4dt/showcase.svg?branch=master)](https://travis-ci.com/c4dt/showcase)
+
 # Showcase
 
 Code that helps organize the labs' projects and present them nicely
