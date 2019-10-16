@@ -9,7 +9,7 @@ projects:
       code:
           type: Project GitHub
           url:  https://github.com/claimchain/claimchain-simulations
-          latest: 2018-10-13
+          last_commit: 2018-10-13
       contacts:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
@@ -37,7 +37,7 @@ projects:
       code:
           type: Lab GitHub
           url: https://github.com/spring-epfl/lightnion
-          latest: 2019-07-09
+          last_commit: 2019-07-09
       tags:
           - Tor
           - Privacy
@@ -58,7 +58,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/spring-epfl/trickster
-          latest: 2019-04-18
+          last_commit: 2019-04-18
       tags:
           - Machine Learning
           - Attack
@@ -76,7 +76,7 @@ projects:
       code:
           type: Project GitHub
           url:  https://github.com/spring-epfl/hippiepug
-          latest: 2018-04-28
+          last_commit: 2018-04-28
       contacts:
           - name:   Bogdan Kulynych
             email:  bogdan.kulynych@epfl.ch
@@ -95,7 +95,7 @@ projects:
       code:
         type: Lab GitHub
         url: https://github.com/spring-epfl/MCSAuditing
-        latest: 2019-05-28
+        last_commit: 2019-05-28
       tags:
         - Location Privacy
         - Privacy

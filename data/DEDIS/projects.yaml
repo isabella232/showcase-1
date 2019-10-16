@@ -280,7 +280,7 @@ projects:
       code:
         type: Lab GitHub
         url: https://github.com/dedis/tlc
-        latest: 2019-07-22
+        last_commit: 2019-07-22
       contacts:
         - name: Bryan Ford
           email: bryan.ford@epfl.ch

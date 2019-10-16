@@ -9,7 +9,7 @@ projects:
       code:
           type: Project GitHub
           url:  https://github.com/vignat/vignat
-          latest: 2018-02-19
+          last_commit: 2018-02-19
       lines_of_code:    50000 / 4000
       contacts:
           - name:     Arseniy Zaostrovnykh
@@ -37,7 +37,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/nal-epfl/line
-          latest: 2017-08-13
+          last_commit: 2017-08-13
       tags:
           - Network
           - Emulator

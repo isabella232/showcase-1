@@ -5,7 +5,7 @@ projects:
       code:
           type: Personal GitHub
           url:  https://github.com/lucasmaystre/choix
-          latest: 2019-07-06
+          last_commit: 2019-07-06
       tags:
           - Data Mining
           - Inference

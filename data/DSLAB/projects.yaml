@@ -13,7 +13,7 @@ projects:
       code:
         type: Project Github
         url: https://github.com/vignat/vignat
-        latest: 2018-02-19
+        last_commit: 2018-02-19
       contacts:
         - name: Arseniy Zaostrovnykh
           email: arseniy.zaostrovnykh@epfl.ch
@@ -39,7 +39,7 @@ projects:
       code:
         type: Project GitHub
         url: https://github.com/bolt-perf-contracts/bolt
-        latest: 2019-06-06
+        last_commit: 2019-06-06
       contacts:
         - name: Rishabh Iyer
           email: rishabh.iyer@epfl.ch
@@ -67,7 +67,7 @@ projects:
       code:
         type: Project GitHub
         url: https://github.com/cpi-llvm
-        latest: 2015-11-16
+        last_commit: 2015-11-16
       contacts:
         - name: http://volodymyrkuznetsov.info/
           url: http://volodymyrkuznetsov.info/

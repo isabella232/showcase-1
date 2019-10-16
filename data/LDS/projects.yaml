@@ -21,7 +21,7 @@ projects:
       code:
         type: Lab GitHub
         url: https://github.com/ldsec/lattigo
-        latest: 2019-09-24
+        last_commit: 2019-09-24
       contacts:
         - name: Jean-Philippe Bossuat
           email: jean-philippe.bossuat@epfl.ch
@@ -47,7 +47,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/dedis/prifi
-          latest: 2019-07-01
+          last_commit: 2019-07-01
       papers:
           - title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
             url:    https://arxiv.org/pdf/1710.10237.pdf
@@ -76,7 +76,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/ldsec/unlynx
-          latest: 2019-09-23
+          last_commit: 2019-09-23
       papers:
           - title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
             url:    https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
@@ -108,7 +108,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://medco.epfl.ch/software/
-          latest: 2019-05-02
+          last_commit: 2019-05-02
       lines_of_code:    16000
       tags:
           - Privacy Preserving
@@ -134,7 +134,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/ldsec/drynx
-          latest: 2019-09-23
+          last_commit: 2019-09-23
       lines_of_code:    16000
       papers:
           - title:  'Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets'
@@ -169,7 +169,7 @@ projects:
       code:
           type:     Personal GitHub
           url:      https://github.com/JLRgithub/PDCi2b2
-          latest: 2018-02-12
+          last_commit: 2018-02-12
       lines_of_code:    5000 - 10000
       tags:
           - i2b2

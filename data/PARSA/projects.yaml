@@ -11,7 +11,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/parsa-epfl/cloudsuite
-          latest: 2019-03-17
+          last_commit: 2019-03-17
       doc: http://cloudsuite.ch/
       contacts:
           - name:   Hossein Ajallooiean
@@ -63,7 +63,7 @@ projects:
       code:
           type: Lab GitHub
           url:  https://github.com/parsa-epfl/qflex
-          latest: 2019-02-26
+          last_commit: 2019-02-26
       lines_of_code:    'Flexus: 50000, Qemu: 100000'
       contacts:
           - name:   Hossein Ajallooiean
