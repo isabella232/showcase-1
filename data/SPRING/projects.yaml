@@ -1,107 +1,112 @@
 projects:
 
-    - name:         ClaimChain
-      description:  Prove your identity with regards to others
-      layman_desc: >
-          A decentralized public key distribution system with an emphasis on
-          privacy preservation.
-      url:          https://claimchain.github.io/
-      code:
-          type: Project GitHub
-          url:  https://github.com/claimchain/claimchain-simulations
-          last_commit: 2018-10-13
-      contacts:
-          - name:   Bogdan Kulynych
-            email:  bogdan.kulynych@epfl.ch
-      tags:
-          - Public Key
-          - Privacy
-      language: Python
-      type: Library
-      papers:
-          - title:  'ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging'
-            url:    https://arxiv.org/abs/1707.06279
-      license:  MIT
-      maturity: 1
-      added: 2019-03-18
-      updated: 2019-07-29
+    claimchain:
+        name:         ClaimChain
+        description:  Prove your identity with regards to others
+        layman_desc: >
+            A decentralized public key distribution system with an emphasis on
+            privacy preservation.
+        url:          https://claimchain.github.io/
+        code:
+            type: Project GitHub
+            url:  https://github.com/claimchain/claimchain-simulations
+            last_commit: 2018-10-13
+        contacts:
+            - name:   Bogdan Kulynych
+              email:  bogdan.kulynych@epfl.ch
+        tags:
+            - Public Key
+            - Privacy
+        language: Python
+        type: Library
+        papers:
+            - title:  'ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging'
+              url:    https://arxiv.org/abs/1707.06279
+        license:  MIT
+        maturity: 1
+        added: 2019-03-18
+        updated: 2019-07-29
 
-    - name:         Lightnion
-      description:  Anonymous communication in browsers via the Tor network
-      layman_desc: >
-          A Javascript library for browsers for anonymous communication via the
-          Tor network. The library connects to the Tor network to enable
-          websites to send and retrieve data anonymously (e.g. send sensitive
-          information without identifying the user) without requiring users to
-          install special software such as the Tor browser.
-      code:
+    lightnion:
+        name:         Lightnion
+        description:  Anonymous communication in browsers via the Tor network
+        layman_desc: >
+            A Javascript library for browsers for anonymous communication via the
+            Tor network. The library connects to the Tor network to enable
+            websites to send and retrieve data anonymously (e.g. send sensitive
+            information without identifying the user) without requiring users to
+            install special software such as the Tor browser.
+        code:
+            type: Lab GitHub
+            url: https://github.com/spring-epfl/lightnion
+            last_commit: 2019-07-09
+        tags:
+            - Tor
+            - Privacy
+            - Network
+            - Javascript
+        type: Library
+        maturity: 1
+        added: 2019-03-18
+        updated: 2019-07-29
+
+    trickster:
+        name:         Trickster
+        description:  Sophisticated attacks on Machine Learning models
+        layman_desc: >
+            Trickster allows to attack machine learning models where the attack
+            needs to be more sophisticated than simply adding some noise to an
+            image. One example is to evade an abuse detection model, for example,
+            social media bot detection, or a malware detector.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/spring-epfl/trickster
+            last_commit: 2019-04-18
+        tags:
+            - Machine Learning
+            - Attack
+        type: Library
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29
+
+    hippiepug:
+        name:         Hippiepug
+        description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
+        layman_desc: >
+            This library provides implementations of two cryptographic data
+            structures: fast traversal blockchain structure, and a verifiable
+            dictionary, implemented as a key-value Merkle tree.
+        code:
+            type: Project GitHub
+            url:  https://github.com/spring-epfl/hippiepug
+            last_commit: 2018-04-28
+        contacts:
+            - name:   Bogdan Kulynych
+              email:  bogdan.kulynych@epfl.ch
+        tags:
+            - Blockchain
+        language: Python
+        type: Library
+        license:  MIT
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29
+
+    mcsauditing:
+        name: MCSAuditing
+        description: Evaluation code for mobile crowdsourcing privacy
+        tech_desc:  This tool implements the evaluation framework described in the paper
+        code:
           type: Lab GitHub
-          url: https://github.com/spring-epfl/lightnion
-          last_commit: 2019-07-09
-      tags:
-          - Tor
+          url: https://github.com/spring-epfl/MCSAuditing
+          last_commit: 2019-05-28
+        tags:
+          - Location Privacy
           - Privacy
-          - Network
-          - Javascript
-      type: Library
-      maturity: 1
-      added: 2019-03-18
-      updated: 2019-07-29
-
-    - name:         Trickster
-      description:  Sophisticated attacks on Machine Learning models
-      layman_desc: >
-          Trickster allows to attack machine learning models where the attack
-          needs to be more sophisticated than simply adding some noise to an
-          image. One example is to evade an abuse detection model, for example,
-          social media bot detection, or a malware detector.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/spring-epfl/trickster
-          last_commit: 2019-04-18
-      tags:
-          - Machine Learning
-          - Attack
-      type: Library
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
-
-    - name:         Hippiepug
-      description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
-      layman_desc: >
-          This library provides implementations of two cryptographic data
-          structures: fast traversal blockchain structure, and a verifiable
-          dictionary, implemented as a key-value Merkle tree.
-      code:
-          type: Project GitHub
-          url:  https://github.com/spring-epfl/hippiepug
-          last_commit: 2018-04-28
-      contacts:
-          - name:   Bogdan Kulynych
-            email:  bogdan.kulynych@epfl.ch
-      tags:
-          - Blockchain
-      language: Python
-      type: Library
-      license:  MIT
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
-
-    - name: MCSAuditing
-      description: Evaluation code for mobile crowdsourcing privacy
-      tech_desc:  This tool implements the evaluation framework described in the paper
-      code:
-        type: Lab GitHub
-        url: https://github.com/spring-epfl/MCSAuditing
-        last_commit: 2019-05-28
-      tags:
-        - Location Privacy
-        - Privacy
-      language: Python
-      type: Application
-      license: GPL-v3
-      maturity: 1
-      added: 2019-07-30
-      updated: 2019-07-30
+        language: Python
+        type: Application
+        license: GPL-v3
+        maturity: 1
+        added: 2019-07-30
+        updated: 2019-07-30

@@ -128,7 +128,7 @@
             <tbody>
                 % for lab_id, lab in labs.items():
                     % if selected_lab_id is None or selected_lab_id == lab_id:
-                        % for project in lab['projects']:
+                        % for project in lab['projects'].values():
                             <%
                             prof = lab['prof']
                             name = project['name']

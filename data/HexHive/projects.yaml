@@ -1,118 +1,122 @@
 projects:
 
-    - name:         T-Fuzz
-      description:  Fuzzing and crash analyzer
-      layman_desc: >
-          T-Fuzz (transformational fuzzing) improves fuzzing by detecting
-          whenever the fuzzer is stuck and then modifying the underlying
-          program to reach new program locations. This allows fuzzing to
-          discover and test hard to reach code.
-      code:
+    t-fuzz:
+        name:         T-Fuzz
+        description:  Fuzzing and crash analyzer
+        layman_desc: >
+            T-Fuzz (transformational fuzzing) improves fuzzing by detecting
+            whenever the fuzzer is stuck and then modifying the underlying
+            program to reach new program locations. This allows fuzzing to
+            discover and test hard to reach code.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/HexHive/T-Fuzz
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Fuzzing
+            - Debug
+            - Failure
+        language: Python
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+
+    bopc:
+        name:         BOPC
+        description:  Block Oriented Programming Compiler
+        layman_desc: >
+            BOPC searches for exploits in the code that can be put together to
+            execute new functions, while not tipping off any of the verifications
+            in the program. BOPC is a tool that automatically synthesizes
+            data-flow exploits based on real programs and real exploits.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/HexHive/BOPC
+        contact:
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Exploit
+            - Code
+            - Attack Surface
+        language: Python
+        type: Application
+        papers:
+            - title:  'Block Oriented Programming: Automating Data-Only attacks'
+              url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
+        maturity: 2
+        added: 2019-03-18
+
+    cfixx:
+        name:         CFIXX
+        description:  Protection for C++ internal code pointers
+        layman_desc: >
+            CFIXX is a runtime mitigation that protects C++ programs from attacks
+            that overwrite internal data structures containing code pointers.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/HexHive/CFIXX
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - C++
+            - Exploit
+            - Protection
+        language: C++
+        type: Application
+        maturity: 1
+        added: 2019-03-18
+
+    hextype:
+        name:         HexType
+        description:  Efficient detection of Type Confusion Errors for C++
+        layman_desc: >
+            HexType is a sanitizer for C++ cast safety. The primary use case is
+            during testing to detect type confusion issues in the code.
+            Additionally, HexType may be run in a fuzzing environment to detect
+            type violations.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/HexHive/HexType
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - C++
+            - Type Safety
+            - Sanitization
+        language: C++
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+
+    retrowrite:
+        name: RetroWrite
+        description: Retrofitting compiler passes though binary rewriting
+        layman_desc: >
+          RetroWrite can analyze the security of closed source binaries by applying
+          an efficient fuzzying technique that usually only works when the source
+          code is available. This makes it possible to trigger more errors than the
+          default binary fuzzers available, while being much faster in finding these
+          errors.
+        code:
           type: Lab GitHub
-          url:  https://github.com/HexHive/T-Fuzz
-      contacts:
-          - name:   Mathias Payer
-            email:  mathias.payer@epfl.ch
-      tags:
+          url: https://github.com/HexHive/retrowrite
+        contacts:
+          - name: Mathias Payer
+            email: mathias.payer@epfl.ch
+        tags:
+          - Binary
           - Fuzzing
-          - Debug
-          - Failure
-      language: Python
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-
-    - name:         BOPC
-      description:  Block Oriented Programming Compiler
-      layman_desc: >
-          BOPC searches for exploits in the code that can be put together to
-          execute new functions, while not tipping off any of the verifications
-          in the program. BOPC is a tool that automatically synthesizes
-          data-flow exploits based on real programs and real exploits.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/HexHive/BOPC
-      contact:
-      contacts:
-          - name:   Mathias Payer
-            email:  mathias.payer@epfl.ch
-      tags:
-          - Exploit
-          - Code
-          - Attack Surface
-      language: Python
-      type: Application
-      papers:
-          - title:  'Block Oriented Programming: Automating Data-Only attacks'
-            url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
-      maturity: 2
-      added: 2019-03-18
-
-    - name:         CFIXX
-      description:  Protection for C++ internal code pointers
-      layman_desc: >
-          CFIXX is a runtime mitigation that protects C++ programs from attacks
-          that overwrite internal data structures containing code pointers.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/HexHive/CFIXX
-      contacts:
-          - name:   Mathias Payer
-            email:  mathias.payer@epfl.ch
-      tags:
-          - C++
-          - Exploit
-          - Protection
-      language: C++
-      type: Application
-      maturity: 1
-      added: 2019-03-18
-
-    - name:         HexType
-      description:  Efficient detection of Type Confusion Errors for C++
-      layman_desc: >
-          HexType is a sanitizer for C++ cast safety. The primary use case is
-          during testing to detect type confusion issues in the code.
-          Additionally, HexType may be run in a fuzzing environment to detect
-          type violations.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/HexHive/HexType
-      contacts:
-          - name:   Mathias Payer
-            email:  mathias.payer@epfl.ch
-      tags:
-          - C++
-          - Type Safety
-          - Sanitization
-      language: C++
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-
-    - name: RetroWrite
-      description: Retrofitting compiler passes though binary rewriting
-      layman_desc: >
-        RetroWrite can analyze the security of closed source binaries by applying
-        an efficient fuzzying technique that usually only works when the source
-        code is available. This makes it possible to trigger more errors than the
-        default binary fuzzers available, while being much faster in finding these
-        errors.
-      code:
-        type: Lab GitHub
-        url: https://github.com/HexHive/retrowrite
-      contacts:
-        - name: Mathias Payer
-          email: mathias.payer@epfl.ch
-      tags:
-        - Binary
-        - Fuzzing
-        - Efficient
-      language: Python
-      type: Application
-      maturity: 2
-      added: 2019-09-02
-      papers:
-        - title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
-          url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
-
+          - Efficient
+        language: Python
+        type: Application
+        maturity: 2
+        added: 2019-09-02
+        papers:
+          - title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
+            url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
