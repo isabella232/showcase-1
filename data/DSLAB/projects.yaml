@@ -21,8 +21,9 @@ projects:
         tags:
           - NAT
           - Verified Softwawre
-        papers:
-          - title: "Verifying Software Network Functions with No Verification Expertise"
+        information:
+          - type: Paper
+            title: "Verifying Software Network Functions with No Verification Expertise"
             url: https://dslab.epfl.ch/pubs/vigor.pdf
         type: Application
         maturity: 2
@@ -50,8 +51,9 @@ projects:
           - Computer Network
           - Performance
         type: Application
-        papers:
-          - title: Performance Contracts for Software Network Functions
+        information:
+          - type: Paper
+            title: Performance Contracts for Software Network Functions
             url: https://dslab.epfl.ch/pubs/bolt.pdf
         maturity: 1
         added: 2019-07-26
@@ -78,8 +80,9 @@ projects:
           - Computer Network
           - Security
         type: Application
-        papers:
-          - title: Code-Pointer Integrity
+        information:
+          - type: Paper
+            title: Code-Pointer Integrity
             url: http://dslab.epfl.ch/pubs/cpi.pdf
         maturity: 1
         added: 2019-07-26

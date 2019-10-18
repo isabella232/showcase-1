@@ -19,8 +19,9 @@ projects:
             - Natural Language
         language: Python, Javascript
         type: Application
-        papers:
-            - title:  'Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning'
+        information:
+            - type:   Paper
+              title:  'Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning'
               url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
         license:  commercial
         maturity: 1
@@ -44,8 +45,9 @@ projects:
             - Google Drive
         language: Javascript, Python
         type: Application
-        papers:
-            - title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
+        information:
+            - type:   Paper
+              title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
               url:    https://infoscience.epfl.ch/record/218003
         maturity: 2
         added: 2019-03-18
@@ -115,10 +117,12 @@ projects:
             - Artificial Intelligence
             - News
         type: Application
-        papers:
-            - title:  A Dynamic Embedding Model of the Media Landscape
+        information:
+            - type:   Paper
+              title:  A Dynamic Embedding Model of the Media Landscape
               url:    https://www.mediaobservatory.com/assets/papers/www19.pdf
-            - title:  'Selection Bias in News Coverage: Learning it, Fighting it'
+            - type:   Paper
+              title:  'Selection Bias in News Coverage: Learning it, Fighting it'
               url:    https://www.mediaobservatory.com/assets/papers/www18.pdf
         maturity: 1
         added: 2019-09-04

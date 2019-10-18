@@ -11,8 +11,9 @@ projects:
         tags:
             - Machine Learning
             - Decentralized
-        papers:
-            - title: Decentralized Stochastic Optimization and Gossip Algorithms with Compressed Communication
+        information:
+            - type: Paper
+              title: Decentralized Stochastic Optimization and Gossip Algorithms with Compressed Communication
               url: https://arxiv.org/abs/1902.00340
         type: Application
         license: Apache-2.0
@@ -35,8 +36,9 @@ projects:
             type: Lab GitHub
             url: https://github.com/epfml/cola
             last_commit: 2019-01-20
-        papers:
-            - title: "COLA: Decentralized Linear Learning"
+        information:
+            - type: Paper
+              title: "COLA: Decentralized Linear Learning"
               url: https://arxiv.org/abs/1808.04883
         tags:
             - Machine Learning

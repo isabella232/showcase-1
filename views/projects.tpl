@@ -148,7 +148,11 @@
                             doc = project.get('doc')
                             tags = project.get('tags', [])
                             license = project.get('license', '')
-                            papers = project.get('papers', [])
+                            papers = [
+                                info
+                                for info in sorted(project.get('information', []), key=lambda v: v['type'])
+                                if info['type'] == 'Paper'
+                            ]
                             contacts = project.get('contacts', [])
 
                             if maturity == 0:

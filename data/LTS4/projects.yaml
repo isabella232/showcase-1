@@ -19,8 +19,9 @@ projects:
             - Adversarial
         language: MatLab, Python
         type: Application
-        papers:
-            - title:  'DeepFool: a simple and accurate method to fool deep neural networks'
+        information:
+            - type:   Paper
+              title:  'DeepFool: a simple and accurate method to fool deep neural networks'
               url:    https://arxiv.org/abs/1511.04599
         maturity: 2
         added: 2019-03-18
@@ -41,8 +42,9 @@ projects:
             - Deep Networks
         language: Python
         type: Application
-        papers:
-            - title:  'Geometric robustness of deep networks: analysis and improvement'
+        information:
+            - type:   Paper
+              title:  'Geometric robustness of deep networks: analysis and improvement'
               url:    https://arxiv.org/abs/1711.09115
         maturity: 2
         added: 2019-03-18
@@ -72,8 +74,9 @@ projects:
             - Deep Networks
         language: Python
         type: Application
-        papers:
-            - title:  'SparseFool: a few pixels make a big difference'
+        information:
+            - type:   Paper
+              title:  'SparseFool: a few pixels make a big difference'
               url:    https://arxiv.org/abs/1811.02248
         maturity: 1
         added: 2019-09-04
@@ -100,8 +103,9 @@ projects:
             - Perturbations
         language: MatLab, Python
         type: Application
-        papers:
-            - title:  'Universal adversarial perturbations'
+        information:
+            - type:   Paper
+              title:  'Universal adversarial perturbations'
               url:    https://arxiv.org/pdf/1610.08401.pdf
         maturity: 1
         added: 2019-03-18

@@ -90,20 +90,22 @@ projects:
             - Proof-of-consensus
         language: GoLang
         type: Application, Library
-        papers:
-            - title:  'Enhancing Bitcoin performance'
-              url:    https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf
-            - title:  'OmniLedger - Scaling out Blockchains'
-              url:    https://eprint.iacr.org/2017/406.pdf
-            - title:  'Calypso - Auditable Sharing of Private Data over Blockchains'
-              url:    https://eprint.iacr.org/2018/209.pdf
         license:  AGPLv3
         maturity: 2
         in_incubator: true
         c4dt_contact:
             name:  Linus Gasser
             email: linus.gasser@epfl.ch
-        other_info:
+        information:
+            - type:  Paper
+              title: 'Enhancing Bitcoin performance'
+              url:   https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf
+            - type:  Paper
+              title: 'OmniLedger - Scaling out Blockchains'
+              url:   https://eprint.iacr.org/2017/406.pdf
+            - type:  Paper
+              title: 'Calypso - Auditable Sharing of Private Data over Blockchains'
+              url:   https://eprint.iacr.org/2018/209.pdf
             - type:  Blog post
               title: Bryan Ford - Skipchains
               url:   https://bford.info/2017/08/01/skipchain/

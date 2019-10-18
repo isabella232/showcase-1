@@ -74,13 +74,18 @@
         </div>
         % end
 
-        % if project.get('papers'):
+        <%
+        import itertools
+        for info_type, infos in itertools.groupby(
+            sorted(project.get('information', []), key=lambda v: v['type']),
+            lambda v: v['type']):
+        %>
         <hr/>
         <div>
-            <div class="header">Papers:</div>
+            <div class="header">{{ info_type }}s:</div>
             <ul>
-                % for paper in project['papers']:
-                <li><a href="{{ paper['url'] }}">{{ paper['title'] }}</a></li>
+                % for info in infos:
+                <li><a href="{{ info['url'] }}">{{ info['title'] }}</a></li>
                 % end
             </ul>
         </div>

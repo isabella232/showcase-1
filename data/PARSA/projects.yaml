@@ -22,8 +22,9 @@ projects:
             - Test
         language: Dockerfiles
         type: Application
-        papers:
-            - title:  'Clearing the clouds: a study of emerging scale-out workloads on modern hardware'
+        information:
+            - type:   Paper
+              title:  'Clearing the clouds: a study of emerging scale-out workloads on modern hardware'
               url:    https://dl.acm.org/citation.cfm?id=2150982
         license:  CloudSuite, others
         maturity: 1
@@ -78,8 +79,9 @@ projects:
             - Architecture
         language: C, C++
         type: Toolset
-        papers:
-            - title:  'SimFlex: Statistical Sampling of Computer System Simulation'
+        information:
+            - type:   Paper
+              title:  'SimFlex: Statistical Sampling of Computer System Simulation'
               url:    https://infoscience.epfl.ch/record/112669/files/simflex.pdf
         notes: >
             Some issues with regard to Oracle licenses

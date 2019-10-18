@@ -44,8 +44,9 @@ projects:
             - Attack Surface
         language: Python
         type: Application
-        papers:
-            - title:  'Block Oriented Programming: Automating Data-Only attacks'
+        information:
+            - type:   Paper
+              title:  'Block Oriented Programming: Automating Data-Only attacks'
               url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
         maturity: 2
         added: 2019-03-18
@@ -117,6 +118,7 @@ projects:
         type: Application
         maturity: 2
         added: 2019-09-02
-        papers:
-          - title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
+        information:
+          - type: Paper
+            title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
             url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
