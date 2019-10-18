@@ -1,6 +1,6 @@
 language: python
 python:
-    - "3.5"
+    - "3.6"
 
 addons:
     ssh_known_hosts: c4dtsrv1.epfl.ch
