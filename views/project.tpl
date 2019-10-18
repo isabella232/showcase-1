@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <link rel="stylesheet" type="text/css" href="/resources/styles.css"/>
+    <title>{{ project['name'] }} &mdash; {{ lab['lab_id'] }}</title>
 </head>
 <body>
     <br/>
