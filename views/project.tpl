@@ -3,46 +3,85 @@
     <link rel="stylesheet" type="text/css" href="/resources/styles.css"/>
 </head>
 <body>
+    <br/>
+
     <div align="center">
-        <h1>{{ project['name'] }}</h1>
-        <h2>{{ project['description'] }}</h2>
+        <a href="/projects/">All projects</a>
     </div>
 
-    <div align="left">
-        <div><em>Maturity:</em>{{ project.get('maturity') }}</div>
+    <br/>
 
+    <div align="center" class="project-header">
+        <h1>{{ project['name'] }}</h1>
+        <h2>{{ project.get('description', "") }}</h2>
+    </div>
+
+    <br/>
+
+    <div class="project-details">
         <div>
-            <em>Written by EPFL laboratory:</em> <a href="{{ lab['url'] }}">{{ lab['lab_id'] }} -- {{ lab['name'] }}</a>
+            <div class="header">Maturity level:</div>
+            % maturity_text = {
+            %    0: "Not yet assessed",
+            %    1: "Showcase",
+            %    2: "Incubator",
+            %    3: "Market",
+            % }
+            {{ maturity_text.get(project.get('maturity', 0)) }}
         </div>
 
-        % if 'url' in project:
-            <div><a href="{{ project['url'] }}">Home Page</a></div>
-        % end
-
-        % if 'tech_desc' in project:
-        <div><em>Technical description:</em> {{ project['tech_desc'] }}</div>
-        % end
-
-        % if 'contacts' in project:
+        <hr/>
         <div>
-            <em>Contacts:</em>
+            <div class="header">Written by:</div>
+            <a href="{{ lab['url'] }}">{{ lab['lab_id'] }} &mdash; {{ lab['name'] }}</a>
+        </div>
+
+        % if project.get('tech_desc'):
+        <hr/>
+        <div>
+            <div class="header">Technical description:</div>
+            <div class="contents">{{ project['tech_desc'] }}</div>
+        </div>
+        % end
+
+        % if project.get('url'):
+        <hr/>
+        <div>
+            <div class="header">Home page:</div>
+            <a href="{{ project['url'] }}">{{ project['name'] }}</a>
+        </div>
+        % end
+
+        % if project.get('contacts'):
+        <hr/>
+        <div>
+            <div class="header">Contacts:</div>
             <ul>
                 % for contact in project['contacts']:
-                <li><a href="mailto:{{ contact['email'] }}">{{ contact['name'] }}</a></li>
+                <li>
+                    % include('contact.tpl', contact=contact)
+                </li>
                 % end
             </ul>
         </div>
         % end
 
-        % if 'papers' in project:
+        % if project.get('papers'):
+        <hr/>
         <div>
-            <em>Papers:</em>
+            <div class="header">Papers:</div>
             <ul>
                 % for paper in project['papers']:
                 <li><a href="{{ paper['url'] }}">{{ paper['title'] }}</a></li>
                 % end
             </ul>
         </div>
+        % end
+
+        % if project.get('in_incubator') and project.get('demo'):
+        <hr/>
+        <div class="header">Demonstrator:</div>
+         <a href="project['demo']['url']">{{ project['demo']['title'] }}</a>
         % end
 
     </div>

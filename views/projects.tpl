@@ -107,6 +107,7 @@
                     <th>Professor</th>
                     <th class="extra">Lab</th>
                     <th>Name</th>
+                    <th class="extra">More information</th>
                     <th class="extra">Date added</th>
                     <th class="extra">Date updated</th>
                     <th class="extra">Maturity</th>
@@ -128,7 +129,7 @@
             <tbody>
                 % for lab_id, lab in labs.items():
                     % if selected_lab_id is None or selected_lab_id == lab_id:
-                        % for project in lab['projects'].values():
+                        % for project_id, project in lab['projects'].items():
                             <%
                             prof = lab['prof']
                             name = project['name']
@@ -165,10 +166,11 @@
                                     <a href="{{ lab['url'] }}">{{ prof['name'] }}</a>
                                 </td>
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
+                                <td class="proj_name dt-nowrap"><a href="/project/{{ project_id }}">{{ name }}</a></td>
                                 % if url:
-                                <td class="proj_name dt-nowrap"><a href="{{ url }}">{{ name }}</a></td>
+                                <td class=""><a href="{{ url }}">Home page</a></td>
                                 % else:
-                                <td class="proj_name dt-nowrap">{{ name }}</td>
+                                <td class=""></td>
                                 % end
                                 <td>{{ date_added }}</td>
                                 <td>{{ date_updated }}</td>
@@ -201,7 +203,11 @@
                                     % include('papers.tpl', papers=papers)
                                 </td>
                                 <td class="dt-nowrap">
-                                    % include('contacts.tpl', contacts=contacts)
+                                    % for contact in contacts:
+                                    <div>
+                                        % include('contact.tpl', contact=contact)
+                                    </div>
+                                    % end
                                 </td>
                             </tr>
                         % end
@@ -213,6 +219,7 @@
                     <th>Professor</th>
                     <th>Lab</th>
                     <th>Name</th>
+                    <th>More information</th>
                     <th>Date added</th>
                     <th>Date updated</th>
                     <th>Maturity</th>
