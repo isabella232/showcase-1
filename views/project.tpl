@@ -36,6 +36,14 @@
             <a href="{{ lab['url'] }}">{{ lab['lab_id'] }} &mdash; {{ lab['name'] }}</a>
         </div>
 
+        % if project.get('layman_desc'):
+        <hr/>
+        <div>
+            <div class="header">Layman description:</div>
+            <div class="contents">{{ project['layman_desc'] }}</div>
+        </div>
+        % end
+
         % if project.get('tech_desc'):
         <hr/>
         <div>
