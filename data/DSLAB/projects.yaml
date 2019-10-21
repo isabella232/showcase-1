@@ -1,189 +1,200 @@
 projects:
 
-    - name: Vigor
-      description: A Formally Verified Performant NAT
-      tech_desc: >
-        We present a NAT written in C and proven to be semantically correct according to RFC 3022,
-        as well as crash-free and memory-safe. There exists a lot of recent work on network
-        verification, but it mostly assumes models of network functions and proves properties
-        specific to network configuration, such as reachability and absence of loops. Our proof
-        applies directly to the C code of a network function, and it demonstrates the absence
-        of implementation bugs.
-      url: https://vignat.github.io/
-      code:
-        type: Project Github
-        url: https://github.com/vignat/vignat
-        latest: 2018-02-19
-      contacts:
-        - name: Arseniy Zaostrovnykh
-          email: arseniy.zaostrovnykh@epfl.ch
-      tags:
-        - NAT
-        - Verified Softwawre
-      papers:
-        - title: "Verifying Software Network Functions with No Verification Expertise"
-          url: https://dslab.epfl.ch/pubs/vigor.pdf
-      type: Application
-      maturity: 2
-      added: 2019-07-26
+    vigor:
+        name: Vigor
+        description: A Formally Verified Performant NAT
+        tech_desc: >
+          We present a NAT written in C and proven to be semantically correct according to RFC 3022,
+          as well as crash-free and memory-safe. There exists a lot of recent work on network
+          verification, but it mostly assumes models of network functions and proves properties
+          specific to network configuration, such as reachability and absence of loops. Our proof
+          applies directly to the C code of a network function, and it demonstrates the absence
+          of implementation bugs.
+        url: https://vignat.github.io/
+        code:
+          type: Project Github
+          url: https://github.com/vignat/vignat
+          last_commit: 2018-02-19
+        contacts:
+          - name: Arseniy Zaostrovnykh
+            email: arseniy.zaostrovnykh@epfl.ch
+        tags:
+          - NAT
+          - Verified Softwawre
+        information:
+          - type: Paper
+            title: "Verifying Software Network Functions with No Verification Expertise"
+            url: https://dslab.epfl.ch/pubs/vigor.pdf
+        type: Application
+        maturity: 2
+        added: 2019-07-26
 
-    - name: Bolt
-      description: Performance Contracts for Software Network Functions
-      tech_desc: >
-        In this work, we propose the notion of performance contracts for NFs. A performance
-        contract enables users to predict and scrutinize NF performance at fine granularities
-        without having to run them. It providers users with an abstraction that enables them
-        to easily parameterize arbitrary input workloads, whether typical, exceptional or
-        adversarial.
-      url: https://bolt-perf-contracts.github.io/
-      code:
-        type: Project GitHub
-        url: https://github.com/bolt-perf-contracts/bolt
-        latest: 2019-06-06
-      contacts:
-        - name: Rishabh Iyer
-          email: rishabh.iyer@epfl.ch
-      tags:
-        - Software Network
-        - Computer Network
-        - Performance
-      type: Application
-      papers:
-        - title: Performance Contracts for Software Network Functions
-          url: https://dslab.epfl.ch/pubs/bolt.pdf
-      maturity: 1
-      added: 2019-07-26
-
-    - name: CPI
-      description: Fast and precise control-flow hijack protection
-      tech_desc: >
-        Code-Pointer Integrity (CPI) is a property of C/C++ programs that guarantees absence
-        of control-flow hijack attacks by requiring integrity of all direct and indirect
-        pointers to code. Code-Pointer Separation (CPS) is a simplified version of CPI that
-        provides strong protection against such attacks in practice. SafeStack is a component
-        of CPI/CPS, which can be used independently and protects against stack-based
-        control-flow hijacks.
-      url: https://dslab.epfl.ch/proj/cpi/
-      code:
-        type: Project GitHub
-        url: https://github.com/cpi-llvm
-        latest: 2015-11-16
-      contacts:
-        - name: http://volodymyrkuznetsov.info/
-          url: http://volodymyrkuznetsov.info/
-      tags:
-        - Computer Network
-        - Security
-      type: Application
-      papers:
-        - title: Code-Pointer Integrity
-          url: http://dslab.epfl.ch/pubs/cpi.pdf
-      maturity: 1
-      added: 2019-07-26
-
-    - name:         s2e
-      description:  Platform for writing tools that analyze the properties and behavior of software systems
-      layman_desc: >
-          S²E is a platform for writing tools that analyze the properties and
-          behavior of software systems. S²E comes as a modular library that
-          gives virtual machines symbolic execution and program analysis
-          capabilities.
-      url:          http://s2e.systems/
-      code:
+    bolt:
+        name: Bolt
+        description: Performance Contracts for Software Network Functions
+        tech_desc: >
+          In this work, we propose the notion of performance contracts for NFs. A performance
+          contract enables users to predict and scrutinize NF performance at fine granularities
+          without having to run them. It providers users with an abstraction that enables them
+          to easily parameterize arbitrary input workloads, whether typical, exceptional or
+          adversarial.
+        url: https://bolt-perf-contracts.github.io/
+        code:
           type: Project GitHub
-          url:  https://github.com/s2e
-      contacts:
-          - name:   Vitaly Chipounov
-            email:  vitaly@cyberheaven.io
-      tags:
-          - Code Analysis
-          - Static Code Checking
-          - Attack Vectors
-      type: Library
-      maturity: 1
-      added: 2019-03-18
-
-    - name:         ASAP
-      description:  Low overhead software protection
-      layman_desc: >
-          Makes it possible to use powerful software protection mechanisms at a
-          low performance overhead.
-      url:          http://dslab.epfl.ch/proj/asap/
-      code:
-          type: Lab GitHub
-          url:  https://github.com/dslab-epfl/asap
-      contact:
-      contacts:
-          - name:   Jonas Wagner
-            email:  ltlygwayh@gmail.com
-      tags:
-          - Software Protection
-          - LLVM
-          - Buffer Overflows
-      type: Library
-      maturity: 2
-      added: 2019-03-18
-
-    - name:         Cloud 9
-      description:  Scalable symbolic execution
-      layman_desc: >
-          Parallel symbolic execution engine that scales on shared-nothing
-          clusters of commodity hardware.
-      url:          http://cloud9.epfl.ch/
-      code:
-          type: Lab GitHub
-          url:  https://github.com/dslab-epfl/cloud9
-      contacts:
-          - name:   Stefan Bucur
-            email:  stefan.bucur@gmail.com
-      tags:
-          - Cloud
+          url: https://github.com/bolt-perf-contracts/bolt
+          last_commit: 2019-06-06
+        contacts:
+          - name: Rishabh Iyer
+            email: rishabh.iyer@epfl.ch
+        tags:
+          - Software Network
+          - Computer Network
           - Performance
-      type: Application
-      maturity: 2
-      added: 2019-03-18
+        type: Application
+        information:
+          - type: Paper
+            title: Performance Contracts for Software Network Functions
+            url: https://dslab.epfl.ch/pubs/bolt.pdf
+        maturity: 1
+        added: 2019-07-26
 
-    - name:         Dimmunix
-      description:  P{rotection against deadlock bugs
-      layman_desc: >
-          Enables general-purpose applications to defend themselves against
-          deadlock bugs, i.e. avoid deadlocks that they previously encountered.
-      url:          http://dslab.epfl.ch/proj/dimmunix/
-      code:
-          type: Google Code
-          url:  https://code.google.com/archive/p/dimmunix/
-      contacts:
-          - name:   Horatiu Jula
-            url:        https://www.linkedin.com/in/horatiu-jula-63a02a7
-      tags:
-          - Deadlock
-          - Concurrency
-          - Immunity
-          - Java
-      type: Library
-      maturity: 2
-      added: 2019-03-18
+    cpi:
+        name: CPI
+        description: Fast and precise control-flow hijack protection
+        tech_desc: >
+          Code-Pointer Integrity (CPI) is a property of C/C++ programs that guarantees absence
+          of control-flow hijack attacks by requiring integrity of all direct and indirect
+          pointers to code. Code-Pointer Separation (CPS) is a simplified version of CPI that
+          provides strong protection against such attacks in practice. SafeStack is a component
+          of CPI/CPS, which can be used independently and protects against stack-based
+          control-flow hijacks.
+        url: https://dslab.epfl.ch/proj/cpi/
+        code:
+          type: Project GitHub
+          url: https://github.com/cpi-llvm
+          last_commit: 2015-11-16
+        contacts:
+          - name: http://volodymyrkuznetsov.info/
+            url: http://volodymyrkuznetsov.info/
+        tags:
+          - Computer Network
+          - Security
+        type: Application
+        information:
+          - type: Paper
+            title: Code-Pointer Integrity
+            url: http://dslab.epfl.ch/pubs/cpi.pdf
+        maturity: 1
+        added: 2019-07-26
 
-    - name:         Failure Sketching
-      description:  Automated debugging technique
-      layman_desc: >
-          Failure sketching is an automated debugging technique that provides
-          developers with an explanation (“failure sketch”) of the root cause
-          of a failure that occurred in production. A failure sketch only
-          contains program statements that lead to the failure, and it clearly
-          shows the differences between failing and successful runs; these
-          differences guide developers to the root cause.
-      url:          http://dslab.epfl.ch/proj/gist/
-      code:
-          type:     Lab GitHub
-          url:      https://github.com/dslab-epfl/bugbase
-      contacts:
-          - name:   Baris Kasici
-            email:  barisk@umich.edu
-      tags:
-          - Debug
-          - Failure
-          - Verification
-      type: Application
-      maturity: 3
-      added: 2019-03-18
+    s2e:
+        name:         s2e
+        description:  Platform for writing tools that analyze the properties and behavior of software systems
+        layman_desc: >
+            S²E is a platform for writing tools that analyze the properties and
+            behavior of software systems. S²E comes as a modular library that
+            gives virtual machines symbolic execution and program analysis
+            capabilities.
+        url:          http://s2e.systems/
+        code:
+            type: Project GitHub
+            url:  https://github.com/s2e
+        contacts:
+            - name:   Vitaly Chipounov
+              email:  vitaly@cyberheaven.io
+        tags:
+            - Code Analysis
+            - Static Code Checking
+            - Attack Vectors
+        type: Library
+        maturity: 1
+        added: 2019-03-18
+
+    asap:
+        name:         ASAP
+        description:  Low overhead software protection
+        layman_desc: >
+            Makes it possible to use powerful software protection mechanisms at a
+            low performance overhead.
+        url:          http://dslab.epfl.ch/proj/asap/
+        code:
+            type: Lab GitHub
+            url:  https://github.com/dslab-epfl/asap
+        contact:
+        contacts:
+            - name:   Jonas Wagner
+              email:  ltlygwayh@gmail.com
+        tags:
+            - Software Protection
+            - LLVM
+            - Buffer Overflows
+        type: Library
+        maturity: 2
+        added: 2019-03-18
+
+    cloud9:
+        name:         Cloud 9
+        description:  Scalable symbolic execution
+        layman_desc: >
+            Parallel symbolic execution engine that scales on shared-nothing
+            clusters of commodity hardware.
+        url:          http://cloud9.epfl.ch/
+        code:
+            type: Lab GitHub
+            url:  https://github.com/dslab-epfl/cloud9
+        contacts:
+            - name:   Stefan Bucur
+              email:  stefan.bucur@gmail.com
+        tags:
+            - Cloud
+            - Performance
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+
+    dimmunix:
+        name:         Dimmunix
+        description:  P{rotection against deadlock bugs
+        layman_desc: >
+            Enables general-purpose applications to defend themselves against
+            deadlock bugs, i.e. avoid deadlocks that they previously encountered.
+        url:          http://dslab.epfl.ch/proj/dimmunix/
+        code:
+            type: Google Code
+            url:  https://code.google.com/archive/p/dimmunix/
+        contacts:
+            - name:   Horatiu Jula
+              url:        https://www.linkedin.com/in/horatiu-jula-63a02a7
+        tags:
+            - Deadlock
+            - Concurrency
+            - Immunity
+            - Java
+        type: Library
+        maturity: 2
+        added: 2019-03-18
+
+    failure-sketching:
+        name:         Failure Sketching
+        description:  Automated debugging technique
+        layman_desc: >
+            Failure sketching is an automated debugging technique that provides
+            developers with an explanation (“failure sketch”) of the root cause
+            of a failure that occurred in production. A failure sketch only
+            contains program statements that lead to the failure, and it clearly
+            shows the differences between failing and successful runs; these
+            differences guide developers to the root cause.
+        url:          http://dslab.epfl.ch/proj/gist/
+        code:
+            type:     Lab GitHub
+            url:      https://github.com/dslab-epfl/bugbase
+        contacts:
+            - name:   Baris Kasici
+              email:  barisk@umich.edu
+        tags:
+            - Debug
+            - Failure
+            - Verification
+        type: Application
+        maturity: 3
+        added: 2019-03-18

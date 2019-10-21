@@ -1,181 +1,191 @@
 projects:
-    - name: Lattigo
-      description: CRT-accelerated lattice-based cryptography library in Golang
-      tech_desc: >
-        Toolbox of lattice-based cryptographic primitives for Go implementing
-        the BFV and CKKS schemes and their distributed version.
-        The library is still at an experimental stage and should be used for
-        research purposes only.
-      layman_desc: >
-          Homomorphic encryption refers to cryptographic schemes that allow to
-          compute directly on the encrypted data, without requiring the data to
-          be decrypted first. It therefore enables a set of operations
-          (polynomial evaluation and approximations of non-polynomial
-          functions) to be "blindly" performed by an untrustworthy party on
-          encrypted sensitive data, with a controlled computational overhead.
-          This technology is very promising as an enabler for secure data
-          sharing, and in particular, in the case of secure multi-party
-          computations, where several entities want to collaboratively compute
-          a function on their confidential or sensitive data, without revealing
-          to each other anything else than the result of this computation.
-      code:
-        type: Lab GitHub
-        url: https://github.com/ldsec/lattigo
-        latest: 2019-09-24
-      contacts:
-        - name: Jean-Philippe Bossuat
-          email: jean-philippe.bossuat@epfl.ch
-        - name: Lattigo mailing list
-          email: lattigo@listes.epfl.ch
-      tags:
-        - Cryptography
-        - Lattice Based Crypto
-        - Homomorphic Encryption
-        - Secure Multi-party Computation
-      language: GoLang
-      type: Library
-      license: Apache License v2
-      maturity: 1
-      added: 2019-08-15
-      updated: 2019-09-26
 
-    - name:         PriFi
-      description:  Anonymous communication system
-      layman_desc: >
-          PriFi provides a network access mechanism for protecting members of
-          an organization who access the Internet while on-site.
-      code:
+    lattigo:
+        name: Lattigo
+        description: CRT-accelerated lattice-based cryptography library in Golang
+        tech_desc: >
+          Toolbox of lattice-based cryptographic primitives for Go implementing
+          the BFV and CKKS schemes and their distributed version.
+          The library is still at an experimental stage and should be used for
+          research purposes only.
+        layman_desc: >
+            Homomorphic encryption refers to cryptographic schemes that allow to
+            compute directly on the encrypted data, without requiring the data to
+            be decrypted first. It therefore enables a set of operations
+            (polynomial evaluation and approximations of non-polynomial
+            functions) to be "blindly" performed by an untrustworthy party on
+            encrypted sensitive data, with a controlled computational overhead.
+            This technology is very promising as an enabler for secure data
+            sharing, and in particular, in the case of secure multi-party
+            computations, where several entities want to collaboratively compute
+            a function on their confidential or sensitive data, without revealing
+            to each other anything else than the result of this computation.
+        code:
           type: Lab GitHub
-          url:  https://github.com/dedis/prifi
-          latest: 2019-07-01
-      papers:
-          - title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
-            url:    https://arxiv.org/pdf/1710.10237.pdf
-      lines_of_code:    16000
-      contacts:
-          - name:   Ludovic Barman
-            email:  ludovic.barman@epfl.ch
-      tags:
-          - Wifi
-          - Network
-          - Privacy Preserving
-          - MIxed Networks
-      language: GoLang
-      type: Application, Library
-      license:  AGPLv3
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
+          url: https://github.com/ldsec/lattigo
+          last_commit: 2019-09-24
+        contacts:
+          - name: Jean-Philippe Bossuat
+            email: jean-philippe.bossuat@epfl.ch
+          - name: Lattigo mailing list
+            email: lattigo@listes.epfl.ch
+        tags:
+          - Cryptography
+          - Lattice Based Crypto
+          - Homomorphic Encryption
+          - Secure Multi-party Computation
+        language: GoLang
+        type: Library
+        license: Apache License v2
+        maturity: 1
+        added: 2019-08-15
+        updated: 2019-09-26
 
-    - name:         Unlynx
-      description:  Privacy-preserving data sharing
-      layman_desc: >
-          Unlynx offers a series of independent protocols that when combined
-          offer a verifiably-secure and safe way to share sensitive data (e.g.,
-          medical data).
-      code:
-          type: Lab GitHub
-          url:  https://github.com/ldsec/unlynx
-          latest: 2019-09-23
-      papers:
-          - title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
-            url:    https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
-      lines_of_code:    11000
-      tags:
-          - Privacy Preserving
-          - Protocol
-          - Medical Data
-      language: GoLang
-      type: Application
-      license:  non-commercial
-      maturity: 2
-      contacts:
-          - name:   David Froelicher
-            email:  david.froelicher@epfl.ch
-          - name:   Joao de Sá
-            email:  joao.gomesdesaesousa@epfl.ch
-      added: 2019-03-18
-      updated: 2019-09-26
+    prifi:
+        name:         PriFi
+        description:  Anonymous communication system
+        layman_desc: >
+            PriFi provides a network access mechanism for protecting members of
+            an organization who access the Internet while on-site.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/dedis/prifi
+            last_commit: 2019-07-01
+        information:
+            - type:   Paper
+              title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
+              url:    https://arxiv.org/pdf/1710.10237.pdf
+        lines_of_code:    16000
+        contacts:
+            - name:   Ludovic Barman
+              email:  ludovic.barman@epfl.ch
+        tags:
+            - Wifi
+            - Network
+            - Privacy Preserving
+            - MIxed Networks
+        language: GoLang
+        type: Application, Library
+        license:  AGPLv3
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29
 
-    - name:         Medco
-      description:  Privacy-preserving cohort exploration
-      layman_desc: >
-          MedCo enables privacy-preserving cohort exploration by providing ways
-          of querying medical datasets with end-to-end encryption of queries,
-          data at rest, in transfer and during computation, all the while
-          guaranteeing differential privacy.
-      url:          https://medco.epfl.ch/
-      code:
-          type: Lab GitHub
-          url:  https://medco.epfl.ch/software/
-          latest: 2019-05-02
-      lines_of_code:    16000
-      tags:
-          - Privacy Preserving
-          - Medical Data
-      language: GoLang
-      type: Application
-      license:  non-commercial
-      maturity: 2
-      contacts:
-          - name:   Mickaël Misbach
-            email:  mickael.misbach@epfl.ch
-      added: 2019-03-18
-      updated: 2019-07-29
+    unlynx:
+        name:         Unlynx
+        description:  Privacy-preserving data sharing
+        layman_desc: >
+            Unlynx offers a series of independent protocols that when combined
+            offer a verifiably-secure and safe way to share sensitive data (e.g.,
+            medical data).
+        code:
+            type: Lab GitHub
+            url:  https://github.com/ldsec/unlynx
+            last_commit: 2019-09-23
+        information:
+            - type:   Paper
+              title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
+              url:    https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
+        lines_of_code:    11000
+        tags:
+            - Privacy Preserving
+            - Protocol
+            - Medical Data
+        language: GoLang
+        type: Application
+        license:  non-commercial
+        maturity: 2
+        contacts:
+            - name:   David Froelicher
+              email:  david.froelicher@epfl.ch
+            - name:   Joao de Sá
+              email:  joao.gomesdesaesousa@epfl.ch
+        added: 2019-03-18
+        updated: 2019-09-26
 
-    - name:         Drynx
-      description:  Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
-      layman_desc: >
-          Drynx is a library for simulating a privacy-preserving and verifiable 
-          data sharing/querying tool. It offers a series of independent 
-          protocols that when combined offer a verifiably-secure and safe 
-          way to compute statistics and train basic machine learning models 
-          on distributed sensitive data (e.g., medical data).
-      code:
-          type: Lab GitHub
-          url:  https://github.com/ldsec/drynx
-          latest: 2019-09-23
-      lines_of_code:    16000
-      papers:
-          - title:  'Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets'
-            url:    https://arxiv.org/pdf/1902.03785.pdf
-      tags:
-          - Privacy Preserving
-          - Medical Data
-          - Data Querying
-      language: GoLang
-      type: Application
-      license:  non-commercial
-      maturity: 2
-      contacts:
-          - name:   David Froelicher
-            email:  david.froelicher@epfl.ch
-          - name:   Joao de Sá
-            email:  joao.gomesdesaesousa@epfl.ch
-      in_incubator: true
-      c4dt_contact:
-          name:  Linus Gasser
-          email: linus.gasser@epfl.ch
-      added: 2019-03-18
-      updated: 2019-09-26
+    medco:
+        name:         Medco
+        description:  Privacy-preserving cohort exploration
+        layman_desc: >
+            MedCo enables privacy-preserving cohort exploration by providing ways
+            of querying medical datasets with end-to-end encryption of queries,
+            data at rest, in transfer and during computation, all the while
+            guaranteeing differential privacy.
+        url:          https://medco.epfl.ch/
+        code:
+            type: Lab GitHub
+            url:  https://medco.epfl.ch/software/
+            last_commit: 2019-05-02
+        lines_of_code:    16000
+        tags:
+            - Privacy Preserving
+            - Medical Data
+        language: GoLang
+        type: Application
+        license:  non-commercial
+        maturity: 2
+        contacts:
+            - name:   Mickaël Misbach
+              email:  mickael.misbach@epfl.ch
+        added: 2019-03-18
+        updated: 2019-07-29
 
-    - name:         PDCi2b2
-      description:  Private data characterization for i2b2
-      layman_desc: >
-          This project shares data from I2B2 in a privacy preserving, fully
-          encrypted way, so that hospitals can let researchers access their
-          patients data without risking to leak any private information.
-      url:          https://github.com/JLRgithub/PDCi2b2/wiki
-      code:
-          type:     Personal GitHub
-          url:      https://github.com/JLRgithub/PDCi2b2
-          latest: 2018-02-12
-      lines_of_code:    5000 - 10000
-      tags:
-          - i2b2
-          - Medical Data
-          - Privacy Preserving
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
+    drynx:
+        name:         Drynx
+        description:  Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
+        layman_desc: >
+            Drynx is a library for simulating a privacy-preserving and verifiable 
+            data sharing/querying tool. It offers a series of independent 
+            protocols that when combined offer a verifiably-secure and safe 
+            way to compute statistics and train basic machine learning models 
+            on distributed sensitive data (e.g., medical data).
+        code:
+            type: Lab GitHub
+            url:  https://github.com/ldsec/drynx
+            last_commit: 2019-09-23
+        lines_of_code:    16000
+        information:
+            - type:   Paper
+              title:  'Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets'
+              url:    https://arxiv.org/pdf/1902.03785.pdf
+        tags:
+            - Privacy Preserving
+            - Medical Data
+            - Data Querying
+        language: GoLang
+        type: Application
+        license:  non-commercial
+        maturity: 2
+        contacts:
+            - name:   David Froelicher
+              email:  david.froelicher@epfl.ch
+            - name:   Joao de Sá
+              email:  joao.gomesdesaesousa@epfl.ch
+        in_incubator: true
+        c4dt_contact:
+            name:  Linus Gasser
+            email: linus.gasser@epfl.ch
+        added: 2019-03-18
+        updated: 2019-09-26
+
+    pdci2b2:
+        name:         PDCi2b2
+        description:  Private data characterization for i2b2
+        layman_desc: >
+            This project shares data from I2B2 in a privacy preserving, fully
+            encrypted way, so that hospitals can let researchers access their
+            patients data without risking to leak any private information.
+        url:          https://github.com/JLRgithub/PDCi2b2/wiki
+        code:
+            type:     Personal GitHub
+            url:      https://github.com/JLRgithub/PDCi2b2
+            last_commit: 2018-02-12
+        lines_of_code:    5000 - 10000
+        tags:
+            - i2b2
+            - Medical Data
+            - Privacy Preserving
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29

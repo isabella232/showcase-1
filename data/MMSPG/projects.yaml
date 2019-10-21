@@ -1,15 +1,16 @@
 projects:
 
-    - name:         ProShare
-      description:  Privacy-preserving photo sharing
-      layman_desc: >
-          Proshare allows you to share your photos, while protecting sensible
-          regions and hiding secret messages.
-      url:          http://grebproshare.epfl.ch/
-      tags:
-          - Privacy
-          - Photo
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
+    proshare:
+        name:         ProShare
+        description:  Privacy-preserving photo sharing
+        layman_desc: >
+            Proshare allows you to share your photos, while protecting sensible
+            regions and hiding secret messages.
+        url:          http://grebproshare.epfl.ch/
+        tags:
+            - Privacy
+            - Photo
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29

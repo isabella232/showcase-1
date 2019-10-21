@@ -1,171 +1,180 @@
 projects:
 
-    - name:         MVTIL
-      description: >
-          Multiversion Timestamp Locking (MVTL), a new family of
-          concurrency control algorithms
-      layman_desc: >
-          Improving performance of distributed databases by allowing read
-          accesses to lag behind the latest version of the data.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/LPD-EPFL/MVTIL
-          latest: 2018-05-16
-      tags:
-          - Database
-          - Concurrency
-      type: Application
-      maturity: 1
-      language: C++
-      added: 2019-03-18
+    mvtil:
+        name:         MVTIL
+        description: >
+            Multiversion Timestamp Locking (MVTL), a new family of
+            concurrency control algorithms
+        layman_desc: >
+            Improving performance of distributed databases by allowing read
+            accesses to lag behind the latest version of the data.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/MVTIL
+            last_commit: 2018-05-16
+        tags:
+            - Database
+            - Concurrency
+        type: Application
+        maturity: 1
+        language: C++
+        added: 2019-03-18
 
-    - name:         libNVRAM
-      description:  Log-Free Concurrent Data Structures
-      layman_desc: >
-          Storing data structures in non-volatile RAM such that transient
-          failures don't corrupt the data.
-      code:
-          type: Lab Download
-          url:  http://dcl.epfl.ch/site/nvram
-          latest: 2017-07-18
-      tags:
-          - NVRAM
-          - Data Structures
-          - Concurrency
-          - Transient Failures
-      type: Library, Application
-      language: C++
-      maturity: 1
-      added: 2019-03-18
+    libnvram:
+        name:         libNVRAM
+        description:  Log-Free Concurrent Data Structures
+        layman_desc: >
+            Storing data structures in non-volatile RAM such that transient
+            failures don't corrupt the data.
+        code:
+            type: Lab Download
+            url:  http://dcl.epfl.ch/site/nvram
+            last_commit: 2017-07-18
+        tags:
+            - NVRAM
+            - Data Structures
+            - Concurrency
+            - Transient Failures
+        type: Library, Application
+        language: C++
+        maturity: 1
+        added: 2019-03-18
 
-    - name:         FloDB
-      description:  Unlocking Memory in Persistent Key-Value Stores
-      layman_desc: >
-          High performance key-value store for servers with high amount of RAM
-          and lots of CPUs.
-      url:          http://dcl.epfl.ch/site/flodb
-      code:
-          type: Lab GitHub
-          url:  https://github.com/LPD-EPFL/flodb
-      tags:
-          - Key-Value Store
-          - Server
-          - Database
-      type: Application
-      language: C++
-      maturity: 1
-      added: 2019-03-18
+    flodb:
+        name:         FloDB
+        description:  Unlocking Memory in Persistent Key-Value Stores
+        layman_desc: >
+            High performance key-value store for servers with high amount of RAM
+            and lots of CPUs.
+        url:          http://dcl.epfl.ch/site/flodb
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/flodb
+        tags:
+            - Key-Value Store
+            - Server
+            - Database
+        type: Application
+        language: C++
+        maturity: 1
+        added: 2019-03-18
 
-    - name:         MobNet
-      description:  Machine Learning on Android
-      layman_desc: >
-          MobNet is a framework for machine learning on android devices.
-      code:
-          type: Private GitHub
-      tags:
-          - Federated Learning
-          - Android
-          - Edge ML
-      type: Library, Application
-      maturity: 1
-      language: Java
-      added: 2019-07-01
+    mobnet:
+        name:         MobNet
+        description:  Machine Learning on Android
+        layman_desc: >
+            MobNet is a framework for machine learning on android devices.
+        code:
+            type: Private GitHub
+        tags:
+            - Federated Learning
+            - Android
+            - Edge ML
+        type: Library, Application
+        maturity: 1
+        language: Java
+        added: 2019-07-01
 
-    - name:         MCTOP
-      description:  A Multi-Core Topology Abstraction
-      tech_desc: >
-        MCTOP is an abstraction of multi-core topologies augmented with
-        important low-level hardware information, such as memory bandwidths
-        and communication latencies.
-      code:
-          type: Lab GitHub
-          url: https://github.com/LPD-EPFL/mctop
-          latest: 2017-05-04
-      tags:
-          - CPU topology
-          - Multiprocessor
-      type: Application
-      maturity: 0
-      language: C
-      added: 2019-07-26
+    mctop:
+        name:         MCTOP
+        description:  A Multi-Core Topology Abstraction
+        tech_desc: >
+          MCTOP is an abstraction of multi-core topologies augmented with
+          important low-level hardware information, such as memory bandwidths
+          and communication latencies.
+        code:
+            type: Lab GitHub
+            url: https://github.com/LPD-EPFL/mctop
+            last_commit: 2017-05-04
+        tags:
+            - CPU topology
+            - Multiprocessor
+        type: Application
+        maturity: 0
+        language: C
+        added: 2019-07-26
 
-    - name:         LOCKIN
-      description:  Automatically chosing best locking algorithm
-      tech_desc: >
-        GLS is a middleware that makes lock-based programming simple and
-        effective. GLS offers the classic lock-unlock interface of locks.
-        However, in contrast to classic lock libraries, GLS does not require
-        any effort from the programmer for allocating and initializing locks,
-        nor for selecting the appropriate locking strategy.
-      code:
-          type: Lab GitHub
-          url: https://github.com/LPD-EPFL/lockin
-          latest: 2017-04-19
-      tags:
-          - Locking
-      type: Library
-      language: C/C++
-      maturity: 0
-      added: 2019-07-01
+    lockin:
+        name:         LOCKIN
+        description:  Automatically chosing best locking algorithm
+        tech_desc: >
+          GLS is a middleware that makes lock-based programming simple and
+          effective. GLS offers the classic lock-unlock interface of locks.
+          However, in contrast to classic lock libraries, GLS does not require
+          any effort from the programmer for allocating and initializing locks,
+          nor for selecting the appropriate locking strategy.
+        code:
+            type: Lab GitHub
+            url: https://github.com/LPD-EPFL/lockin
+            last_commit: 2017-04-19
+        tags:
+            - Locking
+        type: Library
+        language: C/C++
+        maturity: 0
+        added: 2019-07-01
 
-    - name:         AggregaThor
-      description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
-      tech_desc: >
-          Framework built over TensorFlow implementing state-of-the-art
-          Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
-          Modular approach allows most of its components to be reused in other
-          projects. Unreliable communication channels are supported, providing
-          a performance speed-up over standard TensorFlow in saturated
-          networks.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/LPD-EPFL/AggregaThor
-      tags:
-          - Robust SGD
-          - Distributed ML
-          - Byzantine Resilience
-          - Gradient Aggregation
-          - TensorFlow
-          - UDP
-      type: Library, Application
-      language: Python / C++
-      maturity: 1
-      added: 2019-03-18
+    aggregathor:
+        name:         AggregaThor
+        description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
+        tech_desc: >
+            Framework built over TensorFlow implementing state-of-the-art
+            Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
+            Modular approach allows most of its components to be reused in other
+            projects. Unreliable communication channels are supported, providing
+            a performance speed-up over standard TensorFlow in saturated
+            networks.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/AggregaThor
+        tags:
+            - Robust SGD
+            - Distributed ML
+            - Byzantine Resilience
+            - Gradient Aggregation
+            - TensorFlow
+            - UDP
+        type: Library, Application
+        language: Python / C++
+        maturity: 1
+        added: 2019-03-18
 
-    - name:         Robust RDMA
-      description:  Better fault-tolerance and performance of consensus using RDMA
-      tech_desc: >
-          Leveraging Remote Direct Memory Access (RDMA) to improve the
-          fault-tolerance and performance of consensus, compared to existing
-          protocols. In some cases, RDMA allows us to circumvent existing
-          theoretical lower bounds (solving Byzantine consensus with 2f+1
-          replicas, for instance).
-      tags:
-          - RDMA
-          - Consensus
-          - Byzantine Resilience
-          - Fault-Tolerance
-          - Communication Complexity
-      type: Library
-      maturity: 1
-      added: 2019-03-18
+    robust-rdma:
+        name:         Robust RDMA
+        description:  Better fault-tolerance and performance of consensus using RDMA
+        tech_desc: >
+            Leveraging Remote Direct Memory Access (RDMA) to improve the
+            fault-tolerance and performance of consensus, compared to existing
+            protocols. In some cases, RDMA allows us to circumvent existing
+            theoretical lower bounds (solving Byzantine consensus with 2f+1
+            replicas, for instance).
+        tags:
+            - RDMA
+            - Consensus
+            - Byzantine Resilience
+            - Fault-Tolerance
+            - Communication Complexity
+        type: Library
+        maturity: 1
+        added: 2019-03-18
 
-    - name:         AT2
-      description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
-      tech_desc: >
-          We replace consensus with a lightweight building block -- a
-          broadcast-based primitive -- to obtain a full-fledged asset transfer
-          system (cryptocurrency). This system is more efficient and more
-          scalable compared with Bitcoin and consensus-based solutions. AT2 is
-          the first system to bypass consensus algorithms for implementing
-          asset transfers.
-      code:
-          type: Private GitHub
-      tags:
-          - Blockchain
-          - Cryptocurrencies
-          - Scalability
-          - Decentralization
-      type: Library, Application
-      maturity: 1
-      added: 2019-03-18
+    at2:
+        name:         AT2
+        description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
+        tech_desc: >
+            We replace consensus with a lightweight building block -- a
+            broadcast-based primitive -- to obtain a full-fledged asset transfer
+            system (cryptocurrency). This system is more efficient and more
+            scalable compared with Bitcoin and consensus-based solutions. AT2 is
+            the first system to bypass consensus algorithms for implementing
+            asset transfers.
+        code:
+            type: Private GitHub
+        tags:
+            - Blockchain
+            - Cryptocurrencies
+            - Scalability
+            - Decentralization
+        type: Library, Application
+        maturity: 1
+        added: 2019-03-18

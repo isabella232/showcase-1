@@ -1,122 +1,131 @@
 projects:
 
-    - name:         DeepFool
-      description:  Simple algorithm to find the minimum adversarial perturbations in deep networks
-      layman_desc: >
-          DeepFool is a simple algorithm to find the minimum perturbations
-          needed in deep networks to change the outcome of its decision.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/LTS4/DeepFool
-          latest: 2018-09-07
-      contacts:
-          - name:   Seyed Moosavi
-            email:  seyed.moosavi@epfl.ch
-      tags:
-          - Machine Learning
-          - Deep Networks
-          - Adversarial
-      language: MatLab, Python
-      type: Application
-      papers:
-          - title:  'DeepFool: a simple and accurate method to fool deep neural networks'
-            url:    https://arxiv.org/abs/1511.04599
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
+    deepfool:
+        name:         DeepFool
+        description:  Simple algorithm to find the minimum adversarial perturbations in deep networks
+        layman_desc: >
+            DeepFool is a simple algorithm to find the minimum perturbations
+            needed in deep networks to change the outcome of its decision.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LTS4/DeepFool
+            last_commit: 2018-09-07
+        contacts:
+            - name:   Seyed Moosavi
+              email:  seyed.moosavi@epfl.ch
+        tags:
+            - Machine Learning
+            - Deep Networks
+            - Adversarial
+        language: MatLab, Python
+        type: Application
+        information:
+            - type:   Paper
+              title:  'DeepFool: a simple and accurate method to fool deep neural networks'
+              url:    https://arxiv.org/abs/1511.04599
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29
 
-    - name:         ManiFool
-      description:  Algorithm for evaluating the invariance properties of deep networks
-      code:
-          type: Personal GitHub
-          url:  https://github.com/moosavism/ManiFool
-          latest: 2018-01-24
-      contacts:
-          - name:   Seyed Moosavi
-            email:  seyed.moosavi@epfl.ch
-      tags:
-          - Machine Learning
-          - Deep Networks
-      language: Python
-      type: Application
-      papers:
-          - title:  'Geometric robustness of deep networks: analysis and improvement'
-            url:    https://arxiv.org/abs/1711.09115
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-07-29
+    manifool:
+        name:         ManiFool
+        description:  Algorithm for evaluating the invariance properties of deep networks
+        code:
+            type: Personal GitHub
+            url:  https://github.com/moosavism/ManiFool
+            last_commit: 2018-01-24
+        contacts:
+            - name:   Seyed Moosavi
+              email:  seyed.moosavi@epfl.ch
+        tags:
+            - Machine Learning
+            - Deep Networks
+        language: Python
+        type: Application
+        information:
+            - type:   Paper
+              title:  'Geometric robustness of deep networks: analysis and improvement'
+              url:    https://arxiv.org/abs/1711.09115
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-07-29
 
-    - name:         SparseFool
-      description:  Geometry-inspired sparse attack on deep networks
-      layman_desc: >
-          Deep Neural Networks have achieved extraordinary results on image
-          classification tasks, but have been shown tobe vulnerable to attacks
-          with carefully crafted perturbations of the input data. Although most
-          attacks usually change values of many image’s pixels, it has been
-          shown that deep networks are also vulnerable to sparse alterations
-          of the input.
-          SparseFool implements an efficient algorithm to compute and control
-          sparse alterations.
-      code:
-          type: Lab GitHub
-          url:  https://github.com/LTS4/SparseFool
-          latest: 2019-06-05
-      contacts:
-          - name:   Apostolos Modas
-            email:  apostolos.modas@epfl.ch
-      tags:
-          - Machine Learning
-          - Deep Networks
-      language: Python
-      type: Application
-      papers:
-          - title:  'SparseFool: a few pixels make a big difference'
-            url:    https://arxiv.org/abs/1811.02248
-      maturity: 1
-      added: 2019-09-04
-      updated: 2019-09-04
+    sparsefool:
+        name:         SparseFool
+        description:  Geometry-inspired sparse attack on deep networks
+        layman_desc: >
+            Deep Neural Networks have achieved extraordinary results on image
+            classification tasks, but have been shown tobe vulnerable to attacks
+            with carefully crafted perturbations of the input data. Although most
+            attacks usually change values of many image’s pixels, it has been
+            shown that deep networks are also vulnerable to sparse alterations
+            of the input.
+            SparseFool implements an efficient algorithm to compute and control
+            sparse alterations.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LTS4/SparseFool
+            last_commit: 2019-06-05
+        contacts:
+            - name:   Apostolos Modas
+              email:  apostolos.modas@epfl.ch
+        tags:
+            - Machine Learning
+            - Deep Networks
+        language: Python
+        type: Application
+        information:
+            - type:   Paper
+              title:  'SparseFool: a few pixels make a big difference'
+              url:    https://arxiv.org/abs/1811.02248
+        maturity: 1
+        added: 2019-09-04
+        updated: 2019-09-04
 
-    - name:         Universal
-      description:  Universal adversarial perturbations
-      layman_desc: >
-          Proposing a universal (image-agnostic) and very small perturbation
-          vector that causes natural images to be misclassified with high
-          probability in a deep neuronal network.
-      url:          https://arxiv.org/pdf/1610.08401.pdf
-      code:
-          type: Lab GitHub
-          url:  https://github.com/LTS4/universal
-          latest: 2017-10-23
-      contacts:
-          - name:   Seyed Moosavi
-            email:  seyed.moosavi@epfl.ch
-      tags:
-          - Machine Learning
-          - Deep Networks
-          - Perturbations
-      language: MatLab, Python
-      type: Application
-      papers:
-          - title:  'Universal adversarial perturbations'
-            url:    https://arxiv.org/pdf/1610.08401.pdf
-      maturity: 1
-      added: 2019-03-18
-      updated: 2019-07-29
+    universal:
+        name:         Universal
+        description:  Universal adversarial perturbations
+        layman_desc: >
+            Proposing a universal (image-agnostic) and very small perturbation
+            vector that causes natural images to be misclassified with high
+            probability in a deep neuronal network.
+        url:          https://arxiv.org/pdf/1610.08401.pdf
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LTS4/universal
+            last_commit: 2017-10-23
+        contacts:
+            - name:   Seyed Moosavi
+              email:  seyed.moosavi@epfl.ch
+        tags:
+            - Machine Learning
+            - Deep Networks
+            - Perturbations
+        language: MatLab, Python
+        type: Application
+        information:
+            - type:   Paper
+              title:  'Universal adversarial perturbations'
+              url:    https://arxiv.org/pdf/1610.08401.pdf
+        maturity: 1
+        added: 2019-03-18
+        updated: 2019-07-29
 
-    - name:         SafeAI
-      description:  Framework for attacking and defending deep neuronal networks
-      layman_desc: >
-          SafeArtificial Intelligence is a framework that allows testing out
-          different attacks and defenses on a neuronal network.
-      code:
-          type: Private GitHub
-      contacts:
-          - name:   Apostolos Modas
-            email:  apostolos.modas@epfl.ch
-      tags:
-          - Machine Learning
-          - Deep Networks
-      type: Application
-      maturity: 1
-      added: 2019-03-18
-      updated: 2019-07-29
+    safeai:
+        name:         SafeAI
+        description:  Framework for attacking and defending deep neuronal networks
+        layman_desc: >
+            SafeArtificial Intelligence is a framework that allows testing out
+            different attacks and defenses on a neuronal network.
+        code:
+            type: Private GitHub
+        contacts:
+            - name:   Apostolos Modas
+              email:  apostolos.modas@epfl.ch
+        tags:
+            - Machine Learning
+            - Deep Networks
+        type: Application
+        maturity: 1
+        added: 2019-03-18
+        updated: 2019-07-29

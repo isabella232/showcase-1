@@ -1,120 +1,129 @@
 projects:
 
-    - name:         PriBot
-      description:  Automated Analysis of Privacy Policies
-      layman_desc: >
-          Pribot uses an automated framework for privacy policy analysis
-          (Polisis). It enables scalable, dynamic, and multi-dimensional
-          queries on natural language privacy policies.
-      url:          https://pribot.org/
-      code:
-          type: Private GitHub
-      contacts:
-          - name:     Rémi Philippe Lebret
-            email:    remi.lebret@epfl.ch
-      tags:
-          - Privacy Policy
-          - Artificial Intelligence
-          - Natural Language
-      language: Python, Javascript
-      type: Application
-      papers:
-          - title:  'Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning'
-            url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
-      license:  commercial
-      maturity: 1
-      added: 2019-03-18
-      updated: 2019-09-04
+    pribot:
+        name:         PriBot
+        description:  Automated Analysis of Privacy Policies
+        layman_desc: >
+            Pribot uses an automated framework for privacy policy analysis
+            (Polisis). It enables scalable, dynamic, and multi-dimensional
+            queries on natural language privacy policies.
+        url:          https://pribot.org/
+        code:
+            type: Private GitHub
+        contacts:
+            - name:     Rémi Philippe Lebret
+              email:    remi.lebret@epfl.ch
+        tags:
+            - Privacy Policy
+            - Artificial Intelligence
+            - Natural Language
+        language: Python, Javascript
+        type: Application
+        information:
+            - type:   Paper
+              title:  'Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning'
+              url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
+        license:  commercial
+        maturity: 1
+        added: 2019-03-18
+        updated: 2019-09-04
 
-    - name:         PrivySeal
-      description:  Privacy Assistant for Installing Cloud Apps
-      layman_desc: >
-          PrivySeal provides a personalized set of insights about your data on
-          google drive before you install other apps.
-      url:          https://privyseal.epfl.ch/#!/
-      code:
-          type: Private GitHub
-      contacts:
-          - name:     Rémi Philippe Lebret
-            email:    remi.lebret@epfl.ch
-      tags:
-          - Data Analysis
-          - Google Drive
-      language: Javascript, Python
-      type: Application
-      papers:
-          - title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
-            url:    https://infoscience.epfl.ch/record/218003
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-09-04
+    privyseal:
+        name:         PrivySeal
+        description:  Privacy Assistant for Installing Cloud Apps
+        layman_desc: >
+            PrivySeal provides a personalized set of insights about your data on
+            google drive before you install other apps.
+        url:          https://privyseal.epfl.ch/#!/
+        code:
+            type: Private GitHub
+        contacts:
+            - name:     Rémi Philippe Lebret
+              email:    remi.lebret@epfl.ch
+        tags:
+            - Data Analysis
+            - Google Drive
+        language: Javascript, Python
+        type: Application
+        information:
+            - type:   Paper
+              title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
+              url:    https://infoscience.epfl.ch/record/218003
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-09-04
 
-    - name:         Artificial-Intelligence Drive
-      description:  Platform for speeding up the development of Artificial-Intelligence classifiers
-      url:          https://modemos.epfl.ch/
-      layman_desc: >
-          The platform aims at accelerating the process of building Artificial
-          Intelligence classifiers for image and text classification.
-      code:
-          type: Private GitHub
-      contacts:
-          - name:     Rémi Philippe Lebret
-            email:    remi.lebret@epfl.ch
-      tags:
-          - Image Classification
-          - Test Classification
-          - Artificial Intelligence
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-09-04
+    artificial-intelligence-drive:
+        name:         Artificial-Intelligence Drive
+        description:  Platform for speeding up the development of Artificial-Intelligence classifiers
+        url:          https://modemos.epfl.ch/
+        layman_desc: >
+            The platform aims at accelerating the process of building Artificial
+            Intelligence classifiers for image and text classification.
+        code:
+            type: Private GitHub
+        contacts:
+            - name:     Rémi Philippe Lebret
+              email:    remi.lebret@epfl.ch
+        tags:
+            - Image Classification
+            - Test Classification
+            - Artificial Intelligence
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-09-04
 
-    - name:         SciLens
-      description:  Helper for science news evaluation
-      url:          http://scilens.epfl.ch/
-      layman_desc: >
-          A platform that automatically generates indicators using weakly
-          supervised learning, effectively helping non-experts to evaluate more
-          accurately the quality of a science news article.
-      code:
-          type: Private GitHub
-      contacts:
-          - name:     Panayotis Smeros
-            email:    panayiotis.smeros@epfl.ch
-      tags:
-          - Test Classification
-          - Fake News
-          - Natural Language
-      type: Application
-      maturity: 2
-      added: 2019-03-18
-      updated: 2019-09-04
+    scilens:
+        name:         SciLens
+        description:  Helper for science news evaluation
+        url:          http://scilens.epfl.ch/
+        layman_desc: >
+            A platform that automatically generates indicators using weakly
+            supervised learning, effectively helping non-experts to evaluate more
+            accurately the quality of a science news article.
+        code:
+            type: Private GitHub
+        contacts:
+            - name:     Panayotis Smeros
+              email:    panayiotis.smeros@epfl.ch
+        tags:
+            - Test Classification
+            - Fake News
+            - Natural Language
+        type: Application
+        maturity: 2
+        added: 2019-03-18
+        updated: 2019-09-04
 
-    - name:         Media Observatory
-      description:  News landscape monitoring
-      layman_desc: >
-          A model of the news landscape that maps news channels based on their
-          selection of subjects.
-          The observatory has the following key objectives: giving the public
-          access to algorithmic solutions to monitor the news landscape,
-          developing transparent quality and credibility indicators and
-          creating a meeting point to foster multidisciplinary research
-          opportunities
-      url:  https://www.mediaobservatory.com/
-      code:
-          type: Private GitHub
-      contacts:
-          - name:     Jérémie Rappaz
-            email:    jeremie.rappaz@epfl.ch
-      tags:
-          - Artificial Intelligence
-          - News
-      type: Application
-      papers:
-          - title:  A Dynamic Embedding Model of the Media Landscape
-            url:    https://www.mediaobservatory.com/assets/papers/www19.pdf
-          - title:  'Selection Bias in News Coverage: Learning it, Fighting it'
-            url:    https://www.mediaobservatory.com/assets/papers/www18.pdf
-      maturity: 1
-      added: 2019-09-04
-      updated: 2019-09-04
+    media-observatory:
+        name:         Media Observatory
+        description:  News landscape monitoring
+        layman_desc: >
+            A model of the news landscape that maps news channels based on their
+            selection of subjects.
+            The observatory has the following key objectives: giving the public
+            access to algorithmic solutions to monitor the news landscape,
+            developing transparent quality and credibility indicators and
+            creating a meeting point to foster multidisciplinary research
+            opportunities
+        url:  https://www.mediaobservatory.com/
+        code:
+            type: Private GitHub
+        contacts:
+            - name:     Jérémie Rappaz
+              email:    jeremie.rappaz@epfl.ch
+        tags:
+            - Artificial Intelligence
+            - News
+        type: Application
+        information:
+            - type:   Paper
+              title:  A Dynamic Embedding Model of the Media Landscape
+              url:    https://www.mediaobservatory.com/assets/papers/www19.pdf
+            - type:   Paper
+              title:  'Selection Bias in News Coverage: Learning it, Fighting it'
+              url:    https://www.mediaobservatory.com/assets/papers/www18.pdf
+        maturity: 1
+        added: 2019-09-04
+        updated: 2019-09-04
