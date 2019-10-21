@@ -20,12 +20,12 @@
 
     <div class="project-details">
         <div>
-            <div class="header">Maturity level:</div>
+            <div class="header">Code quality:</div>
             % maturity_text = {
             %    0: "Not yet assessed",
-            %    1: "Showcase",
-            %    2: "Incubator",
-            %    3: "Market",
+            %    1: "Low",
+            %    2: "Medium",
+            %    3: "High",
             % }
             {{ maturity_text.get(project.get('maturity', 0)) }}
         </div>
