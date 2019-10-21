@@ -25,3 +25,32 @@ to be very big - at most 100 projects with 20 key/value pairs is easy to hold in
 
 For presentation, a simple javascript frontend communicates with the go program and presents filtering
 options to the user.
+
+## Running locally
+
+Ensure you have the required tools to create Python virtual environments. You might need to install a specific package depending on your distribution, e.g. on Debian `python3-venv`:
+```
+$ sudo apt install python3-venv
+```
+
+Create a Python virtual environment:
+```
+$ python3 -m venv test-env
+```
+
+Activate the virtual environment:
+```
+$ . test-env/bin/activate
+```
+
+Install the requirements:
+```
+$ pip3 install -r requirements.txt
+```
+
+Run the showcase:
+```
+$ ./showcase.py
+```
+
+The application listens by default on port 8080; point your browser to http://localhost:8080/.
