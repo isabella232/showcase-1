@@ -2,32 +2,38 @@ projects:
 
     vigor:
         name: Vigor
-        description: A Formally Verified Performant NAT
+        description: Formally verified and performant software Middleboxes
         tech_desc: >
-          We present a NAT written in C and proven to be semantically correct according to RFC 3022,
-          as well as crash-free and memory-safe. There exists a lot of recent work on network
-          verification, but it mostly assumes models of network functions and proves properties
-          specific to network configuration, such as reachability and absence of loops. Our proof
-          applies directly to the C code of a network function, and it demonstrates the absence
-          of implementation bugs.
-        url: https://vignat.github.io/
+            Software stack and toolchain for building and running software
+            middleboxes that are guaranteed to be correct, while providing
+            competitive performance and preserving developer productivity. With
+            Vigor, developers write the middlebox code (i.e., the software
+            network function, or NF) in C atop a standard packet-processing
+            framework, putting persistent state in data structures from a
+            Vigor-provided library. Vigor then automatically verifies that the
+            resulting software stack correctly implements a specification
+            (written in Python).
+        url: https://vigor-nf.github.io/
         code:
           type: Project Github
-          url: https://github.com/vignat/vignat
-          last_commit: 2018-02-19
+          url: https://github.com/vigor-nf/vigor
+          last_commit: 2019-10-09
         contacts:
           - name: Arseniy Zaostrovnykh
             email: arseniy.zaostrovnykh@epfl.ch
         tags:
-          - NAT
-          - Verified Softwawre
+          - Software Verification
+          - Middlebox
+          - Network
         information:
           - type: Paper
             title: "Verifying Software Network Functions with No Verification Expertise"
             url: https://dslab.epfl.ch/pubs/vigor.pdf
-        type: Application
-        maturity: 2
+        language: C, Python
+        type: Framework
+        maturity: 3
         added: 2019-07-26
+        updated: 2019-10-18
 
     bolt:
         name: Bolt
@@ -154,7 +160,7 @@ projects:
 
     dimmunix:
         name:         Dimmunix
-        description:  P{rotection against deadlock bugs
+        description:  Protection against deadlock bugs
         layman_desc: >
             Enables general-purpose applications to defend themselves against
             deadlock bugs, i.e. avoid deadlocks that they previously encountered.
@@ -173,6 +179,7 @@ projects:
         type: Library
         maturity: 2
         added: 2019-03-18
+        updated: 2019-10-18
 
     failure-sketching:
         name:         Failure Sketching

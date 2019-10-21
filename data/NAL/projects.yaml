@@ -6,7 +6,7 @@ projects:
         layman_desc: >
             Formally verified and performant software NAT, a pioneer network
             function of the Vigor approach.
-        url:          http://ecocloud.ch/project/vignat/
+        url:          https://vignat.github.io/
         code:
             type: Project GitHub
             url:  https://github.com/vignat/vignat
@@ -27,7 +27,7 @@ projects:
               url:    https://vignat.github.io/vignat-paper.pdf
         maturity: 3
         added: 2019-03-18
-        updated: 2019-07-29
+        updated: 2019-10-18
 
     line:
         name:         LINE

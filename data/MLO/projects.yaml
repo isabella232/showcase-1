@@ -2,7 +2,7 @@ projects:
 
     chocosgd:
         name: chocoSGD
-        description: decentralized communication-efficient ML and DL
+        description: Decentralized communication-efficient ML and DL
         tech_desc:
         code:
             type: Lab GitHub

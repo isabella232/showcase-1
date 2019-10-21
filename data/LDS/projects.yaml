@@ -23,7 +23,7 @@ projects:
         code:
           type: Lab GitHub
           url: https://github.com/ldsec/lattigo
-          last_commit: 2019-09-24
+          last_commit: 2019-10-15
         contacts:
           - name: Jean-Philippe Bossuat
             email: jean-philippe.bossuat@epfl.ch
@@ -37,9 +37,9 @@ projects:
         language: GoLang
         type: Library
         license: Apache License v2
-        maturity: 1
+        maturity: 2
         added: 2019-08-15
-        updated: 2019-09-26
+        updated: 2019-10-18
 
     prifi:
         name:         PriFi
