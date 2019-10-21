@@ -31,15 +31,19 @@ def projects(lab_id=None):
 
     return dict(labs=labs, selected_lab_id=lab_id)
 
-@bottle.route('/project/<project_id>')
+@bottle.route('/project/<lab_id>/<project_id>')
 @bottle.view('project')
-def project(project_id):
+def project(lab_id, project_id):
     labs = data.load()
 
+    if lab_id not in labs:
+        bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
+
     found_projects = [
-            (p, lab_id, lab)
-            for lab_id, lab in labs.items()
-            for p_id, p in lab['projects'].items()
+            (p, l)
+            for l_id, l in labs.items()
+            for p_id, p in l['projects'].items()
+            if l_id == lab_id
             if p_id == project_id
             ]
 
@@ -50,7 +54,7 @@ def project(project_id):
     elif nb_projects > 1:
         bottle.abort(404, "Project '{}' is ambiguous ({} instances)".format(project_id, nb_projects))
 
-    project, lab_id, lab = found_projects[0]
+    project, lab = found_projects[0]
     lab['lab_id'] = lab_id
 
     return dict(project=project, lab=lab)

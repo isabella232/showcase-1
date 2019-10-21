@@ -170,7 +170,7 @@
                                     <a href="{{ lab['url'] }}">{{ prof['name'] }}</a>
                                 </td>
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
-                                <td class="proj_name dt-nowrap"><a href="/project/{{ project_id }}">{{ name }}</a></td>
+                                <td class="proj_name dt-nowrap"><a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a></td>
                                 % if url:
                                 <td class=""><a href="{{ url }}">Home page</a></td>
                                 % else:
