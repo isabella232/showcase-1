@@ -95,7 +95,7 @@
         % if project.get('in_incubator') and project.get('demo'):
         <hr/>
         <div class="header">Demonstrator:</div>
-         <a href="project['demo']['url']">{{ project['demo']['title'] }}</a>
+         <a href="{{ project['demo']['url'] }}">{{ project['demo']['title'] }}</a>
         % end
 
     </div>
