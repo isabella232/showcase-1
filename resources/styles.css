@@ -42,21 +42,6 @@ table.dataTable tbody tr td {
     color: black;
 }
 
-td#showcase {
-    background-color: #ffcccc;
-    color: rgba(0,0,0,0); /* Opacity set to 0 for full transparency; value is displayed only for sorting */
-}
-
-td#incubator {
-    background-color: #ffffcc;
-    color: rgba(0,0,0,0); /* Opacity set to 0 for full transparency; value is displayed only for sorting */
-}
-
-td#market {
-    background-color: #ccffcc;
-    color: rgba(0,0,0,0); /* Opacity set to 0 for full transparency; value is displayed only for sorting */
-}
-
 table.dataTable tbody tr td.proj_name  {
     font-weight: bold;
 }
