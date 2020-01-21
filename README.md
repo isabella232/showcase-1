@@ -33,24 +33,44 @@ Ensure you have the required tools to create Python virtual environments. You mi
 $ sudo apt install python3-venv
 ```
 
-Create a Python virtual environment:
+Simply run `make`:
 ```
-$ python3 -m venv test-env
-```
-
-Activate the virtual environment:
-```
-$ . test-env/bin/activate
+$ make
 ```
 
-Install the requirements:
-```
-$ pip3 install -r requirements.txt
-```
-
-Run the showcase:
-```
-$ ./showcase.py
-```
+This will create a Python virtual environment, activate it, install the dependencies and run the showcase application.
 
 The application listens by default on port 8080; point your browser to http://localhost:8080/.
+
+## Running on the server
+
+Assuming $APP_PATH is the directory containing the application, the following must be setup on the server (see also the [mod_wsgi docs](https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html#daemon-mode-single-application):
+
+Clone the repository:
+```
+$ cd $APP_PATH && git clone ...
+```
+
+Create the Python virtual environment and install the dependencies:
+```
+$ cd showcase
+$ make env
+```
+
+Configure an Apache virtual host for the app, containing in particular:
+```
+	WSGIDaemonProcess showcase user=showcase group=showcase processes=1 threads=5 python-home=$APP_PATH/showcase/venv
+	WSGIScriptAlias / $APP_PATH/showcase/app.wsgi
+
+	<Directory $APP_PATH/showcase>
+		WSGIProcessGroup showcase
+		WSGIApplicationGroup %{GLOBAL}
+		Require all granted
+	</Directory>
+```
+
+Restart Apache:
+```
+$ sudo /etc/init.d/apache2 restart
+```
+
