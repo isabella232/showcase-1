@@ -179,7 +179,13 @@
                                 <td>{{ date_added }}</td>
                                 <td>{{ date_updated }}</td>
                                 % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                                <td id="{{ maturity_map.get(maturity) }}">{{ maturity }}</td>
+                                <td data-order="{{ maturity }}" class="dt-center">
+                                    <img
+                                        src="/resources/maturity_{{ maturity_map.get(maturity) }}.svg"
+                                        width="25em"
+                                        height="25em"
+                                    >
+                                </td>
                                 <td>{{ description }}</td>
                                 <td>{{ tech_desc }}</td>
                                 <td>{{ layman_desc }}</td>
