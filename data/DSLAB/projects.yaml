@@ -41,7 +41,7 @@ projects:
         tech_desc: >
           In this work, we propose the notion of performance contracts for NFs. A performance
           contract enables users to predict and scrutinize NF performance at fine granularities
-          without having to run them. It providers users with an abstraction that enables them
+          without having to run them. It provides users with an abstraction that enables them
           to easily parameterize arbitrary input workloads, whether typical, exceptional or
           adversarial.
         url: https://bolt-perf-contracts.github.io/
