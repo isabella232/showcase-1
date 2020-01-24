@@ -1,5 +1,7 @@
 all: showcase
 
+.ONESHELL:
+
 VENV_DIR := venv
 
 $(VENV_DIR):
