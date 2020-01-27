@@ -13,10 +13,4 @@
     </linearGradient>
 
     <circle cx="50" cy="50" r="50" fill="url(#back)" />
-
-    <path d="
-        M 67 3
-        A 50 50 0 1 0 67 97
-        A 50 50 0 0 1 67 3
-        Z" fill="url(#grad)" />
 </svg>

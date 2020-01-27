@@ -131,10 +131,8 @@
                             ]
                             contacts = project.get('contacts', [])
 
-                            if maturity == 0:
-                                continue
-                            end
-
+                            # Skip projects with a `date_added` in the future.
+                            # This allows to schedule the appearance of projects in the showcase.
                             import datetime
                             today = datetime.datetime.now().date()
                             if date_added > today:
@@ -157,7 +155,7 @@
                                 % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
                                 <td data-order="{{ maturity }}" class="dt-center">
                                     <img
-                                        src="/resources/maturity_{{ maturity_map.get(maturity) }}.svg"
+                                        src="/resources/maturity_{{ maturity_map.get(maturity, "na") }}.svg"
                                         width="25em"
                                         height="25em"
                                     >

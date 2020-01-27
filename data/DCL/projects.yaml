@@ -90,7 +90,6 @@ projects:
             - CPU topology
             - Multiprocessor
         type: Application
-        maturity: 0
         language: C
         date_added: 2019-07-26
 
@@ -111,7 +110,6 @@ projects:
             - Locking
         type: Library
         language: C/C++
-        maturity: 0
         date_added: 2019-07-01
 
     aggregathor:
