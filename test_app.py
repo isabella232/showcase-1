@@ -10,6 +10,7 @@ TEST_DATA = {
         'LAB1': {
             'name': None,
             'url': None,
+            'prof': MagicMock(),
             'projects': {
                 'proj1': MagicMock(),
                 'proj2': None,
@@ -18,6 +19,7 @@ TEST_DATA = {
         'LAB2': {
             'name': None,
             'url': None,
+            'prof': MagicMock(),
             'projects': {
                 'proj2': None,
                 }
@@ -30,20 +32,36 @@ def test_load_data():
 def test_consistent_data():
     labs = data.load()
 
-    # Check that projects in the incubator have a C4DT contact
     for p in [
             p
             for lab in labs.values()
             for p in lab['projects'].values()
-            if p.get('in_incubator', False)
             ]:
-        assert 'c4dt_contact' in p, "'c4dt_contact' missing in {}".format(p['name'])
+        # Check that projects in the incubator have a C4DT contact
+        if p.get('in_incubator'):
+            assert 'c4dt_contact' in p, "'c4dt_contact' missing in {}".format(p['name'])
+
+        # Check that projects with code have a type
+        if 'code' in p:
+            assert 'type' in p['code'], "'type' missing from code section in {}".format(p['name'])
+
+        # Check that demos have a title and URL
+        if 'demo' in p:
+            assert 'title' in p['demo'], "'title' missing from demo section in {}".format(p['name'])
+            assert 'url' in p['demo'], "'url' missing from demo section in {}".format(p['name'])
 
 def test_projects():
     showcase.projects()
 
 def test_labs():
     showcase.labs()
+
+def test_all_projects():
+    labs = data.load()
+
+    for lab_id, lab in labs.items():
+        for project_id in lab['projects']:
+            showcase.project(lab_id, project_id)
 
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project_lab_does_not_exist(data):
