@@ -13,7 +13,7 @@ projects:
         language: Python
         type: Library
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     who-is-that:
@@ -34,5 +34,5 @@ projects:
             - Machine Learning
         type: Library
         maturity: 1
-        added: 2019-09-09
+        date_added: 2019-09-09
         updated: 2019-09-09

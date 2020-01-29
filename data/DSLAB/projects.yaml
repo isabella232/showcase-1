@@ -32,7 +32,7 @@ projects:
         language: C, Python
         type: Framework
         maturity: 3
-        added: 2019-07-26
+        date_added: 2019-07-26
         updated: 2019-10-18
 
     bolt:
@@ -62,7 +62,7 @@ projects:
             title: Performance Contracts for Software Network Functions
             url: https://dslab.epfl.ch/pubs/bolt.pdf
         maturity: 1
-        added: 2019-07-26
+        date_added: 2019-07-26
 
     cpi:
         name: CPI
@@ -91,7 +91,7 @@ projects:
             title: Code-Pointer Integrity
             url: http://dslab.epfl.ch/pubs/cpi.pdf
         maturity: 1
-        added: 2019-07-26
+        date_added: 2019-07-26
 
     s2e:
         name:         s2e
@@ -114,7 +114,7 @@ projects:
             - Attack Vectors
         type: Library
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     asap:
         name:         ASAP
@@ -136,7 +136,7 @@ projects:
             - Buffer Overflows
         type: Library
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     cloud9:
         name:         Cloud 9
@@ -156,7 +156,7 @@ projects:
             - Performance
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     dimmunix:
         name:         Dimmunix
@@ -178,7 +178,7 @@ projects:
             - Java
         type: Library
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-10-18
 
     failure-sketching:
@@ -204,4 +204,4 @@ projects:
             - Verification
         type: Application
         maturity: 3
-        added: 2019-03-18
+        date_added: 2019-03-18

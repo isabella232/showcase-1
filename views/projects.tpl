@@ -133,7 +133,7 @@
                             <%
                             prof = lab['prof']
                             name = project['name']
-                            date_added = project.get('added', '')
+                            date_added = project.get('date_added')
                             date_updated = project.get('updated', '')
                             maturity = project.get('maturity', 0)
                             description = project.get('description', '')

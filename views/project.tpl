@@ -56,8 +56,7 @@
         <hr/>
 
         <div>
-            % import datetime
-            % date_added = project.get('added', datetime.date(2019, 1, 1))
+            % date_added = project.get('date_added')
             <div class="header">Entry created:</div> {{ date_added }}
         </div>
         <div>
@@ -66,6 +65,7 @@
         % if 'code' in project and 'last_commit' in project['code']:
         <div>
             <div class="header">Project status :</div>
+            % import datetime
             % today = datetime.datetime.now().date()
             % last_commit = project['code']['last_commit']
             % if today - last_commit > datetime.timedelta(days=180):

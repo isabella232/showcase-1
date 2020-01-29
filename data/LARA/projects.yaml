@@ -54,7 +54,7 @@ projects:
             title: Stainless-OmniLedger demonstrator
             url:   https://demo.c4dt.org/stainless
             code:  https://github.com/c4dt/service-stainless
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2020-01-29
 
     inox:
@@ -82,5 +82,5 @@ projects:
         notes: >
              Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29

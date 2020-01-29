@@ -18,7 +18,7 @@ projects:
         type: Application
         license: Apache-2.0
         maturity: 1
-        added: 2019-07-30
+        date_added: 2019-07-30
         updated: 2019-07-30
 
     cola:
@@ -45,7 +45,7 @@ projects:
             - Decentralized
         type: Application
         maturity: 1
-        added: 2019-07-30
+        date_added: 2019-07-30
         updated: 2019-07-30
 
     mlbench:
@@ -62,7 +62,7 @@ projects:
             - Framework
         type: Framework
         maturity: 2
-        added: 2019-07-30
+        date_added: 2019-07-30
         updated: 2019-07-30
 
     sent2vec:
@@ -85,5 +85,5 @@ projects:
             - Features
         type: Library
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29

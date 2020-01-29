@@ -24,7 +24,7 @@ projects:
               title:  'DeepFool: a simple and accurate method to fool deep neural networks'
               url:    https://arxiv.org/abs/1511.04599
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     manifool:
@@ -47,7 +47,7 @@ projects:
               title:  'Geometric robustness of deep networks: analysis and improvement'
               url:    https://arxiv.org/abs/1711.09115
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     sparsefool:
@@ -79,7 +79,7 @@ projects:
               title:  'SparseFool: a few pixels make a big difference'
               url:    https://arxiv.org/abs/1811.02248
         maturity: 1
-        added: 2019-09-04
+        date_added: 2019-09-04
         updated: 2019-09-04
 
     universal:
@@ -108,7 +108,7 @@ projects:
               title:  'Universal adversarial perturbations'
               url:    https://arxiv.org/pdf/1610.08401.pdf
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     safeai:
@@ -127,5 +127,5 @@ projects:
             - Deep Networks
         type: Application
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29

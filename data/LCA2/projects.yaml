@@ -20,7 +20,7 @@ projects:
             - Parallel Transmission
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     commelec-api:
@@ -44,7 +44,7 @@ projects:
             - Decoding
         type: Library
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     t-recs:
@@ -63,5 +63,5 @@ projects:
           - Network
         type: Simulation
         maturity: 1
-        added: 2019-07-29
+        date_added: 2019-07-29
         updated: 2019-07-29

@@ -25,7 +25,7 @@ projects:
               url:    https://arxiv.org/abs/1707.06279
         license:  MIT
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     lightnion:
@@ -48,7 +48,7 @@ projects:
             - Javascript
         type: Library
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     trickster:
@@ -68,7 +68,7 @@ projects:
             - Attack
         type: Library
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     hippiepug:
@@ -91,7 +91,7 @@ projects:
         type: Library
         license:  MIT
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     mcsauditing:
@@ -109,5 +109,5 @@ projects:
         type: Application
         license: GPL-v3
         maturity: 1
-        added: 2019-07-30
+        date_added: 2019-07-30
         updated: 2019-07-30

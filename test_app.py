@@ -37,15 +37,18 @@ def test_consistent_data():
             for lab in labs.values()
             for p in lab['projects'].values()
             ]:
-        # Check that projects in the incubator have a C4DT contact
+        # All projects have a date when they were added
+        assert 'date_added' in p, "'date_added' missing in {}".format(p['name'])
+
+        # All projects in the incubator have a C4DT contact
         if p.get('in_incubator'):
             assert 'c4dt_contact' in p, "'c4dt_contact' missing in {}".format(p['name'])
 
-        # Check that projects with code have a type
+        # All projects with code have a type
         if 'code' in p:
             assert 'type' in p['code'], "'type' missing from code section in {}".format(p['name'])
 
-        # Check that demos have a title and URL
+        # All demos have a title and URL
         if 'demo' in p:
             assert 'title' in p['demo'], "'title' missing from demo section in {}".format(p['name'])
             assert 'url' in p['demo'], "'url' missing from demo section in {}".format(p['name'])

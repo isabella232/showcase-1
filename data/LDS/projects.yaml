@@ -42,7 +42,7 @@ projects:
         type: Library
         license: Apache License v2
         maturity: 2
-        added: 2019-08-15
+        date_added: 2019-08-15
         updated: 2019-10-18
 
     prifi:
@@ -72,7 +72,7 @@ projects:
         type: Application, Library
         license:  AGPLv3
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     unlynx:
@@ -104,7 +104,7 @@ projects:
               email:  david.froelicher@epfl.ch
             - name:   Joao de Sá
               email:  joao.gomesdesaesousa@epfl.ch
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-09-26
 
     medco:
@@ -139,7 +139,7 @@ projects:
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2020-01-29
 
     drynx:
@@ -181,7 +181,7 @@ projects:
             title: Drynx demonstrator
             url: https://demo.c4dt.org/drynx
             code: https://github.com/c4dt/service-drynx
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2020-01-29
 
     pdci2b2:
@@ -203,5 +203,5 @@ projects:
             - Privacy Preserving
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29

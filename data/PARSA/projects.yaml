@@ -28,7 +28,7 @@ projects:
               url:    https://dl.acm.org/citation.cfm?id=2150982
         license:  CloudSuite, others
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     dca:
@@ -41,7 +41,7 @@ projects:
         tags:
             - Architecture
             - Side-Channels
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     armflex:
@@ -55,7 +55,7 @@ projects:
             - Emulator
             - FPGA
             - ARM
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29
 
     qflex:
@@ -86,5 +86,5 @@ projects:
         notes: >
             Some issues with regard to Oracle licenses
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
         updated: 2019-07-29

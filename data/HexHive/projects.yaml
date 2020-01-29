@@ -21,7 +21,7 @@ projects:
         language: Python
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     bopc:
         name:         BOPC
@@ -49,7 +49,7 @@ projects:
               title:  'Block Oriented Programming: Automating Data-Only attacks'
               url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     cfixx:
         name:         CFIXX
@@ -70,7 +70,7 @@ projects:
         language: C++
         type: Application
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     hextype:
         name:         HexType
@@ -93,7 +93,7 @@ projects:
         language: C++
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     retrowrite:
         name: RetroWrite
@@ -117,7 +117,7 @@ projects:
         language: Python
         type: Application
         maturity: 2
-        added: 2019-09-02
+        date_added: 2019-09-02
         information:
           - type: Paper
             title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
