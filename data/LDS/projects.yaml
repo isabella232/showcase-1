@@ -165,8 +165,12 @@ projects:
         c4dt_contact:
             name:  Linus Gasser
             email: linus.gasser@epfl.ch
+        demo:
+            title: Drynx demonstrator
+            url: https://demo.c4dt.org/drynx
+            code: https://github.com/c4dt/service-drynx
         added: 2019-03-18
-        updated: 2019-09-26
+        updated: 2020-01-29
 
     pdci2b2:
         name:         PDCi2b2
