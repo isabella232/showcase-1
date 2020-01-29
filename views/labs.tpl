@@ -14,13 +14,6 @@
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollY": "60vmin",
-                "columnDefs": [
-                    { targets: [2],
-                      type: "Professor",
-                      render: (data, type, row) => {
-                        return data.replace(/_/g, " ");
-                      }}
-                ],
             } );
 
             // Hide "extra" columns by default
@@ -52,9 +45,9 @@
                     <td>
                         <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
                     </td>
-                    <td class="dt-nowrap">
-                        % prof = lab['prof']
-                        <a href="mailto:{{ prof['email'] }}">{{ prof['name'] }}</a>
+                    % prof = lab['prof']
+                    <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
+                        <a href="mailto:{{ prof['email'] }}">{{ ' '.join(prof['name']) }}</a>
                     </td>
                 </tr>
                 % end

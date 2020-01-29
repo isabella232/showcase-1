@@ -18,19 +18,6 @@
 
         $(document).ready(function() {
 
-            // Define a custom ordering
-            const order_lastname = (a, b) => {
-              return a.match(/_.*?$/)[0].localeCompare(b.match(/_.*?$/));
-            }
-            $.extend( $.fn.dataTable.ext.type.order, {
-              "Professor-asc": (a, b) => {
-                return order_lastname(a, b);
-              },
-              "Professor-desc": (a, b) => {
-                return order_lastname(b, a);
-              }
-            });
-
             var table = $('#projects').DataTable( {
                 "paging": false,
                 "scrollCollapse": true,
@@ -46,17 +33,6 @@
                         text: "Clear search",
                         action: function(e, dt, node, config) { set_search(""); }
                     },
-                ],
-                "columnDefs": [
-                    { targets: [0],
-                      type: "Professor",
-                      render: (data, type, row) => {
-                        if (type === "sort"){
-                          return data;
-                        } else {
-                          return data.replace(/_/g, " ");
-                        }
-                      }}
                 ],
             } );
 
@@ -166,8 +142,8 @@
                             end
                             %>
                             <tr>
-                                <td class="dt-nowrap">
-                                    <a href="{{ lab['url'] }}">{{ prof['name'] }}</a>
+                                <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
+                                    <a href="{{ lab['url'] }}">{{ ' '.join(prof['name']) }}</a>
                                 </td>
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
                                 <td class="proj_name dt-nowrap"><a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a></td>

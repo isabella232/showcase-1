@@ -22,7 +22,8 @@
     <div class="project-details">
         <div>
             <div class="header">Lab:</div>
-            <a href="mailto:{{ lab['prof']['email'] }}">{{ lab['prof']['name'].replace('_', ' ') }}</a>
+            % prof = lab['prof']
+            <a href="mailto:{{ prof['email'] }}">{{ ' '.join(prof['name']) }}</a>
             &mdash;
             <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
         </div>
