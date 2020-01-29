@@ -85,7 +85,7 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
 
 div.project-header {
     background-color: #F0F0F0;
-    width: 30%;
+    width: 50%;
     border: 1px solid black;
     margin: auto;
     padding: 0 35px 0 35px;
@@ -93,7 +93,7 @@ div.project-header {
 
 div.project-details {
     background-color: #F8F8F8;
-    width: 30%;
+    width: 50%;
     border: 1px solid black;
     margin: auto;
     padding: 35px 35px 35px 35px;
@@ -104,15 +104,22 @@ div.project-details {
 div.project-details div.header {
     font-weight: bold;
     color: #FFA870;
-    display: inline;
+    display: inline-block;
     padding-right: 10px;
+    margin-top: 5px;
+}
+
+div.project-details ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 div.project-details div.contents {
     display: block;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     text-align: justify;
     text-justify: inter-word;
 }

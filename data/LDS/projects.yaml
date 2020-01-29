@@ -23,12 +23,16 @@ projects:
         code:
           type: Lab GitHub
           url: https://github.com/ldsec/lattigo
-          last_commit: 2019-10-15
+          last_commit: 2019-12-20
         contacts:
           - name: Jean-Philippe Bossuat
             email: jean-philippe.bossuat@epfl.ch
           - name: Lattigo mailing list
             email: lattigo@listes.epfl.ch
+        in_incubator: true
+        c4dt_contact:
+            name:  Christian Grigis
+            email: christian.grigis@epfl.ch
         tags:
           - Cryptography
           - Lattice Based Crypto
