@@ -19,7 +19,6 @@ projects:
             - Real-Time
             - Parallel Transmission
         type: Application
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -43,7 +42,6 @@ projects:
             - Encoding
             - Decoding
         type: Library
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -62,6 +60,5 @@ projects:
           - Power
           - Network
         type: Simulation
-        maturity: 1
         date_added: 2019-07-29
         date_updated: 2019-07-29

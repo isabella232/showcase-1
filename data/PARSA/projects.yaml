@@ -27,7 +27,6 @@ projects:
               title:  'Clearing the clouds: a study of emerging scale-out workloads on modern hardware'
               url:    https://dl.acm.org/citation.cfm?id=2150982
         license:  CloudSuite, others
-        maturity: 1
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -85,6 +84,5 @@ projects:
               url:    https://infoscience.epfl.ch/record/112669/files/simflex.pdf
         notes: >
             Some issues with regard to Oracle licenses
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29

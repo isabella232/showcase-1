@@ -24,7 +24,6 @@ projects:
               title:  'Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning'
               url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
         license:  commercial
-        maturity: 1
         date_added: 2019-03-18
         date_updated: 2019-09-04
 
@@ -49,7 +48,6 @@ projects:
             - type:   Paper
               title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
               url:    https://infoscience.epfl.ch/record/218003
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-09-04
 
@@ -70,7 +68,6 @@ projects:
             - Test Classification
             - Artificial Intelligence
         type: Application
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-09-04
 
@@ -92,7 +89,6 @@ projects:
             - Fake News
             - Natural Language
         type: Application
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-09-04
 
@@ -124,6 +120,5 @@ projects:
             - type:   Paper
               title:  'Selection Bias in News Coverage: Learning it, Fighting it'
               url:    https://www.mediaobservatory.com/assets/papers/www18.pdf
-        maturity: 1
         date_added: 2019-09-04
         date_updated: 2019-09-04

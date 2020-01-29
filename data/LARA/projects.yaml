@@ -29,7 +29,6 @@ projects:
         language: Scala
         type: Library, Application
         license:  AGPLv3
-        maturity: 2
         in_incubator: true
         c4dt_contact:
             name:  Christian Grigis
@@ -56,6 +55,7 @@ projects:
             code:  https://github.com/c4dt/service-stainless
         date_added: 2019-03-18
         date_updated: 2020-01-29
+        maturity: 2
 
     inox:
         name:         Inox
@@ -81,6 +81,5 @@ projects:
         license:  AGPLv3
         notes: >
              Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29

@@ -41,9 +41,9 @@ projects:
         language: GoLang
         type: Library
         license: Apache License v2
-        maturity: 2
         date_added: 2019-08-15
         date_updated: 2019-10-18
+        maturity: 1
 
     prifi:
         name:         PriFi
@@ -71,7 +71,6 @@ projects:
         language: GoLang
         type: Application, Library
         license:  AGPLv3
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -98,7 +97,6 @@ projects:
         language: GoLang
         type: Application
         license:  non-commercial
-        maturity: 2
         contacts:
             - name:   David Froelicher
               email:  david.froelicher@epfl.ch
@@ -131,7 +129,6 @@ projects:
         language: GoLang
         type: Application
         license:  non-commercial
-        maturity: 2
         contacts:
             - name:   Mickaël Misbach
               email:  mickael.misbach@epfl.ch
@@ -141,6 +138,7 @@ projects:
             email: christian.grigis@epfl.ch
         date_added: 2019-03-18
         date_updated: 2020-01-29
+        maturity: 2
 
     drynx:
         name:         Drynx
@@ -167,7 +165,6 @@ projects:
         language: GoLang
         type: Application
         license:  non-commercial
-        maturity: 2
         contacts:
             - name:   David Froelicher
               email:  david.froelicher@epfl.ch
@@ -183,6 +180,7 @@ projects:
             code: https://github.com/c4dt/service-drynx
         date_added: 2019-03-18
         date_updated: 2020-01-29
+        maturity: 1
 
     pdci2b2:
         name:         PDCi2b2
@@ -202,6 +200,5 @@ projects:
             - Medical Data
             - Privacy Preserving
         type: Application
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29

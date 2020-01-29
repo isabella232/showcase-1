@@ -31,9 +31,9 @@ projects:
             url: https://dslab.epfl.ch/pubs/vigor.pdf
         language: C, Python
         type: Framework
-        maturity: 3
         date_added: 2019-07-26
         date_updated: 2019-10-18
+        maturity: 1
 
     bolt:
         name: Bolt
@@ -61,7 +61,6 @@ projects:
           - type: Paper
             title: Performance Contracts for Software Network Functions
             url: https://dslab.epfl.ch/pubs/bolt.pdf
-        maturity: 1
         date_added: 2019-07-26
 
     cpi:
@@ -90,7 +89,6 @@ projects:
           - type: Paper
             title: Code-Pointer Integrity
             url: http://dslab.epfl.ch/pubs/cpi.pdf
-        maturity: 1
         date_added: 2019-07-26
 
     s2e:
@@ -113,7 +111,6 @@ projects:
             - Static Code Checking
             - Attack Vectors
         type: Library
-        maturity: 1
         date_added: 2019-03-18
 
     asap:
@@ -135,7 +132,6 @@ projects:
             - LLVM
             - Buffer Overflows
         type: Library
-        maturity: 2
         date_added: 2019-03-18
 
     cloud9:
@@ -155,7 +151,6 @@ projects:
             - Cloud
             - Performance
         type: Application
-        maturity: 2
         date_added: 2019-03-18
 
     dimmunix:
@@ -177,7 +172,6 @@ projects:
             - Immunity
             - Java
         type: Library
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-10-18
 
@@ -203,5 +197,4 @@ projects:
             - Failure
             - Verification
         type: Application
-        maturity: 3
         date_added: 2019-03-18

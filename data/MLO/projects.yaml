@@ -17,9 +17,9 @@ projects:
               url: https://arxiv.org/abs/1902.00340
         type: Application
         license: Apache-2.0
-        maturity: 1
         date_added: 2019-07-30
         date_updated: 2019-07-30
+        maturity: 1
 
     cola:
         name: cola
@@ -44,7 +44,6 @@ projects:
             - Machine Learning
             - Decentralized
         type: Application
-        maturity: 1
         date_added: 2019-07-30
         date_updated: 2019-07-30
 
@@ -61,7 +60,6 @@ projects:
             - Machine Learning
             - Framework
         type: Framework
-        maturity: 2
         date_added: 2019-07-30
         date_updated: 2019-07-30
 
@@ -84,6 +82,5 @@ projects:
             - Text
             - Features
         type: Library
-        maturity: 1
         date_added: 2019-03-18
         date_updated: 2019-07-29
