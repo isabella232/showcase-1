@@ -14,7 +14,7 @@ projects:
         type: Library
         maturity: 1
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     who-is-that:
         name:         Who is that?
@@ -35,4 +35,4 @@ projects:
         type: Library
         maturity: 1
         date_added: 2019-09-09
-        updated: 2019-09-09
+        date_updated: 2019-09-09

@@ -29,7 +29,7 @@ projects:
         license:  CloudSuite, others
         maturity: 1
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     dca:
         name:         DCA
@@ -42,7 +42,7 @@ projects:
             - Architecture
             - Side-Channels
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     armflex:
         name:         ARMFlex
@@ -56,7 +56,7 @@ projects:
             - FPGA
             - ARM
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     qflex:
         name:         QFlex
@@ -87,4 +87,4 @@ projects:
             Some issues with regard to Oracle licenses
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29

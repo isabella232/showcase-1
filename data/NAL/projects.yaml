@@ -27,7 +27,7 @@ projects:
               url:    https://vignat.github.io/vignat-paper.pdf
         maturity: 3
         date_added: 2019-03-18
-        updated: 2019-10-18
+        date_updated: 2019-10-18
 
     line:
         name:         LINE
@@ -50,4 +50,4 @@ projects:
         license:  GPLv2
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29

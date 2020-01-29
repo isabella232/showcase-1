@@ -57,10 +57,11 @@
 
         <div>
             % date_added = project.get('date_added')
+            % date_updated = project.get('date_updated', date_added)
             <div class="header">Entry created:</div> {{ date_added }}
         </div>
         <div>
-            <div class="header">Entry updated:</div> {{ project.get('updated', date_added) }}
+            <div class="header">Entry updated:</div> {{ date_updated }}
         </div>
         % if 'code' in project and 'last_commit' in project['code']:
         <div>

@@ -118,7 +118,7 @@ projects:
             url:   https://demo.c4dt.org/omniledger
             code:  https://github.com/c4dt/omniledger
         date_added: 2019-03-18
-        updated: 2020-01-29
+        date_updated: 2020-01-29
 
     onet:
         name:         Onet

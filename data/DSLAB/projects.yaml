@@ -33,7 +33,7 @@ projects:
         type: Framework
         maturity: 3
         date_added: 2019-07-26
-        updated: 2019-10-18
+        date_updated: 2019-10-18
 
     bolt:
         name: Bolt
@@ -179,7 +179,7 @@ projects:
         type: Library
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-10-18
+        date_updated: 2019-10-18
 
     failure-sketching:
         name:         Failure Sketching

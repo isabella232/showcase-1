@@ -26,7 +26,7 @@ projects:
         license:  commercial
         maturity: 1
         date_added: 2019-03-18
-        updated: 2019-09-04
+        date_updated: 2019-09-04
 
     privyseal:
         name:         PrivySeal
@@ -51,7 +51,7 @@ projects:
               url:    https://infoscience.epfl.ch/record/218003
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-09-04
+        date_updated: 2019-09-04
 
     artificial-intelligence-drive:
         name:         Artificial-Intelligence Drive
@@ -72,7 +72,7 @@ projects:
         type: Application
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-09-04
+        date_updated: 2019-09-04
 
     scilens:
         name:         SciLens
@@ -94,7 +94,7 @@ projects:
         type: Application
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-09-04
+        date_updated: 2019-09-04
 
     media-observatory:
         name:         Media Observatory
@@ -126,4 +126,4 @@ projects:
               url:    https://www.mediaobservatory.com/assets/papers/www18.pdf
         maturity: 1
         date_added: 2019-09-04
-        updated: 2019-09-04
+        date_updated: 2019-09-04

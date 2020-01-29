@@ -134,7 +134,7 @@
                             prof = lab['prof']
                             name = project['name']
                             date_added = project.get('date_added')
-                            date_updated = project.get('updated', '')
+                            date_updated = project.get('date_updated', date_added)
                             maturity = project.get('maturity', 0)
                             description = project.get('description', '')
                             tech_desc = project.get('tech_desc', '')

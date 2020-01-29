@@ -26,7 +26,7 @@ projects:
         license:  MIT
         maturity: 1
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     lightnion:
         name:         Lightnion
@@ -49,7 +49,7 @@ projects:
         type: Library
         maturity: 1
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     trickster:
         name:         Trickster
@@ -69,7 +69,7 @@ projects:
         type: Library
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     hippiepug:
         name:         Hippiepug
@@ -92,7 +92,7 @@ projects:
         license:  MIT
         maturity: 2
         date_added: 2019-03-18
-        updated: 2019-07-29
+        date_updated: 2019-07-29
 
     mcsauditing:
         name: MCSAuditing
@@ -110,4 +110,4 @@ projects:
         license: GPL-v3
         maturity: 1
         date_added: 2019-07-30
-        updated: 2019-07-30
+        date_updated: 2019-07-30
