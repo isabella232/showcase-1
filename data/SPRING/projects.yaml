@@ -79,7 +79,7 @@ projects:
             structures: fast traversal blockchain structure, and a verifiable
             dictionary, implemented as a key-value Merkle tree.
         code:
-            type: Project GitHub
+            type: Lab GitHub
             url:  https://github.com/spring-epfl/hippiepug
             last_commit: 2018-04-28
         contacts:
