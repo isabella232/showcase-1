@@ -27,6 +27,18 @@ TEST_DATA = {
 def test_load_data():
     data.load()
 
+def test_consistent_data():
+    labs = data.load()
+
+    # Check that projects in the incubator have a C4DT contact
+    for p in [
+            p
+            for lab in labs.values()
+            for p in lab['projects'].values()
+            if p.get('in_incubator', False)
+            ]:
+        assert 'c4dt_contact' in p, "'c4dt_contact' missing in {}".format(p['name'])
+
 def test_projects():
     showcase.projects()
 
