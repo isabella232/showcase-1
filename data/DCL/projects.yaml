@@ -11,7 +11,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LPD-EPFL/MVTIL
-            last_commit: 2018-05-16
+            date_last_commit: 2018-05-16
         tags:
             - Database
             - Concurrency
@@ -29,7 +29,7 @@ projects:
         code:
             type: Lab Download
             url:  http://dcl.epfl.ch/site/nvram
-            last_commit: 2017-07-18
+            date_last_commit: 2017-07-18
         tags:
             - NVRAM
             - Data Structures
@@ -85,7 +85,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/LPD-EPFL/mctop
-            last_commit: 2017-05-04
+            date_last_commit: 2017-05-04
         tags:
             - CPU topology
             - Multiprocessor
@@ -106,7 +106,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/LPD-EPFL/lockin
-            last_commit: 2017-04-19
+            date_last_commit: 2017-04-19
         tags:
             - Locking
         type: Library

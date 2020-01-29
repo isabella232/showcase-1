@@ -143,7 +143,7 @@
                             proj_type = project.get('type', '')
                             url = project.get('url')
                             code = project.get('code', {})
-                            date_last_commit = code.get('last_commit', '')
+                            date_last_commit = code.get('date_last_commit', '')
                             loc = project.get('lines_of_code', '')
                             doc = project.get('doc')
                             tags = project.get('tags', [])

@@ -80,7 +80,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/c4dt/byzcoin
-            last_commit: 2020-01-29
+            date_last_commit: 2020-01-29
         contacts:
             - name:   Jeff Allen
               email:  jeff.allen@epfl.ch
@@ -295,7 +295,7 @@ projects:
       code:
         type: Lab GitHub
         url: https://github.com/dedis/tlc
-        last_commit: 2019-07-22
+        date_last_commit: 2019-07-22
       contacts:
         - name: Bryan Ford
           email: bryan.ford@epfl.ch

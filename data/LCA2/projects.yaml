@@ -11,7 +11,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LCA2-EPFL/iprp
-            last_commit: 2017-10-03
+            date_last_commit: 2017-10-03
         contacts:
             - name:   Maaz Mashood
         tags:
@@ -33,7 +33,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LCA2-EPFL/commelec-api
-            last_commit: 2017-06-29
+            date_last_commit: 2017-06-29
         contacts:
             - name:   Jagdish Achara
               email:  jagdish.achara@epfl.ch
@@ -57,7 +57,7 @@ projects:
         code:
           type: Lab GitHub
           url: https://github.com/LCA2-EPFL/T-RECS
-          last_commit: 2019-06-06
+          date_last_commit: 2019-06-06
         tags:
           - Power
           - Network

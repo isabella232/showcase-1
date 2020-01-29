@@ -7,7 +7,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/epfml/ChocoSGD
-            last_commit: 2019-06-07
+            date_last_commit: 2019-06-07
         tags:
             - Machine Learning
             - Decentralized
@@ -35,7 +35,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/epfml/cola
-            last_commit: 2019-01-20
+            date_last_commit: 2019-01-20
         information:
             - type: Paper
               title: "COLA: Decentralized Linear Learning"
@@ -55,7 +55,7 @@ projects:
         code:
             type: Project GitHub
             url: https://github.com/mlbench
-            last_commit: 2019-06-13
+            date_last_commit: 2019-06-13
         url: https://mlbench.github.io
         tags:
             - Machine Learning
@@ -75,7 +75,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/epfml/sent2vec
-            last_commit: 2019-06-03
+            date_last_commit: 2019-06-03
         contacts:
             - name:   Martin Jaggi
               email:  martin.jaggi@epfl.ch
