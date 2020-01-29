@@ -17,7 +17,7 @@ projects:
         code:
           type: Project Github
           url: https://github.com/vigor-nf/vigor
-          last_commit: 2019-10-09
+          date_last_commit: 2019-10-09
         contacts:
           - name: Arseniy Zaostrovnykh
             email: arseniy.zaostrovnykh@epfl.ch
@@ -32,8 +32,8 @@ projects:
         language: C, Python
         type: Framework
         maturity: 3
-        added: 2019-07-26
-        updated: 2019-10-18
+        date_added: 2019-07-26
+        date_updated: 2019-10-18
 
     bolt:
         name: Bolt
@@ -48,7 +48,7 @@ projects:
         code:
           type: Project GitHub
           url: https://github.com/bolt-perf-contracts/bolt
-          last_commit: 2019-06-06
+          date_last_commit: 2019-06-06
         contacts:
           - name: Rishabh Iyer
             email: rishabh.iyer@epfl.ch
@@ -62,7 +62,7 @@ projects:
             title: Performance Contracts for Software Network Functions
             url: https://dslab.epfl.ch/pubs/bolt.pdf
         maturity: 1
-        added: 2019-07-26
+        date_added: 2019-07-26
 
     cpi:
         name: CPI
@@ -78,7 +78,7 @@ projects:
         code:
           type: Project GitHub
           url: https://github.com/cpi-llvm
-          last_commit: 2015-11-16
+          date_last_commit: 2015-11-16
         contacts:
           - name: http://volodymyrkuznetsov.info/
             url: http://volodymyrkuznetsov.info/
@@ -91,7 +91,7 @@ projects:
             title: Code-Pointer Integrity
             url: http://dslab.epfl.ch/pubs/cpi.pdf
         maturity: 1
-        added: 2019-07-26
+        date_added: 2019-07-26
 
     s2e:
         name:         s2e
@@ -114,7 +114,7 @@ projects:
             - Attack Vectors
         type: Library
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     asap:
         name:         ASAP
@@ -136,7 +136,7 @@ projects:
             - Buffer Overflows
         type: Library
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     cloud9:
         name:         Cloud 9
@@ -156,7 +156,7 @@ projects:
             - Performance
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     dimmunix:
         name:         Dimmunix
@@ -178,8 +178,8 @@ projects:
             - Java
         type: Library
         maturity: 2
-        added: 2019-03-18
-        updated: 2019-10-18
+        date_added: 2019-03-18
+        date_updated: 2019-10-18
 
     failure-sketching:
         name:         Failure Sketching
@@ -204,4 +204,4 @@ projects:
             - Verification
         type: Application
         maturity: 3
-        added: 2019-03-18
+        date_added: 2019-03-18

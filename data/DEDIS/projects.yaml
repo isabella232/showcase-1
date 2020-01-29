@@ -22,7 +22,7 @@ projects:
         type: Application
         license:  AGPLv2
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     kyber:
         name:         Kyber
@@ -44,7 +44,7 @@ projects:
         type: Library
         license:  MPL 2.0
         maturity: 3
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     personhood:
         name:         Personhood.online
@@ -67,7 +67,7 @@ projects:
         type: Application
         license:  AGPLv2
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     omniledger:
         name:         OmniLedger
@@ -80,7 +80,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/c4dt/byzcoin
-            last_commit: 2020-01-29
+            date_last_commit: 2020-01-29
         contacts:
             - name:   Jeff Allen
               email:  jeff.allen@epfl.ch
@@ -117,8 +117,8 @@ projects:
             title: OmniLedger access control
             url:   https://demo.c4dt.org/omniledger
             code:  https://github.com/c4dt/omniledger
-        added: 2019-03-18
-        updated: 2020-01-29
+        date_added: 2019-03-18
+        date_updated: 2020-01-29
 
     onet:
         name:         Onet
@@ -143,7 +143,7 @@ projects:
         type: Library
         license:  AGPLv2
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     e-voting:
         name:         E-voting
@@ -168,7 +168,7 @@ projects:
         type: Application
         license:  AGPLv2
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     drand:
         name:         DRand
@@ -192,7 +192,7 @@ projects:
         type: Application
         license:  MIT
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     dedis-protobuf:
         name:         DEDIS / protobuf
@@ -211,7 +211,7 @@ projects:
         type: Library
         license:  GPLv2
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     crux:
         name:         Crux
@@ -235,7 +235,7 @@ projects:
         type: Application
         license:  AGPLv2
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     peerdoc:
         name:         PeerDoc
@@ -252,7 +252,7 @@ projects:
         language: GoLang
         type: Application
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     purbs:
         name:         Purbs
@@ -272,7 +272,7 @@ projects:
             - Data In Transit
         type: Library
         maturity: 1
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     slingshot:
         name:         Slingshot
@@ -286,7 +286,7 @@ projects:
             - Attack
         type: Application
         maturity: 2
-        added: 2019-03-18
+        date_added: 2019-03-18
 
     threshold-logical-clocks:
       name: Threshold Logical Clocks
@@ -295,7 +295,7 @@ projects:
       code:
         type: Lab GitHub
         url: https://github.com/dedis/tlc
-        last_commit: 2019-07-22
+        date_last_commit: 2019-07-22
       contacts:
         - name: Bryan Ford
           email: bryan.ford@epfl.ch
@@ -306,4 +306,4 @@ projects:
       type:
         - Application
       maturity: 1
-      added: 2019-07-26
+      date_added: 2019-07-26

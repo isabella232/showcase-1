@@ -9,7 +9,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LTS4/DeepFool
-            last_commit: 2018-09-07
+            date_last_commit: 2018-09-07
         contacts:
             - name:   Seyed Moosavi
               email:  seyed.moosavi@epfl.ch
@@ -24,8 +24,8 @@ projects:
               title:  'DeepFool: a simple and accurate method to fool deep neural networks'
               url:    https://arxiv.org/abs/1511.04599
         maturity: 2
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     manifool:
         name:         ManiFool
@@ -33,7 +33,7 @@ projects:
         code:
             type: Personal GitHub
             url:  https://github.com/moosavism/ManiFool
-            last_commit: 2018-01-24
+            date_last_commit: 2018-01-24
         contacts:
             - name:   Seyed Moosavi
               email:  seyed.moosavi@epfl.ch
@@ -47,8 +47,8 @@ projects:
               title:  'Geometric robustness of deep networks: analysis and improvement'
               url:    https://arxiv.org/abs/1711.09115
         maturity: 2
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     sparsefool:
         name:         SparseFool
@@ -65,7 +65,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LTS4/SparseFool
-            last_commit: 2019-06-05
+            date_last_commit: 2019-06-05
         contacts:
             - name:   Apostolos Modas
               email:  apostolos.modas@epfl.ch
@@ -79,8 +79,8 @@ projects:
               title:  'SparseFool: a few pixels make a big difference'
               url:    https://arxiv.org/abs/1811.02248
         maturity: 1
-        added: 2019-09-04
-        updated: 2019-09-04
+        date_added: 2019-09-04
+        date_updated: 2019-09-04
 
     universal:
         name:         Universal
@@ -93,7 +93,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LTS4/universal
-            last_commit: 2017-10-23
+            date_last_commit: 2017-10-23
         contacts:
             - name:   Seyed Moosavi
               email:  seyed.moosavi@epfl.ch
@@ -108,8 +108,8 @@ projects:
               title:  'Universal adversarial perturbations'
               url:    https://arxiv.org/pdf/1610.08401.pdf
         maturity: 1
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     safeai:
         name:         SafeAI
@@ -127,5 +127,5 @@ projects:
             - Deep Networks
         type: Application
         maturity: 1
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29

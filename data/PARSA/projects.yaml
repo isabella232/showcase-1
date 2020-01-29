@@ -12,7 +12,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/parsa-epfl/cloudsuite
-            last_commit: 2019-03-17
+            date_last_commit: 2019-03-17
         doc: http://cloudsuite.ch/
         contacts:
             - name:   Hossein Ajallooiean
@@ -28,8 +28,8 @@ projects:
               url:    https://dl.acm.org/citation.cfm?id=2150982
         license:  CloudSuite, others
         maturity: 1
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     dca:
         name:         DCA
@@ -41,8 +41,8 @@ projects:
         tags:
             - Architecture
             - Side-Channels
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     armflex:
         name:         ARMFlex
@@ -55,8 +55,8 @@ projects:
             - Emulator
             - FPGA
             - ARM
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     qflex:
         name:         QFlex
@@ -68,7 +68,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/parsa-epfl/qflex
-            last_commit: 2019-02-26
+            date_last_commit: 2019-02-26
         lines_of_code:    'Flexus: 50000, Qemu: 100000'
         contacts:
             - name:   Hossein Ajallooiean
@@ -86,5 +86,5 @@ projects:
         notes: >
             Some issues with regard to Oracle licenses
         maturity: 2
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29

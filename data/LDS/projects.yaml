@@ -23,7 +23,7 @@ projects:
         code:
           type: Lab GitHub
           url: https://github.com/ldsec/lattigo
-          last_commit: 2019-12-20
+          date_last_commit: 2019-12-20
         contacts:
           - name: Jean-Philippe Bossuat
             email: jean-philippe.bossuat@epfl.ch
@@ -42,8 +42,8 @@ projects:
         type: Library
         license: Apache License v2
         maturity: 2
-        added: 2019-08-15
-        updated: 2019-10-18
+        date_added: 2019-08-15
+        date_updated: 2019-10-18
 
     prifi:
         name:         PriFi
@@ -54,7 +54,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/prifi
-            last_commit: 2019-07-01
+            date_last_commit: 2019-07-01
         information:
             - type:   Paper
               title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
@@ -72,8 +72,8 @@ projects:
         type: Application, Library
         license:  AGPLv3
         maturity: 2
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29
 
     unlynx:
         name:         Unlynx
@@ -85,7 +85,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/ldsec/unlynx
-            last_commit: 2019-09-23
+            date_last_commit: 2019-09-23
         information:
             - type:   Paper
               title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
@@ -104,8 +104,8 @@ projects:
               email:  david.froelicher@epfl.ch
             - name:   Joao de Sá
               email:  joao.gomesdesaesousa@epfl.ch
-        added: 2019-03-18
-        updated: 2019-09-26
+        date_added: 2019-03-18
+        date_updated: 2019-09-26
 
     medco:
         name:         MedCo
@@ -119,7 +119,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://medco.epfl.ch/software/
-            last_commit: 2020-01-14
+            date_last_commit: 2020-01-14
         information:
           - type:   Related Link
             title:  MedCo Online Demonstration
@@ -139,8 +139,8 @@ projects:
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
-        added: 2019-03-18
-        updated: 2020-01-29
+        date_added: 2019-03-18
+        date_updated: 2020-01-29
 
     drynx:
         name:         Drynx
@@ -154,7 +154,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/ldsec/drynx
-            last_commit: 2019-09-23
+            date_last_commit: 2019-09-23
         lines_of_code:    16000
         information:
             - type:   Paper
@@ -181,8 +181,8 @@ projects:
             title: Drynx demonstrator
             url: https://demo.c4dt.org/drynx
             code: https://github.com/c4dt/service-drynx
-        added: 2019-03-18
-        updated: 2020-01-29
+        date_added: 2019-03-18
+        date_updated: 2020-01-29
 
     pdci2b2:
         name:         PDCi2b2
@@ -195,7 +195,7 @@ projects:
         code:
             type:     Personal GitHub
             url:      https://github.com/JLRgithub/PDCi2b2
-            last_commit: 2018-02-12
+            date_last_commit: 2018-02-12
         lines_of_code:    5000 - 10000
         tags:
             - i2b2
@@ -203,5 +203,5 @@ projects:
             - Privacy Preserving
         type: Application
         maturity: 2
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29

@@ -7,7 +7,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/epfml/ChocoSGD
-            last_commit: 2019-06-07
+            date_last_commit: 2019-06-07
         tags:
             - Machine Learning
             - Decentralized
@@ -18,8 +18,8 @@ projects:
         type: Application
         license: Apache-2.0
         maturity: 1
-        added: 2019-07-30
-        updated: 2019-07-30
+        date_added: 2019-07-30
+        date_updated: 2019-07-30
 
     cola:
         name: cola
@@ -35,7 +35,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/epfml/cola
-            last_commit: 2019-01-20
+            date_last_commit: 2019-01-20
         information:
             - type: Paper
               title: "COLA: Decentralized Linear Learning"
@@ -45,8 +45,8 @@ projects:
             - Decentralized
         type: Application
         maturity: 1
-        added: 2019-07-30
-        updated: 2019-07-30
+        date_added: 2019-07-30
+        date_updated: 2019-07-30
 
     mlbench:
         name: mlBench
@@ -55,15 +55,15 @@ projects:
         code:
             type: Project GitHub
             url: https://github.com/mlbench
-            last_commit: 2019-06-13
+            date_last_commit: 2019-06-13
         url: https://mlbench.github.io
         tags:
             - Machine Learning
             - Framework
         type: Framework
         maturity: 2
-        added: 2019-07-30
-        updated: 2019-07-30
+        date_added: 2019-07-30
+        date_updated: 2019-07-30
 
     sent2vec:
         name:         sent2vec
@@ -75,7 +75,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/epfml/sent2vec
-            last_commit: 2019-06-03
+            date_last_commit: 2019-06-03
         contacts:
             - name:   Martin Jaggi
               email:  martin.jaggi@epfl.ch
@@ -85,5 +85,5 @@ projects:
             - Features
         type: Library
         maturity: 1
-        added: 2019-03-18
-        updated: 2019-07-29
+        date_added: 2019-03-18
+        date_updated: 2019-07-29

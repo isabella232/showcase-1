@@ -22,7 +22,8 @@
     <div class="project-details">
         <div>
             <div class="header">Lab:</div>
-            <a href="mailto:{{ lab['prof']['email'] }}">{{ lab['prof']['name'].replace('_', ' ') }}</a>
+            % prof = lab['prof']
+            <a href="mailto:{{ prof['email'] }}">{{ ' '.join(prof['name']) }}</a>
             &mdash;
             <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
         </div>
@@ -56,19 +57,20 @@
         <hr/>
 
         <div>
-            % import datetime
-            % date_added = project.get('added', datetime.date(2019, 1, 1))
+            % date_added = project.get('date_added')
+            % date_updated = project.get('date_updated', date_added)
             <div class="header">Entry created:</div> {{ date_added }}
         </div>
         <div>
-            <div class="header">Entry updated:</div> {{ project.get('updated', date_added) }}
+            <div class="header">Entry updated:</div> {{ date_updated }}
         </div>
-        % if 'code' in project and 'last_commit' in project['code']:
+        % if 'code' in project and 'date_last_commit' in project['code']:
         <div>
             <div class="header">Project status :</div>
+            % import datetime
             % today = datetime.datetime.now().date()
-            % last_commit = project['code']['last_commit']
-            % if today - last_commit > datetime.timedelta(days=180):
+            % date_last_commit = project['code']['date_last_commit']
+            % if today - date_last_commit > datetime.timedelta(days=180):
             Inactive
             % else:
             Active
