@@ -25,7 +25,6 @@ projects:
             - type:   Paper
               title:  'A Formally Verified NAT'
               url:    https://vignat.github.io/vignat-paper.pdf
-        maturity: 3
         date_added: 2019-03-18
         date_updated: 2019-10-18
 
@@ -48,6 +47,5 @@ projects:
         language: C++
         type: Application
         license:  GPLv2
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29

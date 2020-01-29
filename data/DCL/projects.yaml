@@ -16,7 +16,6 @@ projects:
             - Database
             - Concurrency
         type: Application
-        maturity: 1
         language: C++
         date_added: 2019-03-18
 
@@ -37,7 +36,6 @@ projects:
             - Transient Failures
         type: Library, Application
         language: C++
-        maturity: 1
         date_added: 2019-03-18
 
     flodb:
@@ -56,7 +54,6 @@ projects:
             - Database
         type: Application
         language: C++
-        maturity: 1
         date_added: 2019-03-18
 
     mobnet:
@@ -71,9 +68,9 @@ projects:
             - Android
             - Edge ML
         type: Library, Application
-        maturity: 1
         language: Java
         date_added: 2019-07-01
+        maturity: 1
 
     mctop:
         name:         MCTOP
@@ -90,7 +87,6 @@ projects:
             - CPU topology
             - Multiprocessor
         type: Application
-        maturity: 0
         language: C
         date_added: 2019-07-26
 
@@ -111,7 +107,6 @@ projects:
             - Locking
         type: Library
         language: C/C++
-        maturity: 0
         date_added: 2019-07-01
 
     aggregathor:
@@ -136,7 +131,6 @@ projects:
             - UDP
         type: Library, Application
         language: Python / C++
-        maturity: 1
         date_added: 2019-03-18
 
     robust-rdma:
@@ -155,7 +149,6 @@ projects:
             - Fault-Tolerance
             - Communication Complexity
         type: Library
-        maturity: 1
         date_added: 2019-03-18
 
     at2:
@@ -176,5 +169,4 @@ projects:
             - Scalability
             - Decentralization
         type: Library, Application
-        maturity: 1
         date_added: 2019-03-18

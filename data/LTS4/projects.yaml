@@ -23,7 +23,6 @@ projects:
             - type:   Paper
               title:  'DeepFool: a simple and accurate method to fool deep neural networks'
               url:    https://arxiv.org/abs/1511.04599
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -46,7 +45,6 @@ projects:
             - type:   Paper
               title:  'Geometric robustness of deep networks: analysis and improvement'
               url:    https://arxiv.org/abs/1711.09115
-        maturity: 2
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -78,7 +76,6 @@ projects:
             - type:   Paper
               title:  'SparseFool: a few pixels make a big difference'
               url:    https://arxiv.org/abs/1811.02248
-        maturity: 1
         date_added: 2019-09-04
         date_updated: 2019-09-04
 
@@ -107,7 +104,6 @@ projects:
             - type:   Paper
               title:  'Universal adversarial perturbations'
               url:    https://arxiv.org/pdf/1610.08401.pdf
-        maturity: 1
         date_added: 2019-03-18
         date_updated: 2019-07-29
 
@@ -126,6 +122,6 @@ projects:
             - Machine Learning
             - Deep Networks
         type: Application
-        maturity: 1
         date_added: 2019-03-18
         date_updated: 2019-07-29
+        maturity: 1

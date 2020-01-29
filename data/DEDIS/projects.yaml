@@ -21,7 +21,6 @@ projects:
         language: GoLang
         type: Application
         license:  AGPLv2
-        maturity: 2
         date_added: 2019-03-18
 
     kyber:
@@ -43,7 +42,6 @@ projects:
         language: GoLang
         type: Library
         license:  MPL 2.0
-        maturity: 3
         date_added: 2019-03-18
 
     personhood:
@@ -66,7 +64,6 @@ projects:
         language: Javascript
         type: Application
         license:  AGPLv2
-        maturity: 2
         date_added: 2019-03-18
 
     omniledger:
@@ -92,7 +89,6 @@ projects:
         language: GoLang
         type: Application, Library
         license:  AGPLv3
-        maturity: 2
         in_incubator: true
         c4dt_contact:
             name:  Linus Gasser
@@ -119,6 +115,7 @@ projects:
             code:  https://github.com/c4dt/omniledger
         date_added: 2019-03-18
         date_updated: 2020-01-29
+        maturity: 2
 
     onet:
         name:         Onet
@@ -142,7 +139,6 @@ projects:
         language: GoLang
         type: Library
         license:  AGPLv2
-        maturity: 2
         date_added: 2019-03-18
 
     e-voting:
@@ -167,7 +163,6 @@ projects:
         language: GoLang
         type: Application
         license:  AGPLv2
-        maturity: 2
         date_added: 2019-03-18
 
     drand:
@@ -191,7 +186,6 @@ projects:
         language: GoLang
         type: Application
         license:  MIT
-        maturity: 2
         date_added: 2019-03-18
 
     dedis-protobuf:
@@ -210,7 +204,6 @@ projects:
         language: GoLang
         type: Library
         license:  GPLv2
-        maturity: 2
         date_added: 2019-03-18
 
     crux:
@@ -234,7 +227,6 @@ projects:
         language: GoLang
         type: Application
         license:  AGPLv2
-        maturity: 1
         date_added: 2019-03-18
 
     peerdoc:
@@ -251,7 +243,6 @@ projects:
             - Document Editing
         language: GoLang
         type: Application
-        maturity: 1
         date_added: 2019-03-18
 
     purbs:
@@ -271,7 +262,6 @@ projects:
             - Data At Rest
             - Data In Transit
         type: Library
-        maturity: 1
         date_added: 2019-03-18
 
     slingshot:
@@ -285,7 +275,6 @@ projects:
             - Protection
             - Attack
         type: Application
-        maturity: 2
         date_added: 2019-03-18
 
     threshold-logical-clocks:
@@ -305,5 +294,4 @@ projects:
         - Global clocks
       type:
         - Application
-      maturity: 1
       date_added: 2019-07-26
