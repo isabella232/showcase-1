@@ -132,6 +132,9 @@ projects:
             - name:   Mickaël Misbach
               email:  mickael.misbach@epfl.ch
         in_incubator: true
+        c4dt_contact:
+            name:  Christian Grigis
+            email: christian.grigis@epfl.ch
         added: 2019-03-18
         updated: 2020-01-29
 
@@ -168,8 +171,8 @@ projects:
               email:  joao.gomesdesaesousa@epfl.ch
         in_incubator: true
         c4dt_contact:
-            name:  Linus Gasser
-            email: linus.gasser@epfl.ch
+            name:  Valérian Rousset
+            email: valerian.rousset@epfl.ch
         demo:
             title: Drynx demonstrator
             url: https://demo.c4dt.org/drynx
