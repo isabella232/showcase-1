@@ -30,8 +30,9 @@
 
         % if 'contacts' in project:
         <div>
-            <div class="header">Contacts:</div>
-            % for contact in project['contacts']:
+            % contacts = project['contacts']
+            <div class="header">Contact{{ "s" if len(contacts) > 1 else "" }}:</div>
+            % for contact in contacts:
                 % include('contact.tpl', contact=contact)
                 &nbsp;
             % end
@@ -52,30 +53,6 @@
             <div class="header">Demonstrator:</div>
              <a href="{{ project['demo']['url'] }}">{{ project['demo']['title'] }}</a>
             % end
-        % end
-
-        <hr/>
-
-        <div>
-            % date_added = project.get('date_added')
-            % date_updated = project.get('date_updated', date_added)
-            <div class="header">Entry created:</div> {{ date_added }}
-        </div>
-        <div>
-            <div class="header">Entry updated:</div> {{ date_updated }}
-        </div>
-        % if 'code' in project and 'date_last_commit' in project['code']:
-        <div>
-            <div class="header">Project status :</div>
-            % import datetime
-            % today = datetime.datetime.now().date()
-            % date_last_commit = project['code']['date_last_commit']
-            % if today - date_last_commit > datetime.timedelta(days=180):
-            Inactive
-            % else:
-            Active
-            % end
-        </div>
         % end
 
         <hr/>
@@ -116,6 +93,30 @@
             </ul>
         </div>
         % end
+
+        <div>
+            <%
+            if 'code' in project and 'date_last_commit' in project['code']:
+                import datetime
+
+                date_last_commit = project['code']['date_last_commit']
+                today = datetime.datetime.now().date()
+                threshold = datetime.timedelta(days=180)
+                status = "active" if today - date_last_commit <= threshold else "inactive"
+            else:
+                status = "unknown"
+            end
+
+            date_added = project.get('date_added')
+            date_updated = project.get('date_updated', date_added)
+            %>
+
+            <div class="header">Project status:</div> {{ status }}
+            &mdash;
+            entered showcase: {{ date_added }}
+            &mdash;
+            entry updated: {{ date_updated }}
+        </div>
 
         <hr/>
 
