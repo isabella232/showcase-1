@@ -109,6 +109,9 @@ projects:
             - type:  Blog post
               title: Adrian Colyer - OmniLedger
               url:   https://blog.acolyer.org/2018/02/09/omniledger-a-secure-scale-out-decentralized-ledger-via-sharding/
+            - type:  Blog post
+              title: Linus Gasser - Omniledger
+              url:   https://c4dt.org/article/omniledger
         demo:
             title: OmniLedger access control
             url:   https://demo.c4dt.org/omniledger
