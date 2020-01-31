@@ -2,6 +2,7 @@ all: showcase
 
 .ONESHELL:
 
+PYTEST_OPTIONS := -v
 VENV_DIR := venv
 
 $(VENV_DIR):
@@ -20,7 +21,7 @@ showcase: env showcase.py
 
 .PHONY: test
 test: env
-	python3 -m pytest
+	python3 -m pytest $(PYTEST_OPTIONS)
 
 .PHONY: clean
 clean:
