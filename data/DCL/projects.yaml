@@ -148,7 +148,7 @@ projects:
         information:
             - type: Paper
               url: https://mlsys.org/Conferences/2019/doc/2019/54.pdf
-              title: AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation (SysML19')
+              title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation (SysML19')"
         date_added: 2019-03-18
         date_updated: 2020-01-31
 

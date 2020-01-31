@@ -42,6 +42,12 @@ This will create a Python virtual environment, activate it, install the dependen
 
 The application listens by default on port 8080; point your browser to http://localhost:8080/.
 
+## Running tests
+
+```
+$ make test
+```
+
 ## Running on the server
 
 Assuming $APP_PATH is the directory containing the application, the following must be setup on the server (see also the [mod_wsgi docs](https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html#daemon-mode-single-application):
@@ -73,4 +79,3 @@ Restart Apache:
 ```
 $ sudo /etc/init.d/apache2 restart
 ```
-
