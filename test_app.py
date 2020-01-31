@@ -62,9 +62,10 @@ def test_labs():
 def test_all_projects():
     labs = data.load()
 
-    for lab_id, lab in labs.items():
-        for project_id in lab['projects']:
-            showcase.project(lab_id, project_id)
+    with patch.object(data, 'load', return_value=labs):
+        for lab_id, lab in labs.items():
+            for project_id in lab['projects']:
+                showcase.project(lab_id, project_id)
 
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project_lab_does_not_exist(data):
