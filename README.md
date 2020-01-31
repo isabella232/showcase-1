@@ -4,29 +4,31 @@
 
 Code that helps organize the labs' projects and present them nicely
 
-## What is the Showcase?
+## Purpose
 
-The showcase is the first box of C4DT's Factory. It's purpose is to help labs at the IC faculty
+The showcase is the first box of C4DT's Factory. Its purpose is to help labs at the IC faculty
 to present their most interesting projects to potential industrial customers.
 
-## Why a program?
+## Structure
 
-We're currently investigating how to work together with the labs and which projects make most
-sense in an industrial setting. Continuous changes make it difficult to hold in an Excel spreadsheet,
-so I needed something else.
+The information regarding the IC labs and their projects is organized in YAML files as follows:
+```
+data
+├── labs.yaml
+├── LAB1
+│   └── projects.yaml
+├── LAB2
+│   └── projects.yaml
+├── ...
+...
+```
 
-## What structure?
+* `labs.yaml` contains the information on all the labs, each one indexed by an ID.
+* Each `projects.yaml`, located in a subdirectory named after a lab ID, contains the information on that lab's projects.
 
-The basic information about the different projects is kept in `.yaml` files. Every file describes a
-partial graph in a key/value storage space.
+The information is presented to the user via a small [bottle](https://bottlepy.org/) application.
 
-This information is read by the go-program to create and hold the graph in memory, as it's not supposed
-to be very big - at most 100 projects with 20 key/value pairs is easy to hold in memory.
-
-For presentation, a simple javascript frontend communicates with the go program and presents filtering
-options to the user.
-
-## Running locally
+## Run the application locally
 
 Ensure you have the required tools to create Python virtual environments. You might need to install a specific package depending on your distribution, e.g. on Debian `python3-venv`:
 ```
@@ -42,19 +44,19 @@ This will create a Python virtual environment, activate it, install the dependen
 
 The application listens by default on port 8080; point your browser to http://localhost:8080/.
 
-## Running tests
+## Run the tests
 
 ```
 $ make test
 ```
 
-## Running on the server
+## Run the application on a server
 
 Assuming $APP_PATH is the directory containing the application, the following must be setup on the server (see also the [mod_wsgi docs](https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html#daemon-mode-single-application):
 
 Clone the repository:
 ```
-$ cd $APP_PATH && git clone ...
+$ cd $APP_PATH && git clone git@github.com:c4dt/showcase.git
 ```
 
 Create the Python virtual environment and install the dependencies:
