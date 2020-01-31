@@ -17,7 +17,12 @@ projects:
             - Concurrency
         type: Application
         language: C++
-        date_added: 2019-03-18
+        information:
+            - type: Paper
+              title: Locking Timestamps versus Locking Objects
+              url: https://infoscience.epfl.ch/record/229425/files/Paper.pdf
+        date_added: 2019-09-19
+        date_updated: 2020-01-31
 
     libnvram:
         name:         libNVRAM
@@ -26,9 +31,9 @@ projects:
             Storing data structures in non-volatile RAM such that transient
             failures don't corrupt the data.
         code:
-            type: Lab Download
+            type: Lab Github links
             url:  http://dcl.epfl.ch/site/nvram
-            date_last_commit: 2017-07-18
+            date_last_commit: 2019-09-04
         tags:
             - NVRAM
             - Data Structures
@@ -37,6 +42,7 @@ projects:
         type: Library, Application
         language: C++
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     flodb:
         name:         FloDB
@@ -48,6 +54,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LPD-EPFL/flodb
+            date_last_commit: 2017-03-28
         tags:
             - Key-Value Store
             - Server
@@ -55,6 +62,7 @@ projects:
         type: Application
         language: C++
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     mobnet:
         name:         MobNet
@@ -63,6 +71,8 @@ projects:
             MobNet is a framework for machine learning on android devices.
         code:
             type: Private GitHub
+            url: https://github.com/LPD-EPFL/MobNet
+            date_last_commit: 2019-07-01
         tags:
             - Federated Learning
             - Android
@@ -71,6 +81,7 @@ projects:
         language: Java
         date_added: 2019-07-01
         maturity: 1
+        date_updated: 2020-01-31
 
     mctop:
         name:         MCTOP
@@ -89,6 +100,7 @@ projects:
         type: Application
         language: C
         date_added: 2019-07-26
+        date_updated: 2020-01-31
 
     lockin:
         name:         LOCKIN
@@ -108,6 +120,7 @@ projects:
         type: Library
         language: C/C++
         date_added: 2019-07-01
+        date_updated: 2020-01-31
 
     aggregathor:
         name:         AggregaThor
@@ -122,6 +135,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LPD-EPFL/AggregaThor
+            date_last_commit: 2019-12-04
         tags:
             - Robust SGD
             - Distributed ML
@@ -131,7 +145,12 @@ projects:
             - UDP
         type: Library, Application
         language: Python / C++
+        information:
+            - type: Paper
+              url: https://mlsys.org/Conferences/2019/doc/2019/54.pdf
+              title: AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation (SysML19')
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     robust-rdma:
         name:         Robust RDMA
@@ -150,6 +169,7 @@ projects:
             - Communication Complexity
         type: Library
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     at2:
         name:         AT2
@@ -170,3 +190,4 @@ projects:
             - Decentralization
         type: Library, Application
         date_added: 2019-03-18
+        date_updated: 2020-01-31
