@@ -9,6 +9,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/cothority/tree/master/calypso
+            date_last_commit: 2020-01-31
         lines_of_code:    6500 / 1500
         contacts:
             - name:   Jeff Allen
@@ -21,7 +22,15 @@ projects:
         language: GoLang
         type: Application
         license:  AGPLv2
+        information:
+            - type: Article
+              url: https://c4dt.org/article/calypso
+              title: Calypso description
+            - type: Paper
+              url: https://eprint.iacr.org/2018/209
+              title: Verifiable Management of Private Data under Byzantine Failures
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     kyber:
         name:         Kyber
@@ -32,6 +41,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/kyber
+            date_last_commit: 2020-01-31
         lines_of_code:    17000 / 4000
         contacts:
             - name:   Jeff Allen
@@ -43,13 +53,15 @@ projects:
         type: Library
         license:  MPL 2.0
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     personhood:
         name:         Personhood.online
         description:  Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
         code:
-            type: Lab GitHub
-            url:  https://github.com/dedis/personhood.online
+            type: C4DT GitHub
+            url:  https://github.com/c4dt/omniledger/tree/master/mobile
+            date_last_commit: 2020-01-31
         doc: https://pop.dedis.ch
         lines_of_code:    9000 / 2000
         contacts:
@@ -65,6 +77,7 @@ projects:
         type: Application
         license:  AGPLv2
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     omniledger:
         name:         OmniLedger
@@ -77,7 +90,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/c4dt/byzcoin
-            date_last_commit: 2020-01-29
+            date_last_commit: 2020-01-31
         contacts:
             - name:   Jeff Allen
               email:  jeff.allen@epfl.ch
@@ -112,12 +125,15 @@ projects:
             - type:  Blog post
               title: Linus Gasser - Omniledger
               url:   https://c4dt.org/article/omniledger
+            - type:  Blog post
+              title: Linus Gasser - DARC
+              url:   https://c4dt.org/article/darc
         demo:
             title: OmniLedger access control
             url:   https://demo.c4dt.org/omniledger
             code:  https://github.com/c4dt/omniledger
         date_added: 2019-03-18
-        date_updated: 2020-01-29
+        date_updated: 2020-01-31
         maturity: 2
 
     onet:
@@ -130,6 +146,7 @@ projects:
         code:
             type: Lab GitHub
             url:  http://github.com/dedis/onet
+            date_last_commit: 2020-01-31
         lines_of_code:    15000 / 3000
         contacts:
             - name:   Jeff Allen
@@ -143,6 +160,7 @@ projects:
         type: Library
         license:  AGPLv2
         date_added: 2019-03-18
+        date_updated: 2020-01-31
 
     e-voting:
         name:         E-voting
@@ -154,6 +172,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/cothority/tree/master/evoting
+            date_last_commit: 2020-01-14
         lines_of_code:    1700 / 200
         contacts:
             - name:   Jeff Allen
@@ -167,6 +186,7 @@ projects:
         type: Application
         license:  AGPLv2
         date_added: 2019-03-18
+        date_updated: 2020-02-04
 
     drand:
         name:         DRand
@@ -178,6 +198,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/drand
+            date_last_commit: 2020-01-30
         doc: https://pulsar.dedis.ch
         lines_of_code:    1000 / 200
         contacts:
@@ -189,7 +210,12 @@ projects:
         language: GoLang
         type: Application
         license:  MIT
+        information:
+          - type: Webpage
+            title: Leagoe of Entropy
+            url: https://leagueofentropy.com/
         date_added: 2019-03-18
+        date_updated: 2020-02-04
 
     dedis-protobuf:
         name:         DEDIS / protobuf
@@ -200,6 +226,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/protobuf
+            date_last_commit: 2019-11-25
         lines_of_code:    2000 / 300
         tags:
             - Protobuf
@@ -208,29 +235,7 @@ projects:
         type: Library
         license:  GPLv2
         date_added: 2019-03-18
-
-    crux:
-        name:         Crux
-        description:  Locality-preserving publishing service
-        layman_desc: >
-            Decentralized publish/subscribe system (like RSS, or Apache Kafka)
-            that improves time to serve for local data, without giving away
-            consistency on a global level.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/dedis/paper_crux/tree/crux_service
-        lines_of_code:    2100 / 700
-        contacts:
-            - name:   Cristina Basescu
-              email:  cristina.basescu@epfl.ch
-        tags:
-            - Decentralization
-            - Publish-Subscribe
-            - Locality
-        language: GoLang
-        type: Application
-        license:  AGPLv2
-        date_added: 2019-03-18
+        date_last_updated: 2020-02-04
 
     peerdoc:
         name:         PeerDoc
@@ -257,6 +262,7 @@ projects:
         code:
             type: Lab GitHub
             url:  http://github.com/dedis/purbs
+            date_last_commit: 2020-01-13
         contacts:
             - name:   Kirill Nikitin
               email:  kirill.nikitin@epfl.ch
@@ -264,8 +270,13 @@ projects:
             - Encryption
             - Data At Rest
             - Data In Transit
+        information:
+          - type: Paper
+            title: Reducing Metadata Leakage from Encrypted Files and Communication with PURBs
+            url: https://petsymposium.org/2019/files/papers/issue4/popets-2019-0056.pdf
         type: Library
         date_added: 2019-03-18
+        date_updated: 2020-02-04
 
     slingshot:
         name:         Slingshot
@@ -287,7 +298,7 @@ projects:
       code:
         type: Lab GitHub
         url: https://github.com/dedis/tlc
-        date_last_commit: 2019-07-22
+        date_last_commit: 2019-08-29
       contacts:
         - name: Bryan Ford
           email: bryan.ford@epfl.ch
@@ -298,3 +309,4 @@ projects:
       type:
         - Application
       date_added: 2019-07-26
+      date_updated: 2020-02-04
