@@ -151,8 +151,8 @@ projects:
             on distributed sensitive data (e.g., medical data).
         code:
             type: Lab GitHub
-            url:  https://github.com/ldsec/drynx
-            date_last_commit: 2019-09-23
+            url:  https://github.com/c4dt/drynx
+            date_last_commit: 2020-02-05
         lines_of_code:    16000
         information:
             - type:   Paper
