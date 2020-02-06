@@ -1,20 +1,19 @@
 projects:
 
-    vignat:
-        name:         VigNAT
-        description:  Formally verified and performant software NAT
+    vigor:
+        name:         Vigor NF
+        description:  Vigor verification toolchain and network functions (NFs)
         layman_desc: >
             Formally verified and performant software NAT, a pioneer network
             function of the Vigor approach.
         url:          https://vignat.github.io/
         code:
             type: Project GitHub
-            url:  https://github.com/vignat/vignat
-            date_last_commit: 2018-02-19
-        lines_of_code:    50000 / 4000
+            url:  https://github.com/vigor-nf/vigor
+            date_last_commit: 2020-01-31
         contacts:
-            - name:     Arseniy Zaostrovnykh
-              email:    arseniy.zaostrovnykh@epfl.ch
+            - name:     Solal Pirelli
+              email:    solal.pirelli@epfl.ch
         tags:
             - Software Verification
             - NAT
@@ -23,8 +22,8 @@ projects:
         type: Application, Library
         information:
             - type:   Paper
-              title:  'A Formally Verified NAT'
-              url:    https://vignat.github.io/vignat-paper.pdf
+              title:  'Verifying Software Network Functions with No Verification Expertise'
+              url:    https://vigor-nf.github.io/vigor-paper.pdf
         date_added: 2019-03-18
         date_updated: 2019-10-18
 
@@ -48,4 +47,4 @@ projects:
         type: Application
         license:  GPLv2
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
