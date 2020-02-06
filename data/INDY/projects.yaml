@@ -13,7 +13,7 @@ projects:
         language: Python
         type: Library
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     who-is-that:
         name:         Who is that?
@@ -33,4 +33,4 @@ projects:
             - Machine Learning
         type: Library
         date_added: 2019-09-09
-        date_updated: 2019-09-09
+        date_updated: 2020-02-06
