@@ -28,7 +28,7 @@ projects:
               url:    https://dl.acm.org/citation.cfm?id=2150982
         license:  CloudSuite, others
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     dca:
         name:         DCA
@@ -55,7 +55,7 @@ projects:
             - FPGA
             - ARM
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     qflex:
         name:         QFlex
@@ -85,4 +85,4 @@ projects:
         notes: >
             Some issues with regard to Oracle licenses
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
