@@ -24,7 +24,7 @@ projects:
               title:  'DeepFool: a simple and accurate method to fool deep neural networks'
               url:    https://arxiv.org/abs/1511.04599
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     manifool:
         name:         ManiFool
@@ -46,14 +46,14 @@ projects:
               title:  'Geometric robustness of deep networks: analysis and improvement'
               url:    https://arxiv.org/abs/1711.09115
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     sparsefool:
         name:         SparseFool
         description:  Geometry-inspired sparse attack on deep networks
         layman_desc: >
             Deep Neural Networks have achieved extraordinary results on image
-            classification tasks, but have been shown tobe vulnerable to attacks
+            classification tasks, but have been shown to be vulnerable to attacks
             with carefully crafted perturbations of the input data. Although most
             attacks usually change values of many image’s pixels, it has been
             shown that deep networks are also vulnerable to sparse alterations
@@ -78,6 +78,40 @@ projects:
               url:    https://arxiv.org/abs/1811.02248
         date_added: 2019-09-04
         date_updated: 2019-09-04
+
+    foolbox:
+        name: Foolbox 2.0
+        description: 'Python toolbox to create adversarial examples that fool neural networks in PyTorch, TensorFlow, Keras, …'
+        layman_desc: >
+            Neural Networks need to be trained with a lot of examples. If an
+            adversary can include samples, he can change the decisions the
+            Neural Network will be doing. Another attack choses carefully crafted
+            images to make the Neural Network change the decision. This can lead
+            to a misinterpretation of a STOP signal as a signal indicating the speed.
+        code:
+            type: Lab GitHub
+            url: https://github.com/bethgelab/foolbox
+            date_last_commit: 2020-02-06
+        contacts:
+            - name: Jonas Rauber
+              email: https://github.com/jonasrauber
+            - name: Wieland Brendel
+              email: https://github.com/wielandbrendel
+        tags:
+            - Machine Learning
+            - Deep Networks
+            - Attack
+        language: Python
+        type: Application
+        information:
+            - type: Paper
+              title: 'Foolbox: A Python toolbox to benchmark the robustness of machine learning models'
+              url: https://arxiv.org/abs/1707.04131
+            - type: Documentation
+              title: 'Foolbox documentation'
+              url: https://foolbox.readthedocs.io/en/latest/user/examples.html
+        date_added: 2020-02-06
+        date_updated: 2020-02-06
 
     universal:
         name:         Universal
@@ -105,7 +139,7 @@ projects:
               title:  'Universal adversarial perturbations'
               url:    https://arxiv.org/pdf/1610.08401.pdf
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     safeai:
         name:         SafeAI
@@ -123,5 +157,5 @@ projects:
             - Deep Networks
         type: Application
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
         maturity: 1
