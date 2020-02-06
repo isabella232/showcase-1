@@ -25,7 +25,7 @@ projects:
               url:    https://arxiv.org/abs/1707.06279
         license:  MIT
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     lightnion:
         name:         Lightnion
@@ -39,15 +39,16 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/spring-epfl/lightnion
-            date_last_commit: 2019-07-09
+            date_last_commit: 2020-01-20
         tags:
             - Tor
             - Privacy
             - Network
             - Javascript
         type: Library
+        license: BSD-3-Clause
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     trickster:
         name:         Trickster
@@ -65,8 +66,9 @@ projects:
             - Machine Learning
             - Attack
         type: Library
+        license: MIT
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     hippiepug:
         name:         Hippiepug
@@ -78,7 +80,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/spring-epfl/hippiepug
-            date_last_commit: 2018-04-28
+            date_last_commit: 2019-10-22
         contacts:
             - name:   Bogdan Kulynych
               email:  bogdan.kulynych@epfl.ch
@@ -86,9 +88,13 @@ projects:
             - Blockchain
         language: Python
         type: Library
+        information:
+            - type: Paper
+              title: 'ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging'
+              url: https://arxiv.org/abs/1707.06279
         license:  MIT
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     mcsauditing:
         name: MCSAuditing
@@ -103,6 +109,35 @@ projects:
           - Privacy
         language: Python
         type: Application
+        information:
+            - type: Paper
+              title: 'On (The Lack Of) Location Privacy in Crowdsourcing Applications'
+              url: https://arxiv.org/abs/1901.04923
         license: GPL-v3
         date_added: 2019-07-30
-        date_updated: 2019-07-30
+        date_updated: 2020-02-06
+
+    zksk:
+        name: Zero-Knowledge Swiss Knife
+        description: Python library for prototyping composable zero-knowledge proofs in the discrete-log setting.
+        code:
+            type: Lab GitHub
+            url: https://github.com/spring-epfl/zksk
+            date_last_commit: 2019-11-11
+        tags:
+            - Zero-Knowledge Proof
+            - Prototyping
+            - Privacy-enhancing
+        language: Python
+        type: Application
+        information:
+            - type: Paper
+              title: 'zksk: A Library for Composable Zero-Knowledge Proofs'
+              url: https://arxiv.org/abs/1911.02459
+            - type: Documentation
+              title: 'zksk's docs'
+              url: https://zksk.readthedocs.io/en/latest/
+        license: MIT
+        date_added: 2020-02-06
+        date_updated: 2020-02-06
+            
