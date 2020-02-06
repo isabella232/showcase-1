@@ -20,7 +20,7 @@ projects:
             - Parallel Transmission
         type: Application
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     commelec-api:
         name:         commelec-api
@@ -43,7 +43,7 @@ projects:
             - Decoding
         type: Library
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     t-recs:
         name: T-RECS
@@ -61,4 +61,4 @@ projects:
           - Network
         type: Simulation
         date_added: 2019-07-29
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
