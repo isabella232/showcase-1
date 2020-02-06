@@ -25,7 +25,7 @@ projects:
               url:    https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
         license:  commercial
         date_added: 2019-03-18
-        date_updated: 2019-09-04
+        date_updated: 2020-02-06
 
     privyseal:
         name:         PrivySeal
@@ -49,7 +49,7 @@ projects:
               title:  'The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps'
               url:    https://infoscience.epfl.ch/record/218003
         date_added: 2019-03-18
-        date_updated: 2019-09-04
+        date_updated: 2020-02-06
 
     artificial-intelligence-drive:
         name:         Artificial-Intelligence Drive
@@ -69,7 +69,7 @@ projects:
             - Artificial Intelligence
         type: Application
         date_added: 2019-03-18
-        date_updated: 2019-09-04
+        date_updated: 2020-02-06
 
     scilens:
         name:         SciLens
@@ -90,7 +90,7 @@ projects:
             - Natural Language
         type: Application
         date_added: 2019-03-18
-        date_updated: 2019-09-04
+        date_updated: 2020-02-06
 
     media-observatory:
         name:         Media Observatory
@@ -121,4 +121,4 @@ projects:
               title:  'Selection Bias in News Coverage: Learning it, Fighting it'
               url:    https://www.mediaobservatory.com/assets/papers/www18.pdf
         date_added: 2019-09-04
-        date_updated: 2019-09-04
+        date_updated: 2020-02-06
