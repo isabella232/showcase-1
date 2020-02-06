@@ -54,7 +54,7 @@ projects:
             url:   https://demo.c4dt.org/stainless
             code:  https://github.com/c4dt/service-stainless
         date_added: 2019-03-18
-        date_updated: 2020-01-29
+        date_updated: 2020-02-06
         maturity: 2
 
     inox:
@@ -66,6 +66,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/epfl-lara/inox
+            date_last_commit: 2019-09-20
         contacts:
             - name:   Viktor Kunčak
               email:  viktor.kuncak@epfl.ch
@@ -82,4 +83,4 @@ projects:
         notes: >
              Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
