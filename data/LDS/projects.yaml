@@ -42,7 +42,7 @@ projects:
         type: Library
         license: Apache License v2
         date_added: 2019-08-15
-        date_updated: 2019-10-18
+        date_updated: 2020-02-06
         maturity: 1
 
     prifi:
@@ -54,7 +54,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/prifi
-            date_last_commit: 2019-07-01
+            date_last_commit: 2019-12-02
         information:
             - type:   Paper
               title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
@@ -71,8 +71,12 @@ projects:
         language: GoLang
         type: Application, Library
         license:  AGPLv3
+        information:
+            - type: Paper
+              title: 'PriFi: A Low-Latency and Tracking-Resistant Protocol for Local-Area Anonymous Communication'
+              url: http://www.cs.yale.edu/homes/jf/PriFi-WPES2016.pdf
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
 
     unlynx:
         name:         Unlynx
@@ -103,7 +107,7 @@ projects:
             - name:   Joao de Sá
               email:  joao.gomesdesaesousa@epfl.ch
         date_added: 2019-03-18
-        date_updated: 2019-09-26
+        date_updated: 2020-02-06
 
     medco:
         name:         MedCo
@@ -137,7 +141,7 @@ projects:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
         date_added: 2019-03-18
-        date_updated: 2020-01-29
+        date_updated: 2020-02-06
         maturity: 2
 
     drynx:
@@ -179,7 +183,7 @@ projects:
             url: https://demo.c4dt.org/drynx
             code: https://github.com/c4dt/service-drynx
         date_added: 2019-03-18
-        date_updated: 2020-01-29
+        date_updated: 2020-02-06
         maturity: 1
 
     pdci2b2:
@@ -201,4 +205,4 @@ projects:
             - Privacy Preserving
         type: Application
         date_added: 2019-03-18
-        date_updated: 2019-07-29
+        date_updated: 2020-02-06
