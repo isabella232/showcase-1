@@ -197,9 +197,10 @@ projects:
             provably secure.
         code:
             type: Lab GitHub
-            url:  https://github.com/dedis/drand
+            url:  https://github.com/drand/drand
             date_last_commit: 2020-01-30
-        doc: https://pulsar.dedis.ch
+        url: https://drand.zerobyte.io/
+        doc: https://github.com/drand/drand#documentation
         lines_of_code:    1000 / 200
         contacts:
             - name:   Nicolas Gailly
@@ -215,7 +216,7 @@ projects:
             title: Leagoe of Entropy
             url: https://leagueofentropy.com/
         date_added: 2019-03-18
-        date_updated: 2020-02-04
+        date_updated: 2020-02-07
 
     dedis-protobuf:
         name:         DEDIS / protobuf
@@ -236,22 +237,6 @@ projects:
         license:  GPLv2
         date_added: 2019-03-18
         date_last_updated: 2020-02-04
-
-    peerdoc:
-        name:         PeerDoc
-        description:  Editing documents in a distributed way
-        layman_desc: >
-            Instead of storing your data on Google-drive, use a decentralized
-            storage of your documents.
-        contacts:
-            - name:   Kirill Nikitin
-              email:  kirill.nikitin@epfl.ch
-        tags:
-            - Decentralization
-            - Document Editing
-        language: GoLang
-        type: Application
-        date_added: 2019-03-18
 
     purbs:
         name:         Purbs
@@ -278,27 +263,10 @@ projects:
         date_added: 2019-03-18
         date_updated: 2020-02-04
 
-    slingshot:
-        name:         Slingshot
-        description:  Scanning incoming emails for infected attachments
-        url:          https://slingshot.dedis.ch/
-        contacts:
-            - name:     Stevens Le Blond
-        tags:
-            - Email
-            - Protection
-            - Attack
-        type: Application
-        date_added: 2019-03-18
-
     threshold-logical-clocks:
       name: Threshold Logical Clocks
       description: Solving the consensus problem in a new way by creating a global clock
       url: https://arxiv.org/abs/1907.07010
-      code:
-        type: Lab GitHub
-        url: https://github.com/dedis/tlc
-        date_last_commit: 2019-08-29
       contacts:
         - name: Bryan Ford
           email: bryan.ford@epfl.ch
@@ -309,4 +277,4 @@ projects:
       type:
         - Application
       date_added: 2019-07-26
-      date_updated: 2020-02-04
+      date_updated: 2020-02-07
