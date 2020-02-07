@@ -94,15 +94,16 @@ projects:
             date_last_commit: 2020-02-06
         contacts:
             - name: Jonas Rauber
-              email: https://github.com/jonasrauber
+              url:  https://github.com/jonasrauber
             - name: Wieland Brendel
-              email: https://github.com/wielandbrendel
+              url:  https://github.com/wielandbrendel
         tags:
             - Machine Learning
             - Deep Networks
             - Attack
         language: Python
         type: Application
+        license:    MIT
         information:
             - type: Paper
               title: 'Foolbox: A Python toolbox to benchmark the robustness of machine learning models'
