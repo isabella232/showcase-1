@@ -135,7 +135,7 @@ projects:
               title: 'zksk: A Library for Composable Zero-Knowledge Proofs'
               url: https://arxiv.org/abs/1911.02459
             - type: Documentation
-              title: 'zksk's docs'
+              title: "zksk's docs"
               url: https://zksk.readthedocs.io/en/latest/
         license: MIT
         date_added: 2020-02-06
