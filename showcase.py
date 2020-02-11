@@ -4,6 +4,10 @@ import bottle
 
 import data
 
+# Threshold in days after which a project is considered inactive, based on its
+# code/date_last_commit information
+ACTIVITY_THRESHOLD_DAYS = 180
+
 @bottle.route('/robots.txt')
 def server_robots():
     return bottle.static_file('robots.txt', root='./')
@@ -65,7 +69,8 @@ def project(lab_id, project_id):
     project, lab = found_projects[0]
     lab['lab_id'] = lab_id
 
-    return dict(project=project, lab=lab)
+    return dict(project=project, lab=lab,
+            activity_threshold_days=ACTIVITY_THRESHOLD_DAYS)
 
 if __name__ == '__main__':
     bottle.run(host='0.0.0.0', port=8080, debug=True, reloader=True)

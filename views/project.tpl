@@ -108,7 +108,7 @@
 
                 date_last_commit = project['code']['date_last_commit']
                 today = datetime.datetime.now().date()
-                threshold = datetime.timedelta(days=180)
+                threshold = datetime.timedelta(days=activity_threshold_days)
                 status = "active" if today - date_last_commit <= threshold else "inactive"
             else:
                 status = "unknown"

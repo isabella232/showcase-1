@@ -13,8 +13,8 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/epfl-lara/stainless
-            date_last_commit: 2020-01-20
-        doc:  https://epfl-lara.github.io/stainless/installation.html
+            date_last_commit: 2020-02-11
+        doc:  https://epfl-lara.github.io/stainless/
         contacts:
             - name:   Viktor Kunčak
               email:  viktor.kuncak@epfl.ch
@@ -54,7 +54,7 @@ projects:
             url:   https://demo.c4dt.org/stainless
             code:  https://github.com/c4dt/service-stainless
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-02-11
         maturity: 2
 
     inox:
