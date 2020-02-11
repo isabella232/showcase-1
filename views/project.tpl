@@ -103,15 +103,11 @@
 
         <div>
             <%
-            if 'code' in project and 'date_last_commit' in project['code']:
-                import datetime
-
-                date_last_commit = project['code']['date_last_commit']
-                today = datetime.datetime.now().date()
-                threshold = datetime.timedelta(days=activity_threshold_days)
-                status = "active" if today - date_last_commit <= threshold else "inactive"
-            else:
+            active = is_active(project)
+            if active is None:
                 status = "unknown"
+            else:
+                status = "active" if active else "inactive"
             end
 
             date_added = project.get('date_added')

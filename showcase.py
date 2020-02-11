@@ -8,6 +8,19 @@ import data
 # code/date_last_commit information
 ACTIVITY_THRESHOLD_DAYS = 180
 
+def is_active(project):
+    active = None
+
+    if 'code' in project and 'date_last_commit' in project['code']:
+        import datetime
+
+        date_last_commit = project['code']['date_last_commit']
+        today = datetime.datetime.now().date()
+        threshold = datetime.timedelta(days=ACTIVITY_THRESHOLD_DAYS)
+        active = today - date_last_commit <= threshold
+
+    return active
+
 @bottle.route('/robots.txt')
 def server_robots():
     return bottle.static_file('robots.txt', root='./')
@@ -41,7 +54,7 @@ def projects(lab_id=None):
     if lab_id and lab_id not in labs:
         bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
 
-    return dict(labs=labs, selected_lab_id=lab_id)
+    return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active)
 
 @bottle.route('/project/<lab_id>/<project_id>')
 @bottle.view('project')
@@ -69,8 +82,7 @@ def project(lab_id, project_id):
     project, lab = found_projects[0]
     lab['lab_id'] = lab_id
 
-    return dict(project=project, lab=lab,
-            activity_threshold_days=ACTIVITY_THRESHOLD_DAYS)
+    return dict(project=project, lab=lab, is_active=is_active)
 
 if __name__ == '__main__':
     bottle.run(host='0.0.0.0', port=8080, debug=True, reloader=True)

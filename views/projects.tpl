@@ -34,6 +34,7 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
+                "order": [[ 0, "asc" ]],
             } );
 
             // Hide "extra" columns by default
@@ -147,7 +148,12 @@
                                     <a href="{{ lab['url'] }}">{{ ' '.join(prof['name']) }}</a>
                                 </td>
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
-                                <td class="proj_name dt-nowrap"><a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a></td>
+                                % active = is_active(project)
+                                % name_order = (" " if active else "") + name  # Sort active projects first
+                                % active_class = "active" if active else ""
+                                <td data-order="{{ name_order }}" class="proj_name dt-nowrap {{ active_class }}">
+                                    <a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
+                                </td>
                                 % if url:
                                 <td class=""><a href="{{ url }}">Home page</a></td>
                                 % else:
