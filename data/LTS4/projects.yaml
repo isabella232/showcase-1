@@ -113,6 +113,7 @@ projects:
               url: https://foolbox.readthedocs.io/en/latest/user/examples.html
         date_added: 2020-02-06
         date_updated: 2020-02-06
+        maturity: 2
 
     universal:
         name:         Universal
