@@ -38,6 +38,9 @@
 
             // Hide "extra" columns by default
             table.columns(".extra").visible(false);
+
+            // Set focus on the search input
+            $('#projects_filter input').focus();
         } );
 
         function set_search(text) {
