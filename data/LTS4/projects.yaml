@@ -92,10 +92,13 @@ projects:
             type: Lab GitHub
             url: https://github.com/bethgelab/foolbox
             date_last_commit: 2020-02-06
+        doc: https://foolbox.readthedocs.io/
         contacts:
             - name: Jonas Rauber
+              email: jonas.rauber@bethgelab.org
               url:  https://github.com/jonasrauber
             - name: Wieland Brendel
+              email: wieland.brendel@bethgelab.org
               url:  https://github.com/wielandbrendel
         tags:
             - Machine Learning
@@ -108,9 +111,6 @@ projects:
             - type: Paper
               title: 'Foolbox: A Python toolbox to benchmark the robustness of machine learning models'
               url: https://arxiv.org/abs/1707.04131
-            - type: Documentation
-              title: 'Foolbox documentation'
-              url: https://foolbox.readthedocs.io/en/latest/user/examples.html
         date_added: 2020-02-06
         date_updated: 2020-02-06
         maturity: 2
