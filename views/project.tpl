@@ -78,6 +78,13 @@
         </div>
         % end
 
+        % if 'doc' in project:
+        <div>
+            <div class="header">Documentation:</div>
+            <a href="{{ project['doc'] }}">{{ project['name'] }} Docs</a>
+        </div>
+        % end
+
         <%
         import itertools
         for info_type, infos in itertools.groupby(
