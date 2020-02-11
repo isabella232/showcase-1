@@ -15,7 +15,8 @@ projects:
             date_last_commit: 2019-03-17
         doc: http://cloudsuite.ch/
         contacts:
-            - name:   Hossein Ajallooiean
+            - name:   Siddharth Gupta
+              email:  siddharth.gupta@epfl.ch
         tags:
             - Cloud
             - Benchmark
@@ -45,7 +46,7 @@ projects:
 
     armflex:
         name:         ARMFlex
-        description:  Emulation platform for software bugs and vulnerability detection
+        description:  Highly threaded full-system ARM hardware emulator for software development, debugging and security
         layman_desc: >
             We provide a full-system ARM emulation platform on FPGA’s to allow
             for zero-overhead hardware instrumentation to detect software bugs
@@ -59,7 +60,7 @@ projects:
 
     qflex:
         name:         QFlex
-        description:  Accurate computer architecture simulator
+        description:  A QEMU-based family of full-system ARM simulators
         layman_desc: >
             QFlex is a full-system cycle-accurate computer architecture simulator
             of multi-node computer systems.
@@ -70,7 +71,8 @@ projects:
             date_last_commit: 2019-02-26
         lines_of_code:    'Flexus: 50000, Qemu: 100000'
         contacts:
-            - name:   Hossein Ajallooiean
+            - name:   Siddharth Gupta
+              email:  siddharth.gupta@epfl.ch
         tags:
             - Simulator
             - Network
