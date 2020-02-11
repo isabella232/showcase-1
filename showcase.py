@@ -16,10 +16,18 @@ def server_resources(filename):
 def index():
     bottle.redirect('/projects/')
 
+@bottle.route('/labs')
+def labs_no_slash():
+    bottle.redirect('/labs/')
+
 @bottle.route('/labs/')
 @bottle.view('labs')
 def labs():
     return dict(labs=data.load())
+
+@bottle.route('/projects')
+def projects_no_slash():
+    bottle.redirect('/projects/')
 
 @bottle.route('/projects/')
 @bottle.route('/projects/<lab_id>')
