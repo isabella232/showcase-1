@@ -236,7 +236,8 @@ projects:
         type: Library
         license:  GPLv2
         date_added: 2019-03-18
-        date_last_updated: 2020-02-04
+        date_updated: 2020-02-17
+        maturity: 2
 
     purbs:
         name:         Purbs
