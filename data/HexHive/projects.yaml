@@ -318,3 +318,30 @@ projects:
               url:    http://hexhive.epfl.ch/publications/files/20SEC.pdf
         date_added: 2020-02-21
         date_updated: 2020-02-21
+
+    datashield:
+        name:         DataShield
+        description:  Configurable data confidentiality and integrity
+        layman_desc: >
+            DataShield can, based on C/C++ languages annotation, protect
+            unwanted access to secret data. By securiring only theses
+            datastructures, performance overhead is greatly reduced.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/HexHive/datashield
+            date_last_commit: 2017-11-10
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Privacy
+            - Efficient
+            - Confidentiality
+        language: C++
+        type: Library
+        information:
+            - type:   Paper
+              title:  'DataShield: Configurable Data Confidentiality and Integrity'
+              url:    http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
+        date_added: 2020-02-21
+        date_updated: 2020-02-21
