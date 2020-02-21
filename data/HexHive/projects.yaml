@@ -291,3 +291,30 @@ projects:
             title: Fine-Grained Control-Flow Integrity through Binary Hardening
             url: https://nebelwelt.net/publications/files/15DIMVA.pdf
         date_updated: 2020-02-21
+
+    fuzzgen:
+        name:         FuzzGen
+        description:  Automatic Fuzzer Generation
+        layman_desc: >
+            FuzzGen is a tool for automatically synthesizing fuzzers for complex
+            libraries in a given environment. From a given library, it allow for
+            creating a dedicated fuzzer, aiming at good code coverage, without
+            human interaction.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/HexHive/FuzzGen
+            date_last_commit: 2019-11-01
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Fuzzing
+            - Debug
+            - Failure
+        type: Application
+        information:
+            - type:   Paper
+              title:  'FuzzGen: Automatic Fuzzer Generation'
+              url:    http://hexhive.epfl.ch/publications/files/20SEC.pdf
+        date_added: 2020-02-21
+        date_updated: 2020-02-21
