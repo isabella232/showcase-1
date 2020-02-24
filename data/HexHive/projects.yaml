@@ -11,7 +11,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/HexHive/T-Fuzz
-            date_last_commit: 2018-12-03
+            date_last_commit: 2018-12-04
         contacts:
             - name:   Mathias Payer
               email:  mathias.payer@epfl.ch
@@ -21,8 +21,12 @@ projects:
             - Failure
         language: Python
         type: Application
+        information:
+          - type: Paper
+            title: 'T-Fuzz: fuzzing by program transformation'
+            url: http://hexhive.epfl.ch/publications/files/18Oakland.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-02-24
 
     bopc:
         name:         BOPC
