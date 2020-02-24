@@ -345,3 +345,31 @@ projects:
               url:    http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
         date_added: 2020-02-21
         date_updated: 2020-02-21
+
+    halucinator:
+        name:         HALucinator
+        description:  Firmware Re-hosting Through Abstraction Layer Emulation
+        layman_desc: >
+            HALucinator allow for running a firmware outside of its physical
+            implementation. When extracting it, one can recreate the same
+            environment as the one used by the firmware's developper thus
+            allowing for faster exploitation.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/embedded-sec/halucinator
+            date_last_commit: 2019-11-20
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Binary
+            - Exploit
+            - Debug
+        language: Python
+        type: Application
+        information:
+            - type:   Paper
+              title:  'HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation'
+              url:    http://hexhive.epfl.ch/publications/files/20SEC2.pdf
+        date_added: 2020-02-24
+        date_updated: 2020-02-24
