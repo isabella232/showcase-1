@@ -373,3 +373,30 @@ projects:
               url:    http://hexhive.epfl.ch/publications/files/20SEC2.pdf
         date_added: 2020-02-24
         date_updated: 2020-02-24
+
+    pythia:
+        name:         Pythia
+        description:  Remote Oracles for the Masses
+        layman_desc: >
+            Pythia is a set of RDMA-based remote side-channel attacks that
+            allow an attacker on one client machine to learn how victims on
+            other client machines access data a server exports as an in-memory
+            data service.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/Wuklab/PYTHIA
+            date_last_commit: 2019-09-01
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Exploit
+            - RDMA
+        language: C
+        type: Application
+        information:
+            - type:   Paper
+              title:  'Pythia: Remote Oracles for the Masses'
+              url:    https://github.com/Wuklab/PYTHIA
+        date_added: 2020-02-24
+        date_updated: 2020-02-24
