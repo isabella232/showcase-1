@@ -231,8 +231,12 @@ projects:
           - Protection
         language: C, assembly
         type: Application
+        information:
+          - type: Paper
+            title: 'SoK: Shining Light on Shadow Stacks'
+            url: http://hexhive.epfl.ch/publications/files/19Oakland.pdf
         date_added: 2020-02-21
-        date_updated: 2020-02-21
+        date_updated: 2020-02-24
 
     hexpads:
         name: HexPADS
