@@ -104,8 +104,12 @@ projects:
             - Sanitization
         language: C++
         type: Application
+        information:
+            - type: Paper
+              title: 'HexType: Efficient Detection of Type Confusion Errors for C++'
+              url: http://hexhive.epfl.ch/publications/files/17CCS.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-02-24
 
     retrowrite:
         name: RetroWrite
