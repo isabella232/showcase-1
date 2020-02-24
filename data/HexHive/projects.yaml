@@ -400,3 +400,30 @@ projects:
               url:    https://github.com/Wuklab/PYTHIA
         date_added: 2020-02-24
         date_updated: 2020-02-24
+
+    benchiot:
+        name:         BenchIoT
+        description:  Security benchmarks for the Internet of Things
+        layman_desc: >
+            BenchIoT enables automatic evaluation of 14 metrics covering
+            security, performance, memory usage, and energy consumption.
+            Having a sound benchmark focused on IoT allow for robust and
+            comparable comparaison
+        code:
+            type: Lab GitHub
+            url:  https://github.com/embedded-sec/BenchIoT
+            date_last_commit: 2019-11-21
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+        tags:
+            - Benchmark
+            - IoT
+        language: C
+        type: Application
+        information:
+            - type:   Paper
+              title:  'BenchIoT: Security benchmarks for the Internet of Things'
+              url:    http://hexhive.epfl.ch/publications/files/19DSN.pdf
+        date_added: 2020-02-24
+        date_updated: 2020-02-24
