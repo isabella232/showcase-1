@@ -148,11 +148,13 @@ projects:
         name:         Drynx
         description:  Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
         layman_desc: >
-            Drynx is a library for simulating a privacy-preserving and verifiable 
-            data sharing/querying tool. It offers a series of independent 
-            protocols that when combined offer a verifiably-secure and safe 
-            way to compute statistics and train basic machine learning models 
-            on distributed sensitive data (e.g., medical data).
+            Drynx allows to create privacy-preserving queries on encrypted
+            datasets that are stored at different data providers who don't
+            want to share the original data. 
+            Different types of statistical queries are possible, like average,
+            standard deviation, linear and logistic regressions - all using
+            homomorphic encryption, which means that the data is never shared
+            in cleartext.
         code:
             type: Lab GitHub
             url:  https://github.com/c4dt/drynx
