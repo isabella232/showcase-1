@@ -240,7 +240,7 @@ projects:
 
     hexpads:
         name: HexPADS
-        description: Framework for lightweight memory tracing
+        description: Host-based, Performance-counter-based Attack Detection System
         layman_desc: >
             Attacks change the execution behavior of a system. Our attack
             detection system HexPADS detects attacks through divergences from
