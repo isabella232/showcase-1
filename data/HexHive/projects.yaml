@@ -169,41 +169,6 @@ projects:
         date_added: 2020-02-21
         date_updated: 2020-02-21
 
-    lmem:
-        name: LMEM
-        description: Framework for lightweight memory tracing
-        layman_desc: >
-            LMEM is a lightweight memory tracing technique that builds on
-            dynamic on-the-fly cross-ISA binary translation of 32-bit code to
-            64-bit code. Our software-only approach enables memory tracing for
-            unmodified, binary-only x86 applications using the x64 extension
-            that is available in current CPUs; no OS extensions or special
-            hardware is required. The additional registers in x64 and the wider
-            memory addressing enable a low-overhead tracing infrastructure that
-            is protected from the application code (i.e., uses disjunct
-            registersand memory regions). MemTrace handles multi-threaded
-            applications. Two case studies discuss a framework for unlimited
-            read and write watchpoints and an allocation-based memorychecker
-            similar in functionality to memgrind.
-        code:
-          type: Lab GitHub
-          url: https://github.com/HexHive/memTrace
-          date_last_commit: 2020-01-05
-        contacts:
-          - name: Mathias Payer
-            email: mathias.payer@epfl.ch
-        tags:
-          - Binary
-          - Tracing
-        language: C, assembly
-        type: Application
-        date_added: 2020-02-21
-        information:
-          - type: Paper
-            title: Lightweight Memory Tracing
-            url: https://nebelwelt.net/publications/files/13ATC.pdf
-        date_updated: 2020-02-21
-
     shadowstack:
         name: ShadowStack
         description: LLVM Implementation of different ShadowStack schemes for x86_64
@@ -270,38 +235,6 @@ projects:
           - type: Paper
             title: 'HexPADS: a platform to detect “stealth” attacks'
             url: http://hexhive.epfl.ch/publications/files/16ESSoS.pdf
-        date_updated: 2020-02-21
-
-    libdetox:
-        name: Lockdown
-        description: Transparent hardening of binary applications at run-time
-        layman_desc: >
-            Lockdown is a run-time environment for x86 32bit ELF binaries that
-            transparently hardens binary applications at run-time against the
-            exploitation of memory corruption vulnerabilities. Lockdown
-            implements a fine-grained CFI policy for jumps and calls. Return
-            instructions are secured over a practical shadow stack. Furthermore
-            Lockdown has its own ELF dynamic loader that loads ELF binaries
-            (executables and shared libraries).
-            Lockdown is a flavor of TRuE (Trusted Run-TimE) which itself is
-            based on fastBT, secureLoader and libdetox.
-        code:
-          type: Lab GitHub
-          url: https://github.com/HexHive/libdetox
-          date_last_commit: 2019-01-17
-        contacts:
-          - name: Mathias Payer
-            email: mathias.payer@epfl.ch
-        tags:
-          - Binary
-          - Protection
-        language: C
-        type: Library
-        date_added: 2020-02-21
-        information:
-          - type: Paper
-            title: Fine-Grained Control-Flow Integrity through Binary Hardening
-            url: https://nebelwelt.net/publications/files/15DIMVA.pdf
         date_updated: 2020-02-21
 
     fuzzgen:
@@ -383,33 +316,6 @@ projects:
             - type:   Paper
               title:  'HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation'
               url:    http://hexhive.epfl.ch/publications/files/20SEC2.pdf
-        date_added: 2020-02-24
-        date_updated: 2020-02-24
-
-    pythia:
-        name:         Pythia
-        description:  Remote Oracles for the Masses
-        layman_desc: >
-            Pythia is a set of RDMA-based remote side-channel attacks that
-            allow an attacker on one client machine to learn how victims on
-            other client machines access data a server exports as an in-memory
-            data service.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/Wuklab/PYTHIA
-            date_last_commit: 2019-09-01
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
-        tags:
-            - Exploit
-            - RDMA
-        language: C
-        type: Application
-        information:
-            - type:   Paper
-              title:  'Pythia: Remote Oracles for the Masses'
-              url:    https://github.com/Wuklab/PYTHIA
         date_added: 2020-02-24
         date_updated: 2020-02-24
 
