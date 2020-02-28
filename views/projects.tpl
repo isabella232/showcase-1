@@ -34,7 +34,7 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
-                "order": [[ 0, "asc" ]],
+                "order": [[6, "desc"], [0, "asc"], [2, "asc"]],
             } );
 
             // Hide "extra" columns by default
@@ -90,7 +90,7 @@
                     <th class="extra">More information</th>
                     <th class="extra">Date added</th>
                     <th class="extra">Date updated</th>
-                    <th class="extra">Maturity</th>
+                    <th>Maturity</th>
                     <th>Description</th>
                     <th class="extra">Technical description</th>
                     <th class="extra">Layman description</th>
@@ -144,17 +144,15 @@
                             end
 
                             active = is_active(project)
-                            active_class = "active" if active else ""
                             %>
-                            <tr class="{{ active_class }}">
+                            <tr class="{{ 'active' if active else '' }}">
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
                                     <a href="{{ lab['url'] }}">{{ ' '.join(prof['name']) }}</a>
                                 </td>
 
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
 
-                                % name_order = (" " if active else "") + name  # Sort active projects first
-                                <td data-order="{{ name_order }}" class="proj_name dt-nowrap">
+                                <td class="proj_name dt-nowrap">
                                     <a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
                                 </td>
 
@@ -169,7 +167,7 @@
                                 <td>{{ date_updated }}</td>
 
                                 % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                                <td data-order="{{ maturity }}" class="dt-center">
+                                <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
                                     <img
                                         src="/resources/maturity_{{ maturity_map.get(maturity, "na") }}.svg"
                                         width="25em"
