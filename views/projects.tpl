@@ -142,25 +142,32 @@
                             if date_added > today:
                                 continue
                             end
+
+                            active = is_active(project)
+                            active_class = "active" if active else ""
                             %>
-                            <tr>
+                            <tr class="{{ active_class }}">
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
                                     <a href="{{ lab['url'] }}">{{ ' '.join(prof['name']) }}</a>
                                 </td>
+
                                 <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
-                                % active = is_active(project)
+
                                 % name_order = (" " if active else "") + name  # Sort active projects first
-                                % active_class = "active" if active else ""
-                                <td data-order="{{ name_order }}" class="proj_name dt-nowrap {{ active_class }}">
+                                <td data-order="{{ name_order }}" class="proj_name dt-nowrap">
                                     <a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
                                 </td>
+
                                 % if url:
                                 <td class=""><a href="{{ url }}">Home page</a></td>
                                 % else:
                                 <td class=""></td>
                                 % end
+
                                 <td>{{ date_added }}</td>
+
                                 <td>{{ date_updated }}</td>
+
                                 % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
                                 <td data-order="{{ maturity }}" class="dt-center">
                                     <img
@@ -169,32 +176,45 @@
                                         height="25em"
                                     >
                                 </td>
+
                                 <td>{{ description }}</td>
+
                                 <td>{{ tech_desc }}</td>
+
                                 <td>{{ layman_desc }}</td>
+
                                 <td class="dt-center">{{ language }}</td>
+
                                 <td>{{ proj_type }}</td>
+
                                 % if 'url' in code:
                                 <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
                                 % else:
                                 <td>{{ code.get('type', '') }}</td>
                                 % end
+
                                 <td>{{ date_last_commit }}</td>
+
                                 <td class="dt-center">{{ loc }}</td>
+
                                 <td class="dt-center">
                                     % if doc:
                                     <a href="{{ doc }}">link</a>
                                     % end
                                 </td>
+
                                 <td class="dt-center">
                                     % for tag in tags:
                                     <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
                                     % end
                                 </td>
+
                                 <td class="dt-center">{{ license }}</td>
+
                                 <td>
                                     % include('papers.tpl', papers=papers)
                                 </td>
+
                                 <td class="dt-nowrap">
                                     % for contact in contacts:
                                     <div>
