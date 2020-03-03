@@ -343,5 +343,6 @@ projects:
             - type:   Paper
               title:  'BenchIoT: Security benchmarks for the Internet of Things'
               url:    http://hexhive.epfl.ch/publications/files/19DSN.pdf
+        maturity: 1
         date_added: 2020-02-24
-        date_updated: 2020-02-24
+        date_updated: 2020-03-03
