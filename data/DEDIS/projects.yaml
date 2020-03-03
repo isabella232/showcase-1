@@ -218,27 +218,6 @@ projects:
         date_added: 2019-03-18
         date_updated: 2020-02-07
 
-    dedis-protobuf:
-        name:         DEDIS / protobuf
-        description:  Protobuf v2 implementation
-        layman_desc: >
-            Library for easy use of protobuf in golang without having to write
-            .proto files first.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/dedis/protobuf
-            date_last_commit: 2019-11-25
-        lines_of_code:    2000 / 300
-        tags:
-            - Protobuf
-            - GoLang
-        language: GoLang
-        type: Library
-        license:  GPLv2
-        date_added: 2019-03-18
-        date_updated: 2020-02-17
-        maturity: 2
-
     purbs:
         name:         Purbs
         description:  Metadata leakage prevention for encrypted communication and storage
