@@ -142,22 +142,3 @@ projects:
               url:    https://arxiv.org/pdf/1610.08401.pdf
         date_added: 2019-03-18
         date_updated: 2020-02-06
-
-    safeai:
-        name:         SafeAI
-        description:  Framework for attacking and defending deep neuronal networks
-        layman_desc: >
-            SafeArtificial Intelligence is a framework that allows testing out
-            different attacks and defenses on a neuronal network.
-        code:
-            type: Private GitHub
-        contacts:
-            - name:   Apostolos Modas
-              email:  apostolos.modas@epfl.ch
-        tags:
-            - Machine Learning
-            - Deep Networks
-        type: Application
-        date_added: 2019-03-18
-        date_updated: 2020-02-06
-        maturity: 1
