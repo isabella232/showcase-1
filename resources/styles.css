@@ -47,67 +47,67 @@ table.dataTable tbody tr td.proj_name  {
 }
 
 table.dataTable.display tbody tr.active.odd {
-    background-color: #E0FFE0;
+    background-color: #F4FFF4;
 }
 
 table.dataTable.display tbody tr.active.even {
-    background-color: #EAFFEA;
+    background-color: #F8FFF8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover {
-    background-color: #D6FFD6;
+    background-color: #ECFFEC;
 }
 
 table.dataTable.display tbody tr.active.even:hover {
-    background-color: #E0FFE0;
+    background-color: #F0FFF0;
 }
 
 table.dataTable.display tbody tr.active.odd > td.sorting_1 {
-    background-color: #E0FFE0;
+    background-color: #F4FFF4;
 }
 
 table.dataTable.display tbody tr.active.even > td.sorting_1 {
-    background-color: #EAFFEA;
+    background-color: #F8FFF8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover > td.sorting_1 {
-    background-color: #D6FFD6;
+    background-color: #ECFFEC;
 }
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_1 {
-    background-color: #E0FFE0;
+    background-color: #F0FFF0;
 }
 
 table.dataTable.display tbody tr.active.odd > td.sorting_2 {
-    background-color: #E0FFE0;
+    background-color: #F4FFF4;
 }
 
 table.dataTable.display tbody tr.active.even > td.sorting_2 {
-    background-color: #EAFFEA;
+    background-color: #F8FFF8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover > td.sorting_2 {
-    background-color: #D6FFD6;
+    background-color: #ECFFEC;
 }
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_2 {
-    background-color: #E0FFE0;
+    background-color: #F0FFF0;
 }
 
 table.dataTable.display tbody tr.active.odd > td.sorting_3 {
-    background-color: #E0FFE0;
+    background-color: #F4FFF4;
 }
 
 table.dataTable.display tbody tr.active.even > td.sorting_3 {
-    background-color: #EAFFEA;
+    background-color: #F8FFF8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover > td.sorting_3 {
-    background-color: #D6FFD6;
+    background-color: #ECFFEC;
 }
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_3 {
-    background-color: #E0FFE0;
+    background-color: #F0FFF0;
 }
 
 table.dataTable button {
