@@ -7,7 +7,7 @@ projects:
             Superpixels, which define similar regions in an image, are becoming
             increasingly popular for use in computer vision applications. This
             research proposes a faster and more accurate way to get these pixels.
-        url:          https://ivrl.epfl.ch/research-2/research-current/research-superpixels/#SLICO
+        url:    https://www.epfl.ch/labs/ivrl/research/slic-superpixels/#SLICO
         code:
             type: Lab Download
             url:  https://ivrl.epfl.ch/wp-content/uploads/2018/08/SLICSuperpixels_VC2008_SLICO_15Jun2013.zip
