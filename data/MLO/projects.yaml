@@ -73,7 +73,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/epfml/sent2vec
-            date_last_commit: 2019-06-03
+            date_last_commit: 2019-10-21
         contacts:
             - name:   Martin Jaggi
               email:  martin.jaggi@epfl.ch
@@ -83,4 +83,5 @@ projects:
             - Features
         type: Library
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-03-11
+        maturity: 1
