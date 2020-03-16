@@ -302,7 +302,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/embedded-sec/halucinator
-            date_last_commit: 2019-11-20
+            date_last_commit: 2020-03-06
         contacts:
             - name:   Mathias Payer
               email:  mathias.payer@epfl.ch
@@ -317,7 +317,8 @@ projects:
               title:  'HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation'
               url:    http://hexhive.epfl.ch/publications/files/20SEC2.pdf
         date_added: 2020-02-24
-        date_updated: 2020-02-24
+        date_updated: 2020-03-16
+        maturity: 1
 
     benchiot:
         name:         BenchIoT
