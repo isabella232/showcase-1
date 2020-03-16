@@ -166,12 +166,14 @@
 
                                 <td>{{ date_updated }}</td>
 
-                                % maturity_map = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                                % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
                                 <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
                                     <img
-                                        src="/resources/maturity_{{ maturity_map.get(maturity, "na") }}.svg"
+                                        src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
                                         width="25em"
                                         height="25em"
+                                        title="{{ maturity_label.get(maturity, 0) }}"
+                                        alt="{{ maturity_label.get(maturity, 0) }}"
                                     >
                                 </td>
 

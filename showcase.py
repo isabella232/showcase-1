@@ -8,6 +8,14 @@ import data
 # code/date_last_commit information
 ACTIVITY_THRESHOLD_DAYS = 180
 
+# Text representation of the various maturity levels
+MATURITY_LABEL = {
+        0: "Not yet assessed",
+        1: "Prototype",
+        2: "Intermediate",
+        3: "Mature",
+        }
+
 def is_active(project):
     active = None
 
@@ -54,7 +62,8 @@ def projects(lab_id=None):
     if lab_id and lab_id not in labs:
         bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
 
-    return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active)
+    return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
+            maturity_label=MATURITY_LABEL)
 
 @bottle.route('/project/<lab_id>/<project_id>')
 @bottle.view('project')
@@ -82,7 +91,8 @@ def project(lab_id, project_id):
     project, lab = found_projects[0]
     lab['lab_id'] = lab_id
 
-    return dict(project=project, lab=lab, is_active=is_active)
+    return dict(project=project, lab=lab, is_active=is_active,
+            maturity_label=MATURITY_LABEL)
 
 if __name__ == '__main__':
     bottle.run(host='0.0.0.0', port=8080, debug=True, reloader=True)

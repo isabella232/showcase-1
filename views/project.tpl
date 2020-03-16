@@ -137,13 +137,7 @@
 
         <div>
             <div class="header">Code quality:</div>
-            % maturity_text = {
-            %    0: "Not yet assessed",
-            %    1: "Prototype",
-            %    2: "Intermediate",
-            %    3: "Mature",
-            % }
-            {{ maturity_text.get(project.get('maturity', 0)) }}
+            {{ maturity_label.get(project.get('maturity', 0)) }}
         </div>
 
         % if 'type' in project:
