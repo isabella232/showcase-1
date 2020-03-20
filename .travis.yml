@@ -26,7 +26,7 @@ jobs:
               - chmod 600 "$HOME/.ssh/id_ed25519"
           deploy:
               provider: script
-              script: ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
+              script: scp update.sh showcase@c4dtsrv1.epfl.ch:bin/ && ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
 
         - stage: trigger_downstream
           jdk: oraclejdk8
