@@ -80,26 +80,28 @@ projects:
         date_updated: 2019-09-04
 
     foolbox:
-        name: Foolbox 2.0
-        description: 'Python toolbox to create adversarial examples that fool neural networks in PyTorch, TensorFlow, Keras, …'
+        name: Foolbox 3.0
+        description: 'Python toolbox to create adversarial examples that fool neural networks in PyTorch, TensorFlow, and JAX'
         layman_desc: >
-            Neural Networks need to be trained with a lot of examples. If an
-            adversary can include samples, he can change the decisions the
-            Neural Network will be doing. Another attack choses carefully crafted
-            images to make the Neural Network change the decision. This can lead
-            to a misinterpretation of a STOP signal as a signal indicating the speed.
+            Neural networks need to be trained with many examples. By providing
+            carefully crafted samples, an adversary can attack the system and
+            lead the neural network to change the decisions it takes, for
+            example by making a STOP sign be falsely interpreted as a speed
+            limit.
+            Foolbox comes with a large collection of adversarial attacks, both
+            gradient-based (white-box) as well as decision-based and
+            score-based (black-box), providing users with powerful tools to
+            evaluate models and determine how robust they are to such attacks.
+        url: https://foolbox.jonasrauber.de/
         code:
             type: Lab GitHub
             url: https://github.com/bethgelab/foolbox
-            date_last_commit: 2020-02-06
+            date_last_commit: 2020-03-22
         doc: https://foolbox.readthedocs.io/
         contacts:
             - name: Jonas Rauber
               email: jonas.rauber@bethgelab.org
               url:  https://github.com/jonasrauber
-            - name: Wieland Brendel
-              email: wieland.brendel@bethgelab.org
-              url:  https://github.com/wielandbrendel
         tags:
             - Machine Learning
             - Deep Networks
@@ -112,8 +114,8 @@ projects:
               title: 'Foolbox: A Python toolbox to benchmark the robustness of machine learning models'
               url: https://arxiv.org/abs/1707.04131
         date_added: 2020-02-06
-        date_updated: 2020-02-06
-        maturity: 2
+        date_updated: 2020-03-23
+        maturity: 0
 
     universal:
         name:         Universal
