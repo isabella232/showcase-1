@@ -4,6 +4,9 @@ APACHE_DOCKER_IMAGE="c4dt/apache:latest"
 # Must match the path used when running the actual Apache service
 SHOWCASE_MOUNTPOINT="/var/www/showcase"
 
+# For docker
+PATH=${PATH}:/snap/bin
+
 cd ~/showcase
 
 # Clean local changes (if any)
