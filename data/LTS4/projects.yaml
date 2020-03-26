@@ -114,8 +114,8 @@ projects:
               title: 'Foolbox: A Python toolbox to benchmark the robustness of machine learning models'
               url: https://arxiv.org/abs/1707.04131
         date_added: 2020-02-06
-        date_updated: 2020-03-23
-        maturity: 0
+        date_updated: 2020-03-26
+        maturity: 2
 
     universal:
         name:         Universal
