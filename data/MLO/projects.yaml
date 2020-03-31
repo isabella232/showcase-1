@@ -50,18 +50,26 @@ projects:
     mlbench:
         name: mlBench
         description: benchmarking of distributed ML
-        tech_desc:
+        layman_desc: >
+            Framework for distributed machine learning. Its purpose is to
+            improve transparency, reproducibility, robustness, and to provide
+            fair performance measures as well as reference implementations,
+            helping adoption of distributed machine learning methods both in
+            industry and in the academic community.
         code:
             type: Project GitHub
             url: https://github.com/mlbench
-            date_last_commit: 2020-02-02
+            date_last_commit: 2020-03-26
         url: https://mlbench.github.io
+        doc: https://mlbench.readthedocs.io/
         tags:
             - Machine Learning
             - Framework
+        language: Python
         type: Framework
+        license: Apache-2.0
         date_added: 2019-07-30
-        date_updated: 2020-02-06
+        date_updated: 2020-03-31
 
     sent2vec:
         name:         sent2vec
