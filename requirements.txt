@@ -1,2 +1,2 @@
-PyYAML==5.3.1
+strictyaml==1.0.6
 bottle==0.12.18

@@ -138,7 +138,7 @@
                             # Skip projects with a `date_added` in the future.
                             # This allows to schedule the appearance of projects in the showcase.
                             import datetime
-                            today = datetime.datetime.now().date()
+                            today = datetime.datetime.now()
                             if date_added > today:
                                 continue
                             end

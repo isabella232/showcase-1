@@ -23,7 +23,7 @@ def is_active(project):
         import datetime
 
         date_last_commit = project['code']['date_last_commit']
-        today = datetime.datetime.now().date()
+        today = datetime.datetime.now()
         threshold = datetime.timedelta(days=ACTIVITY_THRESHOLD_DAYS)
         active = today - date_last_commit <= threshold
 
