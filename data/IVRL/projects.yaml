@@ -29,7 +29,6 @@ projects:
         code:
             type: Lab Download
             url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/research/saliency/fast_saliency/FASA_Source_Code.zip
-        contact:
         tags:
             - Computer Vision
             - Object Detection

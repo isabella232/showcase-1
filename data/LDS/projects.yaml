@@ -4,10 +4,10 @@ projects:
         name: Lattigo
         description: CRT-accelerated lattice-based cryptography library in Golang
         tech_desc: >
-          Toolbox of lattice-based cryptographic primitives for Go implementing
-          the BFV and CKKS schemes and their distributed version.
-          The library is still at an experimental stage and should be used for
-          research purposes only.
+            Toolbox of lattice-based cryptographic primitives for Go implementing
+            the BFV and CKKS schemes and their distributed version.
+            The library is still at an experimental stage and should be used for
+            research purposes only.
         layman_desc: >
             Homomorphic encryption refers to cryptographic schemes that allow to
             compute directly on the encrypted data, without requiring the data to
@@ -21,23 +21,23 @@ projects:
             a function on their confidential or sensitive data, without revealing
             to each other anything else than the result of this computation.
         code:
-          type: Lab GitHub
-          url: https://github.com/ldsec/lattigo
-          date_last_commit: 2019-12-20
+            type: Lab GitHub
+            url: https://github.com/ldsec/lattigo
+            date_last_commit: 2019-12-20
         contacts:
-          - name: Jean-Philippe Bossuat
-            email: jean-philippe.bossuat@epfl.ch
-          - name: Lattigo mailing list
-            email: lattigo@listes.epfl.ch
+            - name: Jean-Philippe Bossuat
+              email: jean-philippe.bossuat@epfl.ch
+            - name: Lattigo mailing list
+              email: lattigo@listes.epfl.ch
         in_incubator: true
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
         tags:
-          - Cryptography
-          - Lattice Based Crypto
-          - Homomorphic Encryption
-          - Secure Multi-party Computation
+            - Cryptography
+            - Lattice Based Crypto
+            - Homomorphic Encryption
+            - Secure Multi-party Computation
         language: GoLang
         type: Library
         license: Apache License v2
@@ -59,6 +59,9 @@ projects:
             - type:   Paper
               title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
               url:    https://arxiv.org/pdf/1710.10237.pdf
+            - type: Paper
+              title: 'PriFi: A Low-Latency and Tracking-Resistant Protocol for Local-Area Anonymous Communication'
+              url: http://www.cs.yale.edu/homes/jf/PriFi-WPES2016.pdf
         lines_of_code:    16000
         contacts:
             - name:   Ludovic Barman
@@ -71,10 +74,6 @@ projects:
         language: GoLang
         type: Application, Library
         license:  AGPLv3
-        information:
-            - type: Paper
-              title: 'PriFi: A Low-Latency and Tracking-Resistant Protocol for Local-Area Anonymous Communication'
-              url: http://www.cs.yale.edu/homes/jf/PriFi-WPES2016.pdf
         date_added: 2019-03-18
         date_updated: 2020-02-06
 

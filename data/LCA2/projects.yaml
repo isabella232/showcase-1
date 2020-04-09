@@ -47,7 +47,7 @@ projects:
 
     t-recs:
         name: T-RECS
-        desription: T-RECS is a software testbed for multi-agent real-time control of electric grids.
+        description: T-RECS is a software testbed for multi-agent real-time control of electric grids.
         tech_desc: >
           T-RECS is a software testbed for multi-agent real-time control of electric grids. T-RECS uses
           software containers to run each agent in a virtual environment. Agents are networked via Mininet,

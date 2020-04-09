@@ -123,7 +123,6 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dslab-epfl/asap
-        contact:
         contacts:
             - name:   Jonas Wagner
               email:  ltlygwayh@gmail.com

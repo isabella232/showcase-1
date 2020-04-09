@@ -40,7 +40,6 @@ projects:
             type: Lab GitHub
             url:  https://github.com/HexHive/BOPC
             date_last_commit: 2019-11-22
-        contact:
         contacts:
             - name:   Mathias Payer
               email:  mathias.payer@epfl.ch
