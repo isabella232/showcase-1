@@ -162,9 +162,9 @@
                                 <td class=""></td>
                                 % end
 
-                                <td>{{ date_added }}</td>
+                                <td class="dt-center">{{ date_added.date() }}</td>
 
-                                <td>{{ date_updated }}</td>
+                                <td class="dt-center">{{ date_updated.date() }}</td>
 
                                 % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
                                 <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
@@ -193,7 +193,7 @@
                                 <td>{{ code.get('type', '') }}</td>
                                 % end
 
-                                <td>{{ date_last_commit }}</td>
+                                <td class="dt-center">{{ date_last_commit.date() if date_last_commit else '' }}</td>
 
                                 <td class="dt-center">{{ loc }}</td>
 

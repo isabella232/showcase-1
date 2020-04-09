@@ -116,9 +116,9 @@
 
             <div class="header">Project status:</div> {{ status }}
             &mdash;
-            entered showcase: {{ date_added }}
+            entered showcase: {{ date_added.date() }}
             &mdash;
-            entry updated: {{ date_updated }}
+            entry updated: {{ date_updated.date() }}
         </div>
 
         <hr/>
