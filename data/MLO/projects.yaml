@@ -56,6 +56,10 @@ projects:
             fair performance measures as well as reference implementations,
             helping adoption of distributed machine learning methods both in
             industry and in the academic community.
+            Besides algorithm comparison, a main use case is to help the
+            selection of hardware (CPU, GPU) used to run AI applications, as
+            well as how to connect it into a cluster to get a good
+            cost/performance tradeoff.
         code:
             type: Project GitHub
             url: https://github.com/mlbench
