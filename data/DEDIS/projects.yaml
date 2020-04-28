@@ -1,5 +1,34 @@
 projects:
 
+    odyssey:
+        name:         Odyssey
+        description:  Auditable Sharing and Management of Sensitive Data Across Jurisdictions.
+        layman_desc: >
+            Odyssey is a set of applications and tools that enables sharing of sensitive data
+            between multiple distrustfull parties. This project uses state-of-the-art secret 
+            management service on the blockchain coupled with an enclave delivery mechanism.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/dedis/odyssey
+            date_last_commit: 2020-04-16
+        contacts:
+            - name:   Noémien Kocher
+              email:  noemien.kocher@epfl.ch
+        tags:
+            - Blockchain
+            - Private
+            - Encryption
+            - Access Control
+        language: GoLang
+        type: Application
+        license:  GPLv3
+        information:
+            - type: Website
+              url: https://dedis.github.io/odyssey/#/
+              title: Odyssey homepage
+        date_added: 2020-04-28
+        date_updated: 2020-04-28
+
     calypso:
         name:         Calypso
         description:  Encrypted storage with access control
