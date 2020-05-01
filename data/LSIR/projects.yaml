@@ -80,7 +80,16 @@ projects:
             supervised learning, effectively helping non-experts to evaluate more
             accurately the quality of a science news article.
         code:
-            type: Private GitHub
+            type:   Project GitHub
+            url:    https://github.com/SciLensProject/toolkit
+            date_last_commit: 2020-01-29
+        information:
+            - type:   Paper
+              title:  'SciLens: Evaluating the Quality of Scientific News Articles Using Social Media and Scientific Literature Indicators'
+              url:    https://doi.org/10.1145/3308558.3313657
+            - type:     Demo
+              title:    SciLens News Platform Demo
+              url:      http://scilens.epfl.ch/demo
         contacts:
             - name:     Panayotis Smeros
               email:    panayiotis.smeros@epfl.ch
@@ -88,9 +97,10 @@ projects:
             - Test Classification
             - Fake News
             - Natural Language
+        language: Python
         type: Application
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-05-01
 
     media-observatory:
         name:         Media Observatory
