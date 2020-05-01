@@ -49,7 +49,7 @@ projects:
 
     mlbench:
         name: mlBench
-        description: benchmarking of distributed ML
+        description: Benchmarking of distributed ML
         layman_desc: >
             Framework for distributed machine learning. Its purpose is to
             improve transparency, reproducibility, robustness, and to provide
@@ -98,3 +98,32 @@ projects:
         date_added: 2019-03-18
         date_updated: 2020-03-11
         maturity: 1
+
+    powersgd:
+        name: PowerSGD
+        description: Practical Low-Rank Gradient Compression for Distributed Optimization
+        tech_desc: >
+            New low-rank gradient compressor based on power iteration that can
+            i) compress gradients rapidly, ii) efficiently aggregate the
+            compressed gradients using all-reduce, and iii) achieve test
+            performance on par with SGD. The proposed algorithm is the only
+            method evaluated that achieves consistent wall-clock speedups when
+            benchmarked against regular SGD with an optimized communication
+            backend. We demonstrate reduced training times for convolutional
+            networks as well as LSTMs on common datasets.
+        code:
+            type: Lab GitHub
+            url: https://github.com/epfml/powersgd
+            date_last_commit: 2019-11-26
+        information:
+            - type:   Paper
+              title:  'PowerSGD: Practical Low-Rank Gradient Compression for Distributed Optimization'
+              url:    https://arxiv.org/abs/1905.13727
+        tags:
+            - Machine Learning
+            - Distributed Optimization
+        language: Python
+        type: Application
+        license: MIT
+        date_added: 2020-05-01
+        date_updated: 2020-05-01
