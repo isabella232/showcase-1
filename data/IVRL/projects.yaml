@@ -43,10 +43,10 @@ projects:
             It is challenging to complete an image whose 99% pixels are randomly
             missing. We present a solution to this extreme image completion
             problem.
-        url:          https://ivrl.epfl.ch/research-2/research-current/research-image_completion/
+        url:          https://www.epfl.ch/labs/ivrl/research/image-completion/
         code:
             type: Lab Download
-            url:  https://ivrl.epfl.ch/files/content/sites/ivrg/files/supplementary_material/EFAN/fan_icassp17.zip
+            url:  https://www.epfl.ch/labs/ivrl/wp-content/uploads/2018/08/fan_icassp17.zip
         tags:
             - Computer Vision
             - Completion
@@ -54,7 +54,7 @@ projects:
         language: MatLab
         type: Application
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-05-01
 
     iapbwc:
         name:         IAPBWC
