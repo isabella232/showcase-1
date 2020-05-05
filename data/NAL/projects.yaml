@@ -45,6 +45,6 @@ projects:
             - Measurement
         language: C++
         type: Application
-        license:  GPLv2
+        license:  GPL-2.0
         date_added: 2019-03-18
         date_updated: 2020-02-06

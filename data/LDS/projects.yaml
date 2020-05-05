@@ -40,7 +40,7 @@ projects:
             - Secure Multi-party Computation
         language: GoLang
         type: Library
-        license: Apache License v2
+        license: Apache-2.0
         date_added: 2019-08-15
         date_updated: 2020-02-06
         maturity: 1
@@ -73,7 +73,7 @@ projects:
             - MIxed Networks
         language: GoLang
         type: Application, Library
-        license:  AGPLv3
+        license:  AGPL-3.0
         date_added: 2019-03-18
         date_updated: 2020-02-06
 

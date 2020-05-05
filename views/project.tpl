@@ -157,7 +157,7 @@
         % if 'license' in project:
         <div>
             <div class="header">License:</div>
-            {{ project['license'] }}
+            {{ ', '.join(map(str, project['license'])) }}
         </div>
         % end
 

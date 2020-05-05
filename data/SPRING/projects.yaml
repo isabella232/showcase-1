@@ -113,7 +113,7 @@ projects:
             - type: Paper
               title: 'On (The Lack Of) Location Privacy in Crowdsourcing Applications'
               url: https://arxiv.org/abs/1901.04923
-        license: GPL-v3
+        license: GPL-3.0
         date_added: 2019-07-30
         date_updated: 2020-02-06
 

@@ -28,7 +28,7 @@ projects:
             - Ethereum
         language: Scala
         type: Library, Application
-        license:  AGPLv3
+        license:  AGPL-3.0
         in_incubator: true
         c4dt_contact:
             name:  Christian Grigis
@@ -79,7 +79,7 @@ projects:
             - Software Verification
         language: Scala
         type: Library, Application
-        license:  AGPLv3
+        license:  AGPL-3.0
         notes: >
              Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
         date_added: 2019-03-18

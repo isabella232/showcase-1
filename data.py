@@ -58,7 +58,19 @@ PROJECTS_SCHEMA = sy.Map({"projects":
             "tags": sy.Seq(sy.Str()),
             sy.Optional("language"): sy.Str(),
             sy.Optional("type"): sy.Str(),  # Enum?
-            sy.Optional("license"): sy.Str(),  # Enum?
+            sy.Optional("license"): sy.CommaSeparated(sy.Enum([
+                "AGPL-3.0",
+                "GPL-2.0", "GPL-3.0",
+                "LGPL-3.0",
+                "MPL-2.0",
+                "MIT",
+                "Apache-2.0",
+                "BSD-3-Clause",
+                "CloudSuite",
+                "commercial",
+                "non-commercial",
+                "other",
+                ])),
             sy.Optional("information"): sy.Seq(
                 sy.Map({
                     "type": sy.Str(),

@@ -27,7 +27,7 @@ projects:
             - type:   Paper
               title:  'Clearing the clouds: a study of emerging scale-out workloads on modern hardware'
               url:    https://dl.acm.org/citation.cfm?id=2150982
-        license:  CloudSuite, others
+        license:  CloudSuite, other
         date_added: 2019-03-18
         date_updated: 2020-02-06
 

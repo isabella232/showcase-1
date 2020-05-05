@@ -127,7 +127,7 @@
                             loc = project.get('lines_of_code', '')
                             doc = project.get('doc')
                             tags = project.get('tags', [])
-                            license = project.get('license', '')
+                            license = ', '.join(map(str, project.get('license', [])))
                             papers = [
                                 info
                                 for info in sorted(project.get('information', []), key=lambda v: v['type'])
