@@ -143,7 +143,7 @@
         % if 'type' in project:
         <div>
             <div class="header">Project type:</div>
-            {{ project['type'] }}
+            {{ ', '.join(map(str, project['type'])) }}
         </div>
         % end
 

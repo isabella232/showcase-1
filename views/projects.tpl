@@ -120,7 +120,7 @@
                             tech_desc = project.get('tech_desc', '')
                             layman_desc = project.get('layman_desc', '')
                             language = project.get('language', '')
-                            proj_type = project.get('type', '')
+                            proj_type = ', '.join(map(str, project.get('type', [])))
                             url = project.get('url')
                             code = project.get('code', {})
                             date_last_commit = code.get('date_last_commit', '')
