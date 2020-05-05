@@ -98,6 +98,7 @@ projects:
             - Fake News
             - Natural Language
         language: Python
+        license:  GPL-3.0
         type: Application
         date_added: 2019-03-18
         date_updated: 2020-05-01

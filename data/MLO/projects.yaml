@@ -43,6 +43,8 @@ projects:
         tags:
             - Machine Learning
             - Decentralized
+        language: Python
+        license: Apache-2.0
         type: Application
         date_added: 2019-07-30
         date_updated: 2020-02-06

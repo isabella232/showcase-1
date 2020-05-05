@@ -82,6 +82,7 @@ projects:
             - Predictor
             - Machine Learning
         language: Python
+        license: MIT
         type:   Library
         date_added:     2020-05-01
         date_updated:   2020-05-01
