@@ -54,12 +54,19 @@ projects:
     artificial-intelligence-drive:
         name:         Artificial-Intelligence Drive
         description:  Platform for speeding up the development of Artificial-Intelligence classifiers
-        url:          https://modemos.epfl.ch/
+        url:    https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline/
         layman_desc: >
             The platform aims at accelerating the process of building Artificial
             Intelligence classifiers for image and text classification.
         code:
             type: Private GitHub
+        information:
+            - type:     Demo
+              title:    Online Technology Demos
+              url:      https://modemos.epfl.ch/
+            - type:     Demo
+              title:    Online Image Retrieval Demo
+              url:      https://modemos.epfl.ch/article
         contacts:
             - name:     Rémi Philippe Lebret
               email:    remi.lebret@epfl.ch
@@ -69,7 +76,7 @@ projects:
             - Artificial Intelligence
         type: Application
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2020-05-08
 
     scilens:
         name:         SciLens
