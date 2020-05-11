@@ -1,6 +1,8 @@
 import codecs
 import os
 
+from functools import lru_cache
+
 import strictyaml as sy
 
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -97,6 +99,7 @@ PROJECTS_SCHEMA = sy.Map({"projects":
         )
     })
 
+@lru_cache(maxsize=1)
 def load():
     with codecs.open(os.path.join(DATA_PATH, LABS_FILENAME),
             encoding='utf-8') as f:
