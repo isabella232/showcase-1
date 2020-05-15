@@ -74,8 +74,12 @@ projects:
         language: Python
         type: Framework
         license: Apache-2.0
+        in_incubator: true
+        c4dt_contact:
+            name:  Christian Grigis
+            email: christian.grigis@epfl.ch
         date_added: 2019-07-30
-        date_updated: 2020-04-01
+        date_updated: 2020-05-15
         maturity: 2
 
     sent2vec:
