@@ -50,7 +50,7 @@ projects:
         date_updated: 2020-02-06
 
     mlbench:
-        name: mlBench
+        name: MLBench
         description: Benchmarking of distributed ML
         layman_desc: >
             Framework for distributed machine learning. Its purpose is to
@@ -65,9 +65,19 @@ projects:
         code:
             type: Project GitHub
             url: https://github.com/mlbench
-            date_last_commit: 2020-03-26
+            date_last_commit: 2020-05-15
         url: https://mlbench.github.io
         doc: https://mlbench.readthedocs.io/
+        information:
+            - type:     Tutorial
+              title:    Adding an existing PyTorch model to an MLBench task
+              url:      https://mlbench.github.io/2018/11/20/pytorch-adaptation-tutorial/
+            - type:     Tutorial
+              title:    Using the MLBench Commandline Interface
+              url:      https://mlbench.github.io/2019/11/11/mlbench-cli/
+            - type:     Blog
+              title:    MLBench Blog
+              url:      https://mlbench.github.io/blog/
         tags:
             - Machine Learning
             - Framework
@@ -79,7 +89,7 @@ projects:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
         date_added: 2019-07-30
-        date_updated: 2020-05-15
+        date_updated: 2020-05-18
         maturity: 2
 
     sent2vec:
