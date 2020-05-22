@@ -51,13 +51,18 @@ projects:
         date_added: 2019-03-18
         date_updated: 2020-02-06
 
-    artificial-intelligence-drive:
-        name:         Artificial-Intelligence Drive
-        description:  Platform for speeding up the development of Artificial-Intelligence classifiers
-        url:    https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline/
+    ai-data-platform-v1:
+        name:         AI Research Aiding Online Children Safety
+        description:  Platform for detecting specific risks and threats children are facing online
+        url:    https://www.epfl.ch/labs/lsir/ai-research-aiding-online-children-safety/
         layman_desc: >
-            The platform aims at accelerating the process of building Artificial
-            Intelligence classifiers for image and text classification.
+            Machine Learning classifiers and tools to help
+            with the detection of specific risks and threats children are
+            facing while using their newly acquired phones.
+            The classifiers perform on par or better than what exists on the
+            market, and have been adapted to run smoothly on a mobile phone.
+            The analysis can therefore run on the mobile phone without having
+            to send any content to any server.
         code:
             type: Private GitHub
         information:
@@ -74,9 +79,36 @@ projects:
             - Image Classification
             - Test Classification
             - Artificial Intelligence
-        type: Application
+        type: Framework
         date_added: 2019-03-18
-        date_updated: 2020-05-08
+        date_updated: 2020-05-22
+
+    ai-data-platform-v2:
+        name:         AI-Driven Classifier Building Pipeline
+        description:  Platform for speeding up the development of Artificial-Intelligence classifiers
+        url:    https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline/
+        layman_desc: >
+            The platform aims at accelerating the process of building Artificial
+            Intelligence classifiers for image and text classification.
+        code:
+            type: Private GitHub
+        information:
+            - type:     Demo
+              title:    Online Technology Demos
+              url:      http://data-platform.lsir.ch/
+            - type:     Paper
+              title:    Weakly Supervised Active Learning with Cluster Annotation
+              url:      https://arxiv.org/pdf/1812.11780.pdf
+        contacts:
+            - name:     Rémi Philippe Lebret
+              email:    remi.lebret@epfl.ch
+        tags:
+            - Image Classification
+            - Test Classification
+            - Artificial Intelligence
+        type: Framework
+        date_added: 2019-05-22
+        date_updated: 2020-05-22
 
     scilens:
         name:         SciLens
