@@ -207,3 +207,40 @@ projects:
         type: Application
         date_added: 2019-03-18
         date_updated: 2020-02-06
+
+    spindle:
+        name:         SPINDLE
+        description: >
+          Scalable, Privacy-Preserving, Distributed Learning on Distributed
+          Datasets
+        layman_desc: >
+            SPINDLE allows to train and evaluate generalized linear models on
+            datasets that are stored at different data providers who don't
+            want to share the original data.
+        code:
+            type: Private GitHub
+            url:  https://github.com/ldsec/spindle
+            date_last_commit: 2020-05-08
+        lines_of_code:    20000
+        information:
+            - type:   Paper
+              title:  Scalable Privacy-Preserving Distributed Learning
+              url:    https://arxiv.org/abs/2005.09532
+        tags:
+            - Privacy Preserving
+            - Homomorphic Encryption
+            - Machine Learning
+        language: GoLang
+        type: Application
+        license:  non-commercial
+        contacts:
+            - name:   David Froelicher
+              email:  david.froelicher@epfl.ch
+            - name:   Joao de Sá
+              email:  joao.gomesdesaesousa@epfl.ch
+        in_incubator: true
+        c4dt_contact:
+            name:  Valérian Rousset
+            email: valerian.rousset@epfl.ch
+        date_added: 2020-05-22
+        date_updated: 2020-05-22
