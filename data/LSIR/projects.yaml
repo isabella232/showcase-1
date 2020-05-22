@@ -92,6 +92,7 @@ projects:
             Intelligence classifiers for image and text classification.
         code:
             type: Private GitHub
+        doc: https://modemos.epfl.ch/platform_v2_docs/
         information:
             - type:     Demo
               title:    Online Technology Demos
