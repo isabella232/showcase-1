@@ -92,6 +92,7 @@ projects:
             Intelligence classifiers for image and text classification.
         code:
             type: Private GitHub
+            date_last_commit: 2020-06-02
         doc: https://modemos.epfl.ch/platform_v2_docs/
         information:
             - type:     Demo
@@ -109,7 +110,8 @@ projects:
             - Artificial Intelligence
         type: Framework
         date_added: 2019-05-22
-        date_updated: 2020-05-22
+        date_updated: 2020-06-12
+        maturity: 2
 
     scilens:
         name:         SciLens
