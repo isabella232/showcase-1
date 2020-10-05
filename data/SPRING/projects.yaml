@@ -144,7 +144,7 @@ projects:
             
     SwissCovid:
         name: SwissCovid Contact Tracing
-        description: A privacy preserving exposure notification protocol to inform people about possible exposition to the COVID-19 virus
+        description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
         layman_desc: >
             The C4DT Factory team helped the SwissCovid effort by providing technical specifications to the already written code.
             In addition, we reviewed the code, and helped Ubique to use github in a more Open Source respecting way.
