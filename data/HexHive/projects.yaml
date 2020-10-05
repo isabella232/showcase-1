@@ -369,9 +369,13 @@ projects:
               email:  mathias.payer@epfl.ch
             - name:   Daniele Antonioli
               email:  daniele.antonioli@epfl.ch
+            - name:   Christian Grigis
+              email:  christian.grigis@epfl.ch
         tags:
             - Privacy-enhancing
             - Protocol
+            - GAEN
+            - COVID
         language: Java, Kotlin
         type: Library, Framework
         license: Apache-2.0
