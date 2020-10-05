@@ -167,4 +167,6 @@ projects:
         date_updated: 2020-10-05
         maturity: 3
         in_incubator: true
-        c4dt_contact: linus.gasser@epfl.ch
+        c4dt_contact: 
+            name: Linus Gasser
+            email: linus.gasser@epfl.ch
