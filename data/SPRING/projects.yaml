@@ -142,3 +142,28 @@ projects:
         date_updated: 2020-02-21
         maturity: 2
             
+    SwissCovid:
+        name: SwissCovid Exposure Notification
+        description: A privacy preserving exposure notification protocol to inform people about evenutal exposition to the CoVid-19 virus
+        layman_desc: >
+            The C4DT Factory team helped the SwissCovid effort by providing techincal specifications to the already written code.
+            In addition, we code reviewed, and helped Ubique to use github in a more Open Source respecting way.
+            We also looked at forks of the SwissCovid app to make sure that the new implementations follow the best practices.
+        code:
+            type: Public Github
+            url: https://github.com/DP-3T/dp3t-sdk-backend
+            date_last_commit: 2020-10-01
+        tags:
+            - Privacy-enhancing
+            - Protocol
+        language: Java
+        type: Application
+        information:
+            - type: Documentation
+              title: "Technical specification of the SwissCovid app"
+              url: https://github.com/DP-3T/technical-spec
+        license: MPL-2.0
+        date_added: 2020-10-05
+        date_updated: 2020-10-05
+        maturity: 3
+        in_incubator: true
