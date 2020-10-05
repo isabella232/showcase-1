@@ -346,3 +346,39 @@ projects:
         maturity: 1
         date_added: 2020-02-24
         date_updated: 2020-03-03
+
+    freegaen:
+        name:         Free GAEN alternative
+        description:  Alternative to GAEN for contact tracing applications
+        layman_desc: >
+            Apple and Google developed the Google-Apple Exposure Notification
+            system in order to provide a uniform API for contact-tracing apps
+            while preserving user privacy. On Android, GAEN is integrated in
+            the Google Play services, which is proprietary. As a consequence,
+            users wanting to keep a free system, as well as phone manufacturers
+            such as Huawei who don't have Google Play services cannot use these
+            applications.
+            This project aims to offer an alternative framework, based on
+            open-source code, which requires only minimal changes to the apps.
+        code:
+            type: Private GitHub
+            url:  https://github.com/DP-3T/gaenlib
+            date_last_commit: 2020-09-28
+        contacts:
+            - name:   Mathias Payer
+              email:  mathias.payer@epfl.ch
+            - name:   Daniele Antonioli
+              email:  daniele.antonioli@epfl.ch
+        tags:
+            - Privacy-enhancing
+            - Protocol
+        language: Java, Kotlin
+        type: Library, Framework
+        license: Apache-2.0
+        maturity: 1
+        in_incubator: true
+        c4dt_contact:
+            name: Christian Grigis
+            email: christian.grigis@epfl.ch
+        date_added: 2020-10-05
+        date_updated: 2020-10-05
