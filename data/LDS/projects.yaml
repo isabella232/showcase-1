@@ -120,7 +120,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://medco.epfl.ch/software/
-            date_last_commit: 2020-01-14
+            date_last_commit: 2020-10-13
         information:
           - type:   Related Link
             title:  MedCo Online Demonstration
