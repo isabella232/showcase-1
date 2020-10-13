@@ -254,7 +254,7 @@ projects:
             and evaluation of neural networks in an N-party, federated learning setting.
         code:
             type: Private GitHub
-            url:  https://github.com/ldsec/spindle/tree/distributed_nn
+            url:  https://github.com/ldsec/spindle/tree/nnSecure
             date_last_commit: 2020-06-21
         lines_of_code:    20000
         information:
