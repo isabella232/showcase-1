@@ -2,24 +2,25 @@ projects:
 
     lattigo:
         name: Lattigo
-        description: CRT-accelerated lattice-based cryptography library in Golang
+        description: A lattice-based multiparty homomorphic encryption library in Go
         tech_desc: >
-            Toolbox of lattice-based cryptographic primitives for Go implementing
-            the BFV and CKKS schemes and their distributed version.
-            The library is still at an experimental stage and should be used for
-            research purposes only.
+            Lattigo is a Go module for Multiparty Homomorphic Encryption, that implements
+            Ring-Learning-With-Errors-based homomorphic encryption primitives. It comprises
+            highly-efficient RNS versions of the BFV and CKKS schemes and their multiparty 
+            (N-out-of-N-threshold) counterparts. It also implements a dense-key and 
+            sparse-key Bootstrapping procedure for RNS-CKKS.
         layman_desc: >
-            Homomorphic encryption refers to cryptographic schemes that allow to
-            compute directly on the encrypted data, without requiring the data to
-            be decrypted first. It therefore enables a set of operations
-            (polynomial evaluation and approximations of non-polynomial
-            functions) to be "blindly" performed by an untrustworthy party on
-            encrypted sensitive data, with a controlled computational overhead.
-            This technology is very promising as an enabler for secure data
-            sharing, and in particular, in the case of secure multi-party
-            computations, where several entities want to collaboratively compute
-            a function on their confidential or sensitive data, without revealing
-            to each other anything else than the result of this computation.
+            Homomorphic encryption (HE) comprises a special class of cryptographic 
+            schemes that enable computing directly on encrypted data, without requiring 
+            the data to be decrypted first. It therefore enables a set of operations 
+            (polynomial evaluation and approximations of non-polynomial functions) to 
+            be "blindly" performed on encrypted sensitive data by an untrustworthy party, 
+            with a controlled computational overhead. Lattigo implements HE and its 
+            multiparty extension (MHE), that enables several entities to collaboratively
+            compute a function on their confidential or sensitive data, without revealing
+            to each other anything besides the result of this computation. Lattigo's 
+            multiparty homomorphic encryption technology is an enabler for secure data
+            sharing in multiple scenarios.
         code:
             type: Lab GitHub
             url: https://github.com/ldsec/lattigo
@@ -42,7 +43,7 @@ projects:
         type: Library
         license: Apache-2.0
         date_added: 2019-08-15
-        date_updated: 2020-02-06
+        date_updated: 2020-10-15
         maturity: 1
 
     prifi:
