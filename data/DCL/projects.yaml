@@ -191,3 +191,27 @@ projects:
         type: Library, Application
         date_added: 2019-03-18
         date_updated: 2020-01-31
+
+    fegan:
+        name:         FeGAN
+        description: >
+            The FeGAN system enables training GANs in the Federated Learning setup. 
+            FeGAN is implemented on PyTorch.
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/FeGAN
+            date_last_commit: 2020-10-24
+        tags:
+            - Machine Learning
+            - GAN
+            - Federated ML
+            - PyTorch
+        type: Application
+        language: Pyton
+        information:
+            - type: Paper
+              title: FeGAN: Scaling Distributed GANs
+              url: https://hal.archives-ouvertes.fr/hal-02953314/document
+        date_added: 2020-11-11
+        date_updated: 2020-11-11
+
