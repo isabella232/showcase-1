@@ -210,7 +210,7 @@ projects:
         language: Pyton
         information:
             - type: Paper
-              title: FeGAN: Scaling Distributed GANs
+              title: "FeGAN: Scaling Distributed GANs"
               url: https://hal.archives-ouvertes.fr/hal-02953314/document
         date_added: 2020-11-11
         date_updated: 2020-11-11
