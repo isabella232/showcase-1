@@ -182,15 +182,37 @@ projects:
             the first system to bypass consensus algorithms for implementing
             asset transfers.
         code:
-            type: Private GitHub
+            type: Lab GitHub
+            url: https://github.com/Distributed-EPFL
+            date_last_commit: 2020-12-01
         tags:
             - Blockchain
             - Cryptocurrencies
             - Scalability
             - Decentralization
-        type: Library, Application
+        type: Library
+        language: Rust
+        information:
+            - type: Website
+              url: https://dcl.epfl.ch/site/cryptocurrencies
+              title: "Cryptocurrencies@EPFL"
+            - type: Website
+              url: https://dcl.epfl.ch/site/poc-at2_project
+              title: "Low Cost Cryptocurrency"
+            - type: Paper
+              title: "Scalable Byzantine Reliable Broadcast"
+              url: https://drops.dagstuhl.de/opus/volltexte/2019/11329/
+            - type: Paper
+              title: "Online Payments by Merely Broadcasting Messages"
+              url: https://dcl.epfl.ch/site/_media/research/efficient_asset_transfer_winter_20_dsn_extended_version_.pdf
+            - type: Paper
+              title: "AT2: Asynchronous Trustworthy Transfers"
+              url: https://arxiv.org/abs/1812.10844
+            - type: Paper
+              title: "The Consensus Number of a Cryptocurrency"
+              url: https://arxiv.org/abs/1906.05574
         date_added: 2019-03-18
-        date_updated: 2020-01-31
+        date_updated: 2020-12-02
 
     fegan:
         name:         FeGAN
