@@ -25,7 +25,7 @@ projects:
               url:    https://arxiv.org/abs/1707.06279
         license:  MIT
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-21
 
     lightnion:
         name:         Lightnion
@@ -36,6 +36,9 @@ projects:
             websites to send and retrieve data anonymously (e.g. send sensitive
             information without identifying the user) without requiring users to
             install special software such as the Tor browser.
+        contacts:
+            - name: Laurent Girod
+              email: laurent.girod@epfl.ch
         code:
             type: Lab GitHub
             url: https://github.com/spring-epfl/lightnion
@@ -48,7 +51,7 @@ projects:
         type: Library
         license: BSD-3-Clause
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-21
 
     trickster:
         name:         Trickster
@@ -58,6 +61,9 @@ projects:
             needs to be more sophisticated than simply adding some noise to an
             image. One example is to evade an abuse detection model, for example,
             social media bot detection, or a malware detector.
+        contacts:
+            - name:   Bogdan Kulynych
+              email:  bogdan.kulynych@epfl.ch
         code:
             type: Lab GitHub
             url:  https://github.com/spring-epfl/trickster
@@ -68,7 +74,7 @@ projects:
         type: Library
         license: MIT
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-21
 
     hippiepug:
         name:         Hippiepug
@@ -94,16 +100,19 @@ projects:
               url: https://arxiv.org/abs/1707.06279
         license:  MIT
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-21
 
     mcsauditing:
         name: MCSAuditing
         description: Evaluation code for mobile crowdsourcing privacy
         tech_desc:  This tool implements the evaluation framework described in the paper
+        contacts:
+            - name: Carmela Troncoso
+              email: carmela.troncoso@epfl.ch
         code:
           type: Lab GitHub
           url: https://github.com/spring-epfl/MCSAuditing
-          date_last_commit: 2019-05-28
+          date_last_commit: 2020-10-20
         tags:
           - Location Privacy
           - Privacy
@@ -115,7 +124,7 @@ projects:
               url: https://arxiv.org/abs/1901.04923
         license: GPL-3.0
         date_added: 2019-07-30
-        date_updated: 2020-02-06
+        date_updated: 2021-01-21
 
     zksk:
         name: Zero-Knowledge Swiss Knife
@@ -123,7 +132,10 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/spring-epfl/zksk
-            date_last_commit: 2019-11-11
+            date_last_commit: 2021-01-13
+        contacts:
+            - name:   Bogdan Kulynych
+              email:  bogdan.kulynych@epfl.ch
         tags:
             - Zero-Knowledge Proof
             - Prototyping
@@ -139,10 +151,10 @@ projects:
               url: https://zksk.readthedocs.io/en/latest/
         license: MIT
         date_added: 2020-02-06
-        date_updated: 2020-02-21
+        date_updated: 2021-01-21
         maturity: 2
-            
-    SwissCovid:
+
+    swisscovid:
         name: SwissCovid Contact Tracing
         description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
         layman_desc: >
@@ -167,6 +179,114 @@ projects:
         date_updated: 2020-10-05
         maturity: 3
         in_incubator: true
-        c4dt_contact: 
+        c4dt_contact:
             name: Linus Gasser
             email: linus.gasser@epfl.ch
+
+    crowdnotifier:
+        name: CrowdNotifier
+        description: Decentralized Privacy-Preserving Presence Tracing
+        layman_desc: >
+            CrowdNotifier is a protocol that can complement manual contact tracing by efficiently notifying
+            visitors of venues and events with SARS-CoV-2-positive attendees. It provides
+            strong privacy and abuse- resistance, and show that it can scale to handle notification at a national
+            scale.
+        c4dt_contact:
+            name: Linus Gasser
+            email: linus.gasser@epfl.ch
+        code:
+            type: Public Github
+            url: https://github.com/DP-3T/dp3t-sdk-backend
+            date_last_commit: 2020-10-01
+        maturity: 3
+        in_incubator: true
+        tags:
+            - Privacy-enhancing
+            - Protocol
+        language: Java
+        type: Application
+        information:
+            - type: Documentation
+              title: "CrowdNotifier - Decentralized Privacy-Preserving Presence Tracing"
+              url: https://github.com/CrowdNotifier/documents
+        license: MPL-2.0
+        date_added: 2021-01-21
+        date_updated: 2021-01-21
+
+    petrelic:
+        name: Petrelic
+        description: A python wrapper around RELIC pairings
+        tech_desc: >
+            petrelic is a Python wrapper around RELIC. It provides a simple python interface to the BLS-381 pairing and
+            RELIC's big number class.
+        contacts:
+            - name: Laurent Girod
+              email: laurent.girod@epfl.ch
+        tags:
+            - BLS-381
+            - Pairing-based
+            - Cryptography
+        type: Library
+        code:
+            type: Lab Github
+            url:  https://github.com/spring-epfl/petrelic
+            date_last_commit: 2020-05-25
+        language: Python
+        license: Apache-2.0
+        information:
+            - type: Documentation
+              title: Petrelic's Documentation
+              url: https://petrelic.readthedocs.io/en/latest/
+        date_added: 2021-01-21
+        date_updated: 2021-01-21
+
+    sscred:
+        name: SSCred
+        description: A python library to facilitate anonymous authentication
+        tech_desc: >
+            SSCred provides the following primitives:
+            <ul>
+            <li>Anonymous credential light (ACL)</li>
+            <li>Abe's Blind signature</li>
+            <li>Blinded Pedersen commitment</li>
+            </ul>
+        contacts:
+            - name: Kasra Edalat
+              email: kasra.edalat@epfl.ch
+        tags:
+            - Cryptography
+            - Privacy Preserving
+            - Anonymity
+        type: Library
+        code:
+            type: Lab Github
+            url:  https://github.com/spring-epfl/SSCred
+            date_last_commit: 2020-08-11
+        language: Python
+        license: BSD-3-Clause
+        date_added: 2021-01-21
+        date_updated: 2020-01-21
+
+    mia:
+        name: mia
+        description: membership inference attacks
+        tech_desc: >
+          These are attacks against privacy of the training data. In MIA, an attacker tries to guess whether a given
+          example was used during training of a target model or not, only by querying the model. See more in the paper
+          by Shokri et al. Currently, you can use the library to evaluate the robustness of your Keras or PyTorch models
+          to MIA.
+        contacts:
+            - name:   Bogdan Kulynych
+              email:  bogdan.kulynych@epfl.ch
+        tags:
+            - Machine Learning
+            - Attack
+        type: Application
+        code:
+            type: Lab Github
+            url:  https://github.com/spring-epfl/mia
+            date_last_commit: 2019-01-31
+        language: Python
+        license: MIT
+        date_added: 2021-01-21
+        date_updated: 2021-01-21

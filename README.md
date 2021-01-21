@@ -57,13 +57,14 @@ in `(brackets)`.
             (A 2-3 sentence description for somebody with general knowledge)
         tech_desc: >
             (A more detailed description in 2-3 sentences for somebody knowledgeable in the subject)
+        url: (URL for a home page)
         code:
             type: (Lab Github, Personal Gihub, zip files, ...)
             url:  (https://...)
             date_last_commit: (YYYY-MM-DD)
-        url: (URL for a home page)
-        maturity: (1|2|3)
         language: (What the majority of the code is written in
+        license: (BSD, GPL 3+, MPL 2+, Apache, ...)
+        maturity: (1|2|3)
         information: (zero or more of:)
             - type: (Paper | Video | Article | Blog Post | Demo | Web Page | Documentation)
               title: (Short title)

@@ -6,15 +6,16 @@
         contacts:
             - name:
               email:
+        url:
         tags:
         type:
         code:
             type: Lab Github
             url:  https://
             date_last_commit:
-        url:
-        maturity: (1|2|3)
         language:
+        license:
+        maturity: (1|2|3)
         information:
             - type: Paper
               title:
