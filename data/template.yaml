@@ -1,0 +1,23 @@
+    (path):
+        name:
+        description: >
+        layman_desc: >
+        tech_desc: >
+        contacts:
+            - name:
+              email:
+        tags:
+        type:
+        code:
+            type: Lab Github
+            url:  https://
+            date_last_commit:
+        url:
+        maturity: (1|2|3)
+        language:
+        information:
+            - type: Paper
+              title:
+              url: https:..
+        date_added:
+        date_updated:

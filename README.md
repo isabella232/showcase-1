@@ -28,6 +28,48 @@ data
 
 The information is presented to the user via a small [bottle](https://bottlepy.org/) application.
 
+## Yaml structure
+
+A summary of the different entries found in the yaml structure. All text to be changed is written
+in `(brackets)`.
+
+### Needed
+
+```yaml
+    (url_path):
+        name: (lowercase short name)
+        description: >
+            (Short description, will be shown under the name)
+       contacts:
+            - name: (Full Name)
+              email: (name@institution.org)
+        tags:
+            - (Add tags, if possible out of the existing ones)
+        type: (Application / Library)
+        date_added: (YYYY-MM-DD)
+        date_updated: (YYYY-MM-DD)
+```
+
+### Optional
+
+```yaml
+        layman_desc: >
+            (A 2-3 sentence description for somebody with general knowledge)
+        tech_desc: >
+            (A more detailed description in 2-3 sentences for somebody knowledgeable in the subject)
+        code:
+            type: (Lab Github, Personal Gihub, zip files, ...)
+            url:  (https://...)
+            date_last_commit: (YYYY-MM-DD)
+        url: (URL for a home page)
+        maturity: (1|2|3)
+        language: (What the majority of the code is written in
+        information: (zero or more of:)
+            - type: (Paper | Video | Article | Blog Post | Demo | Web Page | Documentation)
+              title: (Short title)
+              url: (https:.. - for papers, don't use arxiv, but the conference link)
+```
+
 ## Run the application locally
 
 Ensure you have the required tools to create Python virtual environments. You might need to install a specific package depending on your distribution, e.g. on Debian `python3-venv`:
