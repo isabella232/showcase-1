@@ -5,7 +5,7 @@ projects:
         description: >
             System Support for Byzantine Machine Learning
         contacts:
-            - name: Guirguis Arsany
+            - name: Arsany Guirguis
               email: arsany.guirguis@epfl.ch
         type: Library
         tech_desc: >
@@ -187,8 +187,8 @@ projects:
         date_added: 2019-03-18
         date_updated: 2021-01-21
 
-    mobnet:
-        name:         MobNet
+    fleet:
+        name:         Fleet
         description:  Machine Learning on Android
         layman_desc: >
             MobNet is a framework for machine learning on android devices.
@@ -196,9 +196,9 @@ projects:
             - name: Georgios Damaskinos
               url: http://gdamaskinos.com/
         code:
-            type: Private GitHub
-            url: https://github.com/LPD-EPFL/MobNet
-            date_last_commit: 2019-07-01
+            type: Non-lab GitHub
+            url: https://github.com/gdamaskinos/fleet
+            date_last_commit: 2020-10-31
         tags:
             - Federated Learning
             - Android
