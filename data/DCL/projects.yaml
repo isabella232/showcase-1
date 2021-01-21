@@ -1,175 +1,37 @@
 projects:
 
-    mvtil:
-        name:         MVTIL
+    garfield:
+        name: Garfield
         description: >
-            Multiversion Timestamp Locking (MVTL), a new family of
-            concurrency control algorithms
-        layman_desc: >
-            Improving performance of distributed databases by allowing read
-            accesses to lag behind the latest version of the data.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/LPD-EPFL/MVTIL
-            date_last_commit: 2018-05-16
+            System Support for Byzantine Machine Learning
+        contacts:
+            - name: Guirguis Arsany
+              email: arsany.guirguis@epfl.ch
+        type: Library
+        tech_desc: >
+            Garfield is a library to build Byzantine machine learning
+            (ML) applications on top of popular frameworks such as TensorFlow and PyTorch.
+            We show how to use Garfield to build different architectures for ML applications like single server,
+            multiple workers (SSMW), multiple servers, multiple
+            workers (MSMW), and fully decentralized architecture.
         tags:
-            - Database
-            - Concurrency
-        type: Application
-        language: C++
-        information:
-            - type: Paper
-              title: Locking Timestamps versus Locking Objects
-              url: https://infoscience.epfl.ch/record/229425/files/Paper.pdf
-        date_added: 2019-09-19
-        date_updated: 2020-01-31
-
-    libnvram:
-        name:         libNVRAM
-        description:  Log-Free Concurrent Data Structures
-        layman_desc: >
-            Storing data structures in non-volatile RAM such that transient
-            failures don't corrupt the data.
-        code:
-            type: Lab Github links
-            url:  http://dcl.epfl.ch/site/nvram
-            date_last_commit: 2019-09-04
-        tags:
-            - NVRAM
-            - Data Structures
-            - Concurrency
-            - Transient Failures
-        type: Library, Application
-        language: C++
-        date_added: 2019-03-18
-        date_updated: 2020-01-31
-
-    flodb:
-        name:         FloDB
-        description:  Unlocking Memory in Persistent Key-Value Stores
-        layman_desc: >
-            High performance key-value store for servers with high amount of RAM
-            and lots of CPUs.
-        url:          http://dcl.epfl.ch/site/flodb
-        code:
-            type: Lab GitHub
-            url:  https://github.com/LPD-EPFL/flodb
-            date_last_commit: 2017-03-28
-        tags:
-            - Key-Value Store
-            - Server
-            - Database
-        type: Application
-        language: C++
-        date_added: 2019-03-18
-        date_updated: 2020-01-31
-
-    mobnet:
-        name:         MobNet
-        description:  Machine Learning on Android
-        layman_desc: >
-            MobNet is a framework for machine learning on android devices.
-        code:
-            type: Private GitHub
-            url: https://github.com/LPD-EPFL/MobNet
-            date_last_commit: 2019-07-01
-        tags:
+            - Machine Learning
+            - ML
+            - Byzantine
             - Federated Learning
-            - Android
-            - Edge ML
-        type: Library, Application
-        language: Java
-        date_added: 2019-07-01
-        maturity: 1
-        date_updated: 2020-01-31
-
-    mctop:
-        name:         MCTOP
-        description:  A Multi-Core Topology Abstraction
-        tech_desc: >
-          MCTOP is an abstraction of multi-core topologies augmented with
-          important low-level hardware information, such as memory bandwidths
-          and communication latencies.
-        code:
-            type: Lab GitHub
-            url: https://github.com/LPD-EPFL/mctop
-            date_last_commit: 2017-05-04
-        tags:
-            - CPU topology
-            - Multiprocessor
-        type: Application
-        language: C
-        date_added: 2019-07-26
-        date_updated: 2020-01-31
-
-    lockin:
-        name:         LOCKIN
-        description:  Automatically chosing best locking algorithm
-        tech_desc: >
-          GLS is a middleware that makes lock-based programming simple and
-          effective. GLS offers the classic lock-unlock interface of locks.
-          However, in contrast to classic lock libraries, GLS does not require
-          any effort from the programmer for allocating and initializing locks,
-          nor for selecting the appropriate locking strategy.
-        code:
-            type: Lab GitHub
-            url: https://github.com/LPD-EPFL/lockin
-            date_last_commit: 2017-04-19
-        tags:
-            - Locking
-        type: Library
-        language: C/C++
-        date_added: 2019-07-01
-        date_updated: 2020-01-31
-
-    aggregathor:
-        name:         AggregaThor
-        description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
-        tech_desc: >
-            Framework built over TensorFlow implementing state-of-the-art
-            Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
-            Modular approach allows most of its components to be reused in other
-            projects. Unreliable communication channels are supported, providing
-            a performance speed-up over standard TensorFlow in saturated
-            networks.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/LPD-EPFL/AggregaThor
-            date_last_commit: 2019-12-04
-        tags:
-            - Robust SGD
-            - Distributed ML
-            - Byzantine Resilience
-            - Gradient Aggregation
             - TensorFlow
-            - UDP
-        type: Library, Application
-        language: Python / C++
+            - PyTorch
+        code:
+            type: Lab Github
+            url:  https://github.com/LPD-EPFL/Garfield
+            date_last_commit: 2021-01-20
+        language: Pyton, Cuda, C++
         information:
             - type: Paper
-              url: https://mlsys.org/Conferences/2019/doc/2019/54.pdf
-              title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation (SysML19')"
-        date_added: 2019-03-18
-        date_updated: 2020-01-31
-
-    robust-rdma:
-        name:         Robust RDMA
-        description:  Better fault-tolerance and performance of consensus using RDMA
-        tech_desc: >
-            Leveraging Remote Direct Memory Access (RDMA) to improve the
-            fault-tolerance and performance of consensus, compared to existing
-            protocols. In some cases, RDMA allows us to circumvent existing
-            theoretical lower bounds (solving Byzantine consensus with 2f+1
-            replicas, for instance).
-        tags:
-            - RDMA
-            - Consensus
-            - Byzantine Resilience
-            - Fault-Tolerance
-            - Communication Complexity
-        type: Library
-        date_added: 2019-03-18
-        date_updated: 2020-01-31
+              title: "Garfield: System Support for Byzantine Machine Learning"
+              url: https://arxiv.org/abs/2010.05888
+        date_added: 2021-01-20
+        date_updated: 2021-01-20
 
     at2:
         name:         AT2
@@ -181,10 +43,14 @@ projects:
             scalable compared with Bitcoin and consensus-based solutions. AT2 is
             the first system to bypass consensus algorithms for implementing
             asset transfers.
+        contacts:
+            - name: Matteo Monti
+              email: matteo.monti@epfl.ch
         code:
             type: Lab GitHub
             url: https://github.com/Distributed-EPFL
             date_last_commit: 2020-12-01
+        maturity: 1
         tags:
             - Blockchain
             - Cryptocurrencies
@@ -212,17 +78,22 @@ projects:
               title: "The Consensus Number of a Cryptocurrency"
               url: https://arxiv.org/abs/1906.05574
         date_added: 2019-03-18
-        date_updated: 2020-12-02
+        date_updated: 2021-01-21
 
     fegan:
         name:         FeGAN
-        description: >
-            The FeGAN system enables training GANs in the Federated Learning setup. 
+        description: "Scaling Distributed GANs"
+        tech_desc: >
+            The FeGAN system enables training GANs in the Federated Learning setup.
             FeGAN is implemented on PyTorch.
+        contacts:
+            - name: Arsany Guirguis
+              email: arsany.guirguis@epfl.ch
         code:
             type: Lab GitHub
             url:  https://github.com/LPD-EPFL/FeGAN
-            date_last_commit: 2020-10-24
+            date_last_commit: 2020-12-31
+        maturity: 1
         tags:
             - Machine Learning
             - GAN
@@ -235,5 +106,203 @@ projects:
               title: "FeGAN: Scaling Distributed GANs"
               url: https://hal.archives-ouvertes.fr/hal-02953314/document
         date_added: 2020-11-11
-        date_updated: 2020-11-11
+        date_updated: 2021-01-21
+
+    mvtil:
+        name:         MVTIL
+        description: >
+            Multiversion Timestamp Locking (MVTL)
+        layman_desc: >
+            MVTL is a new family of concurrency control algorithms.
+            Improving performance of distributed databases by allowing read
+            accesses to lag behind the latest version of the data.
+        contacts:
+            - name: Rachid Guerraoui
+              email: rachid.guerraoui@epfl.ch
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/MVTIL
+            date_last_commit: 2018-05-16
+        tags:
+            - Database
+            - Concurrency
+        type: Application
+        language: C++
+        information:
+            - type: Paper
+              title: Locking Timestamps versus Locking Objects
+              url: https://infoscience.epfl.ch/record/229425/files/Paper.pdf
+        date_added: 2019-09-19
+        date_updated: 2021-01-21
+
+    libnvram:
+        name:         libNVRAM
+        description:  Log-Free Concurrent Data Structures
+        layman_desc: >
+            Storing data structures in non-volatile RAM such that transient
+            failures don't corrupt the data.
+        url: http://dcl.epfl.ch/site/nvram
+        contacts:
+            - name: Rachid Guerraoui
+              email: rachid.guerraoui@epfl.ch
+        code:
+            type: Lab Github
+            url:  https://github.com/LPD-EPFL/nv-lf-structures
+            date_last_commit: 2019-09-04
+        tags:
+            - NVRAM
+            - Data Structures
+            - Concurrency
+            - Transient Failures
+        type: Library, Application
+        language: C++
+        date_added: 2019-03-18
+        date_updated: 2021-01-21
+
+    flodb:
+        name: FloDB
+        description:  Unlocking Memory in Persistent Key-Value Stores
+        layman_desc: >
+            High performance key-value store for servers with high amount of RAM
+            and lots of CPUs.
+        url: http://dcl.epfl.ch/site/flodb
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/flodb
+            date_last_commit: 2017-03-28
+        contacts:
+            - name: Zablotchi Mihail Igor
+              email: igor.zablotchi@epfl.ch
+        tags:
+            - Key-Value Store
+            - Server
+            - Database
+        type: Application
+        language: C++
+        date_added: 2019-03-18
+        date_updated: 2021-01-21
+
+    mobnet:
+        name:         MobNet
+        description:  Machine Learning on Android
+        layman_desc: >
+            MobNet is a framework for machine learning on android devices.
+        contacts:
+            - name: Georgios Damaskinos
+              url: http://gdamaskinos.com/
+        code:
+            type: Private GitHub
+            url: https://github.com/LPD-EPFL/MobNet
+            date_last_commit: 2019-07-01
+        tags:
+            - Federated Learning
+            - Android
+            - Edge ML
+        type: Library, Application
+        language: Java
+        date_added: 2019-07-01
+        maturity: 1
+        date_updated: 2021-01-21
+
+    mctop:
+        name:         MCTOP
+        description:  A Multi-Core Topology Abstraction
+        tech_desc: >
+          MCTOP is an abstraction of multi-core topologies augmented with
+          important low-level hardware information, such as memory bandwidths
+          and communication latencies.
+        contacts:
+            - name: Vasileios Trigonakis
+              email: github@trigonakis.com
+        code:
+            type: Lab GitHub
+            url: https://github.com/LPD-EPFL/mctop
+            date_last_commit: 2017-05-04
+        tags:
+            - CPU topology
+            - Multiprocessor
+        type: Application
+        language: C
+        date_added: 2019-07-26
+        date_updated: 2021-01-21
+
+    lockin:
+        name:         LOCKIN
+        description:  Automatically chosing best locking algorithm
+        tech_desc: >
+          GLS is a middleware that makes lock-based programming simple and
+          effective. GLS offers the classic lock-unlock interface of locks.
+          However, in contrast to classic lock libraries, GLS does not require
+          any effort from the programmer for allocating and initializing locks,
+          nor for selecting the appropriate locking strategy.
+        contacts:
+            - name: Rachid Guerraoui
+              email: rachid.guerraoui@epfl.ch
+        code:
+            type: Lab GitHub
+            url: https://github.com/LPD-EPFL/lockin
+            date_last_commit: 2017-04-19
+        tags:
+            - Locking
+        type: Library
+        language: C/C++
+        date_added: 2019-07-01
+        date_updated: 2021-01-21
+
+    aggregathor:
+        name:         AggregaThor
+        description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
+        tech_desc: >
+            Framework built over TensorFlow implementing state-of-the-art
+            Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
+            Modular approach allows most of its components to be reused in other
+            projects. Unreliable communication channels are supported, providing
+            a performance speed-up over standard TensorFlow in saturated
+            networks.
+        contacts:
+            - name: Arsany Guirguis
+              email: arsany.guirguis@epfl.ch
+            - name: Georgios Damaskinos
+              url: http://gdamaskinos.com/
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/AggregaThor
+            date_last_commit: 2019-12-04
+        tags:
+            - Robust SGD
+            - Distributed ML
+            - Byzantine Resilience
+            - Gradient Aggregation
+            - TensorFlow
+            - UDP
+        type: Library, Application
+        language: Python / C++
+        information:
+            - type: Paper
+              url: https://mlsys.org/Conferences/2019/doc/2019/54.pdf
+              title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation (SysML19')"
+        date_added: 2019-03-18
+        date_updated: 2021-01-21
+
+    robust-rdma:
+        name:         Robust RDMA
+        description:  Better fault-tolerance and performance of consensus using RDMA
+        tech_desc: >
+            Leveraging Remote Direct Memory Access (RDMA) to improve the
+            fault-tolerance and performance of consensus, compared to existing
+            protocols. In some cases, RDMA allows us to circumvent existing
+            theoretical lower bounds (solving Byzantine consensus with 2f+1
+            replicas, for instance).
+        contacts:
+            - name:  Rachid Guerraoui
+              email: rachid.guerraoui@epfl.ch
+        tags:
+            - RDMA
+            - Consensus
+            - Byzantine Resilience
+            - Fault-Tolerance
+            - Communication Complexity
+        type: Library
+        date_added: 2019-03-18
+        date_updated: 2021-01-21
 
