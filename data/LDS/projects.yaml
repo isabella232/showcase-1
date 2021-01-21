@@ -223,7 +223,7 @@ projects:
         code:
             type: Private GitHub
             url:  https://github.com/ldsec/spindle
-            date_last_commit: 2020-05-08
+            date_last_commit: 2021-01-21
         lines_of_code:    20000
         information:
             - type:   Paper
@@ -245,8 +245,12 @@ projects:
         c4dt_contact:
             name:  Valérian Rousset
             email: valerian.rousset@epfl.ch
-        date_added: 2020-05-22
-        date_updated: 2020-05-22
+        demo:
+            title: SPINDLE demonstrator
+            url: https://demo.c4dt.org/spindle
+            code: https://github.com/c4dt/service-spindle
+        date_added: 2021-01-21
+        date_updated: 2021-01-21
 
     poseidon:
         name:         POSEIDON
