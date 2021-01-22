@@ -77,7 +77,7 @@ projects:
               title:  'SparseFool: a few pixels make a big difference'
               url:    https://arxiv.org/abs/1811.02248
         date_added: 2019-09-04
-        date_updated: 2019-09-04
+        date_updated: 2021-01-22
 
     universal:
         name:         Universal
@@ -105,4 +105,4 @@ projects:
               title:  'Universal adversarial perturbations'
               url:    https://arxiv.org/pdf/1610.08401.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
