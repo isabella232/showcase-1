@@ -12,7 +12,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/parsa-epfl/cloudsuite
-            date_last_commit: 2019-03-17
+            date_last_commit: 2020-05-14
         doc: http://cloudsuite.ch/
         contacts:
             - name:   Siddharth Gupta
@@ -29,34 +29,7 @@ projects:
               url:    https://dl.acm.org/citation.cfm?id=2150982
         license:  CloudSuite, other
         date_added: 2019-03-18
-        date_updated: 2020-02-06
-
-    dca:
-        name:         DCA
-        description:  Architecture to prevent hardware side-channels
-        layman_desc: >
-            The defense-centric architecture project seeks designs for manycore
-            chips that enable partitionable resources to avoid side channels
-            through hardware.
-        tags:
-            - Architecture
-            - Side-Channels
-        date_added: 2019-03-18
-        date_updated: 2019-07-29
-
-    armflex:
-        name:         ARMFlex
-        description:  Highly threaded full-system ARM hardware emulator for software development, debugging and security
-        layman_desc: >
-            We provide a full-system ARM emulation platform on FPGA’s to allow
-            for zero-overhead hardware instrumentation to detect software bugs
-            and vulnerabilities.
-        tags:
-            - Emulator
-            - FPGA
-            - ARM
-        date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     qflex:
         name:         QFlex
@@ -64,11 +37,11 @@ projects:
         layman_desc: >
             QFlex is a full-system cycle-accurate computer architecture simulator
             of multi-node computer systems.
-        url:          https://parsa-epfl.github.io/qflex/
+        url:  https://qflex.epfl.ch/
         code:
             type: Lab GitHub
             url:  https://github.com/parsa-epfl/qflex
-            date_last_commit: 2019-02-26
+            date_last_commit: 2020-08-25
         lines_of_code:    'Flexus: 50000, Qemu: 100000'
         contacts:
             - name:   Siddharth Gupta
@@ -87,4 +60,4 @@ projects:
         notes: >
             Some issues with regard to Oracle licenses
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
