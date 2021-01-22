@@ -12,7 +12,7 @@ projects:
             date_last_commit: 2018-09-07
         contacts:
             - name:   Seyed Moosavi
-              email:  seyed.moosavi@epfl.ch
+              email:  seyed.moosavi@alumni.epfl.ch
         tags:
             - Machine Learning
             - Deep Networks
@@ -35,7 +35,7 @@ projects:
             date_last_commit: 2018-01-24
         contacts:
             - name:   Seyed Moosavi
-              email:  seyed.moosavi@epfl.ch
+              email:  seyed.moosavi@alumni.epfl.ch
         tags:
             - Machine Learning
             - Deep Networks
@@ -93,7 +93,7 @@ projects:
             date_last_commit: 2017-10-23
         contacts:
             - name:   Seyed Moosavi
-              email:  seyed.moosavi@epfl.ch
+              email:  seyed.moosavi@alumni.epfl.ch
         tags:
             - Machine Learning
             - Deep Networks
