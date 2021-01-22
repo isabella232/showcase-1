@@ -6,25 +6,25 @@ projects:
         tech_desc: >
             Lattigo is a Go module for Multiparty Homomorphic Encryption, that implements
             Ring-Learning-With-Errors-based homomorphic encryption primitives. It comprises
-            highly-efficient RNS versions of the BFV and CKKS schemes and their multiparty 
-            (N-out-of-N-threshold) counterparts. It also implements a dense-key and 
+            highly-efficient RNS versions of the BFV and CKKS schemes and their multiparty
+            (N-out-of-N-threshold) counterparts. It also implements a dense-key and
             sparse-key Bootstrapping procedure for RNS-CKKS.
         layman_desc: >
-            Homomorphic encryption (HE) comprises a special class of cryptographic 
-            schemes that enable computing directly on encrypted data, without requiring 
-            the data to be decrypted first. It therefore enables a set of operations 
-            (polynomial evaluation and approximations of non-polynomial functions) to 
-            be "blindly" performed on encrypted sensitive data by an untrustworthy party, 
-            with a controlled computational overhead. Lattigo implements HE and its 
+            Homomorphic encryption (HE) comprises a special class of cryptographic
+            schemes that enable computing directly on encrypted data, without requiring
+            the data to be decrypted first. It therefore enables a set of operations
+            (polynomial evaluation and approximations of non-polynomial functions) to
+            be "blindly" performed on encrypted sensitive data by an untrustworthy party,
+            with a controlled computational overhead. Lattigo implements HE and its
             multiparty extension (MHE), that enables several entities to collaboratively
             compute a function on their confidential or sensitive data, without revealing
-            to each other anything besides the result of this computation. Lattigo's 
+            to each other anything besides the result of this computation. Lattigo's
             multiparty homomorphic encryption technology is an enabler for secure data
             sharing in multiple scenarios.
         code:
             type: Lab GitHub
             url: https://github.com/ldsec/lattigo
-            date_last_commit: 2020-10-09
+            date_last_commit: 2021-01-18
         contacts:
             - name: Jean-Philippe Bossuat
               email: jean-philippe.bossuat@epfl.ch
@@ -45,7 +45,7 @@ projects:
         type: Library
         license: Apache-2.0
         date_added: 2019-08-15
-        date_updated: 2020-10-16
+        date_updated: 2021-01-22
         maturity: 1
 
     prifi:
@@ -57,7 +57,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/prifi
-            date_last_commit: 2019-12-02
+            date_last_commit: 2020-10-29
         information:
             - type:   Paper
               title:  'PriFi: Low-Latency Metadata Protection for Organizational Networks'
@@ -78,7 +78,7 @@ projects:
         type: Application, Library
         license:  AGPL-3.0
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     unlynx:
         name:         Unlynx
@@ -90,7 +90,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/ldsec/unlynx
-            date_last_commit: 2019-09-23
+            date_last_commit: 2020-03-19
         information:
             - type:   Paper
               title:  'UnLynx: A Decentralized System for Privacy-Conscious Data Sharing'
@@ -109,7 +109,7 @@ projects:
             - name:   Joao de Sá
               email:  joao.gomesdesaesousa@epfl.ch
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     medco:
         name:         MedCo
@@ -124,10 +124,6 @@ projects:
             type: Lab GitHub
             url:  https://medco.epfl.ch/software/
             date_last_commit: 2020-10-13
-        information:
-          - type:   Related Link
-            title:  MedCo Online Demonstration
-            url:    https://medco-demo.epfl.ch/
         lines_of_code:    16000
         tags:
             - Privacy Preserving
@@ -152,7 +148,7 @@ projects:
         layman_desc: >
             Drynx allows to create privacy-preserving queries on encrypted
             datasets that are stored at different data providers who don't
-            want to share the original data. 
+            want to share the original data.
             Different types of statistical queries are possible, like average,
             standard deviation, linear and logistic regressions - all using
             homomorphic encryption, which means that the data is never shared
@@ -160,7 +156,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/c4dt/drynx
-            date_last_commit: 2020-02-05
+            date_last_commit: 2020-03-04
         lines_of_code:    16000
         information:
             - type:   Paper
@@ -187,7 +183,7 @@ projects:
             url: https://demo.c4dt.org/drynx
             code: https://github.com/c4dt/service-drynx
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
         maturity: 1
 
     pdci2b2:
@@ -250,19 +246,19 @@ projects:
             url: https://demo.c4dt.org/spindle
             code: https://github.com/c4dt/service-spindle
         date_added: 2021-01-21
-        date_updated: 2021-01-21
+        date_updated: 2021-01-22
 
     poseidon:
         name:         POSEIDON
         description: >
           Privacy-Preserving Federated Neural Network Learning
         layman_desc: >
-            In this paper, we address the problem of privacy-preserving training 
+            In this paper, we address the problem of privacy-preserving training
             and evaluation of neural networks in an N-party, federated learning setting.
         code:
             type: Private GitHub
             url:  https://github.com/ldsec/spindle/tree/nnSecure
-            date_last_commit: 2020-06-21
+            date_last_commit: 2020-11-25
         lines_of_code:    20000
         information:
             - type:   Paper
@@ -284,4 +280,4 @@ projects:
             - name:   Joao de Sá
               email:  joao.gomesdesaesousa@epfl.ch
         date_added: 2020-10-13
-        date_updated: 2020-10-13
+        date_updated: 2021-01-22
