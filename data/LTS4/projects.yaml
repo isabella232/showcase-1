@@ -24,7 +24,7 @@ projects:
               title:  'DeepFool: a simple and accurate method to fool deep neural networks'
               url:    https://arxiv.org/abs/1511.04599
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     manifool:
         name:         ManiFool
@@ -46,7 +46,7 @@ projects:
               title:  'Geometric robustness of deep networks: analysis and improvement'
               url:    https://arxiv.org/abs/1711.09115
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     sparsefool:
         name:         SparseFool
@@ -63,7 +63,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LTS4/SparseFool
-            date_last_commit: 2019-06-05
+            date_last_commit: 2020-09-27
         contacts:
             - name:   Apostolos Modas
               email:  apostolos.modas@epfl.ch
