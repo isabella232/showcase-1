@@ -12,15 +12,17 @@ projects:
             type: Lab GitHub
             url:  https://github.com/LCA2-EPFL/iprp
             date_last_commit: 2017-10-03
-        contacts:
-            - name:   Maaz Mashood
         tags:
             - Network
             - Real-Time
             - Parallel Transmission
         type: Application
+        information:
+            - type: Paper
+              title: "iPRP - the Parallel Redundancy Protofol for IP Networks: Protocol Design and Operation"
+              url: https://infoscience.epfl.ch/record/216985/files/07406725.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     commelec-api:
         name:         commelec-api
@@ -43,7 +45,7 @@ projects:
             - Decoding
         type: Library
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     t-recs:
         name: T-RECS
@@ -61,4 +63,4 @@ projects:
           - Network
         type: Simulation
         date_added: 2019-07-29
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
