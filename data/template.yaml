@@ -18,7 +18,7 @@
         maturity: (1|2|3)
         information:
             - type: Paper
-              title:
+              title: ""
               url: https:..
         date_added:
         date_updated:

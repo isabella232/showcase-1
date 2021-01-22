@@ -29,32 +29,47 @@ projects:
         date_added: 2021-01-22
         date_updated: 2021-01-22
 
+# This is the same as the vigor project from DSLAB
     vigor:
-        name:         Vigor NF
-        description:  Vigor verification toolchain and network functions (NFs)
-        layman_desc: >
-            Formally verified and performant software NAT, a pioneer network
-            function of the Vigor approach.
-        url:          https://vignat.github.io/
+        name: Vigor
+        description: Formally verified and performant software Middleboxes
+        tech_desc: >
+            Software stack and toolchain for building and running software
+            middleboxes that are guaranteed to be correct, while providing
+            competitive performance and preserving developer productivity. With
+            Vigor, developers write the middlebox code (i.e., the software
+            network function, or NF) in C atop a standard packet-processing
+            framework, putting persistent state in data structures from a
+            Vigor-provided library. Vigor then automatically verifies that the
+            resulting software stack correctly implements a specification
+            (written in Python).
+        url: https://vigor-nf.github.io/
         code:
-            type: Project GitHub
-            url:  https://github.com/vigor-nf/vigor
-            date_last_commit: 2020-12-05
+          type: Project Github
+          url: https://github.com/vigor-nf/vigor
+          date_last_commit: 2020-12-05
         contacts:
-            - name:     Solal Pirelli
-              email:    solal.pirelli@epfl.ch
+          - name: Arseniy Zaostrovnykh
+            email: arseniy.zaostrovnykh@epfl.ch
         tags:
-            - Software Verification
-            - NAT
-            - Network
-        language: C
-        type: Application, Library
+          - Software Verification
+          - Middlebox
+          - Network
         information:
-            - type:   Paper
-              title:  'Verifying Software Network Functions with No Verification Expertise'
-              url:    https://vigor-nf.github.io/vigor-paper.pdf
-        date_added: 2019-03-18
+          - type: Paper
+            title: "Verifying Software Network Functions with No Verification Expertise"
+            url: https://dslab.epfl.ch/pubs/vigor.pdf
+          - type: Paper
+            title: "A Formally Verified NAT Stack"
+            url: https://infoscience.epfl.ch/record/264620
+          - type: Paper
+            title: "A Formally Verified NAT"
+            url: https://infoscience.epfl.ch/record/231983
+        language: C, Python
+        type: Framework
+        date_added: 2019-07-26
         date_updated: 2021-01-22
+        maturity: 1
 
     line:
         name:         LINE
