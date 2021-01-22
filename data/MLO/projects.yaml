@@ -3,11 +3,16 @@ projects:
     chocosgd:
         name: chocoSGD
         description: Decentralized communication-efficient ML and DL
-        tech_desc:
+        tech_desc: >
+            code for communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
+            and traditional convex machine learning models.
+        contacts:
+            - name: Tao Lin
+              email: tao.lin@epfl.ch
         code:
             type: Lab GitHub
             url: https://github.com/epfml/ChocoSGD
-            date_last_commit: 2019-06-07
+            date_last_commit: 2020-09-10
         tags:
             - Machine Learning
             - Decentralized
@@ -18,7 +23,7 @@ projects:
         type: Application
         license: Apache-2.0
         date_added: 2019-07-30
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
         maturity: 1
 
     cola:
@@ -47,7 +52,7 @@ projects:
         license: Apache-2.0
         type: Application
         date_added: 2019-07-30
-        date_updated: 2020-02-06
+        date_updated: 2021-01-22
 
     mlbench:
         name: MLBench
@@ -65,7 +70,7 @@ projects:
         code:
             type: Project GitHub
             url: https://github.com/mlbench
-            date_last_commit: 2020-05-15
+            date_last_commit: 2021-01-04
         url: https://mlbench.github.io
         doc: https://mlbench.readthedocs.io/
         information:
@@ -89,7 +94,7 @@ projects:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
         date_added: 2019-07-30
-        date_updated: 2020-05-18
+        date_updated: 2021-01-22
         maturity: 2
 
     sent2vec:
@@ -102,7 +107,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/epfml/sent2vec
-            date_last_commit: 2019-10-21
+            date_last_commit: 2020-06-10
         contacts:
             - name:   Martin Jaggi
               email:  martin.jaggi@epfl.ch
@@ -112,7 +117,7 @@ projects:
             - Features
         type: Library
         date_added: 2019-03-18
-        date_updated: 2020-03-11
+        date_updated: 2021-01-22
         maturity: 1
 
     powersgd:
@@ -127,10 +132,13 @@ projects:
             benchmarked against regular SGD with an optimized communication
             backend. We demonstrate reduced training times for convolutional
             networks as well as LSTMs on common datasets.
+        contacts:
+            - name: Thijs Vogels
+              email: thijs.vogels@epfl.ch
         code:
             type: Lab GitHub
             url: https://github.com/epfml/powersgd
-            date_last_commit: 2019-11-26
+            date_last_commit: 2020-11-20
         information:
             - type:   Paper
               title:  'PowerSGD: Practical Low-Rank Gradient Compression for Distributed Optimization'
@@ -142,4 +150,4 @@ projects:
         type: Application
         license: MIT
         date_added: 2020-05-01
-        date_updated: 2020-05-01
+        date_updated: 2021-01-22

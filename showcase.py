@@ -5,8 +5,9 @@ import bottle
 import data
 
 # Threshold in days after which a project is considered inactive, based on its
-# code/date_last_commit information
-ACTIVITY_THRESHOLD_DAYS = 180
+# code/date_last_commit information. This should be around 180, but not shorter
+# than the update frequency of the showcase as a whole.
+ACTIVITY_THRESHOLD_DAYS = 270
 
 # Text representation of the various maturity levels
 MATURITY_LABEL = {
