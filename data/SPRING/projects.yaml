@@ -154,26 +154,34 @@ projects:
         date_updated: 2021-01-21
         maturity: 2
 
-    swisscovid:
-        name: SwissCovid Contact Tracing
+    dp3t:
+        name: Decentralized Privacy-Preserving Proximity Tracing
         description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
         layman_desc: >
-            The C4DT Factory team helped the SwissCovid effort by providing technical specifications to the already written code.
-            In addition, we reviewed the code, and helped Ubique to use github in a more Open Source respecting way.
-            We also looked at forks of the SwissCovid app to make sure that the new implementations follow the best practices.
+            The goal of the DP3T protocol is to simplify and accelerate the process of identifying people who have been
+            in contact with a positively CoVid-19 tested person, thus providing a technological foundation to help
+            slow the spread of the SARS-CoV-2 virus.
+            The system aims to minimise privacy and security risks for individuals and communities and guarantee the
+            highest level of data protection.
         code:
             type: Public Github
-            url: https://github.com/DP-3T/dp3t-sdk-backend
+            url: https://github.com/DP-3T/documentation
             date_last_commit: 2020-10-01
         tags:
             - Privacy-enhancing
             - Protocol
         language: Java
-        type: Application
+        type: Library
         information:
             - type: Documentation
               title: "Technical specification of the SwissCovid app"
               url: https://github.com/DP-3T/technical-spec
+            - type: Application
+              title: "SwissCovid Android app (c) by Ubique"
+              url: https://github.com/DP-3T/dp3t-app-android-ch
+            - type: Application
+              title: "SwissCovid iOS app (c) by Ubique"
+              url: https://github.com/DP-3T/dp3t-app-ios-ch
         license: MPL-2.0
         date_added: 2020-10-05
         date_updated: 2020-10-05
@@ -196,8 +204,8 @@ projects:
             email: linus.gasser@epfl.ch
         code:
             type: Public Github
-            url: https://github.com/DP-3T/dp3t-sdk-backend
-            date_last_commit: 2020-10-01
+            url: https://github.com/CrowdNotifier/libcrowdnotifier
+            date_last_commit: 2021-01-17
         maturity: 3
         in_incubator: true
         tags:
@@ -209,9 +217,15 @@ projects:
             - type: Documentation
               title: "CrowdNotifier - Decentralized Privacy-Preserving Presence Tracing"
               url: https://github.com/CrowdNotifier/documents
+            - type: Application
+              title: "NotifyMe Android mobile app - (c) by Ubique"
+              url: https://github.com/CrowdNotifier/crowdnotifier-sdk-android
+            - type: Application
+              title: "NotifyMe iOS mobile app - (c) by Ubique"
+              url: https://github.com/CrowdNotifier/crowdnotifier-sdk-ios
         license: MPL-2.0
         date_added: 2021-01-21
-        date_updated: 2021-01-21
+        date_updated: 2021-01-26
 
     petrelic:
         name: Petrelic
