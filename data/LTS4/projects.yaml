@@ -106,3 +106,74 @@ projects:
               url:    https://arxiv.org/pdf/1610.08401.pdf
         date_added: 2019-03-18
         date_updated: 2021-01-22
+
+    hold-me-tight:
+        name: Hold me tight!
+        description: >
+            Influence of discriminative features on deep network boundaries in ML
+        tech_desc: >
+            Important insights towards the explainability of neural networks reside in the characteristics of their
+            decision boundaries. In this work, we borrow tools from the field of adversarial robustness, and propose a
+            new perspective that relates dataset features to the distance of samples to the decision boundary. This
+            enables us to carefully tweak the position of the training samples and measure the induced changes on the
+            boundaries of CNNs trained on large-scale vision datasets. We use this framework to reveal some intriguing
+            properties of CNNs. Specifically, we rigorously confirm that neural networks exhibit a high invariance to
+            non-discriminative features, and show that the decision boundaries of a DNN can only exist as long as the
+            classifier is trained with some features that hold them together. Finally, we show that the construction of
+            the decision boundary is extremely sensitive to small perturbations of the training samples, and that
+            changes in certain directions can lead to sudden invariances in the orthogonal ones. This is precisely the
+            mechanism that adversarial training uses to achieve robustness.
+        contacts:
+            - name: Apostolos Modas
+              email: apostolos.modas@epfl.ch
+        tags:
+            - ML
+            - exploring
+        type: Application
+        code:
+            type: Lab Github
+            url:  https://github.com/LTS4/hold-me-tight
+            date_last_commit: 2020-10-12
+        language: Python
+        license: Apache-2.0
+        information:
+            - type: Paper
+              title: "Hold me tight! Influence of discriminative features on deep network boundaries"
+              url: https://arxiv.org/abs/2002.06349
+        date_added: 2021-01-27
+        date_updated: 2021-01-27
+
+    neural-anisotropy-directions:
+        name: Neural Anisotropy Directions
+        description: >
+            Analyzing the role of the network architecture in shaping the inductive bias of deep classifiers.
+        tech_desc: >
+            In this work, we analyze the role of the network architecture in shaping the inductive bias of deep
+            classifiers. To that end, we start by focusing on a very simple problem, i.e., classifying a class of
+            linearly separable distributions, and show that, depending on the direction of the discriminative feature of
+            the distribution, many state-of-the-art deep convolutional neural networks (CNNs) have a surprisingly hard
+            time solving this simple task. We then define as neural anisotropy directions (NADs) the vectors that
+            encapsulate the directional inductive bias of an architecture. These vectors, which are specific for each
+            architecture and hence act as a signature, encode the preference of a network to separate the input data
+            based on some particular features. We provide an efficient method to identify NADs for several CNN
+            architectures and thus reveal their directional inductive biases. Furthermore, we show that, for the
+            CIFAR-10 dataset, NADs characterize the features used by CNNs to discriminate between different classes.
+        contacts:
+            - name: Apostolos Modas
+              email: apostolos.modas@epfl.ch
+        tags:
+            - ML
+            - exploring
+        type: Application
+        code:
+            type: Lab Github
+            url:  https://github.com/LTS4/neural-anisotropy-directions
+            date_last_commit: 2020-11-17
+        language: Python
+        license: Apache-2.0
+        information:
+            - type: Paper
+              title: "Neural Anisotropy Directions"
+              url: https://arxiv.org/abs/2006.09717
+        date_added: 2021-01-27
+        date_updated: 2021-01-27
