@@ -34,7 +34,7 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
-                "order": [[6, "desc"], [0, "asc"], [2, "asc"]],
+                "order": [[6, "desc"], [20, "desc"], [0, "asc"], [2, "asc"]],
             } );
 
             // Hide "extra" columns by default
@@ -104,6 +104,7 @@
                     <th class="extra">License</th>
                     <th class="extra">Papers</th>
                     <th>Contact</th>
+                    <th title="Most recent between date added and date of last commit" class="extra">Date last activity</th>
                 </tr>
             </thead>
             <tbody>
@@ -222,6 +223,8 @@
                                     </div>
                                     % end
                                 </td>
+
+                                <td class="dt-center">{{ max(date_added, date_last_commit if date_last_commit else date_added).date() }}</td>
                             </tr>
                         % end
                     % end
@@ -249,6 +252,7 @@
                     <th>License</th>
                     <th>Papers</th>
                     <th>Contact</th>
+                    <th>Date last activity</th>
                 </tr>
             </tfoot>
         </table>
