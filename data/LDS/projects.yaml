@@ -227,7 +227,11 @@ projects:
         information:
             - type:   Paper
               title:  Scalable Privacy-Preserving Distributed Learning
-              url:    https://arxiv.org/abs/2005.09532
+              url:    https://petsymposium.org/2021/files/papers/issue2/popets-2021-0030.pdf
+              notes:
+                  - label: published at
+                    text: PETS 2021
+                    url: https://petsymposium.org/2021/
         tags:
             - Privacy Preserving
             - Homomorphic Encryption

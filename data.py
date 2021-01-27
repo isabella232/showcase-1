@@ -84,6 +84,13 @@ PROJECTS_SCHEMA = sy.Map({"projects":
                     "type": sy.Str(),
                     "url": sy.Url(),
                     "title": sy.Str(),
+                    sy.Optional("notes"): sy.Seq(
+                        sy.Map({
+                            sy.Optional("label"): sy.Str(),
+                            "text": sy.Str(),
+                            sy.Optional("url"): sy.Url(),
+                            }),
+                        ),
                     }),
                 ),
             "date_added": sy.Datetime(),
