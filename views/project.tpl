@@ -95,7 +95,9 @@
             <div class="header">{{ info_type }}s:</div>
             <ul>
                 % for info in infos:
-                <li><a href="{{ info['url'] }}">{{ info['title'] }}</a></li>
+                <li>
+                    % include('info_item.tpl', info=info)
+                </li>
                 % end
             </ul>
         </div>
