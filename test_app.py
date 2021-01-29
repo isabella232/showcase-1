@@ -40,9 +40,10 @@ def test_consistent_data():
         # All projects have a date when they were added
         assert 'date_added' in p, "'date_added' missing in {}".format(p['name'])
 
-        # All projects in the incubator have a C4DT contact
+        # All projects in the incubator have a C4DT contact and a description of work
         if p.get('in_incubator'):
             assert 'c4dt_contact' in p, "'c4dt_contact' missing in {}".format(p['name'])
+            assert 'c4dt_work' in p, "'c4dt_work' missing in {}".format(p['name'])
 
         # All projects with code have a type
         if 'code' in p:

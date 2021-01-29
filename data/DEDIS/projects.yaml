@@ -135,6 +135,7 @@ projects:
         c4dt_contact:
             name:  Linus Gasser
             email: linus.gasser@epfl.ch
+        c4dt_work:
         information:
             - type:  Paper
               title: 'Enhancing Bitcoin performance'

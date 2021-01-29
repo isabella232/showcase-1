@@ -57,6 +57,7 @@ PROJECTS_SCHEMA = sy.Map({"projects":
                 "name": sy.Str(),
                 "email": sy.Email(),
                 }),
+            sy.Optional("c4dt_work"): sy.Str(),
             "tags": sy.Seq(sy.Str()),
             sy.Optional("language"): sy.Str(),
             sy.Optional("type"): sy.CommaSeparated(sy.Enum([
