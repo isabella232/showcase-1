@@ -54,7 +54,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/Distributed-EPFL
-            date_last_commit: 2020-12-01
+            date_last_commit: 2021-01-28
         maturity: 1
         tags:
             - Blockchain
@@ -82,8 +82,12 @@ projects:
             - type: Paper
               title: "The Consensus Number of a Cryptocurrency"
               url: https://arxiv.org/abs/1906.05574
+              notes:
+                  - label: Published at
+                    text: PODC 2019
+                    url: https://dl.acm.org/doi/10.1145/3293611.3331589
         date_added: 2019-03-18
-        date_updated: 2021-01-21
+        date_updated: 2021-02-01
 
     fegan:
         name:         FeGAN

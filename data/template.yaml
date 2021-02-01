@@ -20,5 +20,9 @@
             - type: Paper
               title: ""
               url: https:..
+              notes:
+                - label:
+                  text:
+                  url:
         date_added:
         date_updated:

@@ -69,6 +69,11 @@ in `(brackets)`.
             - type: (Paper | Video | Article | Blog Post | Demo | Web Page | Documentation)
               title: (Short title)
               url: (https:.. - for papers, don't use arxiv, but the conference link)
+              notes: (this is optional)
+                - label: (what will be shown in front of the note)
+                  text: (the text of the note)
+                  url: (the URL for the <a> tag)
+
 ```
 
 ## Run the application locally
