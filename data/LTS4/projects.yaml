@@ -127,8 +127,10 @@ projects:
             - name: Apostolos Modas
               email: apostolos.modas@epfl.ch
         tags:
-            - ML
-            - exploring
+            - Deep learning
+            - Neural Networks
+            - Inductive bias
+            - Features
         type: Application
         code:
             type: Lab Github
@@ -162,8 +164,10 @@ projects:
             - name: Apostolos Modas
               email: apostolos.modas@epfl.ch
         tags:
-            - ML
-            - exploring
+            - Deep learning
+            - Neural Networks
+            - Inductive bias
+            - Features
         type: Application
         code:
             type: Lab Github
