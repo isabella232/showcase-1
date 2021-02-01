@@ -37,6 +37,9 @@ projects:
             COLA, a new decentralized training algorithm with strong theoretical guarantees and superior practical
             performance. Our framework overcomes many limitations of existing methods, and achieves communication
             efficiency, scalability, elasticity as well as resilience to changes in data and participating devices.
+        contacts:
+            - name: Lie He
+              email: lie.he@epfl.ch
         code:
             type: Lab GitHub
             url: https://github.com/epfml/cola
@@ -45,6 +48,9 @@ projects:
             - type: Paper
               title: "COLA: Decentralized Linear Learning"
               url: https://arxiv.org/abs/1808.04883
+            - type: Paper
+              title: "Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression"
+              url: https://arxiv.org/pdf/2101.04816.pdf
         tags:
             - Machine Learning
             - Decentralized
@@ -109,8 +115,8 @@ projects:
             url:  https://github.com/epfml/sent2vec
             date_last_commit: 2020-06-10
         contacts:
-            - name:   Martin Jaggi
-              email:  martin.jaggi@epfl.ch
+            - name:   Matteo Pagliardini
+              email:  matteo.pagliardini@epfl.ch
         tags:
             - Machine Learning
             - Text
