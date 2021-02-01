@@ -143,7 +143,7 @@ projects:
               title: "Hold me tight! Influence of discriminative features on deep network boundaries"
               url: https://arxiv.org/abs/2002.06349
         date_added: 2021-01-27
-        date_updated: 2021-01-27
+        date_updated: 2021-02-01
 
     neural-anisotropy-directions:
         name: Neural Anisotropy Directions
@@ -180,4 +180,4 @@ projects:
               title: "Neural Anisotropy Directions"
               url: https://arxiv.org/abs/2006.09717
         date_added: 2021-01-27
-        date_updated: 2021-01-27
+        date_updated: 2021-02-01
