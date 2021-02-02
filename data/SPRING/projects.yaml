@@ -190,6 +190,7 @@ projects:
         c4dt_contact:
             name: Linus Gasser
             email: linus.gasser@epfl.ch
+        c4dt_work:
 
     crowdnotifier:
         name: CrowdNotifier
@@ -199,15 +200,16 @@ projects:
             visitors of venues and events with SARS-CoV-2-positive attendees. It provides
             strong privacy and abuse- resistance, and show that it can scale to handle notification at a national
             scale.
-        c4dt_contact:
-            name: Linus Gasser
-            email: linus.gasser@epfl.ch
         code:
             type: Public Github
             url: https://github.com/CrowdNotifier/libcrowdnotifier
             date_last_commit: 2021-01-17
         maturity: 3
         in_incubator: true
+        c4dt_contact:
+            name: Linus Gasser
+            email: linus.gasser@epfl.ch
+        c4dt_work:
         tags:
             - Privacy-enhancing
             - Protocol

@@ -33,6 +33,7 @@ projects:
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
+        c4dt_work:
         information:
             - type:  Paper
               title: 'Satisfiability Modulo Recursive Programs'

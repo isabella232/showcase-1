@@ -99,6 +99,7 @@ projects:
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
+        c4dt_work:
         date_added: 2019-07-30
         date_updated: 2021-01-22
         maturity: 2

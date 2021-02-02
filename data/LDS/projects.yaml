@@ -39,6 +39,7 @@ projects:
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
+        c4dt_work:
         tags:
             - Cryptography
             - Lattice Based Crypto
@@ -141,6 +142,7 @@ projects:
         c4dt_contact:
             name:  Christian Grigis
             email: christian.grigis@epfl.ch
+        c4dt_work:
         date_added: 2019-03-18
         date_updated: 2020-10-13
         maturity: 2
@@ -181,6 +183,7 @@ projects:
         c4dt_contact:
             name:  Valérian Rousset
             email: valerian.rousset@epfl.ch
+        c4dt_work:
         demo:
             title: Drynx demonstrator
             url: https://demo.c4dt.org/drynx
@@ -248,6 +251,7 @@ projects:
         c4dt_contact:
             name:  Valérian Rousset
             email: valerian.rousset@epfl.ch
+        c4dt_work:
         demo:
             title: SPINDLE demonstrator
             url: https://demo.c4dt.org/spindle
