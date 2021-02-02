@@ -134,7 +134,10 @@
                                 for info in sorted(project.get('information', []), key=lambda v: v['type'])
                                 if info['type'] == 'Paper'
                             ]
-                            contacts = project.get('contacts', [])
+
+                            # Use Lab Professor as default contact
+                            default_contact = dict(prof, name=' '.join(prof['name']))
+                            contacts = project.get('contacts', [default_contact])
 
                             # Skip projects with a `date_added` in the future.
                             # This allows to schedule the appearance of projects in the showcase.
