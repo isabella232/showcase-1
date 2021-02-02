@@ -1,5 +1,20 @@
-# This is a list of labs. The name of the professor needs to have a _ between the first and the
-# last name, so that the table can be correctly sorted according to the last name.
+# This is the list of labs.
+# Professor names are expressed as sequences of strings, usually starting with
+# the first name. The sorting is performed on the reversed sequence, for
+# example:
+#
+#   - Donald
+#   - Duck
+#
+# will be sorted before:
+#
+#   - Ludwig
+#   - Von Drake
+#
+# but after:
+#
+#   - Ludwig Von
+#   - Drake
 
 labs:
 
