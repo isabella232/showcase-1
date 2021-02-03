@@ -12,9 +12,6 @@ projects:
             type: Lab GitHub
             url:  https://github.com/HexHive/T-Fuzz
             date_last_commit: 2018-12-04
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
         tags:
             - Fuzzing
             - Debug
@@ -26,7 +23,7 @@ projects:
             title: 'T-Fuzz: fuzzing by program transformation'
             url: http://hexhive.epfl.ch/publications/files/18Oakland.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-24
+        date_updated: 2021-02-03
 
     bopc:
         name:         BOPC
@@ -39,10 +36,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/HexHive/BOPC
-            date_last_commit: 2019-11-22
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
+            date_last_commit: 2020-11-05
         tags:
             - Exploit
             - Code
@@ -54,8 +48,8 @@ projects:
               title:  'Block Oriented Programming: Automating Data-Only attacks'
               url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-06
-        
+        date_updated: 2021-02-03
+
     cfixx:
         name:         CFIXX
         description:  Protection for C++ internal code pointers
@@ -66,9 +60,6 @@ projects:
             type: Lab GitHub
             url:  https://github.com/HexHive/CFIXX
             date_last_commit: 2018-07-04
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
         tags:
             - C++
             - Exploit
@@ -80,7 +71,7 @@ projects:
               title: 'CFIXX: Object Type Integrity for C++ Virtual Dispatch'
               url: https://nebelwelt.net/publications/files/18NDSS.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-06
+        date_updated: 2021-02-03
 
     hextype:
         name:         HexType
@@ -93,10 +84,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/HexHive/HexType
-            date_last_commit: 2018-03-26
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
+            date_last_commit: 2020-08-27
         tags:
             - C++
             - Type Safety
@@ -108,7 +96,7 @@ projects:
               title: 'HexType: Efficient Detection of Type Confusion Errors for C++'
               url: http://hexhive.epfl.ch/publications/files/17CCS.pdf
         date_added: 2019-03-18
-        date_updated: 2020-02-24
+        date_updated: 2021-02-03
 
     retrowrite:
         name: RetroWrite
@@ -122,51 +110,19 @@ projects:
         code:
           type: Lab GitHub
           url: https://github.com/HexHive/retrowrite
-          date_last_commit: 2019-12-30
-        contacts:
-          - name: Mathias Payer
-            email: mathias.payer@epfl.ch
+          date_last_commit: 2021-01-25
         tags:
           - Binary
           - Fuzzing
           - Efficient
         language: Python
         type: Application
-        date_added: 2019-09-02
         information:
           - type: Paper
             title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
             url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
-        date_updated: 2020-02-06
-
-    magma:
-        name: Magma
-        description: Ground-Truth Fuzzing Benchmark
-        layman_desc: >
-            Magma is a collection of open-source libraries with widespread
-            usage and a long history of security-critical bugs and
-            vulnerabilities. In light of the need for better fuzzer evaluation,
-            we front-ported bugs from previous bug reports to the latest
-            versions of these libraries, which are constantly being updated
-            with new patches and features, possibly introducing even more
-            undiscovered bugs. This last fact allows us to continuously update
-            Magma with new bugs as they are reported, instead of using old
-            stale versions of the libraries.
-        code:
-          type: Lab GitHub
-          url: https://github.com/HexHive/magma2
-          date_last_commit: 2020-02-19
-        contacts:
-          - name: Mathias Payer
-            email: mathias.payer@epfl.ch
-        tags:
-          - Binary
-          - Fuzzing
-          - Benchmark
-        language: C
-        type: Application
-        date_added: 2020-02-21
-        date_updated: 2020-02-21
+        date_added: 2019-09-02
+        date_updated: 2021-02-03
 
     shadowstack:
         name: ShadowStack
@@ -186,10 +142,7 @@ projects:
         code:
           type: Lab GitHub
           url: https://github.com/HexHive/ShadowStack
-          date_last_commit: 2019-06-28
-        contacts:
-          - name: Mathias Payer
-            email: mathias.payer@epfl.ch
+          date_last_commit: 2020-05-20
         tags:
           - Binary
           - Protection
@@ -200,7 +153,7 @@ projects:
             title: 'SoK: Shining Light on Shadow Stacks'
             url: http://hexhive.epfl.ch/publications/files/19Oakland.pdf
         date_added: 2020-02-21
-        date_updated: 2020-02-24
+        date_updated: 2021-02-03
 
     hexpads:
         name: HexPADS
@@ -221,20 +174,17 @@ projects:
           type: Lab GitHub
           url: https://github.com/HexHive/HexPADS
           date_last_commit: 2016-01-07
-        contacts:
-          - name: Mathias Payer
-            email: mathias.payer@epfl.ch
         tags:
           - Intrusion Detection
           - Protection
         language: C
         type: Application
-        date_added: 2020-02-21
         information:
           - type: Paper
             title: 'HexPADS: a platform to detect “stealth” attacks'
             url: http://hexhive.epfl.ch/publications/files/16ESSoS.pdf
-        date_updated: 2020-02-21
+        date_added: 2020-02-21
+        date_updated: 2021-02-03
 
     fuzzgen:
         name:         FuzzGen
@@ -247,10 +197,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/HexHive/FuzzGen
-            date_last_commit: 2019-11-01
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
+            date_last_commit: 2020-11-30
         tags:
             - Fuzzing
             - Debug
@@ -261,7 +208,7 @@ projects:
               title:  'FuzzGen: Automatic Fuzzer Generation'
               url:    http://hexhive.epfl.ch/publications/files/20SEC.pdf
         date_added: 2020-02-21
-        date_updated: 2020-02-21
+        date_updated: 2021-02-03
 
     datashield:
         name:         DataShield
@@ -273,10 +220,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/HexHive/datashield
-            date_last_commit: 2017-11-10
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
+            date_last_commit: 2021-01-01
         tags:
             - Privacy
             - Efficient
@@ -288,7 +232,7 @@ projects:
               title:  'DataShield: Configurable Data Confidentiality and Integrity'
               url:    http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
         date_added: 2020-02-21
-        date_updated: 2020-02-21
+        date_updated: 2021-02-03
 
     halucinator:
         name:         HALucinator
@@ -301,10 +245,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/embedded-sec/halucinator
-            date_last_commit: 2020-03-06
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
+            date_last_commit: 2020-10-27
         tags:
             - Binary
             - Exploit
@@ -316,7 +257,7 @@ projects:
               title:  'HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation'
               url:    http://hexhive.epfl.ch/publications/files/20SEC2.pdf
         date_added: 2020-02-24
-        date_updated: 2020-03-16
+        date_updated: 2021-02-03
         maturity: 1
 
     benchiot:
@@ -330,10 +271,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/embedded-sec/BenchIoT
-            date_last_commit: 2019-11-21
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
+            date_last_commit: 2020-11-11
         tags:
             - Benchmark
             - IoT
@@ -345,7 +283,7 @@ projects:
               url:    http://hexhive.epfl.ch/publications/files/19DSN.pdf
         maturity: 1
         date_added: 2020-02-24
-        date_updated: 2020-03-03
+        date_updated: 2021-02-03
 
     freegaen:
         name:         Free GAEN alternative
@@ -395,4 +333,4 @@ projects:
             We produced a version of SwissCovid that uses this approach to run
             on any phone that does not have access to Google Play services.
         date_added: 2020-10-05
-        date_updated: 2020-10-05
+        date_updated: 2021-02-03
