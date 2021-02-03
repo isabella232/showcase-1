@@ -73,7 +73,6 @@ in `(brackets)`.
                 - label: (what will be shown in front of the note)
                   text: (the text of the note)
                   url: (the URL for the <a> tag)
-
 ```
 
 ## Run the application locally
