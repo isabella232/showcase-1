@@ -4,9 +4,6 @@ projects:
         name: tinyNF
         description: >
           A Simpler and Faster NIC Driver Model for Network Functions
-        layman_desc: >
-          By merely replacing the state-of-the-art driver with our driver, formal verification of the entire software
-          stack completes in 7x less time, while the verified functions’ throughput improves by 160%.
         tech_desc: >
           By merely replacing the state-of-the-art driver with our driver, formal verification of the entire software
           stack completes in 7x less time, while the verified functions’ throughput improves by 160%.
@@ -29,7 +26,7 @@ projects:
               title: "A Simpler and Faster NIC Driver Model for Network Functions"
               url: https://www.usenix.org/conference/osdi20/presentation/pirelli
         date_added: 2021-01-22
-        date_updated: 2021-01-22
+        date_updated: 2021-02-03
 
 # This is the same as the vigor project from NAL
     vigor:
@@ -49,10 +46,7 @@ projects:
         code:
           type: Project Github
           url: https://github.com/vigor-nf/vigor
-          date_last_commit: 2020-12-05
-        contacts:
-          - name: Arseniy Zaostrovnykh
-            email: arseniy.zaostrovnykh@epfl.ch
+          date_last_commit: 2021-02-01
         tags:
           - Software Verification
           - Middlebox
@@ -69,9 +63,9 @@ projects:
             url: https://infoscience.epfl.ch/record/231983
         language: C, Python
         type: Framework
-        date_added: 2019-07-26
-        date_updated: 2021-01-22
         maturity: 1
+        date_added: 2019-07-26
+        date_updated: 2021-02-03
 
     bolt:
         name: Bolt
@@ -86,7 +80,7 @@ projects:
         code:
           type: Project GitHub
           url: https://github.com/bolt-perf-contracts/bolt
-          date_last_commit: 2019-06-06
+          date_last_commit: 2019-08-05
         contacts:
           - name: Rishabh Iyer
             email: rishabh.iyer@epfl.ch
@@ -99,7 +93,8 @@ projects:
           - type: Paper
             title: Performance Contracts for Software Network Functions
             url: https://dslab.epfl.ch/pubs/bolt.pdf
-        date_added: 2019-07-26
+        date_added: 2021-02-03
+        date_updated: 2021-02-03
 
     cpi:
         name: CPI
@@ -111,7 +106,6 @@ projects:
           provides strong protection against such attacks in practice. SafeStack is a component
           of CPI/CPS, which can be used independently and protects against stack-based
           control-flow hijacks.
-        url: https://dslab.epfl.ch/proj/cpi/
         code:
           type: Project GitHub
           url: https://github.com/cpi-llvm
@@ -128,6 +122,7 @@ projects:
             title: Code-Pointer Integrity
             url: http://dslab.epfl.ch/pubs/cpi.pdf
         date_added: 2019-07-26
+        date_updated: 2021-02-03
 
     s2e:
         name:         s2e
@@ -137,10 +132,11 @@ projects:
             behavior of software systems. S²E comes as a modular library that
             gives virtual machines symbolic execution and program analysis
             capabilities.
-        url:          http://s2e.systems/
+        url:          https://s2e.systems/
         code:
             type: Project GitHub
             url:  https://github.com/s2e
+            date_last_commit: 2021-01-30
         contacts:
             - name:   Vitaly Chipounov
               email:  vitaly@cyberheaven.io
@@ -150,6 +146,7 @@ projects:
             - Attack Vectors
         type: Library
         date_added: 2019-03-18
+        date_updated: 2021-02-03
 
     asap:
         name:         ASAP
@@ -157,10 +154,10 @@ projects:
         layman_desc: >
             Makes it possible to use powerful software protection mechanisms at a
             low performance overhead.
-        url:          http://dslab.epfl.ch/proj/asap/
         code:
             type: Lab GitHub
             url:  https://github.com/dslab-epfl/asap
+            date_last_commit: 2015-12-03
         contacts:
             - name:   Jonas Wagner
               email:  ltlygwayh@gmail.com
@@ -170,6 +167,7 @@ projects:
             - Buffer Overflows
         type: Library
         date_added: 2019-03-18
+        date_updated: 2021-02-03
 
     cloud9:
         name:         Cloud 9
@@ -181,6 +179,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dslab-epfl/cloud9
+            date_last_commit: 2013-09-11
         contacts:
             - name:   Stefan Bucur
               email:  stefan.bucur@gmail.com
@@ -189,6 +188,7 @@ projects:
             - Performance
         type: Application
         date_added: 2019-03-18
+        date_updated: 2021-02-03
 
     dimmunix:
         name:         Dimmunix
@@ -196,7 +196,6 @@ projects:
         layman_desc: >
             Enables general-purpose applications to defend themselves against
             deadlock bugs, i.e. avoid deadlocks that they previously encountered.
-        url:          http://dslab.epfl.ch/proj/dimmunix/
         code:
             type: Google Code
             url:  https://code.google.com/archive/p/dimmunix/
@@ -210,7 +209,7 @@ projects:
             - Java
         type: Library
         date_added: 2019-03-18
-        date_updated: 2019-10-18
+        date_updated: 2021-02-03
 
     failure-sketching:
         name:         Failure Sketching
@@ -222,7 +221,6 @@ projects:
             contains program statements that lead to the failure, and it clearly
             shows the differences between failing and successful runs; these
             differences guide developers to the root cause.
-        url:          http://dslab.epfl.ch/proj/gist/
         code:
             type:     Lab GitHub
             url:      https://github.com/dslab-epfl/bugbase
@@ -235,3 +233,4 @@ projects:
             - Verification
         type: Application
         date_added: 2019-03-18
+        date_updated: 2021-02-03
