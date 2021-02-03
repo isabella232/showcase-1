@@ -24,7 +24,7 @@ projects:
         language: Python
         type: Library
         date_added: 2019-03-18
-        date_updated: 2020-05-01
+        date_updated: 2021-02-03
 
     who-is-that:
         name:         Who is that?
@@ -44,7 +44,7 @@ projects:
             - Machine Learning
         type: Library
         date_added: 2019-09-09
-        date_updated: 2020-02-06
+        date_updated: 2021-02-03
 
     kickscore:
         name:   kickscore
@@ -57,7 +57,7 @@ projects:
         code:
             type:   Personal GitHub
             url:    https://github.com/lucasmaystre/kickscore
-            date_last_commit: 2019-08-30
+            date_last_commit: 2020-05-09
         contacts:
             - name:     Lucas Maystre
               url:      https://lucas.maystre.ch/
@@ -85,14 +85,14 @@ projects:
         license: MIT
         type:   Library
         date_added:     2020-05-01
-        date_updated:   2020-05-01
+        date_updated:   2021-02-03
 
     predikon:
         name:   Predikon
         url:    http://www.predikon.ch/
         description:    Predictions about votes in Switzerland
         layman_desc: >
-            Predikon provide predictions about votes in Switzerland, as soon as
+            Predikon provides predictions about votes in Switzerland, as soon as
             municipal results are published by Swiss cantons starting at 12:00
             pm on the day of a vote.
         tech_desc:
@@ -113,4 +113,4 @@ projects:
             - Machine Learning
         type:   Library
         date_added:     2020-05-01
-        date_updated:   2020-05-01
+        date_updated:   2021-02-03
