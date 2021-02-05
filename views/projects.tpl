@@ -6,7 +6,8 @@
             % if selected_lab_id is None:
             <title>C4DT showcase projects</title>
             % else:
-            <title>C4DT showcase - {{ labs[selected_lab_id]['name'] }}</title>
+            %     lab = labs[selected_lab_id]
+            <title>C4DT showcase - {{ lab['name'] }}</title>
             % end
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -34,7 +35,7 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
-                "order": [[6, "desc"], [20, "desc"], [0, "asc"], [2, "asc"]],
+                "order": [[5, "desc"], [19, "desc"], [0, "asc"], [1, "asc"]],
             } );
 
             // Hide "extra" columns by default
@@ -53,39 +54,61 @@
 <body>
     <img class="float_left" src="/resources/c4dt_logo.png">
     <div class="intro">
-    % if selected_lab_id is None:
-    <h1>C4DT affiliated labs projects</h1>
-        <p>This page presents all projects from the labs affiliated to the Center for Digital Trust.
-    % else:
-    <h1>C4DT affiliated lab {{ labs[selected_lab_id]['name'] }} projects</h1>
-        <p>This page presents all projects from the {{ labs[selected_lab_id]['name'] }} lab.
-    % end
-    The <a href="https://c4dt.org">Center for Digital Trust (C4DT)</a> is cooperating with industrial partners
-    and labs from the EPFL to establish trustworthy digital services. As part of C4DT's mission, the
-    <strong>showcase</strong> lists all projects that are being worked on in the EPFL labs affiliated with
-    C4DT.</p>
-    <p>This page is part of the C4DT Factory that works on producing quality software for our industrial partners to
-    use. The other two pages are:
-    <ul>
-    <li>The <a href="https://incubator.c4dt.org">Incubator</a> with a shortlist of EPFL labs projects that are worked
-    on by the C4DT Factory</li>
-    <li>Some <a href="https://demo.c4dt.org">Demonstrators</a> available to our partners and that show the
-    EPFL labs' software in a more understandable fashion.</li>
-    </ul>
-    </p>
-    <p>For questions, please contact <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></p>
+        % if selected_lab_id is None:
+        <h1>C4DT affiliated labs projects</h1>
+        <p>
+            This page presents all projects from the labs affiliated to the
+            Center for Digital Trust.
+        % else:
+        <h1>&nbsp;</h1>
+        <p>
+            This page presents all projects from the <a href={{ lab['url'] }}">{{ lab['name'] }}</a>.
+        % end
+            The <a href="https://c4dt.org">Center for Digital Trust (C4DT)</a>
+            is cooperating with industrial partners and labs from the EPFL to
+            establish trustworthy digital services. As part of C4DT's mission,
+            the <strong>showcase</strong> lists all projects that are being
+            worked on in the EPFL labs affiliated with C4DT.
+        </p>
+        <p>
+            This page is part of the C4DT Factory that works on producing
+            quality software for our industrial partners to use. The other two
+            pages are:
+            <ul>
+                <li>
+                    The <a href="https://incubator.c4dt.org">Incubator</a> with
+                    a shortlist of EPFL labs projects that are worked on by the
+                    C4DT Factory
+                </li>
+                <li>
+                    Some <a href="https://demo.c4dt.org">Demonstrators</a>
+                    available to our partners and that show the EPFL labs'
+                    software in a more understandable fashion.
+                </li>
+            </ul>
+        </p>
+        <p>For questions, please contact <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></p>
     </div>
+
     <p style="text-align: center;">
-        % if selected_lab_id:
+        % if selected_lab_id is not None:
             <a href="/projects/">All projects</a><br><br>
         % end
         <a href="/labs/">List of labs</a></p>
 
+        % if selected_lab_id is not None:
+        <br/><br/>
+        <h2>&nbsp;
+            Projects of Professor {{ ' '.join(lab['prof']['name']) }},
+            from the <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>:
+        </h2>
+        % end
+
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
-                    <th>Professor</th>
-                    <th class="extra">Lab</th>
+                    <!-- The "Professor - Lab" column is displayed only on the "all projects" page -->
+                    <th class="{{ '' if selected_lab_id is None else 'extra' }}">Professor &mdash; Lab</th>
                     <th>Name</th>
                     <th class="extra">More information</th>
                     <th class="extra">Date added</th>
@@ -151,10 +174,8 @@
                             %>
                             <tr class="{{ 'active' if active else '' }}">
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="{{ lab['url'] }}">{{ ' '.join(prof['name']) }}</a>
+                                    <a href="/projects/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>
-
-                                <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
 
                                 <td class="proj_name dt-nowrap">
                                     <a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
@@ -235,8 +256,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Professor</th>
-                    <th>Lab</th>
+                    <th>Professor &mdash; Lab</th>
                     <th>Name</th>
                     <th>More information</th>
                     <th>Date added</th>
