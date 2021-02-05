@@ -33,8 +33,8 @@
         <table id="labs" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
-                    <th>Lab</th>
-                    <th>Full name</th>
+                    <th>Lab Projects</th>
+                    <th>Official Lab Page</th>
                     <th>Professor</th>
                 </tr>
             </thead>
@@ -54,8 +54,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Lab</th>
-                    <th>Full name</th>
+                    <th>Lab Projects</th>
+                    <th>Official Lab Page</th>
                     <th>Professor</th>
                 </tr>
             </tfoot>

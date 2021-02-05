@@ -21,7 +21,7 @@
 
     <div class="project-details">
         <div>
-            <div class="header">Lab:</div>
+            <div class="header">Professor &mdash; Lab:</div>
             % prof = lab['prof']
             <a href="mailto:{{ prof['email'] }}">{{ ' '.join(prof['name']) }}</a>
             &mdash;
