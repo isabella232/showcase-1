@@ -249,7 +249,7 @@ projects:
         lines_of_code:    1000 / 200
         contacts:
             - name:   Nicolas Gailly
-              email:  nicolas.gailly@epfl.ch
+              email:  nikkolasg@gmail.com
         tags:
             - Randomness
             - Decentralization
@@ -261,7 +261,7 @@ projects:
               title: Leagoe of Entropy
               url: https://leagueofentropy.com/
         date_added: 2019-03-18
-        date_updated: 2020-02-07
+        date_updated: 2021-02-05
 
     purbs:
         name:         Purbs
@@ -301,7 +301,7 @@ projects:
             - Global clocks
         type: Application
         date_added: 2019-07-26
-        date_updated: 2020-02-07
+        date_updated: 2021-02-05
 
     twins:
         name: Twins
