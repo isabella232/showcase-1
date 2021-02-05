@@ -60,6 +60,13 @@ def test_projects():
 def test_labs():
     showcase.labs()
 
+def test_all_lab_projects():
+    labs = data.load()
+
+    with patch.object(data, 'load', return_value=labs):
+        for lab_id in labs:
+            showcase.projects(lab_id)
+
 def test_all_projects():
     labs = data.load()
 
