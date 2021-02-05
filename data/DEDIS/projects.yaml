@@ -5,12 +5,12 @@ projects:
         description:  Auditable Sharing and Management of Sensitive Data Across Jurisdictions.
         layman_desc: >
             Odyssey is a set of applications and tools that enables sharing of sensitive data
-            between multiple distrustfull parties. This project uses state-of-the-art secret 
+            between multiple distrustfull parties. This project uses state-of-the-art secret
             management service on the blockchain coupled with an enclave delivery mechanism.
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/odyssey
-            date_last_commit: 2020-04-16
+            date_last_commit: 2020-10-01
         contacts:
             - name:   Noémien Kocher
               email:  noemien.kocher@epfl.ch
@@ -27,7 +27,7 @@ projects:
               url: https://dedis.github.io/odyssey/#/
               title: Odyssey homepage
         date_added: 2020-04-28
-        date_updated: 2020-04-28
+        date_updated: 2021-02-04
 
     calypso:
         name:         Calypso
@@ -38,7 +38,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/cothority/tree/master/calypso
-            date_last_commit: 2020-01-31
+            date_last_commit: 2020-08-19
         lines_of_code:    6500 / 1500
         contacts:
             - name:   Jeff Allen
@@ -58,8 +58,11 @@ projects:
             - type: Paper
               url: https://eprint.iacr.org/2018/209
               title: Verifiable Management of Private Data under Byzantine Failures
+            - type: Code
+              url: https://github.com/calypso-demo
+              title: Calypso demo from the paper
         date_added: 2019-03-18
-        date_updated: 2020-01-31
+        date_updated: 2021-02-05
 
     kyber:
         name:         Kyber
@@ -70,7 +73,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/kyber
-            date_last_commit: 2020-01-31
+            date_last_commit: 2020-11-26
         lines_of_code:    17000 / 4000
         contacts:
             - name:   Jeff Allen
@@ -82,7 +85,7 @@ projects:
         type: Library
         license:  MPL-2.0
         date_added: 2019-03-18
-        date_updated: 2020-01-31
+        date_updated: 2021-02-05
 
     personhood:
         name:         Personhood.online
@@ -90,7 +93,7 @@ projects:
         code:
             type: C4DT GitHub
             url:  https://github.com/c4dt/omniledger/tree/master/mobile
-            date_last_commit: 2020-01-31
+            date_last_commit: 2020-09-11
         doc: https://pop.dedis.ch
         lines_of_code:    9000 / 2000
         contacts:
@@ -106,7 +109,7 @@ projects:
         type: Application
         license:  AGPL-3.0
         date_added: 2019-03-18
-        date_updated: 2020-01-31
+        date_updated: 2021-02-05
 
     omniledger:
         name:         OmniLedger
@@ -119,7 +122,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/c4dt/byzcoin
-            date_last_commit: 2020-01-31
+            date_last_commit: 2020-12-18
         contacts:
             - name:   Jeff Allen
               email:  jeff.allen@epfl.ch
@@ -171,7 +174,7 @@ projects:
             url:   https://demo.c4dt.org/omniledger
             code:  https://github.com/c4dt/omniledger
         date_added: 2019-03-18
-        date_updated: 2020-01-31
+        date_updated: 2021-02-05
         maturity: 2
 
     onet:
@@ -184,7 +187,7 @@ projects:
         code:
             type: Lab GitHub
             url:  http://github.com/dedis/onet
-            date_last_commit: 2020-01-31
+            date_last_commit: 2021-01-27
         lines_of_code:    15000 / 3000
         contacts:
             - name:   Jeff Allen
@@ -198,7 +201,7 @@ projects:
         type: Library
         license:  LGPL-3.0
         date_added: 2019-03-18
-        date_updated: 2020-01-31
+        date_updated: 2021-02-05
 
     e-voting:
         name:         E-voting
@@ -210,7 +213,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/cothority/tree/master/evoting
-            date_last_commit: 2020-01-14
+            date_last_commit: 2020-08-19
         lines_of_code:    1700 / 200
         contacts:
             - name:   Jeff Allen
@@ -220,11 +223,15 @@ projects:
             - Blockchain
             - Anonymous
             - Shuffle
+        information:
+            - type: Blog
+              title: EPFL uses blockchain technology to secure e-voting systems
+              url: https://actu.epfl.ch/news/epfl-uses-blockchain-technology-to-secure-e-voting/
         language: GoLang
         type: Application
         license:  AGPL-3.0
         date_added: 2019-03-18
-        date_updated: 2020-02-04
+        date_updated: 2021-02-05
 
     drand:
         name:         DRand
@@ -236,8 +243,8 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/drand/drand
-            date_last_commit: 2020-01-30
-        url: https://drand.zerobyte.io/
+            date_last_commit: 2020-12-14
+        url: https://drand.love
         doc: https://github.com/drand/drand#documentation
         lines_of_code:    1000 / 200
         contacts:
@@ -279,7 +286,7 @@ projects:
               url: https://petsymposium.org/2019/files/papers/issue4/popets-2019-0056.pdf
         type: Library
         date_added: 2019-03-18
-        date_updated: 2020-02-04
+        date_updated: 2021-02-05
 
     threshold-logical-clocks:
         name: Threshold Logical Clocks
@@ -295,3 +302,21 @@ projects:
         type: Application
         date_added: 2019-07-26
         date_updated: 2020-02-07
+
+    twins:
+        name: Twins
+        description: >
+            Linking patients to their physical and digital TWINs
+        layman_desc: >
+            Using organoids for research while protecting patients’ identity
+        tech_desc: >
+        contacts:
+            - name: Gaurav Narula
+              email: gaurav.narula@epfl.ch
+        url: https://www.twins-project.org
+        tags:
+            - Privacy Preserving
+            - Blockchain
+        type: Application
+        date_added: 2021-02-05
+        date_updated: 2021-02-05
