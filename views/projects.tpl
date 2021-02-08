@@ -60,9 +60,12 @@
             This page presents all projects from the labs affiliated to the
             Center for Digital Trust.
         % else:
-        <h1>&nbsp;</h1>
+        <h1>
+            Projects of Professor <b>{{ ' '.join(lab['prof']['name']) }}</b>
+            <br/>
+            <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
+        </h1>
         <p>
-            This page presents all projects from the <a href={{ lab['url'] }}">{{ lab['name'] }}</a>.
         % end
             The <a href="https://c4dt.org">Center for Digital Trust (C4DT)</a>
             is cooperating with industrial partners and labs from the EPFL to
@@ -95,14 +98,6 @@
             <a href="/projects/">All projects</a><br><br>
         % end
         <a href="/labs/">List of labs</a></p>
-
-        % if selected_lab_id is not None:
-        <br/><br/>
-        <h2>&nbsp;
-            Projects of Professor {{ ' '.join(lab['prof']['name']) }},
-            from the <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>:
-        </h2>
-        % end
 
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
