@@ -1,5 +1,43 @@
 projects:
 
+    synthetic_data:
+        name: Synthetic data privacy evaluation
+        description: Implementation of a privacy evaluation framework for synthetic data releases
+        layman_desc: >
+            The framework implemented in this library allows data holders to evaluate how much publishing a synthetic
+            dataset in-place of a sensitive raw dataset reduces the privacy risk for the individuals whose data is included
+            in the raw data. The results of the evaluation help to inform decisions about whether to publish the data or
+            which generative model provides the best trade-off between utility and privacy gain.
+        tech_desc: >
+            The framework implemented in this library measures the privacy gain of publishing a synthetic dataset
+            in-place of the raw data with respect to a specific privacy concern. Each concern is modelled as a privacy
+            adversary that targets an individual record and aims to infer a secret about this record. The library
+            includes implementations of two new privacy attacks on the output of a generative model. To evaluate privacy
+            gain, the framework is instantiated under the chosen threat model and outputs an estimate about how much
+            publishing the synthetic data instead of the raw data reduces the privacy loss of a chosen target record
+            under this threat model.
+        contacts:
+            - name: Theresa Stadler
+              email: theresa.stadler@epfl.ch
+            - name: Laurent Girod
+              email: laurent.girod@epfl.ch
+        tags:
+            - Data Privacy
+            - Machine Learning
+        type: Library
+        code:
+            type: Lab Github
+            url: https://github.com/spring-epfl/synthetic_data_release
+            date_last_commit: 2021-01-19
+# (The paper is still under review so we can hold-off with publishing this as well)
+#        info:
+#	        - type: Paper
+#	          title: Synthetic Data - A Privacy Mirage
+#	          url: https://arxiv.org/abs/2011.07018
+        date_added: 2021-02-08
+        date_updated: 2021-02-08
+
+
     claimchain:
         name:         ClaimChain
         description:  Prove your identity with regards to others
