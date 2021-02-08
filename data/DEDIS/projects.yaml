@@ -41,8 +41,8 @@ projects:
             date_last_commit: 2020-08-19
         lines_of_code:    6500 / 1500
         contacts:
-            - name:   Jeff Allen
-              email:  jeff.allen@epfl.ch
+            - name:   Pierluca Borsò
+              email:  pierluca.borso@epfl.ch
         tags:
             - Blockchain
             - Private
@@ -76,8 +76,8 @@ projects:
             date_last_commit: 2020-11-26
         lines_of_code:    17000 / 4000
         contacts:
-            - name:   Jeff Allen
-              email:  jeff.allen@epfl.ch
+            - name:   Pierluca Borsò
+              email:  pierluca.borso@epfl.ch
         tags:
             - Encryption
             - Low-Level
@@ -124,8 +124,8 @@ projects:
             url:  https://github.com/c4dt/byzcoin
             date_last_commit: 2020-12-18
         contacts:
-            - name:   Jeff Allen
-              email:  jeff.allen@epfl.ch
+            - name:   Pierluca Borsò
+              email:  pierluca.borso@epfl.ch
         tags:
             - Blockchain
             - Sharding
@@ -190,8 +190,8 @@ projects:
             date_last_commit: 2021-01-27
         lines_of_code:    15000 / 3000
         contacts:
-            - name:   Jeff Allen
-              email:  jeff.allen@epfl.ch
+            - name:   Pierluca Borsò
+              email:  pierluca.borso@epfl.ch
         tags:
             - Low-Level
             - Network
@@ -216,8 +216,8 @@ projects:
             date_last_commit: 2020-08-19
         lines_of_code:    1700 / 200
         contacts:
-            - name:   Jeff Allen
-              email:  jeff.allen@epfl.ch
+            - name:   Pierluca Borsò
+              email:  pierluca.borso@epfl.ch
         tags:
             - E-Voting
             - Blockchain
