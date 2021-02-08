@@ -1,5 +1,33 @@
 projects:
 
+    magma:
+        name: Magma
+        description: A Ground-Truth Fuzzing Benchmark
+        tech_desc: >
+            Magma is a collection of open-source libraries with widespread usage and a long history of security-critical
+            bugs and vulnerabilities. In light of the need for better fuzzer evaluation, we front-ported bugs from
+            previous bug reports to the latest versions of these libraries.
+
+            For each ported bug, we added in-line (source-code-level) instrumentation to collect ground-truth
+            information about bugs reached (buggy code executed) and triggered (fault condition satisfied by input).
+            This instrumentation allows a monitoring utility to measure fuzzer progress in real time.
+        url: https://hexhive.epfl.ch/magma/
+        tags:
+            - Fuzzing
+            - Ground-truth
+            - Benchmark
+        type: Application
+        code:
+            type: Lab Github
+            url:  https://github.com/HexHive/magma
+            date_last_commit: 2020-12-17
+        information:
+            - type: Paper
+              title: "Matma: A Ground-Truth Fuzzing Benchmark"
+              url: https://arxiv.org/abs/2009.01120
+        date_added: 2020-02-21
+        date_updated: 2021-02-08
+
     t-fuzz:
         name:         T-Fuzz
         description:  Fuzzing and crash analyzer
