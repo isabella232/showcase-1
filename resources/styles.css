@@ -11,6 +11,7 @@ h1 {
 img.float_left {
     width: 15%;
     float: left;
+    padding-bottom: 1rem;
 }
 
 .intro {
