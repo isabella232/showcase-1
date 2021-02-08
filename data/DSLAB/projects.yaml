@@ -7,24 +7,25 @@ projects:
         tech_desc: >
           By merely replacing the state-of-the-art driver with our driver, formal verification of the entire software
           stack completes in 7x less time, while the verified functions’ throughput improves by 160%.
+        url: https://dslab.epfl.ch/research/tinynf/
         contacts:
-            - name: Solal Pirelli
-              email: solal.pirelli@epfl.ch
+          - name: Solal Pirelli
+            email: solal.pirelli@epfl.ch
         tags:
           - Network
           - Software Verification
           - Throughput
         type: Library
         code:
-            type: Lab Github
-            url: https://github.com/dslab-epfl/tinynf
-            date_last_commit: 2021-01-22
+          type: Lab Github
+          url: https://github.com/dslab-epfl/tinynf
+          date_last_commit: 2021-01-22
         language: C
         license: MIT
         information:
-            - type: Paper
-              title: "A Simpler and Faster NIC Driver Model for Network Functions"
-              url: https://www.usenix.org/conference/osdi20/presentation/pirelli
+          - type: Paper
+            title: "A Simpler and Faster NIC Driver Model for Network Functions"
+            url: https://www.usenix.org/conference/osdi20/presentation/pirelli
         date_added: 2021-01-22
         date_updated: 2021-02-03
 
@@ -106,6 +107,7 @@ projects:
           provides strong protection against such attacks in practice. SafeStack is a component
           of CPI/CPS, which can be used independently and protects against stack-based
           control-flow hijacks.
+        url: https://dslab.epfl.ch/research/cpi/
         code:
           type: Project GitHub
           url: https://github.com/cpi-llvm
@@ -154,6 +156,7 @@ projects:
         layman_desc: >
             Makes it possible to use powerful software protection mechanisms at a
             low performance overhead.
+        url: https://dslab.epfl.ch/research/asap/
         code:
             type: Lab GitHub
             url:  https://github.com/dslab-epfl/asap
@@ -196,6 +199,7 @@ projects:
         layman_desc: >
             Enables general-purpose applications to defend themselves against
             deadlock bugs, i.e. avoid deadlocks that they previously encountered.
+        url: https://dslab.epfl.ch/research/dimmunix/
         code:
             type: Google Code
             url:  https://code.google.com/archive/p/dimmunix/
@@ -221,6 +225,7 @@ projects:
             contains program statements that lead to the failure, and it clearly
             shows the differences between failing and successful runs; these
             differences guide developers to the root cause.
+        url: https://dslab.epfl.ch/research/gist/
         code:
             type:     Lab GitHub
             url:      https://github.com/dslab-epfl/bugbase
