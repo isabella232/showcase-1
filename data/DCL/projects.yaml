@@ -31,12 +31,13 @@ projects:
             url:  https://github.com/LPD-EPFL/Garfield
             date_last_commit: 2021-02-04
         language: Python, Cuda, C++
+        maturity: 1
         information:
             - type: Paper
               title: "Garfield: System Support for Byzantine Machine Learning"
               url: https://arxiv.org/abs/2010.05888
         date_added: 2021-01-20
-        date_updated: 2021-02-09
+        date_updated: 2021-02-11
 
     at2:
         name: AT2
