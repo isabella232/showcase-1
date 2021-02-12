@@ -7,6 +7,7 @@ projects:
             Odyssey is a set of applications and tools that enables sharing of sensitive data
             between multiple distrustfull parties. This project uses state-of-the-art secret
             management service on the blockchain coupled with an enclave delivery mechanism.
+        url: https://wookiee.ch/columbus/
         code:
             type: Lab GitHub
             url:  https://github.com/dedis/odyssey
@@ -170,11 +171,11 @@ projects:
               title: Linus Gasser - DARC
               url:   https://c4dt.org/article/darc
         demo:
-            title: OmniLedger access control
-            url:   https://demo.c4dt.org/omniledger
-            code:  https://github.com/c4dt/omniledger
+            title: OmniLedger Blockchain Explorer
+            url:   https://wookiee.ch/columbus/
+            code:  https://github.com/dedis/columbus-united
         date_added: 2019-03-18
-        date_updated: 2021-02-05
+        date_updated: 2021-02-12
         maturity: 2
 
     onet:
