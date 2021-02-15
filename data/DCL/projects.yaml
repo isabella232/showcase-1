@@ -29,18 +29,18 @@ projects:
         code:
             type: Lab Github
             url:  https://github.com/LPD-EPFL/Garfield
-            date_last_commit: 2021-01-20
-        language: Pyton, Cuda, C++
+            date_last_commit: 2021-02-04
+        language: Python, Cuda, C++
         information:
             - type: Paper
               title: "Garfield: System Support for Byzantine Machine Learning"
               url: https://arxiv.org/abs/2010.05888
         date_added: 2021-01-20
-        date_updated: 2021-01-20
+        date_updated: 2021-02-09
 
     at2:
-        name:         AT2
-        description:  Asset Transfer System using lightweight broadcast-based primitives instead of consensus
+        name: AT2
+        description: Asset Transfer System using lightweight broadcast-based primitives instead of consensus
         tech_desc: >
             We replace consensus with a lightweight building block -- a
             broadcast-based primitive -- to obtain a full-fledged asset transfer
@@ -54,7 +54,7 @@ projects:
         code:
             type: Lab GitHub
             url: https://github.com/Distributed-EPFL
-            date_last_commit: 2021-01-28
+            date_last_commit: 2021-02-04
         maturity: 1
         tags:
             - Blockchain
@@ -87,14 +87,17 @@ projects:
                     text: PODC 2019
                     url: https://dl.acm.org/doi/10.1145/3293611.3331589
         date_added: 2019-03-18
-        date_updated: 2021-02-01
+        date_updated: 2021-02-09
 
     fegan:
-        name:         FeGAN
-        description: "Scaling Distributed GANs"
-        tech_desc: >
+        name: FeGAN
+        description: Scaling Distributed GANs
+        layman_desc: >
             The FeGAN system enables training GANs in the Federated Learning setup.
-            FeGAN is implemented on PyTorch.
+            GANs are generative adversarial networks, a class of machine learning
+            where two neural networks contest with each other.
+            FeGAN is implemented on PyTorch and is using less bandwidth and is
+            faster than using stat-of-the-art GANs implementations.
         contacts:
             - name: Arsany Guirguis
               email: arsany.guirguis@epfl.ch
@@ -113,14 +116,17 @@ projects:
         information:
             - type: Paper
               title: "FeGAN: Scaling Distributed GANs"
-              url: https://hal.archives-ouvertes.fr/hal-02953314/document
+              url: https://hal.archives-ouvertes.fr/hal-02953314
+              notes:
+                  - label: Published at
+                    text: ACM/IFIP Middleware 2020
+                    url: https://2020.middleware-conference.org
         date_added: 2020-11-11
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
     mvtil:
-        name:         MVTIL
-        description: >
-            Multiversion Timestamp Locking (MVTL)
+        name: MVTIL
+        description: Multiversion Timestamp Locking (MVTL)
         layman_desc: >
             MVTL is a new family of concurrency control algorithms.
             Improving performance of distributed databases by allowing read
@@ -131,7 +137,7 @@ projects:
         code:
             type: Lab GitHub
             url:  https://github.com/LPD-EPFL/MVTIL
-            date_last_commit: 2018-05-16
+            date_last_commit: 2019-09-19
         tags:
             - Database
             - Concurrency
@@ -140,13 +146,17 @@ projects:
         information:
             - type: Paper
               title: Locking Timestamps versus Locking Objects
-              url: https://infoscience.epfl.ch/record/229425/files/Paper.pdf
+              url: https://infoscience.epfl.ch/record/229425
+              notes:
+                  - label: Published at
+                    text: PODC 2018
+                    url: https://www.podc.org/podc2018
         date_added: 2019-09-19
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
     libnvram:
-        name:         libNVRAM
-        description:  Log-Free Concurrent Data Structures
+        name: libNVRAM
+        description: Log-Free Concurrent Data Structures
         layman_desc: >
             Storing data structures in non-volatile RAM such that transient
             failures don't corrupt the data.
@@ -165,8 +175,16 @@ projects:
             - Transient Failures
         type: Library, Application
         language: C++
+        information:
+            - type: Paper
+              title: Log-Free Concurrent Data Structures
+              url: https://www.usenix.org/system/files/conference/atc18/atc18-david.pdf
+              notes:
+                  - label: Published at
+                    text: ATC 2018
+                    url: https://www.usenix.org/conference/atc18/presentation/david
         date_added: 2019-03-18
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
     flodb:
         name: FloDB
@@ -188,17 +206,28 @@ projects:
             - Database
         type: Application
         language: C++
+        information:
+            - type: Paper
+              title: "FloDB: Unlocking Memory in Persistent Key-Value Stores"
+              url: https://infoscience.epfl.ch/record/227333
+              notes:
+                  - label: Published at
+                    text: EuroSys 2017
+                    url: https://eurosys2017.github.io
         date_added: 2019-03-18
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
     fleet:
-        name:         Fleet
-        description:  Machine Learning on Android
+        name: FLeet
+        description: Federated Machine Learning on Android
         layman_desc: >
-            MobNet is a framework for machine learning on android devices.
+            MobNet is a framework for federated machine learning on Android
+            devices. It consumes much less battery than Standard FL while
+            increasing the model's accuracy three times. It allows for Android
+            to actually participate in the building of a ML model.
         contacts:
             - name: Georgios Damaskinos
-              url: http://gdamaskinos.com/
+              url: https://gdamaskinos.com
         code:
             type: Non-lab GitHub
             url: https://github.com/gdamaskinos/fleet
@@ -209,17 +238,26 @@ projects:
             - Edge ML
         type: Library, Application
         language: Java
-        date_added: 2019-07-01
         maturity: 1
-        date_updated: 2021-01-21
+        information:
+            - type: Paper
+              title: "FLeet: Online Federated Learning via Staleness Awareness and Performance Prediction"
+              url: https://arxiv.org/abs/2006.07273
+              notes:
+                  - label: Published at
+                    text: ACM/IFIP Middleware 2020
+                    url: https://2020.middleware-conference.org
+        date_added: 2019-07-01
+        date_updated: 2021-02-09
 
     mctop:
-        name:         MCTOP
-        description:  A Multi-Core Topology Abstraction
-        tech_desc: >
+        name: MCTOP
+        description: A Multi-Core Topology Abstraction
+        layman_desc: >
           MCTOP is an abstraction of multi-core topologies augmented with
           important low-level hardware information, such as memory bandwidths
           and communication latencies.
+        url: https://dcl.epfl.ch/site/mctop
         contacts:
             - name: Vasileios Trigonakis
               email: github@trigonakis.com
@@ -232,18 +270,27 @@ projects:
             - Multiprocessor
         type: Application
         language: C
+        information:
+            - type: Paper
+              title: Abstracting Multi-Core Topologies with MCTOP
+              url: https://infoscience.epfl.ch/record/227458
+              notes:
+                  - label: Published at
+                    text: EuroSys 2017
+                    url: https://eurosys2017.github.io
         date_added: 2019-07-26
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
     lockin:
-        name:         LOCKIN
-        description:  Automatically chosing best locking algorithm
-        tech_desc: >
+        name: LOCKIN
+        description: Automatically chose the best locking algorithm
+        layman_desc: >
           GLS is a middleware that makes lock-based programming simple and
           effective. GLS offers the classic lock-unlock interface of locks.
           However, in contrast to classic lock libraries, GLS does not require
           any effort from the programmer for allocating and initializing locks,
           nor for selecting the appropriate locking strategy.
+        url: https://dcl.epfl.ch/site/lockin
         contacts:
             - name: Rachid Guerraoui
               email: rachid.guerraoui@epfl.ch
@@ -255,13 +302,28 @@ projects:
             - Locking
         type: Library
         language: C/C++
+        information:
+            - type: Paper
+              title: Unlocking Energy
+              url: https://infoscience.epfl.ch/record/221135
+              notes:
+                  - label: Published at
+                    text: ATC 2016
+                    url: https://www.usenix.org/conference/atc16
+            - type: Paper
+              title: Locking Made Easy
+              url: https://infoscience.epfl.ch/record/222954
+              notes:
+                  - label: Published at
+                    text: ACM/IFIP Middleware 2016
+                    url: http://2016.middleware-conference.org
         date_added: 2019-07-01
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
     aggregathor:
-        name:         AggregaThor
-        description:  Framework over TensorFlow implementing robust Stochastic Gradient Descent
-        tech_desc: >
+        name: AggregaThor
+        description: Framework over TensorFlow implementing robust Stochastic Gradient Descent
+        layman_desc: >
             Framework built over TensorFlow implementing state-of-the-art
             Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
             Modular approach allows most of its components to be reused in other
@@ -272,11 +334,11 @@ projects:
             - name: Arsany Guirguis
               email: arsany.guirguis@epfl.ch
             - name: Georgios Damaskinos
-              url: http://gdamaskinos.com/
+              url: https://gdamaskinos.com/
         code:
             type: Lab GitHub
             url:  https://github.com/LPD-EPFL/AggregaThor
-            date_last_commit: 2019-12-04
+            date_last_commit: 2019-12-06
         tags:
             - Robust SGD
             - Distributed ML
@@ -288,30 +350,56 @@ projects:
         language: Python / C++
         information:
             - type: Paper
-              url: https://mlsys.org/Conferences/2019/doc/2019/54.pdf
-              title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation (SysML19')"
+              url: https://infoscience.epfl.ch/record/265684
+              title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation"
+              notes:
+                  - label: Published at
+                    text: SysML 2019
+                    url: https://mlsys.org/Conferences/2019
         date_added: 2019-03-18
-        date_updated: 2021-01-21
+        date_updated: 2021-02-09
 
-    robust-rdma:
-        name:         Robust RDMA
-        description:  Better fault-tolerance and performance of consensus using RDMA
-        tech_desc: >
-            Leveraging Remote Direct Memory Access (RDMA) to improve the
-            fault-tolerance and performance of consensus, compared to existing
-            protocols. In some cases, RDMA allows us to circumvent existing
-            theoretical lower bounds (solving Byzantine consensus with 2f+1
-            replicas, for instance).
+    ascylib-optik:
+        name: ASCYLIB + OPTIK
+        description: State-of-the-art concurrent data-structure library
+        layman_desc: >
+            Over 40 implementations of linked lists, hash tables, skip lists,
+            binary search trees (BSTs), queues, priority queues, and stacks.
+            ASCYLIB contains sequential, lock-based, and lock-free
+            implementations for each data structure.
+        url: https://dcl.epfl.ch/site/ascylib
         contacts:
-            - name:  Rachid Guerraoui
-              email: rachid.guerraoui@epfl.ch
+            - name: Vasileios Trigonakis
+              email: github@trigonakis.com
+            - name: Tudor David
+              email: repos@tudordavid.com
+        code:
+            type: Lab GitHub
+            url:  https://github.com/LPD-EPFL/ASCYLIB
+            date_last_commit: 2018-01-19
         tags:
-            - RDMA
-            - Consensus
-            - Byzantine Resilience
-            - Fault-Tolerance
-            - Communication Complexity
+            - Concurrency
+            - Data Structures
+            - Locking
         type: Library
-        date_added: 2019-03-18
-        date_updated: 2021-01-21
-
+        language: C
+        information:
+            - type: Paper
+              url: https://infoscience.epfl.ch/record/207109
+              title: "Asynchronized Concurrency: The Secret to Scaling Concurrent Search Data Structures"
+              notes:
+                  - label: Published at
+                    text: ASPLOS 2015
+                    url: http://asplos15.bilkent.edu.tr
+            - type: Paper
+              url: https://infoscience.epfl.ch/record/217219
+              title: Optimistic Concurrency with OPTIK
+              notes:
+                  - label: Published at
+                    text: PPoPP 2016
+                    url: https://ppopp16.sigplan.org
+            - type: Paper
+              url: https://infoscience.epfl.ch/record/203822
+              title: Designing ASCY-compliant Concurrent Search Data Structures
+        date_added: 2021-02-09
+        date_updated: 2021-02-09
