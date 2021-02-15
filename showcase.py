@@ -11,7 +11,8 @@ ACTIVITY_THRESHOLD_DAYS = 270
 
 # Text representation of the various maturity levels
 MATURITY_LABEL = {
-        0: "Not yet assessed",
+        0: "This project has not yet been evaluated by the C4DT Factory team.\n"
+        "We will be happy to evaluate it upon request.",
         1: "Prototype",
         2: "Intermediate",
         3: "Mature",
