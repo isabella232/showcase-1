@@ -87,6 +87,12 @@ projects:
                   - label: Published at
                     text: PODC 2019
                     url: https://dl.acm.org/doi/10.1145/3293611.3331589
+            - type: Paper
+              title: "Dynamic Byzantine Reliable Broadcast"
+              url: https://arxiv.org/abs/2001.06271
+            - type: Video
+              title: "Presentation of Dynamic Byzantine Reliable Broadcast"
+              url: https://www.youtube.com/watch?v=WIm8XGopqIA
         date_added: 2019-03-18
         date_updated: 2021-02-09
 
