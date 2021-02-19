@@ -4,9 +4,9 @@ projects:
     description: Auditable Sharing and Management of Sensitive Data Across Jurisdictions.
     layman_desc: >
       Odyssey is a set of applications and tools that enables sharing of sensitive data
-      between multiple distrustfull parties. This project uses state-of-the-art secret
+      between multiple distrustful parties. This project uses state-of-the-art secret
       management service on the blockchain coupled with an enclave delivery mechanism.
-    url: https://wookiee.ch/columbus/
+    url: https://dedis.github.io/odyssey/
     code:
       type: Lab GitHub
       url: https://github.com/dedis/odyssey
@@ -22,12 +22,8 @@ projects:
     language: GoLang
     type: Application
     license: GPL-3.0
-    information:
-      - type: Website
-        url: https://dedis.github.io/odyssey/#/
-        title: Odyssey homepage
     date_added: 2020-04-28
-    date_updated: 2021-02-04
+    date_updated: 2021-02-19
 
   calypso:
     name: Calypso
@@ -38,7 +34,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/master/calypso
-      date_last_commit: 2020-08-19
+      date_last_commit: 2020-12-18
     lines_of_code: 6500 / 1500
     contacts:
       - name: Pierluca Borsò
@@ -57,12 +53,17 @@ projects:
         title: Calypso description
       - type: Paper
         url: https://eprint.iacr.org/2018/209
-        title: Verifiable Management of Private Data under Byzantine Failures
-      - type: Code
+        title: "CALYPSO: Private Data Management for Decentralized Ledgers"
+        notes:
+          - label: Published in
+            text: PVLDB Volume 14, No. 4 - December 2020
+            url: http://vldb.org/pvldb/vol14-volume-info/
+      - type: Code demo
         url: https://github.com/calypso-demo
         title: Calypso demo from the paper
+
     date_added: 2019-03-18
-    date_updated: 2021-02-05
+    date_updated: 2021-02-19
 
   kyber:
     name: Kyber
@@ -122,7 +123,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/c4dt/byzcoin
-      date_last_commit: 2020-12-18
+      date_last_commit: 2021-02-01
     contacts:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
@@ -144,19 +145,23 @@ projects:
         title: "Enhancing Bitcoin performance"
         url: https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf
         notes:
-          - label: published at
+          - label: Published at
             text: 25th USENIX Security Symposium
             url: https://www.usenix.org/conference/usenixsecurity16
       - type: Paper
         title: "OmniLedger - Scaling out Blockchains"
         url: https://ieeexplore.ieee.org/document/8418625
         notes:
-          - label: published in
+          - label: Published in
             text: 2018 IEEE Symposium on Security and Privacy
             url: https://ieeexplore.ieee.org/xpl/conhome/8418581/proceeding
       - type: Paper
-        title: "Calypso - Auditable Sharing of Private Data over Blockchains"
+        title: "CALYPSO: Private Data Management for Decentralized Ledgers"
         url: https://eprint.iacr.org/2018/209.pdf
+        notes:
+          - label: Published in
+            text: PVLDB Volume 14, No. 4 - December 2020
+            url: http://vldb.org/pvldb/vol14-volume-info/
       - type: Blog post
         title: Bryan Ford - Skipchains
         url: https://bford.info/2017/08/01/skipchain/
@@ -174,7 +179,7 @@ projects:
       url: https://wookiee.ch/columbus/
       code: https://github.com/dedis/columbus-united
     date_added: 2019-03-18
-    date_updated: 2021-02-12
+    date_updated: 2021-02-19
     maturity: 2
 
   onet:
@@ -187,7 +192,7 @@ projects:
     code:
       type: Lab GitHub
       url: http://github.com/dedis/onet
-      date_last_commit: 2021-01-27
+      date_last_commit: 2021-02-18
     lines_of_code: 15000 / 3000
     contacts:
       - name: Pierluca Borsò
@@ -213,7 +218,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/master/evoting
-      date_last_commit: 2020-08-19
+      date_last_commit: 2020-12-18
     lines_of_code: 1700 / 200
     contacts:
       - name: Pierluca Borsò
@@ -231,7 +236,7 @@ projects:
     type: Application
     license: AGPL-3.0
     date_added: 2019-03-18
-    date_updated: 2021-02-05
+    date_updated: 2021-02-19
 
   drand:
     name: DRand
@@ -258,10 +263,10 @@ projects:
     license: MIT
     information:
       - type: Webpage
-        title: Leagoe of Entropy
+        title: League of Entropy
         url: https://leagueofentropy.com/
     date_added: 2019-03-18
-    date_updated: 2021-02-05
+    date_updated: 2021-02-19
 
   purbs:
     name: Purbs
@@ -283,25 +288,50 @@ projects:
     information:
       - type: Paper
         title: Reducing Metadata Leakage from Encrypted Files and Communication with PURBs
-        url: https://petsymposium.org/2019/files/papers/issue4/popets-2019-0056.pdf
+        url: https://arxiv.org/abs/1806.03160
+        notes:
+          - label: Published at
+            text: PETS 2019
+            url: https://petsymposium.org/2019/program.php
     type: Library
     date_added: 2019-03-18
-    date_updated: 2021-02-05
+    date_updated: 2021-02-19
 
   threshold-logical-clocks:
     name: Threshold Logical Clocks
     description: Solving the consensus problem in a new way by creating a global clock
-    url: https://arxiv.org/abs/1907.07010
+    tech_desc: >
+      An attempt to simplify asynchronous consensus by building atop a novel
+      threshold logical clock abstraction, which enables upper layers to
+      operate as if on a synchronous network. This approach yields an
+      asynchronous consensus protocol for fail-stop nodes that may be simpler
+      and more robust than Paxos and its leader-based variants, requiring no
+      common coins and achieving consensus in a constant expected number of
+      rounds.
     contacts:
       - name: Bryan Ford
         email: bryan.ford@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/dedis/tlc
+      date_last_commit: 2020-05-08
     tags:
       - Byzantine Fault Tolerance
       - Consensus
       - Global clocks
+    information:
+      - type: Paper
+        title: Threshold Logical Clocks for Asynchronous Distributed Coordination and Consensus
+        url: https://arxiv.org/abs/1907.07010
+      - type: Paper
+        title: "Que Sera Consensus: Simple Asynchronous Agreement with Private Coins and Threshold Logical Clocks"
+        url: https://arxiv.org/abs/2003.02291
+      - type: Presentation
+        title: "https://drive.google.com/file/d/1BrTz20CbvXyFEKDtWH48FdWgwoG37wmr/view"
+        url: https://drive.google.com/file/d/1BrTz20CbvXyFEKDtWH48FdWgwoG37wmr/view
     type: Application
     date_added: 2019-07-26
-    date_updated: 2021-02-05
+    date_updated: 2021-02-19
 
   twins:
     name: Twins
