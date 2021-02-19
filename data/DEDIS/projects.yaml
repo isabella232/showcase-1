@@ -327,7 +327,7 @@ projects:
         title: "Que Sera Consensus: Simple Asynchronous Agreement with Private Coins and Threshold Logical Clocks"
         url: https://arxiv.org/abs/2003.02291
       - type: Presentation
-        title: "https://drive.google.com/file/d/1BrTz20CbvXyFEKDtWH48FdWgwoG37wmr/view"
+        title: "Que Sera: Simpler Asynchronous Consensus with Threshold Logical Clocks"
         url: https://drive.google.com/file/d/1BrTz20CbvXyFEKDtWH48FdWgwoG37wmr/view
     type: Application
     date_added: 2019-07-26
