@@ -350,3 +350,25 @@ projects:
     type: Application
     date_added: 2021-02-05
     date_updated: 2021-02-05
+
+  simnet:
+    name: SimNet
+    description: >
+      SimNet is a tool to simulate decentralized applications in the cloud
+    tech_desc: >
+      SimNet provides multiple configurations to affect the topology so that specific link between two nodes can
+      have a delay or a loss of packets for instance.
+    contacts:
+      - name: Noémien Kocher
+        email: noemien.kocher@epfl.ch
+    tags:
+      - network simulation
+    type: Application
+    code:
+      type: Lab Github
+      url:  https://github.com/dedis/simnet
+      date_last_commit: 2020-06-12
+    language: Go
+    license: GPL-3.0
+    date_added: 2021-02-24
+    date_updated: 2021-02-24
