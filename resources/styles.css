@@ -4,6 +4,15 @@ body {
     font-size: medium;
 }
 
+div.breadcrumbs {
+    padding-left: 1em;
+    font-size: large;
+}
+
+div.breadcrumbs a:hover {
+    color: #007080;
+}
+
 h1 {
     text-align: center;
 }

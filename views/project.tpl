@@ -4,11 +4,19 @@
     <title>{{ project['name'] }} &mdash; {{ lab['lab_id'] }}</title>
 </head>
 <body>
-    <br/>
+    <%
+        lab_id = lab['lab_id']
 
-    <div align="center">
-        <a href="/projects/">All projects</a>
-    </div>
+        trail = [
+            ('Factory', 'https://www.c4dt.org/factory/'),
+            ('Showcase', '/projects/'),
+            ('Labs', '/labs/'),
+            (lab_id, f'/projects/{lab_id}'),
+        ]
+        here = project['name']
+
+        include('breadcrumbs.tpl', trail=trail, here=here)
+    %>
 
     <br/>
 

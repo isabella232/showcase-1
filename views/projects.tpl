@@ -52,12 +52,30 @@
     </script>
 </head>
 <body>
+    <%
+        trail = [
+            ('Factory', 'https://www.c4dt.org/factory/'),
+        ]
+
+        if selected_lab_id is None:
+            here = 'Showcase'
+        else:
+            trail += [
+                ('Showcase', '/projects/'),
+                ('Labs', '/labs/'),
+            ]
+            here = selected_lab_id
+        end
+
+        include('breadcrumbs.tpl', trail=trail, here=here)
+    %>
+
     <img class="float_left" src="/resources/c4dt_logo.png">
     <div class="intro">
         % if selected_lab_id is None:
         <h1>C4DT affiliated labs projects</h1>
         <p>
-            This page presents all projects from the labs affiliated to the
+            This page presents all projects from the <a href="/labs/">labs</a> affiliated to the
             Center for Digital Trust.
         % else:
         <h1>
@@ -94,11 +112,6 @@
     </div>
 
     <p style="text-align: center;">
-        % if selected_lab_id is not None:
-            <a href="/projects/">All projects</a><br><br>
-        % end
-        <a href="/labs/">List of labs</a></p>
-
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>

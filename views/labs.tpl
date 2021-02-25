@@ -27,9 +27,18 @@
     </script>
 </head>
 <body>
+    <%
+        trail = [
+            ('Factory', 'https://www.c4dt.org/factory/'),
+            ('Showcase', '/projects/'),
+        ]
+        here = 'Labs'
+
+        include('breadcrumbs.tpl', trail=trail, here=here)
+    %>
+
     <div align="center">
         <h1>Participating EPFL Laboratories</h1>
-        <a href="/projects/">All projects</a>
         <table id="labs" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
