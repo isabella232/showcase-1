@@ -1,364 +1,363 @@
 projects:
+  magma:
+    name: Magma
+    description: A Ground-Truth Fuzzing Benchmark
+    tech_desc: >
+      Magma is a collection of open-source libraries with widespread usage and a long history of security-critical
+      bugs and vulnerabilities. In light of the need for better fuzzer evaluation, we front-ported bugs from
+      previous bug reports to the latest versions of these libraries.
 
-    magma:
-        name: Magma
-        description: A Ground-Truth Fuzzing Benchmark
-        tech_desc: >
-            Magma is a collection of open-source libraries with widespread usage and a long history of security-critical
-            bugs and vulnerabilities. In light of the need for better fuzzer evaluation, we front-ported bugs from
-            previous bug reports to the latest versions of these libraries.
+      For each ported bug, we added in-line (source-code-level) instrumentation to collect ground-truth
+      information about bugs reached (buggy code executed) and triggered (fault condition satisfied by input).
+      This instrumentation allows a monitoring utility to measure fuzzer progress in real time.
+    url: https://hexhive.epfl.ch/magma/
+    tags:
+      - Fuzzing
+      - Ground-truth
+      - Benchmark
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/magma
+      date_last_commit: 2020-12-17
+    information:
+      - type: Paper
+        title: "Matma: A Ground-Truth Fuzzing Benchmark"
+        url: https://arxiv.org/abs/2009.01120
+    date_added: 2020-02-21
+    date_updated: 2021-02-08
 
-            For each ported bug, we added in-line (source-code-level) instrumentation to collect ground-truth
-            information about bugs reached (buggy code executed) and triggered (fault condition satisfied by input).
-            This instrumentation allows a monitoring utility to measure fuzzer progress in real time.
-        url: https://hexhive.epfl.ch/magma/
-        tags:
-            - Fuzzing
-            - Ground-truth
-            - Benchmark
-        type: Application
-        code:
-            type: Lab Github
-            url:  https://github.com/HexHive/magma
-            date_last_commit: 2020-12-17
-        information:
-            - type: Paper
-              title: "Matma: A Ground-Truth Fuzzing Benchmark"
-              url: https://arxiv.org/abs/2009.01120
-        date_added: 2020-02-21
-        date_updated: 2021-02-08
+  t-fuzz:
+    name: T-Fuzz
+    description: Fuzzing and crash analyzer
+    layman_desc: >
+      T-Fuzz (transformational fuzzing) improves fuzzing by detecting
+      whenever the fuzzer is stuck and then modifying the underlying
+      program to reach new program locations. This allows fuzzing to
+      discover and test hard to reach code.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/T-Fuzz
+      date_last_commit: 2018-12-04
+    tags:
+      - Fuzzing
+      - Debug
+      - Failure
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "T-Fuzz: fuzzing by program transformation"
+        url: http://hexhive.epfl.ch/publications/files/18Oakland.pdf
+    date_added: 2019-03-18
+    date_updated: 2021-02-03
 
-    t-fuzz:
-        name:         T-Fuzz
-        description:  Fuzzing and crash analyzer
-        layman_desc: >
-            T-Fuzz (transformational fuzzing) improves fuzzing by detecting
-            whenever the fuzzer is stuck and then modifying the underlying
-            program to reach new program locations. This allows fuzzing to
-            discover and test hard to reach code.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/HexHive/T-Fuzz
-            date_last_commit: 2018-12-04
-        tags:
-            - Fuzzing
-            - Debug
-            - Failure
-        language: Python
-        type: Application
-        information:
-          - type: Paper
-            title: 'T-Fuzz: fuzzing by program transformation'
-            url: http://hexhive.epfl.ch/publications/files/18Oakland.pdf
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
+  bopc:
+    name: BOPC
+    description: Block Oriented Programming Compiler
+    layman_desc: >
+      BOPC searches for exploits in the code that can be put together to
+      execute new functions, while not tipping off any of the verifications
+      in the program. BOPC is a tool that automatically synthesizes
+      data-flow exploits based on real programs and real exploits.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/BOPC
+      date_last_commit: 2020-11-05
+    tags:
+      - Exploit
+      - Code
+      - Attack Surface
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "Block Oriented Programming: Automating Data-Only attacks"
+        url: https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
+    date_added: 2019-03-18
+    date_updated: 2021-02-03
 
-    bopc:
-        name:         BOPC
-        description:  Block Oriented Programming Compiler
-        layman_desc: >
-            BOPC searches for exploits in the code that can be put together to
-            execute new functions, while not tipping off any of the verifications
-            in the program. BOPC is a tool that automatically synthesizes
-            data-flow exploits based on real programs and real exploits.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/HexHive/BOPC
-            date_last_commit: 2020-11-05
-        tags:
-            - Exploit
-            - Code
-            - Attack Surface
-        language: Python
-        type: Application
-        information:
-            - type:   Paper
-              title:  'Block Oriented Programming: Automating Data-Only attacks'
-              url:    https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
+  cfixx:
+    name: CFIXX
+    description: Protection for C++ internal code pointers
+    layman_desc: >
+      CFIXX is a runtime mitigation that protects C++ programs from attacks
+      that overwrite internal data structures containing code pointers.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/CFIXX
+      date_last_commit: 2018-07-04
+    tags:
+      - C++
+      - Exploit
+      - Protection
+    language: C++
+    type: Application
+    information:
+      - type: Paper
+        title: "CFIXX: Object Type Integrity for C++ Virtual Dispatch"
+        url: https://nebelwelt.net/publications/files/18NDSS.pdf
+    date_added: 2019-03-18
+    date_updated: 2021-02-03
 
-    cfixx:
-        name:         CFIXX
-        description:  Protection for C++ internal code pointers
-        layman_desc: >
-            CFIXX is a runtime mitigation that protects C++ programs from attacks
-            that overwrite internal data structures containing code pointers.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/HexHive/CFIXX
-            date_last_commit: 2018-07-04
-        tags:
-            - C++
-            - Exploit
-            - Protection
-        language: C++
-        type: Application
-        information:
-            - type: Paper
-              title: 'CFIXX: Object Type Integrity for C++ Virtual Dispatch'
-              url: https://nebelwelt.net/publications/files/18NDSS.pdf
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
+  hextype:
+    name: HexType
+    description: Efficient detection of Type Confusion Errors for C++
+    layman_desc: >
+      HexType is a sanitizer for C++ cast safety. The primary use case is
+      during testing to detect type confusion issues in the code.
+      Additionally, HexType may be run in a fuzzing environment to detect
+      type violations.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/HexType
+      date_last_commit: 2020-08-27
+    tags:
+      - C++
+      - Type Safety
+      - Sanitization
+    language: C++
+    type: Application
+    information:
+      - type: Paper
+        title: "HexType: Efficient Detection of Type Confusion Errors for C++"
+        url: http://hexhive.epfl.ch/publications/files/17CCS.pdf
+    date_added: 2019-03-18
+    date_updated: 2021-02-03
 
-    hextype:
-        name:         HexType
-        description:  Efficient detection of Type Confusion Errors for C++
-        layman_desc: >
-            HexType is a sanitizer for C++ cast safety. The primary use case is
-            during testing to detect type confusion issues in the code.
-            Additionally, HexType may be run in a fuzzing environment to detect
-            type violations.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/HexHive/HexType
-            date_last_commit: 2020-08-27
-        tags:
-            - C++
-            - Type Safety
-            - Sanitization
-        language: C++
-        type: Application
-        information:
-            - type: Paper
-              title: 'HexType: Efficient Detection of Type Confusion Errors for C++'
-              url: http://hexhive.epfl.ch/publications/files/17CCS.pdf
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
+  retrowrite:
+    name: RetroWrite
+    description: Retrofitting compiler passes though binary rewriting
+    layman_desc: >
+      RetroWrite can analyze the security of closed source binaries by applying
+      an efficient fuzzying technique that usually only works when the source
+      code is available. This makes it possible to trigger more errors than the
+      default binary fuzzers available, while being much faster in finding these
+      errors.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/retrowrite
+      date_last_commit: 2021-01-25
+    tags:
+      - Binary
+      - Fuzzing
+      - Efficient
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
+        url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
+    date_added: 2019-09-02
+    date_updated: 2021-02-03
 
-    retrowrite:
-        name: RetroWrite
-        description: Retrofitting compiler passes though binary rewriting
-        layman_desc: >
-          RetroWrite can analyze the security of closed source binaries by applying
-          an efficient fuzzying technique that usually only works when the source
-          code is available. This makes it possible to trigger more errors than the
-          default binary fuzzers available, while being much faster in finding these
-          errors.
-        code:
-          type: Lab GitHub
-          url: https://github.com/HexHive/retrowrite
-          date_last_commit: 2021-01-25
-        tags:
-          - Binary
-          - Fuzzing
-          - Efficient
-        language: Python
-        type: Application
-        information:
-          - type: Paper
-            title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
-            url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
-        date_added: 2019-09-02
-        date_updated: 2021-02-03
+  shadowstack:
+    name: ShadowStack
+    description: LLVM Implementation of different ShadowStack schemes for x86_64
+    layman_desc: >
+      In computer security, a shadow stack is a mechanism for protecting
+      a procedure's stored return address, such as from a stack buffer
+      overflow. The shadow stack itself is a second, separate stack that
+      "shadows" the program call stack. In the function prologue, a
+      function stores its return address to both the call stack and the
+      shadow stack. In the function epilogue, a function loads the return
+      address from both the call stack and the shadow stack, and then
+      compares them. If the two records of the return address differ,
+      then an attack is detected; the typical course of action is simply
+      to terminate the program or alert system administrators about a
+      possible intrusion attempt.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/ShadowStack
+      date_last_commit: 2020-05-20
+    tags:
+      - Binary
+      - Protection
+    language: C, assembly
+    type: Application
+    information:
+      - type: Paper
+        title: "SoK: Shining Light on Shadow Stacks"
+        url: http://hexhive.epfl.ch/publications/files/19Oakland.pdf
+    date_added: 2020-02-21
+    date_updated: 2021-02-03
 
-    shadowstack:
-        name: ShadowStack
-        description: LLVM Implementation of different ShadowStack schemes for x86_64
-        layman_desc: >
-            In computer security, a shadow stack is a mechanism for protecting
-            a procedure's stored return address, such as from a stack buffer
-            overflow. The shadow stack itself is a second, separate stack that
-            "shadows" the program call stack. In the function prologue, a
-            function stores its return address to both the call stack and the
-            shadow stack. In the function epilogue, a function loads the return
-            address from both the call stack and the shadow stack, and then
-            compares them. If the two records of the return address differ,
-            then an attack is detected; the typical course of action is simply
-            to terminate the program or alert system administrators about a
-            possible intrusion attempt.
-        code:
-          type: Lab GitHub
-          url: https://github.com/HexHive/ShadowStack
-          date_last_commit: 2020-05-20
-        tags:
-          - Binary
-          - Protection
-        language: C, assembly
-        type: Application
-        information:
-          - type: Paper
-            title: 'SoK: Shining Light on Shadow Stacks'
-            url: http://hexhive.epfl.ch/publications/files/19Oakland.pdf
-        date_added: 2020-02-21
-        date_updated: 2021-02-03
+  hexpads:
+    name: HexPADS
+    description: Host-based, Performance-counter-based Attack Detection System
+    layman_desc: >
+      Attacks change the execution behavior of a system. Our attack
+      detection system HexPADS detects attacks through divergences from
+      normal behavior using attack signatures. HexPADS collects
+      information from the operating system on runtime performance
+      metrics with measurements from hardware performance counters for
+      individual processes. Cache behavior is a strong indicator of
+      ongoing attacks like rowhammer, side channels, covert channels, or
+      CAIN attacks. Collecting performance metrics across all running
+      processes allows the correlation and detection of these attacks. In
+      addition, HexPADS can mitigate the attacks or significantly reduce
+      their effectiveness with negligible overhead to benign processes.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/HexPADS
+      date_last_commit: 2016-01-07
+    tags:
+      - Intrusion Detection
+      - Protection
+    language: C
+    type: Application
+    information:
+      - type: Paper
+        title: "HexPADS: a platform to detect “stealth” attacks"
+        url: http://hexhive.epfl.ch/publications/files/16ESSoS.pdf
+    date_added: 2020-02-21
+    date_updated: 2021-02-03
 
-    hexpads:
-        name: HexPADS
-        description: Host-based, Performance-counter-based Attack Detection System
-        layman_desc: >
-            Attacks change the execution behavior of a system. Our attack
-            detection system HexPADS detects attacks through divergences from
-            normal behavior using attack signatures. HexPADS collects
-            information from the operating system on runtime performance
-            metrics with measurements from hardware performance counters for
-            individual processes. Cache behavior is a strong indicator of
-            ongoing attacks like rowhammer, side channels, covert channels, or
-            CAIN attacks. Collecting performance metrics across all running
-            processes allows the correlation and detection of these attacks. In
-            addition, HexPADS can mitigate the attacks or significantly reduce
-            their effectiveness with negligible overhead to benign processes.
-        code:
-          type: Lab GitHub
-          url: https://github.com/HexHive/HexPADS
-          date_last_commit: 2016-01-07
-        tags:
-          - Intrusion Detection
-          - Protection
-        language: C
-        type: Application
-        information:
-          - type: Paper
-            title: 'HexPADS: a platform to detect “stealth” attacks'
-            url: http://hexhive.epfl.ch/publications/files/16ESSoS.pdf
-        date_added: 2020-02-21
-        date_updated: 2021-02-03
+  fuzzgen:
+    name: FuzzGen
+    description: Automatic Fuzzer Generation
+    layman_desc: >
+      FuzzGen is a tool for automatically synthesizing fuzzers for complex
+      libraries in a given environment. From a given library, it allow for
+      creating a dedicated fuzzer, aiming at good code coverage, without
+      human interaction.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/FuzzGen
+      date_last_commit: 2020-11-30
+    tags:
+      - Fuzzing
+      - Debug
+      - Failure
+    type: Application
+    information:
+      - type: Paper
+        title: "FuzzGen: Automatic Fuzzer Generation"
+        url: http://hexhive.epfl.ch/publications/files/20SEC.pdf
+    date_added: 2020-02-21
+    date_updated: 2021-02-03
 
-    fuzzgen:
-        name:         FuzzGen
-        description:  Automatic Fuzzer Generation
-        layman_desc: >
-            FuzzGen is a tool for automatically synthesizing fuzzers for complex
-            libraries in a given environment. From a given library, it allow for
-            creating a dedicated fuzzer, aiming at good code coverage, without
-            human interaction.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/HexHive/FuzzGen
-            date_last_commit: 2020-11-30
-        tags:
-            - Fuzzing
-            - Debug
-            - Failure
-        type: Application
-        information:
-            - type:   Paper
-              title:  'FuzzGen: Automatic Fuzzer Generation'
-              url:    http://hexhive.epfl.ch/publications/files/20SEC.pdf
-        date_added: 2020-02-21
-        date_updated: 2021-02-03
+  datashield:
+    name: DataShield
+    description: Configurable data confidentiality and integrity
+    layman_desc: >
+      DataShield can, based on C/C++ languages annotation, protect
+      unwanted access to secret data. By securiring only theses
+      datastructures, performance overhead is greatly reduced.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/datashield
+      date_last_commit: 2021-01-01
+    tags:
+      - Privacy
+      - Efficient
+      - Confidentiality
+    language: C++
+    type: Library
+    information:
+      - type: Paper
+        title: "DataShield: Configurable Data Confidentiality and Integrity"
+        url: http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
+    date_added: 2020-02-21
+    date_updated: 2021-02-03
 
-    datashield:
-        name:         DataShield
-        description:  Configurable data confidentiality and integrity
-        layman_desc: >
-            DataShield can, based on C/C++ languages annotation, protect
-            unwanted access to secret data. By securiring only theses
-            datastructures, performance overhead is greatly reduced.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/HexHive/datashield
-            date_last_commit: 2021-01-01
-        tags:
-            - Privacy
-            - Efficient
-            - Confidentiality
-        language: C++
-        type: Library
-        information:
-            - type:   Paper
-              title:  'DataShield: Configurable Data Confidentiality and Integrity'
-              url:    http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
-        date_added: 2020-02-21
-        date_updated: 2021-02-03
+  halucinator:
+    name: HALucinator
+    description: Firmware Re-hosting Through Abstraction Layer Emulation
+    layman_desc: >
+      HALucinator allow for running a firmware outside of its physical
+      implementation. When extracting it, one can recreate the same
+      environment as the one used by the firmware's developper thus
+      allowing for faster exploitation.
+    code:
+      type: Lab GitHub
+      url: https://github.com/embedded-sec/halucinator
+      date_last_commit: 2020-10-27
+    tags:
+      - Binary
+      - Exploit
+      - Debug
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation"
+        url: http://hexhive.epfl.ch/publications/files/20SEC2.pdf
+    date_added: 2020-02-24
+    date_updated: 2021-02-03
+    maturity: 1
 
-    halucinator:
-        name:         HALucinator
-        description:  Firmware Re-hosting Through Abstraction Layer Emulation
-        layman_desc: >
-            HALucinator allow for running a firmware outside of its physical
-            implementation. When extracting it, one can recreate the same
-            environment as the one used by the firmware's developper thus
-            allowing for faster exploitation.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/embedded-sec/halucinator
-            date_last_commit: 2020-10-27
-        tags:
-            - Binary
-            - Exploit
-            - Debug
-        language: Python
-        type: Application
-        information:
-            - type:   Paper
-              title:  'HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation'
-              url:    http://hexhive.epfl.ch/publications/files/20SEC2.pdf
-        date_added: 2020-02-24
-        date_updated: 2021-02-03
-        maturity: 1
+  benchiot:
+    name: BenchIoT
+    description: Security benchmarks for the Internet of Things
+    layman_desc: >
+      BenchIoT enables automatic evaluation of 14 metrics covering
+      security, performance, memory usage, and energy consumption.
+      Having a sound benchmark focused on IoT allow for robust and
+      comparable comparaison
+    code:
+      type: Lab GitHub
+      url: https://github.com/embedded-sec/BenchIoT
+      date_last_commit: 2020-11-11
+    tags:
+      - Benchmark
+      - IoT
+    language: C
+    type: Application
+    information:
+      - type: Paper
+        title: "BenchIoT: Security benchmarks for the Internet of Things"
+        url: http://hexhive.epfl.ch/publications/files/19DSN.pdf
+    maturity: 1
+    date_added: 2020-02-24
+    date_updated: 2021-02-03
 
-    benchiot:
-        name:         BenchIoT
-        description:  Security benchmarks for the Internet of Things
-        layman_desc: >
-            BenchIoT enables automatic evaluation of 14 metrics covering
-            security, performance, memory usage, and energy consumption.
-            Having a sound benchmark focused on IoT allow for robust and
-            comparable comparaison
-        code:
-            type: Lab GitHub
-            url:  https://github.com/embedded-sec/BenchIoT
-            date_last_commit: 2020-11-11
-        tags:
-            - Benchmark
-            - IoT
-        language: C
-        type: Application
-        information:
-            - type:   Paper
-              title:  'BenchIoT: Security benchmarks for the Internet of Things'
-              url:    http://hexhive.epfl.ch/publications/files/19DSN.pdf
-        maturity: 1
-        date_added: 2020-02-24
-        date_updated: 2021-02-03
-
-    freegaen:
-        name:         Free GAEN alternative
-        description:  Alternative to GAEN for contact tracing applications
-        layman_desc: >
-            Apple and Google developed the Google-Apple Exposure Notification
-            system in order to provide a uniform API for contact-tracing apps
-            while preserving user privacy. On Android, GAEN is integrated in
-            the Google Play services, which is proprietary. As a consequence,
-            users wanting to keep a free system, as well as phone manufacturers
-            such as Huawei who don't have Google Play services cannot use these
-            applications.
-            This project aims to offer an alternative framework, based on
-            open-source code, which requires only minimal changes to the apps.
-        code:
-            type: Private GitHub
-            url:  https://github.com/DP-3T/gaenlib
-            date_last_commit: 2020-09-28
-        contacts:
-            - name:   Mathias Payer
-              email:  mathias.payer@epfl.ch
-            - name:   Daniele Antonioli
-              email:  daniele.antonioli@epfl.ch
-            - name:   Christian Grigis
-              email:  christian.grigis@epfl.ch
-        tags:
-            - Privacy-enhancing
-            - Protocol
-            - GAEN
-            - COVID
-        language: Java, Kotlin
-        type: Library, Framework
-        license: Apache-2.0
-        maturity: 1
-        in_incubator: true
-        c4dt_contact:
-            name: Christian Grigis
-            email: christian.grigis@epfl.ch
-        c4dt_work: >
-            After analyzing the various possibilities to replace GAEN, and
-            examining the current related projects, we focused our work on
-            collaborating with microG, a Free Software project dedicated to
-            replacing all of GMS. This effort resulted in a way to use microG's
-            contact tracing subset as a library, so that it can be bundled with
-            an existing app without source code modification, and without other
-            dependencies.
-            We produced a version of SwissCovid that uses this approach to run
-            on any phone that does not have access to Google Play services.
-        date_added: 2020-10-05
-        date_updated: 2021-02-03
+  freegaen:
+    name: Free GAEN alternative
+    description: Alternative to GAEN for contact tracing applications
+    layman_desc: >
+      Apple and Google developed the Google-Apple Exposure Notification
+      system in order to provide a uniform API for contact-tracing apps
+      while preserving user privacy. On Android, GAEN is integrated in
+      the Google Play services, which is proprietary. As a consequence,
+      users wanting to keep a free system, as well as phone manufacturers
+      such as Huawei who don't have Google Play services cannot use these
+      applications.
+      This project aims to offer an alternative framework, based on
+      open-source code, which requires only minimal changes to the apps.
+    code:
+      type: Private GitHub
+      url: https://github.com/DP-3T/gaenlib
+      date_last_commit: 2020-09-28
+    contacts:
+      - name: Mathias Payer
+        email: mathias.payer@epfl.ch
+      - name: Daniele Antonioli
+        email: daniele.antonioli@epfl.ch
+      - name: Christian Grigis
+        email: christian.grigis@epfl.ch
+    tags:
+      - Privacy-enhancing
+      - Protocol
+      - GAEN
+      - COVID
+    language: Java, Kotlin
+    type: Library, Framework
+    license: Apache-2.0
+    maturity: 1
+    in_incubator: true
+    c4dt_contact:
+      name: Christian Grigis
+      email: christian.grigis@epfl.ch
+    c4dt_work: >
+      After analyzing the various possibilities to replace GAEN, and
+      examining the current related projects, we focused our work on
+      collaborating with microG, a Free Software project dedicated to
+      replacing all of GMS. This effort resulted in a way to use microG's
+      contact tracing subset as a library, so that it can be bundled with
+      an existing app without source code modification, and without other
+      dependencies.
+      We produced a version of SwissCovid that uses this approach to run
+      on any phone that does not have access to Google Play services.
+    date_added: 2020-10-05
+    date_updated: 2021-02-03
