@@ -22,10 +22,14 @@ projects:
       date_last_commit: 2020-12-17
     information:
       - type: Paper
-        title: "Matma: A Ground-Truth Fuzzing Benchmark"
+        title: "Magma: A Ground-Truth Fuzzing Benchmark"
         url: https://arxiv.org/abs/2009.01120
+        notes:
+          - label: Published at
+            text: SIGMETRICS 2021
+            url: http://www.sigmetrics.org/sigmetrics2021
     date_added: 2020-02-21
-    date_updated: 2021-02-08
+    date_updated: 2021-02-26
 
   t-fuzz:
     name: T-Fuzz
@@ -49,8 +53,12 @@ projects:
       - type: Paper
         title: "T-Fuzz: fuzzing by program transformation"
         url: http://hexhive.epfl.ch/publications/files/18Oakland.pdf
+        notes:
+          - label: Published at
+            text: SP 2018
+            url: https://ieeexplore.ieee.org/document/8418632
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   bopc:
     name: BOPC
@@ -74,8 +82,12 @@ projects:
       - type: Paper
         title: "Block Oriented Programming: Automating Data-Only attacks"
         url: https://github.com/HexHive/BOPC/blob/master/ccs18_paper.pdf
+        notes:
+          - label: Published at
+            text: CCS 2018
+            url: https://dl.acm.org/doi/10.1145/3243734.3243739
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   cfixx:
     name: CFIXX
@@ -97,8 +109,12 @@ projects:
       - type: Paper
         title: "CFIXX: Object Type Integrity for C++ Virtual Dispatch"
         url: https://nebelwelt.net/publications/files/18NDSS.pdf
+        notes:
+          - label: Published at
+            text: NDSS 2018
+            url: https://www.ndss-symposium.org/ndss2018
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   hextype:
     name: HexType
@@ -122,15 +138,19 @@ projects:
       - type: Paper
         title: "HexType: Efficient Detection of Type Confusion Errors for C++"
         url: http://hexhive.epfl.ch/publications/files/17CCS.pdf
+        notes:
+          - label: Published at
+            text: CCS 2017
+            url: https://ccs2017.sigsac.org
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   retrowrite:
     name: RetroWrite
     description: Retrofitting compiler passes though binary rewriting
     layman_desc: >
       RetroWrite can analyze the security of closed source binaries by applying
-      an efficient fuzzying technique that usually only works when the source
+      an efficient fuzzing technique that usually only works when the source
       code is available. This makes it possible to trigger more errors than the
       default binary fuzzers available, while being much faster in finding these
       errors.
@@ -146,10 +166,14 @@ projects:
     type: Application
     information:
       - type: Paper
-        title: "Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
+        title: "RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
         url: http://hexhive.epfl.ch/publications/files/20Oakland.pdf
+        notes:
+          - label: Published at
+            text: Oakland 2020
+            url: https://ieeexplore.ieee.org/document/9152762
     date_added: 2019-09-02
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   shadowstack:
     name: ShadowStack
@@ -158,7 +182,7 @@ projects:
       In computer security, a shadow stack is a mechanism for protecting
       a procedure's stored return address, such as from a stack buffer
       overflow. The shadow stack itself is a second, separate stack that
-      "shadows" the program call stack. In the function prologue, a
+      \"shadows\" the program call stack. In the function prologue, a
       function stores its return address to both the call stack and the
       shadow stack. In the function epilogue, a function loads the return
       address from both the call stack and the shadow stack, and then
@@ -169,7 +193,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/HexHive/ShadowStack
-      date_last_commit: 2020-05-20
+      date_last_commit: 2020-05-02
     tags:
       - Binary
       - Protection
@@ -179,8 +203,12 @@ projects:
       - type: Paper
         title: "SoK: Shining Light on Shadow Stacks"
         url: http://hexhive.epfl.ch/publications/files/19Oakland.pdf
+        notes:
+          - label: Published at
+            text: Oakland 2019
+            url: https://ieeexplore.ieee.org/document/8835389
     date_added: 2020-02-21
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   hexpads:
     name: HexPADS
@@ -210,8 +238,12 @@ projects:
       - type: Paper
         title: "HexPADS: a platform to detect “stealth” attacks"
         url: http://hexhive.epfl.ch/publications/files/16ESSoS.pdf
+        notes:
+          - label: Published at
+            text: ESSoS 2016
+            url: https://dl.acm.org/conference/essos
     date_added: 2020-02-21
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   fuzzgen:
     name: FuzzGen
@@ -234,15 +266,19 @@ projects:
       - type: Paper
         title: "FuzzGen: Automatic Fuzzer Generation"
         url: http://hexhive.epfl.ch/publications/files/20SEC.pdf
+        notes:
+          - label: Published at
+            text: SEC 2020
+            url: https://www.usenix.org/conference/usenixsecurity20
     date_added: 2020-02-21
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   datashield:
     name: DataShield
     description: Configurable data confidentiality and integrity
     layman_desc: >
       DataShield can, based on C/C++ languages annotation, protect
-      unwanted access to secret data. By securiring only theses
+      unwanted access to secret data. By securing only theses
       datastructures, performance overhead is greatly reduced.
     code:
       type: Lab GitHub
@@ -258,8 +294,12 @@ projects:
       - type: Paper
         title: "DataShield: Configurable Data Confidentiality and Integrity"
         url: http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
+        notes:
+          - label: Published at
+            text: AsiaCCS 2017
+            url: https://dl.acm.org/doi/10.1145/3052973.3052983
     date_added: 2020-02-21
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   halucinator:
     name: HALucinator
@@ -267,7 +307,7 @@ projects:
     layman_desc: >
       HALucinator allow for running a firmware outside of its physical
       implementation. When extracting it, one can recreate the same
-      environment as the one used by the firmware's developper thus
+      environment as the one used by the firmware's developer thus
       allowing for faster exploitation.
     code:
       type: Lab GitHub
@@ -283,8 +323,12 @@ projects:
       - type: Paper
         title: "HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation"
         url: http://hexhive.epfl.ch/publications/files/20SEC2.pdf
+        notes:
+          - label: Published at
+            text: SEC 2020
+            url: https://www.usenix.org/conference/usenixsecurity20
     date_added: 2020-02-24
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
     maturity: 1
 
   benchiot:
@@ -294,7 +338,7 @@ projects:
       BenchIoT enables automatic evaluation of 14 metrics covering
       security, performance, memory usage, and energy consumption.
       Having a sound benchmark focused on IoT allow for robust and
-      comparable comparaison
+      comparable metrics.
     code:
       type: Lab GitHub
       url: https://github.com/embedded-sec/BenchIoT
@@ -308,9 +352,13 @@ projects:
       - type: Paper
         title: "BenchIoT: Security benchmarks for the Internet of Things"
         url: http://hexhive.epfl.ch/publications/files/19DSN.pdf
+        notes:
+          - label: Published at
+            text: DSN 2019
+            url: https://ieeexplore.ieee.org/document/8809492
     maturity: 1
     date_added: 2020-02-24
-    date_updated: 2021-02-03
+    date_updated: 2021-02-26
 
   freegaen:
     name: Free GAEN alternative
@@ -326,9 +374,9 @@ projects:
       This project aims to offer an alternative framework, based on
       open-source code, which requires only minimal changes to the apps.
     code:
-      type: Private GitHub
-      url: https://github.com/DP-3T/gaenlib
-      date_last_commit: 2020-09-28
+      type: C4DT GitHub
+      url: https://github.com/c4dt/dp3t-app-android-ch/tree/microg-nearby
+      date_last_commit: 2021-03-01
     contacts:
       - name: Mathias Payer
         email: mathias.payer@epfl.ch
@@ -342,8 +390,8 @@ projects:
       - GAEN
       - COVID
     language: Java, Kotlin
-    type: Library, Framework
-    license: Apache-2.0
+    type: Application, Library, Framework
+    license: MPL-2.0
     maturity: 1
     in_incubator: true
     c4dt_contact:
@@ -360,4 +408,28 @@ projects:
       We produced a version of SwissCovid that uses this approach to run
       on any phone that does not have access to Google Play services.
     date_added: 2020-10-05
-    date_updated: 2021-02-03
+    date_updated: 2021-03-01
+
+  lightblue:
+    name: LightBlue
+    description: "LightBlue: Automatic Profile-Aware Debloating of Bluetooth Stacks"
+    layman_desc: >
+      The Bluetooth standard is complex, many commands are defined but
+      aren't needed in many use cases. It allows for a big surface attack
+      which can be cumbersome to correctly reduce.
+      LightBlue allows to, based on Bluetooth usage profiling, to reduce
+      the number of exposed commands understood by the firmware and the
+      runtime, thus greatly reducing the potential future attacks that
+      might arise.
+    url: https://github.com/purseclab/lightblue
+    tags:
+      - Attack Surface
+      - Bluetooth
+      - Profile
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/purseclab/lightblue
+      date_last_commit: 2021-02-23
+    date_added: 2020-02-26
+    date_updated: 2021-02-26
