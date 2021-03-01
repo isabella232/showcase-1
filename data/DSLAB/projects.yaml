@@ -244,10 +244,11 @@ projects:
                 url: http://eurosys2011.cs.uni-salzburg.at/pdf/eurosys2011-salomie.pdf
           - type: Paper
             title: "Automated Software Testing as a Service"
-            url: http://dslab.epfl.ch/pubs/cloud9.pdf
+            url: https://dslab.epfl.ch/pubs/taas.pdf
             notes:
               - label: Published in
                 text: "SoCC 2010"
+                url: https://dl.acm.org/doi/proceedings/10.1145/1807128
           - type: Paper
             title: "Cloud9: A Software Testing Service"
             url: http://dslab.epfl.ch/pubs/cloud9-ladis.pdf
