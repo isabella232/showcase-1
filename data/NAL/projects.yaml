@@ -47,10 +47,7 @@ projects:
         code:
           type: Project Github
           url: https://github.com/vigor-nf/vigor
-          date_last_commit: 2020-12-05
-        contacts:
-          - name: Arseniy Zaostrovnykh
-            email: arseniy.zaostrovnykh@epfl.ch
+          date_last_commit: 2021-02-01
         tags:
           - Software Verification
           - Middlebox
@@ -59,6 +56,10 @@ projects:
           - type: Paper
             title: "Verifying Software Network Functions with No Verification Expertise"
             url: https://dslab.epfl.ch/pubs/vigor.pdf
+            notes:
+              - label: Published in
+                text: "SOSP '19"
+                url: https://dl.acm.org/doi/10.1145/3341301.3359647
           - type: Paper
             title: "A Formally Verified NAT Stack"
             url: https://infoscience.epfl.ch/record/264620
@@ -67,9 +68,9 @@ projects:
             url: https://infoscience.epfl.ch/record/231983
         language: C, Python
         type: Framework
-        date_added: 2019-07-26
-        date_updated: 2021-01-22
         maturity: 1
+        date_added: 2019-07-26
+        date_updated: 2021-02-24
 
     line:
         name:         LINE

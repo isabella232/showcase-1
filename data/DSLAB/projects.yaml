@@ -25,9 +25,13 @@ projects:
         information:
           - type: Paper
             title: "A Simpler and Faster NIC Driver Model for Network Functions"
-            url: https://www.usenix.org/conference/osdi20/presentation/pirelli
+            url: https://dslab.epfl.ch/pubs/tinynf.pdf
+            notes:
+              - label: Published in
+                text: "Usenix OSDI '20"
+                url: https://www.usenix.org/conference/osdi20/presentation/pirelli
         date_added: 2021-01-22
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
 # This is the same as the vigor project from NAL
     vigor:
@@ -56,6 +60,10 @@ projects:
           - type: Paper
             title: "Verifying Software Network Functions with No Verification Expertise"
             url: https://dslab.epfl.ch/pubs/vigor.pdf
+            notes:
+              - label: Published in
+                text: "SOSP '19"
+                url: https://dl.acm.org/doi/10.1145/3341301.3359647
           - type: Paper
             title: "A Formally Verified NAT Stack"
             url: https://infoscience.epfl.ch/record/264620
@@ -66,7 +74,7 @@ projects:
         type: Framework
         maturity: 1
         date_added: 2019-07-26
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     bolt:
         name: Bolt
@@ -94,8 +102,12 @@ projects:
           - type: Paper
             title: Performance Contracts for Software Network Functions
             url: https://dslab.epfl.ch/pubs/bolt.pdf
+            notes:
+              - label: Published in
+                text: "Usenix NSDI '19"
+                url: https://www.usenix.org/conference/nsdi19/presentation/iyer
         date_added: 2021-02-03
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     cpi:
         name: CPI
@@ -123,8 +135,18 @@ projects:
           - type: Paper
             title: Code-Pointer Integrity
             url: http://dslab.epfl.ch/pubs/cpi.pdf
+            notes:
+              - label: Published in
+                text: "OSDI '14"
+                url: https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-kuznetsov.pdf
+          - type: Paper
+            title: "Missing the pointer"
+            url: http://people.csail.mit.edu/rinard/paper/oakland15.pdf
+            notes:
+              - label: Published in
+                text: "Usenix S&P '15"
         date_added: 2019-07-26
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     s2e:
         name:         s2e
@@ -146,9 +168,17 @@ projects:
             - Code Analysis
             - Static Code Checking
             - Attack Vectors
+        information:
+          - type: Paper
+            title: "The S2E Platform: Design, Implementation, and Applications"
+            url: http://dslab.epfl.ch/pubs/s2e-tocs.pdf
+            notes:
+              - label: Published in
+                text: "TOCs '12"
+                url: https://dl.acm.org/doi/10.1145/2110356.2110358
         type: Library
         date_added: 2019-03-18
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     asap:
         name:         ASAP
@@ -169,8 +199,23 @@ projects:
             - LLVM
             - Buffer Overflows
         type: Library
+        information:
+          - type: Paper
+            title: "High System-Code Security with Low Overhead"
+            url: https://dslab.epfl.ch/pubs/asap.pdf
+            notes:
+              - label: Published in
+                text: "IEEE S&P '15"
+                url: http://www.ieee-security.org/TC/SP2015/papers-archived/6949a866.pdf
+          - type: Poster
+            title: "High Security at Low Overhead"
+            url: https://dslab.epfl.ch/pubs/asap_poster.pdf
+            notes:
+              - label: Presented at
+                text: "OSDI '14"
+                url: https://www.usenix.org/conference/osdi14/poster-sessions
         date_added: 2019-03-18
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     cloud9:
         name:         Cloud 9
@@ -189,9 +234,30 @@ projects:
         tags:
             - Cloud
             - Performance
+        information:
+          - type: Paper
+            title: "Parallel Symbolic Execution for Automated Real-World Software Testing"
+            url: http://dslab.epfl.ch/pubs/cloud9.pdf
+            notes:
+              - label: Published in
+                text: "EuroSys 2011"
+                url: http://eurosys2011.cs.uni-salzburg.at/pdf/eurosys2011-salomie.pdf
+          - type: Paper
+            title: "Automated Software Testing as a Service"
+            url: http://dslab.epfl.ch/pubs/cloud9.pdf
+            notes:
+              - label: Published in
+                text: "SoCC 2010"
+          - type: Paper
+            title: "Cloud9: A Software Testing Service"
+            url: http://dslab.epfl.ch/pubs/cloud9-ladis.pdf
+            notes:
+              - label: Published in
+                text: "ACM Operating Systems Review 2009"
+                url: https://dl.acm.org/toc/sigops/2010/43/4
         type: Application
         date_added: 2019-03-18
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     dimmunix:
         name:         Dimmunix
@@ -205,15 +271,23 @@ projects:
             url:  https://code.google.com/archive/p/dimmunix/
         contacts:
             - name:   Horatiu Jula
-              url:        https://www.linkedin.com/in/horatiu-jula-63a02a7
+              url:    https://www.linkedin.com/in/horatiu-jula-63a02a7
         tags:
             - Deadlock
             - Concurrency
             - Immunity
             - Java
         type: Library
+        information:
+          - type: Paper
+            title: "Platform-wide Deadlock Immunity for Mobile Phones"
+            url: https://dslab.epfl.ch/pubs/android_dimmunix.pdf
+            notes:
+              - label: Published in
+                text: "7th HotDep"
+                url: http://hotdep2011.cis.upenn.edu/
         date_added: 2019-03-18
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
 
     failure-sketching:
         name:         Failure Sketching
@@ -237,5 +311,13 @@ projects:
             - Failure
             - Verification
         type: Application
+        information:
+          - type: Paper
+            title: "Failure Sketching: A Technique for Automated Root Cause Diagnosis of In-Production Failures"
+            url: https://dslab.epfl.ch/pubs/gist.pdf
+            notes:
+              - label: Published in
+                text: "SOSP '15"
+                url: https://dl.acm.org/doi/10.1145/2815400.2815412
         date_added: 2019-03-18
-        date_updated: 2021-02-03
+        date_updated: 2021-02-24
