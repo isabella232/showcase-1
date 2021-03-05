@@ -1,4 +1,58 @@
 projects:
+
+  fuzzan:
+    name: FuZZan
+    description: Enabling a faster Address Sanitization, improving fuzzing speed by 2x
+    tech_desc: >
+      Our evaluation shows that on the Google fuzzer test suite, FuZZan improves fuzzing throughput over ASan by 48%
+      starting with Google’s provided seeds (52% when starting with empty seeds on the same applications). Due to this
+      improved throughput, FuZZan discovers 13% more unique paths given the same 24 hours and finds bugs 42% faster
+    tags:
+      - Fuzzing
+    type: Application
+    code:
+      type: Lab Github
+      url:  https://github.com/HexHive/FuZZan
+      date_last_commit: 2020-08-01
+    language: C++
+    information:
+      - type: Paper
+        title: "FuZZan: Efficient Sanitizer Metadata Design for Fuzzing"
+        url: https://hexhive.epfl.ch/publications/files/20ATC.pdf
+        notes:
+          - label: Published at
+            text: Usenix ATC '20
+            url: https://www.usenix.org/conference/atc20/presentation/jeon
+    date_added: 2021-03-05
+    date_updated: 2021-03-05
+
+  usbfuzz:
+    name: USBFuzz
+    description: "Virtual environment for fuzzing USB peripherals"
+    tech_desc: >
+      Fuzzing USB peripherals for Linux, Android, MacOS, Windows, FreeBSD
+      Found lots of 0days in modern kernels, allowing arbitrary compromise
+    tags:
+      - Fuzzing
+      - USB
+      - Linus
+    type: Application
+    code:
+      type: Lab Github
+      url:  https://github.com/HexHive/USBFuzz
+      date_last_commit: 2020-10-14
+    language: C
+    information:
+      - type: Paper
+        title: "USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation"
+        url: https://hexhive.epfl.ch/publications/files/20SEC3.pdf
+        notes:
+          - label: Published at
+            text: Usenix S&P '20
+            url: https://www.usenix.org/conference/usenixsecurity20/presentation/peng
+    date_added: 2021-03-05
+    date_updated: 2021-03-05
+
   magma:
     name: Magma
     description: A Ground-Truth Fuzzing Benchmark

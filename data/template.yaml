@@ -1,28 +1,28 @@
-    (path):
-        name:
-        description: >
-        layman_desc: >
-        tech_desc: >
-        contacts:
-            - name:
-              email:
-        url:
-        tags:
-        type:
-        code:
-            type: Lab Github
-            url:  https://
-            date_last_commit:
-        language:
-        license:
-        maturity: (1|2|3)
-        information:
-            - type: Paper
-              title: ""
-              url: https:..
-              notes:
-                - label:
-                  text:
-                  url:
-        date_added:
-        date_updated:
+  (path):
+    name:
+    description: >
+    layman_desc: >
+    tech_desc: >
+    contacts:
+      - name:
+        email:
+    url:
+    tags:
+    type:
+    code:
+      type: Lab Github
+      url:  https://
+      date_last_commit:
+    language:
+    license:
+    maturity: (1|2|3)
+    information:
+      - type: Paper
+        title: ""
+        url: https:..
+        notes:
+          - label:
+            text:
+            url:
+    date_added:
+    date_updated:
