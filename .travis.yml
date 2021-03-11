@@ -18,6 +18,9 @@ jobs:
           script: pytest
           install: pip install -r requirements.txt
 
+        - stage: prettier_pass
+          script: npx prettier --check .
+
         - stage: deploy
           install: skip
           script: skip
@@ -34,6 +37,7 @@ jobs:
               curl -LO --retry 3 https://raw.github.com/mernst/plume-lib/master/bin/trigger-travis.sh
               sh trigger-travis.sh --pro c4dt demo $TRAVIS_ACCESS_TOKEN
               sh trigger-travis.sh --pro c4dt incubator $TRAVIS_ACCESS_TOKEN
+
 
 notifications:
     email: false
