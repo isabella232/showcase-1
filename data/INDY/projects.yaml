@@ -5,7 +5,7 @@ projects:
     code:
       type: Personal GitHub
       url: https://github.com/lucasmaystre/choix
-      date_last_commit: 2019-07-06
+      date_last_commit: 2020-12-16
     contacts:
       - name: Lucas Maystre
         url: https://lucas.maystre.ch/
@@ -14,16 +14,24 @@ projects:
       - type: Paper
         title: Fast and Accurate Inference of Plackett–Luce Models
         url: https://infoscience.epfl.ch/record/213486/files/fastinference.pdf
+        notes:
+          - label: Published in
+            text: proceedings of NeurIPS 28, 2015
+            url: https://proceedings.neurips.cc/paper/2015
       - type: Paper
         title: "ChoiceRank: Identifying Preferences from Node Traffic in Networks"
         url: https://infoscience.epfl.ch/record/229164/files/choicerank.pdf
+        notes:
+          - label: Published in
+            text: proceedings of Machine Learning Research Volume 70, August 2017
+            url: https://proceedings.mlr.press/v70/
     tags:
       - Data Mining
       - Inference
     language: Python
     type: Library
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-03-11
 
   who-is-that:
     name: Who is that?
@@ -34,7 +42,7 @@ projects:
       of actors) so as to make them interactively searchable via similarity
       queries.
       The approach combines concepts from representation learning,
-      reinforcement learing, discrete-choice theory and bayesian inference.
+      reinforcement learning, discrete-choice theory and bayesian inference.
     contacts:
       - name: Daniyar Chumbalov
         email: daniyar.chumbalov@epfl.ch
@@ -43,7 +51,7 @@ projects:
       - Machine Learning
     type: Library
     date_added: 2019-09-09
-    date_updated: 2021-02-03
+    date_updated: 2021-03-11
 
   kickscore:
     name: kickscore
@@ -68,9 +76,17 @@ projects:
       - type: Paper
         title: Pairwise Comparisons with Flexible Time-Dynamics
         url: https://arxiv.org/abs/1903.07746
+        notes:
+          - label: Published in
+            text: proceedings of ACM SIGKDD 25, July 2019
+            url: https://www.kdd.org/kdd2019/
       - type: Paper
         title: "The Player Kernel: Learning Team Strengths Based on Implicit Player Contributions"
         url: https://infoscience.epfl.ch/record/221151
+        notes:
+          - label: Published in
+            text: proceedings of MLSA 2016
+            url: http://ceur-ws.org/Vol-1842/
       - type: Paper
         title: Efficient Learning from Comparisons
         url: https://infoscience.epfl.ch/record/255399
@@ -84,7 +100,7 @@ projects:
     license: MIT
     type: Library
     date_added: 2020-05-01
-    date_updated: 2021-02-03
+    date_updated: 2021-03-21
 
   predikon:
     name: Predikon
