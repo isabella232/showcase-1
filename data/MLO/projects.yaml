@@ -1,5 +1,38 @@
 projects:
 
+    powergossip:
+        name: PowerGossip
+        description: Practical Low-Rank Communication Compression in Decentralized Deep Learning
+        tech_desc: >
+            Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps
+            to maximize the information transferred per bit. We prove that our method requires no additional
+            hyperparameters, converges faster than prior methods, and is asymptotically independent of both the network
+            and the compression.
+        contacts:
+            - name: Thijs Vogels
+              email: thijs.vogels@epfl.ch
+        tags:
+            - Deep Learning
+            - Machine Learning
+            - Gradient Compression
+        type: Library
+        code:
+            type: Lab Github
+            url:  https://github.com/epfml/powergossip
+            date_last_commit: 2020-08-04
+        language: Python
+        license: MIT
+        information:
+            - type: Paper
+              title: "PowerGossip: Practical Low-Rank Communication Compression in Decentralized Deep Learning"
+              url: https://arxiv.org/abs/2008.01425
+              notes:
+                  - label: Published at
+                    text: NeurIPS 2020
+                    url: https://proceedings.neurips.cc/paper/2020/hash/a376802c0811f1b9088828288eb0d3f0-Abstract.html
+        date_added: 2021-03-05
+        date_updated: 2021-03-05
+
     chocosgd:
         name: chocoSGD
         description: Decentralized communication-efficient ML and DL
@@ -44,6 +77,7 @@ projects:
             type: Lab GitHub
             url: https://github.com/epfml/cola
             date_last_commit: 2019-01-20
+        maturity: 1
         information:
             - type: Paper
               title: "COLA: Decentralized Linear Learning"
