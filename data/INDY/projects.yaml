@@ -1,116 +1,115 @@
 projects:
+  choix:
+    name: Choix
+    description: Library that provides inference algorithms for models based on Luce's choice axiom
+    code:
+      type: Personal GitHub
+      url: https://github.com/lucasmaystre/choix
+      date_last_commit: 2019-07-06
+    contacts:
+      - name: Lucas Maystre
+        url: https://lucas.maystre.ch/
+        email: lucas@maystre.ch
+    information:
+      - type: Paper
+        title: Fast and Accurate Inference of Plackett–Luce Models
+        url: https://infoscience.epfl.ch/record/213486/files/fastinference.pdf
+      - type: Paper
+        title: "ChoiceRank: Identifying Preferences from Node Traffic in Networks"
+        url: https://infoscience.epfl.ch/record/229164/files/choicerank.pdf
+    tags:
+      - Data Mining
+      - Inference
+    language: Python
+    type: Library
+    date_added: 2019-03-18
+    date_updated: 2021-02-03
 
-    choix:
-        name:         Choix
-        description:  Library that provides inference algorithms for models based on Luce's choice axiom
-        code:
-            type: Personal GitHub
-            url:  https://github.com/lucasmaystre/choix
-            date_last_commit: 2019-07-06
-        contacts:
-            - name:     Lucas Maystre
-              url:      https://lucas.maystre.ch/
-              email:    lucas@maystre.ch
-        information:
-            - type:     Paper
-              title:    Fast and Accurate Inference of Plackett–Luce Models
-              url:      https://infoscience.epfl.ch/record/213486/files/fastinference.pdf
-            - type:     Paper
-              title:    'ChoiceRank: Identifying Preferences from Node Traffic in Networks'
-              url:      https://infoscience.epfl.ch/record/229164/files/choicerank.pdf
-        tags:
-            - Data Mining
-            - Inference
-        language: Python
-        type: Library
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
+  who-is-that:
+    name: Who is that?
+    url: https://who-is-th.at/
+    description: Machine Learning framework to search a database via similarity samples
+    layman_desc: >
+      Use machine learning to organize a collection of objects (e.g. faces
+      of actors) so as to make them interactively searchable via similarity
+      queries.
+      The approach combines concepts from representation learning,
+      reinforcement learing, discrete-choice theory and bayesian inference.
+    contacts:
+      - name: Daniyar Chumbalov
+        email: daniyar.chumbalov@epfl.ch
+    tags:
+      - Predictor
+      - Machine Learning
+    type: Library
+    date_added: 2019-09-09
+    date_updated: 2021-02-03
 
-    who-is-that:
-        name:         Who is that?
-        url:          https://who-is-th.at/
-        description:  Machine Learning framework to search a database via similarity samples
-        layman_desc: >
-            Use machine learning to organize a collection of objects (e.g. faces
-            of actors) so as to make them interactively searchable via similarity
-            queries.
-            The approach combines concepts from representation learning,
-            reinforcement learing, discrete-choice theory and bayesian inference.
-        contacts:
-            - name:   Daniyar Chumbalov
-              email:  daniyar.chumbalov@epfl.ch
-        tags:
-            - Predictor
-            - Machine Learning
-        type: Library
-        date_added: 2019-09-09
-        date_updated: 2021-02-03
+  kickscore:
+    name: kickscore
+    description: Dynamic skill rating system
+    layman_desc: >
+      Kickscore can be used to understand & visualize the skill of
+      players (or teams) competing in pairwise matches, and to predict
+      outcomes of future matches. It extends the Elo rating system and
+      TrueSkill.
+    code:
+      type: Personal GitHub
+      url: https://github.com/lucasmaystre/kickscore
+      date_last_commit: 2020-05-09
+    contacts:
+      - name: Lucas Maystre
+        url: https://lucas.maystre.ch/
+        email: lucas@maystre.ch
+      - name: Victor Kristof
+        url: https://victorkristof.me/
+        email: victor.kristof@epfl.ch
+    information:
+      - type: Paper
+        title: Pairwise Comparisons with Flexible Time-Dynamics
+        url: https://arxiv.org/abs/1903.07746
+      - type: Paper
+        title: "The Player Kernel: Learning Team Strengths Based on Implicit Player Contributions"
+        url: https://infoscience.epfl.ch/record/221151
+      - type: Paper
+        title: Efficient Learning from Comparisons
+        url: https://infoscience.epfl.ch/record/255399
+      - type: Demo
+        title: Prediction of football matches results
+        url: https://kickoff.ai/
+    tags:
+      - Predictor
+      - Machine Learning
+    language: Python
+    license: MIT
+    type: Library
+    date_added: 2020-05-01
+    date_updated: 2021-02-03
 
-    kickscore:
-        name:   kickscore
-        description:    Dynamic skill rating system
-        layman_desc: >
-            Kickscore can be used to understand & visualize the skill of
-            players (or teams) competing in pairwise matches, and to predict
-            outcomes of future matches. It extends the Elo rating system and
-            TrueSkill.
-        code:
-            type:   Personal GitHub
-            url:    https://github.com/lucasmaystre/kickscore
-            date_last_commit: 2020-05-09
-        contacts:
-            - name:     Lucas Maystre
-              url:      https://lucas.maystre.ch/
-              email:    lucas@maystre.ch
-            - name:     Victor Kristof
-              url:      https://victorkristof.me/
-              email:    victor.kristof@epfl.ch
-        information:
-            - type:     Paper
-              title:    Pairwise Comparisons with Flexible Time-Dynamics
-              url:      https://arxiv.org/abs/1903.07746
-            - type:     Paper
-              title:    'The Player Kernel: Learning Team Strengths Based on Implicit Player Contributions'
-              url:      https://infoscience.epfl.ch/record/221151
-            - type:     Paper
-              title:    Efficient Learning from Comparisons
-              url:      https://infoscience.epfl.ch/record/255399
-            - type:     Demo
-              title:    Prediction of football matches results
-              url:      https://kickoff.ai/
-        tags:
-            - Predictor
-            - Machine Learning
-        language: Python
-        license: MIT
-        type:   Library
-        date_added:     2020-05-01
-        date_updated:   2021-02-03
-
-    predikon:
-        name:   Predikon
-        url:    http://www.predikon.ch/
-        description:    Predictions about votes in Switzerland
-        layman_desc: >
-            Predikon provides predictions about votes in Switzerland, as soon as
-            municipal results are published by Swiss cantons starting at 12:00
-            pm on the day of a vote.
-        tech_desc:
-            We designed a predictive model of the municipal results (in
-            percentage of "yes") for Swiss votes. Based on past results, our
-            model automatically learns features of municipalities. On the day
-            of a vote, and as soon as some municipalities publish their results
-            (their percentage of "yes"), our model uses the features to predict
-            the unpublished results of other municipalities. The prediction of
-            the national vote result is obtained by aggregating published
-            results and predicted results.
-        contacts:
-            - name:     Victor Kristof
-              url:      https://victorkristof.me/
-              email:    victor.kristof@epfl.ch
-        tags:
-            - Predictor
-            - Machine Learning
-        type:   Library
-        date_added:     2020-05-01
-        date_updated:   2021-02-03
+  predikon:
+    name: Predikon
+    url: http://www.predikon.ch/
+    description: Predictions about votes in Switzerland
+    layman_desc: >
+      Predikon provides predictions about votes in Switzerland, as soon as
+      municipal results are published by Swiss cantons starting at 12:00
+      pm on the day of a vote.
+    tech_desc: >
+      We designed a predictive model of the municipal results (in
+      percentage of "yes") for Swiss votes. Based on past results, our
+      model automatically learns features of municipalities. On the day
+      of a vote, and as soon as some municipalities publish their results
+      (their percentage of "yes"), our model uses the features to predict
+      the unpublished results of other municipalities. The prediction of
+      the national vote result is obtained by aggregating published
+      results and predicted results.
+    contacts:
+      - name: Victor Kristof
+        url: https://victorkristof.me/
+        email: victor.kristof@epfl.ch
+    tags:
+      - Predictor
+      - Machine Learning
+    type: Library
+    date_added: 2020-05-01
+    date_updated: 2021-02-03
