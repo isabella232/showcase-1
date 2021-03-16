@@ -1,4 +1,3 @@
-<hr/>
 <div class="breadcrumbs">
   % for label, link in trail:
     <a href="{{ link }}">{{ label }}</a>
@@ -6,5 +5,3 @@
   % end
   <b>{{ here }}</b>
 </div>
-<hr/>
-<br/>

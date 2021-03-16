@@ -23,7 +23,7 @@
                 "paging": false,
                 "scrollCollapse": true,
                 "scrollX": true,
-                "scrollY": "80vh",
+                "scrollY": "60vh",
                 "dom": "Bfrtip",
                 "buttons": [
                     { text: "Columns", extend: 'colvis' },
@@ -70,6 +70,7 @@
         include('breadcrumbs.tpl', trail=trail, here=here)
     %>
 
+    <div class="contents">
     <img class="float_left" src="/resources/c4dt_logo.png">
     <div class="intro">
         % if selected_lab_id is None:
@@ -111,7 +112,6 @@
         <p>For questions, please contact <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></p>
     </div>
 
-    <p style="text-align: center;">
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
@@ -287,5 +287,6 @@
                 </tr>
             </tfoot>
         </table>
+    </div>
     </div>
 </body>

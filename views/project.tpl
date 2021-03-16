@@ -18,7 +18,7 @@
         include('breadcrumbs.tpl', trail=trail, here=here)
     %>
 
-    <br/>
+    <div class="contents">
 
     <div align="center" class="project-header">
         <h1>{{ project['name'] }}</h1>
@@ -182,5 +182,6 @@
             {{ project['lines_of_code'] }}
         </div>
         % end
+    </div>
     </div>
 </body>

@@ -37,7 +37,7 @@
         include('breadcrumbs.tpl', trail=trail, here=here)
     %>
 
-    <div align="center">
+    <div class="contents">
         <h1>Participating EPFL Laboratories</h1>
         <table id="labs" class="display cell-border" style="width:100%">
             <thead>

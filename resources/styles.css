@@ -5,8 +5,22 @@ body {
 }
 
 div.breadcrumbs {
-    padding-left: 1em;
+    background-color: #eeeeee;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
     font-size: large;
+    height: 2rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border: 1px solid #060606;
+}
+
+div.contents {
+    margin-top: 0;
+    padding-top: 4em;
+    overflow: hidden;
 }
 
 div.breadcrumbs a:hover {
@@ -26,7 +40,6 @@ img.float_left {
 .intro {
     padding-left:20%;
     padding-right:20%;
-    position: relative;
 }
 
 input {
