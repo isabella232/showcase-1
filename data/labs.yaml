@@ -102,7 +102,7 @@ labs:
         url: https://lara.epfl.ch
 
     LDS:
-        name:   Laboratory for Data Security (formerly LCA1)
+        name:   Laboratory for Data Security
         prof:
             name:
                 - Jean-Pierre
