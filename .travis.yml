@@ -1,39 +1,49 @@
 language: python
 python:
-    - "3.6"
-
+  - "3.6"
+node_js: -"4.16.0"
 addons:
-    ssh_known_hosts: c4dtsrv1.epfl.ch
+  ssh_known_hosts: c4dtsrv1.epfl.ch
+before_install:
+  - wget https://raw.githubusercontent.com/creationix/nvm/v0.37.2/nvm.sh -O ~/.nvm/nvm.sh
+  - source ~/.nvm/nvm.sh
+  - nvm install 14 #LTS ends on 2023-04-30
+  - node --version #solely for debugging purposes
 
 stages:
-    - test
-    - name: deploy
-      if: branch = master
-    - name: trigger_downstream
-      if: branch = master AND type != pull_request
+  - test
+  - name: deploy
+    if: branch = master
+  - name: trigger_downstream
+    if: branch = master AND type != pull_request
 
 jobs:
-    include:
-        - stage: test
-          script: pytest
-          install: pip install -r requirements.txt
+  include:
+    - stage: test
+      script: pytest
+      install: pip install -r requirements.txt
 
-        - stage: deploy
-          install: skip
-          script: skip
-          before_deploy:
-              - echo "$DEPLOY_SSH_KEY" > "$HOME/.ssh/id_ed25519"
-              - chmod 600 "$HOME/.ssh/id_ed25519"
-          deploy:
-              provider: script
-              script: scp update.sh showcase@c4dtsrv1.epfl.ch:bin/ && ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
+    - stage: prettier_pass
+      install:
+        - "npm install -g npm"
+      script: npx prettier --check .
 
-        - stage: trigger_downstream
-          jdk: oraclejdk8
-          script: |
-              curl -LO --retry 3 https://raw.github.com/mernst/plume-lib/master/bin/trigger-travis.sh
-              sh trigger-travis.sh --pro c4dt demo $TRAVIS_ACCESS_TOKEN
-              sh trigger-travis.sh --pro c4dt incubator $TRAVIS_ACCESS_TOKEN
+    - stage: deploy
+      install: skip
+      script: skip
+      before_deploy:
+        - echo "$DEPLOY_SSH_KEY" > "$HOME/.ssh/id_ed25519"
+        - chmod 600 "$HOME/.ssh/id_ed25519"
+      deploy:
+        provider: script
+        script: scp update.sh showcase@c4dtsrv1.epfl.ch:bin/ && ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
+
+    - stage: trigger_downstream
+      jdk: oraclejdk8
+      script: |
+        curl -LO --retry 3 https://raw.github.com/mernst/plume-lib/master/bin/trigger-travis.sh
+        sh trigger-travis.sh --pro c4dt demo $TRAVIS_ACCESS_TOKEN
+        sh trigger-travis.sh --pro c4dt incubator $TRAVIS_ACCESS_TOKEN
 
 notifications:
-    email: false
+  email: false

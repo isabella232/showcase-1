@@ -1,98 +1,97 @@
 projects:
+  bolt:
+    name: BOLT
+    description: >
+      Performance Contracts for Software Network Functions
+    tech_desc: >
+      The goal of our work is to provide network operators and NF developers with comprehensive understanding of
+      the NF’s entire performance profile, before it is deployed. Such understanding would, for instance, allow
+      operators to conduct precise capacity planning and developers to make informed development decisions.
+    contacts:
+      - name: Rishabh Iyer
+        email: rishabh.iyer@epfl.ch
+    url: https://bolt-perf-contracts.github.io/
+    tags:
+      - Network
+      - Performance
+      - Software Network
+    type: Application
+    code:
+      type: Project Github
+      url: https://github.com/bolt-perf-contracts/bolt
+      date_last_commit: 2019-08-05
+    language: C
+    information:
+      - type: Paper
+        title: Performance Contracts for Software Network Functions
+        url: https://dslab.epfl.ch/pubs/bolt.pdf
+    date_added: 2021-01-22
+    date_updated: 2021-01-22
 
-    bolt:
-        name: BOLT
-        description: >
-            Performance Contracts for Software Network Functions
-        tech_desc: >
-             The goal of our work is to provide network operators and NF developers with comprehensive understanding of
-             the NF’s entire performance profile, before it is deployed. Such understanding would, for instance, allow
-             operators to conduct precise capacity planning and developers to make informed development decisions.
-        contacts:
-            - name: Rishabh Iyer
-              email: rishabh.iyer@epfl.ch
-        url: https://bolt-perf-contracts.github.io/
-        tags:
-            - Network
-            - Performance
-            - Software Network
-        type: Application
-        code:
-            type: Project Github
-            url:  https://github.com/bolt-perf-contracts/bolt
-            date_last_commit: 2019-08-05
-        language: C
-        information:
-            - type: Paper
-              title: Performance Contracts for Software Network Functions
-              url: https://dslab.epfl.ch/pubs/bolt.pdf
-        date_added: 2021-01-22
-        date_updated: 2021-01-22
+  # This is the same as the vigor project from DSLAB
+  vigor:
+    name: Vigor
+    description: Formally verified and performant software Middleboxes
+    tech_desc: >
+      Software stack and toolchain for building and running software
+      middleboxes that are guaranteed to be correct, while providing
+      competitive performance and preserving developer productivity. With
+      Vigor, developers write the middlebox code (i.e., the software
+      network function, or NF) in C atop a standard packet-processing
+      framework, putting persistent state in data structures from a
+      Vigor-provided library. Vigor then automatically verifies that the
+      resulting software stack correctly implements a specification
+      (written in Python).
+    url: https://vigor-nf.github.io/
+    code:
+      type: Project Github
+      url: https://github.com/vigor-nf/vigor
+      date_last_commit: 2021-02-01
+    tags:
+      - Software Verification
+      - Middlebox
+      - Network
+    information:
+      - type: Paper
+        title: "Verifying Software Network Functions with No Verification Expertise"
+        url: https://dslab.epfl.ch/pubs/vigor.pdf
+        notes:
+          - label: Published in
+            text: "SOSP '19"
+            url: https://dl.acm.org/doi/10.1145/3341301.3359647
+      - type: Paper
+        title: "A Formally Verified NAT Stack"
+        url: https://infoscience.epfl.ch/record/264620
+      - type: Paper
+        title: "A Formally Verified NAT"
+        url: https://infoscience.epfl.ch/record/231983
+    language: C, Python
+    type: Framework
+    maturity: 1
+    date_added: 2019-07-26
+    date_updated: 2021-02-24
 
-# This is the same as the vigor project from DSLAB
-    vigor:
-        name: Vigor
-        description: Formally verified and performant software Middleboxes
-        tech_desc: >
-            Software stack and toolchain for building and running software
-            middleboxes that are guaranteed to be correct, while providing
-            competitive performance and preserving developer productivity. With
-            Vigor, developers write the middlebox code (i.e., the software
-            network function, or NF) in C atop a standard packet-processing
-            framework, putting persistent state in data structures from a
-            Vigor-provided library. Vigor then automatically verifies that the
-            resulting software stack correctly implements a specification
-            (written in Python).
-        url: https://vigor-nf.github.io/
-        code:
-          type: Project Github
-          url: https://github.com/vigor-nf/vigor
-          date_last_commit: 2021-02-01
-        tags:
-          - Software Verification
-          - Middlebox
-          - Network
-        information:
-          - type: Paper
-            title: "Verifying Software Network Functions with No Verification Expertise"
-            url: https://dslab.epfl.ch/pubs/vigor.pdf
-            notes:
-              - label: Published in
-                text: "SOSP '19"
-                url: https://dl.acm.org/doi/10.1145/3341301.3359647
-          - type: Paper
-            title: "A Formally Verified NAT Stack"
-            url: https://infoscience.epfl.ch/record/264620
-          - type: Paper
-            title: "A Formally Verified NAT"
-            url: https://infoscience.epfl.ch/record/231983
-        language: C, Python
-        type: Framework
-        maturity: 1
-        date_added: 2019-07-26
-        date_updated: 2021-02-24
-
-    line:
-        name:         LINE
-        description:  Accurate Network emulator
-        layman_desc: >
-            LINE is a network emulator designed for realism, accuracy and
-            powerful measurement capabilities. It is capable of emulating
-            networks in real-time, forwarding actual network traffic generated by
-            real Linux network stacks.
-        contacts:
-            - name: Katerina Argyraki
-              email: katerina.argyraki@epfl.ch
-        code:
-            type: Lab GitHub
-            url:  https://github.com/nal-epfl/line
-            date_last_commit: 2017-08-13
-        tags:
-            - Network
-            - Emulator
-            - Measurement
-        language: C++
-        type: Application
-        license:  GPL-2.0
-        date_added: 2019-03-18
-        date_updated: 2021-01-22
+  line:
+    name: LINE
+    description: Accurate Network emulator
+    layman_desc: >
+      LINE is a network emulator designed for realism, accuracy and
+      powerful measurement capabilities. It is capable of emulating
+      networks in real-time, forwarding actual network traffic generated by
+      real Linux network stacks.
+    contacts:
+      - name: Katerina Argyraki
+        email: katerina.argyraki@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/nal-epfl/line
+      date_last_commit: 2017-08-13
+    tags:
+      - Network
+      - Emulator
+      - Measurement
+    language: C++
+    type: Application
+    license: GPL-2.0
+    date_added: 2019-03-18
+    date_updated: 2021-01-22

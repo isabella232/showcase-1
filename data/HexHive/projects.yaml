@@ -1,5 +1,4 @@
 projects:
-
   fuzzan:
     name: FuZZan
     description: Enabling a faster Address Sanitization, improving fuzzing speed by 2x
@@ -12,7 +11,7 @@ projects:
     type: Application
     code:
       type: Lab Github
-      url:  https://github.com/HexHive/FuZZan
+      url: https://github.com/HexHive/FuZZan
       date_last_commit: 2020-08-01
     language: C++
     information:
@@ -39,7 +38,7 @@ projects:
     type: Application
     code:
       type: Lab Github
-      url:  https://github.com/HexHive/USBFuzz
+      url: https://github.com/HexHive/USBFuzz
       date_last_commit: 2020-10-14
     language: C
     information:

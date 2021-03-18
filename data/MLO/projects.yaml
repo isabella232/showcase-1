@@ -1,194 +1,193 @@
 projects:
+  powergossip:
+    name: PowerGossip
+    description: Practical Low-Rank Communication Compression in Decentralized Deep Learning
+    tech_desc: >
+      Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps
+      to maximize the information transferred per bit. We prove that our method requires no additional
+      hyperparameters, converges faster than prior methods, and is asymptotically independent of both the network
+      and the compression.
+    contacts:
+      - name: Thijs Vogels
+        email: thijs.vogels@epfl.ch
+    tags:
+      - Deep Learning
+      - Machine Learning
+      - Gradient Compression
+    type: Library
+    code:
+      type: Lab Github
+      url: https://github.com/epfml/powergossip
+      date_last_commit: 2020-08-04
+    language: Python
+    license: MIT
+    information:
+      - type: Paper
+        title: "PowerGossip: Practical Low-Rank Communication Compression in Decentralized Deep Learning"
+        url: https://arxiv.org/abs/2008.01425
+        notes:
+          - label: Published at
+            text: NeurIPS 2020
+            url: https://proceedings.neurips.cc/paper/2020/hash/a376802c0811f1b9088828288eb0d3f0-Abstract.html
+    date_added: 2021-03-05
+    date_updated: 2021-03-05
 
-    powergossip:
-        name: PowerGossip
-        description: Practical Low-Rank Communication Compression in Decentralized Deep Learning
-        tech_desc: >
-            Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps
-            to maximize the information transferred per bit. We prove that our method requires no additional
-            hyperparameters, converges faster than prior methods, and is asymptotically independent of both the network
-            and the compression.
-        contacts:
-            - name: Thijs Vogels
-              email: thijs.vogels@epfl.ch
-        tags:
-            - Deep Learning
-            - Machine Learning
-            - Gradient Compression
-        type: Library
-        code:
-            type: Lab Github
-            url:  https://github.com/epfml/powergossip
-            date_last_commit: 2020-08-04
-        language: Python
-        license: MIT
-        information:
-            - type: Paper
-              title: "PowerGossip: Practical Low-Rank Communication Compression in Decentralized Deep Learning"
-              url: https://arxiv.org/abs/2008.01425
-              notes:
-                  - label: Published at
-                    text: NeurIPS 2020
-                    url: https://proceedings.neurips.cc/paper/2020/hash/a376802c0811f1b9088828288eb0d3f0-Abstract.html
-        date_added: 2021-03-05
-        date_updated: 2021-03-05
+  chocosgd:
+    name: chocoSGD
+    description: Decentralized communication-efficient ML and DL
+    tech_desc: >
+      code for communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
+      and traditional convex machine learning models.
+    contacts:
+      - name: Tao Lin
+        email: tao.lin@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/ChocoSGD
+      date_last_commit: 2020-09-10
+    tags:
+      - Machine Learning
+      - Decentralized
+    information:
+      - type: Paper
+        title: Decentralized Stochastic Optimization and Gossip Algorithms with Compressed Communication
+        url: https://arxiv.org/abs/1902.00340
+    type: Application
+    license: Apache-2.0
+    date_added: 2019-07-30
+    date_updated: 2021-01-22
+    maturity: 1
 
-    chocosgd:
-        name: chocoSGD
-        description: Decentralized communication-efficient ML and DL
-        tech_desc: >
-            code for communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
-            and traditional convex machine learning models.
-        contacts:
-            - name: Tao Lin
-              email: tao.lin@epfl.ch
-        code:
-            type: Lab GitHub
-            url: https://github.com/epfml/ChocoSGD
-            date_last_commit: 2020-09-10
-        tags:
-            - Machine Learning
-            - Decentralized
-        information:
-            - type: Paper
-              title: Decentralized Stochastic Optimization and Gossip Algorithms with Compressed Communication
-              url: https://arxiv.org/abs/1902.00340
-        type: Application
-        license: Apache-2.0
-        date_added: 2019-07-30
-        date_updated: 2021-01-22
-        maturity: 1
+  cola:
+    name: cola
+    description: decentralized linear ML
+    tech_desc: >
+      Decentralized machine learning is a promising emerging paradigm in view of global challenges of data
+      ownership and privacy. We consider learning of linear classification and regression models, in the
+      setting where the training data is decentralized over many user devices, and the learning algorithm
+      must run on-device, on an arbitrary communication network, without a central coordinator. We propose
+      COLA, a new decentralized training algorithm with strong theoretical guarantees and superior practical
+      performance. Our framework overcomes many limitations of existing methods, and achieves communication
+      efficiency, scalability, elasticity as well as resilience to changes in data and participating devices.
+    contacts:
+      - name: Lie He
+        email: lie.he@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/cola
+      date_last_commit: 2019-01-20
+    maturity: 1
+    information:
+      - type: Paper
+        title: "COLA: Decentralized Linear Learning"
+        url: https://arxiv.org/abs/1808.04883
+      - type: Paper
+        title: "Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression"
+        url: https://arxiv.org/pdf/2101.04816.pdf
+    tags:
+      - Machine Learning
+      - Decentralized
+    language: Python
+    license: Apache-2.0
+    type: Application
+    date_added: 2019-07-30
+    date_updated: 2021-01-22
 
-    cola:
-        name: cola
-        description: decentralized linear ML
-        tech_desc: >
-            Decentralized machine learning is a promising emerging paradigm in view of global challenges of data
-            ownership and privacy. We consider learning of linear classification and regression models, in the
-            setting where the training data is decentralized over many user devices, and the learning algorithm
-            must run on-device, on an arbitrary communication network, without a central coordinator. We propose
-            COLA, a new decentralized training algorithm with strong theoretical guarantees and superior practical
-            performance. Our framework overcomes many limitations of existing methods, and achieves communication
-            efficiency, scalability, elasticity as well as resilience to changes in data and participating devices.
-        contacts:
-            - name: Lie He
-              email: lie.he@epfl.ch
-        code:
-            type: Lab GitHub
-            url: https://github.com/epfml/cola
-            date_last_commit: 2019-01-20
-        maturity: 1
-        information:
-            - type: Paper
-              title: "COLA: Decentralized Linear Learning"
-              url: https://arxiv.org/abs/1808.04883
-            - type: Paper
-              title: "Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression"
-              url: https://arxiv.org/pdf/2101.04816.pdf
-        tags:
-            - Machine Learning
-            - Decentralized
-        language: Python
-        license: Apache-2.0
-        type: Application
-        date_added: 2019-07-30
-        date_updated: 2021-01-22
+  mlbench:
+    name: MLBench
+    description: Benchmarking of distributed ML
+    layman_desc: >
+      Framework for distributed machine learning. Its purpose is to
+      improve transparency, reproducibility, robustness, and to provide
+      fair performance measures as well as reference implementations,
+      helping adoption of distributed machine learning methods both in
+      industry and in the academic community.
+      Besides algorithm comparison, a main use case is to help the
+      selection of hardware (CPU, GPU) used to run AI applications, as
+      well as how to connect it into a cluster to get a good
+      cost/performance tradeoff.
+    code:
+      type: Project GitHub
+      url: https://github.com/mlbench
+      date_last_commit: 2021-01-04
+    url: https://mlbench.github.io
+    doc: https://mlbench.readthedocs.io/
+    information:
+      - type: Tutorial
+        title: Adding an existing PyTorch model to an MLBench task
+        url: https://mlbench.github.io/2018/11/20/pytorch-adaptation-tutorial/
+      - type: Tutorial
+        title: Using the MLBench Commandline Interface
+        url: https://mlbench.github.io/2019/11/11/mlbench-cli/
+      - type: Blog
+        title: MLBench Blog
+        url: https://mlbench.github.io/blog/
+    tags:
+      - Machine Learning
+      - Framework
+    language: Python
+    type: Framework
+    license: Apache-2.0
+    in_incubator: true
+    c4dt_contact:
+      name: Christian Grigis
+      email: christian.grigis@epfl.ch
+    c4dt_work:
+    date_added: 2019-07-30
+    date_updated: 2021-01-22
+    maturity: 2
 
-    mlbench:
-        name: MLBench
-        description: Benchmarking of distributed ML
-        layman_desc: >
-            Framework for distributed machine learning. Its purpose is to
-            improve transparency, reproducibility, robustness, and to provide
-            fair performance measures as well as reference implementations,
-            helping adoption of distributed machine learning methods both in
-            industry and in the academic community.
-            Besides algorithm comparison, a main use case is to help the
-            selection of hardware (CPU, GPU) used to run AI applications, as
-            well as how to connect it into a cluster to get a good
-            cost/performance tradeoff.
-        code:
-            type: Project GitHub
-            url: https://github.com/mlbench
-            date_last_commit: 2021-01-04
-        url: https://mlbench.github.io
-        doc: https://mlbench.readthedocs.io/
-        information:
-            - type:     Tutorial
-              title:    Adding an existing PyTorch model to an MLBench task
-              url:      https://mlbench.github.io/2018/11/20/pytorch-adaptation-tutorial/
-            - type:     Tutorial
-              title:    Using the MLBench Commandline Interface
-              url:      https://mlbench.github.io/2019/11/11/mlbench-cli/
-            - type:     Blog
-              title:    MLBench Blog
-              url:      https://mlbench.github.io/blog/
-        tags:
-            - Machine Learning
-            - Framework
-        language: Python
-        type: Framework
-        license: Apache-2.0
-        in_incubator: true
-        c4dt_contact:
-            name:  Christian Grigis
-            email: christian.grigis@epfl.ch
-        c4dt_work:
-        date_added: 2019-07-30
-        date_updated: 2021-01-22
-        maturity: 2
+  sent2vec:
+    name: sent2vec
+    description: Numerical representations for short texts
+    layman_desc: >
+      Library that delivers numerical representations (features) for short
+      texts or sentences, which can be used as input to any machine
+      learning task later on.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/sent2vec
+      date_last_commit: 2020-06-10
+    contacts:
+      - name: Matteo Pagliardini
+        email: matteo.pagliardini@epfl.ch
+    tags:
+      - Machine Learning
+      - Text
+      - Features
+    type: Library
+    date_added: 2019-03-18
+    date_updated: 2021-01-22
+    maturity: 1
 
-    sent2vec:
-        name:         sent2vec
-        description:  Numerical representations for short texts
-        layman_desc: >
-            Library that delivers numerical representations (features) for short
-            texts or sentences, which can be used as input to any machine
-            learning task later on.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/epfml/sent2vec
-            date_last_commit: 2020-06-10
-        contacts:
-            - name:   Matteo Pagliardini
-              email:  matteo.pagliardini@epfl.ch
-        tags:
-            - Machine Learning
-            - Text
-            - Features
-        type: Library
-        date_added: 2019-03-18
-        date_updated: 2021-01-22
-        maturity: 1
-
-    powersgd:
-        name: PowerSGD
-        description: Practical Low-Rank Gradient Compression for Distributed Optimization
-        tech_desc: >
-            New low-rank gradient compressor based on power iteration that can
-            i) compress gradients rapidly, ii) efficiently aggregate the
-            compressed gradients using all-reduce, and iii) achieve test
-            performance on par with SGD. The proposed algorithm is the only
-            method evaluated that achieves consistent wall-clock speedups when
-            benchmarked against regular SGD with an optimized communication
-            backend. We demonstrate reduced training times for convolutional
-            networks as well as LSTMs on common datasets.
-        contacts:
-            - name: Thijs Vogels
-              email: thijs.vogels@epfl.ch
-        code:
-            type: Lab GitHub
-            url: https://github.com/epfml/powersgd
-            date_last_commit: 2020-11-20
-        information:
-            - type:   Paper
-              title:  'PowerSGD: Practical Low-Rank Gradient Compression for Distributed Optimization'
-              url:    https://arxiv.org/abs/1905.13727
-        tags:
-            - Machine Learning
-            - Distributed Optimization
-        language: Python
-        type: Application
-        license: MIT
-        date_added: 2020-05-01
-        date_updated: 2021-01-22
+  powersgd:
+    name: PowerSGD
+    description: Practical Low-Rank Gradient Compression for Distributed Optimization
+    tech_desc: >
+      New low-rank gradient compressor based on power iteration that can
+      i) compress gradients rapidly, ii) efficiently aggregate the
+      compressed gradients using all-reduce, and iii) achieve test
+      performance on par with SGD. The proposed algorithm is the only
+      method evaluated that achieves consistent wall-clock speedups when
+      benchmarked against regular SGD with an optimized communication
+      backend. We demonstrate reduced training times for convolutional
+      networks as well as LSTMs on common datasets.
+    contacts:
+      - name: Thijs Vogels
+        email: thijs.vogels@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/powersgd
+      date_last_commit: 2020-11-20
+    information:
+      - type: Paper
+        title: "PowerSGD: Practical Low-Rank Gradient Compression for Distributed Optimization"
+        url: https://arxiv.org/abs/1905.13727
+    tags:
+      - Machine Learning
+      - Distributed Optimization
+    language: Python
+    type: Application
+    license: MIT
+    date_added: 2020-05-01
+    date_updated: 2021-01-22

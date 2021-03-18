@@ -366,7 +366,7 @@ projects:
     type: Application
     code:
       type: Lab Github
-      url:  https://github.com/dedis/simnet
+      url: https://github.com/dedis/simnet
       date_last_commit: 2020-06-12
     language: Go
     license: GPL-3.0

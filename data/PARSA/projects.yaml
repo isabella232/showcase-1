@@ -1,63 +1,62 @@
 projects:
+  cloudsuite:
+    name: CloudSuite
+    description: Benchmark suite for cloud services
+    layman_desc: >
+      CloudSuite is a benchmark suite for cloud services. The third release
+      consists of eight applications that have been selected based on their
+      popularity in today's datacenters. The benchmarks are based on
+      real-world software stacks and represent real-world setups.
+    url: http://cloudsuite.ch/
+    code:
+      type: Lab GitHub
+      url: https://github.com/parsa-epfl/cloudsuite
+      date_last_commit: 2020-05-14
+    doc: http://cloudsuite.ch/
+    contacts:
+      - name: Siddharth Gupta
+        email: siddharth.gupta@epfl.ch
+    tags:
+      - Cloud
+      - Benchmark
+      - Test
+    language: Dockerfiles
+    type: Application
+    information:
+      - type: Paper
+        title: "Clearing the clouds: a study of emerging scale-out workloads on modern hardware"
+        url: https://dl.acm.org/citation.cfm?id=2150982
+    license: CloudSuite, other
+    date_added: 2019-03-18
+    date_updated: 2021-01-22
 
-    cloudsuite:
-        name:         CloudSuite
-        description:  Benchmark suite for cloud services
-        layman_desc: >
-            CloudSuite is a benchmark suite for cloud services. The third release
-            consists of eight applications that have been selected based on their
-            popularity in today's datacenters. The benchmarks are based on
-            real-world software stacks and represent real-world setups.
-        url:          http://cloudsuite.ch/
-        code:
-            type: Lab GitHub
-            url:  https://github.com/parsa-epfl/cloudsuite
-            date_last_commit: 2020-05-14
-        doc: http://cloudsuite.ch/
-        contacts:
-            - name:   Siddharth Gupta
-              email:  siddharth.gupta@epfl.ch
-        tags:
-            - Cloud
-            - Benchmark
-            - Test
-        language: Dockerfiles
-        type: Application
-        information:
-            - type:   Paper
-              title:  'Clearing the clouds: a study of emerging scale-out workloads on modern hardware'
-              url:    https://dl.acm.org/citation.cfm?id=2150982
-        license:  CloudSuite, other
-        date_added: 2019-03-18
-        date_updated: 2021-01-22
-
-    qflex:
-        name:         QFlex
-        description:  A QEMU-based family of full-system ARM simulators
-        layman_desc: >
-            QFlex is a full-system cycle-accurate computer architecture simulator
-            of multi-node computer systems.
-        url:  https://qflex.epfl.ch/
-        code:
-            type: Lab GitHub
-            url:  https://github.com/parsa-epfl/qflex
-            date_last_commit: 2020-08-25
-        lines_of_code:    'Flexus: 50000, Qemu: 100000'
-        contacts:
-            - name:   Siddharth Gupta
-              email:  siddharth.gupta@epfl.ch
-        tags:
-            - Simulator
-            - Network
-            - CPU
-            - Architecture
-        language: C, C++
-        type: Toolset
-        information:
-            - type:   Paper
-              title:  'SimFlex: Statistical Sampling of Computer System Simulation'
-              url:    https://infoscience.epfl.ch/record/112669/files/simflex.pdf
-        notes: >
-            Some issues with regard to Oracle licenses
-        date_added: 2019-03-18
-        date_updated: 2021-01-22
+  qflex:
+    name: QFlex
+    description: A QEMU-based family of full-system ARM simulators
+    layman_desc: >
+      QFlex is a full-system cycle-accurate computer architecture simulator
+      of multi-node computer systems.
+    url: https://qflex.epfl.ch/
+    code:
+      type: Lab GitHub
+      url: https://github.com/parsa-epfl/qflex
+      date_last_commit: 2020-08-25
+    lines_of_code: "Flexus: 50000, Qemu: 100000"
+    contacts:
+      - name: Siddharth Gupta
+        email: siddharth.gupta@epfl.ch
+    tags:
+      - Simulator
+      - Network
+      - CPU
+      - Architecture
+    language: C, C++
+    type: Toolset
+    information:
+      - type: Paper
+        title: "SimFlex: Statistical Sampling of Computer System Simulation"
+        url: https://infoscience.epfl.ch/record/112669/files/simflex.pdf
+    notes: >
+      Some issues with regard to Oracle licenses
+    date_added: 2019-03-18
+    date_updated: 2021-01-22
