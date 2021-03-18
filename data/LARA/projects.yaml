@@ -1,87 +1,86 @@
 projects:
+  stainless:
+    name: Stainless
+    description: Verification framework for a subset of the Scala programming language
+    layman_desc: >
+      Stainless is a tool for verifying Scala programs developed by the
+      LARA. It can verify that your program is correct for all inputs, it
+      can report inputs for which your program fails when they exist, and
+      it can prove that functions do not loop. As an example application,
+      Stainless can perform verification of Smart Contracts.
+    url: http://stainless.epfl.ch/
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/stainless
+      date_last_commit: 2021-02-02
+    doc: https://epfl-lara.github.io/stainless/
+    contacts:
+      - name: Viktor Kunčak
+        email: viktor.kuncak@epfl.ch
+      - name: Nicolas Voirol
+        email: nicolas.voirol@epfl.ch
+      - name: Jad Hamza
+        email: jad.hamza@epfl.ch
+    tags:
+      - Software Verification
+      - Scala
+      - Ethereum
+    language: Scala
+    type: Library, Application
+    license: AGPL-3.0
+    in_incubator: true
+    c4dt_contact:
+      name: Christian Grigis
+      email: christian.grigis@epfl.ch
+    c4dt_work:
+    information:
+      - type: Paper
+        title: "Satisfiability Modulo Recursive Programs"
+        url: http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+      - type: Paper
+        title: "Counter-Example Complete Verification for Higher-Order Functions"
+        url: http://lara.epfl.ch/~kuncak/papers/VoirolETAL15CounterExampleCompleteVerificationHigherOrderFunctions.pdf
+      - type: Paper
+        title: "System FR as Foundations for Stainless"
+        url: https://arxiv.org/pdf/1904.03482.pdf
+      - type: Video
+        title: Tools for Verified Scala at Scala Days 2017
+        url: https://www.youtube.com/watch?v=d4VeFa0z_Lo
+      - type: Video
+        title: Formal verification of Scala programs with Stainless at Typelevel Summit 2019
+        url: https://www.youtube.com/watch?v=K1ZwpumSHCc
+    demo:
+      title: Stainless-OmniLedger demonstrator
+      url: https://demo.c4dt.org/stainless
+      code: https://github.com/c4dt/service-stainless
+    date_added: 2019-03-18
+    date_updated: 2021-02-03
+    maturity: 2
 
-    stainless:
-        name:         Stainless
-        description:  Verification framework for a subset of the Scala programming language
-        layman_desc: >
-            Stainless is a tool for verifying Scala programs developed by the
-            LARA. It can verify that your program is correct for all inputs, it
-            can report inputs for which your program fails when they exist, and
-            it can prove that functions do not loop. As an example application,
-            Stainless can perform verification of Smart Contracts.
-        url:  http://stainless.epfl.ch/
-        code:
-            type: Lab GitHub
-            url:  https://github.com/epfl-lara/stainless
-            date_last_commit: 2021-02-02
-        doc:  https://epfl-lara.github.io/stainless/
-        contacts:
-            - name:   Viktor Kunčak
-              email:  viktor.kuncak@epfl.ch
-            - name:   Nicolas Voirol
-              email:  nicolas.voirol@epfl.ch
-            - name:   Jad Hamza
-              email:  jad.hamza@epfl.ch
-        tags:
-            - Software Verification
-            - Scala
-            - Ethereum
-        language: Scala
-        type: Library, Application
-        license:  AGPL-3.0
-        in_incubator: true
-        c4dt_contact:
-            name:  Christian Grigis
-            email: christian.grigis@epfl.ch
-        c4dt_work:
-        information:
-            - type:  Paper
-              title: 'Satisfiability Modulo Recursive Programs'
-              url:   http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
-            - type:  Paper
-              title: 'Counter-Example Complete Verification for Higher-Order Functions'
-              url:   http://lara.epfl.ch/~kuncak/papers/VoirolETAL15CounterExampleCompleteVerificationHigherOrderFunctions.pdf
-            - type:  Paper
-              title: 'System FR as Foundations for Stainless'
-              url:   https://arxiv.org/pdf/1904.03482.pdf
-            - type:  Video
-              title: Tools for Verified Scala at Scala Days 2017
-              url:   https://www.youtube.com/watch?v=d4VeFa0z_Lo
-            - type:  Video
-              title: Formal verification of Scala programs with Stainless at Typelevel Summit 2019
-              url:   https://www.youtube.com/watch?v=K1ZwpumSHCc
-        demo:
-            title: Stainless-OmniLedger demonstrator
-            url:   https://demo.c4dt.org/stainless
-            code:  https://github.com/c4dt/service-stainless
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
-        maturity: 2
-
-    inox:
-        name:         Inox
-        description:  Constraint solver for Stainless
-        layman_desc: >
-            Inox can be used to prove constraints on methods in a program, to
-            attest the correctness of these parts.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/epfl-lara/inox
-            date_last_commit: 2021-01-26
-        contacts:
-            - name:   Viktor Kunčak
-              email:  viktor.kuncak@epfl.ch
-            - name:   Nicolas Voirol
-              email:  nicolas.voirol@epfl.ch
-            - name:   Jad Hamza
-              email:  jad.hamza@epfl.ch
-        tags:
-            - Constraint Solver
-            - Software Verification
-        language: Scala
-        type: Library, Application
-        license:  AGPL-3.0
-        notes: >
-             Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
-        date_added: 2019-03-18
-        date_updated: 2021-02-03
+  inox:
+    name: Inox
+    description: Constraint solver for Stainless
+    layman_desc: >
+      Inox can be used to prove constraints on methods in a program, to
+      attest the correctness of these parts.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/inox
+      date_last_commit: 2021-01-26
+    contacts:
+      - name: Viktor Kunčak
+        email: viktor.kuncak@epfl.ch
+      - name: Nicolas Voirol
+        email: nicolas.voirol@epfl.ch
+      - name: Jad Hamza
+        email: jad.hamza@epfl.ch
+    tags:
+      - Constraint Solver
+      - Software Verification
+    language: Scala
+    type: Library, Application
+    license: AGPL-3.0
+    notes: >
+      Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
+    date_added: 2019-03-18
+    date_updated: 2021-02-03

@@ -1,66 +1,65 @@
 projects:
+  iprp:
+    name: iprp
+    description: IP Parallel Redundancy Protocol
+    layman_desc: >
+      IPRP allows parallel transmission of data over a network for hard
+      real time applications with simply installing an app on both the
+      server and the client.
+    url: https://infoscience.epfl.ch/record/216985/files/07406725.pdf
+    code:
+      type: Lab GitHub
+      url: https://github.com/LCA2-EPFL/iprp
+      date_last_commit: 2017-10-03
+    tags:
+      - Network
+      - Real-Time
+      - Parallel Transmission
+    type: Application
+    information:
+      - type: Paper
+        title: "iPRP - the Parallel Redundancy Protofol for IP Networks: Protocol Design and Operation"
+        url: https://infoscience.epfl.ch/record/216985/files/07406725.pdf
+    date_added: 2019-03-18
+    date_updated: 2021-01-22
 
-    iprp:
-        name:         iprp
-        description:  IP Parallel Redundancy Protocol
-        layman_desc: >
-            IPRP allows parallel transmission of data over a network for hard
-            real time applications with simply installing an app on both the
-            server and the client.
-        url:          https://infoscience.epfl.ch/record/216985/files/07406725.pdf
-        code:
-            type: Lab GitHub
-            url:  https://github.com/LCA2-EPFL/iprp
-            date_last_commit: 2017-10-03
-        tags:
-            - Network
-            - Real-Time
-            - Parallel Transmission
-        type: Application
-        information:
-            - type: Paper
-              title: "iPRP - the Parallel Redundancy Protofol for IP Networks: Protocol Design and Operation"
-              url: https://infoscience.epfl.ch/record/216985/files/07406725.pdf
-        date_added: 2019-03-18
-        date_updated: 2021-01-22
+  commelec-api:
+    name: commelec-api
+    description: API for the Commelec real-time microgrid framework
+    layman_desc: >
+      This project defines a message format, based on Cap'n Proto, for
+      encoding certain mathematical objects (i.e., real-valued symbolic
+      expressions, sets and set-valued functions) as sequences of bytes.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LCA2-EPFL/commelec-api
+      date_last_commit: 2017-06-29
+    contacts:
+      - name: Jagdish Achara
+        email: jagdish.achara@epfl.ch
+    tags:
+      - Network
+      - Message Format
+      - Encoding
+      - Decoding
+    type: Library
+    date_added: 2019-03-18
+    date_updated: 2021-01-22
 
-    commelec-api:
-        name:         commelec-api
-        description:  API for the Commelec real-time microgrid framework
-        layman_desc: >
-            This project defines a message format, based on Cap'n Proto, for
-            encoding certain mathematical objects (i.e., real-valued symbolic
-            expressions, sets and set-valued functions) as sequences of bytes.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/LCA2-EPFL/commelec-api
-            date_last_commit: 2017-06-29
-        contacts:
-            - name:   Jagdish Achara
-              email:  jagdish.achara@epfl.ch
-        tags:
-            - Network
-            - Message Format
-            - Encoding
-            - Decoding
-        type: Library
-        date_added: 2019-03-18
-        date_updated: 2021-01-22
-
-    t-recs:
-        name: T-RECS
-        description: T-RECS is a software testbed for multi-agent real-time control of electric grids.
-        tech_desc: >
-          T-RECS is a software testbed for multi-agent real-time control of electric grids. T-RECS uses
-          software containers to run each agent in a virtual environment. Agents are networked via Mininet,
-          so real packets are exchanged using TCP/IP.
-        code:
-          type: Lab GitHub
-          url: https://github.com/LCA2-EPFL/T-RECS
-          date_last_commit: 2019-06-06
-        tags:
-          - Power
-          - Network
-        type: Simulation
-        date_added: 2019-07-29
-        date_updated: 2021-01-22
+  t-recs:
+    name: T-RECS
+    description: T-RECS is a software testbed for multi-agent real-time control of electric grids.
+    tech_desc: >
+      T-RECS is a software testbed for multi-agent real-time control of electric grids. T-RECS uses
+      software containers to run each agent in a virtual environment. Agents are networked via Mininet,
+      so real packets are exchanged using TCP/IP.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LCA2-EPFL/T-RECS
+      date_last_commit: 2019-06-06
+    tags:
+      - Power
+      - Network
+    type: Simulation
+    date_added: 2019-07-29
+    date_updated: 2021-01-22

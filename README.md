@@ -12,6 +12,7 @@ to present their most interesting projects to potential industrial customers.
 ## Structure
 
 The information regarding the IC labs and their projects is organized in YAML files as follows:
+
 ```
 data
 ├── labs.yaml
@@ -23,8 +24,8 @@ data
 ...
 ```
 
-* `labs.yaml` contains the information on all the labs, each one indexed by an ID.
-* Each `projects.yaml`, located in a subdirectory named after a lab ID, contains the information on that lab's projects.
+- `labs.yaml` contains the information on all the labs, each one indexed by an ID.
+- Each `projects.yaml`, located in a subdirectory named after a lab ID, contains the information on that lab's projects.
 
 The information is presented to the user via a small [bottle](https://bottlepy.org/) application.
 
@@ -78,11 +79,13 @@ in `(brackets)`.
 ## Run the application locally
 
 Ensure you have the required tools to create Python virtual environments. You might need to install a specific package depending on your distribution, e.g. on Debian `python3-venv`:
+
 ```
 $ sudo apt install python3-venv
 ```
 
 Simply run `make`:
+
 ```
 $ make
 ```
@@ -102,17 +105,20 @@ $ make test
 Assuming $APP_PATH is the directory containing the application, the following must be setup on the server (see also the [mod_wsgi docs](https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html#daemon-mode-single-application):
 
 Clone the repository:
+
 ```
 $ cd $APP_PATH && git clone git@github.com:c4dt/showcase.git
 ```
 
 Create the Python virtual environment and install the dependencies:
+
 ```
 $ cd showcase
 $ make env
 ```
 
 Configure an Apache virtual host for the app, containing in particular:
+
 ```
 	WSGIDaemonProcess showcase user=showcase group=showcase processes=1 threads=5 python-home=$APP_PATH/showcase/venv
 	WSGIScriptAlias / $APP_PATH/showcase/app.wsgi
@@ -125,6 +131,7 @@ Configure an Apache virtual host for the app, containing in particular:
 ```
 
 Restart Apache:
+
 ```
 $ sudo /etc/init.d/apache2 restart
 ```

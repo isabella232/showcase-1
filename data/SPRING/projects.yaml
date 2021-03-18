@@ -1,346 +1,344 @@
 projects:
+  synthetic_data:
+    name: Synthetic data privacy evaluation
+    description: Implementation of a privacy evaluation framework for synthetic data releases
+    layman_desc: >
+      The framework implemented in this library allows data holders to evaluate how much publishing a synthetic
+      dataset in-place of a sensitive raw dataset reduces the privacy risk for the individuals whose data is included
+      in the raw data. The results of the evaluation help to inform decisions about whether to publish the data or
+      which generative model provides the best trade-off between utility and privacy gain.
+    tech_desc: >
+      The framework implemented in this library measures the privacy gain of publishing a synthetic dataset
+      in-place of the raw data with respect to a specific privacy concern. Each concern is modelled as a privacy
+      adversary that targets an individual record and aims to infer a secret about this record. The library
+      includes implementations of two new privacy attacks on the output of a generative model. To evaluate privacy
+      gain, the framework is instantiated under the chosen threat model and outputs an estimate about how much
+      publishing the synthetic data instead of the raw data reduces the privacy loss of a chosen target record
+      under this threat model.
+    contacts:
+      - name: Theresa Stadler
+        email: theresa.stadler@epfl.ch
+      - name: Laurent Girod
+        email: laurent.girod@epfl.ch
+    tags:
+      - Data Privacy
+      - Machine Learning
+    type: Library
+    code:
+      type: Lab Github
+      url: https://github.com/spring-epfl/synthetic_data_release
+      date_last_commit: 2021-01-19
+    # (The paper is still under review so we can hold-off with publishing this as well)
+    #        info:
+    #	        - type: Paper
+    #	          title: Synthetic Data - A Privacy Mirage
+    #	          url: https://arxiv.org/abs/2011.07018
+    date_added: 2021-02-08
+    date_updated: 2021-02-08
 
-    synthetic_data:
-        name: Synthetic data privacy evaluation
-        description: Implementation of a privacy evaluation framework for synthetic data releases
-        layman_desc: >
-            The framework implemented in this library allows data holders to evaluate how much publishing a synthetic
-            dataset in-place of a sensitive raw dataset reduces the privacy risk for the individuals whose data is included
-            in the raw data. The results of the evaluation help to inform decisions about whether to publish the data or
-            which generative model provides the best trade-off between utility and privacy gain.
-        tech_desc: >
-            The framework implemented in this library measures the privacy gain of publishing a synthetic dataset
-            in-place of the raw data with respect to a specific privacy concern. Each concern is modelled as a privacy
-            adversary that targets an individual record and aims to infer a secret about this record. The library
-            includes implementations of two new privacy attacks on the output of a generative model. To evaluate privacy
-            gain, the framework is instantiated under the chosen threat model and outputs an estimate about how much
-            publishing the synthetic data instead of the raw data reduces the privacy loss of a chosen target record
-            under this threat model.
-        contacts:
-            - name: Theresa Stadler
-              email: theresa.stadler@epfl.ch
-            - name: Laurent Girod
-              email: laurent.girod@epfl.ch
-        tags:
-            - Data Privacy
-            - Machine Learning
-        type: Library
-        code:
-            type: Lab Github
-            url: https://github.com/spring-epfl/synthetic_data_release
-            date_last_commit: 2021-01-19
-# (The paper is still under review so we can hold-off with publishing this as well)
-#        info:
-#	        - type: Paper
-#	          title: Synthetic Data - A Privacy Mirage
-#	          url: https://arxiv.org/abs/2011.07018
-        date_added: 2021-02-08
-        date_updated: 2021-02-08
+  claimchain:
+    name: ClaimChain
+    description: Prove your identity with regards to others
+    layman_desc: >
+      A decentralized public key distribution system with an emphasis on
+      privacy preservation.
+    url: https://claimchain.github.io/
+    code:
+      type: Project GitHub
+      url: https://github.com/claimchain/claimchain-simulations
+      date_last_commit: 2018-10-13
+    contacts:
+      - name: Bogdan Kulynych
+        email: bogdan.kulynych@epfl.ch
+    tags:
+      - Public Key
+      - Privacy
+    language: Python
+    type: Library
+    information:
+      - type: Paper
+        title: "ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging"
+        url: https://arxiv.org/abs/1707.06279
+    license: MIT
+    date_added: 2019-03-18
+    date_updated: 2021-01-21
 
+  lightnion:
+    name: Lightnion
+    description: Anonymous communication in browsers via the Tor network
+    layman_desc: >
+      A Javascript library for browsers for anonymous communication via the
+      Tor network. The library connects to the Tor network to enable
+      websites to send and retrieve data anonymously (e.g. send sensitive
+      information without identifying the user) without requiring users to
+      install special software such as the Tor browser.
+    contacts:
+      - name: Laurent Girod
+        email: laurent.girod@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/lightnion
+      date_last_commit: 2020-01-20
+    tags:
+      - Tor
+      - Privacy
+      - Network
+      - Javascript
+    type: Library
+    license: BSD-3-Clause
+    date_added: 2019-03-18
+    date_updated: 2021-01-21
 
-    claimchain:
-        name:         ClaimChain
-        description:  Prove your identity with regards to others
-        layman_desc: >
-            A decentralized public key distribution system with an emphasis on
-            privacy preservation.
-        url:          https://claimchain.github.io/
-        code:
-            type: Project GitHub
-            url:  https://github.com/claimchain/claimchain-simulations
-            date_last_commit: 2018-10-13
-        contacts:
-            - name:   Bogdan Kulynych
-              email:  bogdan.kulynych@epfl.ch
-        tags:
-            - Public Key
-            - Privacy
-        language: Python
-        type: Library
-        information:
-            - type:   Paper
-              title:  'ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging'
-              url:    https://arxiv.org/abs/1707.06279
-        license:  MIT
-        date_added: 2019-03-18
-        date_updated: 2021-01-21
+  trickster:
+    name: Trickster
+    description: Sophisticated attacks on Machine Learning models
+    layman_desc: >
+      Trickster allows to attack machine learning models where the attack
+      needs to be more sophisticated than simply adding some noise to an
+      image. One example is to evade an abuse detection model, for example,
+      social media bot detection, or a malware detector.
+    contacts:
+      - name: Bogdan Kulynych
+        email: bogdan.kulynych@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/trickster
+      date_last_commit: 2019-04-18
+    tags:
+      - Machine Learning
+      - Attack
+    type: Library
+    license: MIT
+    date_added: 2019-03-18
+    date_updated: 2021-01-21
 
-    lightnion:
-        name:         Lightnion
-        description:  Anonymous communication in browsers via the Tor network
-        layman_desc: >
-            A Javascript library for browsers for anonymous communication via the
-            Tor network. The library connects to the Tor network to enable
-            websites to send and retrieve data anonymously (e.g. send sensitive
-            information without identifying the user) without requiring users to
-            install special software such as the Tor browser.
-        contacts:
-            - name: Laurent Girod
-              email: laurent.girod@epfl.ch
-        code:
-            type: Lab GitHub
-            url: https://github.com/spring-epfl/lightnion
-            date_last_commit: 2020-01-20
-        tags:
-            - Tor
-            - Privacy
-            - Network
-            - Javascript
-        type: Library
-        license: BSD-3-Clause
-        date_added: 2019-03-18
-        date_updated: 2021-01-21
+  hippiepug:
+    name: Hippiepug
+    description: Sublinear-traversal blockchains and efficient key-value Merkle trees
+    layman_desc: >
+      This library provides implementations of two cryptographic data
+      structures: fast traversal blockchain structure, and a verifiable
+      dictionary, implemented as a key-value Merkle tree.
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/hippiepug
+      date_last_commit: 2019-10-22
+    contacts:
+      - name: Bogdan Kulynych
+        email: bogdan.kulynych@epfl.ch
+    tags:
+      - Blockchain
+    language: Python
+    type: Library
+    information:
+      - type: Paper
+        title: "ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging"
+        url: https://arxiv.org/abs/1707.06279
+    license: MIT
+    date_added: 2019-03-18
+    date_updated: 2021-01-21
 
-    trickster:
-        name:         Trickster
-        description:  Sophisticated attacks on Machine Learning models
-        layman_desc: >
-            Trickster allows to attack machine learning models where the attack
-            needs to be more sophisticated than simply adding some noise to an
-            image. One example is to evade an abuse detection model, for example,
-            social media bot detection, or a malware detector.
-        contacts:
-            - name:   Bogdan Kulynych
-              email:  bogdan.kulynych@epfl.ch
-        code:
-            type: Lab GitHub
-            url:  https://github.com/spring-epfl/trickster
-            date_last_commit: 2019-04-18
-        tags:
-            - Machine Learning
-            - Attack
-        type: Library
-        license: MIT
-        date_added: 2019-03-18
-        date_updated: 2021-01-21
+  mcsauditing:
+    name: MCSAuditing
+    description: Evaluation code for mobile crowdsourcing privacy
+    tech_desc: This tool implements the evaluation framework described in the paper
+    contacts:
+      - name: Carmela Troncoso
+        email: carmela.troncoso@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/MCSAuditing
+      date_last_commit: 2020-10-20
+    tags:
+      - Location Privacy
+      - Privacy
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "On (The Lack Of) Location Privacy in Crowdsourcing Applications"
+        url: https://arxiv.org/abs/1901.04923
+    license: GPL-3.0
+    date_added: 2019-07-30
+    date_updated: 2021-01-21
 
-    hippiepug:
-        name:         Hippiepug
-        description:  Sublinear-traversal blockchains and efficient key-value Merkle trees
-        layman_desc: >
-            This library provides implementations of two cryptographic data
-            structures: fast traversal blockchain structure, and a verifiable
-            dictionary, implemented as a key-value Merkle tree.
-        code:
-            type: Lab GitHub
-            url:  https://github.com/spring-epfl/hippiepug
-            date_last_commit: 2019-10-22
-        contacts:
-            - name:   Bogdan Kulynych
-              email:  bogdan.kulynych@epfl.ch
-        tags:
-            - Blockchain
-        language: Python
-        type: Library
-        information:
-            - type: Paper
-              title: 'ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging'
-              url: https://arxiv.org/abs/1707.06279
-        license:  MIT
-        date_added: 2019-03-18
-        date_updated: 2021-01-21
+  zksk:
+    name: Zero-Knowledge Swiss Knife
+    description: Python library for prototyping composable zero-knowledge proofs in the discrete-log setting.
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/zksk
+      date_last_commit: 2021-01-13
+    contacts:
+      - name: Bogdan Kulynych
+        email: bogdan.kulynych@epfl.ch
+    tags:
+      - Zero-Knowledge Proof
+      - Prototyping
+      - Privacy-enhancing
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "zksk: A Library for Composable Zero-Knowledge Proofs"
+        url: https://arxiv.org/abs/1911.02459
+      - type: Documentation
+        title: "zksk's docs"
+        url: https://zksk.readthedocs.io/en/latest/
+    license: MIT
+    date_added: 2020-02-06
+    date_updated: 2021-01-21
+    maturity: 2
 
-    mcsauditing:
-        name: MCSAuditing
-        description: Evaluation code for mobile crowdsourcing privacy
-        tech_desc:  This tool implements the evaluation framework described in the paper
-        contacts:
-            - name: Carmela Troncoso
-              email: carmela.troncoso@epfl.ch
-        code:
-          type: Lab GitHub
-          url: https://github.com/spring-epfl/MCSAuditing
-          date_last_commit: 2020-10-20
-        tags:
-          - Location Privacy
-          - Privacy
-        language: Python
-        type: Application
-        information:
-            - type: Paper
-              title: 'On (The Lack Of) Location Privacy in Crowdsourcing Applications'
-              url: https://arxiv.org/abs/1901.04923
-        license: GPL-3.0
-        date_added: 2019-07-30
-        date_updated: 2021-01-21
+  dp3t:
+    name: Decentralized Privacy-Preserving Proximity Tracing
+    description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
+    layman_desc: >
+      The goal of the DP3T protocol is to simplify and accelerate the process of identifying people who have been
+      in contact with a positively CoVid-19 tested person, thus providing a technological foundation to help
+      slow the spread of the SARS-CoV-2 virus.
+      The system aims to minimise privacy and security risks for individuals and communities and guarantee the
+      highest level of data protection.
+    code:
+      type: Public Github
+      url: https://github.com/DP-3T/documentation
+      date_last_commit: 2020-10-01
+    tags:
+      - Privacy-enhancing
+      - Protocol
+    language: Java
+    type: Library
+    information:
+      - type: Documentation
+        title: "Technical specification of the SwissCovid app"
+        url: https://github.com/DP-3T/technical-spec
+      - type: Application
+        title: "SwissCovid Android app (c) by Ubique"
+        url: https://github.com/DP-3T/dp3t-app-android-ch
+      - type: Application
+        title: "SwissCovid iOS app (c) by Ubique"
+        url: https://github.com/DP-3T/dp3t-app-ios-ch
+    license: MPL-2.0
+    date_added: 2020-10-05
+    date_updated: 2020-10-05
+    maturity: 3
+    in_incubator: true
+    c4dt_contact:
+      name: Linus Gasser
+      email: linus.gasser@epfl.ch
+    c4dt_work:
 
-    zksk:
-        name: Zero-Knowledge Swiss Knife
-        description: Python library for prototyping composable zero-knowledge proofs in the discrete-log setting.
-        code:
-            type: Lab GitHub
-            url: https://github.com/spring-epfl/zksk
-            date_last_commit: 2021-01-13
-        contacts:
-            - name:   Bogdan Kulynych
-              email:  bogdan.kulynych@epfl.ch
-        tags:
-            - Zero-Knowledge Proof
-            - Prototyping
-            - Privacy-enhancing
-        language: Python
-        type: Application
-        information:
-            - type: Paper
-              title: 'zksk: A Library for Composable Zero-Knowledge Proofs'
-              url: https://arxiv.org/abs/1911.02459
-            - type: Documentation
-              title: "zksk's docs"
-              url: https://zksk.readthedocs.io/en/latest/
-        license: MIT
-        date_added: 2020-02-06
-        date_updated: 2021-01-21
-        maturity: 2
+  crowdnotifier:
+    name: CrowdNotifier
+    description: Decentralized Privacy-Preserving Presence Tracing
+    layman_desc: >
+      CrowdNotifier is a protocol that can complement manual contact tracing by efficiently notifying
+      visitors of venues and events with SARS-CoV-2-positive attendees. It provides
+      strong privacy and abuse- resistance, and show that it can scale to handle notification at a national
+      scale.
+    code:
+      type: Public Github
+      url: https://github.com/CrowdNotifier/libcrowdnotifier
+      date_last_commit: 2021-01-17
+    maturity: 3
+    in_incubator: true
+    c4dt_contact:
+      name: Linus Gasser
+      email: linus.gasser@epfl.ch
+    c4dt_work:
+    tags:
+      - Privacy-enhancing
+      - Protocol
+    language: Java
+    type: Application
+    information:
+      - type: Documentation
+        title: "CrowdNotifier - Decentralized Privacy-Preserving Presence Tracing"
+        url: https://github.com/CrowdNotifier/documents
+      - type: Application
+        title: "NotifyMe Android mobile app - (c) by Ubique"
+        url: https://github.com/CrowdNotifier/crowdnotifier-sdk-android
+      - type: Application
+        title: "NotifyMe iOS mobile app - (c) by Ubique"
+        url: https://github.com/CrowdNotifier/crowdnotifier-sdk-ios
+    license: MPL-2.0
+    date_added: 2021-01-21
+    date_updated: 2021-01-26
 
-    dp3t:
-        name: Decentralized Privacy-Preserving Proximity Tracing
-        description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
-        layman_desc: >
-            The goal of the DP3T protocol is to simplify and accelerate the process of identifying people who have been
-            in contact with a positively CoVid-19 tested person, thus providing a technological foundation to help
-            slow the spread of the SARS-CoV-2 virus.
-            The system aims to minimise privacy and security risks for individuals and communities and guarantee the
-            highest level of data protection.
-        code:
-            type: Public Github
-            url: https://github.com/DP-3T/documentation
-            date_last_commit: 2020-10-01
-        tags:
-            - Privacy-enhancing
-            - Protocol
-        language: Java
-        type: Library
-        information:
-            - type: Documentation
-              title: "Technical specification of the SwissCovid app"
-              url: https://github.com/DP-3T/technical-spec
-            - type: Application
-              title: "SwissCovid Android app (c) by Ubique"
-              url: https://github.com/DP-3T/dp3t-app-android-ch
-            - type: Application
-              title: "SwissCovid iOS app (c) by Ubique"
-              url: https://github.com/DP-3T/dp3t-app-ios-ch
-        license: MPL-2.0
-        date_added: 2020-10-05
-        date_updated: 2020-10-05
-        maturity: 3
-        in_incubator: true
-        c4dt_contact:
-            name: Linus Gasser
-            email: linus.gasser@epfl.ch
-        c4dt_work:
+  petrelic:
+    name: Petrelic
+    description: A python wrapper around RELIC pairings
+    tech_desc: >
+      petrelic is a Python wrapper around RELIC. It provides a simple python interface to the BLS-381 pairing and
+      RELIC's big number class.
+    contacts:
+      - name: Laurent Girod
+        email: laurent.girod@epfl.ch
+    tags:
+      - BLS-381
+      - Pairing-based
+      - Cryptography
+    type: Library
+    code:
+      type: Lab Github
+      url: https://github.com/spring-epfl/petrelic
+      date_last_commit: 2020-05-25
+    language: Python
+    license: Apache-2.0
+    information:
+      - type: Documentation
+        title: Petrelic's Documentation
+        url: https://petrelic.readthedocs.io/en/latest/
+    date_added: 2021-01-21
+    date_updated: 2021-01-21
 
-    crowdnotifier:
-        name: CrowdNotifier
-        description: Decentralized Privacy-Preserving Presence Tracing
-        layman_desc: >
-            CrowdNotifier is a protocol that can complement manual contact tracing by efficiently notifying
-            visitors of venues and events with SARS-CoV-2-positive attendees. It provides
-            strong privacy and abuse- resistance, and show that it can scale to handle notification at a national
-            scale.
-        code:
-            type: Public Github
-            url: https://github.com/CrowdNotifier/libcrowdnotifier
-            date_last_commit: 2021-01-17
-        maturity: 3
-        in_incubator: true
-        c4dt_contact:
-            name: Linus Gasser
-            email: linus.gasser@epfl.ch
-        c4dt_work:
-        tags:
-            - Privacy-enhancing
-            - Protocol
-        language: Java
-        type: Application
-        information:
-            - type: Documentation
-              title: "CrowdNotifier - Decentralized Privacy-Preserving Presence Tracing"
-              url: https://github.com/CrowdNotifier/documents
-            - type: Application
-              title: "NotifyMe Android mobile app - (c) by Ubique"
-              url: https://github.com/CrowdNotifier/crowdnotifier-sdk-android
-            - type: Application
-              title: "NotifyMe iOS mobile app - (c) by Ubique"
-              url: https://github.com/CrowdNotifier/crowdnotifier-sdk-ios
-        license: MPL-2.0
-        date_added: 2021-01-21
-        date_updated: 2021-01-26
+  sscred:
+    name: SSCred
+    description: A python library to facilitate anonymous authentication
+    tech_desc: >
+      SSCred provides the following primitives:
+      <ul>
+      <li>Anonymous credential light (ACL)</li>
+      <li>Abe's Blind signature</li>
+      <li>Blinded Pedersen commitment</li>
+      </ul>
+    contacts:
+      - name: Kasra Edalat
+        email: kasra.edalat@epfl.ch
+    tags:
+      - Cryptography
+      - Privacy Preserving
+      - Anonymity
+    type: Library
+    code:
+      type: Lab Github
+      url: https://github.com/spring-epfl/SSCred
+      date_last_commit: 2020-08-11
+    language: Python
+    license: BSD-3-Clause
+    date_added: 2021-01-21
+    date_updated: 2020-01-21
 
-    petrelic:
-        name: Petrelic
-        description: A python wrapper around RELIC pairings
-        tech_desc: >
-            petrelic is a Python wrapper around RELIC. It provides a simple python interface to the BLS-381 pairing and
-            RELIC's big number class.
-        contacts:
-            - name: Laurent Girod
-              email: laurent.girod@epfl.ch
-        tags:
-            - BLS-381
-            - Pairing-based
-            - Cryptography
-        type: Library
-        code:
-            type: Lab Github
-            url:  https://github.com/spring-epfl/petrelic
-            date_last_commit: 2020-05-25
-        language: Python
-        license: Apache-2.0
-        information:
-            - type: Documentation
-              title: Petrelic's Documentation
-              url: https://petrelic.readthedocs.io/en/latest/
-        date_added: 2021-01-21
-        date_updated: 2021-01-21
-
-    sscred:
-        name: SSCred
-        description: A python library to facilitate anonymous authentication
-        tech_desc: >
-            SSCred provides the following primitives:
-            <ul>
-            <li>Anonymous credential light (ACL)</li>
-            <li>Abe's Blind signature</li>
-            <li>Blinded Pedersen commitment</li>
-            </ul>
-        contacts:
-            - name: Kasra Edalat
-              email: kasra.edalat@epfl.ch
-        tags:
-            - Cryptography
-            - Privacy Preserving
-            - Anonymity
-        type: Library
-        code:
-            type: Lab Github
-            url:  https://github.com/spring-epfl/SSCred
-            date_last_commit: 2020-08-11
-        language: Python
-        license: BSD-3-Clause
-        date_added: 2021-01-21
-        date_updated: 2020-01-21
-
-    mia:
-        name: mia
-        description: membership inference attacks
-        tech_desc: >
-          These are attacks against privacy of the training data. In MIA, an attacker tries to guess whether a given
-          example was used during training of a target model or not, only by querying the model. See more in the paper
-          by Shokri et al. Currently, you can use the library to evaluate the robustness of your Keras or PyTorch models
-          to MIA.
-        contacts:
-            - name:   Bogdan Kulynych
-              email:  bogdan.kulynych@epfl.ch
-        tags:
-            - Machine Learning
-            - Attack
-        type: Application
-        code:
-            type: Lab Github
-            url:  https://github.com/spring-epfl/mia
-            date_last_commit: 2019-01-31
-        language: Python
-        license: MIT
-        date_added: 2021-01-21
-        date_updated: 2021-01-21
+  mia:
+    name: mia
+    description: membership inference attacks
+    tech_desc: >
+      These are attacks against privacy of the training data. In MIA, an attacker tries to guess whether a given
+      example was used during training of a target model or not, only by querying the model. See more in the paper
+      by Shokri et al. Currently, you can use the library to evaluate the robustness of your Keras or PyTorch models
+      to MIA.
+    contacts:
+      - name: Bogdan Kulynych
+        email: bogdan.kulynych@epfl.ch
+    tags:
+      - Machine Learning
+      - Attack
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/spring-epfl/mia
+      date_last_commit: 2019-01-31
+    language: Python
+    license: MIT
+    date_added: 2021-01-21
+    date_updated: 2021-01-21

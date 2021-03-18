@@ -1,222 +1,225 @@
 body {
-    background-color: white;
-    font-family: Arial, sans-serif;
-    font-size: medium;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  font-size: medium;
 }
 
 div.breadcrumbs {
-    background-color: #eeeeee;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    font-size: large;
-    height: 2rem;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border: 1px solid #060606;
+  background-color: #eeeeee;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: large;
+  height: 2rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border: 1px solid #060606;
 }
 
 div.contents {
-    margin-top: 0;
-    padding-top: 4em;
-    overflow: hidden;
+  margin-top: 0;
+  padding-top: 4em;
+  overflow: hidden;
 }
 
 div.breadcrumbs a:hover {
-    color: #007080;
+  color: #007080;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 img.float_left {
-    width: 15%;
-    float: left;
-    padding-bottom: 1rem;
+  width: 15%;
+  float: left;
+  padding-bottom: 1rem;
 }
 
 .intro {
-    padding-left:20%;
-    padding-right:20%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 input {
-    background-color: #F0F0F0;
-    font-family: Arial, sans-serif;
-    font-size: medium;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  font-size: medium;
 }
 
-a:link, a:visited {
-    color: #289CAE;
+a:link,
+a:visited {
+  color: #289cae;
 }
 
 label {
-    color: #FFCBA5;
+  color: #ffcba5;
 }
 
-table.dataTable thead, table.dataTable tfoot {
-    background-color: white;
-    color: #FFA870;
+table.dataTable thead,
+table.dataTable tfoot {
+  background-color: white;
+  color: #ffa870;
 }
 
 table.dataTable tbody tr td {
-    color: black;
+  color: black;
 }
 
-table.dataTable tbody tr td.proj_name  {
-    font-weight: bold;
+table.dataTable tbody tr td.proj_name {
+  font-weight: bold;
 }
 
 table.dataTable.display tbody tr.active.odd {
-    background-color: #F4FFF4;
+  background-color: #f4fff4;
 }
 
 table.dataTable.display tbody tr.active.even {
-    background-color: #F8FFF8;
+  background-color: #f8fff8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover {
-    background-color: #ECFFEC;
+  background-color: #ecffec;
 }
 
 table.dataTable.display tbody tr.active.even:hover {
-    background-color: #F0FFF0;
+  background-color: #f0fff0;
 }
 
 table.dataTable.display tbody tr.active.odd > td.sorting_1 {
-    background-color: #F4FFF4;
+  background-color: #f4fff4;
 }
 
 table.dataTable.display tbody tr.active.even > td.sorting_1 {
-    background-color: #F8FFF8;
+  background-color: #f8fff8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover > td.sorting_1 {
-    background-color: #ECFFEC;
+  background-color: #ecffec;
 }
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_1 {
-    background-color: #F0FFF0;
+  background-color: #f0fff0;
 }
 
 table.dataTable.display tbody tr.active.odd > td.sorting_2 {
-    background-color: #F4FFF4;
+  background-color: #f4fff4;
 }
 
 table.dataTable.display tbody tr.active.even > td.sorting_2 {
-    background-color: #F8FFF8;
+  background-color: #f8fff8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover > td.sorting_2 {
-    background-color: #ECFFEC;
+  background-color: #ecffec;
 }
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_2 {
-    background-color: #F0FFF0;
+  background-color: #f0fff0;
 }
 
 table.dataTable.display tbody tr.active.odd > td.sorting_3 {
-    background-color: #F4FFF4;
+  background-color: #f4fff4;
 }
 
 table.dataTable.display tbody tr.active.even > td.sorting_3 {
-    background-color: #F8FFF8;
+  background-color: #f8fff8;
 }
 
 table.dataTable.display tbody tr.active.odd:hover > td.sorting_3 {
-    background-color: #ECFFEC;
+  background-color: #ecffec;
 }
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_3 {
-    background-color: #F0FFF0;
+  background-color: #f0fff0;
 }
 
 table.dataTable button {
-    border-radius: 6px;
-    background-color: #FCE4D4;
-    font-family: Arial, sans-serif;
-    font-size: medium;
-    border: solid 1px #FFCBA5;
+  border-radius: 6px;
+  background-color: #fce4d4;
+  font-family: Arial, sans-serif;
+  font-size: medium;
+  border: solid 1px #ffcba5;
 }
 
 table.dataTable button:hover {
-    background-color: #FFCBA5;
+  background-color: #ffcba5;
 }
 
-#labs_info, #projects_info {
-    color: #9ADAC7;
+#labs_info,
+#projects_info {
+  color: #9adac7;
 }
 
-div.dataTables_wrapper  div.dt-buttons {
+div.dataTables_wrapper div.dt-buttons {
   width: 100%;
   float: none;
   text-align: right;
 }
 
 div.dataTables_wrapper button.dt-button {
-    padding: 0.2em;
-    line-height: 1em;
+  padding: 0.2em;
+  line-height: 1em;
 }
 
 div.dataTables_wrapper div.dt-button-collection button.dt-button.active {
-    background-color: #9ADAC7;
-    background-image: none;
+  background-color: #9adac7;
+  background-image: none;
 }
 
 div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
-    background-color: #289CAE;
-    background-image: none;
+  background-color: #289cae;
+  background-image: none;
 }
 
 div.project-header {
-    background-color: #F0F0F0;
-    width: 50%;
-    border: 1px solid black;
-    margin: auto;
-    padding: 0 35px 0 35px;
+  background-color: #f0f0f0;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 0 35px 0 35px;
 }
 
 div.project-details {
-    background-color: #F8F8F8;
-    width: 50%;
-    border: 1px solid black;
-    margin: auto;
-    padding: 35px 35px 35px 35px;
-    font-family: Arial, Sans-serif;
-    font-size: 1.2em;
+  background-color: #f8f8f8;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 35px 35px 35px 35px;
+  font-family: Arial, Sans-serif;
+  font-size: 1.2em;
 }
 
 div.project-details div.header {
-    font-weight: bold;
-    color: #FFA870;
-    display: inline-block;
-    padding-right: 10px;
-    margin-top: 5px;
+  font-weight: bold;
+  color: #ffa870;
+  display: inline-block;
+  padding-right: 10px;
+  margin-top: 5px;
 }
 
 div.project-details ul {
-    margin-top: 5px;
-    margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 div.project-details div.contents {
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    text-align: justify;
-    text-justify: inter-word;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 div.project-details hr {
-    color: black;
-    border-width: 1px;
-    border-style: dotted;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: -15px;
-    margin-right: -15px;
+  color: black;
+  border-width: 1px;
+  border-style: dotted;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: -15px;
+  margin-right: -15px;
 }
