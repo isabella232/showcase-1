@@ -88,30 +88,6 @@ projects:
     date_added: 2019-03-18
     date_updated: 2021-02-05
 
-  personhood:
-    name: Personhood.online
-    description: Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
-    code:
-      type: C4DT GitHub
-      url: https://github.com/c4dt/omniledger/tree/main/mobile
-      date_last_commit: 2020-09-11
-    doc: https://pop.dedis.ch
-    lines_of_code: 9000 / 2000
-    contacts:
-      - name: Linus Gasser
-        email: linus.gasser@epfl.ch
-    tags:
-      - Mobile
-      - iOS
-      - Android
-      - Personhood
-      - ByzCoin
-    language: Javascript
-    type: Application
-    license: AGPL-3.0
-    date_added: 2019-03-18
-    date_updated: 2021-02-05
-
   omniledger:
     name: OmniLedger
     description: Ethereum-like blockchain implementation based on skipchains
