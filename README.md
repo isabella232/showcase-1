@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/c4dt/showcase.svg?token=eGgaGnqUTtqEwfsaYsLd&branch=master)](https://travis-ci.com/c4dt/showcase)
+[![Build Status](https://travis-ci.com/c4dt/showcase.svg?token=eGgaGnqUTtqEwfsaYsLd&branch=main)](https://travis-ci.com/c4dt/showcase)
 
 # Showcase
 
