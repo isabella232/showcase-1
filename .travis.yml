@@ -13,9 +13,9 @@ before_install:
 stages:
   - test
   - name: deploy
-    if: branch = master
+    if: branch = main
   - name: trigger_downstream
-    if: branch = master AND type != pull_request
+    if: branch = main AND type != pull_request
 
 jobs:
   include:

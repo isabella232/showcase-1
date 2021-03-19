@@ -93,7 +93,7 @@ projects:
     description: Mobile frontend (iOS and Android) for personhood parties and interacting with ByzCoin
     code:
       type: C4DT GitHub
-      url: https://github.com/c4dt/omniledger/tree/master/mobile
+      url: https://github.com/c4dt/omniledger/tree/main/mobile
       date_last_commit: 2020-09-11
     doc: https://pop.dedis.ch
     lines_of_code: 9000 / 2000
