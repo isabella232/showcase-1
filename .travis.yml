@@ -12,6 +12,7 @@ before_install:
 
 stages:
   - test
+  - prettier_pass
   - name: deploy
     if: branch = main
   - name: trigger_downstream
@@ -37,6 +38,8 @@ jobs:
       deploy:
         provider: script
         script: scp update.sh showcase@c4dtsrv1.epfl.ch:bin/ && ssh showcase@c4dtsrv1.epfl.ch bin/update.sh
+        on:
+          branch: main
 
     - stage: trigger_downstream
       jdk: oraclejdk8
