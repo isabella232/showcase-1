@@ -95,12 +95,21 @@
   - kickscore
     - Add conf for papers
 
+---
+
 210319 - Linus:
 
 - DEDIS - Bryan Ford
   - removed personhood, as we removed the directory in the repo
 
 ---
+
+210322 - Linus:
+
+- IVRL - Sabine Süsstrunk
+
+  - Checked the links
+  - Updated the date
 
 Changes:
 

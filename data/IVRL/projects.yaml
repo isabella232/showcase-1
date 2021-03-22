@@ -16,7 +16,7 @@ projects:
     language: C++
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-03-22
 
   image-completion:
     name: Image Completion
@@ -36,4 +36,4 @@ projects:
     language: MatLab
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-03-22
