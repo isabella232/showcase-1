@@ -18,6 +18,7 @@ LABS_SCHEMA = sy.Map({"labs":
                 "name": sy.Seq(sy.Str()),
                 "email": sy.Email(),
                 }),
+            "description": sy.Str(),
             "url": sy.Url(),
             "contacts": sy.EmptyList() | sy.Seq(
                 sy.Map({

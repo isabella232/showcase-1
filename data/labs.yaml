@@ -24,6 +24,11 @@ labs:
         - Rachid
         - Guerraoui
       email: rachid.guerraoui@epfl.ch
+    description: >
+      	The Distributed Computing Lab focuses currently on Scalable Implementations 
+        of Cryptocurrencies, Byzantine fault tolerance and privacy in distributed machine 
+        learning, distributed algorithms making use of RDMA and NVRAM.
+      email: rachid.guerraoui@epfl.ch
     url: https://dcl.epfl.ch/site/
     contacts:
 
@@ -34,6 +39,15 @@ labs:
         - Bryan
         - Ford
       email: bryan.ford@epfl.ch
+    description: >
+      	The DEDIS team is working on projects related to large-scale collective
+        authorities (cothorities), which distribute trust among a number of
+        independent parties to allow scalable self-organizing communities.
+        With no single trusted party, cothorities can secure software updates,
+        provide public randomness, enable privacy-conscious medical-data sharing
+        and a lot more.
+        Other projects include communicating securely over insecure channels and
+        fast, scalable, accountable anonymous communication.
     contacts:
       - name: Jeff Allen
         email: jeff.allen@epfl.ch
@@ -48,6 +62,21 @@ labs:
         - George
         - Candea
       email: george.candea@epfl.ch
+    description: >
+      The Dependable Systems Lab develops  techniques and abstractions for
+      building trustworthy computer systems, i.e., systems that are safe and
+      secure. They:
+      
+        
+      Explore the fundamental challenges posed to security and safety by
+      large-scale systems consisting of many threads, many nodes, and millions
+      of lines of code written by many programmers
+      <br>Seek solutions that solve real-world problems by overcoming theoretical
+      worst-case limitations
+      <br>Build open-source prototypes that enable evaluation of these solutions
+      with real-world workloads
+      <br>Operate at the intersection of operating systems, distributed systems,
+      programming languages, formal methods, and computer architecture
     contacts:
       - name: Arseniy Zaostrovnykh
         email: arseniy.zaostrovnykh@epfl.ch
@@ -62,6 +91,25 @@ labs:
         - Mathias
         - Payer
       email: mathias.payer@epfl.ch
+    description: >
+      	Our research focuses on software and systems security. Despite efforts
+        and improvements in bug discovery techniques, some exploitable
+        vulnerabilities will remain. We target techniques that both enable
+        developers to discover and remove bugs and make programs resilient
+        against the exploitation of unknown or unpatched vulnerabilities.
+        <br>To discover bugs we propose (i) sanitization techniques that enforce
+        a security property such as memory or type safety; given concrete
+        program input, our sanitizers then flag any property violations and
+        (ii) fuzzing techniques that leverage static and dynamic analysis to
+        create program inputs to explore program areas that are not yet covered
+        through existing test cases. To protect against exploitable
+        vulnerabilities, we focus on control-flow integrity using specific
+        language semantics, enforcing type integrity, and protecting selective
+        data. Under this premise, we focus on compiler-based, runtime-based, and
+        language-based protection mechanisms and security policies that increase
+        the resilience of applications against attacks (in the presence of
+        software vulnerabilities). All prototypes are released as open-source.
+
     contacts:
     url: https://hexhive.epfl.ch/
 
@@ -72,6 +120,16 @@ labs:
         - Matthias
         - Grossglauser
       email: matthias.grossglauser@epfl.ch
+    description: >
+      	The Information and Network Dynamics research group is part of the
+        School of Computer and Communication Sciences at EPFL in Lausanne,
+        Switzerland. The group is lead by Matthias Grossglauser and Patrick
+        Thiran. Their research focuses broadly on the statistical modeling of
+        large dynamical systems involving both human and technical agents.
+        Examples include social and information networks, epidemic processes,
+        human mobility and transportation, and recommender systems. Our work
+        lies at the intersection of machine learning, probabilistic modeling,
+        large-scale data analytics, and performance analysis. 
     contacts:
     url: https://indy.epfl.ch/
 
@@ -82,6 +140,14 @@ labs:
         - Sabine
         - Süsstrunk
       email: sabine.susstrunk@epfl.ch
+    description: >
+      The Image and Visual Representation Lab (IVRL) performs research that is
+      primarily focused on the capture, analysis, and reproduction of color
+      images. Aiming to improve everyone’s photographic experience, we
+      develop algorithms and systems that help us understand, process, and
+      measure images.
+      <br>Their research areas are computational photography, color image
+      processing, computer vision, and image quality.
     contacts:
       - name: Siavash Arjomand Bigdeli
     url: https://ivrl.epfl.ch/
@@ -93,6 +159,12 @@ labs:
         - Viktor
         - Kunčak
       email: viktor.kuncak@epfl.ch
+    description: >
+        Helping construct software that does what we expect
+        <br>LARA is a research group led by Viktor Kunčak. 
+        We develop precise automated reasoning techniques : tools,
+        algorithms and languages. The goal of these techniques to help
+        construction of verified computer systems.
     contacts:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch
@@ -107,6 +179,16 @@ labs:
         - Jean-Pierre
         - Hubaux
       email: jean-pierre.hubaux@epfl.ch
+    description: >
+      	Over the last 15 years, the Laboratory for Data Security has pioneered
+        the areas of security and privacy in personalized health and
+        mobile/wireless networks as well as tackled interpersonal privacy
+        issues. On the first topic, they collaborate extensively with hospitals.
+        Their core competencies are  in applied cryptography, data protection
+        techniques such as differential privacy, and wireless networking. Their
+        research is funded by the Strategic Focus Area “Personalized Health and
+        Related Technologies” of the ETH Domain, the Swiss Data Science Center
+        and the Swiss National Science Foundation.
     contacts:
       - name: Juan Ramón Troncoso-Pastoriza
         email: juan.troncoso-pastoriza@epfl.ch
@@ -119,6 +201,10 @@ labs:
         - Jean-Yves
         - Le Boudec
       email: jean-yves.leboudec@epfl.ch
+    description: >
+      	The Computer Communications and Applications Laboratory 2 do research in
+        communication networks, with emphasis on deterministic networks, smart
+        grids and optimization of mobility.
     contacts:
     url: http://lca2.epfl.ch/
 
@@ -129,6 +215,22 @@ labs:
         - Karl
         - Aberer
       email: karl.aberer@epfl.ch
+    description: >
+      Research in the Distributed Information Systems Laboratory focuses on
+      producing reliable information from the vast amount of data that is
+      available on the Internet – a key challenge in today’s information society.
+      <br>They are developing methods and systems that turn unstructured,
+      heterogeneous and untrusted data into meaningful, reliable and
+      understandeable information.
+      <br>This is done in the context of concrete information processing tasks,
+      such as data and knowledge integration, information retrieval, filtering
+      and extraction, document understanding and trust and crediblity assessment.
+      <br>Given that tackling these problem relies usually on the needs of the
+      user and requires at the same time processing of large amounts of data,
+      they explore methods that enable integration of human knowledge with
+      state-of-the-art machine learning.
+      <br>They apply the results of their work in concrete application domains,
+      such as Media, Humanitarian Action and Knowledge Management in enterprises.
     contacts:
       - name: Hamza Karkous
       - name: Rémi Philippe Lebret
@@ -142,6 +244,15 @@ labs:
         - Pascal
         - Frossard
       email: pascal.frossard@epfl.ch
+    description: >
+      The Signal Processing Laboratory (LTS4) is a team of researchers led by
+      Prof. Pascal Frossard, working in the Electrical Engineering Institute of
+      the Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland.
+      <br>The group research focuses on image processing, graph signal processing
+      and machine learning, as well as closely related fields such as network
+      data analysis, distributed signal processing, image and video coding and
+      immersive communications. We work at the frontier between signal
+      processing, machine learning and applied mathematics.
     contacts:
       - name: Seyed Moosavi
         email: seyed.moosavi@epfl.ch
@@ -156,6 +267,10 @@ labs:
         - Martin
         - Jaggi
       email: martin.jaggi@epfl.ch
+    description: >
+      The Machine Learning and Optimization Laboratory is interested in machine
+      learning, optimization algorithms and text understanding, as well as
+      several application domains.
     contacts:
       - name: Aymeric Dieuleveut
         email: aymeric.dieuleveut@epfl.ch
@@ -170,6 +285,13 @@ labs:
         - Touradj
         - Ebrahimi
       email: touradj.ebrahimi@epfl.ch
+    description: >
+      	The Multimedia Signal Processing Group is headed by Prof. Touradj Ebrahimi.
+        <br>The group is active in research and teaching in the field of
+        multimedia signal processing. Research topics span over three
+        highly interconnected disciplines of multimedia signal processing,
+        namely multimedia coding, multimodal processing, analysis and
+        interpretation, and media security.
     contacts:
     url: https://mmspg.epfl.ch/
 
@@ -180,7 +302,17 @@ labs:
         - Katerina
         - Argyraki
       email: katerina.argyraki@epfl.ch
-    contacts:
+    description: >
+      The Network Architecture Lab works on fundamtenal questions regarding
+      network system design such as :
+      <br>Can we infer network behavior from external observations?
+      <br>Can we improve Internet transparency?
+      <br>Is Internet transparency compatible with user privacy? 
+      <br>How should we write packet-processing software, such that we can reason
+      about its semantics?
+      <br>How should we write packet-processing software, such that we can reason
+      about its performance?
+    contacts:   
       - name: Luis David Pedrosa
         email: luis.pedrosa@epfl.ch
     url: https://www.epfl.ch/labs/nal/
@@ -192,6 +324,25 @@ labs:
         - Babak
         - Falsafi
       email: babak.falsafi@epfl.ch
+    description: >
+      The Parallel System Architecture Lab senses that information technology
+      has undergone a major paradigm shift with sensors, embedded and mobile
+      devices generating massive amounts of data to be augmented with backend
+      cloud services for enhanced experience. Data has emerged as a currency for
+      modern society. Datacenters are now the backbone of IT offering
+      large-scale cloud services at low costs benefiting from and exploiting the
+      economies of scale. With silicon efficiency scaling having dwindled since
+      2004 and silicon density scaling slowing down, future digital platforms
+      will rely on heterogeneous logic and memory to allow for IT scalability.
+      Meanwhile, the demand for large-scale cloud services has grown dramatically
+      faster than conventional silicon scaling making IT platform scalability a
+      grand challenge. Future platforms will need hand-in-hand collaboration of
+      application domain experts and platform designers to improve scalability.
+      With many online services being in-memory and the minimum communication
+      latency between the farthest nodes in a 20MW datacenter being microseconds,
+      future server platforms will go through revolutionary changes in architecture
+      to enable seamless aggregation of logic and memory resources across nodes, breaking
+      the conventional system abstraction layers.
     contacts:
       - name: Hossein Ajallooiean
     url: https://parsa.epfl.ch/
@@ -203,6 +354,18 @@ labs:
         - Marcel
         - Salathé
       email: marcel.salathe@epfl.ch
+    description: >
+      The Lab of Digital Epidemiology is concerned with the dynamics of health
+      and disease in human populations.
+      <br>Research in epidemiology aims to identify the distribution, incidence,
+      and etiology of human diseases to improve the understanding of the causes
+      of diseases and to prevent their spread. Traditionally, epidemiology has
+      been based on data collected by public health agencies through health
+      personnel in hospitals, doctors’ offices, and out in the field. In recent
+      years, however, novel data sources have emerged where data are frequently
+      collected directly from individuals through the digital traces they leave
+      as a consequence of modern communication and an increased use of electronic
+      devices.
     contacts:
       - name: Chloé Allémann
         email: chloe.allemann@epfl.ch
@@ -215,6 +378,15 @@ labs:
         - Carmela
         - Troncoso
       email: carmela.troncoso@epfl.ch
+    description: 
+      The Security and Privacy Engineering Laboratory develops tools and
+      methodologies to help engineers building systems that respect societal
+      values, such as security, privacy or non discrimination. Currently, they
+      are working on ":" 
+      
+      Machine Learning impact on society
+      Evaluating privacy in complex systems
+      Engineering privacy-preserving systems
     contacts:
       - name: Wouter Lueks
         email: wouter.lueks@epfl.ch

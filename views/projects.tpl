@@ -84,6 +84,13 @@
             <br/>
             <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
         </h1>
+        <h2>Description</h2>
+        <p>
+            {{ lab['description'] }}
+        </p>
+
+
+
         <p>
         % end
             The <a href="https://c4dt.org">Center for Digital Trust (C4DT)</a>
