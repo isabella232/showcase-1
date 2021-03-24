@@ -100,7 +100,7 @@
             worked on in the EPFL labs affiliated with C4DT.
         </p>
         <p>
-            This page is part of    the C4DT Factory that works on producing
+            This page is part of the C4DT Factory that works on producing
             quality software for our industrial partners to use. The other two
             pages are:
             <ul>

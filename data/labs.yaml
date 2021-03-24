@@ -25,10 +25,9 @@ labs:
         - Guerraoui
       email: rachid.guerraoui@epfl.ch
     description: >
-      he Distributed Computing Lab focuses currently on Scalable Implementations 
+      The Distributed Computing Lab focuses currently on Scalable Implementations 
       of Cryptocurrencies, Byzantine fault tolerance and privacy in distributed machine 
       learning, distributed algorithms making use of RDMA and NVRAM.
-      ail: rachid.guerraoui@epfl.ch
     url: https://dcl.epfl.ch/site/
     contacts:
 
@@ -40,7 +39,7 @@ labs:
         - Ford
       email: bryan.ford@epfl.ch
     description: >
-      he DEDIS team is working on projects related to large-scale collective
+      The DEDIS team is working on projects related to large-scale collective
       authorities (cothorities), which distribute trust among a number of
       independent parties to allow scalable self-organizing communities.
       With no single trusted party, cothorities can secure software updates,
@@ -85,7 +84,7 @@ labs:
           Operate at the intersection of operating systems, distributed systems,
           programming languages, formal methods, and computer architecture
         </li>
-      </ul
+      </ul>
     contacts:
       - name: Arseniy Zaostrovnykh
         email: arseniy.zaostrovnykh@epfl.ch
@@ -101,7 +100,7 @@ labs:
         - Payer
       email: mathias.payer@epfl.ch
     description: >
-      ur research focuses on software and systems security. Despite efforts
+      Our research focuses on software and systems security. Despite efforts
       and improvements in bug discovery techniques, some exploitable
       vulnerabilities will remain. We target techniques that both enable
       developers to discover and remove bugs and make programs resilient
@@ -135,7 +134,7 @@ labs:
         - Grossglauser
       email: matthias.grossglauser@epfl.ch
     description: >
-      he Information and Network Dynamics research group is part of the
+      The Information and Network Dynamics research group is part of the
       School of Computer and Communication Sciences at EPFL in Lausanne,
       Switzerland. The group is lead by Matthias Grossglauser and Patrick
       Thiran. Their research focuses broadly on the statistical modeling of
@@ -177,7 +176,7 @@ labs:
       Helping construct software that does what we expect
       <br>LARA is a research group led by Viktor Kunčak. 
       We develop precise automated reasoning techniques : tools,
-      algorithms and languages. The goal of these techniques to help
+      algorithms and languages. The goal of these techniques is to help
       construction of verified computer systems.
     contacts:
       - name: Jad Hamza
@@ -194,7 +193,7 @@ labs:
         - Hubaux
       email: jean-pierre.hubaux@epfl.ch
     description: >
-      ver the last 15 years, the Laboratory for Data Security has pioneered
+      Over the last 15 years, the Laboratory for Data Security has pioneered
       the areas of security and privacy in personalized health and
       mobile/wireless networks as well as tackled interpersonal privacy
       issues. On the first topic, they collaborate extensively with hospitals.
@@ -216,7 +215,7 @@ labs:
         - Le Boudec
       email: jean-yves.leboudec@epfl.ch
     description: >
-      he Computer Communications and Applications Laboratory 2 do research in
+      The Computer Communications and Applications Laboratory 2 do research in
       communication networks, with emphasis on deterministic networks, smart
       grids and optimization of mobility.
     contacts:
@@ -300,7 +299,7 @@ labs:
         - Ebrahimi
       email: touradj.ebrahimi@epfl.ch
     description: >
-      he Multimedia Signal Processing Group is headed by Prof. Touradj Ebrahimi.
+      The Multimedia Signal Processing Group is headed by Prof. Touradj Ebrahimi.
       <br>The group is active in research and teaching in the field of
       multimedia signal processing. Research topics span over three
       highly interconnected disciplines of multimedia signal processing,
@@ -317,7 +316,7 @@ labs:
         - Argyraki
       email: katerina.argyraki@epfl.ch
     description: >
-      The Network Architecture Lab works on fundamtenal questions regarding
+      The Network Architecture Lab works on fundamental questions regarding
       network system design such as : 
       <ul>
         <li>Can we infer network behavior from external observations?</li>
@@ -400,9 +399,11 @@ labs:
       values, such as security, privacy or non discrimination. Currently, they
       are working on ":"
 
-      M achine Learning impact on society
-      Evaluating privacy in complex systems
-      Engineering privacy-preserving systems
+      <ul>
+        <li>Machine Learning impact on society</li>
+        <li>Evaluating privacy in complex systems</li>
+        <li>Engineering privacy-preserving systems</li>
+      </ul>
     contacts:
       - name: Wouter Lueks
         email: wouter.lueks@epfl.ch
