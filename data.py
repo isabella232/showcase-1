@@ -100,6 +100,7 @@ PROJECTS_SCHEMA = sy.Map({"projects":
             sy.Optional("in_incubator"): sy.Bool(),
             sy.Optional("demo"): sy.Map({
                 "title": sy.Str(),
+                sy.Optional("description"): sy.Str(),
                 "url": sy.Url(),
                 "code": sy.Url(),
                 }),
