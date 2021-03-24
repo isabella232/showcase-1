@@ -67,11 +67,12 @@ labs:
       building trustworthy computer systems, i.e., systems that are safe and
       secure. They:
 
-        
-      Explore the fundamental challenges posed to security and safety by
-      large-scale systems consisting of many threads, many nodes, and millions
-      of lines of code written by many programmers
       <ul>
+        <li>
+          Explore the fundamental challenges posed to security and safety by
+          large-scale systems consisting of many threads, many nodes, and millions
+          of lines of code written by many programmers
+        </li>
         <li>
           Seek solutions that solve real-world problems by overcoming theoretical
           worst-case limitations
@@ -319,13 +320,13 @@ labs:
       The Network Architecture Lab works on fundamtenal questions regarding
       network system design such as : 
       <ul>
-        <li>Can we infer network behavior from external observations?
-        <li>Can we improve Internet transparency?
-        <li>Is Internet transparency compatible with user privacy? 
+        <li>Can we infer network behavior from external observations?</li>
+        <li>Can we improve Internet transparency?<
+        <li>Is Internet transparency compatible with user privacy? /li>
         <li>How should we write packet-processing software, such that we can reason
-        about its semantics?
+        about its semantics?</li>
         <li>How should we write packet-processing software, such that we can reason
-        about its performance?
+        about its performance?</li>
       </ul>
     contacts:
       - name: Luis David Pedrosa
@@ -393,7 +394,7 @@ labs:
         - Carmela
         - Troncoso
       email: carmela.troncoso@epfl.ch
-    description:
+    description: >
       The Security and Privacy Engineering Laboratory develops tools and
       methodologies to help engineers building systems that respect societal
       values, such as security, privacy or non discrimination. Currently, they

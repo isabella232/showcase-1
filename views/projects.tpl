@@ -86,7 +86,7 @@
         </h1>
         <h2>Description</h2>
         <p>
-                
+            {{! lab['description'] }}
         </p>
 
 
