@@ -71,12 +71,20 @@ labs:
       Explore the fundamental challenges posed to security and safety by
       large-scale systems consisting of many threads, many nodes, and millions
       of lines of code written by many programmers
-      <br>Seek solutions that solve real-world problems by overcoming theoretical
-      worst-case limitations
-      <br>Build open-source prototypes that enable evaluation of these solutions
-      with real-world workloads
-      <br>Operate at the intersection of operating systems, distributed systems,
-      programming languages, formal methods, and computer architecture
+      <ul>
+        <li>
+          Seek solutions that solve real-world problems by overcoming theoretical
+          worst-case limitations
+        </li>
+        <li>
+          Build open-source prototypes that enable evaluation of these solutions
+          with real-world workloads
+        </li>
+        <li>
+          Operate at the intersection of operating systems, distributed systems,
+          programming languages, formal methods, and computer architecture
+        </li>
+      </ul
     contacts:
       - name: Arseniy Zaostrovnykh
         email: arseniy.zaostrovnykh@epfl.ch
@@ -97,19 +105,24 @@ labs:
         vulnerabilities will remain. We target techniques that both enable
         developers to discover and remove bugs and make programs resilient
         against the exploitation of unknown or unpatched vulnerabilities.
-        <br>To discover bugs we propose (i) sanitization techniques that enforce
-        a security property such as memory or type safety; given concrete
-        program input, our sanitizers then flag any property violations and
-        (ii) fuzzing techniques that leverage static and dynamic analysis to
-        create program inputs to explore program areas that are not yet covered
-        through existing test cases. To protect against exploitable
-        vulnerabilities, we focus on control-flow integrity using specific
-        language semantics, enforcing type integrity, and protecting selective
-        data. Under this premise, we focus on compiler-based, runtime-based, and
-        language-based protection mechanisms and security policies that increase
-        the resilience of applications against attacks (in the presence of
-        software vulnerabilities). All prototypes are released as open-source.
-
+        <ul>
+          <li>
+            To discover bugs we propose (i) sanitization techniques that enforce
+            a security property such as memory or type safety; given concrete
+            program input, our sanitizers then flag any property violations
+        </li>
+        <li>
+          (ii) fuzzing techniques that leverage static and dynamic analysis to
+          create program inputs to explore program areas that are not yet covered
+          through existing test cases. To protect against exploitable
+          vulnerabilities, we focus on control-flow integrity using specific
+          language semantics, enforcing type integrity, and protecting selective
+          data. Under this premise, we focus on compiler-based, runtime-based, and
+          language-based protection mechanisms and security policies that increase
+          the resilience of applications against attacks (in the presence of
+          software vulnerabilities). All prototypes are released as open-source.
+        </li>
+        </ul>
     contacts:
     url: https://hexhive.epfl.ch/
 
@@ -302,16 +315,18 @@ labs:
         - Katerina
         - Argyraki
       email: katerina.argyraki@epfl.ch
-    description: >
+    description: >  
       The Network Architecture Lab works on fundamtenal questions regarding
-      network system design such as :
-      <br>Can we infer network behavior from external observations?
-      <br>Can we improve Internet transparency?
-      <br>Is Internet transparency compatible with user privacy? 
-      <br>How should we write packet-processing software, such that we can reason
-      about its semantics?
-      <br>How should we write packet-processing software, such that we can reason
-      about its performance?
+      network system design such as : 
+      <ul>
+        <li>Can we infer network behavior from external observations?
+        <li>Can we improve Internet transparency?
+        <li>Is Internet transparency compatible with user privacy? 
+        <li>How should we write packet-processing software, such that we can reason
+        about its semantics?
+        <li>How should we write packet-processing software, such that we can reason
+        about its performance?
+      </ul>
     contacts:   
       - name: Luis David Pedrosa
         email: luis.pedrosa@epfl.ch
@@ -384,7 +399,7 @@ labs:
       values, such as security, privacy or non discrimination. Currently, they
       are working on ":" 
       
-      Machine Learning impact on society
+      M achine Learning impact on society
       Evaluating privacy in complex systems
       Engineering privacy-preserving systems
     contacts:
