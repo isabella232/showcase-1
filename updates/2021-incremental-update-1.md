@@ -111,6 +111,18 @@
   - Checked the links
   - Updated the date
 
+---
+
+210325 - Valérian:
+
+- LARA - Viktor Kunčak
+  - bump last_commits & dates_updated
+  - fix licenses
+  - add conferences
+  - https-ize URLs
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
