@@ -12,7 +12,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-lara/stainless
-      date_last_commit: 2021-02-02
+      date_last_commit: 2021-03-23
     doc: https://epfl-lara.github.io/stainless/
     contacts:
       - name: Viktor Kunčak
@@ -27,7 +27,7 @@ projects:
       - Ethereum
     language: Scala
     type: Library, Application
-    license: AGPL-3.0
+    license: Apache-2.0
     in_incubator: true
     c4dt_contact:
       name: Christian Grigis
@@ -36,13 +36,25 @@ projects:
     information:
       - type: Paper
         title: "Satisfiability Modulo Recursive Programs"
-        url: http://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+        url: https://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+        notes:
+          - label: Published at
+            text: SAS 2011
+            url: https://staticanalysis.org
       - type: Paper
         title: "Counter-Example Complete Verification for Higher-Order Functions"
-        url: http://lara.epfl.ch/~kuncak/papers/VoirolETAL15CounterExampleCompleteVerificationHigherOrderFunctions.pdf
+        url: https://lara.epfl.ch/~kuncak/papers/VoirolETAL15CounterExampleCompleteVerificationHigherOrderFunctions.pdf
+        notes:
+          - label: Published at
+            text: Scala Symposium 2015
+            url: http://lampwww.epfl.ch/~hmiller/scala2015
       - type: Paper
         title: "System FR as Foundations for Stainless"
         url: https://arxiv.org/pdf/1904.03482.pdf
+        notes:
+          - label: Published at
+            text: OOPSLA 2019
+            url: https://2019.splashcon.org/track/splash-2019-OOPSLA
       - type: Video
         title: Tools for Verified Scala at Scala Days 2017
         url: https://www.youtube.com/watch?v=d4VeFa0z_Lo
@@ -75,7 +87,7 @@ projects:
       url: https://demo.c4dt.org/stainless
       code: https://github.com/c4dt/service-stainless
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-03-25
     maturity: 2
 
   inox:
@@ -87,7 +99,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-lara/inox
-      date_last_commit: 2021-01-26
+      date_last_commit: 2021-02-23
     contacts:
       - name: Viktor Kunčak
         email: viktor.kuncak@epfl.ch
@@ -100,8 +112,8 @@ projects:
       - Software Verification
     language: Scala
     type: Library, Application
-    license: AGPL-3.0
+    license: Apache-2.0
     notes: >
       Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
     date_added: 2019-03-18
-    date_updated: 2021-02-03
+    date_updated: 2021-03-25
