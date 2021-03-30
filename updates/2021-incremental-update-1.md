@@ -123,6 +123,19 @@
 
 ---
 
+210330 - Christian:
+
+- LCA2 - Jean-Yves Le Boudec
+  - iPRP
+    - Add language and license
+    - Add conf for paper
+  - commelec-api
+    - Add language and license
+  - T-RECS
+    - Add language and license
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
