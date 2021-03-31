@@ -105,7 +105,7 @@
             pages are:
             <ul>
                 <li>
-                    The <a href="https://incubator.c4dt.org">Incubator</a> with
+                    The <a href="/incubator/">Incubator</a> with
                     a shortlist of EPFL labs projects that are worked on by the
                     C4DT Factory
                 </li>

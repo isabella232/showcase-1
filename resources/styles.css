@@ -223,3 +223,15 @@ div.project-details hr {
   margin-left: -15px;
   margin-right: -15px;
 }
+
+div.lab-title {
+  text-align: center;
+}
+
+div.index-image {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1em;
+  padding-top: 1em;
+}

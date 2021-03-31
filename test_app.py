@@ -12,7 +12,10 @@ TEST_DATA = {
             'url': None,
             'prof': MagicMock(),
             'projects': {
-                'proj1': MagicMock(),
+                'proj1': {
+                    'name': None,
+                    'date_added': MagicMock(),
+                    },
                 'proj2': None,
                 },
             },
@@ -92,7 +95,7 @@ def test_project(test_data):
 
     # Check proj1 fields were accessed
     proj1 = test_data()['LAB1']['projects']['proj1']
-    proj1.__getitem__.assert_called()
+    proj1['date_added'].date.assert_called()
 
 def test_index():
     with pytest.raises(bottle.HTTPResponse) as exc:
@@ -111,3 +114,16 @@ def test_showcase_main():
     resp = exc.value
     assert resp.status.startswith('302')
     assert resp.headers['Location'].endswith('/showcase/projects/')
+
+def test_incubator():
+    showcase.incubator()
+
+def test_all_incubator_projects():
+    labs = data.load()
+
+    with patch.object(data, 'load', return_value=labs):
+        for lab_id, lab in labs.items():
+            for project_id, project in lab['projects'].items():
+                if project.get('in_incubator', False):
+                    showcase.incubator_project(project_id)
+
