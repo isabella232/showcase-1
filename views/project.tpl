@@ -8,10 +8,10 @@
         lab_id = lab['lab_id']
 
         trail = [
-            ('Factory', 'https://www.c4dt.org/factory/'),
-            ('Showcase', '/projects/'),
-            ('Labs', '/labs/'),
-            (lab_id, f'/projects/{lab_id}'),
+            ('Factory', '/'),
+            ('Showcase', '/showcase/projects/'),
+            ('Labs', '/showcase/labs/'),
+            (lab_id, f'/showcase/projects/{lab_id}'),
         ]
         here = project['name']
 

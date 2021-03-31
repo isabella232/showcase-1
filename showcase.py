@@ -18,6 +18,9 @@ MATURITY_LABEL = {
         3: "Mature",
         }
 
+# Main Factory page
+FACTORY_URL = "https://www.c4dt.org/factory/software/"
+
 def is_active(project):
     active = None
 
@@ -41,23 +44,28 @@ def server_resources(filename):
 
 @bottle.route('/')
 def index():
-    bottle.redirect('/projects/')
+    bottle.redirect(FACTORY_URL)
 
-@bottle.route('/labs')
+@bottle.route('/showcase/labs')
 def labs_no_slash():
-    bottle.redirect('/labs/')
+    bottle.redirect('/showcase/labs/')
 
-@bottle.route('/labs/')
+@bottle.route('/showcase/labs/')
 @bottle.view('labs')
 def labs():
     return dict(labs=data.load())
 
-@bottle.route('/projects')
-def projects_no_slash():
-    bottle.redirect('/projects/')
+@bottle.route('/showcase')
+@bottle.route('/showcase/')
+def showcase_main():
+    bottle.redirect('/showcase/projects/')
 
-@bottle.route('/projects/')
-@bottle.route('/projects/<lab_id>')
+@bottle.route('/showcase/projects')
+def projects_no_slash():
+    bottle.redirect('/showcase/projects/')
+
+@bottle.route('/showcase/projects/')
+@bottle.route('/showcase/projects/<lab_id>')
 @bottle.view('projects')
 def projects(lab_id=None):
     labs = data.load()
@@ -67,7 +75,7 @@ def projects(lab_id=None):
     return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
             maturity_label=MATURITY_LABEL)
 
-@bottle.route('/project/<lab_id>/<project_id>')
+@bottle.route('/showcase/project/<lab_id>/<project_id>')
 @bottle.view('project')
 def project(lab_id, project_id):
     labs = data.load()

@@ -54,15 +54,15 @@
 <body>
     <%
         trail = [
-            ('Factory', 'https://www.c4dt.org/factory/'),
+            ('Factory', '/'),
         ]
 
         if selected_lab_id is None:
             here = 'Showcase'
         else:
             trail += [
-                ('Showcase', '/projects/'),
-                ('Labs', '/labs/'),
+                ('Showcase', '/showcase/projects/'),
+                ('Labs', '/showcase/labs/'),
             ]
             here = selected_lab_id
         end
@@ -76,7 +76,7 @@
         % if selected_lab_id is None:
         <h1>C4DT affiliated labs projects</h1>
         <p>
-            This page presents all projects from the <a href="/labs/">labs</a> affiliated to the
+            This page presents all projects from the <a href="/showcase/labs/">labs</a> affiliated to the
             Center for Digital Trust.
         % else:
         <h1>
@@ -189,11 +189,11 @@
                             %>
                             <tr class="{{ 'active' if active else '' }}">
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="/projects/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
+                                    <a href="/showcase/projects/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>
 
                                 <td class="proj_name dt-nowrap">
-                                    <a href="/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
+                                    <a href="/showcase/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
                                 </td>
 
                                 % if url:

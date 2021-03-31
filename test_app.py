@@ -101,7 +101,16 @@ def test_index():
     with pytest.raises(bottle.HTTPResponse) as exc:
         showcase.index()
 
-    # Check that we are redirected to '/projects/'
+    # Check that we are redirected to FACTORY_URL
     resp = exc.value
     assert resp.status.startswith('302')
-    assert resp.headers['Location'].endswith('/projects/')
+    assert resp.headers['Location'] == showcase.FACTORY_URL
+
+def test_showcase_main():
+    with pytest.raises(bottle.HTTPResponse) as exc:
+        showcase.showcase_main()
+
+    # Check that we are redirected to '/showcase/projects/'
+    resp = exc.value
+    assert resp.status.startswith('302')
+    assert resp.headers['Location'].endswith('/showcase/projects/')
