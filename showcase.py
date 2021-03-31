@@ -70,7 +70,7 @@ def projects_no_slash():
 def projects(lab_id=None):
     labs = data.load()
     if lab_id and lab_id not in labs:
-        bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
+        bottle.abort(404, f"Lab '{lab_id}' does not exist")
 
     return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
             maturity_label=MATURITY_LABEL)
@@ -81,7 +81,7 @@ def project(lab_id, project_id):
     labs = data.load()
 
     if lab_id not in labs:
-        bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
+        bottle.abort(404, f"Lab '{lab_id}' does not exist")
 
     found_projects = [
             (p, l)
@@ -94,9 +94,9 @@ def project(lab_id, project_id):
     nb_projects = len(found_projects)
 
     if nb_projects == 0:
-        bottle.abort(404, "Project '{}' does not exist".format(project_id))
+        bottle.abort(404, f"Project '{project_id}' does not exist")
     elif nb_projects > 1:
-        bottle.abort(404, "Project '{}' is ambiguous ({} instances)".format(project_id, nb_projects))
+        bottle.abort(404, f"Project '{project_id}' is ambiguous ({nb_projects} instances)")
 
     project, lab = found_projects[0]
     lab['lab_id'] = lab_id
