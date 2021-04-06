@@ -30,7 +30,7 @@
     <%
         trail = [
             ('Factory', '/'),
-            ('Showcase', '/showcase/projects/'),
+            ('Showcase', '/showcase/'),
         ]
         here = 'Labs'
 
@@ -50,7 +50,7 @@
             <tbody>
                 % for lab_id, lab in labs.items():
                 <tr>
-                    <td><a href="/showcase/projects/{{ lab_id }}">{{ lab_id }}</a></td>
+                    <td><a href="/showcase/labs/{{ lab_id }}">{{ lab_id }}</a></td>
                     <td>
                         <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
                     </td>

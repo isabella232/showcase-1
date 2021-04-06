@@ -72,26 +72,32 @@ def labs():
     return dict(labs=data.load())
 
 @bottle.route('/showcase')
+def showcase_no_slash():
+    bottle.redirect('/showcase/')
+
 @bottle.route('/showcase/')
-def showcase_main():
-    bottle.redirect('/showcase/projects/')
-
-@bottle.route('/showcase/projects')
-def projects_no_slash():
-    bottle.redirect('/showcase/projects/')
-
-@bottle.route('/showcase/projects/')
-@bottle.route('/showcase/projects/<lab_id>')
 @bottle.view('projects')
-def projects(lab_id=None):
+def showcase():
     labs = data.load()
-    if lab_id and lab_id not in labs:
+
+    return dict(labs=labs, selected_lab_id=None, is_active=is_active,
+            maturity_label=MATURITY_LABEL)
+
+@bottle.route('/showcase/labs/<lab_id>')
+def lab_no_slash(lab_id):
+    bottle.redirect(f'/showcase/labs/{lab_id}/')
+
+@bottle.route('/showcase/labs/<lab_id>/')
+@bottle.view('projects')
+def projects(lab_id):
+    labs = data.load()
+    if lab_id not in labs:
         bottle.abort(404, f"Lab '{lab_id}' does not exist")
 
     return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
             maturity_label=MATURITY_LABEL)
 
-@bottle.route('/showcase/project/<lab_id>/<project_id>')
+@bottle.route('/showcase/labs/<lab_id>/<project_id>')
 @bottle.view('project')
 def project(lab_id, project_id):
     project, lab = find_project(project_id, lab_id)

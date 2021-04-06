@@ -54,8 +54,8 @@ def test_consistent_data():
             assert 'title' in p['demo'], f"'title' missing from demo section in {p['name']}"
             assert 'url' in p['demo'], f"'url' missing from demo section in {p['name']}"
 
-def test_projects():
-    showcase.projects()
+def test_showcase():
+    showcase.showcase()
 
 def test_labs():
     showcase.labs()
@@ -105,15 +105,6 @@ def test_index():
     resp = exc.value
     assert resp.status.startswith('302')
     assert resp.headers['Location'] == showcase.FACTORY_URL
-
-def test_showcase_main():
-    with pytest.raises(bottle.HTTPResponse) as exc:
-        showcase.showcase_main()
-
-    # Check that we are redirected to '/showcase/projects/'
-    resp = exc.value
-    assert resp.status.startswith('302')
-    assert resp.headers['Location'].endswith('/showcase/projects/')
 
 def test_incubator():
     showcase.incubator()

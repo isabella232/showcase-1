@@ -61,7 +61,7 @@
             here = 'Showcase'
         else:
             trail += [
-                ('Showcase', '/showcase/projects/'),
+                ('Showcase', '/showcase/'),
                 ('Labs', '/showcase/labs/'),
             ]
             here = selected_lab_id
@@ -189,11 +189,11 @@
                             %>
                             <tr class="{{ 'active' if active else '' }}">
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="/showcase/projects/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
+                                    <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>
 
                                 <td class="proj_name dt-nowrap">
-                                    <a href="/showcase/project/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
+                                    <a href="/showcase/labs/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
                                 </td>
 
                                 % if url:

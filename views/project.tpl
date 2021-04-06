@@ -9,9 +9,9 @@
 
         trail = [
             ('Factory', '/'),
-            ('Showcase', '/showcase/projects/'),
+            ('Showcase', '/showcase/'),
             ('Labs', '/showcase/labs/'),
-            (lab_id, f'/showcase/projects/{lab_id}'),
+            (lab_id, f'/showcase/labs/{lab_id}/'),
         ]
         here = project['name']
 
