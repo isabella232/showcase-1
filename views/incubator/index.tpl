@@ -42,10 +42,25 @@
   <p>
   {{ project['layman_desc'] }}
   <p/>
-  
-  <div align="center">
-    <h4><a href="{{ project['p_id'] }}">More details</a></h4>
-  </div>
+
+  <ul>
+    <li>
+      <p>Read the <a href="{{ project['p_id'] }}">project presentation</a></p>
+    </li>
+
+  % if 'demo' in project:
+  %   demo = project['demo']
+    <li>
+      <p>Visit the <a href="{{ project['p_id'] }}/demo">project demonstrator</a></p>
+    </li>
+
+  %   if 'description' in demo:
+  {{ !demo['description'] }}
+  %   end
+  % end
+
+  </ul>
+
   <br/>
 
   % end
