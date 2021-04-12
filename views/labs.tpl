@@ -29,8 +29,8 @@
 <body>
     <%
         trail = [
-            ('Factory', 'https://www.c4dt.org/factory/'),
-            ('Showcase', '/projects/'),
+            ('Factory', '/'),
+            ('Showcase', '/showcase/'),
         ]
         here = 'Labs'
 
@@ -50,7 +50,7 @@
             <tbody>
                 % for lab_id, lab in labs.items():
                 <tr>
-                    <td><a href="/projects/{{ lab_id }}">{{ lab_id }}</a></td>
+                    <td><a href="/showcase/labs/{{ lab_id }}">{{ lab_id }}</a></td>
                     <td>
                         <a href="{{ lab['url'] }}">{{ lab['name'] }}</a>
                     </td>

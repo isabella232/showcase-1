@@ -12,7 +12,10 @@ TEST_DATA = {
             'url': None,
             'prof': MagicMock(),
             'projects': {
-                'proj1': MagicMock(),
+                'proj1': {
+                    'name': None,
+                    'date_added': MagicMock(),
+                    },
                 'proj2': None,
                 },
             },
@@ -37,25 +40,22 @@ def test_consistent_data():
             for lab in labs.values()
             for p in lab['projects'].values()
             ]:
-        # All projects have a date when they were added
-        assert 'date_added' in p, "'date_added' missing in {}".format(p['name'])
-
         # All projects in the incubator have a C4DT contact and a description of work
         if p.get('in_incubator'):
-            assert 'c4dt_contact' in p, "'c4dt_contact' missing in {}".format(p['name'])
-            assert 'c4dt_work' in p, "'c4dt_work' missing in {}".format(p['name'])
+            assert 'c4dt_contact' in p, f"'c4dt_contact' missing in {p['name']}"
+            assert 'c4dt_work' in p, f"'c4dt_work' missing in {p['name']}"
 
         # All projects with code have a type
         if 'code' in p:
-            assert 'type' in p['code'], "'type' missing from code section in {}".format(p['name'])
+            assert 'type' in p['code'], f"'type' missing from code section in {p['name']}"
 
         # All demos have a title and URL
         if 'demo' in p:
-            assert 'title' in p['demo'], "'title' missing from demo section in {}".format(p['name'])
-            assert 'url' in p['demo'], "'url' missing from demo section in {}".format(p['name'])
+            assert 'title' in p['demo'], f"'title' missing from demo section in {p['name']}"
+            assert 'url' in p['demo'], f"'url' missing from demo section in {p['name']}"
 
-def test_projects():
-    showcase.projects()
+def test_showcase():
+    showcase.showcase()
 
 def test_labs():
     showcase.labs()
@@ -95,13 +95,26 @@ def test_project(test_data):
 
     # Check proj1 fields were accessed
     proj1 = test_data()['LAB1']['projects']['proj1']
-    proj1.__getitem__.assert_called()
+    proj1['date_added'].date.assert_called()
 
 def test_index():
     with pytest.raises(bottle.HTTPResponse) as exc:
         showcase.index()
 
-    # Check that we are redirected to '/projects/'
+    # Check that we are redirected to FACTORY_URL
     resp = exc.value
     assert resp.status.startswith('302')
-    assert resp.headers['Location'].endswith('/projects/')
+    assert resp.headers['Location'] == showcase.FACTORY_URL
+
+def test_incubator():
+    showcase.incubator()
+
+def test_all_incubator_projects():
+    labs = data.load()
+
+    with patch.object(data, 'load', return_value=labs):
+        for lab_id, lab in labs.items():
+            for project_id, project in lab['projects'].items():
+                if project.get('in_incubator', False):
+                    showcase.incubator_project(project_id)
+

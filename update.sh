@@ -2,7 +2,7 @@
 
 APACHE_DOCKER_IMAGE="c4dt/apache:latest"
 # Must match the path used when running the actual Apache service
-SHOWCASE_MOUNTPOINT="/var/www/showcase"
+SHOWCASE_MOUNTPOINT="/var/www/factory"
 
 # For docker
 PATH=${PATH}:/snap/bin
@@ -17,7 +17,7 @@ git pull
 # Recreate virtual env
 docker run \
     --rm \
-    --mount type=bind,src=/home/showcase/showcase,dst=${SHOWCASE_MOUNTPOINT} \
+    --mount type=bind,src=/home/factory/showcase,dst=${SHOWCASE_MOUNTPOINT} \
     --user `id -u`:`id -g` \
     ${APACHE_DOCKER_IMAGE} \
     make -C ${SHOWCASE_MOUNTPOINT} clean env

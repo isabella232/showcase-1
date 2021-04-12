@@ -18,6 +18,9 @@ MATURITY_LABEL = {
         3: "Mature",
         }
 
+# Main Factory page
+FACTORY_URL = "https://www.c4dt.org/factory/software/"
+
 def is_active(project):
     active = None
 
@@ -31,70 +34,102 @@ def is_active(project):
 
     return active
 
+def find_project(project_id, lab_id=None):
+    labs = data.load()
+
+    if lab_id is not None and lab_id not in labs:
+        bottle.abort(404, f"Lab '{lab_id}' does not exist")
+
+    for l_id, l in labs.items():
+        if lab_id is not None and l_id != lab_id: continue
+
+        for p_id, p in l['projects'].items():
+            if p_id != project_id: continue
+
+            return {**p, 'p_id': p_id}, {**l, 'lab_id': l_id}
+
+    bottle.abort(404, f"Project '{project_id}' does not exist")
+
 @bottle.route('/robots.txt')
 def server_robots():
     return bottle.static_file('robots.txt', root='./')
 
-@bottle.route('/resources/<filename>')
-def server_resources(filename):
-    return bottle.static_file(filename, root='./resources/')
+@bottle.route('/resources/<path:path>')
+def server_resources(path):
+    return bottle.static_file(path, root='./resources/')
 
 @bottle.route('/')
 def index():
-    bottle.redirect('/projects/')
+    bottle.redirect(FACTORY_URL)
 
-@bottle.route('/labs')
+@bottle.route('/showcase/labs')
 def labs_no_slash():
-    bottle.redirect('/labs/')
+    bottle.redirect('/showcase/labs/')
 
-@bottle.route('/labs/')
+@bottle.route('/showcase/labs/')
 @bottle.view('labs')
 def labs():
     return dict(labs=data.load())
 
-@bottle.route('/projects')
-def projects_no_slash():
-    bottle.redirect('/projects/')
+@bottle.route('/showcase')
+def showcase_no_slash():
+    bottle.redirect('/showcase/')
 
-@bottle.route('/projects/')
-@bottle.route('/projects/<lab_id>')
+@bottle.route('/showcase/')
 @bottle.view('projects')
-def projects(lab_id=None):
+def showcase():
     labs = data.load()
-    if lab_id and lab_id not in labs:
-        bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
+
+    return dict(labs=labs, selected_lab_id=None, is_active=is_active,
+            maturity_label=MATURITY_LABEL)
+
+@bottle.route('/showcase/labs/<lab_id>')
+def lab_no_slash(lab_id):
+    bottle.redirect(f'/showcase/labs/{lab_id}/')
+
+@bottle.route('/showcase/labs/<lab_id>/')
+@bottle.view('projects')
+def projects(lab_id):
+    labs = data.load()
+    if lab_id not in labs:
+        bottle.abort(404, f"Lab '{lab_id}' does not exist")
 
     return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
             maturity_label=MATURITY_LABEL)
 
-@bottle.route('/project/<lab_id>/<project_id>')
+@bottle.route('/showcase/labs/<lab_id>/<project_id>')
 @bottle.view('project')
 def project(lab_id, project_id):
-    labs = data.load()
-
-    if lab_id not in labs:
-        bottle.abort(404, "Lab '{}' does not exist".format(lab_id))
-
-    found_projects = [
-            (p, l)
-            for l_id, l in labs.items()
-            for p_id, p in l['projects'].items()
-            if l_id == lab_id
-            if p_id == project_id
-            ]
-
-    nb_projects = len(found_projects)
-
-    if nb_projects == 0:
-        bottle.abort(404, "Project '{}' does not exist".format(project_id))
-    elif nb_projects > 1:
-        bottle.abort(404, "Project '{}' is ambiguous ({} instances)".format(project_id, nb_projects))
-
-    project, lab = found_projects[0]
-    lab['lab_id'] = lab_id
+    project, lab = find_project(project_id, lab_id)
 
     return dict(project=project, lab=lab, is_active=is_active,
             maturity_label=MATURITY_LABEL)
+
+@bottle.route('/incubator')
+def incubator_no_slash():
+    bottle.redirect('/incubator/')
+
+@bottle.route('/incubator/')
+@bottle.view('incubator/index')
+def incubator(lab_id=None):
+    labs = data.load()
+
+    projects = sorted([
+        {**p, 'p_id': p_id, 'lab': {**lab, 'lab_id': lab_id}}
+        for lab_id, lab in labs.items()
+        for p_id, p in lab['projects'].items()
+        if p.get('in_incubator', False)
+        ],
+        key=lambda p: (not 'demo' in p, p['name'].lower()))
+
+    return dict(projects=projects)
+
+@bottle.route('/incubator/<project_id>')
+@bottle.view('incubator/project_base')
+def incubator_project(project_id):
+    project, lab = find_project(project_id)
+
+    return dict(project=project, lab=lab)
 
 if __name__ == '__main__':
     bottle.run(host='0.0.0.0', port=8080, debug=True, reloader=True)
