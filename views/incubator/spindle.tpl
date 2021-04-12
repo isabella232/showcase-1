@@ -4,9 +4,9 @@
   SPINDLE allows for some statistics on distributed data without sharing any
   data in clear. One kind of statistics it can do is called
   <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a>,
-  which allows a program to make prediction based on a given set of data. It
-  fits many use cases, such as determining the likeliness that some hospital's
-  patient have a disease, or automatically determinate what an image represents.
+  which allows a program to make predictions based on a given set of data. It
+  fits many use cases, such as determining the likeliness that some hospital
+  patient has a disease, or automatically determine what an image represents.
   <br />
   SPINDLE can do all that while at the same time keeping the data private. It
   does so by using a
@@ -32,12 +32,12 @@
 <p>
   Supervised machine learning try to match inputs to outputs, by finding links
   between both. First, the program is given a list of known links, with that, it
-  creates what is called a "model" of the data, which can be used to determinate
+  creates what is called a "model" of the data, which can be used to determine
   what would probably be the output based solely on the inputs.
   <br />
   For example, imagine that you want to determine what will be the color of a
   pen based on some of its features. You first collect the products you can find
-  locally and put it in the table below.
+  locally and put them in the table below.
 </p>
 
 <style type="text/css">
@@ -105,28 +105,32 @@
 </ul>
 
 <p>
-  It is already a bit cumbersome to determinate theses relations, and that's
-  only for 4 products. Imagine having hundreds of producers, thousands of
-  product and many other features.
+  It is already a bit cumbersome to determine theses relations, and that's only
+  for 4 products. Imagine having hundreds of producers, thousands of products
+  and many other features.
   <br />
-  That's where using unsupervised machine learning helps: it discovers itself
-  the relations between each product, creating a "model" representing the data.
-  The output is not as readable as a human would do but takes way less time.
+  That's where using
+  <a href="https://en.wikipedia.org/wiki/Unsupervised_learning"
+    >unsupervised machine learning</a
+  >helps: it discovers by itself the relations between the product features,
+  creating a "model" representing the data. The output is not as readable as a
+  human would do but takes much less time.
   <br />
   Usually, the model has a certain accuracy, as the whole data can rarely be
   transformed in a single relation, so someone using it for prediction has to be
-  aware that it might return wrong results. It also only try to reproduce what
-  happened and can't predict the future, so if a producer wants to make cheap
-  black pens, it will misbehave.
+  aware that it might return wrong results. It also only tries to reproduce what
+  happened and can't predict the future. For example, if a producer wants to
+  make cheap black pens, the model will misbehave, stating that the pen will be
+  red as all the previously seen cheap pens are red.
 </p>
 
 <h2>Homomorphic Cryptography</h2>
 
 <p>
   Cryptography is the science of encoding a message so that only the intended
-  recipient can decode it. It is used throughout computer science, when you
-  login into your computer, you connect to a website or even when you receive a
-  phone call.
+  recipient can decode it. It is used throughout computer science, when you log
+  into your computer, you connect to a website or even when you receive a phone
+  call.
   <br />
   To ensure that no malicious intermediary can decode the message, the sender
   and the receiver have to share some kind of secret, such as a passphrase. As
@@ -136,9 +140,9 @@
 
 <p>
   Let's create a very simple cryptography system which can only encode digits
-  from 0 to 9. We associate each digit to another digit in the same range, shift
-  it by a certain amount, in this case 4. This number of shift is actually the
-  secret that need to be shared with the receiver.
+  from 0 to 9. We associate each digit to another digit in the same range,
+  shifting it by a certain number, in this case 4. This number of shifts is
+  actually the secret that needs to be shared with the receiver.
 </p>
 
 <table>
@@ -174,14 +178,17 @@
 
 <p>
   For example, if you want to send 7 to someone, you'll first encode it as 1 and
-  send it to the receiver, who will decode it to 7. So we are able to send a
-  message, so that only the person having the secret can decode it.
+  send it to the receiver, who will decode it back to 7. This way, we are able
+  to send a message, so that only the person having the secret can decode it.
 </p>
 
 <p>
-  Homomorphic encryption is a special kind of encryption where you can take if
-  you apply a mathematical operation between two encoded message, it will be the
-  same as doing this operation on decoded message.
+  Homomorphic encryption is a special kind of encryption where when you apply a
+  mathematical operation between two encoded message, it will be the same as
+  doing this operation on the decoded messages. Let's say you want to find out
+  the sum of some encoded message, you can add theses messages and decode the
+  resulting one to obtain the sum, as if the messages weren't encoded in the
+  first place.
   <br />
   The cryptographic system we defined before is <i>not</i> homomorphic. As an
   exercise left to the reader, you can try to add two clear messages (0 + 1 = 1)
@@ -189,7 +196,7 @@
 </p>
 
 <p>
-  The maths behind many homomorphic encryption are very complex and won't be
-  explained here. Let's say that the current state-of-the-art homomorphic
-  encryption systems supports both addition and multiplication.
+  The maths behind many homomorphic encryption systems are very complex and
+  won't be explained here. Let's say that the current state-of-the-art
+  homomorphic encryption systems support both addition and multiplication.
 </p>
