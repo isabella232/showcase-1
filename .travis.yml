@@ -15,8 +15,6 @@ stages:
   - prettier_pass
   - name: deploy
     if: branch = main
-  - name: trigger_downstream
-    if: branch = main AND type != pull_request
 
 jobs:
   include:
@@ -37,16 +35,9 @@ jobs:
         - chmod 600 "$HOME/.ssh/id_ed25519"
       deploy:
         provider: script
-        script: scp update.sh factory@c4dtsrv1.epfl.ch:bin/ && ssh factory@c4dtsrv1.epfl.ch bin/update.sh
+        script: ssh factory@c4dtsrv1.epfl.ch mkdir -p bin && scp update.sh factory@c4dtsrv1.epfl.ch:bin/ && ssh factory@c4dtsrv1.epfl.ch bin/update.sh
         on:
           branch: main
-
-    - stage: trigger_downstream
-      jdk: oraclejdk8
-      script: |
-        curl -LO --retry 3 https://raw.github.com/mernst/plume-lib/master/bin/trigger-travis.sh
-        sh trigger-travis.sh --pro c4dt demo $TRAVIS_ACCESS_TOKEN
-        sh trigger-travis.sh --pro c4dt incubator $TRAVIS_ACCESS_TOKEN
 
 notifications:
   email: false
