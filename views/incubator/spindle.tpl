@@ -12,8 +12,7 @@
   does so by using a
   <a href="https://en.wikipedia.org/wiki/Lattice-based_cryptography"
     >new kind of cryptography</a
-  >
-  , allowing to apply common mathematical operations on encrypted data and only
+  >, allowing to apply common mathematical operations on encrypted data and only
   revealing the result.
 </p>
 
@@ -112,7 +111,8 @@
   That's where using
   <a href="https://en.wikipedia.org/wiki/Unsupervised_learning"
     >unsupervised machine learning</a
-  >helps: it discovers by itself the relations between the product features,
+  >
+  helps: it discovers by itself the relations between the product features,
   creating a "model" representing the data. The output is not as readable as a
   human would do but takes much less time.
   <br />
