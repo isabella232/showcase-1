@@ -200,3 +200,27 @@
   won't be explained here. Let's say that the current state-of-the-art
   homomorphic encryption systems support both addition and multiplication.
 </p>
+
+<h2>SPINDLE</h2>
+
+<p>
+  SPINDLE uses the previous concepts, it allows to do some machine learning,
+  using homomorphic encryption to both ensure the privacy of data and to make
+  the machine learning computations. In the demonstrator, we present an use-case
+  based around predicting if a hospital patient is likely to have diabetes,
+  based on the data of three different hospitals.
+</p>
+
+<p>
+  Machine learning usually never finishes, it does its computation many times,
+  with each round using the model created during the previous one. In the
+  demonstrator, you can set the number of wanted round. As to improve the
+  overall speed of the algorithm, each hospital first computes a local model.
+  This local model is then merged with the other models, to obtain a network
+  model, behaving as if it was computed on the aggregated data directly. Then,
+  the querier can ask SPINDLE to predict using this network model.
+</p>
+
+<div align="center">
+  <img src="/resources/incubator/images/spindle/network.svg" />
+</div>
