@@ -136,6 +136,14 @@
 
 ---
 
+210413 - Linus:
+
+- DEDIS - Bryan Ford
+  - Upon request from Pierluca, updates to new and existing projects:
+    - Added DELA
+    - Added Proof-of-Personhood
+    - Updated e-voting description
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
