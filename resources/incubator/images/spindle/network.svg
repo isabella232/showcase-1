@@ -17,8 +17,78 @@
   <defs
      id="defs2">
     <marker
+       style="overflow:visible;"
+       id="marker2922"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2920" />
+    </marker>
+    <marker
        style="overflow:visible"
-       id="marker1045"
+       id="marker2768"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1776" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker2357"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2355" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker2197"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1779" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1797" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1630"
        refX="0"
        refY="0"
        orient="auto"
@@ -28,7 +98,35 @@
          transform="matrix(-0.8,0,0,-0.8,-10,0)"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path1043" />
+         id="path1628" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1482"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1480" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1220"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1218" />
     </marker>
     <marker
        style="overflow:visible"
@@ -310,6 +408,48 @@
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path38289-2" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="marker38729-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path38727-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2768-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1776-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2922-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path2920-7" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -318,16 +458,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="335.72653"
-     inkscape:cy="281.77765"
+     inkscape:zoom="1.51"
+     inkscape:cx="221.27326"
+     inkscape:cy="377.58104"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1276"
      inkscape:window-height="1401"
-     inkscape:window-x="3840"
+     inkscape:window-x="1280"
      inkscape:window-y="18"
      inkscape:window-maximized="0"
      inkscape:snap-object-midpoints="false"
@@ -521,35 +661,26 @@
          style="stroke-width:0.264583" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
-       x="75.544762"
-       y="72.956696"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.35;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
+       x="66.54892"
+       y="67.665024"
        id="text38871"><tspan
          sodipodi:role="line"
-         x="75.544762"
-         y="72.956696"
+         x="66.54892"
+         y="67.665024"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
-         id="tspan38881">ask to train model</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker38729-6)"
-       d="m 109.6131,61.799103 c 0,21.922627 0,21.922627 0,21.922627"
-       id="path38725-4" />
+         id="tspan1035">1. ask to train model</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.35;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
-       x="111.56572"
-       y="70.506142"
+       x="64.46991"
+       y="75.797806"
        id="text38871-1"><tspan
          sodipodi:role="line"
-         x="111.56572"
-         y="70.506142"
+         x="64.46991"
+         y="75.797806"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
-         id="tspan38881-2">when model is trained,</tspan><tspan
-         sodipodi:role="line"
-         x="111.56572"
-         y="74.921173"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
-         id="tspan39884">get prediction</tspan></text>
+         id="tspan1019">4. get model identifier</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -564,19 +695,29 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.35;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="85.337532"
+       x="81.633362"
        y="170.93884"
        id="text39814"><tspan
          sodipodi:role="line"
          id="tspan39812"
-         x="85.337532"
+         x="81.633362"
          y="170.93884"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">every network round, merge</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">3. every network round, merge</tspan><tspan
          sodipodi:role="line"
-         x="85.337532"
+         x="81.633362"
          y="175.35387"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         id="tspan39816">the hospital local's models</tspan></text>
+         id="tspan39816">the hospital local's models,</tspan><tspan
+         sodipodi:role="line"
+         x="81.633362"
+         y="179.76891"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         id="tspan1021">when done, continue with</tspan><tspan
+         sodipodi:role="line"
+         x="81.633362"
+         y="184.18393"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         id="tspan1043">some local rounds</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.35;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -587,12 +728,22 @@
          x="30.077391"
          y="214.16315"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         id="tspan39828">every local round, each hospital</tspan><tspan
+         id="tspan39828">2. every local round, each hospital</tspan><tspan
          sodipodi:role="line"
          x="30.077391"
          y="218.57817"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         id="tspan39832">computes a local model</tspan></text>
+         id="tspan39832">computes a local model,</tspan><tspan
+         sodipodi:role="line"
+         x="30.077391"
+         y="222.99321"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         id="tspan1023">when the local rounds are finished,</tspan><tspan
+         sodipodi:role="line"
+         x="30.077391"
+         y="227.40823"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         id="tspan1041">it continues with a network round</tspan></text>
     <path
        sodipodi:type="spiral"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;marker-end:url(#marker38527)"
@@ -605,9 +756,35 @@
        sodipodi:argument="-9.0768194"
        sodipodi:t0="0"
        d="m 103.83221,153.06195 c -0.9802,-0.35553 -0.004,-1.49669 0.59092,-1.62915 1.61312,-0.35895 2.72343,1.40303 2.66738,2.81099 -0.10027,2.51851 -2.71242,4.02965 -5.03106,3.70561 -3.402709,-0.47554 -5.36274,-4.03528 -4.743844,-7.25113 0.824891,-4.28622 5.362374,-6.70656 9.471204,-5.78207 5.17054,1.16338 8.0558,6.69134 6.8203,11.69127 -1.49636,6.05558 -8.02135,9.40814 -13.911344,7.85853 -6.941158,-1.82616 -10.762433,-9.35198 -8.896761,-16.13141 2.153993,-7.82712 10.683045,-12.11802 18.351485,-9.93499 8.71337,2.4805 13.47452,12.0144 10.97322,20.57155" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.35;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
+       x="112.25134"
+       y="67.728531"
+       id="text38871-0"><tspan
+         sodipodi:role="line"
+         x="112.25134"
+         y="67.728531"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1035-3">5. ask to predict with model identifier</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.35;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
+       x="112.28487"
+       y="75.604576"
+       id="text38871-1-0"><tspan
+         sodipodi:role="line"
+         x="112.28487"
+         y="75.604576"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1019-4">6. get prediction</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker38729)"
-       d="m 105.81356,83.123056 c 0,-21.212862 0,-21.212862 0,-21.212862"
-       id="path1161" />
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker2768);marker-end:url(#marker2922)"
+       d="m 103.13411,61.434346 0.0182,20.82579"
+       id="path2765" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker2768-5);marker-end:url(#marker2922-4)"
+       d="m 108.59187,61.651282 0.0182,20.825791"
+       id="path2765-6" />
   </g>
 </svg>
