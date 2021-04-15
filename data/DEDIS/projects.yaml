@@ -53,10 +53,6 @@ projects:
       date_last_commit: 2021-03-01
     language: Go
     license: AGPL-3.0
-    information:
-      - type: Documentation
-        title: "DEDIS Ledger Architecture"
-        url: https://dedis.github.io/dela
     date_added: 2021-04-13
     date_updated: 2021-04-13
 
@@ -253,7 +249,7 @@ projects:
       anonymized before they are decrypted. Instead of the shuffle used in Helios, we implemented a Neff shuffle
       which is much faster than the original Helios shuffle.
     layman_desc: >
-      The e-voting used in the EPFL voting in summer 2018 and 2020. It allows users
+      The e-voting used in the EPFL voting since 2018. It allows users
       to vote on a distributed system that will wait for the election to be
       over before decrypting the votes, keeping anonymity of the users.
     code:
