@@ -26,7 +26,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/ldsec/lattigo
-      date_last_commit: 2021-01-18
+      date_last_commit: 2021-03-18
     contacts:
       - name: Jean-Philippe Bossuat
         email: jean-philippe.bossuat@epfl.ch
@@ -48,7 +48,7 @@ projects:
     type: Library
     license: Apache-2.0
     date_added: 2019-08-15
-    date_updated: 2021-01-22
+    date_updated: 2021-04-19
     maturity: 1
 
   prifi:
@@ -65,9 +65,17 @@ projects:
       - type: Paper
         title: "PriFi: Low-Latency Metadata Protection for Organizational Networks"
         url: https://arxiv.org/pdf/1710.10237.pdf
+        notes:
+          - label: Published at
+            text: "Proceedings on Privacy Enhancing Technologies (PoPETs)"
+            url: https://sciendo.com/article/10.2478/popets-2020-0061
       - type: Paper
         title: "PriFi: A Low-Latency and Tracking-Resistant Protocol for Local-Area Anonymous Communication"
-        url: http://www.cs.yale.edu/homes/jf/PriFi-WPES2016.pdf
+        url: https://infoscience.epfl.ch/record/223389?ln=en
+        notes:
+          - label: Published at
+            text: "ACM Workshop on Privacy in the Electronic Society (WPES), Vienna, Austria, October 24, 2016"
+            url: http://www.cs.yale.edu/homes/jf/PriFi-WPES2016.pdf
     lines_of_code: 16000
     contacts:
       - name: Ludovic Barman
@@ -81,7 +89,7 @@ projects:
     type: Application, Library
     license: AGPL-3.0
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-19
 
   unlynx:
     name: Unlynx
@@ -93,11 +101,15 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/ldsec/unlynx
-      date_last_commit: 2020-03-19
+      date_last_commit: 2021-03-26
     information:
       - type: Paper
         title: "UnLynx: A Decentralized System for Privacy-Conscious Data Sharing"
-        url: https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
+        url: https://infoscience.epfl.ch/record/229308?ln=en
+        notes:
+          - label: Published at
+            text: "Privacy Enhancing Technologies Symposium, Minneapolis, MN, USA, July 18–21, 2017"
+            url: https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
     lines_of_code: 11000
     tags:
       - Privacy Preserving
@@ -112,7 +124,7 @@ projects:
       - name: Joao de Sá
         email: joao.gomesdesaesousa@epfl.ch
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-19
 
   medco:
     name: MedCo
@@ -126,7 +138,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://medco.epfl.ch/software/
-      date_last_commit: 2020-10-13
+      date_last_commit: 2021-04-14
     lines_of_code: 16000
     tags:
       - Privacy Preserving
@@ -143,7 +155,7 @@ projects:
       email: christian.grigis@epfl.ch
     c4dt_work:
     date_added: 2019-03-18
-    date_updated: 2020-10-13
+    date_updated: 2021-04-19
     maturity: 2
 
   drynx:
@@ -165,7 +177,11 @@ projects:
     information:
       - type: Paper
         title: "Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets"
-        url: https://arxiv.org/pdf/1902.03785.pdf
+        url: https://infoscience.epfl.ch/record/277406?ln=en
+        notes:
+          - label: Published in
+            text: "Ieee Transactions On Information Forensics And Security"
+            url: https://ieeexplore.ieee.org/document/9019831
     tags:
       - Privacy Preserving
       - Medical Data
@@ -188,7 +204,7 @@ projects:
       url: https://demo.c4dt.org/drynx
       code: https://github.com/c4dt/service-drynx
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-19
     maturity: 1
 
   pdci2b2:
@@ -210,7 +226,7 @@ projects:
       - Privacy Preserving
     type: Application
     date_added: 2019-03-18
-    date_updated: 2020-02-06
+    date_updated: 2021-04-19
 
   spindle:
     name: SPINDLE
@@ -224,7 +240,7 @@ projects:
     code:
       type: Private GitHub
       url: https://github.com/ldsec/spindle
-      date_last_commit: 2021-01-21
+      date_last_commit: 2021-04-12
     lines_of_code: 20000
     information:
       - type: Paper
@@ -256,7 +272,7 @@ projects:
       url: https://demo.c4dt.org/spindle
       code: https://github.com/c4dt/service-spindle
     date_added: 2021-01-21
-    date_updated: 2021-01-22
+    date_updated: 2021-04-19
 
   poseidon:
     name: POSEIDON
@@ -274,6 +290,10 @@ projects:
       - type: Paper
         title: Privacy-Preserving Federated Neural Network Learning
         url: https://arxiv.org/abs/2009.00349
+        notes:
+          - label: Published at
+            text: NDSS 2021
+            url: https://www.ndss-symposium.org/ndss-paper/poseidon-privacy-preserving-federated-neural-network-learning/
     tags:
       - Privacy Preserving
       - Homomorphic Encryption
@@ -290,4 +310,4 @@ projects:
       - name: Joao de Sá
         email: joao.gomesdesaesousa@epfl.ch
     date_added: 2020-10-13
-    date_updated: 2021-01-22
+    date_updated: 2021-04-19
