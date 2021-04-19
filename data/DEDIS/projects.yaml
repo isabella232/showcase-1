@@ -1,4 +1,61 @@
 projects:
+  proof-of-personhood:
+    name: Proof-of-Personhood
+    description: Proof that you are an actual person while keeping your anonymity
+    layman_desc: >
+      The internet allows for anonymous participation. While this is great for protecting people like
+      whistleblowers, it can be a burden if people abuse it and create many fake accounts. This project
+      implements a way to prove that you are a unique individual, while still guaranteeing you anonymity
+      while you use services on the internet. Applications range from chat to e-voting and energy-efficient
+      blockchains.
+    tech_desc: >
+      Fake accounts are a big problem on the internet, while not all people want or can identify
+      themselves using state-issued identities. Proof-of-personhood proposes to use personhood parties
+      where people have to physically show up and get identified as real persons. Using cryptographic
+      primitives, it is then possible to prove that you were part of that group, without revealing your
+      individual identity.
+    contacts:
+      - name: Pierluca Borsò
+        email: pierluca.borso@epfl.ch
+    tags:
+      - personhood
+      - anonymity
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/dedis/student_21_pop
+      date_last_commit: 2021-04-13
+    language: Go, Java, Scala, JavaScript
+    license: AGPL-3.0
+    date_added: 2021-04-13
+    date_updated: 2021-04-13
+
+  dela:
+    name: DEDIS Ledger Architecture
+    description: This framework aims to deliver a modular approach to a public ledger implementation.
+    layman_desc: >
+    tech_desc: >
+      With Dela you can: learn the architecture of a distributed ledger, run your blockchain / distributed ledger,
+      implement and test your new idea that will revolutionize the blockchain world by adding your new module’s
+      implementation to the Dela ecosystem.
+    contacts:
+      - name: Noémien Kocher
+        email: noemien.kocher@epfl.ch
+    url: https://dedis.github.io/dela/
+    tags:
+      - blockchain
+      - ledger
+      - decentralized
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/dedis/dela
+      date_last_commit: 2021-03-01
+    language: Go
+    license: AGPL-3.0
+    date_added: 2021-04-13
+    date_updated: 2021-04-13
+
   odyssey:
     name: Odyssey
     description: Auditable Sharing and Management of Sensitive Data Across Jurisdictions.
@@ -186,9 +243,13 @@ projects:
 
   e-voting:
     name: E-voting
-    description: E-voting using a blockchain
+    description: Decentralized, encrypted, fully anonymous e-voting
+    tech_desc: >
+      Our e-voting system is inspired by the first version of Helios where the encrypted ballots are shuffled and
+      anonymized before they are decrypted. Instead of the shuffle used in Helios, we implemented a Neff shuffle
+      which is much faster than the original Helios shuffle.
     layman_desc: >
-      The e-voting used in the EPFL voting in summer 2018. It allows users
+      The e-voting used in the EPFL voting since 2018. It allows users
       to vote on a distributed system that will wait for the election to be
       over before decrypting the votes, keeping anonymity of the users.
     code:
