@@ -143,7 +143,7 @@
     - Added DELA
     - Added Proof-of-Personhood
     - Updated e-voting description
-  
+
 ---
 
 210419 - Linus:
@@ -152,8 +152,6 @@
   - updated links to papers
   - github last commits
   - asked for technical paper of Lattigo, but nothing finalized available
-
----
 
 ---
 

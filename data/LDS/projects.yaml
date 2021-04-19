@@ -66,16 +66,16 @@ projects:
         title: "PriFi: Low-Latency Metadata Protection for Organizational Networks"
         url: https://arxiv.org/pdf/1710.10237.pdf
         notes:
-          - label: Published at
+          - label: Published in
             text: "Proceedings on Privacy Enhancing Technologies (PoPETs)"
             url: https://sciendo.com/article/10.2478/popets-2020-0061
       - type: Paper
         title: "PriFi: A Low-Latency and Tracking-Resistant Protocol for Local-Area Anonymous Communication"
-        url: https://infoscience.epfl.ch/record/223389?ln=en
+        url: https://infoscience.epfl.ch/record/223389
         notes:
           - label: Published at
             text: "ACM Workshop on Privacy in the Electronic Society (WPES), Vienna, Austria, October 24, 2016"
-            url: http://www.cs.yale.edu/homes/jf/PriFi-WPES2016.pdf
+            url: http://wpes2016.di.unimi.it/program
     lines_of_code: 16000
     contacts:
       - name: Ludovic Barman
@@ -105,11 +105,11 @@ projects:
     information:
       - type: Paper
         title: "UnLynx: A Decentralized System for Privacy-Conscious Data Sharing"
-        url: https://infoscience.epfl.ch/record/229308?ln=en
+        url: https://infoscience.epfl.ch/record/229308
         notes:
           - label: Published at
             text: "Privacy Enhancing Technologies Symposium, Minneapolis, MN, USA, July 18–21, 2017"
-            url: https://www.degruyter.com/downloadpdf/j/popets.2017.2017.issue-4/popets-2017-0047/popets-2017-0047.pdf
+            url: https://petsymposium.org/2017/program.php
     lines_of_code: 11000
     tags:
       - Privacy Preserving
@@ -177,10 +177,10 @@ projects:
     information:
       - type: Paper
         title: "Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets"
-        url: https://infoscience.epfl.ch/record/277406?ln=en
+        url: https://infoscience.epfl.ch/record/277406
         notes:
           - label: Published in
-            text: "Ieee Transactions On Information Forensics And Security"
+            text: "IEEE Transactions On Information Forensics And Security"
             url: https://ieeexplore.ieee.org/document/9019831
     tags:
       - Privacy Preserving
