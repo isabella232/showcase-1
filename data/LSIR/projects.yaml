@@ -10,7 +10,9 @@ projects:
     code:
       type: Private GitHub
     contacts:
-      - name: Rémi Philippe Lebret
+      - name: Hamza Harkous
+        email: hamza.harkous@gmail.com
+      - name: Rémi Lebret
         email: remi.lebret@epfl.ch
     tags:
       - Privacy Policy
@@ -21,10 +23,14 @@ projects:
     information:
       - type: Paper
         title: "Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning"
-        url: https://pribot.org/files/Polisis_USENIX_Security_Paper.pdf
+        url: https://infoscience.epfl.ch/record/270808
+        notes:
+          - label: Published at
+            text: USENIX'18
+            url: https://www.usenix.org/conference/usenixsecurity18
     license: commercial
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-22
 
   privyseal:
     name: PrivySeal
@@ -32,12 +38,12 @@ projects:
     layman_desc: >
       PrivySeal provides a personalized set of insights about your data on
       google drive before you install other apps.
-    url: https://privyseal.epfl.ch/#!/
+    url: https://privyseal.epfl.ch
     code:
       type: Private GitHub
     contacts:
-      - name: Rémi Philippe Lebret
-        email: remi.lebret@epfl.ch
+      - name: Hamza Harkous
+        email: hamza.harkous@gmail.com
     tags:
       - Data Analysis
       - Google Drive
@@ -47,13 +53,17 @@ projects:
       - type: Paper
         title: "The Curious Case of the PDF Converter that Likes Mozart: Dissecting and Mitigating the Privacy Risk of Personal Cloud Apps"
         url: https://infoscience.epfl.ch/record/218003
+        notes:
+          - label: Published at
+            text: PETS'16
+            url: https://petsymposium.org/2016
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-22
 
   ai-data-platform-v1:
     name: AI Research Aiding Online Children Safety
     description: Platform for detecting specific risks and threats children are facing online
-    url: https://www.epfl.ch/labs/lsir/ai-research-aiding-online-children-safety/
+    url: https://www.epfl.ch/labs/lsir/ai-research-aiding-online-children-safety
     layman_desc: >
       Machine Learning classifiers and tools to help
       with the detection of specific risks and threats children are
@@ -67,41 +77,46 @@ projects:
     information:
       - type: Demo
         title: Online Technology Demos
-        url: https://modemos.epfl.ch/
+        url: https://modemos.epfl.ch/main
       - type: Demo
         title: Online Image Retrieval Demo
         url: https://modemos.epfl.ch/article
     contacts:
-      - name: Rémi Philippe Lebret
+      - name: Rémi Lebret
         email: remi.lebret@epfl.ch
+      - name: Hamza Harkous
+        email: hamza.harkous@gmail.com
     tags:
       - Image Classification
       - Test Classification
       - Artificial Intelligence
     type: Framework
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-22
 
   ai-data-platform-v2:
     name: AI-Driven Classifier Building Pipeline
     description: Platform for speeding up the development of Artificial-Intelligence classifiers
-    url: https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline/
+    url: https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline
     layman_desc: >
       The platform aims at accelerating the process of building Artificial
       Intelligence classifiers for image and text classification.
     code:
       type: Private GitHub
-      date_last_commit: 2020-06-02
-    doc: https://modemos.epfl.ch/platform_v2_docs/
+    doc: https://modemos.epfl.ch/platform_v2_docs
     information:
       - type: Demo
         title: Online Technology Demos
-        url: http://data-platform.lsir.ch/
+        url: http://data-platform.lsir.ch
       - type: Paper
         title: Weakly Supervised Active Learning with Cluster Annotation
         url: https://arxiv.org/pdf/1812.11780.pdf
+        notes:
+          - label: Published at
+            text: NIPS'18
+            url: https://neurips.cc/Conferences/2018
     contacts:
-      - name: Rémi Philippe Lebret
+      - name: Rémi Lebret
         email: remi.lebret@epfl.ch
     tags:
       - Image Classification
@@ -109,33 +124,41 @@ projects:
       - Artificial Intelligence
     type: Framework
     date_added: 2019-05-22
-    date_updated: 2021-01-22
+    date_updated: 2021-04-22
     maturity: 2
 
   scilens:
     name: SciLens
     description: Helper for science news evaluation
-    url: http://scilens.epfl.ch/
+    url: https://scilens.epfl.ch
     layman_desc: >
       A platform that automatically generates indicators using weakly
       supervised learning, effectively helping non-experts to evaluate more
       accurately the quality of a science news article.
     code:
-      type: Personal GitHub
+      type: Lab GitHub
       url: https://github.com/LSIR/SciLens
-      date_last_commit: 2020-01-29
+      date_last_commit: 2020-11-12
     information:
       - type: Paper
         title: "SciLens: Evaluating the Quality of Scientific News Articles Using Social Media and Scientific Literature Indicators"
         url: https://doi.org/10.1145/3308558.3313657
+        notes:
+          - label: Published at
+            text: WWW'19
+            url: https://www2019.thewebconf.org
       - type: Paper
         title: "SciLens News Platform: A System for Real-Time Evaluation of News Articles"
         url: https://doi.org/10.14778/3415478.3415521
+        notes:
+          - label: Published at
+            text: VLDB'20
+            url: https://vldb2020.org
       - type: Demo
         title: SciLens News Platform Demo
-        url: http://scilens.epfl.ch/demo
+        url: https://newsteller.io
     contacts:
-      - name: Panayotis Smeros
+      - name: Panayiotis Smeros
         email: panayiotis.smeros@epfl.ch
     tags:
       - Test Classification
@@ -145,7 +168,7 @@ projects:
     license: GPL-3.0
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-02-01
+    date_updated: 2021-04-22
 
   media-observatory:
     name: Media Observatory
@@ -158,7 +181,7 @@ projects:
       developing transparent quality and credibility indicators and
       creating a meeting point to foster multidisciplinary research
       opportunities
-    url: https://www.mediaobservatory.com/
+    url: https://www.mediaobservatory.com
     code:
       type: Private GitHub
     contacts:
@@ -172,8 +195,16 @@ projects:
       - type: Paper
         title: A Dynamic Embedding Model of the Media Landscape
         url: https://www.mediaobservatory.com/assets/papers/www19.pdf
+        notes:
+          - label: Published at
+            text: WWW'18
+            url: https://www2018.thewebconf.org
       - type: Paper
         title: "Selection Bias in News Coverage: Learning it, Fighting it"
         url: https://www.mediaobservatory.com/assets/papers/www18.pdf
+        notes:
+          - label: Published at
+            text: WWW'19
+            url: https://www2019.thewebconf.org
     date_added: 2019-09-04
-    date_updated: 2021-01-22
+    date_updated: 2021-04-22

@@ -144,6 +144,18 @@
     - Added Proof-of-Personhood
     - Updated e-voting description
 
+---
+
+210422 - Valérian:
+
+- LSIR - Karl Aberer
+  - bump last_commits & dates_updated
+  - add conferences
+  - https-ize & simplify URLs
+  - avoid using 2nd names for contacts
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
