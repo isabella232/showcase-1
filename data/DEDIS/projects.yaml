@@ -118,9 +118,9 @@ projects:
       - type: Code demo
         url: https://github.com/calypso-demo
         title: Calypso demo from the paper
-
     date_added: 2019-03-18
-    date_updated: 2021-02-19
+    date_updated: 2021-04-23
+    maturity: 2
 
   kyber:
     name: Kyber
