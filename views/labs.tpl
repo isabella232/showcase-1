@@ -18,6 +18,9 @@
 
             // Hide "extra" columns by default
             table.columns(".extra").visible(false);
+
+            // Set focus on the search input
+            $('#labs_filter input').focus();
         } );
 
         function set_search(text) {
