@@ -5,6 +5,16 @@ projects:
     layman_desc: >
       DeepFool is a simple algorithm to find the minimum perturbations
       needed in deep networks to change the outcome of its decision.
+    tech_desc: >
+      State-of-the-art deep neural networks have achieved impressive results on
+      many image classification tasks. However, these same architectures have
+      been shown to be unstable to small, well sought, perturbations of the
+      images. Despite the importance of this phenomenon, no effective methods
+      have been proposed to accurately compute the robustness of
+      state-of-the-art deep classifiers to such perturbations on large-scale
+      datasets. DeepFool proposes efficiently compute perturbations that fool
+      deep networks, and thus reliably quantify the robustness of these
+      classifiers.
     code:
       type: Lab GitHub
       url: https://github.com/LTS4/DeepFool
@@ -16,18 +26,30 @@ projects:
       - Machine Learning
       - Deep Networks
       - Adversarial
-    language: MatLab, Python
+    language: MATLAB, Python
     type: Application
     information:
       - type: Paper
-        title: "DeepFool: a simple and accurate method to fool deep neural networks"
-        url: https://arxiv.org/abs/1511.04599
+        title: "DeepFool: A Simple and Accurate Method to Fool Deep Neural Networks"
+        url: https://infoscience.epfl.ch/record/218057
+        notes:
+          - label: Published at
+            text: 2016 IEEE Conference on Computer Vision and Pattern Recognition
+            url: https://cvpr2016.thecvf.com/program/main_conference
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-26
 
   manifool:
     name: ManiFool
     description: Algorithm for evaluating the invariance properties of deep networks
+    tech_desc: >
+      Deep convolutional neural networks have been shown to be vulnerable to
+      arbitrary geometric transformations. However, there is no systematic
+      method to measure the invariance properties of deep networks to such
+      transformations. ManiFool is a simple yet scalable algorithm to measure
+      the invariance of deep networks. In particular, it measures the
+      robustness of deep networks to geometric transformations in a worst-case
+      regime as they can be problematic for sensitive applications.
     code:
       type: Personal GitHub
       url: https://github.com/moosavism/ManiFool
@@ -42,10 +64,14 @@ projects:
     type: Application
     information:
       - type: Paper
-        title: "Geometric robustness of deep networks: analysis and improvement"
-        url: https://arxiv.org/abs/1711.09115
+        title: "Geometric Robustness of Deep Networks: Analysis and Improvement"
+        url: https://infoscience.epfl.ch/record/253668
+        notes:
+          - label: Published in
+            text: proceedings of the 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition
+            url: https://www.computer.org/csdl/proceedings/cvpr/2018/17D45VtKirt
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-26
 
   sparsefool:
     name: SparseFool
@@ -70,13 +96,18 @@ projects:
       - Machine Learning
       - Deep Networks
     language: Python
+    license: Apache-2.0
     type: Application
     information:
       - type: Paper
         title: "SparseFool: a few pixels make a big difference"
-        url: https://arxiv.org/abs/1811.02248
+        url: https://infoscience.epfl.ch/record/258118
+        notes:
+          - label: Published at
+            text: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition
+            url: https://cvpr2019.thecvf.com/program/main_conference
     date_added: 2019-09-04
-    date_updated: 2021-01-22
+    date_updated: 2021-04-26
 
   universal:
     name: Universal
@@ -97,14 +128,18 @@ projects:
       - Machine Learning
       - Deep Networks
       - Perturbations
-    language: MatLab, Python
+    language: MATLAB, Python
     type: Application
     information:
       - type: Paper
         title: "Universal adversarial perturbations"
-        url: https://arxiv.org/pdf/1610.08401.pdf
+        url: https://infoscience.epfl.ch/record/226156
+        notes:
+          - label: Published in
+            text: proceedings of 2017 IEEE Conference on Computer Vision and Pattern Recognition
+            url: https://www.computer.org/csdl/proceedings/cvpr/2017/12OmNyoiYVr
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-04-26
 
   hold-me-tight:
     name: Hold me tight!
@@ -140,9 +175,13 @@ projects:
     information:
       - type: Paper
         title: "Hold me tight! Influence of discriminative features on deep network boundaries"
-        url: https://arxiv.org/abs/2002.06349
+        url: https://infoscience.epfl.ch/record/280278
+        notes:
+          - label: Published at
+            text: Neural Information Processing Systems (NeurIPS) 2020
+            url: https://neurips.cc/virtual/2020/public/papers.html?filter=sessions&search=poster+session+2
     date_added: 2021-01-27
-    date_updated: 2021-02-01
+    date_updated: 2021-04-26
 
   neural-anisotropy-directions:
     name: Neural Anisotropy Directions
@@ -177,6 +216,10 @@ projects:
     information:
       - type: Paper
         title: "Neural Anisotropy Directions"
-        url: https://arxiv.org/abs/2006.09717
+        url: https://infoscience.epfl.ch/record/280279
+        notes:
+          - label: Published at
+            text: Neural Information Processing Systems (NeurIPS) 2020
+            url: https://neurips.cc/virtual/2020/public/papers.html?filter=sessions&search=Poster+Session+4
     date_added: 2021-01-27
-    date_updated: 2021-02-01
+    date_updated: 2021-04-26
