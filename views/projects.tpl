@@ -71,7 +71,12 @@
     %>
 
     <div class="contents">
-    <img class="float_left" src="/resources/c4dt_logo.png">
+    <picture>
+        <source
+            srcset="/resources/c4dt_logo_dark.png"
+            media="(prefers-color-scheme: dark)">
+        <img class="float_left" src="/resources/c4dt_logo.png">
+    </picture>
     <div class="intro">
         % if selected_lab_id is None:
         <h1>C4DT affiliated labs projects</h1>
@@ -118,7 +123,14 @@
         </p>
         <p>For questions, please contact <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></p>
     </div>
-
+    <div class="color_legend">
+        <div class="legend_line">
+        <span class = "box active_even"></span>
+        <span class = "box active_odd"></span>
+        Active projects
+        
+        </div>
+    </div>
         <table id="projects" class="display cell-border" style="width:100%">
             <thead>
                 <tr>
@@ -187,7 +199,7 @@
 
                             active = is_active(project)
                             %>
-                            <tr class="{{ 'active' if active else '' }}">
+                            <tr class="{{ 'active' if active else 'inactive' }}">
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
                                     <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>

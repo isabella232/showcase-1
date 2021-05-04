@@ -1,7 +1,40 @@
+:root {
+  --dark-grey: #232323;
+  --light-grey: #bfbfbe;
+  --orange: #ffa870;
+  --dark-orange: #c26a336c;
+  --light-orange: #f5cda4;
+  --blue: #0091aa;
+  --light-blue: #a4bfcf;
+  --greenish-blue: #045757;
+  --dark-greenish-blue: #044343;
+
+  --active-odd-row-hover-color: #234b6c;
+  --active-odd-row-color: #133b5c;
+  --active-even-row-hover-color: #2e6f84;
+  --active-even-row-color: #1e5f74;
+  --inactive-odd-row-hover-color: #474747;
+  --inactive-odd-row-color: #373737;
+  --inactive-even-row-hover-color: #4e4e4e;
+  --inactive-even-row-color: #3e3e3e;
+}
+
 body {
   background-color: white;
+  color: #444;
   font-family: Verdana, sans-serif;
   font-size: medium;
+}
+
+div.color_legend {
+  float: left;
+  display: block;
+  height: 35px;
+  text-align: center;
+}
+div.legend_line {
+  display: inline-block;
+  margin-top: 25px;
 }
 
 div.breadcrumbs {
@@ -30,7 +63,10 @@ div.breadcrumbs a:hover {
 h1 {
   text-align: center;
 }
-
+a:link,
+a:visited {
+  color: #289cae;
+}
 img.float_left {
   width: 15%;
   float: left;
@@ -48,13 +84,35 @@ input {
   font-size: medium;
 }
 
-a:link,
-a:visited {
-  color: #289cae;
-}
-
 label {
   color: #ffcba5;
+}
+
+span.box {
+  height: 20px;
+  width: 20px;
+  clear: both;
+  display: inline-block;
+  border: 1px solid #070707;
+}
+
+.active_even {
+  background-color: #f8fff8;
+}
+
+.active_odd {
+  background-color: #f4fff4;
+}
+table.dataTable button {
+  border-radius: 6px;
+  background-color: #fce4d4;
+  font-family: Arial, sans-serif;
+  font-size: medium;
+  border: solid 1px#ffcba5;
+}
+
+table.dataTable button:hover {
+  background-color: #ffcba5;
 }
 
 table.dataTable thead,
@@ -133,18 +191,6 @@ table.dataTable.display tbody tr.active.odd:hover > td.sorting_3 {
 
 table.dataTable.display tbody tr.active.even:hover > td.sorting_3 {
   background-color: #f0fff0;
-}
-
-table.dataTable button {
-  border-radius: 6px;
-  background-color: #fce4d4;
-  font-family: Arial, sans-serif;
-  font-size: medium;
-  border: solid 1px #ffcba5;
-}
-
-table.dataTable button:hover {
-  background-color: #ffcba5;
 }
 
 #labs_info,
@@ -234,4 +280,224 @@ div.index-image {
   padding-right: 20%;
   padding-top: 1em;
   padding-top: 1em;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+  }
+  a:link,
+  a:visited {
+    color: var(--light-orange);
+  }
+
+  div.breadcrumbs {
+    background-color: #202020;
+  }
+
+  input {
+    background-color: #080808;
+  }
+
+  a:link {
+    color: var(--orange);
+  }
+  a:link,
+  a:visited {
+    color: var(--light-orange);
+  }
+
+  table.dataTable button {
+    border-radius: 6px;
+    background-color: var(--dark-orange);
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    color: white;
+    border: solid 1px var(--dark-orange);
+  }
+
+  table.dataTable button:hover {
+    background-color: var(--orange);
+  }
+
+  table.dataTable thead,
+  table.dataTable tfoot {
+    background-color: #333333;
+  }
+
+  table.dataTable tbody tr td {
+    color: white;
+  }
+
+  div.project-header {
+    background-color: #0f0f0f;
+  }
+
+  div.project-details {
+    background-color: #070707;
+  }
+
+  div.dt-buttons {
+    display: inline-block;
+  }
+
+  button.dt-button {
+    padding: 2px !important;
+    color: var(--light-orange) !important;
+    background-color: var(--dark-grey) !important;
+    background-image: none !important;
+  }
+
+  #projects_filter {
+    padding: 5px;
+  }
+
+  .active_even {
+    background-color: var(--active-even-row-color);
+  }
+
+  .active_odd {
+    background-color: var(--active-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd {
+    background-color: var(--inactive-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even {
+    background-color: var(--inactive-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd:hover {
+    background-color: var(--inactive-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even:hover {
+    background-color: var(--inactive-even-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd > td.sorting_1 {
+    background-color: var(--inactive-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even > td.sorting_1 {
+    background-color: var(--inactive-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd:hover > td.sorting_1 {
+    background-color: var(--inactive-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even:hover > td.sorting_1 {
+    background-color: var(--inactive-even-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd > td.sorting_2 {
+    background-color: var(--inactive-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even > td.sorting_2 {
+    background-color: var(--inactive-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd:hover > td.sorting_2 {
+    background-color: var(--inactive-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even:hover > td.sorting_2 {
+    background-color: var(--inactive-even-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd > td.sorting_3 {
+    background-color: var(--inactive-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even > td.sorting_3 {
+    background-color: var(--inactive-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.odd:hover > td.sorting_3 {
+    background-color: var(--inactive-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.inactive.even:hover > td.sorting_3 {
+    background-color: var(--inactive-even-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd {
+    background-color: var(--active-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.even {
+    background-color: var(--active-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd:hover {
+    background-color: var(--active-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.even:hover {
+    background-color: var(--active-even-row-hover-color);
+  }
+  table.dataTable.display tbody tr.active.odd:hover > td {
+    background-color: var(--active-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd > td.sorting_1 {
+    background-color: var(--active-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.even > td.sorting_1 {
+    background-color: var(--active-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd:hover > td.sorting_1 {
+    background-color: var(--active-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.even:hover > td.sorting_1 {
+    background-color: var(--active-even-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd > td.sorting_2 {
+    background-color: var(--active-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.even > td.sorting_2 {
+    background-color: var(--active-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd:hover > td.sorting_2 {
+    background-color: var(--active-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.even:hover > td.sorting_2 {
+    background-color: var(--active-even-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd > td.sorting_3 {
+    background-color: var(--active-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.even > td.sorting_3 {
+    background-color: var(--active-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.odd:hover > td.sorting_3 {
+    background-color: var(--active-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.active.even:hover > td.sorting_3 {
+    background-color: var(--active-even-row-hover-color);
+  }
+
+  table.dataTable.cell-border tbody td {
+    border-top: none !important;
+    border-right: 1px solid #444 !important;
+  }
+
+  table.dataTable.cell-border tbody td {
+    border-top: none !important;
+    border-right: 1px solid #444 !important;
+  }
 }
