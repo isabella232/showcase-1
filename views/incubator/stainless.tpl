@@ -100,7 +100,7 @@ href="https://www.epfl.ch/labs/dedis/">DEDIS</a> lab. It also contains a layer
 allowing it to run an Ethereum virtual machine. Together with Stainless, they
 provide a complete platform for the development and execution of verified Smart
 Contracts, as illustrated in the following diagram:
-<div align="center"><img src="/resources/incubator/images/stainless/interactions.png"></div>
+<div align="center"><img src="/resources/incubator/images/stainless/interactions.svg"></div>
 </p>
 <p>
 The Smart Contract author uses Stainless to determine whether the code fulfills
