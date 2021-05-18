@@ -361,67 +361,81 @@ div.index-image {
     background-color: var(--active-odd-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.odd {
+  table.dataTable.display tbody tr.odd {
     background-color: var(--inactive-odd-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.even {
+  table.dataTable.display tbody tr.even {
     background-color: var(--inactive-even-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.odd:hover {
+  table.dataTable.display tbody tr.odd:hover {
     background-color: var(--inactive-odd-row-hover-color);
   }
 
-  table.dataTable.display tbody tr.inactive.even:hover {
+  table.dataTable.display tbody tr.even:hover {
+    background-color: var(--inactive-even-row-hover-color);
+  }
+  table.dataTable.display tbody tr.odd > td {
+    background-color: var(--inactive-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.even > td {
+    background-color: var(--inactive-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.odd:hover > td {
+    background-color: var(--inactive-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.even:hover > td {
+    background-color: var(--inactive-even-row-hover-color);
+  }
+  table.dataTable.display tbody tr.odd > td.sorting_1 {
+    background-color: var(--inactive-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.even > td.sorting_1 {
+    background-color: var(--inactive-even-row-color);
+  }
+
+  table.dataTable.display tbody tr.odd:hover > td.sorting_1 {
+    background-color: var(--inactive-odd-row-hover-color);
+  }
+
+  table.dataTable.display tbody tr.even:hover > td.sorting_1 {
     background-color: var(--inactive-even-row-hover-color);
   }
 
-  table.dataTable.display tbody tr.inactive.odd > td.sorting_1 {
+  table.dataTable.display tbody tr.odd > td.sorting_2 {
     background-color: var(--inactive-odd-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.even > td.sorting_1 {
+  table.dataTable.display tbody tr.even > td.sorting_2 {
     background-color: var(--inactive-even-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.odd:hover > td.sorting_1 {
+  table.dataTable.display tbody tr.odd:hover > td.sorting_2 {
     background-color: var(--inactive-odd-row-hover-color);
   }
 
-  table.dataTable.display tbody tr.inactive.even:hover > td.sorting_1 {
+  table.dataTable.display tbody tr.even:hover > td.sorting_2 {
     background-color: var(--inactive-even-row-hover-color);
   }
 
-  table.dataTable.display tbody tr.inactive.odd > td.sorting_2 {
+  table.dataTable.display tbody tr.odd > td.sorting_3 {
     background-color: var(--inactive-odd-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.even > td.sorting_2 {
+  table.dataTable.display tbody tr.even > td.sorting_3 {
     background-color: var(--inactive-even-row-color);
   }
 
-  table.dataTable.display tbody tr.inactive.odd:hover > td.sorting_2 {
+  table.dataTable.display tbody tr.odd:hover > td.sorting_3 {
     background-color: var(--inactive-odd-row-hover-color);
   }
 
-  table.dataTable.display tbody tr.inactive.even:hover > td.sorting_2 {
-    background-color: var(--inactive-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.inactive.odd > td.sorting_3 {
-    background-color: var(--inactive-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.inactive.even > td.sorting_3 {
-    background-color: var(--inactive-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.inactive.odd:hover > td.sorting_3 {
-    background-color: var(--inactive-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.inactive.even:hover > td.sorting_3 {
+  table.dataTable.display tbody tr.even:hover > td.sorting_3 {
     background-color: var(--inactive-even-row-hover-color);
   }
 
@@ -432,12 +446,19 @@ div.index-image {
   table.dataTable.display tbody tr.active.even {
     background-color: var(--active-even-row-color);
   }
+  table.dataTable.display tbody tr.active.odd > td {
+    background-color: var(--active-odd-row-color);
+  }
+
+  table.dataTable.display tbody tr.active.even > td {
+    background-color: var(--active-even-row-color);
+  }
 
   table.dataTable.display tbody tr.active.odd:hover {
     background-color: var(--active-odd-row-hover-color);
   }
 
-  table.dataTable.display tbody tr.active.even:hover {
+  table.dataTable.display tbody tr.active.even:hover > td {
     background-color: var(--active-even-row-hover-color);
   }
   table.dataTable.display tbody tr.active.odd:hover > td {
