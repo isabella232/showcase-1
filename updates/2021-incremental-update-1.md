@@ -175,6 +175,14 @@
 
 ---
 
+210520 - Valérian:
+
+- MMSPG - Touradj Ebrahimi
+  - QualityCrowd, Point cloud web renderer: initial
+  - add papers
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):

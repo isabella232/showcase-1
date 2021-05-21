@@ -11,4 +11,61 @@ projects:
       - Photo
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-05-21
+
+  quality-crowd:
+    name: QualityCrowd
+    description: Crowdsourcing image quality assessment
+    layman_desc: >
+      Video quality assessment with subjective testing is both time
+      consuming and expensive. An interesting new approach to traditional
+      testing is the so-called crowdsourcing, moving the testing effort
+      into the internet. QualityCrowd allows to perform subjective quality
+      assessment with crowdsourcing. QualityCrowd allows codec independent
+      quality assessment with a simple web interface, usable with common
+      web browsers.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/qualitycrowd2.1
+      date_last_commit: 2021-02-23
+    tags:
+      - Quality
+      - Image
+    type: Application
+    information:
+      - type: Paper
+        title: QualityCrowd - A Framework for Crowd-based Quality Evaluation
+        url: https://mediatum.ub.tum.de/doc/1098076/1098076.pdf
+    date_added: 2021-05-21
+    date_updated: 2021-05-21
+
+  point-cloud-web-renderer:
+    name: Point cloud web renderer
+    description: Show point cloud files using three.js
+    tech_desc: >
+      The renderer supports visualization of point clouds with real-time
+      interaction, while viewing conditions can be configured. The user
+      is able to choose between either an adaptive, or a fixed splat size
+      rendering mode in order to display the models. The renderer supports
+      both PLY and PCD point cloud file formats. The current settings have
+      been optimized for voxelized contents, without this limiting its
+      usage, since any point cloud can be displayed independently of its
+      geometric structure.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/point-cloud-web-renderer
+      date_last_commit: 2021-05-11
+    tags:
+      - Image
+      - Render
+    type: Library
+    information:
+      - type: Paper
+        title: A comprehensive study of the rate-distortion performance in MPEG point cloud compression
+        url: https://infoscience.epfl.ch/record/272124/files/APSIPA2019.pdf
+        notes:
+          - label: Published in
+            text: APSIPA
+            url: http://apsipa.org
+    date_added: 2021-05-21
+    date_updated: 2021-05-21
