@@ -183,6 +183,16 @@
 
 ---
 
+210521 - Christian:
+
+- NAL - Katerina Argyraki / DSLAB (for common projects)
+  - Update publication links to "infoscience.epfl.ch"
+  - BOLT: update layman/tech descriptions, add conf
+  - Vigor: add license
+  - BOLT, Vigor: sync with DSLAB
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):

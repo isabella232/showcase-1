@@ -1,12 +1,32 @@
 projects:
+  # This is the same as the 'bolt' project from DSLAB
   bolt:
     name: BOLT
     description: >
       Performance Contracts for Software Network Functions
+    layman_desc: >
+      Software network functions (NFs), or middleboxes, promise flexibility and
+      easy deployment of network services but face the serious challenge of
+      unexpected performance behaviour. This behaviour makes it harder for
+      network operators to provision their networks and exposes a new attack
+      surface for adversaries seeking to degrade network performance.
+      The goal of our work is to provide network operators and NF developers
+      with comprehensive understanding of the NF’s entire performance profile,
+      before it is deployed. Such understanding would, for instance, allow
+      operators to conduct precise capacity planning and developers to make
+      informed development decisions.
     tech_desc: >
-      The goal of our work is to provide network operators and NF developers with comprehensive understanding of
-      the NF’s entire performance profile, before it is deployed. Such understanding would, for instance, allow
-      operators to conduct precise capacity planning and developers to make informed development decisions.
+      We propose the notion of performance contracts for NFs. A performance
+      contract enables users to predict and scrutinize NF performance at fine
+      granularities without having to run them. It provider users with an
+      abstraction that enables them to easily parameterize arbitrary input
+      workloads, whether typical, exceptional or adversarial. Given only this
+      abstract description of the workload and not a concrete instance, the
+      contract predicts the performance of the NF without actually running it.
+      The performance predictions are in terms of human-readable formulae,
+      expressed as a function of workload and environment variables, that we
+      together call Performance Critical Variables (PCVs).
+      informed development decisions.
     contacts:
       - name: Rishabh Iyer
         email: rishabh.iyer@epfl.ch
@@ -17,16 +37,20 @@ projects:
       - Software Network
     type: Application
     code:
-      type: Project Github
+      type: Project GitHub
       url: https://github.com/bolt-perf-contracts/bolt
       date_last_commit: 2019-08-05
     language: C
     information:
       - type: Paper
         title: Performance Contracts for Software Network Functions
-        url: https://dslab.epfl.ch/pubs/bolt.pdf
+        url: https://infoscience.epfl.ch/record/264778
+        notes:
+          - label: Published at
+            text: "USENIX NSDI '19"
+            url: https://www.usenix.org/conference/nsdi19/presentation/iyer
     date_added: 2021-01-22
-    date_updated: 2021-01-22
+    date_updated: 2021-05-21
 
   # This is the same as the vigor project from DSLAB
   vigor:
@@ -46,7 +70,8 @@ projects:
     code:
       type: Project Github
       url: https://github.com/vigor-nf/vigor
-      date_last_commit: 2021-02-01
+      date_last_commit: 2021-03-06
+    license: MIT
     tags:
       - Software Verification
       - Middlebox
@@ -54,7 +79,7 @@ projects:
     information:
       - type: Paper
         title: "Verifying Software Network Functions with No Verification Expertise"
-        url: https://dslab.epfl.ch/pubs/vigor.pdf
+        url: https://infoscience.epfl.ch/record/275534
         notes:
           - label: Published in
             text: "SOSP '19"
@@ -69,7 +94,7 @@ projects:
     type: Framework
     maturity: 1
     date_added: 2019-07-26
-    date_updated: 2021-02-24
+    date_updated: 2021-05-21
 
   line:
     name: LINE
