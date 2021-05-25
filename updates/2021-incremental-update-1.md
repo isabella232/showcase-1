@@ -193,6 +193,15 @@
 
 ---
 
+210525 - Linus:
+
+- MLO - Martin Jäggi
+  - updated publication links to infoscience.epfl.ch
+  - added conferences where applicable
+  - updated blog and tutorials links for MLBench
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
