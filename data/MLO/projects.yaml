@@ -121,8 +121,8 @@ projects:
     url: https://mlbench.github.io
     doc: https://mlbench.readthedocs.io/
     information:
-      - type: Tutorials
-        title: Three tutorials for getting up to speed with MLBench
+      - type: Tutorial
+        title: Tutorials for getting up to speed with MLBench
         url: https://mlbench.readthedocs.io/en/latest/tutorials.html
       - type: Blog
         title: MLBench Blog
