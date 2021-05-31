@@ -202,6 +202,12 @@
 
 ---
 
+210527 - Linus:
+
+- PARSA - Babak Falsafi
+  - Updated paper-links to infoscience
+  - Added hbfpemulator
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):

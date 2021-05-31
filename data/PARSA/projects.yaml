@@ -12,7 +12,6 @@ projects:
       type: Lab GitHub
       url: https://github.com/parsa-epfl/cloudsuite
       date_last_commit: 2020-05-14
-    doc: http://cloudsuite.ch/
     contacts:
       - name: Siddharth Gupta
         email: siddharth.gupta@epfl.ch
@@ -25,10 +24,14 @@ projects:
     information:
       - type: Paper
         title: "Clearing the clouds: a study of emerging scale-out workloads on modern hardware"
-        url: https://dl.acm.org/citation.cfm?id=2150982
+        url: https://infoscience.epfl.ch/record/173764
+        notes:
+          - label: Published at
+            text: ASPLOS 2012
+            url: https://dblp.org/db/conf/asplos/asplos2012.html
     license: CloudSuite, other
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-05-27
 
   qflex:
     name: QFlex
@@ -55,8 +58,50 @@ projects:
     information:
       - type: Paper
         title: "SimFlex: Statistical Sampling of Computer System Simulation"
-        url: https://infoscience.epfl.ch/record/112669/files/simflex.pdf
+        url: https://infoscience.epfl.ch/record/112669
+        notes:
+          - label: Published in
+            text: IEEE Micro
+            url: https://ieeexplore.ieee.org/document/1677500
     notes: >
       Some issues with regard to Oracle licenses
     date_added: 2019-03-18
-    date_updated: 2021-01-22
+    date_updated: 2021-05-27
+
+  hbfpemulator:
+    name: ColTraIn HBFP Training Emulator
+    description: >
+      Co-located DNN Training and Inference
+    tech_desc: >
+      HBFP is a hybrid Block Floating-Point (BFP) - Floating-Point (FP) number representation for
+      DNN training introduced by ColTraIn: Co-located DNN Training and Inference team of PARSA and
+      MLO at EPFL. HBFP offers the best of both worlds: the high accuracy of floating-point at the
+      superior hardware density of fixed-point by performing all dot products in BFP and other
+      operations in FP32. For a wide variety of models, HBFP matches floating-point’s accuracy
+      while enabling hardware implementations that deliver up to 8.5x higher throughput. This
+      repository is for ongoing research on training DNNs with HBFP.
+    contacts:
+      - name: Tao Lin
+        email: tao.lin@epfl.ch
+    url: https://parsa.epfl.ch/coltrain/
+    tags:
+      - Machine Learning
+      - Deep Neuronal Networks
+      - Floating Point
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/parsa-epfl/HBFPEmulator
+      date_last_commit: 2021-04-19
+    language: Python
+    license: BSD-3-Clause
+    information:
+      - type: Paper
+        title: "Dynamic Model Pruning with Feedback"
+        url: https://infoscience.epfl.ch/record/277539
+        notes:
+          - label: Published in
+            text: ICLR 2020
+            url: https://iclr.cc/virtual_2020/poster_SJem8lSFwB.html
+    date_added: 2021-05-27
+    date_updated: 2021-05-27
