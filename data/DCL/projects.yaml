@@ -41,6 +41,10 @@ projects:
   at2:
     name: AT2
     description: Asset Transfer System using lightweight broadcast-based primitives instead of consensus
+    layman_desc: >
+      AT2 is a full-fledged asset transfer system (cryptocurrency) without the
+      need for a global consensus, allowing for faster transactions and better
+      scalability than Bitcoin and consensus-based solutions.
     tech_desc: >
       We replace consensus with a lightweight building block -- a
       broadcast-based primitive -- to obtain a full-fledged asset transfer
@@ -56,6 +60,11 @@ projects:
       url: https://github.com/Distributed-EPFL
       date_last_commit: 2021-02-04
     maturity: 1
+    in_incubator: true
+    c4dt_work:
+    c4dt_contact:
+      name: Valérian Rousset
+      email: valerian.rousset@epfl.ch
     tags:
       - Blockchain
       - Cryptocurrencies
