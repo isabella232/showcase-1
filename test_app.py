@@ -49,10 +49,12 @@ def test_consistent_data():
         if 'code' in p:
             assert 'type' in p['code'], f"'type' missing from code section in {p['name']}"
 
-        # All demos have a title and URL
         if 'demo' in p:
+            # All demos have a title
             assert 'title' in p['demo'], f"'title' missing from demo section in {p['name']}"
-            assert 'url' in p['demo'], f"'url' missing from demo section in {p['name']}"
+            # If 'url' is provided, 'code' must also be
+            if 'url' in p['demo']:
+                assert 'code' in p['demo'], f"'code' missing from demo section in {p['name']}"
 
 def test_showcase():
     showcase.showcase()

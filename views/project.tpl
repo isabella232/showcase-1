@@ -62,7 +62,7 @@
             % include('contact.tpl', contact=project['c4dt_contact'])
         </div>
 
-            % if project.get('demo'):
+            % if 'demo' in project and 'url' in project['demo']:
             <div class="header">Demonstrator:</div>
              <a href="{{ project['demo']['url'] }}">{{ project['demo']['title'] }}</a>
             % end

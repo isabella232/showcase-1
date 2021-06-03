@@ -102,8 +102,8 @@ PROJECTS_SCHEMA = sy.Map({"projects":
             sy.Optional("demo"): sy.Map({
                 "title": sy.Str(),
                 sy.Optional("description"): sy.Str(),
-                "url": sy.Url(),
-                "code": sy.Url(),
+                sy.Optional("url"): sy.Url(),
+                sy.Optional("code"): sy.Url(),
                 }),
             })
         )

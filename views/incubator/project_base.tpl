@@ -49,10 +49,25 @@
 
   <h2>Further information</h2>
 
+  % if 'demo' in project:
+  % demo = project['demo']
+  <p>
+  %   if 'url' in demo:
+  A <a href="{{ demo['url'] }}">project demonstrator</a> is available.
+  %   else:
+  A demonstrator is currently being developed and will be available when ready.
+  %   end
+  </p>
+  %   if 'description' in demo:
+  {{ !demo['description'] }}
+  <br>
+  %   end
+  % end
+
   % contact = project['c4dt_contact']
   <p>
   If you are interested in this project, please contact
-  <a href="mailto:{{ contact['email'] }}">{{ contact['name'] }}</a>
+  <a href="mailto:{{ contact['email'] }}">{{ contact['name'] }}</a>.
   </p>
 
 </div>

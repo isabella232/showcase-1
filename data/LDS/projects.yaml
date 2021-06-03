@@ -201,7 +201,7 @@ projects:
     c4dt_work:
     demo:
       title: Drynx demonstrator
-      url: https://demo.c4dt.org/drynx
+      url: https://factory.c4dt.org/incubator/drynx/demo
       code: https://github.com/c4dt/service-drynx
     date_added: 2019-03-18
     date_updated: 2021-04-19
@@ -269,7 +269,7 @@ projects:
     c4dt_work:
     demo:
       title: SPINDLE demonstrator
-      url: https://demo.c4dt.org/spindle
+      url: https://factory.c4dt.org/incubator/spindle/demo
       code: https://github.com/c4dt/service-spindle
     date_added: 2021-01-21
     date_updated: 2021-04-19

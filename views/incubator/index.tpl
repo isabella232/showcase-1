@@ -51,9 +51,12 @@
   % if 'demo' in project:
   %   demo = project['demo']
     <li>
-      <p>Visit the <a href="{{ project['p_id'] }}/demo">project demonstrator</a></p>
+  %   if 'url' in demo:
+      <p>Visit the <a href="{{ demo['url'] }}">project demonstrator</a></p>
+  %   else:
+      <p>A demonstrator is currently being developed and will be available when ready</p>
+  %   end
     </li>
-
   %   if 'description' in demo:
   {{ !demo['description'] }}
   %   end
