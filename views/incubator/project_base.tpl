@@ -42,9 +42,7 @@
 
   % if project['c4dt_work']:
   <h2>C4DT Factory contributions</h2>
-  <p>
-  {{ project['c4dt_work'] }}
-  </p>
+  {{ !project['c4dt_work'] }}
   % end
 
   <h2>Further information</h2>

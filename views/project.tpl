@@ -51,7 +51,7 @@
         <div>
             <div class="header">Factory involvement:</div>
             % if project['c4dt_work']:
-                <div class="contents">{{ project['c4dt_work'] }}</div>
+                <div class="contents">{{ !project['c4dt_work'] }}</div>
             % else:
             This project is in the Incubator, which means that the C4DT Factory Team is actively working on it.
             % end
