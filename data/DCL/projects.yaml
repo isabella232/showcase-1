@@ -30,11 +30,28 @@ projects:
       url: https://github.com/LPD-EPFL/Garfield
       date_last_commit: 2021-02-04
     language: Python, Cuda, C++
+    in_incubator: true
+    c4dt_contact:
+      name: Christian Grigis
+      email: christian.grigis@epfl.ch
+    c4dt_work:
     maturity: 1
     information:
       - type: Paper
         title: "Garfield: System Support for Byzantine Machine Learning"
         url: https://arxiv.org/abs/2010.05888
+    demo:
+      title: Garfield demonstrator
+      description: >
+        <p>
+        This demonstrator illustrates how Machine Learning is used to
+        train a model on known data and how it fares on new data. It describes
+        the Decentralized Learning model, showing how
+        training on more data improves learning, while still keeping control on
+        one’s data. Finally, it shows the negative impact that faulty
+        components have on distributed learning, and how using Garfield helps
+        to develop applications that can tolerate them.
+        </p>
     date_added: 2021-01-20
     date_updated: 2021-02-11
 
