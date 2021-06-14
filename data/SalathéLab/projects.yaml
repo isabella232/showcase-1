@@ -1,19 +1,20 @@
 projects:
-  foodrepo:
-    name: FoodRepo
+  openfoodrepo:
+    name: The Open Food Repo
     description: Database of barcoded food products
     layman_desc: >
-      Food Repo is an open access database on information about barcoded
-      food products sold in Switzerland. Accessible through an open API, it
-      is the largest open data source on Swiss products.
+      The Open Food Repo is an open access database on information about
+      barcoded food products sold in Switzerland. Accessible through an open
+      API, it is the largest open data source on Swiss products.
     maturity: 3
     contacts:
       - name: contact
-        email: support@foodandyou.ch
-    url: https://www.foodrepo.org/
+        email: info@foodrepo.org
+    url: https://www.foodrepo.org
     code:
       type: Lab GitHub
-      url: https://github.com/salathegroup
+      url: https://github.com/digitalepidemiologylab/foodrepo_api
+      date_last_commit: 2020-08-24
     tags:
       - Database
       - Switzerland
@@ -23,14 +24,13 @@ projects:
     information:
       - type: Mobile App
         title: My Food Repo
-        url: https://www.myfoodrepo.org/
+        url: https://www.myfoodrepo.org
     date_added: 2019-03-18
-    date_updated: 2021-01-21
+    date_updated: 2021-06-14
 
   foodandyou:
     name: Food & You
-    description: >
-      Track your individual response to food and help advance science
+    description: Track your individual response to food and help advance science
     layman_desc: >
       Take part in an exciting citizen science project on personalized nutrition!
       Citizen science enables volunteers and professionals to make discoveries together.
@@ -47,36 +47,50 @@ projects:
     type: Application
     url: https://www.foodandyou.ch
     date_added: 2021-01-21
-    date_updated: 2021-01-21
+    date_updated: 2021-06-14
 
   crowdbreaks:
     name: CrowdBreaks
-    description: >
-      Help us track health trends in real time.
+    description: Help us track health trends in real time.
+    url: https://www.crowdbreaks.org
     maturity: 3
     contacts:
       - name: Marcel Salathé
         email: marcel.salathe@epfl.ch
     tags:
-      - Food
+      - Health
       - Survey
-    type: Application
-    url: https://www.foodandyou.ch
+    code:
+      type: Project GitHub
+      url: https://github.com/crowdbreaks
+      date_last_commit: 2021-06-07
+    type:
+    information:
+      - type: Paper
+        title: "Crowdbreaks: Tracking Health Trends Using Public Social Media Data and Crowdsourcing"
+        url: https://infoscience.epfl.ch/record/265362
+        notes:
+          - label: Published in
+            text: Frontiers Public Health 2019
+            url: https://www.frontiersin.org/articles/10.3389/fpubh.2019.00081
     date_added: 2021-01-21
-    date_updated: 2021-01-21
+    date_updated: 2021-06-14
 
   aicrowd:
     name: AIcrowd
-    description: >
-      Crowdsourcing AI to solve real-world problems
-    url: https://www.aicrowd.com/
+    description: Crowdsourcing AI to solve real-world problems
+    url: https://www.aicrowd.com
     contacts:
-      - name: Marcel Salathé
-        email: marcel.salathe@epfl.ch
+      - name: contact
+        email: hello@aicrowd.com
+    code:
+      type: Project GitHub
+      url: https://github.com/AIcrowd
+      date_last_commit: 2021-06-10
     tags:
       - AI
       - CrowdSource
     type: Application
     maturity: 3
     date_added: 2021-01-21
-    date_updated: 2021-01-21
+    date_updated: 2021-06-14

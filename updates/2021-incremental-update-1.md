@@ -233,6 +233,18 @@
   - Move docs to the "doc:" tag
   - DP3T, CrowdNotifier: update links
 
+---
+
+210614 - Valérian:
+
+- SalathéLab
+  - rename from SLAB
+  - foodrepo: add github, fix contact
+  - crowdbreaks: add url, github, paper
+  - aicrowd: add github, fix contact
+
+---
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
