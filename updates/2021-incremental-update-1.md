@@ -208,6 +208,31 @@
   - Updated paper-links to infoscience
   - Added hbfpemulator
 
+---
+
+210607 - Christian:
+
+- SPRING - Carmela Troncoso
+
+  - Update publication links to "infoscience.epfl.ch" when possible.
+    The synthetic_data papaer should be published soon.
+
+    Papers not found in Infoscience:
+
+    - trickster
+    - zksk
+
+    Papers without a PDF in Infoscience:
+
+    - claimchain (also used for hippiepug)
+    - mcsauditing
+
+    Sent an email to Carmela Troncoso and Bogdan Kulynych to ask more info.
+
+  - Add language and license when missing
+  - Move docs to the "doc:" tag
+  - DP3T, CrowdNotifier: update links
+
 Changes:
 
 Date (YYMMDD) - Editor (Christian, Valérian, Linus):
