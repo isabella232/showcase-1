@@ -237,7 +237,7 @@
 
 210614 - Valérian:
 
-- SalathéLab
+- SalatheLab
   - rename from SLAB
   - foodrepo: add github, fix contact
   - crowdbreaks: add url, github, paper
