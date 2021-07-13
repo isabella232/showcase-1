@@ -78,6 +78,10 @@ projects:
       date_last_commit: 2021-02-04
     maturity: 1
     in_incubator: true
+    demo:
+      title: AT2 demonstrator
+      url: https://factory.c4dt.org/incubator/at2/demo
+      code: https://github.com/Distributed-EPFL/at2-web
     c4dt_work:
     c4dt_contact:
       name: Valérian Rousset
