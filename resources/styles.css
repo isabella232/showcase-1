@@ -522,4 +522,13 @@ div.index-image {
     border-top: none !important;
     border-right: 1px solid #444 !important;
   }
+
+  img.dark {
+    background-color: #888888;
+  }
+}
+
+img.padded {
+  padding: 0.5em;
+  margin: 0.5em;
 }

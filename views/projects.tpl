@@ -35,7 +35,11 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
-                "order": [[0, "asc"], [6, "desc"], [20, "desc"], [1, "asc"], [2, "asc"]],
+                "order": [[0, "asc"], [1, "asc"], [3, "desc"], [19, "desc"]],
+                "columnDefs": [
+                    { "width": "20%", "targets": 0},
+                    { "width": "50%", "targets": 1},
+                ]
             } );
 
             // Hide "extra" columns by default
@@ -138,23 +142,24 @@
                     <!-- The "Professor - Lab" column is displayed only on the "all projects" page -->
                     <th class="{{ '' if selected_lab_id is None else 'extra' }}">Professor &mdash; Lab</th>
                     <th>Name</th>
+                    <th>Description</th>
+                    <th>Tags</th>
+                    <th>Maturity</th>
+                    <th class="extra">Professor &mdash; Lab</th>
                     <th class="extra">More information</th>
                     <th class="extra">Date added</th>
                     <th class="extra">Date updated</th>
-                    <th>Maturity</th>
-                    <th>Description</th>
                     <th class="extra">Technical description</th>
                     <th class="extra">Layman description</th>
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
-                    <th>Source code</th>
+                    <th class="extra">Source code</th>
                     <th class="extra">Date last commit</th>
                     <th class="extra">LOC</th>
                     <th class="extra">Documentation</th>
-                    <th>Tags</th>
                     <th class="extra">License</th>
                     <th class="extra">Papers</th>
-                    <th>Contact</th>
+                    <th class="extra">Contact</th>
                     <th title="Most recent between date added and date of last commit" class="extra">Date last activity</th>
                 </tr>
             </thead>
@@ -205,12 +210,36 @@
                             %>
                             <tr class="{{ 'active' if active else 'inactive' }}">
                                 <td data-order="{{category_sort}}">{{category_value}}</td>
-                                <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
+                                <td class="proj_name"
+                                    onclick="window.location='/incubator/{{project_id}}'"
+                                    style="cursor: pointer">
+                                    {{ name }}
                                 </td>
 
-                                <td class="proj_name dt-nowrap">
-                                    <a href="/showcase/labs/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
+                                <td onclick="window.location='/incubator/{{project_id}}'"
+                                    style="cursor: pointer">
+                                    {{ description }}
+                                </td>
+
+                                <td class="dt-center">
+                                    % for tag in tags:
+                                    <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                    % end
+                                </td>
+
+                                % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                                <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
+                                    <img
+                                            src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
+                                            width="25em"
+                                            height="25em"
+                                            title="{{ maturity_label.get(maturity, 0) }}"
+                                            alt="{{ maturity_label.get(maturity, 0) }}"
+                                    >
+                                </td>
+
+                                <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
+                                    <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>
 
                                 % if url:
@@ -222,19 +251,6 @@
                                 <td class="dt-center">{{ date_added.date() }}</td>
 
                                 <td class="dt-center">{{ date_updated.date() }}</td>
-
-                                % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                                <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
-                                    <img
-                                        src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
-                                        width="25em"
-                                        height="25em"
-                                        title="{{ maturity_label.get(maturity, 0) }}"
-                                        alt="{{ maturity_label.get(maturity, 0) }}"
-                                    >
-                                </td>
-
-                                <td>{{ description }}</td>
 
                                 <td>{{ tech_desc }}</td>
 
@@ -257,12 +273,6 @@
                                 <td class="dt-center">
                                     % if doc:
                                     <a href="{{ doc }}">link</a>
-                                    % end
-                                </td>
-
-                                <td class="dt-center">
-                                    % for tag in tags:
-                                    <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
                                     % end
                                 </td>
 

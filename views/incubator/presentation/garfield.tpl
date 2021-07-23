@@ -1,4 +1,4 @@
-<h2>Introduction</h2>
+<h4>Introduction</h4>
 
 <p>
 Garfield is a framework to write <a
@@ -13,7 +13,7 @@ tolerant ML applications. Those terms will be explained in the
 following paragraphs.
 </p>
 
-<h2>Distributed Machine Learning</h2>
+<h4>Distributed Machine Learning</h4>
 
 <p>
 Garfield focuses on Distributed ML, or in other words the use of multiple
@@ -36,12 +36,12 @@ each participant to keep its data secret and only share partial models.
 <p>
 These different goals lead to various distributed architectures, illustrated in
 the following figure.
-<div align="center"><img src="/resources/incubator/images/garfield/models.svg"></div>
+<div align="center"><img class="dark" src="/resources/incubator/images/garfield/models.svg"></div>
 Garfield can work with any of these architectures, and provides examples for
 all of them.
 </p>
 
-<h2>Byzantine Faults</h2>
+<h4>Byzantine Faults</h4>
 
 <p>
 Computer systems can present many kinds of failures, ranging from one-off

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import bottle
+import os.path
 
 import data
 
@@ -58,6 +59,11 @@ def find_project(project_id, lab_id=None):
             return {**p, 'p_id': p_id}, {**l, 'lab_id': l_id}
 
     bottle.abort(404, f"Project '{project_id}' does not exist")
+
+def find_project_tabs(project_id):
+    tabs = filter(lambda tab: os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl")),
+                  ["presentation", "background", "demo", "hands-on", "pilot"])
+    return list(tabs) + ["technical"]
 
 @bottle.route('/robots.txt')
 def server_robots():
@@ -134,11 +140,18 @@ def incubator(lab_id=None):
     return dict(projects=projects)
 
 @bottle.route('/incubator/<project_id>')
-@bottle.view('incubator/project_base')
 def incubator_project(project_id):
+    tabs = find_project_tabs(project_id)
+    bottle.redirect('/incubator/' + project_id + "/" + tabs[0])
+
+@bottle.route('/incubator/<project_id>/<tab>')
+@bottle.view('incubator/tabs')
+def incubator_project(project_id, tab):
     project, lab = find_project(project_id)
 
-    return dict(project=project, lab=lab)
+    return dict(project=project, lab=lab,
+                tab=tab, tabs=find_project_tabs(project_id),
+                is_active=is_active, maturity_label=MATURITY_LABEL)
 
 if __name__ == '__main__':
     bottle.run(host='0.0.0.0', port=8080, debug=True, reloader=True)

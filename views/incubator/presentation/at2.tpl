@@ -1,4 +1,4 @@
-<h2>Introduction to Blockchains</h2>
+<h4>Introduction to Blockchains</h4>
 
 <p>
   Blockchains have been around for some years now, you've probably come across the
@@ -11,7 +11,7 @@
   great compared to payment systems like Visa which handles 40'000 TPS.
 </p>
 
-<h2>How AT2 is used in this Demo</h2>
+<h4>How AT2 is used in this Demo</h4>
 
 <p>
   In this specific case of asset transfer, one doesn't need a "full-blockchain",
