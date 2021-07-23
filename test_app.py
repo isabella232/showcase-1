@@ -118,5 +118,5 @@ def test_all_incubator_projects():
         for lab_id, lab in labs.items():
             for project_id, project in lab['projects'].items():
                 if project.get('in_incubator', False):
-                    showcase.incubator_project(project_id)
+                    showcase.incubator_project(project_id, 'technical')
 
