@@ -1,6 +1,7 @@
 projects:
   cloudsuite:
     name: CloudSuite
+    category: Other
     description: Benchmark suite for cloud services
     layman_desc: >
       CloudSuite is a benchmark suite for cloud services. The third release
@@ -35,6 +36,7 @@ projects:
 
   qflex:
     name: QFlex
+    category: Other
     description: A QEMU-based family of full-system ARM simulators
     layman_desc: >
       QFlex is a full-system cycle-accurate computer architecture simulator
@@ -70,6 +72,7 @@ projects:
 
   hbfpemulator:
     name: ColTraIn HBFP Training Emulator
+    category: Other
     description: >
       Co-located DNN Training and Inference
     tech_desc: >

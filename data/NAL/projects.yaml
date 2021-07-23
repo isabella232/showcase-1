@@ -2,6 +2,7 @@ projects:
   # This is the same as the 'bolt' project from DSLAB
   bolt:
     name: BOLT
+    category: Learning
     description: >
       Performance Contracts for Software Network Functions
     layman_desc: >
@@ -55,6 +56,7 @@ projects:
   # This is the same as the vigor project from DSLAB
   vigor:
     name: Vigor
+    category: Verification
     description: Formally verified and performant software Middleboxes
     tech_desc: >
       Software stack and toolchain for building and running software
@@ -98,6 +100,7 @@ projects:
 
   line:
     name: LINE
+    category: Verification
     description: Accurate Network emulator
     layman_desc: >
       LINE is a network emulator designed for realism, accuracy and

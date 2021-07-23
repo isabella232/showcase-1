@@ -1,6 +1,7 @@
 projects:
   choix:
     name: Choix
+    category: Security
     description: Library that provides inference algorithms for models based on Luce's choice axiom
     code:
       type: Personal GitHub
@@ -35,6 +36,7 @@ projects:
 
   who-is-that:
     name: Who is that?
+    category: Learning
     url: https://who-is-th.at/
     description: Machine Learning framework to search a database via similarity samples
     layman_desc: >
@@ -55,6 +57,7 @@ projects:
 
   kickscore:
     name: kickscore
+    category: Learning
     description: Dynamic skill rating system
     layman_desc: >
       Kickscore can be used to understand & visualize the skill of
@@ -104,6 +107,7 @@ projects:
 
   predikon:
     name: Predikon
+    category: Learning
     url: http://www.predikon.ch/
     description: Predictions about votes in Switzerland
     layman_desc: >

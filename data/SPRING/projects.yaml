@@ -1,6 +1,7 @@
 projects:
   synthetic_data:
     name: Synthetic data privacy evaluation
+    category: Privacy
     description: Privacy evaluation framework for synthetic data releases
     layman_desc: >
       The framework implemented in this library allows data holders to evaluate
@@ -45,6 +46,7 @@ projects:
 
   claimchain:
     name: ClaimChain
+    category: Privacy
     description: Prove your identity with regards to others
     layman_desc: >
       A decentralized public key distribution system with an emphasis on
@@ -76,6 +78,7 @@ projects:
 
   lightnion:
     name: Lightnion
+    category: Privacy
     description: Anonymous communication in browsers via the Tor network
     layman_desc: >
       A Javascript library for browsers for anonymous communication via the
@@ -103,6 +106,7 @@ projects:
 
   trickster:
     name: Trickster
+    category: Privacy
     description: Sophisticated attacks on Machine Learning models
     layman_desc: >
       Trickster allows to attack machine learning models where the attack
@@ -137,6 +141,7 @@ projects:
 
   hippiepug:
     name: Hippiepug
+    category: Privacy
     description: Sublinear-traversal blockchains and efficient key-value Merkle trees
     layman_desc: >
       This library provides implementations of two cryptographic data
@@ -167,6 +172,7 @@ projects:
 
   mcsauditing:
     name: MCSAuditing
+    category: Privacy
     description: Evaluation code for mobile crowdsourcing privacy
     tech_desc: This tool implements the evaluation framework described in the paper
     contacts:
@@ -195,6 +201,7 @@ projects:
 
   zksk:
     name: Zero-Knowledge Swiss Knife
+    category: Privacy
     description: Library for prototyping composable zero-knowledge proofs in the discrete-log setting.
     code:
       type: Lab GitHub
@@ -226,6 +233,7 @@ projects:
 
   dp3t:
     name: Decentralized Privacy-Preserving Proximity Tracing
+    category: Privacy
     description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
     layman_desc: >
       The goal of the DP3T protocol is to simplify and accelerate the process
@@ -263,6 +271,7 @@ projects:
 
   crowdnotifier:
     name: CrowdNotifier
+    category: Privacy
     description: Decentralized Privacy-Preserving Presence Tracing
     layman_desc: >
       CrowdNotifier is a protocol that can complement manual contact tracing by
@@ -299,6 +308,7 @@ projects:
 
   petrelic:
     name: Petrelic
+    category: Privacy
     description: A wrapper around RELIC pairings
     tech_desc: >
       petrelic is a Python wrapper around RELIC. It provides a simple python
@@ -323,6 +333,7 @@ projects:
 
   sscred:
     name: SSCred
+    category: Privacy
     description: A library to facilitate anonymous authentication
     tech_desc: >
       SSCred provides the following primitives:
@@ -350,6 +361,7 @@ projects:
 
   mia:
     name: mia
+    category: Privacy
     description: A library for running membership inference attacks (MIA) against machine learning models
     tech_desc: >
       These are attacks against privacy of the training data. In MIA, an

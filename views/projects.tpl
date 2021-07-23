@@ -35,7 +35,7 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
-                "order": [[5, "desc"], [19, "desc"], [0, "asc"], [1, "asc"]],
+                "order": [[0, "asc"], [5, "desc"], [19, "desc"], [1, "asc"], [2, "asc"]],
             } );
 
             // Hide "extra" columns by default
@@ -135,6 +135,7 @@
             <thead>
                 <tr>
                     <!-- The "Professor - Lab" column is displayed only on the "all projects" page -->
+                    <th>Category</th>
                     <th class="{{ '' if selected_lab_id is None else 'extra' }}">Professor &mdash; Lab</th>
                     <th>Name</th>
                     <th class="extra">More information</th>
@@ -158,125 +159,133 @@
                 </tr>
             </thead>
             <tbody>
-                % for lab_id, lab in labs.items():
-                    % if selected_lab_id is None or selected_lab_id == lab_id:
-                        % for project_id, project in lab['projects'].items():
-                            <%
-                            prof = lab['prof']
-                            name = project['name']
-                            date_added = project.get('date_added')
-                            date_updated = project.get('date_updated', date_added)
-                            maturity = project.get('maturity', 0)
-                            description = project.get('description', '')
-                            tech_desc = project.get('tech_desc', '')
-                            layman_desc = project.get('layman_desc', '')
-                            language = project.get('language', '')
-                            proj_type = ', '.join(map(str, project.get('type', [])))
-                            url = project.get('url')
-                            code = project.get('code', {})
-                            date_last_commit = code.get('date_last_commit', '')
-                            loc = project.get('lines_of_code', '')
-                            doc = project.get('doc')
-                            tags = project.get('tags', [])
-                            license = ', '.join(map(str, project.get('license', [])))
-                            papers = [
-                                info
-                                for info in sorted(project.get('information', []), key=lambda v: v['type'])
-                                if info['type'] == 'Paper'
-                            ]
+                % for category_show in categories.items():
+                    % for lab_id, lab in labs.items():
+                        % if selected_lab_id is None or selected_lab_id == lab_id:
+                            % for project_id, project in lab['projects'].items():
+                                <%
+                                category = ', '.join(map(str, project.get('category', [])))
+                                if category != category_show[0]:
+                                    continue
+                                end
 
-                            # Use Lab Professor as default contact
-                            default_contact = dict(prof, name=' '.join(prof['name']))
-                            contacts = project.get('contacts', [default_contact])
+                                prof = lab['prof']
+                                name = project['name']
+                                date_added = project.get('date_added')
+                                date_updated = project.get('date_updated', date_added)
+                                maturity = project.get('maturity', 0)
+                                description = project.get('description', '')
+                                tech_desc = project.get('tech_desc', '')
+                                layman_desc = project.get('layman_desc', '')
+                                language = project.get('language', '')
+                                proj_type = ', '.join(map(str, project.get('type', [])))
+                                url = project.get('url')
+                                code = project.get('code', {})
+                                date_last_commit = code.get('date_last_commit', '')
+                                loc = project.get('lines_of_code', '')
+                                doc = project.get('doc')
+                                tags = project.get('tags', [])
+                                license = ', '.join(map(str, project.get('license', [])))
+                                papers = [
+                                    info
+                                    for info in sorted(project.get('information', []), key=lambda v: v['type'])
+                                    if info['type'] == 'Paper'
+                                ]
 
-                            # Skip projects with a `date_added` in the future.
-                            # This allows to schedule the appearance of projects in the showcase.
-                            import datetime
-                            today = datetime.datetime.now()
-                            if date_added > today:
-                                continue
-                            end
+                                # Use Lab Professor as default contact
+                                default_contact = dict(prof, name=' '.join(prof['name']))
+                                contacts = project.get('contacts', [default_contact])
 
-                            active = is_active(project)
-                            %>
-                            <tr class="{{ 'active' if active else 'inactive' }}">
-                                <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
-                                </td>
+                                # Skip projects with a `date_added` in the future.
+                                # This allows to schedule the appearance of projects in the showcase.
+                                import datetime
+                                today = datetime.datetime.now()
+                                if date_added > today:
+                                    continue
+                                end
 
-                                <td class="proj_name dt-nowrap">
-                                    <a href="/showcase/labs/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
-                                </td>
+                                active = is_active(project)
+                                %>
+                                <tr class="{{ 'active' if active else 'inactive' }}">
+                                    <td data-order="{{category_show[1]}}">{{category_show[1]}}</td>
+                                    <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
+                                        <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
+                                    </td>
 
-                                % if url:
-                                <td class=""><a href="{{ url }}">Home page</a></td>
-                                % else:
-                                <td class=""></td>
-                                % end
+                                    <td class="proj_name dt-nowrap">
+                                        <a href="/showcase/labs/{{ lab_id }}/{{ project_id }}">{{ name }}</a>
+                                    </td>
 
-                                <td class="dt-center">{{ date_added.date() }}</td>
-
-                                <td class="dt-center">{{ date_updated.date() }}</td>
-
-                                % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                                <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
-                                    <img
-                                        src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
-                                        width="25em"
-                                        height="25em"
-                                        title="{{ maturity_label.get(maturity, 0) }}"
-                                        alt="{{ maturity_label.get(maturity, 0) }}"
-                                    >
-                                </td>
-
-                                <td>{{ description }}</td>
-
-                                <td>{{ tech_desc }}</td>
-
-                                <td>{{ layman_desc }}</td>
-
-                                <td class="dt-center">{{ language }}</td>
-
-                                <td>{{ proj_type }}</td>
-
-                                % if 'url' in code:
-                                <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
-                                % else:
-                                <td>{{ code.get('type', '') }}</td>
-                                % end
-
-                                <td class="dt-center">{{ date_last_commit.date() if date_last_commit else '' }}</td>
-
-                                <td class="dt-center">{{ loc }}</td>
-
-                                <td class="dt-center">
-                                    % if doc:
-                                    <a href="{{ doc }}">link</a>
+                                    % if url:
+                                    <td class=""><a href="{{ url }}">Home page</a></td>
+                                    % else:
+                                    <td class=""></td>
                                     % end
-                                </td>
 
-                                <td class="dt-center">
-                                    % for tag in tags:
-                                    <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                    <td class="dt-center">{{ date_added.date() }}</td>
+
+                                    <td class="dt-center">{{ date_updated.date() }}</td>
+
+                                    % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                                    <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
+                                        <img
+                                            src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
+                                            width="25em"
+                                            height="25em"
+                                            title="{{ maturity_label.get(maturity, 0) }}"
+                                            alt="{{ maturity_label.get(maturity, 0) }}"
+                                        >
+                                    </td>
+
+                                    <td>{{ description }}</td>
+
+                                    <td>{{ tech_desc }}</td>
+
+                                    <td>{{ layman_desc }}</td>
+
+                                    <td class="dt-center">{{ language }}</td>
+
+                                    <td>{{ proj_type }}</td>
+
+                                    % if 'url' in code:
+                                    <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
+                                    % else:
+                                    <td>{{ code.get('type', '') }}</td>
                                     % end
-                                </td>
 
-                                <td class="dt-center">{{ license }}</td>
+                                    <td class="dt-center">{{ date_last_commit.date() if date_last_commit else '' }}</td>
 
-                                <td>
-                                    % include('papers.tpl', papers=papers)
-                                </td>
+                                    <td class="dt-center">{{ loc }}</td>
 
-                                <td class="dt-nowrap">
-                                    % for contact in contacts:
-                                    <div>
-                                        % include('contact.tpl', contact=contact)
-                                    </div>
-                                    % end
-                                </td>
+                                    <td class="dt-center">
+                                        % if doc:
+                                        <a href="{{ doc }}">link</a>
+                                        % end
+                                    </td>
 
-                                <td class="dt-center">{{ max(date_added, date_last_commit if date_last_commit else date_added).date() }}</td>
-                            </tr>
+                                    <td class="dt-center">
+                                        % for tag in tags:
+                                        <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                        % end
+                                    </td>
+
+                                    <td class="dt-center">{{ license }}</td>
+
+                                    <td>
+                                        % include('papers.tpl', papers=papers)
+                                    </td>
+
+                                    <td class="dt-nowrap">
+                                        % for contact in contacts:
+                                        <div>
+                                            % include('contact.tpl', contact=contact)
+                                        </div>
+                                        % end
+                                    </td>
+
+                                    <td class="dt-center">{{ max(date_added, date_last_commit if date_last_commit else date_added).date() }}</td>
+                                </tr>
+                            % end
                         % end
                     % end
                 % end

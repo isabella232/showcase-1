@@ -1,6 +1,7 @@
 projects:
   proshare:
     name: ProShare
+    category: Privacy
     description: Privacy-preserving photo sharing
     layman_desc: >
       Proshare allows you to share your photos, while protecting sensible
@@ -15,6 +16,7 @@ projects:
 
   quality-crowd:
     name: QualityCrowd
+    category: Other
     description: Crowdsourcing image quality assessment
     layman_desc: >
       Video quality assessment with subjective testing is both time
@@ -41,6 +43,7 @@ projects:
 
   point-cloud-web-renderer:
     name: Point cloud web renderer
+    category: Other
     description: Show point cloud files using three.js
     tech_desc: >
       The renderer supports visualization of point clouds with real-time

@@ -1,6 +1,7 @@
 projects:
   deepfool:
     name: DeepFool
+    category: Learning
     description: Simple algorithm to find the minimum adversarial perturbations in deep networks
     layman_desc: >
       DeepFool is a simple algorithm to find the minimum perturbations
@@ -41,6 +42,7 @@ projects:
 
   manifool:
     name: ManiFool
+    category: Learning
     description: Algorithm for evaluating the invariance properties of deep networks
     tech_desc: >
       Deep convolutional neural networks have been shown to be vulnerable to
@@ -75,6 +77,7 @@ projects:
 
   sparsefool:
     name: SparseFool
+    category: Learning
     description: Geometry-inspired sparse attack on deep networks
     layman_desc: >
       Deep Neural Networks have achieved extraordinary results on image
@@ -111,6 +114,7 @@ projects:
 
   universal:
     name: Universal
+    category: Learning
     description: Universal adversarial perturbations
     layman_desc: >
       Proposing a universal (image-agnostic) and very small perturbation
@@ -143,6 +147,7 @@ projects:
 
   hold-me-tight:
     name: Hold me tight!
+    category: Learning
     description: >
       Influence of discriminative features on deep network boundaries in ML
     tech_desc: >
@@ -185,6 +190,7 @@ projects:
 
   neural-anisotropy-directions:
     name: Neural Anisotropy Directions
+    category: Learning
     description: >
       Analyzing the role of the network architecture in shaping the inductive bias of deep classifiers.
     tech_desc: >

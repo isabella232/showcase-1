@@ -1,6 +1,7 @@
 projects:
   proof-of-personhood:
     name: Proof-of-Personhood
+    category: Privacy
     description: Proof that you are an actual person while keeping your anonymity
     layman_desc: >
       The internet allows for anonymous participation. While this is great for protecting people like
@@ -32,6 +33,7 @@ projects:
 
   dela:
     name: DEDIS Ledger Architecture
+    category: Blockchain
     description: This framework aims to deliver a modular approach to a public ledger implementation.
     layman_desc: >
     tech_desc: >
@@ -58,6 +60,7 @@ projects:
 
   odyssey:
     name: Odyssey
+    category: Blockchain
     description: Auditable Sharing and Management of Sensitive Data Across Jurisdictions.
     layman_desc: >
       Odyssey is a set of applications and tools that enables sharing of sensitive data
@@ -84,6 +87,7 @@ projects:
 
   calypso:
     name: Calypso
+    category: Blockchain
     description: Encrypted storage with access control
     layman_desc: >
       Store data encrypted on the blockchain and use a decentralized access
@@ -124,6 +128,7 @@ projects:
 
   kyber:
     name: Kyber
+    category: Privacy
     description: Cryptographic library
     layman_desc: >
       A low level cryptographic library to create new cryptographic
@@ -148,6 +153,7 @@ projects:
 
   omniledger:
     name: OmniLedger
+    category: Blockchain
     description: Ethereum-like blockchain implementation based on skipchains
     layman_desc: >
       OmniLedger is a high performance blockchain solution developed by the
@@ -218,6 +224,7 @@ projects:
 
   onet:
     name: Onet
+    category: Blockchain
     description: Communication protocols
     layman_desc: >
       Library to write applications and protocols in a decentralized
@@ -244,6 +251,7 @@ projects:
 
   e-voting:
     name: E-voting
+    category: Security
     description: Decentralized, encrypted, fully anonymous e-voting
     tech_desc: >
       Our e-voting system is inspired by the first version of Helios where the encrypted ballots are shuffled and
@@ -278,6 +286,7 @@ projects:
 
   drand:
     name: DRand
+    category: Security
     description: Publicly verifiable randomness
     layman_desc: >
       In many distributed applications, it is important to get a provably
@@ -308,6 +317,7 @@ projects:
 
   purbs:
     name: Purbs
+    category: Privacy
     description: Metadata leakage prevention for encrypted communication and storage
     layman_desc: >
       A library for a novel encoding approach preventing metadata leakage
@@ -337,6 +347,7 @@ projects:
 
   threshold-logical-clocks:
     name: Threshold Logical Clocks
+    category: Blockchain
     description: Solving the consensus problem in a new way by creating a global clock
     tech_desc: >
       An attempt to simplify asynchronous consensus by building atop a novel
@@ -373,6 +384,7 @@ projects:
 
   twins:
     name: Twins
+    category: Privacy
     description: >
       Linking patients to their physical and digital TWINs
     layman_desc: >
@@ -391,6 +403,7 @@ projects:
 
   simnet:
     name: SimNet
+    category: Security
     description: >
       SimNet is a tool to simulate decentralized applications in the cloud
     tech_desc: >

@@ -1,6 +1,7 @@
 projects:
   slico:
     name: SLICO Superpixels
+    category: Other
     description: Efficient Superpixels
     layman_desc: >
       Superpixels, which define similar regions in an image, are becoming
@@ -20,6 +21,7 @@ projects:
 
   image-completion:
     name: Image Completion
+    category: Other
     description: Complete an image whose 99% pixels are randomly missing
     layman_desc: >
       It is challenging to complete an image whose 99% pixels are randomly

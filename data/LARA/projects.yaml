@@ -1,6 +1,7 @@
 projects:
   stainless:
     name: Stainless
+    category: Verification
     description: Verification framework for a subset of the Scala programming language
     layman_desc: >
       Stainless is a tool for verifying Scala programs developed by the
@@ -92,6 +93,7 @@ projects:
 
   inox:
     name: Inox
+    category: Verification
     description: Constraint solver for Stainless
     layman_desc: >
       Inox can be used to prove constraints on methods in a program, to

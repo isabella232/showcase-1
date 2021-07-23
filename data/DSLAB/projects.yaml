@@ -1,6 +1,7 @@
 projects:
   tinynf:
     name: tinyNF
+    category: Verification
     description: >
       A Simpler and Faster NIC Driver Model for Network Functions
     tech_desc: >
@@ -35,6 +36,7 @@ projects:
   # This is the same as the vigor project from NAL
   vigor:
     name: Vigor
+    category: Verification
     description: Formally verified and performant software Middleboxes
     tech_desc: >
       Software stack and toolchain for building and running software
@@ -78,6 +80,7 @@ projects:
 
   bolt:
     name: BOLT
+    category: Verification
     description: Performance Contracts for Software Network Functions
     layman_desc: >
       Software network functions (NFs), or middleboxes, promise flexibility and
@@ -129,6 +132,7 @@ projects:
 
   cpi:
     name: CPI
+    category: Security
     description: Fast and precise control-flow hijack protection
     tech_desc: >
       Code-Pointer Integrity (CPI) is a property of C/C++ programs that guarantees absence
@@ -168,6 +172,7 @@ projects:
 
   s2e:
     name: s2e
+    category: Security
     description: Platform for writing tools that analyze the properties and behavior of software systems
     layman_desc: >
       S²E is a platform for writing tools that analyze the properties and
@@ -200,6 +205,7 @@ projects:
 
   asap:
     name: ASAP
+    category: Security
     description: Low overhead software protection
     layman_desc: >
       Makes it possible to use powerful software protection mechanisms at a
@@ -237,6 +243,7 @@ projects:
 
   cloud9:
     name: Cloud 9
+    category: Security
     description: Scalable symbolic execution
     layman_desc: >
       Parallel symbolic execution engine that scales on shared-nothing
@@ -280,6 +287,7 @@ projects:
 
   dimmunix:
     name: Dimmunix
+    category: Security
     description: Protection against deadlock bugs
     layman_desc: >
       Enables general-purpose applications to defend themselves against
@@ -310,6 +318,7 @@ projects:
 
   failure-sketching:
     name: Failure Sketching
+    category: Security
     description: Automated debugging technique
     layman_desc: >
       Failure sketching is an automated debugging technique that provides

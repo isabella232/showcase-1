@@ -1,5 +1,6 @@
 projects:
   lattigo:
+    category: Privacy
     name: Lattigo
     description: A lattice-based multiparty homomorphic encryption library in Go
     tech_desc: >
@@ -53,6 +54,7 @@ projects:
 
   prifi:
     name: PriFi
+    category: Privacy
     description: Anonymous communication system
     layman_desc: >
       PriFi provides a network access mechanism for protecting members of
@@ -93,6 +95,7 @@ projects:
 
   unlynx:
     name: Unlynx
+    category: Privacy
     description: Privacy-preserving data sharing
     layman_desc: >
       Unlynx offers a series of independent protocols that when combined
@@ -128,6 +131,7 @@ projects:
 
   medco:
     name: MedCo
+    category: Privacy
     description: Privacy-preserving cohort exploration
     layman_desc: >
       MedCo enables privacy-preserving cohort exploration by providing ways
@@ -160,6 +164,7 @@ projects:
 
   drynx:
     name: Drynx
+    category: Privacy
     description: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
     layman_desc: >
       Drynx allows to create privacy-preserving queries on encrypted
@@ -209,6 +214,7 @@ projects:
 
   pdci2b2:
     name: PDCi2b2
+    category: Privacy
     description: Private data characterization for i2b2
     layman_desc: >
       This project shares data from I2B2 in a privacy preserving, fully
@@ -230,6 +236,7 @@ projects:
 
   spindle:
     name: SPINDLE
+    category: Privacy
     description: >
       Scalable, Privacy-Preserving, Distributed Learning on Distributed
       Datasets
@@ -276,6 +283,7 @@ projects:
 
   poseidon:
     name: POSEIDON
+    category: Learning
     description: >
       Privacy-Preserving Federated Neural Network Learning
     layman_desc: >

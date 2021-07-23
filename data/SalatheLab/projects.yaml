@@ -1,6 +1,7 @@
 projects:
   openfoodrepo:
     name: The Open Food Repo
+    category: Other
     description: Database of barcoded food products
     layman_desc: >
       The Open Food Repo is an open access database on information about
@@ -30,6 +31,7 @@ projects:
 
   foodandyou:
     name: Food & You
+    category: Other
     description: Track your individual response to food and help advance science
     layman_desc: >
       Take part in an exciting citizen science project on personalized nutrition!
@@ -51,6 +53,7 @@ projects:
 
   crowdbreaks:
     name: CrowdBreaks
+    category: Learning
     description: Help us track health trends in real time.
     url: https://www.crowdbreaks.org
     maturity: 3
@@ -78,6 +81,7 @@ projects:
 
   aicrowd:
     name: AIcrowd
+    category: Learning
     description: Crowdsourcing AI to solve real-world problems
     url: https://www.aicrowd.com
     contacts:

@@ -1,6 +1,7 @@
 projects:
   fuzzan:
     name: FuZZan
+    category: Security
     description: Enabling a faster Address Sanitization, improving fuzzing speed by 2x
     tech_desc: >
       Our evaluation shows that on the Google fuzzer test suite, FuZZan improves fuzzing throughput over ASan by 48%
@@ -27,6 +28,7 @@ projects:
 
   usbfuzz:
     name: USBFuzz
+    category: Security
     description: "Virtual environment for fuzzing USB peripherals"
     tech_desc: >
       Fuzzing USB peripherals for Linux, Android, MacOS, Windows, FreeBSD
@@ -54,6 +56,7 @@ projects:
 
   magma:
     name: Magma
+    category: Security
     description: A Ground-Truth Fuzzing Benchmark
     tech_desc: >
       Magma is a collection of open-source libraries with widespread usage and a long history of security-critical
@@ -86,6 +89,7 @@ projects:
 
   t-fuzz:
     name: T-Fuzz
+    category: Security
     description: Fuzzing and crash analyzer
     layman_desc: >
       T-Fuzz (transformational fuzzing) improves fuzzing by detecting
@@ -115,6 +119,7 @@ projects:
 
   bopc:
     name: BOPC
+    category: Security
     description: Block Oriented Programming Compiler
     layman_desc: >
       BOPC searches for exploits in the code that can be put together to
@@ -144,6 +149,7 @@ projects:
 
   cfixx:
     name: CFIXX
+    category: Security
     description: Protection for C++ internal code pointers
     layman_desc: >
       CFIXX is a runtime mitigation that protects C++ programs from attacks
@@ -171,6 +177,7 @@ projects:
 
   hextype:
     name: HexType
+    category: Security
     description: Efficient detection of Type Confusion Errors for C++
     layman_desc: >
       HexType is a sanitizer for C++ cast safety. The primary use case is
@@ -200,6 +207,7 @@ projects:
 
   retrowrite:
     name: RetroWrite
+    category: Security
     description: Retrofitting compiler passes though binary rewriting
     layman_desc: >
       RetroWrite can analyze the security of closed source binaries by applying
@@ -230,6 +238,7 @@ projects:
 
   shadowstack:
     name: ShadowStack
+    category: Security
     description: LLVM Implementation of different ShadowStack schemes for x86_64
     layman_desc: >
       In computer security, a shadow stack is a mechanism for protecting
@@ -265,6 +274,7 @@ projects:
 
   hexpads:
     name: HexPADS
+    category: Security
     description: Host-based, Performance-counter-based Attack Detection System
     layman_desc: >
       Attacks change the execution behavior of a system. Our attack
@@ -300,6 +310,7 @@ projects:
 
   fuzzgen:
     name: FuzzGen
+    category: Security
     description: Automatic Fuzzer Generation
     layman_desc: >
       FuzzGen is a tool for automatically synthesizing fuzzers for complex
@@ -328,6 +339,7 @@ projects:
 
   datashield:
     name: DataShield
+    category: Privacy
     description: Configurable data confidentiality and integrity
     layman_desc: >
       DataShield can, based on C/C++ languages annotation, protect
@@ -356,6 +368,7 @@ projects:
 
   halucinator:
     name: HALucinator
+    category: Security
     description: Firmware Re-hosting Through Abstraction Layer Emulation
     layman_desc: >
       HALucinator allow for running a firmware outside of its physical
@@ -386,6 +399,7 @@ projects:
 
   benchiot:
     name: BenchIoT
+    category: Security
     description: Security benchmarks for the Internet of Things
     layman_desc: >
       BenchIoT enables automatic evaluation of 14 metrics covering
@@ -415,6 +429,7 @@ projects:
 
   freegaen:
     name: Free GAEN alternative
+    category: Privacy
     description: Alternative to GAEN for contact tracing applications
     layman_desc: >
       Apple and Google developed the Google-Apple Exposure Notification
@@ -472,6 +487,7 @@ projects:
 
   lightblue:
     name: LightBlue
+    category: Security
     description: "LightBlue: Automatic Profile-Aware Debloating of Bluetooth Stacks"
     layman_desc: >
       The Bluetooth standard is complex, many commands are defined but

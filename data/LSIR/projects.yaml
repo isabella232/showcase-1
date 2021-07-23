@@ -1,6 +1,7 @@
 projects:
   pribot:
     name: PriBot
+    category: Privacy
     description: Automated Analysis of Privacy Policies
     layman_desc: >
       Pribot uses an automated framework for privacy policy analysis
@@ -34,6 +35,7 @@ projects:
 
   privyseal:
     name: PrivySeal
+    category: Privacy
     description: Privacy Assistant for Installing Cloud Apps
     layman_desc: >
       PrivySeal provides a personalized set of insights about your data on
@@ -62,6 +64,7 @@ projects:
 
   ai-data-platform-v1:
     name: AI Research Aiding Online Children Safety
+    category: Learning
     description: Platform for detecting specific risks and threats children are facing online
     url: https://www.epfl.ch/labs/lsir/ai-research-aiding-online-children-safety
     layman_desc: >
@@ -96,6 +99,7 @@ projects:
 
   ai-data-platform-v2:
     name: AI-Driven Classifier Building Pipeline
+    category: Learning
     description: Platform for speeding up the development of Artificial-Intelligence classifiers
     url: https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline
     layman_desc: >
@@ -129,6 +133,7 @@ projects:
 
   scilens:
     name: SciLens
+    category: Learning
     description: Helper for science news evaluation
     url: https://scilens.epfl.ch
     layman_desc: >
@@ -172,6 +177,7 @@ projects:
 
   media-observatory:
     name: Media Observatory
+    category: Learning
     description: News landscape monitoring
     layman_desc: >
       A model of the news landscape that maps news channels based on their

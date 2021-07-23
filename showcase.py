@@ -21,6 +21,16 @@ MATURITY_LABEL = {
 # Main Factory page
 FACTORY_URL = "https://www.c4dt.org/factory/software/"
 
+CATEGORIES = {
+    "Privacy": "Privacy Protection & Cryptography",
+    "Blockchain": "Blockchains & Smart Contracts",
+    "Verification": "Software Verification",
+    "Security": "Device and System Security",
+    "Learning": "Machine Learning",
+    "Other": "Other",
+    "": "Uncategorized"
+}
+
 def is_active(project):
     active = None
 
@@ -81,7 +91,7 @@ def showcase():
     labs = data.load()
 
     return dict(labs=labs, selected_lab_id=None, is_active=is_active,
-            maturity_label=MATURITY_LABEL)
+            maturity_label=MATURITY_LABEL, categories=CATEGORIES)
 
 @bottle.route('/showcase/labs/<lab_id>')
 def lab_no_slash(lab_id):
@@ -95,7 +105,7 @@ def projects(lab_id):
         bottle.abort(404, f"Lab '{lab_id}' does not exist")
 
     return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
-            maturity_label=MATURITY_LABEL)
+            maturity_label=MATURITY_LABEL, categories=CATEGORIES)
 
 @bottle.route('/showcase/labs/<lab_id>/<project_id>')
 @bottle.view('project')
@@ -103,7 +113,7 @@ def project(lab_id, project_id):
     project, lab = find_project(project_id, lab_id)
 
     return dict(project=project, lab=lab, is_active=is_active,
-            maturity_label=MATURITY_LABEL)
+            maturity_label=MATURITY_LABEL, categories=CATEGORIES)
 
 @bottle.route('/incubator')
 def incubator_no_slash():

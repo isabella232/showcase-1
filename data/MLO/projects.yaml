@@ -1,6 +1,7 @@
 projects:
   powergossip:
     name: PowerGossip
+    category: Learning
     description: Practical Low-Rank Communication Compression in Decentralized Deep Learning
     tech_desc: >
       Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps
@@ -34,6 +35,7 @@ projects:
 
   chocosgd:
     name: chocoSGD
+    category: Learning
     description: Decentralized communication-efficient ML and DL
     tech_desc: >
       code for communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
@@ -64,6 +66,7 @@ projects:
 
   cola:
     name: cola
+    category: Learning
     description: decentralized linear ML
     tech_desc: >
       Decentralized machine learning is a promising emerging paradigm in view of global challenges of data
@@ -103,6 +106,7 @@ projects:
 
   mlbench:
     name: MLBench
+    category: Learning
     description: Benchmarking of distributed ML
     layman_desc: >
       Framework for distributed machine learning. Its purpose is to
@@ -144,6 +148,7 @@ projects:
 
   sent2vec:
     name: sent2vec
+    category: Learning
     description: Numerical representations for short texts
     layman_desc: >
       Library that delivers numerical representations (features) for short
@@ -167,6 +172,7 @@ projects:
 
   powersgd:
     name: PowerSGD
+    category: Learning
     description: Practical Low-Rank Gradient Compression for Distributed Optimization
     tech_desc: >
       New low-rank gradient compressor based on power iteration that can
