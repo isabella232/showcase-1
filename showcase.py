@@ -22,13 +22,12 @@ MATURITY_LABEL = {
 FACTORY_URL = "https://www.c4dt.org/factory/software/"
 
 CATEGORIES = {
-    "Privacy": "Privacy Protection & Cryptography",
-    "Blockchain": "Blockchains & Smart Contracts",
-    "Verification": "Software Verification",
-    "Security": "Device and System Security",
-    "Learning": "Machine Learning",
-    "Other": "Other",
-    "": "Uncategorized"
+    "Privacy": [1, "Privacy Protection & Cryptography"],
+    "Blockchain": [2, "Blockchains & Smart Contracts"],
+    "Verification": [3, "Software Verification"],
+    "Security": [4, "Device and System Security"],
+    "Learning": [5, "Machine Learning"],
+    "Other": [6, "Other"],
 }
 
 def is_active(project):

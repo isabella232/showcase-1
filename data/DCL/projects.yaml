@@ -1,6 +1,6 @@
 projects:
-  garfields:
-    name: Garfields
+  garfield:
+    name: Garfield
     category: Learning
     description: >
       System Support for Byzantine Machine Learning
