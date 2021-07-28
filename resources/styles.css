@@ -9,14 +9,14 @@
   --greenish-blue: #045757;
   --dark-greenish-blue: #044343;
 
-  --active-odd-row-hover-color: #234b6c;
-  --active-odd-row-color: #133b5c;
-  --active-even-row-hover-color: #2e6f84;
-  --active-even-row-color: #1e5f74;
-  --inactive-odd-row-hover-color: #474747;
-  --inactive-odd-row-color: #373737;
-  --inactive-even-row-hover-color: #4e4e4e;
-  --inactive-even-row-color: #3e3e3e;
+  --active-odd-row-hover-color: #b0d0f0;
+  --active-odd-row-color: #90b0d0;
+  --active-even-row-hover-color: #90d0f0;
+  --active-even-row-color: #80c0e0;
+  --inactive-odd-row-hover-color: #f0f0f0;
+  --inactive-odd-row-color: #e0e0e0;
+  --inactive-even-row-hover-color: #fefefe;
+  --inactive-even-row-color: #eeeeee;
 }
 
 body {
@@ -38,14 +38,14 @@ a:visited {
 div.breadcrumbs {
   background-color: #eeeeee;
   padding-left: 1rem;
-  padding-top: 0.5rem;
+  padding-top: 0.2rem;
   font-size: large;
-  height: 2rem;
+  height: 2em;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  border: 1px solid #060606;
+  border: 0.1em solid #060606;
 }
 
 div.breadcrumbs a:hover {
@@ -53,6 +53,17 @@ div.breadcrumbs a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --active-odd-row-hover-color: #234b6c;
+    --active-odd-row-color: #133b5c;
+    --active-even-row-hover-color: #2e6f84;
+    --active-even-row-color: #1e5f74;
+    --inactive-odd-row-hover-color: #474747;
+    --inactive-odd-row-color: #373737;
+    --inactive-even-row-hover-color: #4e4e4e;
+    --inactive-even-row-color: #3e3e3e;
+  }
+
   body {
     background-color: var(--dark-grey);
     color: var(--light-grey);

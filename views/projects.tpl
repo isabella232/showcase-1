@@ -31,12 +31,13 @@
         $(document).ready(function () {
 
             var table = $('#projects').DataTable({
-                scrollResize: true,
-                scrollY: 100,
-                scrollCollapse: true,
-                paging: false,
+                "scrollResize": true,
+                "scrollY": 100,
+                "scrollCollapse": true,
+                "paging": false,
                 "scrollX": true,
                 "dom": "Bfrtip",
+                "orderClasses": false,
                 "buttons": [
                     { text: "Columns", extend: 'colvis' },
                     // 'copy',
@@ -49,9 +50,9 @@
                 ],
                 "order": [[0, "asc"], [23, "desc"], [4, "desc"], [1, "asc"], [2, "asc"]],
                 "columnDefs": [
-                    {"width": "15%", "targets": 0},
-                    {"width": "15%", "targets": 1},
-                    {"width": "40%", "targets": 2},
+                    {"width": "20%", "targets": 1},
+                    {"width": "50%", "targets": 2},
+                    {"width": "20%", "targets": 3},
                 ]
             });
 
@@ -192,7 +193,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
             <table id="projects" class="display cell-border">
                 <thead>
                 <tr>
-                    <th>Category</th>
+                    <th class="extra">Category</th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Tags</th>
@@ -223,144 +224,165 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                 </tr>
                 </thead>
                 <tbody>
-                <%
-                for lab_id, lab in labs.items():
-                    if selected_lab_id is None or selected_lab_id == lab_id:
-                        for project_id, project in lab['projects'].items():
-                            category_sort, category_value = \
-                                categories[project.get('category', 'Other')]
+                %for category_key, [category_sort, category_value] in categories.items():
+                    <tr>
+                        <td data-order="{{ category_sort }}"></td>
+                        <td colspan="4" class="category">{{ category_value }}</td>
+                        <td style="display: none;"></td><td style="display: none;"></td><td style="display: none;"></td>
 
-                            prof = lab['prof']
-                            name = project['name']
-                            date_added = project.get('date_added')
-                            date_updated = project.get('date_updated', date_added)
-                            maturity = project.get('maturity', 0)
-                            description = project.get('description', '')
-                            tech_desc = project.get('tech_desc', '')
-                            layman_desc = project.get('layman_desc', '')
-                            language = project.get('language', '')
-                            proj_type = ', '.join(map(str, project.get('type', [])))
-                            url = project.get('url')
-                            code = project.get('code', {})
-                            date_last_commit = code.get('date_last_commit', '')
-                            loc = project.get('lines_of_code', '')
-                            doc = project.get('doc')
-                            tags = project.get('tags', [])
-                            license = ', '.join(map(str, project.get('license', [])))
-                            papers = [
-                                info
-                                for info in sorted(project.get('information', []), key=lambda v: v['type'])
-                                if info['type'] == 'Paper'
-                            ]
+                        <td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td>
 
-                            # Use Lab Professor as default contact
-                            default_contact = dict(prof, name=' '.join(prof['name']))
-                            contacts = project.get('contacts', [default_contact])
+                        <td></td><td>project_active</td><td>project_incubated</td>
+                        <td>
+                           99 - {{ " ".join(list(map(lambda a: "artefact_" + a, ["presentation", "background", "demo", "hands-on", "pilot", "technical"]))) }}</td>
+                    </tr>
+                    <%for lab_id, lab in labs.items():
+                        if selected_lab_id is None or selected_lab_id == lab_id:
+                            for project_id, project in lab['projects'].items():
+                                if project.get('category', 'Other') != category_key:
+                                    continue
+                                end
+                                #category_sort, category_value = category_sv
 
-                            # Skip projects with a `date_added` in the future.
-                            # This allows to schedule the appearance of projects in the showcase.
-                            import datetime
-                            today = datetime.datetime.now()
-                            if date_added > today:
-                                continue
-                            end
+                                prof = lab['prof']
+                                name = project['name']
+                                date_added = project.get('date_added')
+                                date_updated = project.get('date_updated', date_added)
+                                maturity = project.get('maturity', 0)
+                                description = project.get('description', '')
+                                tech_desc = project.get('tech_desc', '')
+                                layman_desc = project.get('layman_desc', '')
+                                language = project.get('language', '')
+                                proj_type = ', '.join(map(str, project.get('type', [])))
+                                url = project.get('url')
+                                code = project.get('code', {})
+                                date_last_commit = code.get('date_last_commit', '')
+                                loc = project.get('lines_of_code', '')
+                                doc = project.get('doc')
+                                tags = project.get('tags', [])
+                                license = ', '.join(map(str, project.get('license', [])))
+                                papers = [
+                                    info
+                                    for info in sorted(project.get('information', []), key=lambda v: v['type'])
+                                    if info['type'] == 'Paper'
+                                ]
 
-                            active = is_active(project)
-                            active_str = "project_active" if active else "inactive"
-                            incubator_str = "project_incubated" if project.get('in_incubator') else "no support"
-                            artefacts = " ".join(map(lambda a: "artefact_" + a, find_project_tabs(project_id)))
-                            %>
-                            <tr class="{{ 'active' if active else 'inactive' }}">
-                                <td data-order="{{category_sort}}">{{category_value}}</td>
+                                # Use Lab Professor as default contact
+                                default_contact = dict(prof, name=' '.join(prof['name']))
+                                contacts = project.get('contacts', [default_contact])
 
-                                <td class="proj_name"
-                                    onclick="window.location='/incubator/{{project_id}}'"
-                                    style="cursor: pointer">
-                                    {{ name }}
-                                </td>
+                                # Skip projects with a `date_added` in the future.
+                                # This allows to schedule the appearance of projects in the showcase.
+                                import datetime
+                                today = datetime.datetime.now()
+                                if date_added > today:
+                                    continue
+                                end
 
-                                <td onclick="window.location='/incubator/{{project_id}}'"
-                                    style="cursor: pointer">
-                                    {{ description }}
-                                </td>
+                                active = is_active(project)
+                                active_str = "project_active" if active else "inactive"
+                                incubator_str = "project_incubated" if project.get('in_incubator') else "no support"
+                                artefacts = list(map(lambda a: "artefact_" + a, find_project_tabs(project_id)))
+                                %>
+                                <tr class="{{ 'active' if active else 'inactive' }}">
+                                    <td data-order="{{category_sort}}">{{category_value}}</td>
 
-                                <td class="dt-center">
-                                    % for tag in tags:
-                                    <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                    <td class="proj_name"
+                                        onclick="window.location='/incubator/{{project_id}}'"
+                                        style="cursor: pointer">
+                                        {{ name }}
+                                    </td>
+
+                                    <td onclick="window.location='/incubator/{{project_id}}'"
+                                        style="cursor: pointer">
+                                        {{ description }}
+                                    </td>
+
+                                    <td class="dt-center">
+                                        % for tag in tags:
+                                        <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                        % end
+                                    </td>
+
+                                    % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                                    <td class="dt-center">
+                                        <div style="display:none;">
+                                            {{ maturity + 0.5 if active else maturity }}
+                                        </div>
+                                        <img
+                                                src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
+                                                width="25em"
+                                                height="25em"
+                                                title="{{ maturity_label.get(maturity, 0) }}"
+                                                alt="{{ maturity_label.get(maturity, 0) }}"
+                                        >
+                                    </td>
+
+                                    <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
+                                        <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
+                                    </td>
+
+                                    % if url:
+                                    <td class=""><a href="{{ url }}">Home page</a></td>
+                                    % else:
+                                    <td class=""></td>
                                     % end
-                                </td>
 
-                                % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                                <td data-order="{{ maturity + 0.5 if active else maturity }}" class="dt-center">
-                                    <img
-                                            src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
-                                            width="25em"
-                                            height="25em"
-                                            title="{{ maturity_label.get(maturity, 0) }}"
-                                            alt="{{ maturity_label.get(maturity, 0) }}"
-                                    >
-                                </td>
+                                    <td class="dt-center">{{ date_added.date() }}</td>
 
-                                <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
-                                </td>
+                                    <td class="dt-center">{{ date_updated.date() }}</td>
 
-                                % if url:
-                                <td class=""><a href="{{ url }}">Home page</a></td>
-                                % else:
-                                <td class=""></td>
-                                % end
+                                    <td>{{ tech_desc }}</td>
 
-                                <td class="dt-center">{{ date_added.date() }}</td>
+                                    <td>{{ layman_desc }}</td>
 
-                                <td class="dt-center">{{ date_updated.date() }}</td>
+                                    <td class="dt-center">{{ language }}</td>
 
-                                <td>{{ tech_desc }}</td>
+                                    <td>{{ proj_type }}</td>
 
-                                <td>{{ layman_desc }}</td>
-
-                                <td class="dt-center">{{ language }}</td>
-
-                                <td>{{ proj_type }}</td>
-
-                                % if 'url' in code:
-                                <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
-                                % else:
-                                <td>{{ code.get('type', '') }}</td>
-                                % end
-
-                                <td class="dt-center">{{ date_last_commit.date() if date_last_commit else '' }}</td>
-
-                                <td class="dt-center">{{ loc }}</td>
-
-                                <td class="dt-center">
-                                    % if doc:
-                                    <a href="{{ doc }}">link</a>
+                                    % if 'url' in code:
+                                    <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
+                                    % else:
+                                    <td>{{ code.get('type', '') }}</td>
                                     % end
-                                </td>
 
-                                <td class="dt-center">{{ license }}</td>
+                                    <td class="dt-center">{{ date_last_commit.date() if date_last_commit else '' }}</td>
 
-                                <td>
-                                    % include('papers.tpl', papers=papers)
-                                </td>
+                                    <td class="dt-center">{{ loc }}</td>
 
-                                <td class="dt-nowrap">
-                                    % for contact in contacts:
-                                    <div>
-                                        % include('contact.tpl', contact=contact)
-                                    </div>
-                                    % end
-                                </td>
+                                    <td class="dt-center">
+                                        % if doc:
+                                        <a href="{{ doc }}">link</a>
+                                        % end
+                                    </td>
 
-                                <td class="dt-center">{{ max(date_added, date_last_commit if date_last_commit else date_added).date() }}</td>
+                                    <td class="dt-center">{{ license }}</td>
 
-                                <td>{{ active_str }}</td>
+                                    <td>
+                                        % include('papers.tpl', papers=papers)
+                                    </td>
 
-                                <td>{{ incubator_str }}</td>
+                                    <td class="dt-nowrap">
+                                        % for contact in contacts:
+                                        <div>
+                                            % include('contact.tpl', contact=contact)
+                                        </div>
+                                        % end
+                                    </td>
 
-                                <td data-order="{{ len(artefacts) }}">{{ artefacts }}</td>
-                            </tr>
+                                    <td class="dt-center">{{ max(date_added, date_last_commit if date_last_commit else date_added).date() }}</td>
+
+                                    <td>{{ active_str }}</td>
+
+                                    <td>{{ incubator_str }}</td>
+
+                                    <td>
+                                        {{ len(artefacts) }} - {{ " ".join(artefacts) }}
+                                    </td>
+                                </tr>
+                            % end
                         % end
                     % end
                 % end

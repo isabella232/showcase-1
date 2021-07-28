@@ -67,11 +67,11 @@ span.box {
 }
 
 .active_even {
-  background-color: #f8fff8;
+  background-color: var(--active-even-row-color);
 }
 
 .active_odd {
-  background-color: #f4fff4;
+  background-color: var(--active-odd-row-color);
 }
 
 table.dataTable button {
@@ -80,6 +80,7 @@ table.dataTable button {
   font-family: Arial, sans-serif;
   font-size: medium;
   border: solid 1px #ffcba5;
+  margin: 1px;
 }
 
 table.dataTable button:hover {
@@ -100,68 +101,46 @@ table.dataTable tbody tr td.proj_name {
   font-weight: bold;
 }
 
-table.dataTable.display tbody tr.active.odd {
-  background-color: #f4fff4;
+table.dataTable.display tbody tr.odd > td {
+  background-color: var(--inactive-odd-row-color);
 }
 
-table.dataTable.display tbody tr.active.even {
-  background-color: #f8fff8;
+table.dataTable.display tbody tr.even > td {
+  background-color: var(--inactive-even-row-color);
 }
 
-table.dataTable.display tbody tr.active.odd:hover {
-  background-color: #ecffec;
+table.dataTable.display tbody tr.odd:hover > td {
+  background-color: var(--inactive-odd-row-hover-color);
 }
 
-table.dataTable.display tbody tr.active.even:hover {
-  background-color: #f0fff0;
+table.dataTable.display tbody tr.even:hover > td {
+  background-color: var(--inactive-even-row-hover-color);
 }
 
-table.dataTable.display tbody tr.active.odd > td.sorting_1 {
-  background-color: #f4fff4;
+table.dataTable.display tbody tr.active.odd > td {
+  background-color: var(--active-odd-row-color);
 }
 
-table.dataTable.display tbody tr.active.even > td.sorting_1 {
-  background-color: #f8fff8;
+table.dataTable.display tbody tr.active.even > td {
+  background-color: var(--active-even-row-color);
 }
 
-table.dataTable.display tbody tr.active.odd:hover > td.sorting_1 {
-  background-color: #ecffec;
+table.dataTable.display tbody tr.active.odd:hover > td {
+  background-color: var(--active-odd-row-hover-color);
 }
 
-table.dataTable.display tbody tr.active.even:hover > td.sorting_1 {
-  background-color: #f0fff0;
+table.dataTable.display tbody tr.active.even:hover > td {
+  background-color: var(--active-even-row-hover-color);
 }
 
-table.dataTable.display tbody tr.active.odd > td.sorting_2 {
-  background-color: #f4fff4;
+table.dataTable.display tbody tr > td.category {
+  text-align: center;
+  font-size: 150%;
+  background: #9adac7;
 }
 
-table.dataTable.display tbody tr.active.even > td.sorting_2 {
-  background-color: #f8fff8;
-}
-
-table.dataTable.display tbody tr.active.odd:hover > td.sorting_2 {
-  background-color: #ecffec;
-}
-
-table.dataTable.display tbody tr.active.even:hover > td.sorting_2 {
-  background-color: #f0fff0;
-}
-
-table.dataTable.display tbody tr.active.odd > td.sorting_3 {
-  background-color: #f4fff4;
-}
-
-table.dataTable.display tbody tr.active.even > td.sorting_3 {
-  background-color: #f8fff8;
-}
-
-table.dataTable.display tbody tr.active.odd:hover > td.sorting_3 {
-  background-color: #ecffec;
-}
-
-table.dataTable.display tbody tr.active.even:hover > td.sorting_3 {
-  background-color: #f0fff0;
+table.dataTable.display tbody tr:hover > td.category {
+  background: #aafad7;
 }
 
 #labs_info,
@@ -190,12 +169,13 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
   background-image: none;
 }
 
+#projects_filter {
+  padding: 5px;
+}
+
 @media (prefers-color-scheme: dark) {
   table.dataTable button {
-    border-radius: 6px;
     background-color: var(--dark-orange);
-    font-family: Arial, sans-serif;
-    font-size: medium;
     color: white;
     border: solid 1px var(--dark-orange);
   }
@@ -226,178 +206,17 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
   }
 
   button.dt-button {
-    padding: 2px !important;
     color: var(--light-orange) !important;
     background-color: var(--dark-grey) !important;
     background-image: none !important;
   }
 
-  #projects_filter {
-    padding: 5px;
+  table.dataTable.display tbody tr > td.category {
+    background: #805438;
   }
 
-  .active_even {
-    background-color: var(--active-even-row-color);
-  }
-
-  .active_odd {
-    background-color: var(--active-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.odd {
-    background-color: var(--inactive-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.even {
-    background-color: var(--inactive-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.odd:hover {
-    background-color: var(--inactive-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.even:hover {
-    background-color: var(--inactive-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.odd > td {
-    background-color: var(--inactive-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.even > td {
-    background-color: var(--inactive-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.odd:hover > td {
-    background-color: var(--inactive-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.even:hover > td {
-    background-color: var(--inactive-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.odd > td.sorting_1 {
-    background-color: var(--inactive-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.even > td.sorting_1 {
-    background-color: var(--inactive-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.odd:hover > td.sorting_1 {
-    background-color: var(--inactive-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.even:hover > td.sorting_1 {
-    background-color: var(--inactive-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.odd > td.sorting_2 {
-    background-color: var(--inactive-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.even > td.sorting_2 {
-    background-color: var(--inactive-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.odd:hover > td.sorting_2 {
-    background-color: var(--inactive-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.even:hover > td.sorting_2 {
-    background-color: var(--inactive-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.odd > td.sorting_3 {
-    background-color: var(--inactive-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.even > td.sorting_3 {
-    background-color: var(--inactive-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.odd:hover > td.sorting_3 {
-    background-color: var(--inactive-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.even:hover > td.sorting_3 {
-    background-color: var(--inactive-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd {
-    background-color: var(--active-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.even {
-    background-color: var(--active-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd > td {
-    background-color: var(--active-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.even > td {
-    background-color: var(--active-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd:hover {
-    background-color: var(--active-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.even:hover > td {
-    background-color: var(--active-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd:hover > td {
-    background-color: var(--active-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd > td.sorting_1 {
-    background-color: var(--active-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.even > td.sorting_1 {
-    background-color: var(--active-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd:hover > td.sorting_1 {
-    background-color: var(--active-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.even:hover > td.sorting_1 {
-    background-color: var(--active-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd > td.sorting_2 {
-    background-color: var(--active-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.even > td.sorting_2 {
-    background-color: var(--active-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd:hover > td.sorting_2 {
-    background-color: var(--active-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.even:hover > td.sorting_2 {
-    background-color: var(--active-even-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd > td.sorting_3 {
-    background-color: var(--active-odd-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.even > td.sorting_3 {
-    background-color: var(--active-even-row-color);
-  }
-
-  table.dataTable.display tbody tr.active.odd:hover > td.sorting_3 {
-    background-color: var(--active-odd-row-hover-color);
-  }
-
-  table.dataTable.display tbody tr.active.even:hover > td.sorting_3 {
-    background-color: var(--active-even-row-hover-color);
+  table.dataTable.display tbody tr:hover > td.category {
+    background: #a07458;
   }
 
   table.dataTable.cell-border tbody td {
