@@ -31,15 +31,17 @@
         for li in tabs:
           href = f"/incubator/{project['p_id']}/{li}"
           classes = "nav-link"
+          image_class = "dark_invert"
           if li == tab:
             classes = classes + " active"
+            image_class = ""
           end
       %>
       <li class="nav-item">
         <a class="{{ classes }}" aria-current="page" href="{{ href }}">
-          {{ li.capitalize() }}
-          <img src="../../resources/incubator/icons/{{ li }}.png" class="dark"
+          <img src="../../resources/incubator/icons/{{ li }}.png" class="{{ image_class }}"
                style="width: 2em; height: 2em; padding: 0.2em;"/>
+          {{ li.capitalize() }}
         </a>
       </li>
       % end

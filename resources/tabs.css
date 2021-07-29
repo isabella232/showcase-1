@@ -82,12 +82,12 @@ div.index-image {
     background: var(--dark-grey);
   }
 
-  img.dark {
-    background-color: #888888;
-  }
-
   hr {
     background-color: white;
+  }
+
+  a.nav-link:hover {
+    color: var(--orange);
   }
 }
 

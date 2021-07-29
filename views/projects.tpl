@@ -229,7 +229,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                         <td data-order="{{ category_sort }}">
                             <span style="display: none">category_{{category_key}}</span>
                         </td>
-                        <td colspan="5" class="category">{{ category_value }}</td>
+                        <td colspan="24" class="category">{{ category_value }}</td>
                         <td style="display: none;"></td>
                         <td style="display: none;"></td>
                         <td style="display: none;">
@@ -309,7 +309,8 @@ include('breadcrumbs.tpl', trail=trail, here=here)
 
                                     <td class="dt-center">
                                         % for tag in tags:
-                                        <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                        <button onclick="javascript:set_search('{{ tag }}')"
+                                        class="button">{{ tag }}</button>
                                         % end
                                     </td>
 
@@ -317,9 +318,11 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                         <span style="display: none">{{ len(artefacts) }}</span>
                                         % for artefact in artefacts:
                                             <span style="display: none">artefact_{{artefact}}</span>
-                                            <a href="../incubator/{{project_id}}/{{artefact}}">
+                                            <div class="button" style="display: inline-block">
+                                                <a href="../incubator/{{project_id}}/{{artefact}}">
                                                 <img src="../resources/incubator/icons/{{artefact}}.png"
-                                                     class="dark artefact"/></a>
+                                                     class="dark_invert artefact"/></a>
+                                            </div>
                                         % end
                                     </td>
 

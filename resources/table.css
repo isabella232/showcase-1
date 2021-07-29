@@ -1,3 +1,26 @@
+:root {
+  --active-odd-row-hover-color: #b0d0f0;
+  --active-odd-row-color: #90b0d0;
+  --active-even-row-hover-color: #90d0f0;
+  --active-even-row-color: #80c0e0;
+  --inactive-odd-row-hover-color: #f0f0f0;
+  --inactive-odd-row-color: #e0e0e0;
+  --inactive-even-row-hover-color: #fefefe;
+  --inactive-even-row-color: #eeeeee;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --active-odd-row-hover-color: #234b6c;
+    --active-odd-row-color: #133b5c;
+    --active-even-row-hover-color: #2e6f84;
+    --active-even-row-color: #1e5f74;
+    --inactive-odd-row-hover-color: #474747;
+    --inactive-odd-row-color: #373737;
+    --inactive-even-row-hover-color: #4e4e4e;
+    --inactive-even-row-color: #3e3e3e;
+  }
+}
+
 html {
   height: 100%;
 }
@@ -74,7 +97,7 @@ span.box {
   background-color: var(--active-odd-row-color);
 }
 
-table.dataTable button {
+.button {
   border-radius: 6px;
   background-color: #fce4d4;
   font-family: Arial, sans-serif;
@@ -83,7 +106,7 @@ table.dataTable button {
   margin: 1px;
 }
 
-table.dataTable button:hover {
+.button:hover {
   background-color: #ffcba5;
 }
 
@@ -174,13 +197,13 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-  table.dataTable button {
+  .button {
     background-color: var(--dark-orange);
     color: white;
-    border: solid 1px var(--dark-orange);
+    border: solid 1px var(--orange);
   }
 
-  table.dataTable button:hover {
+  .button:hover {
     background-color: var(--orange);
   }
 
@@ -227,9 +250,5 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
   table.dataTable.cell-border tbody td {
     border-top: none !important;
     border-right: 1px solid #444 !important;
-  }
-
-  img.dark {
-    background-color: #888888;
   }
 }
