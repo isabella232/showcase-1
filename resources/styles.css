@@ -52,6 +52,17 @@ div.breadcrumbs a:hover {
   color: #007080;
 }
 
+img.artefact {
+  height: 2em;
+  width: 2em;
+  padding: 0.2em;
+  margin: 0.1em;
+}
+
+img.artefact:hover {
+  border: 0.1em solid white;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --active-odd-row-hover-color: #234b6c;

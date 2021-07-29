@@ -36,7 +36,11 @@
           end
       %>
       <li class="nav-item">
-        <a class="{{ classes }}" aria-current="page" href="{{ href }}">{{ li.capitalize() }}</a>
+        <a class="{{ classes }}" aria-current="page" href="{{ href }}">
+          {{ li.capitalize() }}
+          <img src="../../resources/incubator/icons/{{ li }}.png" class="dark"
+               style="width: 2em; height: 2em; padding: 0.2em;"/>
+        </a>
       </li>
       % end
     </ul>

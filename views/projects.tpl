@@ -48,7 +48,7 @@
                         action: function(e, dt, node, config) { set_search(""); }
                     },
                 ],
-                "order": [[0, "asc"], [23, "desc"], [4, "desc"], [1, "asc"], [2, "asc"]],
+                "order": [[0, "asc"], [4, "desc"], [5, "desc"], [1, "asc"], [2, "asc"]],
                 "columnDefs": [
                     {"width": "20%", "targets": 1},
                     {"width": "50%", "targets": 2},
@@ -159,7 +159,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                         onchange="update_search();">
                     <option value="">All categories</option>
                     % for category_key, [_, category_value] in categories.items():
-                    <option value="{{ category_key }}">{{ category_value }}</option>
+                    <option value="category_{{ category_key }}">{{ category_value }}</option>
                     % end
                 </select>
             </div>
@@ -197,46 +197,50 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                     <th>Name</th>
                     <th>Description</th>
                     <th>Tags</th>
-                    <th>Maturity</th>
+                    <th>Artefacts</th>
 
+                    <th>Maturity</th>
                     <th class="extra">Professor &mdash; Lab</th>
                     <th class="extra">More information</th>
                     <th class="extra">Date added</th>
                     <th class="extra">Date updated</th>
-                    <th class="extra">Technical description</th>
 
+                    <th class="extra">Technical description</th>
                     <th class="extra">Layman description</th>
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
                     <th class="extra">Source code</th>
-                    <th class="extra">Date last commit</th>
 
+                    <th class="extra">Date last commit</th>
                     <th class="extra">LOC</th>
                     <th class="extra">Documentation</th>
                     <th class="extra">License</th>
                     <th class="extra">Papers</th>
-                    <th class="extra">Contact</th>
 
+                    <th class="extra">Contact</th>
                     <th title="Most recent between date added and date of last commit" class="extra">Date last activity</th>
                     <th class="extra">Active</th>
                     <th class="extra">Incubator</th>
-                    <th class="extra">Artefacts</th>
                 </tr>
                 </thead>
                 <tbody>
                 %for category_key, [category_sort, category_value] in categories.items():
                     <tr>
-                        <td data-order="{{ category_sort }}"></td>
-                        <td colspan="4" class="category">{{ category_value }}</td>
-                        <td style="display: none;"></td><td style="display: none;"></td><td style="display: none;"></td>
+                        <td data-order="{{ category_sort }}">
+                            <span style="display: none">category_{{category_key}}</span>
+                        </td>
+                        <td colspan="5" class="category">{{ category_value }}</td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;">
+                            99 - {{ " ".join(list(map(lambda a: "artefact_" + a, ["presentation", "background", "demo", "hands-on", "pilot", "technical"]))) }}
+                        </td>
 
-                        <td></td><td></td><td></td><td></td><td></td>
+                        <td style="display: none;"></td><td></td><td></td><td></td><td></td>
                         <td></td><td></td><td></td><td></td><td></td>
                         <td></td><td></td><td></td><td></td><td></td>
 
-                        <td></td><td>project_active</td><td>project_incubated</td>
-                        <td>
-                           99 - {{ " ".join(list(map(lambda a: "artefact_" + a, ["presentation", "background", "demo", "hands-on", "pilot", "technical"]))) }}</td>
+                        <td></td><td></td><td>project_active</td><td>project_incubated</td>
                     </tr>
                     <%for lab_id, lab in labs.items():
                         if selected_lab_id is None or selected_lab_id == lab_id:
@@ -284,10 +288,13 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                 active = is_active(project)
                                 active_str = "project_active" if active else "inactive"
                                 incubator_str = "project_incubated" if project.get('in_incubator') else "no support"
-                                artefacts = list(map(lambda a: "artefact_" + a, find_project_tabs(project_id)))
+                                artefacts = find_project_tabs(project_id)
                                 %>
                                 <tr class="{{ 'active' if active else 'inactive' }}">
-                                    <td data-order="{{category_sort}}">{{category_value}}</td>
+                                    <td data-order="{{category_sort}}">
+                                        <span style="display: none">category_{{category_key}}</span>
+                                        {{category_value}}
+                                    </td>
 
                                     <td class="proj_name"
                                         onclick="window.location='/incubator/{{project_id}}'"
@@ -303,6 +310,16 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                     <td class="dt-center">
                                         % for tag in tags:
                                         <button onclick="javascript:set_search('{{ tag }}')">{{ tag }}</button>
+                                        % end
+                                    </td>
+
+                                    <td class="dt-center">
+                                        <span style="display: none">{{ len(artefacts) }}</span>
+                                        % for artefact in artefacts:
+                                            <span style="display: none">artefact_{{artefact}}</span>
+                                            <a href="../incubator/{{project_id}}/{{artefact}}">
+                                                <img src="../resources/incubator/icons/{{artefact}}.png"
+                                                     class="dark artefact"/></a>
                                         % end
                                     </td>
 
@@ -377,10 +394,6 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                     <td>{{ active_str }}</td>
 
                                     <td>{{ incubator_str }}</td>
-
-                                    <td>
-                                        {{ len(artefacts) }} - {{ " ".join(artefacts) }}
-                                    </td>
                                 </tr>
                             % end
                         % end
