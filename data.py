@@ -66,7 +66,6 @@ PROJECTS_SCHEMA = sy.Map({"projects":
                 "name": sy.Str(),
                 "email": sy.Email(),
                 }),
-            sy.Optional("c4dt_work"): sy.Str(),
             "tags": sy.Seq(sy.Str()),
             sy.Optional("language"): sy.Str(),
             sy.Optional("type"): sy.CommaSeparated(sy.Enum([
@@ -106,13 +105,17 @@ PROJECTS_SCHEMA = sy.Map({"projects":
             "date_added": sy.Datetime(),
             sy.Optional("date_updated"): sy.Datetime(),
             sy.Optional("maturity"): sy.Int(),
-            sy.Optional("in_incubator"): sy.Bool(),
-            sy.Optional("demo"): sy.Map({
-                "title": sy.Str(),
-                sy.Optional("description"): sy.Str(),
-                sy.Optional("url"): sy.Url(),
-                sy.Optional("code"): sy.Url(),
-                }),
+            sy.Optional("incubator"): sy.Map({
+                "work": sy.Str(),
+                sy.Optional("artefacts"): sy.Seq(
+                    sy.Map({
+                        "type": sy.Enum(["Demo", "Hands-on", "Pilot", "App"]),
+                        "url": sy.Url(),
+                        "title": sy.Str(),
+                        sy.Optional("code"): sy.Str(),
+                        }),
+                    )
+                }) | sy.EmptyList(),
             })
         )
     })

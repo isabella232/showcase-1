@@ -175,11 +175,18 @@ projects:
     language: GoLang
     type: Application, Library
     license: AGPL-3.0
-    in_incubator: true
+    incubator:
+      work: The OmniLedger project is in the Market and will be re-evaluated in Spring 2022.
+      artefacts:
+        - type: Demo
+          title: "Blockchain Explorer"
+          url: https://wookiee.ch/columbus
+        - type: Pilot
+          title: "Login Service"
+          url: https://login.c4dt.org
     c4dt_contact:
       name: Linus Gasser
       email: linus.gasser@epfl.ch
-    c4dt_work:
     information:
       - type: Paper
         title: "Enhancing Bitcoin performance"
@@ -214,10 +221,6 @@ projects:
       - type: Blog post
         title: Linus Gasser - DARC
         url: https://c4dt.org/article/darc
-    demo:
-      title: OmniLedger Blockchain Explorer
-      url: https://wookiee.ch/columbus/
-      code: https://github.com/dedis/columbus-united
     date_added: 2019-03-18
     date_updated: 2021-02-19
     maturity: 2

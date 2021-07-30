@@ -62,7 +62,7 @@ def find_project(project_id, lab_id=None):
 
 def find_project_tabs(project_id):
     tabs = filter(lambda tab: os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl")),
-                  ["presentation", "background", "demo", "hands-on", "pilot"])
+                  ["presentation", "background", "demo", "hands-on", "pilot", "app"])
     return list(tabs) + ["technical"]
 
 @bottle.route('/robots.txt')

@@ -263,11 +263,11 @@ projects:
     date_added: 2020-10-05
     date_updated: 2021-06-07
     maturity: 3
-    in_incubator: true
+    incubator:
+      work: 2020/Q4 documentation and testing of the app
     c4dt_contact:
       name: Linus Gasser
       email: linus.gasser@epfl.ch
-    c4dt_work:
 
   crowdnotifier:
     name: CrowdNotifier
@@ -285,11 +285,11 @@ projects:
       date_last_commit: 2021-05-11
     doc: https://github.com/CrowdNotifier/documents
     maturity: 3
-    in_incubator: true
+    incubator:
+      work: 2021/Q1 reference implementation of cryptography
     c4dt_contact:
       name: Linus Gasser
       email: linus.gasser@epfl.ch
-    c4dt_work:
     tags:
       - Privacy-enhancing
       - Protocol

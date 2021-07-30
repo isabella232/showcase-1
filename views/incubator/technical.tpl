@@ -24,27 +24,6 @@
     </div>
     % end
 
-    % if project.get('in_incubator'):
-    <div>
-        <div class="header">Factory involvement:</div>
-        % if project['c4dt_work']:
-        <div class="contents">{{ !project['c4dt_work'] }}</div>
-        % else:
-        This project is in the Incubator, which means that the C4DT Factory Team is actively working on it.
-        % end
-    </div>
-
-    <div>
-        <div class="header">C4DT Contact:</div>
-        % include('contact.tpl', contact=project['c4dt_contact'])
-    </div>
-
-    % if 'demo' in project and 'url' in project['demo']:
-    <div class="header">Demonstrator:</div>
-    <a href="{{ project['demo']['url'] }}">{{ project['demo']['title'] }}</a>
-    % end
-    % end
-
     <hr/>
 
     % if 'url' in project:
@@ -112,6 +91,26 @@
         &mdash;
         entry updated: {{ date_updated.date() }}
     </div>
+
+    % incubator = project.get('incubator')
+    % if incubator:
+    <hr/>
+    <div>
+        <div class="header">Factory Development:</div>
+        {{ incubator['work'] }}
+        <ul>
+        % for line in incubator.get('artefacts', []):
+            <li>{{line['type']}}:
+                <a href="{{line['url']}}">{{line['title']}}</a>
+            </li>
+        % end
+        </ul>
+    </div>
+    <div>
+        <div class="header">C4DT Contact:</div>
+        % include('contact.tpl', contact=project['c4dt_contact'])
+    </div>
+    % end
 
     <hr/>
 

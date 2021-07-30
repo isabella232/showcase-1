@@ -35,11 +35,11 @@ projects:
         email: christian.mouchet@epfl.ch
       - name: Lattigo mailing list
         email: lattigo@listes.epfl.ch
-    in_incubator: true
+    incubator:
+      work: 2020/Q1 maturity evaluation
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
-    c4dt_work:
     tags:
       - Cryptography
       - Lattice Based Crypto
@@ -153,11 +153,11 @@ projects:
     contacts:
       - name: Mickaël Misbach
         email: mickael.misbach@epfl.ch
-    in_incubator: true
+    incubator:
+      work: 2020/Q2 Maturity Evaluation and library support
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
-    c4dt_work:
     date_added: 2019-03-18
     date_updated: 2021-04-19
     maturity: 2
@@ -199,15 +199,16 @@ projects:
         email: david.froelicher@epfl.ch
       - name: Joao de Sá
         email: joao.gomesdesaesousa@epfl.ch
-    in_incubator: true
+    incubator:
+      work: 2020/Q1 created demonstrator for SwissRe
+      artefacts:
+        - type: Demo
+          title: Decentralized Data Analysis
+          url: https://factory.c4dt.org/incubator/drynx/demo
+          code: https://github.com/c4dt/service-drynx
     c4dt_contact:
       name: Valérian Rousset
       email: valerian.rousset@epfl.ch
-    c4dt_work:
-    demo:
-      title: Drynx demonstrator
-      url: https://factory.c4dt.org/incubator/drynx/demo
-      code: https://github.com/c4dt/service-drynx
     date_added: 2019-03-18
     date_updated: 2021-04-19
     maturity: 1
@@ -269,15 +270,16 @@ projects:
         email: david.froelicher@epfl.ch
       - name: Joao de Sá
         email: joao.gomesdesaesousa@epfl.ch
-    in_incubator: true
+    incubator:
+      work: 2021/Q1 created Spindle demonstrator
+      artefacts:
+        - type: Demo
+          title: SPINDLE demonstrator
+          url: https://factory.c4dt.org/incubator/spindle/demo
+          code: https://github.com/c4dt/service-spindle
     c4dt_contact:
       name: Valérian Rousset
       email: valerian.rousset@epfl.ch
-    c4dt_work:
-    demo:
-      title: SPINDLE demonstrator
-      url: https://factory.c4dt.org/incubator/spindle/demo
-      code: https://github.com/c4dt/service-spindle
     date_added: 2021-01-21
     date_updated: 2021-04-19
 

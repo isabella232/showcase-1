@@ -137,11 +137,11 @@ projects:
     language: Python
     type: Framework
     license: Apache-2.0
-    in_incubator: true
+    incubator:
+      work: 2020/Q4 evaluated and tested the project
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
-    c4dt_work:
     date_added: 2019-07-30
     date_updated: 2021-05-22
     maturity: 2
