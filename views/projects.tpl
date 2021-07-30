@@ -205,6 +205,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                     <option value="artefact_demo">Demo</option>
                     <option value="artefact_hands-on">Hands-on</option>
                     <option value="artefact_pilot">Pilot</option>
+                    <option value="artefact_app">App</option>
                 </select>
             </div>
         </div>
@@ -251,11 +252,11 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                         <td colspan="24" class="category">{{ category_value }}</td>
                         <td style="display: none;"></td>
                         <td style="display: none;"></td>
-                        <td style="display: none;">
-                            99 - {{ " ".join(list(map(lambda a: "artefact_" + a, ["presentation", "background", "demo", "hands-on", "pilot", "technical"]))) }}
+                        <td style="display: none;" data-order="99">
+                            99 - {{ " ".join(list(map(lambda a: "artefact_" + a, ["presentation", "background", "demo", "hands-on", "pilot", "technical", "app"]))) }}
                         </td>
 
-                        <td style="display: none;"></td><td></td><td></td><td></td><td></td>
+                        <td style="display: none;" data-order="100"></td><td></td><td></td><td></td><td></td>
                         <td></td><td></td><td></td><td></td><td></td>
                         <td></td><td></td><td></td><td></td><td></td>
 
@@ -306,12 +307,12 @@ include('breadcrumbs.tpl', trail=trail, here=here)
 
                                 active = is_active(project)
                                 active_str = "project_active" if active else "inactive"
-                                incubator_str = "project_incubated" if project.get('in_incubator') else "no support"
+                                incubator_str = "project_incubated" if project.get('incubator') else "no support"
                                 artefacts = find_project_tabs(project_id)
+                                maturity_order = maturity + 0.5 if active else maturity
                                 %>
                                 <tr class="{{ 'active' if active else 'inactive' }}">
                                     <td data-order="{{category_sort}}">
-                                        <span style="display: none">category_{{category_key}}</span>
                                         {{category_value}}
                                     </td>
 
@@ -333,8 +334,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                         % end
                                     </td>
 
-                                    <td class="dt-center">
-                                        <span style="display: none">{{ len(artefacts) }}</span>
+                                    <td class="dt-center" data-order="{{len(artefacts)}}">
                                         % for artefact in artefacts:
                                             <span style="display: none">artefact_{{artefact}}</span>
                                             <div class="button" style="display: inline-block">
@@ -346,10 +346,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                     </td>
 
                                     % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
-                                    <td class="dt-center">
-                                        <div style="display:none;">
-                                            {{ maturity + 0.5 if active else maturity }}
-                                        </div>
+                                    <td class="dt-center" data-order="{{ maturity_order }}">
                                         <img
                                                 src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"
                                                 width="25em"
