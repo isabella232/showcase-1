@@ -1,4 +1,4 @@
-<h2>Introduction</h2>
+<h4>Introduction</h4>
 
 <p>
   SPINDLE allows for some statistics on distributed data without sharing any
@@ -16,7 +16,7 @@
   revealing the result.
 </p>
 
-<h2>Machine Learning</h2>
+<h4>Machine Learning</h4>
 
 <p>
   Machine learning allows computers to make choices without being explicitly
@@ -124,7 +124,7 @@
   red as all the previously seen cheap pens are red.
 </p>
 
-<h2>Homomorphic Cryptography</h2>
+<h4>Homomorphic Cryptography</h4>
 
 <p>
   Cryptography is the science of encoding a message so that only the intended
@@ -201,7 +201,7 @@
   homomorphic encryption systems support both addition and multiplication.
 </p>
 
-<h2>SPINDLE</h2>
+<h4>SPINDLE</h4>
 
 <p>
   SPINDLE uses the previous concepts: it allows to do some machine learning,
@@ -223,5 +223,5 @@
 </p>
 
 <div align="center">
-  <img src="/resources/incubator/images/spindle/network.svg" />
+  <img class="dark" src="/resources/incubator/images/spindle/network.svg" />
 </div>

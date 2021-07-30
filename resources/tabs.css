@@ -1,0 +1,97 @@
+div.tabs {
+  padding-top: 4em;
+}
+
+div.tabs-header {
+  position: sticky;
+  top: 2.2em;
+  padding-top: 4em;
+  background: white;
+  padding-bottom: 2em;
+}
+
+div.tabs-text {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+div.project-header {
+  background-color: #f0f0f0;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 0 35px 0 35px;
+}
+
+div.project-details {
+  background-color: #f8f8f8;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 35px 35px 35px 35px;
+  font-family: Arial, Sans-serif;
+  font-size: 1.2em;
+}
+
+div.project-details div.header {
+  font-weight: bold;
+  color: #ffa870;
+  display: inline-block;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+div.project-details ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+div.project-details div.contents {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+div.project-details hr {
+  color: black;
+  border-width: 1px;
+  border-style: dotted;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+div.lab-title {
+  text-align: center;
+}
+
+div.index-image {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.tabs-header {
+    background: var(--dark-grey);
+  }
+
+  hr {
+    background-color: white;
+  }
+
+  a.nav-link:hover {
+    color: var(--orange);
+  }
+}
+
+img.padded {
+  padding: 0.5em;
+  margin: 0.5em;
+}

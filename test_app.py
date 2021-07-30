@@ -56,48 +56,38 @@ def test_consistent_data():
             if 'url' in p['demo']:
                 assert 'code' in p['demo'], f"'code' missing from demo section in {p['name']}"
 
+
 def test_showcase():
     showcase.showcase()
 
-def test_labs():
-    showcase.labs()
-
-def test_all_lab_projects():
-    labs = data.load()
-
-    with patch.object(data, 'load', return_value=labs):
-        for lab_id in labs:
-            showcase.projects(lab_id)
 
 def test_all_projects():
     labs = data.load()
 
+    # with patch.object(showcase, 'find_project_tabs', return_value=['technical']):
     with patch.object(data, 'load', return_value=labs):
         for lab_id, lab in labs.items():
             for project_id in lab['projects']:
-                showcase.project(lab_id, project_id)
+                for tab in showcase.find_project_tabs(project_id):
+                    showcase.incubator_project_tab(project_id, tab)
 
-@patch.object(data, 'load', return_value=TEST_DATA)
-def test_project_lab_does_not_exist(data):
-    with pytest.raises(bottle.HTTPResponse) as exc:
-        showcase.project('dummy', 'proj1')
-
-    assert exc.value.status.startswith('404')
 
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project_does_not_exist(data):
     with pytest.raises(bottle.HTTPResponse) as exc:
-        showcase.project('LAB1', 'dummy')
+        showcase.incubator_project_tab('dummy', 'technical')
 
     assert exc.value.status.startswith('404')
 
+
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project(test_data):
-    showcase.project('LAB1', 'proj1')
+    showcase.incubator_project_tab('proj1', 'technical')
 
     # Check proj1 fields were accessed
     proj1 = test_data()['LAB1']['projects']['proj1']
     proj1['date_added'].date.assert_called()
+
 
 def test_index():
     with pytest.raises(bottle.HTTPResponse) as exc:
@@ -107,16 +97,3 @@ def test_index():
     resp = exc.value
     assert resp.status.startswith('302')
     assert resp.headers['Location'] == showcase.FACTORY_URL
-
-def test_incubator():
-    showcase.incubator()
-
-def test_all_incubator_projects():
-    labs = data.load()
-
-    with patch.object(data, 'load', return_value=labs):
-        for lab_id, lab in labs.items():
-            for project_id, project in lab['projects'].items():
-                if project.get('in_incubator', False):
-                    showcase.incubator_project(project_id)
-

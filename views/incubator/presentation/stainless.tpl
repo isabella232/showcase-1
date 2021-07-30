@@ -1,4 +1,4 @@
-<h2>Introduction</h2>
+<h4>Introduction</h4>
 
 <p>
 Stainless is a tool to help designing highly reliable programs in <a
@@ -31,7 +31,7 @@ process can:
 </ul>
 </p>
 
-<h2>Formal Verification vs. Testing</h2>
+<h4>Formal Verification vs. Testing</h4>
 
 <p>
 Formal Verification differs from more commonly used approaches for testing in
@@ -56,7 +56,7 @@ One way to illustrate the difference is as follows. Imagine that you are
 producing an image and want to make sure it is correct. By testing, you will
 check a few pixels, perhaps a border or a corner, and verify that they are
 correct:
-<div align="center"><img src="/resources/incubator/images/stainless/test-vs-fv-1.png"></div>
+<div align="center"><img class="dark" src="/resources/incubator/images/stainless/test-vs-fv-1.png"></div>
 </p>
 <p>
 This will give you some assurance, but you will never be completely sure,
@@ -67,14 +67,14 @@ impossible in a reasonable amount of time depending on the size of the image.
 <p>
 Now by using mathematical logic, you can either construct a proof that your
 image is correct no matter its size:
-<div align="center"><img src="/resources/incubator/images/stainless/test-vs-fv-2.png"></div>
+<div align="center"><img class="dark" src="/resources/incubator/images/stainless/test-vs-fv-2.png"></div>
 </p>
 <p>
 Or, failing that, you can directly obtain an image location that is incorrect:
-<div align="center"><img src="/resources/incubator/images/stainless/test-vs-fv-3.png"></div>
+<div align="center"><img class="dark" src="/resources/incubator/images/stainless/test-vs-fv-3.png"></div>
 </p>
 
-<h2>Smart Contracts</h2>
+<h4>Smart Contracts</h4>
 
 <p>
 <a href="https://en.wikipedia.org/wiki/Smart_contract">Smart Contracts</a> are
@@ -100,7 +100,7 @@ href="https://www.epfl.ch/labs/dedis/">DEDIS</a> lab. It also contains a layer
 allowing it to run an Ethereum virtual machine. Together with Stainless, they
 provide a complete platform for the development and execution of verified Smart
 Contracts, as illustrated in the following diagram:
-<div align="center"><img src="/resources/incubator/images/stainless/interactions.svg"></div>
+<div align="center"><img class="dark" src="/resources/incubator/images/stainless/interactions.svg"></div>
 </p>
 <p>
 The Smart Contract author uses Stainless to determine whether the code fulfills

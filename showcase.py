@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import bottle
+import os.path
 
 import data
 
@@ -59,6 +60,11 @@ def find_project(project_id, lab_id=None):
 
     bottle.abort(404, f"Project '{project_id}' does not exist")
 
+def find_project_tabs(project_id):
+    tabs = filter(lambda tab: os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl")),
+                  ["presentation", "background", "demo", "hands-on", "pilot"])
+    return list(tabs) + ["technical"]
+
 @bottle.route('/robots.txt')
 def server_robots():
     return bottle.static_file('robots.txt', root='./')
@@ -71,15 +77,6 @@ def server_resources(path):
 def index():
     bottle.redirect(FACTORY_URL)
 
-@bottle.route('/showcase/labs')
-def labs_no_slash():
-    bottle.redirect('/showcase/labs/')
-
-@bottle.route('/showcase/labs/')
-@bottle.view('labs')
-def labs():
-    return dict(labs=data.load())
-
 @bottle.route('/showcase')
 def showcase_no_slash():
     bottle.redirect('/showcase/')
@@ -90,55 +87,22 @@ def showcase():
     labs = data.load()
 
     return dict(labs=labs, selected_lab_id=None, is_active=is_active,
-            maturity_label=MATURITY_LABEL, categories=CATEGORIES)
-
-@bottle.route('/showcase/labs/<lab_id>')
-def lab_no_slash(lab_id):
-    bottle.redirect(f'/showcase/labs/{lab_id}/')
-
-@bottle.route('/showcase/labs/<lab_id>/')
-@bottle.view('projects')
-def projects(lab_id):
-    labs = data.load()
-    if lab_id not in labs:
-        bottle.abort(404, f"Lab '{lab_id}' does not exist")
-
-    return dict(labs=labs, selected_lab_id=lab_id, is_active=is_active,
-            maturity_label=MATURITY_LABEL, categories=CATEGORIES)
-
-@bottle.route('/showcase/labs/<lab_id>/<project_id>')
-@bottle.view('project')
-def project(lab_id, project_id):
-    project, lab = find_project(project_id, lab_id)
-
-    return dict(project=project, lab=lab, is_active=is_active,
-            maturity_label=MATURITY_LABEL, categories=CATEGORIES)
-
-@bottle.route('/incubator')
-def incubator_no_slash():
-    bottle.redirect('/incubator/')
-
-@bottle.route('/incubator/')
-@bottle.view('incubator/index')
-def incubator(lab_id=None):
-    labs = data.load()
-
-    projects = sorted([
-        {**p, 'p_id': p_id, 'lab': {**lab, 'lab_id': lab_id}}
-        for lab_id, lab in labs.items()
-        for p_id, p in lab['projects'].items()
-        if p.get('in_incubator', False)
-        ],
-        key=lambda p: (not 'demo' in p, p['name'].lower()))
-
-    return dict(projects=projects)
+            maturity_label=MATURITY_LABEL, categories=CATEGORIES,
+            find_project_tabs=find_project_tabs)
 
 @bottle.route('/incubator/<project_id>')
-@bottle.view('incubator/project_base')
 def incubator_project(project_id):
+    tabs = find_project_tabs(project_id)
+    bottle.redirect('/incubator/' + project_id + "/" + tabs[0])
+
+@bottle.route('/incubator/<project_id>/<tab>')
+@bottle.view('incubator/tabs')
+def incubator_project_tab(project_id, tab):
     project, lab = find_project(project_id)
 
-    return dict(project=project, lab=lab)
+    return dict(project=project, lab=lab,
+                tab=tab, tabs=find_project_tabs(project_id),
+                is_active=is_active, maturity_label=MATURITY_LABEL)
 
 if __name__ == '__main__':
     bottle.run(host='0.0.0.0', port=8080, debug=True, reloader=True)
