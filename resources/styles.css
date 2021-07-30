@@ -54,6 +54,10 @@ img.artefact:hover {
   border: 0.1em solid white;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--dark-grey);

@@ -28,9 +28,11 @@
             src="https://cdn.datatables.net/plug-ins/1.10.25/features/scrollResize/dataTables.scrollResize.min.js"></script>
     <script type="text/javascript" class="init">
 
+        lock_table = false;
+
         $(document).ready(function () {
 
-            var table = $('#projects').DataTable({
+            const table = $('#projects').DataTable({
                 "scrollResize": true,
                 "scrollY": 100,
                 "scrollCollapse": true,
@@ -39,13 +41,15 @@
                 "dom": "Bfrtip",
                 "orderClasses": false,
                 "buttons": [
-                    { text: "Columns", extend: 'colvis' },
+                    {text: "Columns", extend: 'colvis'},
                     // 'copy',
                     // 'csv',
                     // 'print',
                     {
                         text: "Clear search",
-                        action: function(e, dt, node, config) { set_search(""); }
+                        action: function (e, dt, node, config) {
+                            set_search("");
+                        }
                     },
                 ],
                 "order": [[0, "asc"], [4, "desc"], [5, "desc"], [1, "asc"], [2, "asc"]],
@@ -60,16 +64,29 @@
             table.columns(".extra").visible(false);
             set_search('project_incubated');
 
+            table.on('order.dt', () => {
+                let rows = document.getElementsByClassName("category_row");
+                for (let row = 0; row < rows.length; row++) {
+                    rows[row].classList.remove("hidden");
+                    if (!lock_table) {
+                        rows[row].classList.add("hidden");
+                    }
+                }
+            })
+
             // Set focus on the search input
             $('#projects_filter input').focus();
         });
 
+        // called by clicking on a tag
         function set_search(text) {
             let table = $('#projects').DataTable();
             table.search(text).draw();
         }
 
+        // called by the dropdown boxes
         function update_search() {
+            lock_table = true;
             let categories = $('#categories')[0].value;
             let work = $('#work')[0].value;
             let lab = $('#lab')[0].value;
@@ -77,8 +94,10 @@
             let search = [work, categories, lab, artefacts]
                 .filter((e) => e !== "")
                 .join(" ");
-            console.log("search is:", search);
-            set_search(search);
+            const table = $('#projects').DataTable();
+            table.search(search);
+            table.order([0, "asc"], [4, "desc"], [5, "desc"], [1, "asc"], [2, "asc"]).draw();
+            lock_table = false;
         }
     </script>
 </head>
@@ -225,7 +244,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                 </thead>
                 <tbody>
                 %for category_key, [category_sort, category_value] in categories.items():
-                    <tr>
+                    <tr class="category_row">
                         <td data-order="{{ category_sort }}">
                             <span style="display: none">category_{{category_key}}</span>
                         </td>
