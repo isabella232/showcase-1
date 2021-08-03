@@ -18,9 +18,8 @@
   trail = [
     ('Factory', '/'),
     ('Showcase', '/showcase/'),
-    (project['name'], f"/incubator/{project['p_id']}")
   ]
-  here = tab.capitalize()
+  here = project['name'].capitalize()
 
   include('breadcrumbs.tpl', trail=trail, here=here)
 %>

@@ -21,7 +21,7 @@
         <td width="33%" style="padding: 1em;">
             <h4>Decentralization</h4>
             <img src="/resources/incubator/images/omniledger/decentralized.png" width="33%"
-                 style="float: left;" class="dark padded"/>
+                 style="float: left;" class="dark_invert padded"/>
             Blockchains got a lot of publicity under the name of <strong>Bitcoin</strong>.
             For some it is a source of great wealth, for others it is a synonym for a lot
             of wasted energy. Few remember the origin of Bitcoin, which is about
@@ -33,9 +33,9 @@
         <td width="33%" style="padding: 1em;">
             <h4>Transactions</h4>
             <img src="/resources/incubator/images/omniledger/transaction_general.png" width="33%"
-                 style="float: left;" class="dark padded"/>
+                 style="float: left;" class="dark_invert padded"/>
             <img src="/resources/incubator/images/omniledger/transaction_money.png" width="33%"
-                 style="float: right;" class="dark padded"/>
+                 style="float: right;" class="dark_invert padded"/>
             <br clear="left"/>
             A transaction is what is stored in a blockchain.
             In the case of Bitcoin, transactions describe the <strong>movement of money</strong>
@@ -49,7 +49,7 @@
         <td width="33%" style="padding: 1em;">
             <h4>Consensus</h4>
             <img src="/resources/incubator/images/omniledger/distributed-ledger.png" width="33%"
-                 style="float: right;" class="dark padded"/>
+                 style="float: right;" class="padded"/>
             There are other blockchains than Bitcoin, but they all solve the problem of
             <strong>consensus</strong> for decentralized systems. Reaching a consensus between
             different entities is not easy, as some of the entities can try to cheat.

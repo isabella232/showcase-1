@@ -21,6 +21,28 @@ h1 {
   text-align: center;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: -1;
+}
+
+.click-zoom input[type="checkbox"] {
+  display: none;
+}
+
+.click-zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+.click-zoom input[type="checkbox"]:checked ~ img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
 a:link,
 a:visited {
   color: #289cae;
@@ -87,6 +109,8 @@ img.artefact:hover {
   }
 
   img.dark_invert {
+    position: page;
     filter: invert(1);
+    z-index: 0;
   }
 }

@@ -90,8 +90,8 @@
             let categories = $('#categories')[0].value;
             let work = $('#work')[0].value;
             let lab = $('#lab')[0].value;
-            let artefacts = $('#artefacts')[0].value;
-            let search = [work, categories, lab, artefacts]
+            let artifacts = $('#artifacts')[0].value;
+            let search = [work, categories, lab, artifacts]
                 .filter((e) => e !== "")
                 .join(" ");
             const table = $('#projects').DataTable();
@@ -196,10 +196,10 @@ include('breadcrumbs.tpl', trail=trail, here=here)
             </div>
 
             <div style="position: absolute; left: 45em; top: 0em;">
-                <select id="artefacts" class="form-select"
+                <select id="artifacts" class="form-select"
                         style="width: 13em;"
                         onchange="update_search();">
-                    <option selected value="">All artefacts</option>
+                    <option selected value="">All artifacts</option>
                     <option value="artefact_presentation">Presentation</option>
                     <option value="artefact_background">Background</option>
                     <option value="artefact_demo">Demo</option>
@@ -217,7 +217,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                     <th>Name</th>
                     <th>Description</th>
                     <th>Tags</th>
-                    <th>Artefacts</th>
+                    <th>Artifacts</th>
 
                     <th>Maturity</th>
                     <th class="extra">Professor &mdash; Lab</th>
@@ -308,7 +308,7 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                 active = is_active(project)
                                 active_str = "project_active" if active else "inactive"
                                 incubator_str = "project_incubated" if project.get('incubator') else "no support"
-                                artefacts = find_project_tabs(project_id)
+                                artifacts = find_project_tabs(project_id)
                                 maturity_order = maturity + 0.5 if active else maturity
                                 %>
                                 <tr class="{{ 'active' if active else 'inactive' }}">
@@ -334,8 +334,8 @@ include('breadcrumbs.tpl', trail=trail, here=here)
                                         % end
                                     </td>
 
-                                    <td class="dt-center" data-order="{{len(artefacts)}}">
-                                        % for artefact in artefacts:
+                                    <td class="dt-center" data-order="{{len(artifacts)}}">
+                                        % for artefact in artifacts:
                                             <span style="display: none">artefact_{{artefact}}</span>
                                             <div class="button" style="display: inline-block">
                                                 <a href="../incubator/{{project_id}}/{{artefact}}">

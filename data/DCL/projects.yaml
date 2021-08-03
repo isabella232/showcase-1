@@ -69,7 +69,7 @@ projects:
     maturity: 1
     incubator:
       work: 2021/Q2 started working on demonstrator
-      artefacts:
+      artifacts:
         - type: Demo
           title: AT2 Demonstrator
           url: https://factory.c4dt.org/incubator/at2/demo

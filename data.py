@@ -107,7 +107,7 @@ PROJECTS_SCHEMA = sy.Map({"projects":
             sy.Optional("maturity"): sy.Int(),
             sy.Optional("incubator"): sy.Map({
                 "work": sy.Str(),
-                sy.Optional("artefacts"): sy.Seq(
+                sy.Optional("artifacts"): sy.Seq(
                     sy.Map({
                         "type": sy.Enum(["Demo", "Hands-on", "Pilot", "App"]),
                         "url": sy.Url(),

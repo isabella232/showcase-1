@@ -216,14 +216,6 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
     color: white;
   }
 
-  div.project-header {
-    background-color: #0f0f0f;
-  }
-
-  div.project-details {
-    background-color: #070707;
-  }
-
   div.dt-buttons {
     display: inline-block;
   }

@@ -91,11 +91,26 @@ projects:
     description: Encrypted storage with access control
     layman_desc: >
       Store data encrypted on the blockchain and use a decentralized access
-      control mechanism to define who is allowed to decrypt.
+      control mechanism to define who is allowed to decrypt. It has been
+      developed alongside with OmniLedger. But it can also be used
+      independently of OmniLedger.
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/master/calypso
       date_last_commit: 2020-12-18
+    c4dt_contact:
+      name: Linus Gasser
+      email: linus.gasser@epfl.ch
+    incubator:
+      work: |
+        The C4DT created a demonstrator for Calypso, as well as a hands-on workshop.
+      artifacts:
+        - type: Demo
+          title: "Calypso filesharing"
+          url: https://github.com/calypso-demo/filesharing
+        - type: Pilot
+          title: "Odyssey"
+          url: https://github.com/dedis/odyssey
     lines_of_code: 6500 / 1500
     contacts:
       - name: Pierluca Borsò
@@ -177,10 +192,13 @@ projects:
     license: AGPL-3.0
     incubator:
       work: The OmniLedger project is in the Market and will be re-evaluated in Spring 2022.
-      artefacts:
+      artifacts:
         - type: Demo
           title: "Blockchain Explorer"
           url: https://wookiee.ch/columbus
+        - type: Demo
+          title: "Node Status"
+          url: https://status.dedis.ch/
         - type: Pilot
           title: "Login Service"
           url: https://login.c4dt.org

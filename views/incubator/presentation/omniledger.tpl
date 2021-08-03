@@ -32,25 +32,7 @@
     OmniLedger blockchain implementation.
     </li>
 </p>
-
-<h4>Links to demos</h4>
-
-<p>OmniLedger has already been used for a number of years, and there are a lot of projects that
-    interact with this blockchain.
-    Together with the <a href="https://dedis.ch">DEDIS</a> lab, C4DT is running a test-network
-    since March 2019, and it is used on a daily basis for different services.</p>
-
-<ul>
-    <li><a href="https://wookiee.ch/columbus">Blockchain Explorer</a> -
-        as our test network is public, you can explore the blocks to see the latest transactions.
-    </li>
-    <li><a href="https://status.dedis.ch">Node Status</a> -
-        here you can see the status of the nodes running in our test network.
-    </li>
-    <li><a href="https://login.c4dt.org">Login Service</a> -
-        this service is used by C4DT and its partners as authentication service to the internal
-        pages. If you're interested, get in contact with <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></li>
-</ul>
-
-<p>For more technical references like the paper describing OmniLedger, you can have a look at the
-    <a href="https://factory.c4dt.org/showcase/labs/DEDIS/omniledger">showcase entry</a>.</p>
+<p>
+    An overview of the OmniLedger architecture can be seen in the following figure:
+    <img src="../../resources/incubator/images/omniledger/omniledger-overview-transparent.png" class="dark_invert center"/>
+</p>

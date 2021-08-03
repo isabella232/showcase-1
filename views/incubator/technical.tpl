@@ -1,4 +1,4 @@
-<div class="project-details" style="width: 100%; background-color: #00000000; border: 0px;">
+<div class="project-details">
     <div>
         <div class="header">Name:</div> {{ project.get('name') }}
     </div>
@@ -99,7 +99,7 @@
         <div class="header">Factory Development:</div>
         {{ incubator['work'] }}
         <ul>
-        % for line in incubator.get('artefacts', []):
+        % for line in incubator.get('artifacts', []):
             <li>{{line['type']}}:
                 <a href="{{line['url']}}">{{line['title']}}</a>
             </li>

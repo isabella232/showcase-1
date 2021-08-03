@@ -31,7 +31,7 @@ projects:
     license: Apache-2.0
     incubator:
       work: 2021/Q2 - updated demonstrator with more explanations
-      artefacts:
+      artifacts:
         - type: Demo
           title: Stainless-OmniLedger demonstrator
           url: https://factory.c4dt.org/incubator/stainless/demo
