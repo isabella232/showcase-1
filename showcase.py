@@ -22,14 +22,14 @@ MATURITY_LABEL = {
 # Main Factory page
 FACTORY_URL = "https://www.c4dt.org/factory/software/"
 
-CATEGORIES = {
-    "Privacy": [1, "Privacy Protection & Cryptography"],
-    "Blockchain": [2, "Blockchains & Smart Contracts"],
-    "Verification": [3, "Software Verification"],
-    "Security": [4, "Device and System Security"],
-    "Learning": [5, "Machine Learning"],
-    "Other": [6, "Other"],
-}
+CATEGORIES = [
+    ["Privacy", "Privacy Protection & Cryptography"],
+    ["Blockchain", "Blockchains & Smart Contracts"],
+    ["Verification", "Software Verification"],
+    ["Security", "Device and System Security"],
+    ["Learning", "Machine Learning"],
+    ["Other", "Other"],
+]
 
 def is_active(project):
     active = None
@@ -61,8 +61,8 @@ def find_project(project_id, lab_id=None):
     bottle.abort(404, f"Project '{project_id}' does not exist")
 
 def find_project_tabs(project_id):
-    tabs = filter(lambda tab: os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl")),
-                  ["presentation", "background", "demo", "hands-on", "pilot", "app"])
+    tabs = [ tab for tab in ["presentation", "background", "demo", "hands-on", "pilot", "app"]
+             if os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl"))]
     return list(tabs) + ["technical"]
 
 @bottle.route('/robots.txt')

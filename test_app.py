@@ -63,7 +63,6 @@ def test_showcase():
 def test_all_projects():
     labs = data.load()
 
-    # with patch.object(showcase, 'find_project_tabs', return_value=['technical']):
     with patch.object(data, 'load', return_value=labs):
         for lab_id, lab in labs.items():
             for project_id in lab['projects']:

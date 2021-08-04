@@ -145,7 +145,7 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                         style="width: 13em;"
                         onchange="update_search();">
                     <option value="">All categories</option>
-                    % for category_key, [_, category_value] in categories.items():
+                    % for [category_key, category_value] in categories:
                     <option value="category_{{ category_key }}">{{ category_value }}</option>
                     % end
                 </select>
@@ -216,7 +216,7 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                 </tr>
                 </thead>
                 <tbody>
-                %for category_key, [category_sort, category_value] in categories.items():
+                %for category_sort, [category_key, category_value] in enumerate(categories):
                     <tr class="category_row">
                         <td data-order="{{ category_sort }}">
                             <span style="display: none">category_{{category_key}}</span>
