@@ -125,6 +125,10 @@ li {
   a.nav-link:hover {
     color: var(--orange);
   }
+
+  img.dark_pad {
+    padding: 0.5em;
+  }
 }
 
 img.padded {

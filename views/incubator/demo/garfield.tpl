@@ -1,3 +1,4 @@
+<img src="../../../resources/incubator/images/garfield/wip.jpg" class="left"/>
 <p>
     This demonstrator illustrates how Machine Learning is used to
     train a model on known data and how it fares on new data. It describes
@@ -7,3 +8,6 @@
     components have on distributed learning, and how using Garfield helps
     to develop applications that can tolerate them.
 </p>
+
+<p>We're actively working on this demonstrator and hope to have something
+    presentable by October 2021.</p>

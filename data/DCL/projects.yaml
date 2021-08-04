@@ -33,6 +33,10 @@ projects:
     language: Python, Cuda, C++
     incubator:
       work: Started in Spring 2021, demo in Autumn.
+      artifacts:
+        - type: Demo
+          title: "Demonstrator - work in progress"
+          url: https://factory.c4dt.org/incubator/garfield/demo/
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch

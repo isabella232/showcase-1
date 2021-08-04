@@ -13,14 +13,14 @@ TEST_DATA = {
             'prof': MagicMock(),
             'projects': {
                 'proj1': {
-                    'name': None,
+                    'name': 'Project 1',
                     'date_added': MagicMock(),
                     },
                 'proj2': None,
                 },
             },
         'LAB2': {
-            'name': None,
+            'name': 'Project 2',
             'url': None,
             'prof': MagicMock(),
             'projects': {
