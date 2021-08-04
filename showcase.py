@@ -86,7 +86,7 @@ def showcase_no_slash():
 def showcase():
     labs = data.load()
 
-    return dict(labs=labs, selected_lab_id=None, is_active=is_active,
+    return dict(labs=labs, is_active=is_active,
             maturity_label=MATURITY_LABEL, categories=CATEGORIES,
             find_project_tabs=find_project_tabs)
 

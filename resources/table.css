@@ -1,15 +1,19 @@
 :root {
-  --active-odd-row-hover-color: #b0d0f0;
-  --active-odd-row-color: #90b0d0;
-  --active-even-row-hover-color: #90d0f0;
-  --active-even-row-color: #80c0e0;
+  --category-row-color: #e0f0e0;
+  --category-row-hover-color: #d0e0d0;
+  --active-odd-row-hover-color: #c0e0e8;
+  --active-odd-row-color: #e0f0f8;
+  --active-even-row-hover-color: #a0e0ef;
+  --active-even-row-color: #c0f0ff;
   --inactive-odd-row-hover-color: #f0f0f0;
-  --inactive-odd-row-color: #e0e0e0;
-  --inactive-even-row-hover-color: #fefefe;
-  --inactive-even-row-color: #eeeeee;
+  --inactive-odd-row-color: #fefefe;
+  --inactive-even-row-hover-color: #eaeaea;
+  --inactive-even-row-color: #f5f5f5;
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    --category-row-color: #203020;
+    --category-row-hover-color: #304030;
     --active-odd-row-hover-color: #234b6c;
     --active-odd-row-color: #133b5c;
     --active-even-row-hover-color: #2e6f84;
@@ -48,25 +52,34 @@ div.intro {
 }
 
 div.color_legend {
+  display: flex;
   float: left;
-  display: block;
   height: 35px;
   text-align: center;
 }
 
 div.page-table {
-  position: relative;
+  margin-top: 1em;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 div.layout-filter {
-  position: absolute;
-  top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 5em;
   z-index: 1;
 }
 
+div.layout-filter div {
+  margin-right: 1em;
+}
+
 div.layout-table {
-  position: absolute;
+  margin-top: -1em;
+  flex-grow: 1;
   width: 100%;
   height: 100%;
 }
@@ -82,9 +95,9 @@ label {
 }
 
 span.box {
-  height: 20px;
-  width: 20px;
-  clear: both;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 0.5em;
   display: inline-block;
   border: 1px solid #070707;
 }
@@ -159,11 +172,11 @@ table.dataTable.display tbody tr.active.even:hover > td {
 table.dataTable.display tbody tr > td.category {
   text-align: center;
   font-size: 150%;
-  background: #9adac7;
+  background: var(--category-row-color);
 }
 
 table.dataTable.display tbody tr:hover > td.category {
-  background: #aafad7;
+  background: var(--category-row-hover-color);
 }
 
 #labs_info,
@@ -226,12 +239,16 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
     background-image: none !important;
   }
 
-  table.dataTable.display tbody tr > td.category {
-    background: #805438;
+  button.dt-button.active {
+    background-color: #307050 !important;
   }
 
-  table.dataTable.display tbody tr:hover > td.category {
-    background: #a07458;
+  button.dt-button.active:hover {
+    background-color: #289cae !important;
+  }
+
+  button.dt-button:hover {
+    background-color: #286c7e !important;
   }
 
   table.dataTable.cell-border tbody td {
@@ -242,5 +259,9 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
   table.dataTable.cell-border tbody td {
     border-top: none !important;
     border-right: 1px solid #444 !important;
+  }
+
+  input {
+    color: #303030;
   }
 }
