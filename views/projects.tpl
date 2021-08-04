@@ -120,12 +120,6 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                 will show an in-depth description.
             </p>
             <p>For questions, please contact <a href="mailto:linus.gasser@epfl.ch">Linus Gasser</a></p>
-
-            <div class="color_legend">
-                <span class="box active_even"></span>
-                <span class="box active_odd"></span>
-                Active projects
-            </div>
         </div>
     </div>
     <div class="page-table">
@@ -390,6 +384,16 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                 % end
                 </tbody>
             </table>
+        </div>
+
+        <div class="color_legend">
+            <span class="box active_even"></span>
+            <span class="box active_odd"></span>
+            Active projects
+            <span style="width: 3em;"></span>
+            <span class="box inactive_even"></span>
+            <span class="box inactive_odd"></span>
+            Inactive projects
         </div>
     </div>
 </div>
