@@ -80,8 +80,19 @@ div.index-image {
   text-align: center;
 }
 
-div.columns div {
+div.columns label {
   margin: 0.5em;
+}
+
+img.left {
+  float: left;
+  margin: 0.5em;
+  width: 30%;
+}
+
+img.center {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 p {
