@@ -71,6 +71,19 @@ div.index-image {
   padding-top: 1em;
 }
 
+.columns {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+div.columns div {
+  margin: 0.5em;
+}
+
 p {
   font-size: medium;
 }
@@ -79,6 +92,10 @@ strong {
   font-style: italic;
   text-underline-style: double;
   text-decoration: underline;
+}
+
+li {
+  margin-top: 0.5em;
 }
 
 @media (prefers-color-scheme: dark) {

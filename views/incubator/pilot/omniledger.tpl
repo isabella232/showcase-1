@@ -50,22 +50,22 @@ either for administration, or to enter secured pages.</p>
 with an OmniLedger login, and who is authorized by the owner of the Matrix server, to login.</p>
 <p>In the following there are some example screenshots of how this looks:</p>
 
-<div class="center" style="width: 100%; display: flex; align-items: flex-end;">
-    <div style="margin: 1em;" class="click-zoom">
+<div class="columns">
+    <div class="click-zoom">
         <label>
             <input type="checkbox">
             <img src="../../../resources/incubator/images/omniledger/pilot-04-login-wordpress.png"/>
             <br>The "Sign in with OmniLedger" button in Wordpress
         </label>
     </div>
-    <div style="margin: 1em;" class="click-zoom">
+    <div class="click-zoom">
         <label>
             <input type="checkbox">
             <img src="../../../resources/incubator/images/omniledger/pilot-05-login-wordpress-confirmation.png"/>
             <br>A user has to confirm the login
         </label>
     </div>
-    <div style="margin: 1em;" class="click-zoom">
+    <div class="click-zoom">
         <label>
             <input type="checkbox">
             <img src="../../../resources/incubator/images/omniledger/pilot-07-login-wordpress-transaction.png"/>
@@ -73,15 +73,15 @@ with an OmniLedger login, and who is authorized by the owner of the Matrix serve
         </label>
     </div>
 </div>
-<div class="center" style="width: 100%; display: flex; align-items: flex-end;">
-    <div style="margin: 1em;" class="click-zoom">
+<div class="columns">
+    <div class="click-zoom">
         <label>
             <input type="checkbox">
             <img src="../../../resources/incubator/images/omniledger/pilot-06-login-wordpress-complete.png"/>
             <br>The access to the protected area in Wordpress
         </label>
     </div>
-    <div style="margin: 1em;" class="click-zoom">
+    <div class="click-zoom">
         <label>
             <input type="checkbox">
             <img src="../../../resources/incubator/images/omniledger/pilot-08-login-matrix-cas.png"/>
