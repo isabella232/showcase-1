@@ -52,7 +52,7 @@
 
             // Hide "extra" columns by default
             table.columns(".extra").visible(false);
-            set_search('project_incubated');
+            update_search()
 
             table.on('order.dt', () => {
                 let rows = document.getElementsByClassName("category_row");
@@ -69,9 +69,15 @@
         });
 
         // called by clicking on a tag
-        function set_search(text) {
+        function search_tag(text) {
             let table = $('#projects').DataTable();
             table.search(text).draw();
+            $('#search')[0].value = text;
+        }
+
+        function clear_search() {
+            $('#search')[0].value = "";
+            update_search();
         }
 
         // called by the dropdown boxes
@@ -99,6 +105,16 @@ trail = [
 ]
 
 include('breadcrumbs.tpl', trail=trail, here='Showcase')
+
+artifact_tags = {
+    "app": "Application for mobile or desktop",
+    "background": "Background information on the technology used",
+    "demo": "Demonstrator showing off the capabilities",
+    "hands-on": "Hands-on training available",
+    "pilot": "Real use-case testing application",
+    "presentation": "General presentation",
+    "technical": "Links to technical information"
+}
 %>
 
 <div class="contents">
@@ -112,7 +128,7 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
             </picture>
         </a>
         <div class="intro">
-            <h1>C4DT affiliated labs projects</h1>
+            <h1>C4DT Affiliated Lab Projects</h1>
             <p>
                 This page presents all projects from the labs affiliated to the
                 Center for Digital Trust.
@@ -128,9 +144,9 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                 <select id="work" class="form-select"
                         style="width: 13em;"
                         onchange="update_search();">
-                    <option selected value="project_incubated">C4DT supported</option>
+                    <option selected value="">All projects</option>
+                    <option value="project_incubated">C4DT supported</option>
                     <option value="project_active">Active projects</option>
-                    <option value="">All projects</option>
                 </select>
             </div>
 
@@ -173,6 +189,7 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
 
             <div>
                 search: <input id="search" oninput="update_search()">
+                <span onclick="clear_search()" class="clear_search">X</span>
             </div>
         </div>
         <div class="layout-table">
@@ -233,7 +250,6 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                             if project.get('category', 'Other') != category_key:
                                 continue
                             end
-                            #category_sort, category_value = category_sv
 
                             prof = lab['prof']
                             name = project['name']
@@ -272,13 +288,14 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
 
                             active = is_active(project)
                             active_str = "project_active" if active else "inactive"
-                            incubator_str = "project_incubated" if project.get('incubator') else "no support"
+                            incubated = project.get('incubator')
+                            incubator_str = "project_incubated" if incubated else "no support"
                             artifacts = find_project_tabs(project_id)
                             maturity_order = maturity + 0.5 if active else maturity
                             %>
-                            <tr class="{{ 'active' if active else 'inactive' }}">
+                            <tr class="{{ 'incubated' if incubated else 'not_incubated' }}">
                                 <td data-order="{{category_sort}}">
-                                    category_{{category_value}}
+                                    category_{{category_key}} {{category_value}}
                                 </td>
 
                                 <td class="proj_name"
@@ -294,7 +311,7 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
 
                                 <td class="dt-center">
                                     % for tag in tags:
-                                    <button onclick="javascript:set_search('{{ tag }}')"
+                                    <button onclick="javascript:search_tag('{{ tag }}')"
                                     class="button">{{ tag }}</button>
                                     % end
                                 </td>
@@ -305,7 +322,7 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
                                         <div class="button" style="display: inline-block">
                                             <a href="../incubator/{{project_id}}/{{artifact}}">
                                             <img src="../resources/incubator/icons/{{artifact}}.png"
-                                                 class="dark_invert artifact"/></a>
+                                                 class="dark_invert artifact" title="{{artifact_tags[artifact]}}"/></a>
                                         </div>
                                     % end
                                 </td>
@@ -387,13 +404,13 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
         </div>
 
         <div class="color_legend">
-            <span class="box active_even"></span>
-            <span class="box active_odd"></span>
-            Active projects
+            <span class="box incubated_even"></span>
+            <span class="box incubated_odd"></span>
+            C4DT supported projects
             <span style="width: 3em;"></span>
-            <span class="box inactive_even"></span>
-            <span class="box inactive_odd"></span>
-            Inactive projects
+            <span class="box not_incubated_even"></span>
+            <span class="box not_incubated_odd"></span>
+            Lab supported projects
         </div>
     </div>
 </div>

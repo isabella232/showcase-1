@@ -19,7 +19,7 @@
     ('Factory', '/'),
     ('Showcase', '/showcase/'),
   ]
-  here = project['name'].capitalize()
+  here = project['name']
 
   include('breadcrumbs.tpl', trail=trail, here=here)
 %>

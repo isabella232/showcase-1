@@ -15,9 +15,9 @@
     could have prevented it.
 </p>
 
-<p>The following screenshot shows the start of the demonstrator. If you want
-    to discover for yourself, you can try to change the contract with (1). But a
-    better starting point is the tutorial, which you'll find in (2).</p>
+<p>The following screenshot shows the start of the demonstrator. The tutorial
+    (2) will guide you through the various elements of the interface and help you
+    on your way.</p>
 
 <img src="../../../resources/incubator/images/stainless/demo-start.png" width="80%" class="center"/>
 

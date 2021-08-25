@@ -7,6 +7,7 @@ style="float: left; margin: 1em;">
             href="https://f-droid.org/en/packages/ch.corona.tracing/">available on
         the F-Droid store</a>.
 </p>
-<p>Unfortunately, the F-Droid store has a very strict privacy policy that makes it
-impossible to know how many people did install the app. However, there are comments
-and suggestions by the community, which means that some people are using it.</p>
+<p>The F-Droid store does not provide statistics regarding how many users installed
+    an app, for privacy reasons. However, comments, issue reports and feature requests by the
+    community indicate that there is a demand and a user base for this version of
+    SwissCovid.</p>

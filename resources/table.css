@@ -1,27 +1,27 @@
 :root {
-  --category-row-color: #e0f0e0;
-  --category-row-hover-color: #d0e0d0;
-  --active-odd-row-hover-color: #c0e0e8;
-  --active-odd-row-color: #e0f0f8;
-  --active-even-row-hover-color: #a0e0ef;
-  --active-even-row-color: #c0f0ff;
-  --inactive-odd-row-hover-color: #f0f0f0;
-  --inactive-odd-row-color: #fefefe;
-  --inactive-even-row-hover-color: #eaeaea;
-  --inactive-even-row-color: #f5f5f5;
+  --category-row-color: #e0e0f0;
+  --category-row-hover-color: #d0d0f0;
+  --incubated-odd-row-hover-color: #c0e8e0;
+  --incubated-odd-row-color: #e0f8f0;
+  --incubated-even-row-hover-color: #b8e8e0;
+  --incubated-even-row-color: #d8f8f0;
+  --not-incubated-odd-row-hover-color: #f0f0f0;
+  --not-incubated-odd-row-color: #fefefe;
+  --not-incubated-even-row-hover-color: #eaeaea;
+  --not-incubated-even-row-color: #f5f5f5;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --category-row-color: #203020;
-    --category-row-hover-color: #304030;
-    --active-odd-row-hover-color: #234b6c;
-    --active-odd-row-color: #133b5c;
-    --active-even-row-hover-color: #2e6f84;
-    --active-even-row-color: #1e5f74;
-    --inactive-odd-row-hover-color: #474747;
-    --inactive-odd-row-color: #373737;
-    --inactive-even-row-hover-color: #4e4e4e;
-    --inactive-even-row-color: #3e3e3e;
+    --category-row-color: #202050;
+    --category-row-hover-color: #303060;
+    --incubated-odd-row-hover-color: #235c4b;
+    --incubated-odd-row-color: #134c3b;
+    --incubated-even-row-hover-color: #2b6453;
+    --incubated-even-row-color: #1b5443;
+    --not-incubated-odd-row-hover-color: #474747;
+    --not-incubated-odd-row-color: #373737;
+    --not-incubated-even-row-hover-color: #4f4f4f;
+    --not-incubated-even-row-color: #3f3f3f;
   }
 }
 
@@ -91,6 +91,16 @@ input {
   font-size: medium;
 }
 
+.clear_search {
+  border-radius: 2px;
+  padding: 0.2em;
+  cursor: pointer;
+  background-color: white;
+  color: #3e3e3e;
+  margin-left: -1.7em;
+  font-size: 80%;
+}
+
 label {
   color: #ffcba5;
 }
@@ -103,20 +113,20 @@ span.box {
   border: 1px solid #070707;
 }
 
-.active_even {
-  background-color: var(--active-even-row-color);
+.incubated_even {
+  background-color: var(--incubated-even-row-color);
 }
 
-.active_odd {
-  background-color: var(--active-odd-row-color);
+.incubated_odd {
+  background-color: var(--incubated-odd-row-color);
 }
 
-.inactive_even {
-  background-color: var(--inactive-even-row-color);
+.not_incubated_even {
+  background-color: var(--not-incubated-even-row-color);
 }
 
-.inactive_odd {
-  background-color: var(--inactive-odd-row-color);
+.not_incubated_odd {
+  background-color: var(--not-incubated-odd-row-color);
 }
 
 .button {
@@ -147,35 +157,35 @@ table.dataTable tbody tr td.proj_name {
 }
 
 table.dataTable.display tbody tr.odd > td {
-  background-color: var(--inactive-odd-row-color);
+  background-color: var(--not-incubated-odd-row-color);
 }
 
 table.dataTable.display tbody tr.even > td {
-  background-color: var(--inactive-even-row-color);
+  background-color: var(--not-incubated-even-row-color);
 }
 
 table.dataTable.display tbody tr.odd:hover > td {
-  background-color: var(--inactive-odd-row-hover-color);
+  background-color: var(--not-incubated-odd-row-hover-color);
 }
 
 table.dataTable.display tbody tr.even:hover > td {
-  background-color: var(--inactive-even-row-hover-color);
+  background-color: var(--not-incubated-even-row-hover-color);
 }
 
-table.dataTable.display tbody tr.active.odd > td {
-  background-color: var(--active-odd-row-color);
+table.dataTable.display tbody tr.incubated.odd > td {
+  background-color: var(--incubated-odd-row-color);
 }
 
-table.dataTable.display tbody tr.active.even > td {
-  background-color: var(--active-even-row-color);
+table.dataTable.display tbody tr.incubated.even > td {
+  background-color: var(--incubated-even-row-color);
 }
 
-table.dataTable.display tbody tr.active.odd:hover > td {
-  background-color: var(--active-odd-row-hover-color);
+table.dataTable.display tbody tr.incubated.odd:hover > td {
+  background-color: var(--incubated-odd-row-hover-color);
 }
 
-table.dataTable.display tbody tr.active.even:hover > td {
-  background-color: var(--active-even-row-hover-color);
+table.dataTable.display tbody tr.incubated.even:hover > td {
+  background-color: var(--incubated-even-row-hover-color);
 }
 
 table.dataTable.display tbody tr > td.category {
