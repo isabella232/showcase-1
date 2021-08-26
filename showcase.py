@@ -22,15 +22,6 @@ MATURITY_LABEL = {
 # Main Factory page
 FACTORY_URL = "https://www.c4dt.org/factory/software/"
 
-CATEGORIES = [
-    ["Privacy", "Privacy Protection & Cryptography"],
-    ["Blockchain", "Blockchains & Smart Contracts"],
-    ["Verification", "Software Verification"],
-    ["Security", "Device and System Security"],
-    ["Learning", "Machine Learning"],
-    ["Other", "Other"],
-]
-
 def is_active(project):
     active = None
 
@@ -61,7 +52,7 @@ def find_project(project_id, lab_id=None):
     bottle.abort(404, f"Project '{project_id}' does not exist")
 
 def find_project_tabs(project_id):
-    tabs = [ tab for tab in ["presentation", "background", "demo", "hands-on", "pilot", "app"]
+    tabs = [ tab for tab in ["presentation", "details", "demo", "hands-on", "pilot", "app"]
              if os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl"))]
     return tabs + ["technical"]
 
@@ -87,7 +78,7 @@ def showcase():
     labs = data.load()
 
     return dict(labs=labs, is_active=is_active,
-            maturity_label=MATURITY_LABEL, categories=CATEGORIES,
+            maturity_label=MATURITY_LABEL,
             find_project_tabs=find_project_tabs)
 
 @bottle.route('/incubator/<project_id>')

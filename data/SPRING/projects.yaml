@@ -1,7 +1,11 @@
 projects:
   synthetic_data:
     name: Synthetic data privacy evaluation
-    category: Privacy
+    categories:
+      - Privacy
+      - Learning
+    applications:
+      - Info
     description: Privacy evaluation framework for synthetic data releases
     layman_desc: >
       The framework implemented in this library allows data holders to evaluate
@@ -27,8 +31,7 @@ projects:
       - name: Laurent Girod
         email: laurent.girod@epfl.ch
     tags:
-      - Data Privacy
-      - Machine Learning
+      - Protocol
     type: Library
     code:
       type: Lab Github
@@ -46,7 +49,10 @@ projects:
 
   claimchain:
     name: ClaimChain
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Prove your identity with regards to others
     layman_desc: >
       A decentralized public key distribution system with an emphasis on
@@ -60,8 +66,7 @@ projects:
       - name: Bogdan Kulynych
         email: bogdan.kulynych@epfl.ch
     tags:
-      - Public Key
-      - Privacy
+      - Decentralized
     language: Python
     type: Library
     information:
@@ -78,7 +83,10 @@ projects:
 
   lightnion:
     name: Lightnion
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Infra
     description: Anonymous communication in browsers via the Tor network
     layman_desc: >
       A Javascript library for browsers for anonymous communication via the
@@ -95,9 +103,7 @@ projects:
       date_last_commit: 2020-01-20
     tags:
       - Tor
-      - Privacy
       - Network
-      - Javascript
     type: Library
     language: JavaScript, Python
     license: BSD-3-Clause
@@ -106,7 +112,10 @@ projects:
 
   trickster:
     name: Trickster
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Infra
     description: Sophisticated attacks on Machine Learning models
     layman_desc: >
       Trickster allows to attack machine learning models where the attack
@@ -122,7 +131,6 @@ projects:
       date_last_commit: 2019-04-18
     doc: https://trickster-lib.readthedocs.io/
     tags:
-      - Machine Learning
       - Attack
     type: Library
     language: Python
@@ -141,7 +149,11 @@ projects:
 
   hippiepug:
     name: Hippiepug
-    category: Privacy
+    categories:
+      - Privacy
+      - Blockchain
+    applications:
+      - Info
     description: Sublinear-traversal blockchains and efficient key-value Merkle trees
     layman_desc: >
       This library provides implementations of two cryptographic data
@@ -155,7 +167,7 @@ projects:
       - name: Bogdan Kulynych
         email: bogdan.kulynych@epfl.ch
     tags:
-      - Blockchain
+      - Decentralized
     language: Python
     type: Library
     information:
@@ -172,7 +184,10 @@ projects:
 
   mcsauditing:
     name: MCSAuditing
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Evaluation code for mobile crowdsourcing privacy
     tech_desc: This tool implements the evaluation framework described in the paper
     contacts:
@@ -183,8 +198,7 @@ projects:
       url: https://github.com/spring-epfl/MCSAuditing
       date_last_commit: 2020-10-20
     tags:
-      - Location Privacy
-      - Privacy
+      - Decentralized
     language: Python
     type: Application
     information:
@@ -201,7 +215,10 @@ projects:
 
   zksk:
     name: Zero-Knowledge Swiss Knife
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Library for prototyping composable zero-knowledge proofs in the discrete-log setting.
     code:
       type: Lab GitHub
@@ -212,9 +229,7 @@ projects:
       - name: Bogdan Kulynych
         email: bogdan.kulynych@epfl.ch
     tags:
-      - Zero-Knowledge Proof
-      - Prototyping
-      - Privacy-enhancing
+      - Zero-Knowledge Proofs
     language: Python
     type: Application
     information:
@@ -233,7 +248,12 @@ projects:
 
   dp3t:
     name: Decentralized Privacy-Preserving Proximity Tracing
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Gov
+      - Health
+      - Infra
     description: A privacy preserving exposure notification protocol to inform people about possible exposure to the COVID-19 virus
     layman_desc: >
       The goal of the DP3T protocol is to simplify and accelerate the process
@@ -248,8 +268,8 @@ projects:
       date_last_commit: 2021-04-29
     doc: https://github.com/DP-3T/documents
     tags:
-      - Privacy-enhancing
       - Protocol
+      - Bluetooth
     language: Java, Swift
     type: Library
     information:
@@ -271,7 +291,11 @@ projects:
 
   crowdnotifier:
     name: CrowdNotifier
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Health
+      - Gov
     description: Decentralized Privacy-Preserving Presence Tracing
     layman_desc: >
       CrowdNotifier is a protocol that can complement manual contact tracing by
@@ -291,7 +315,6 @@ projects:
       name: Linus Gasser
       email: linus.gasser@epfl.ch
     tags:
-      - Privacy-enhancing
       - Protocol
     language: TypeScript
     type: Library
@@ -308,7 +331,10 @@ projects:
 
   petrelic:
     name: Petrelic
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: A wrapper around RELIC pairings
     tech_desc: >
       petrelic is a Python wrapper around RELIC. It provides a simple python
@@ -317,9 +343,7 @@ projects:
       - name: Laurent Girod
         email: laurent.girod@epfl.ch
     tags:
-      - BLS-381
-      - Pairing-based
-      - Cryptography
+      - Low-Level
     type: Library
     code:
       type: Lab Github
@@ -333,7 +357,10 @@ projects:
 
   sscred:
     name: SSCred
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: A library to facilitate anonymous authentication
     tech_desc: >
       SSCred provides the following primitives:
@@ -346,8 +373,6 @@ projects:
       - name: Kasra Edalat
         email: kasra.edalat@epfl.ch
     tags:
-      - Cryptography
-      - Privacy Preserving
       - Anonymity
     type: Library
     code:
@@ -361,7 +386,10 @@ projects:
 
   mia:
     name: mia
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: A library for running membership inference attacks (MIA) against machine learning models
     tech_desc: >
       These are attacks against privacy of the training data. In MIA, an
@@ -373,7 +401,6 @@ projects:
       - name: Bogdan Kulynych
         email: bogdan.kulynych@epfl.ch
     tags:
-      - Machine Learning
       - Attack
     type: Application
     code:
@@ -384,3 +411,36 @@ projects:
     license: MIT
     date_added: 2021-01-21
     date_updated: 2021-06-07
+
+  lightarti:
+    name: lightarti-rest
+    categories:
+      - Privacy
+    applications:
+      - Gov
+      - Infra
+    description: A Rust library to perform REST requests over the Tor network for mobile applications.
+    tech_desc: >
+      This library builds upon the arti-library. It wraps the arti-library for easy use by mobile
+      applications. Instead of downloading the whole dictionary of the Tor-nodes every hour, a
+      prepared dictionary is downloaded once per week. This reduces bandwidth requirements, as the
+      whole dictionary is around 3MB. The prepared dictionary only weighs 200kB.
+    contacts:
+      - name: Wouter Lueks
+        email: wouter.lueks@epfl.ch
+      - name: Linus Gasser
+        email: linus.gasser@epfl.ch
+      - name: Laurent Girod
+        email: laurent.girod@epfl.ch
+    tags:
+      - Tor
+      - Mobile App
+    type: Library
+    code:
+      type: C4DT Github
+      url: https://github.com/C4DT/lightarti-rest
+      date_last_commit: 2021-08-26
+    language: Rest, Swift, Kotlin
+    license: MIT
+    date_added: 2021-08-26
+    date_updated: 2021-08-26

@@ -1,7 +1,11 @@
 projects:
   openfoodrepo:
     name: The Open Food Repo
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Health
+      - Info
     description: Database of barcoded food products
     layman_desc: >
       The Open Food Repo is an open access database on information about
@@ -18,9 +22,6 @@ projects:
       date_last_commit: 2020-08-24
     tags:
       - Database
-      - Switzerland
-      - API
-      - Barcode
     language: Javascript
     information:
       - type: Mobile App
@@ -31,7 +32,10 @@ projects:
 
   foodandyou:
     name: Food & You
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Health
     description: Track your individual response to food and help advance science
     layman_desc: >
       Take part in an exciting citizen science project on personalized nutrition!
@@ -44,7 +48,6 @@ projects:
       - name: contact
         email: support@foodandyou.ch
     tags:
-      - Food
       - Survey
     type: Application
     url: https://www.foodandyou.ch
@@ -53,7 +56,10 @@ projects:
 
   crowdbreaks:
     name: CrowdBreaks
-    category: Learning
+    categories:
+      - Learning
+    applications:
+      - Health
     description: Help us track health trends in real time.
     url: https://www.crowdbreaks.org
     maturity: 3
@@ -61,8 +67,8 @@ projects:
       - name: Marcel Salathé
         email: marcel.salathe@epfl.ch
     tags:
-      - Health
       - Survey
+      - CrowdSource
     code:
       type: Project GitHub
       url: https://github.com/crowdbreaks
@@ -81,7 +87,10 @@ projects:
 
   aicrowd:
     name: AIcrowd
-    category: Learning
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Crowdsourcing AI to solve real-world problems
     url: https://www.aicrowd.com
     contacts:
@@ -92,7 +101,6 @@ projects:
       url: https://github.com/AIcrowd
       date_last_commit: 2021-06-10
     tags:
-      - AI
       - CrowdSource
     type: Application
     maturity: 3

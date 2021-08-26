@@ -1,3 +1,7 @@
+<a href="https://factory.c4dt.org/incubator/drynx/demo" class="tab-link">
+    Drynx Demo
+</a>
+
 <p>Together with our SwissRe partner we created a
     <a href="https://factory.c4dt.org/incubator/drynx/demo">Demonstrator</a> using the Drynx data analysis tool.
     The source data is a list of house insurances and the incurred claims. Supposing that this list

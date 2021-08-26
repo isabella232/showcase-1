@@ -1,7 +1,10 @@
 projects:
   proof-of-personhood:
     name: Proof-of-Personhood
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Proof that you are an actual person while keeping your anonymity
     layman_desc: >
       The internet allows for anonymous participation. While this is great for protecting people like
@@ -19,8 +22,8 @@ projects:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
     tags:
-      - personhood
-      - anonymity
+      - Government & Humanitarian
+      - Anonymity
     type: Application
     code:
       type: Lab Github
@@ -33,7 +36,10 @@ projects:
 
   dela:
     name: DEDIS Ledger Architecture
-    category: Blockchain
+    categories:
+      - Blockchain
+    applications:
+      - Infra
     description: This framework aims to deliver a modular approach to a public ledger implementation.
     layman_desc: >
     tech_desc: >
@@ -45,9 +51,8 @@ projects:
         email: noemien.kocher@epfl.ch
     url: https://dedis.github.io/dela/
     tags:
-      - blockchain
-      - ledger
-      - decentralized
+      - Decentralized
+      - Byzantine Resilience
     type: Application
     code:
       type: Lab Github
@@ -60,7 +65,11 @@ projects:
 
   odyssey:
     name: Odyssey
-    category: Blockchain
+    categories:
+      - Blockchain
+      - Privacy
+    applications:
+      - Info
     description: Auditable Sharing and Management of Sensitive Data Across Jurisdictions.
     layman_desc: >
       Odyssey is a set of applications and tools that enables sharing of sensitive data
@@ -75,8 +84,6 @@ projects:
       - name: Noémien Kocher
         email: noemien.kocher@epfl.ch
     tags:
-      - Blockchain
-      - Private
       - Encryption
       - Access Control
     language: GoLang
@@ -87,7 +94,11 @@ projects:
 
   calypso:
     name: Calypso
-    category: Blockchain
+    categories:
+      - Blockchain
+      - Privacy
+    applications:
+      - Info
     description: Encrypted storage with access control
     layman_desc: >
       Store data encrypted on the blockchain and use a decentralized access
@@ -116,10 +127,9 @@ projects:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
     tags:
-      - Blockchain
-      - Private
       - Encryption
       - Access Control
+      - Consensus
     language: GoLang
     type: Application
     license: AGPL-3.0
@@ -143,7 +153,10 @@ projects:
 
   kyber:
     name: Kyber
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Infra
     description: Cryptographic library
     layman_desc: >
       A low level cryptographic library to create new cryptographic
@@ -158,6 +171,7 @@ projects:
         email: pierluca.borso@epfl.ch
     tags:
       - Encryption
+      - Decentralized
       - Low-Level
     language: GoLang
     type: Library
@@ -168,7 +182,10 @@ projects:
 
   omniledger:
     name: OmniLedger
-    category: Blockchain
+    categories:
+      - Blockchain
+    applications:
+      - Infra
     description: Ethereum-like blockchain implementation based on skipchains
     layman_desc: >
       OmniLedger is a high performance blockchain solution developed by the
@@ -183,10 +200,7 @@ projects:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
     tags:
-      - Blockchain
-      - Sharding
-      - Performance
-      - Proof-of-consensus
+      - Byzantine Resilience
     language: GoLang
     type: Application, Library
     license: AGPL-3.0
@@ -245,7 +259,10 @@ projects:
 
   onet:
     name: Onet
-    category: Blockchain
+    categories:
+      - Blockchain
+    applications:
+      - Infra
     description: Communication protocols
     layman_desc: >
       Library to write applications and protocols in a decentralized
@@ -262,7 +279,7 @@ projects:
     tags:
       - Low-Level
       - Network
-      - Protocols
+      - Protocol
       - Simulator
     language: GoLang
     type: Library
@@ -272,7 +289,11 @@ projects:
 
   e-voting:
     name: E-voting
-    category: Security
+    categories:
+      - Security
+      - Privacy
+    applications:
+      - Gov
     description: Decentralized, encrypted, fully anonymous e-voting
     tech_desc: >
       Our e-voting system is inspired by the first version of Helios where the encrypted ballots are shuffled and
@@ -291,10 +312,7 @@ projects:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
     tags:
-      - E-Voting
-      - Blockchain
-      - Anonymous
-      - Shuffle
+      - Anonymity
     information:
       - type: Blog
         title: EPFL uses blockchain technology to secure e-voting systems
@@ -307,7 +325,10 @@ projects:
 
   drand:
     name: DRand
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Publicly verifiable randomness
     layman_desc: >
       In many distributed applications, it is important to get a provably
@@ -324,8 +345,8 @@ projects:
       - name: Nicolas Gailly
         email: nikkolasg@gmail.com
     tags:
-      - Randomness
-      - Decentralization
+      - Decentralized
+      - Byzantine Resilience
     language: GoLang
     type: Application
     license: MIT
@@ -338,7 +359,10 @@ projects:
 
   purbs:
     name: Purbs
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Metadata leakage prevention for encrypted communication and storage
     layman_desc: >
       A library for a novel encoding approach preventing metadata leakage
@@ -352,8 +376,6 @@ projects:
         email: kirill.nikitin@epfl.ch
     tags:
       - Encryption
-      - Data At Rest
-      - Data In Transit
     information:
       - type: Paper
         title: Reducing Metadata Leakage from Encrypted Files and Communication with PURBs
@@ -368,7 +390,10 @@ projects:
 
   threshold-logical-clocks:
     name: Threshold Logical Clocks
-    category: Blockchain
+    categories:
+      - Blockchain
+    applications:
+      - Infra
     description: Solving the consensus problem in a new way by creating a global clock
     tech_desc: >
       An attempt to simplify asynchronous consensus by building atop a novel
@@ -386,9 +411,8 @@ projects:
       url: https://github.com/dedis/tlc
       date_last_commit: 2020-05-08
     tags:
-      - Byzantine Fault Tolerance
+      - Byzantine Resilience
       - Consensus
-      - Global clocks
     information:
       - type: Paper
         title: Threshold Logical Clocks for Asynchronous Distributed Coordination and Consensus
@@ -405,7 +429,11 @@ projects:
 
   twins:
     name: Twins
-    category: Privacy
+    categories:
+      - Privacy
+      - Blockchain
+    applications:
+      - Health
     description: >
       Linking patients to their physical and digital TWINs
     layman_desc: >
@@ -416,15 +444,17 @@ projects:
         email: gaurav.narula@epfl.ch
     url: https://www.twins-project.org
     tags:
-      - Privacy Preserving
-      - Blockchain
+      - Health
     type: Application
     date_added: 2021-02-05
     date_updated: 2021-02-05
 
   simnet:
     name: SimNet
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: >
       SimNet is a tool to simulate decentralized applications in the cloud
     tech_desc: >
@@ -434,7 +464,9 @@ projects:
       - name: Noémien Kocher
         email: noemien.kocher@epfl.ch
     tags:
-      - network simulation
+      - Device and System Security
+      - Critical Infrastructure
+      - Simulator
     type: Application
     code:
       type: Lab Github

@@ -1,3 +1,7 @@
+<a href="https://factory.c4dt.org/incubator/garfield/demo/" class="tab-link">
+    Garfield Demo
+</a>
+
 <img src="../../../resources/incubator/images/garfield/wip.jpg" class="left"/>
 <p>
     This demonstrator illustrates how Machine Learning is used to

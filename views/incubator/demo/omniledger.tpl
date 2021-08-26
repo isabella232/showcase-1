@@ -1,3 +1,7 @@
+<a href="https://wookiee.ch/columbus" class="tab-link">
+    OmniLedger Demo
+</a>
+
 <p>OmniLedger has already been used for a number of years, and there are a lot of projects that
     interact with this blockchain.
     Together with the <a href="https://dedis.ch">DEDIS</a> lab, C4DT is running a test-network

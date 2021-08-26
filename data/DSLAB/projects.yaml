@@ -1,7 +1,10 @@
 projects:
   tinynf:
     name: tinyNF
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: >
       A Simpler and Faster NIC Driver Model for Network Functions
     tech_desc: >
@@ -13,8 +16,6 @@ projects:
         email: solal.pirelli@epfl.ch
     tags:
       - Network
-      - Software Verification
-      - Throughput
     type: Library
     code:
       type: Lab Github
@@ -36,7 +37,10 @@ projects:
   # This is the same as the vigor project from NAL
   vigor:
     name: Vigor
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Formally verified and performant software Middleboxes
     tech_desc: >
       Software stack and toolchain for building and running software
@@ -55,8 +59,6 @@ projects:
       date_last_commit: 2021-03-06
     license: MIT
     tags:
-      - Software Verification
-      - Middlebox
       - Network
     information:
       - type: Paper
@@ -80,7 +82,10 @@ projects:
 
   bolt:
     name: BOLT
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Performance Contracts for Software Network Functions
     layman_desc: >
       Software network functions (NFs), or middleboxes, promise flexibility and
@@ -111,8 +116,6 @@ projects:
     url: https://bolt-perf-contracts.github.io/
     tags:
       - Network
-      - Performance
-      - Software Network
     type: Application
     code:
       type: Project GitHub
@@ -132,7 +135,10 @@ projects:
 
   cpi:
     name: CPI
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Fast and precise control-flow hijack protection
     tech_desc: >
       Code-Pointer Integrity (CPI) is a property of C/C++ programs that guarantees absence
@@ -150,8 +156,7 @@ projects:
       - name: http://volodymyrkuznetsov.info/
         url: http://volodymyrkuznetsov.info/
     tags:
-      - Computer Network
-      - Security
+      - Network
     type: Application
     information:
       - type: Paper
@@ -172,7 +177,10 @@ projects:
 
   s2e:
     name: s2e
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Platform for writing tools that analyze the properties and behavior of software systems
     layman_desc: >
       S²E is a platform for writing tools that analyze the properties and
@@ -189,8 +197,8 @@ projects:
         email: vitaly@cyberheaven.io
     tags:
       - Code Analysis
-      - Static Code Checking
-      - Attack Vectors
+      - Static Analysis
+      - Attack
     information:
       - type: Paper
         title: "The S2E Platform: Design, Implementation, and Applications"
@@ -205,7 +213,10 @@ projects:
 
   asap:
     name: ASAP
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Low overhead software protection
     layman_desc: >
       Makes it possible to use powerful software protection mechanisms at a
@@ -219,9 +230,7 @@ projects:
       - name: Jonas Wagner
         email: ltlygwayh@gmail.com
     tags:
-      - Software Protection
-      - LLVM
-      - Buffer Overflows
+      - Low-Level
     type: Library
     information:
       - type: Paper
@@ -243,7 +252,10 @@ projects:
 
   cloud9:
     name: Cloud 9
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Scalable symbolic execution
     layman_desc: >
       Parallel symbolic execution engine that scales on shared-nothing
@@ -257,8 +269,8 @@ projects:
       - name: Stefan Bucur
         email: stefan.bucur@gmail.com
     tags:
+      - Benchmark
       - Cloud
-      - Performance
     information:
       - type: Paper
         title: "Parallel Symbolic Execution for Automated Real-World Software Testing"
@@ -287,7 +299,10 @@ projects:
 
   dimmunix:
     name: Dimmunix
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Protection against deadlock bugs
     layman_desc: >
       Enables general-purpose applications to defend themselves against
@@ -300,10 +315,7 @@ projects:
       - name: Horatiu Jula
         url: https://www.linkedin.com/in/horatiu-jula-63a02a7
     tags:
-      - Deadlock
       - Concurrency
-      - Immunity
-      - Java
     type: Library
     information:
       - type: Paper
@@ -318,7 +330,11 @@ projects:
 
   failure-sketching:
     name: Failure Sketching
-    category: Security
+    categories:
+      - Security
+      - Verification
+    applications:
+      - Infra
     description: Automated debugging technique
     layman_desc: >
       Failure sketching is an automated debugging technique that provides
@@ -335,9 +351,10 @@ projects:
       - name: Baris Kasici
         email: barisk@umich.edu
     tags:
+      - Critical Infrastructure
+      - Low-Level
       - Debug
       - Failure
-      - Verification
     type: Application
     information:
       - type: Paper

@@ -1,7 +1,10 @@
 projects:
   fuzzan:
     name: FuZZan
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Enabling a faster Address Sanitization, improving fuzzing speed by 2x
     tech_desc: >
       Our evaluation shows that on the Google fuzzer test suite, FuZZan improves fuzzing throughput over ASan by 48%
@@ -28,15 +31,16 @@ projects:
 
   usbfuzz:
     name: USBFuzz
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: "Virtual environment for fuzzing USB peripherals"
     tech_desc: >
       Fuzzing USB peripherals for Linux, Android, MacOS, Windows, FreeBSD
       Found lots of 0days in modern kernels, allowing arbitrary compromise
     tags:
       - Fuzzing
-      - USB
-      - Linus
     type: Application
     code:
       type: Lab Github
@@ -56,7 +60,10 @@ projects:
 
   magma:
     name: Magma
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: A Ground-Truth Fuzzing Benchmark
     tech_desc: >
       Magma is a collection of open-source libraries with widespread usage and a long history of security-critical
@@ -69,7 +76,6 @@ projects:
     url: https://hexhive.epfl.ch/magma/
     tags:
       - Fuzzing
-      - Ground-truth
       - Benchmark
     type: Application
     code:
@@ -89,7 +95,10 @@ projects:
 
   t-fuzz:
     name: T-Fuzz
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Fuzzing and crash analyzer
     layman_desc: >
       T-Fuzz (transformational fuzzing) improves fuzzing by detecting
@@ -119,7 +128,10 @@ projects:
 
   bopc:
     name: BOPC
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Block Oriented Programming Compiler
     layman_desc: >
       BOPC searches for exploits in the code that can be put together to
@@ -131,9 +143,9 @@ projects:
       url: https://github.com/HexHive/BOPC
       date_last_commit: 2020-11-05
     tags:
+      - Fuzzing
       - Exploit
-      - Code
-      - Attack Surface
+      - Attack
     language: Python
     type: Application
     information:
@@ -149,7 +161,10 @@ projects:
 
   cfixx:
     name: CFIXX
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Protection for C++ internal code pointers
     layman_desc: >
       CFIXX is a runtime mitigation that protects C++ programs from attacks
@@ -159,9 +174,8 @@ projects:
       url: https://github.com/HexHive/CFIXX
       date_last_commit: 2018-07-04
     tags:
-      - C++
+      - Fuzzing
       - Exploit
-      - Protection
     language: C++
     type: Application
     information:
@@ -177,7 +191,10 @@ projects:
 
   hextype:
     name: HexType
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Efficient detection of Type Confusion Errors for C++
     layman_desc: >
       HexType is a sanitizer for C++ cast safety. The primary use case is
@@ -189,9 +206,7 @@ projects:
       url: https://github.com/HexHive/HexType
       date_last_commit: 2020-08-27
     tags:
-      - C++
-      - Type Safety
-      - Sanitization
+      - Fuzzing
     language: C++
     type: Application
     information:
@@ -207,7 +222,10 @@ projects:
 
   retrowrite:
     name: RetroWrite
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Retrofitting compiler passes though binary rewriting
     layman_desc: >
       RetroWrite can analyze the security of closed source binaries by applying
@@ -220,9 +238,8 @@ projects:
       url: https://github.com/HexHive/retrowrite
       date_last_commit: 2021-01-25
     tags:
-      - Binary
       - Fuzzing
-      - Efficient
+      - Binary
     language: Python
     type: Application
     information:
@@ -238,7 +255,10 @@ projects:
 
   shadowstack:
     name: ShadowStack
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: LLVM Implementation of different ShadowStack schemes for x86_64
     layman_desc: >
       In computer security, a shadow stack is a mechanism for protecting
@@ -274,7 +294,10 @@ projects:
 
   hexpads:
     name: HexPADS
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Host-based, Performance-counter-based Attack Detection System
     layman_desc: >
       Attacks change the execution behavior of a system. Our attack
@@ -293,7 +316,6 @@ projects:
       url: https://github.com/HexHive/HexPADS
       date_last_commit: 2016-01-07
     tags:
-      - Intrusion Detection
       - Protection
     language: C
     type: Application
@@ -310,7 +332,10 @@ projects:
 
   fuzzgen:
     name: FuzzGen
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Automatic Fuzzer Generation
     layman_desc: >
       FuzzGen is a tool for automatically synthesizing fuzzers for complex
@@ -339,7 +364,10 @@ projects:
 
   datashield:
     name: DataShield
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Configurable data confidentiality and integrity
     layman_desc: >
       DataShield can, based on C/C++ languages annotation, protect
@@ -350,9 +378,9 @@ projects:
       url: https://github.com/HexHive/datashield
       date_last_commit: 2021-01-01
     tags:
-      - Privacy
-      - Efficient
-      - Confidentiality
+      - Fuzzing
+      - Debug
+      - Failure
     language: C++
     type: Library
     information:
@@ -368,7 +396,10 @@ projects:
 
   halucinator:
     name: HALucinator
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Firmware Re-hosting Through Abstraction Layer Emulation
     layman_desc: >
       HALucinator allow for running a firmware outside of its physical
@@ -399,7 +430,10 @@ projects:
 
   benchiot:
     name: BenchIoT
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Security benchmarks for the Internet of Things
     layman_desc: >
       BenchIoT enables automatic evaluation of 14 metrics covering
@@ -412,7 +446,7 @@ projects:
       date_last_commit: 2020-11-11
     tags:
       - Benchmark
-      - IoT
+      - Internet of Things
     language: C
     type: Application
     information:
@@ -429,7 +463,10 @@ projects:
 
   freegaen:
     name: Free GAEN alternative
-    category: Privacy
+    categories:
+      - Privacy
+    applications:
+      - Health
     description: Alternative to GAEN for contact tracing applications
     layman_desc: >
       Apple and Google developed the Google-Apple Exposure Notification
@@ -453,10 +490,9 @@ projects:
       - name: Christian Grigis
         email: christian.grigis@epfl.ch
     tags:
-      - Privacy-enhancing
+      - Mobile App
       - Protocol
-      - GAEN
-      - COVID
+      - Bluetooth
     language: Java, Kotlin
     type: Application, Library, Framework
     license: MPL-2.0
@@ -475,21 +511,23 @@ projects:
 
   lightblue:
     name: LightBlue
-    category: Security
+    categories:
+      - Security
+    applications:
+      - Infra
     description: "LightBlue: Automatic Profile-Aware Debloating of Bluetooth Stacks"
     layman_desc: >
       The Bluetooth standard is complex, many commands are defined but
       aren't needed in many use cases. It allows for a big surface attack
       which can be cumbersome to correctly reduce.
-      LightBlue allows to, based on Bluetooth usage profiling, to reduce
+      Based on Bluetooth usage profiling, LightBlue allows to reduce
       the number of exposed commands understood by the firmware and the
       runtime, thus greatly reducing the potential future attacks that
       might arise.
     url: https://github.com/purseclab/lightblue
     tags:
-      - Attack Surface
+      - Attack
       - Bluetooth
-      - Profile
     type: Application
     code:
       type: Lab Github

@@ -23,7 +23,8 @@
             src="https://cdn.datatables.net/plug-ins/1.10.25/features/scrollResize/dataTables.scrollResize.min.js"></script>
     <script type="text/javascript" class="init">
 
-        lock_table = false;
+        // Avoid updating the show_headers when search is in progress.
+        let search_lock = false;
 
         $(document).ready(function () {
 
@@ -41,60 +42,133 @@
                     // 'csv',
                     // 'print',
                 ],
-                "order": [[0, "asc"], [4, "desc"], [5, "desc"], [1, "asc"], [2, "asc"]],
                 "columnDefs": [
-                    {"width": "20%", "targets": 1},
-                    {"width": "40%", "targets": 2},
-                    {"width": "20%", "targets": 3},
-                    {"width": "15%", "targets": 4},
+                    {"width": "20%", "targets": 0},
+                    {"width": "30%", "targets": 1},
+                    {"width": "30%", "targets": 2},
+                    {"width": "15%", "targets": 3},
                 ]
             });
 
             // Hide "extra" columns by default
             table.columns(".extra").visible(false);
-            update_search()
 
             table.on('order.dt', () => {
-                let rows = document.getElementsByClassName("category_row");
-                for (let row = 0; row < rows.length; row++) {
-                    rows[row].classList.remove("hidden");
-                    if (!lock_table) {
-                        rows[row].classList.add("hidden");
-                    }
+                if (!search_lock) {
+                    show_headers(false);
+                    reset_show(true);
                 }
             })
+
+            search_from_hash(decodeURIComponent(window.location.hash.substr(1)));
+
+            // Set the reset button to either dark or light mode, inverted from the color scheme.
+            if (window.matchMedia) {
+                reset_color(window.matchMedia('(prefers-color-scheme: dark)').matches);
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                reset_color(e.matches);
+            });
 
             // Set focus on the search input
             $('#search').focus();
         });
 
-        // called by clicking on a tag
-        function search_tag(text) {
-            let table = $('#projects').DataTable();
-            table.search(text).draw();
-            $('#search')[0].value = text;
+        // If visible is true, all headers will be shown.
+        // If visible is false, no headers will be shown, and entries with more than
+        // one category will be shown only once.
+        function show_headers(visible){
+            let rows = document.getElementsByClassName("shown_with_headers");
+            for (let row = 0; row < rows.length; row++) {
+                rows[row].classList.remove("hidden");
+                if (!visible) {
+                    rows[row].classList.add("hidden");
+                }
+            }
         }
 
-        function clear_search() {
-            $('#search')[0].value = "";
-            update_search();
+        // Sets the dropdown-boxes and the search box given a URL-hash string.
+        // If the string is invalid, it will reset it to be empty.
+        function search_from_hash(str){
+            if (str === ""){
+                str = '{"dropdown": "", "input": ""}';
+            }
+            try {
+                let search = JSON.parse(str);
+
+                let values = search.dropdown.split(" ");
+                ["work", "categories", "applications", "lab"].forEach(id => {
+                    let select = $(`#${id}`)[0];
+                    for (let index = 0; index < select.length; index++){
+                        if (values.includes(select.options[index].value) > 0){
+                            select.selectedIndex = index;
+                        }
+                    }
+                })
+
+                search_set(search.input);
+            } catch(e) {
+                console.error("While reading hash:", e);
+                update_url("", "");
+            }
         }
 
-        // called by the dropdown boxes
-        function update_search() {
-            lock_table = true;
+        // Puts the given string in the search box and updates the results
+        function search_set(input) {
+            $('#search')[0].value = input;
+            search_apply();
+        }
+
+        // Creates a new search query from the dropdown selections and the search
+        // box.
+        function search_apply() {
+            search_lock = true;
             let categories = $('#categories')[0].value;
+            let applications = $('#applications')[0].value;
             let work = $('#work')[0].value;
             let lab = $('#lab')[0].value;
-            let artifacts = $('#artifacts')[0].value;
             let search_input = $('#search')[0].value;
-            let search = [work, categories, lab, artifacts, search_input]
+            let dropdown = [work, categories, lab, applications]
                 .filter((e) => e !== "")
                 .join(" ");
+
             const table = $('#projects').DataTable();
-            table.search(search);
-            table.order([0, "asc"], [4, "desc"], [5, "desc"], [1, "asc"], [2, "asc"]).draw();
-            lock_table = false;
+            table.order([21, "asc"], [3, "desc"], [4, "desc"], [0, "asc"], [1, "asc"]).draw();
+            table.search(`${dropdown} ${search_input}`).draw();
+            let show_categories = search_input === "";
+            update_url(dropdown, search_input, show_categories);
+            show_headers(show_categories);
+            reset_show(dropdown !== "" || search_input !== "");
+            search_lock = false;
+        }
+
+        // Shows or hides the reset button.
+        function reset_show(show){
+            let reset = $('#reset')[0];
+            reset.classList.remove("hidden");
+            if (!show){
+                reset.classList.add("hidden");
+            }
+        }
+
+        // Sets the color scheme of the reset button
+        function reset_color(light){
+            let schemes = ["btn-outline-light", "btn-outline-dark"];
+            let reset = $('#reset')[0];
+            reset.classList.remove(...schemes);
+            reset.classList.add(schemes[light ? 0 : 1])
+        }
+
+        // Updates the URL using replaceState, so that it doesn't reload the page
+        function update_url(dropdown, input){
+            let str = JSON.stringify({
+                dropdown, input
+            });
+            let url = `#${str}`;
+            if (dropdown === "" && input === ""){
+                url = "#";
+            }
+            window.history.replaceState(null, "Search", url);
         }
     </script>
 </head>
@@ -108,13 +182,32 @@ include('breadcrumbs.tpl', trail=trail, here='Showcase')
 
 artifact_tags = {
     "app": "Application for mobile or desktop",
-    "background": "Background information on the technology used",
+    "details": "Detailed information on the technology used",
     "demo": "Demonstrator showing off the capabilities",
     "hands-on": "Hands-on training available",
     "pilot": "Real use-case testing application",
     "presentation": "General presentation",
     "technical": "Links to technical information"
 }
+
+categories = {
+    "Privacy": [0, "Privacy Protection & Cryptography"],
+    "Blockchain": [1,"Blockchains & Smart Contracts"],
+    "Verification": [2, "Software Verification"],
+    "Security": [3, "Device and System Security"],
+    "Learning": [4, "Machine Learning"],
+    "Other": [5, "Other"],
+}
+
+applications = {
+    "Finance": "Finance",
+    "Health": "Health",
+    "Gov": "Government & Humanitarian",
+    "Infra": "Critical Infrastructure",
+    "Info": "Digital Information",
+    "Other": "Other",
+}
+
 %>
 
 <div class="contents">
@@ -124,7 +217,7 @@ artifact_tags = {
                 <source
                         srcset="/resources/c4dt_logo_dark.png"
                         media="(prefers-color-scheme: dark)">
-                <img class="float_left" src="/resources/c4dt_logo.png">
+                <img class="float_left" src="/resources/c4dt_logo.png" style="max-height: 10em; max-width: 10em;">
             </picture>
         </a>
         <div class="intro">
@@ -143,20 +236,37 @@ artifact_tags = {
             <div>
                 <select id="work" class="form-select"
                         style="width: 13em;"
-                        onchange="update_search();">
+                        onchange="search_apply();">
                     <option selected value="">All projects</option>
-                    <option value="project_incubated">C4DT supported</option>
-                    <option value="project_active">Active projects</option>
+                    <option value="project_incubated">C4DT Factory involvement</option>
+                    <option value="project_active">Updated in last 6 months</option>
+                    <option value="artifact_presentation">Presentation available</option>
+                    <option value="artifact_details">Details available</option>
+                    <option value="artifact_demo">Demo available</option>
+                    <option value="artifact_hands-on">Training available</option>
+                    <option value="artifact_pilot">Pilot available</option>
+                    <option value="artifact_app">App available</option>
                 </select>
             </div>
 
             <div>
                 <select id="categories" class="form-select"
                         style="width: 13em;"
-                        onchange="update_search();">
-                    <option value="">All categories</option>
-                    % for [category_key, category_value] in categories:
+                        onchange="search_apply();">
+                    <option value="">All pillars</option>
+                    % for category_key, [sort, category_value] in categories.items():
                     <option value="category_{{ category_key }}">{{ category_value }}</option>
+                    % end
+                </select>
+            </div>
+
+            <div>
+                <select id="applications" class="form-select"
+                        style="width: 13em;"
+                        onchange="search_apply();">
+                    <option value="">All verticals</option>
+                    % for application_key, application_value in applications.items():
+                        <option value="application_{{ application_key }}">{{ application_value }}</option>
                     % end
                 </select>
             </div>
@@ -164,7 +274,7 @@ artifact_tags = {
             <div>
                 <select id="lab" class="form-select"
                         style="width: 13em;"
-                        onchange="update_search();">
+                        onchange="search_apply();">
                     <option selected value="">All labs</option>
                     % for lab_id, lab in labs.items():
                         % prof = " ".join(lab['prof']['name'])
@@ -173,82 +283,81 @@ artifact_tags = {
                 </select>
             </div>
 
-            <div>
-                <select id="artifacts" class="form-select"
-                        style="width: 13em;"
-                        onchange="update_search();">
-                    <option selected value="">All artifacts</option>
-                    <option value="artifact_presentation">Presentation</option>
-                    <option value="artifact_background">Background</option>
-                    <option value="artifact_demo">Demo</option>
-                    <option value="artifact_hands-on">Hands-on</option>
-                    <option value="artifact_pilot">Pilot</option>
-                    <option value="artifact_app">App</option>
-                </select>
+            <div class="form-group" style="display: flex; flex-direction: row; align-items: center">
+                <label class="sr-only">search:</label>
+                <input id="search" class="form-control" oninput="search_apply()">
+                <span onclick="search_set('')" class="clear_search">X</span>
             </div>
 
             <div>
-                search: <input id="search" oninput="update_search()">
-                <span onclick="clear_search()" class="clear_search">X</span>
+                <button id="reset" type="button" class="btn btn-outline-light hidden"
+                    onclick="search_from_hash('')">Reset</button>
             </div>
+
         </div>
         <div class="layout-table">
             <table id="projects" class="display cell-border">
                 <thead>
                 <tr>
-                    <th class="extra">Category</th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Tags</th>
-                    <th>Artifacts</th>
-
+                    <th>Products</th>
                     <th>Maturity</th>
+
                     <th class="extra">Professor &mdash; Lab</th>
                     <th class="extra">More information</th>
                     <th class="extra">Date added</th>
                     <th class="extra">Date updated</th>
-
                     <th class="extra">Technical description</th>
+
                     <th class="extra">Layman description</th>
                     <th class="extra">Language</th>
                     <th class="extra">Type</th>
                     <th class="extra">Source code</th>
-
                     <th class="extra">Date last commit</th>
+
                     <th class="extra">LOC</th>
                     <th class="extra">Documentation</th>
                     <th class="extra">License</th>
                     <th class="extra">Papers</th>
-
                     <th class="extra">Contact</th>
+
                     <th title="Most recent between date added and date of last commit" class="extra">Date last activity</th>
-                    <th class="extra">Active</th>
-                    <th class="extra">Incubator</th>
+                    <th class="extra">Keywords</th>
                 </tr>
                 </thead>
                 <tbody>
-                %for category_sort, [category_key, category_value] in enumerate(categories):
-                    <tr class="category_row">
-                        <td data-order="{{ category_sort }}">
-                            <span style="display: none">category_{{category_key}}</span>
-                        </td>
+                %for category_key, [category_sort, category_value] in categories.items():
+                    <tr class="shown_with_headers">
                         <td colspan="24" class="category">{{ category_value }}</td>
                         <td style="display: none;"></td>
                         <td style="display: none;"></td>
                         <td style="display: none;" data-order="99">
-                            99 - {{ " ".join(list(map(lambda a: "artifact_" + a, ["presentation", "background", "demo", "hands-on", "pilot", "technical", "app"]))) }}
+                            99 - {{ " ".join(list(map(lambda a: "artifact_" + a, ["presentation", "details", "demo", "hands-on", "pilot", "technical", "app"]))) }}
                         </td>
+                        <td style="display: none;" data-order="100"></td>
 
-                        <td style="display: none;" data-order="100"></td><td></td><td></td><td></td><td></td>
                         <td></td><td></td><td></td><td></td><td></td>
                         <td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td>
 
-                        <td></td><td></td><td>project_active</td><td>project_incubated</td>
+                        <td></td>
+                        <td data-order="{{ category_sort }}">
+                            <span style="display: none">category_{{category_key}}
+                                project_active project_incubated
+                            </span>
+                        </td>
                     </tr>
                     <%for lab_id, lab in labs.items():
                         for project_id, project in lab['projects'].items():
-                            if project.get('category', 'Other') != category_key:
+                            if not category_key in project.get('categories'):
                                 continue
+                            end
+                            # Only keep the first appearance of an entry if the headers are not shown
+                            visibility = ""
+                            if project.get('categories').index(category_key) > 0:
+                                visibility = "shown_with_headers"
                             end
 
                             prof = lab['prof']
@@ -267,6 +376,7 @@ artifact_tags = {
                             loc = project.get('lines_of_code', '')
                             doc = project.get('doc')
                             tags = project.get('tags', [])
+
                             license = ', '.join(map(str, project.get('license', [])))
                             papers = [
                                 info
@@ -293,29 +403,22 @@ artifact_tags = {
                             artifacts = find_project_tabs(project_id)
                             maturity_order = maturity + 0.5 if active else maturity
                             %>
-                            <tr class="{{ 'incubated' if incubated else 'not_incubated' }}">
-                                <td data-order="{{category_sort}}">
-                                    category_{{category_key}} {{category_value}}
-                                </td>
-
+                            <tr class="{{ 'incubated' if incubated else 'not_incubated' }} {{visibility}}">
                                 <td class="proj_name"
                                     onclick="window.location='/incubator/{{project_id}}'"
                                     style="cursor: pointer">
                                     {{ name }}
                                 </td>
-
                                 <td onclick="window.location='/incubator/{{project_id}}'"
                                     style="cursor: pointer">
                                     {{ description }}
                                 </td>
-
                                 <td class="dt-center">
                                     % for tag in tags:
-                                    <button onclick="javascript:search_tag('{{ tag }}')"
+                                    <button onclick="javascript:search_set('{{ tag }}')"
                                     class="button">{{ tag }}</button>
                                     % end
                                 </td>
-
                                 <td class="dt-center" data-order="{{len(artifacts)}}">
                                     % for artifact in artifacts:
                                         <span style="display: none">artifact_{{artifact}}</span>
@@ -326,7 +429,6 @@ artifact_tags = {
                                         </div>
                                     % end
                                 </td>
-
                                 % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
                                 <td class="dt-center" data-order="{{ maturity_order }}">
                                     <img
@@ -341,47 +443,35 @@ artifact_tags = {
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
                                     <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>
-
                                 % if url:
                                 <td class=""><a href="{{ url }}">Home page</a></td>
                                 % else:
                                 <td class=""></td>
                                 % end
-
                                 <td class="dt-center">{{ date_added.date() }}</td>
-
                                 <td class="dt-center">{{ date_updated.date() }}</td>
-
                                 <td>{{ tech_desc }}</td>
 
                                 <td>{{ layman_desc }}</td>
-
                                 <td class="dt-center">{{ language }}</td>
-
                                 <td>{{ proj_type }}</td>
-
                                 % if 'url' in code:
                                 <td class="dt-nowrap"><a href="{{ code['url'] }}">{{ code.get('type', '') }}</a></td>
                                 % else:
                                 <td>{{ code.get('type', '') }}</td>
                                 % end
-
                                 <td class="dt-center">{{ date_last_commit.date() if date_last_commit else '' }}</td>
 
                                 <td class="dt-center">{{ loc }}</td>
-
                                 <td class="dt-center">
                                     % if doc:
                                     <a href="{{ doc }}">link</a>
                                     % end
                                 </td>
-
                                 <td class="dt-center">{{ license }}</td>
-
                                 <td>
                                     % include('papers.tpl', papers=papers)
                                 </td>
-
                                 <td class="dt-nowrap">
                                     % for contact in contacts:
                                     <div>
@@ -391,10 +481,16 @@ artifact_tags = {
                                 </td>
 
                                 <td class="dt-center">{{ max(date_added, date_last_commit if date_last_commit else date_added).date() }}</td>
-
-                                <td>{{ active_str }}</td>
-
-                                <td>{{ incubator_str }}</td>
+                                <td data-order="{{category_sort}}">
+                                    <span class="hidden">
+                                        category_{{category_key}} {{category_value}}
+                                        % for application in project.get('applications', []):
+                                        application_{{application}}
+                                        % end
+                                        {{ active_str }}
+                                        {{ incubator_str }}
+                                    </span>
+                                </td>
                             </tr>
                         % end
                     % end

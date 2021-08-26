@@ -2,7 +2,7 @@
   --dark-grey: #232323;
   --light-grey: #bfbfbe;
   --orange: #ffa870;
-  --dark-orange: #c26a336c;
+  --dark-orange: #a24a134c;
   --light-orange: #f5cda4;
   --blue: #0091aa;
   --light-blue: #a4bfcf;
@@ -21,7 +21,8 @@ h1 {
   text-align: center;
 }
 
-.center {
+.center,
+.tab-link {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -53,7 +54,7 @@ div.breadcrumbs {
   padding-left: 1rem;
   padding-top: 0.2rem;
   font-size: large;
-  height: 2em;
+  height: 2.1em;
   position: fixed;
   width: 100%;
   left: 0;
@@ -96,7 +97,8 @@ img.artifact:hover {
   }
 
   div.breadcrumbs {
-    background-color: #202020;
+    background-color: #303030;
+    border: #606060 solid 0.1em;
   }
 
   input {

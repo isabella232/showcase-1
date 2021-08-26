@@ -1,7 +1,10 @@
 projects:
   stainless:
     name: Stainless
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Verification framework for a subset of the Scala programming language
     layman_desc: >
       Stainless is a tool for verifying Scala programs developed by the
@@ -23,9 +26,8 @@ projects:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch
     tags:
-      - Software Verification
-      - Scala
-      - Ethereum
+      - Static Analysis
+      - Code Analysis
     language: Scala
     type: Library, Application
     license: Apache-2.0
@@ -73,7 +75,10 @@ projects:
 
   inox:
     name: Inox
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Constraint solver for Stainless
     layman_desc: >
       Inox can be used to prove constraints on methods in a program, to
@@ -90,8 +95,7 @@ projects:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch
     tags:
-      - Constraint Solver
-      - Software Verification
+      - Low-Level
     language: Scala
     type: Library, Application
     license: Apache-2.0

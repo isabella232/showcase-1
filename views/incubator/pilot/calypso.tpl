@@ -1,3 +1,5 @@
+<a href="https://dedis.github.io/odyssey/#/README" class="tab-link">Calypso Pilot</a>
+
 <img src="../../../resources/incubator/images/calypso/odyssey-components.png" width="30%"
 style="float: left;" class="dark_invert"/>
 <p>Together with our C4DT partner Swiss Re and the DEDIS lab, we created a pilot to solve one

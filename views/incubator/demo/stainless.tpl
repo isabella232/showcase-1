@@ -1,3 +1,6 @@
+<a href="https://factory.c4dt.org/incubator/stainless/demo/" class="tab-link">
+     Stainless Demo
+</a>
 <p>
     The <a href="https://factory.c4dt.org/incubator/stainless/demo/">Stainless Demonstrator</a>
     shows how Stainless helps develop Smart

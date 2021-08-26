@@ -1,8 +1,11 @@
+<a href="https://github.com/calypso-demo/filesharing" class="tab-link">
+    Calypso Demo
+</a>
 <p>OmniLedger has already been used for a number of years, and there are a lot of projects that
     interact with this blockchain.
     Together with the <a href="https://dedis.ch">DEDIS</a> lab, C4DT is running a test-network
     since March 2019, and it is used on a daily basis for different services.</p>
-<h4 id="calypso">Calypso Access Control</h4>
+<h4>Calypso Access Control</h4>
 <p>The <a href="https://github.com/calypso-demo/filesharing">Calypso access control demo</a>
     shows one use-case of the calypso access control system. The demo shows three users where each user
     has a list of contacts and two groups. The files of the users are stored encrypted on the blockchain,

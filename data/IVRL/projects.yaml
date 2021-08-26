@@ -1,7 +1,10 @@
 projects:
   slico:
     name: SLICO Superpixels
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Info
     description: Efficient Superpixels
     layman_desc: >
       Superpixels, which define similar regions in an image, are becoming
@@ -13,7 +16,6 @@ projects:
       url: https://ivrl.epfl.ch/wp-content/uploads/2018/08/SLICSuperpixels_VC2008_SLICO_15Jun2013.zip
     tags:
       - Computer Vision
-      - Image Detection
     language: C++
     type: Application
     date_added: 2019-03-18
@@ -21,7 +23,10 @@ projects:
 
   image-completion:
     name: Image Completion
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Info
     description: Complete an image whose 99% pixels are randomly missing
     layman_desc: >
       It is challenging to complete an image whose 99% pixels are randomly
@@ -33,8 +38,6 @@ projects:
       url: https://www.epfl.ch/labs/ivrl/wp-content/uploads/2018/08/fan_icassp17.zip
     tags:
       - Computer Vision
-      - Completion
-      - Fast
     language: MatLab
     type: Application
     date_added: 2019-03-18

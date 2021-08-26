@@ -9,6 +9,9 @@
   --not-incubated-odd-row-color: #fefefe;
   --not-incubated-even-row-hover-color: #eaeaea;
   --not-incubated-even-row-color: #f5f5f5;
+  --tag-content: #eeeeee88;
+  --tag-content-hover: #eeeeee;
+  --tag-border: #888888;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,6 +25,9 @@
     --not-incubated-odd-row-color: #373737;
     --not-incubated-even-row-hover-color: #4f4f4f;
     --not-incubated-even-row-color: #3f3f3f;
+    --tag-content: #88888844;
+    --tag-content-hover: #aaaaaaaa;
+    --tag-border: #cccccc;
   }
 }
 
@@ -131,15 +137,15 @@ span.box {
 
 .button {
   border-radius: 6px;
-  background-color: #fce4d4;
+  background-color: var(--tag-content);
   font-family: Arial, sans-serif;
   font-size: medium;
-  border: solid 1px #ffcba5;
+  border: solid 1px var(--tag-border);
   margin: 1px;
 }
 
 .button:hover {
-  background-color: #ffcba5;
+  background-color: var(--tag-content-hover);
 }
 
 table.dataTable thead,
@@ -230,13 +236,7 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
 
 @media (prefers-color-scheme: dark) {
   .button {
-    background-color: var(--dark-orange);
     color: white;
-    border: solid 1px var(--orange);
-  }
-
-  .button:hover {
-    background-color: var(--orange);
   }
 
   table.dataTable thead,

@@ -2,7 +2,10 @@ projects:
   # This is the same as the 'bolt' project from DSLAB
   bolt:
     name: BOLT
-    category: Learning
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: >
       Performance Contracts for Software Network Functions
     layman_desc: >
@@ -34,8 +37,6 @@ projects:
     url: https://bolt-perf-contracts.github.io/
     tags:
       - Network
-      - Performance
-      - Software Network
     type: Application
     code:
       type: Project GitHub
@@ -56,7 +57,10 @@ projects:
   # This is the same as the vigor project from DSLAB
   vigor:
     name: Vigor
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Formally verified and performant software Middleboxes
     tech_desc: >
       Software stack and toolchain for building and running software
@@ -75,8 +79,6 @@ projects:
       date_last_commit: 2021-03-06
     license: MIT
     tags:
-      - Software Verification
-      - Middlebox
       - Network
     information:
       - type: Paper
@@ -100,7 +102,10 @@ projects:
 
   line:
     name: LINE
-    category: Verification
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Accurate Network emulator
     layman_desc: >
       LINE is a network emulator designed for realism, accuracy and
@@ -116,8 +121,6 @@ projects:
       date_last_commit: 2017-08-13
     tags:
       - Network
-      - Emulator
-      - Measurement
     language: C++
     type: Application
     license: GPL-2.0

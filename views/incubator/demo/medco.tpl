@@ -1,3 +1,7 @@
+<a href="https://medco.epfl.ch/demo/" class="tab-link">
+    Medco Demo
+</a>
+
 <p>Besides the documentation and source code of MedCo-Explore, we also provide a
     way to try out this software. To do that just log in our
     <a href="https://medco.epfl.ch/demo/">live demo</a> using the correct credentials.

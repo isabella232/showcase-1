@@ -1,7 +1,10 @@
 projects:
   cloudsuite:
     name: CloudSuite
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Infra
     description: Benchmark suite for cloud services
     layman_desc: >
       CloudSuite is a benchmark suite for cloud services. The third release
@@ -19,7 +22,6 @@ projects:
     tags:
       - Cloud
       - Benchmark
-      - Test
     language: Dockerfiles
     type: Application
     information:
@@ -36,7 +38,10 @@ projects:
 
   qflex:
     name: QFlex
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Infra
     description: A QEMU-based family of full-system ARM simulators
     layman_desc: >
       QFlex is a full-system cycle-accurate computer architecture simulator
@@ -51,10 +56,7 @@ projects:
       - name: Siddharth Gupta
         email: siddharth.gupta@epfl.ch
     tags:
-      - Simulator
       - Network
-      - CPU
-      - Architecture
     language: C, C++
     type: Toolset
     information:
@@ -72,7 +74,10 @@ projects:
 
   hbfpemulator:
     name: ColTraIn HBFP Training Emulator
-    category: Other
+    categories:
+      - Other
+    applications:
+      - Info
     description: >
       Co-located DNN Training and Inference
     tech_desc: >
@@ -88,9 +93,7 @@ projects:
         email: tao.lin@epfl.ch
     url: https://parsa.epfl.ch/coltrain/
     tags:
-      - Machine Learning
       - Deep Neuronal Networks
-      - Floating Point
     type: Application
     code:
       type: Lab Github

@@ -36,14 +36,22 @@ PROJECTS_SCHEMA = sy.Map({"projects":
         sy.Map({
             "name": sy.Str(),
             "description": sy.Str(),
-            "category": sy.Enum([
+            "categories": sy.Seq(sy.Enum([
                "Privacy",
                "Blockchain",
                "Verification",
                "Security",
                "Learning",
                "Other"
-            ]),
+            ])),
+            "applications": sy.Seq(sy.Enum([
+                "Finance",
+                "Health",
+                "Gov",
+                "Infra",
+                "Info",
+                "Other"
+            ])),
             sy.Optional("notes"): sy.Str(),
             sy.Optional("url"): sy.Url(),
             sy.Optional("layman_desc"): sy.Str(),
