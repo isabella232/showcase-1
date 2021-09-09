@@ -93,7 +93,7 @@ projects:
         email: tao.lin@epfl.ch
     url: https://parsa.epfl.ch/coltrain/
     tags:
-      - Deep Neuronal Networks
+      - Deep Neural Networks
     type: Application
     code:
       type: Lab Github

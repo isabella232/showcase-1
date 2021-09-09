@@ -177,7 +177,6 @@ projects:
       - name: Panayiotis Smeros
         email: panayiotis.smeros@epfl.ch
     tags:
-      - Fake News
       - Natural Language
     language: Python
     license: GPL-3.0

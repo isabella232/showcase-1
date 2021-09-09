@@ -1,7 +1,7 @@
 # Tags HOWTO
 
 This is a list of used tags in the projects.
-For a tag to be used, it must fulfil all following points:
+For a tag to be used, it must fulfill all following points:
 - pillars - reflects category/ies and is used to order
 - application verticals
 - technical aspects
@@ -9,70 +9,26 @@ For a tag to be used, it must fulfil all following points:
 The tag-list here is sorted alphabetically, with all tags from one letter comma-separated.
 At the end there is a list of projects and tags they'd like to use.
 Once a second project would like to use one of these tags it's easy to add them.
-
-# Pillars
-
-Privacy: Privacy Protection & Cryptography
-Blockchain: Blockchains & Smart Contracts
-Verification: Software Verification
-Security: Device and System Security
-Learning: Machine Learning
-Other
-
-# Application
-
-Finance
-Health
-Gov: Government & Humanitarian
-Infra: Critical Infrastructure
-Info: Digital Information
-Other
+If a new tag is added, also add it to `data.py`
 
 # Technical Tags
 
-Access Control
-Anonymity
-Attack
-Benchmark
-Binary
-Bluetooth
-Byzantine Resilience
-Cloud
-Code Analysis
-Concurrency
-CrowdSource
-Data Structures
-Database
-Debug
-Decentralized
-Deep Neural Networks
-Distributed Learning
-Encryption
-Exploit
-Failure
-Fake News
-Features
-Federated Learning
-Homomorphic Encryption
-Image Classification
-Images
-Inductive Bias
-Internet of Things
-Locking
-Low-Level
-Mobile App
-Natural Language
-Network
-Predictor
-Protection
-Protocol
-PyTorch
-Secure Multi-Party Computation
-Server
-Survey
-TensorFlow
-Tor
-Zero-Knowledge Proofs
+"Access Control", "Anonymity", "Attack",
+"Benchmark", "Binary", "Bluetooth", "Byzantine Resilience",
+"Cloud", "Code Analysis", "Computer Vision", "Concurrency", "Consensus", "CrowdSource",
+"Data Structures", "Database", "Debug", "Decentralized", "Deep Neural Networks",
+"Distributed Learning",
+"Encryption", "Exploit",
+"Failure", "Features", "Federated Learning", "Fuzzing",
+"Homomorphic Encryption",
+"Image Classification", "Images", "Inductive Bias", "Internet of Things",
+"Locking", "Low-Level",
+"Mobile App",
+"Natural Language", "Network",
+"Predictor", "Protection", "Protocol", "PyTorch",
+"Secure Multi-Party Computation", "Server", "Simulator", "Static Analysis", "Survey",
+"TensorFlow", "Tor",
+"Zero-Knowledge Proofs"
 
 # Desired Tags
 
@@ -144,3 +100,22 @@ DCL/
     FLeet: Edge ML
     MCTOP: CPU topology, Multiprocessor
     AggregaThor: Robust SGD, Gradient Aggregation
+
+# Pillars
+
+Privacy: Privacy Protection & Cryptography
+Blockchain: Blockchains & Smart Contracts
+Verification: Software Verification
+Security: Device and System Security
+Learning: Machine Learning
+Other
+
+# Application
+
+Finance
+Health
+Gov: Government & Humanitarian
+Infra: Critical Infrastructure
+Info: Digital Information
+Other
+

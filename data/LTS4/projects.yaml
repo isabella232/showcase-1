@@ -176,7 +176,7 @@ projects:
         email: apostolos.modas@epfl.ch
     tags:
       - Deep Neural Networks
-      - Inductive bias
+      - Inductive Bias
       - Features
     type: Application
     code:
@@ -220,7 +220,7 @@ projects:
         email: apostolos.modas@epfl.ch
     tags:
       - Deep Neural Networks
-      - Inductive bias
+      - Inductive Bias
       - Features
     type: Application
     code:

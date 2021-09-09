@@ -5,6 +5,7 @@ projects:
       - Privacy
     applications:
       - Info
+      - Gov
     description: Proof that you are an actual person while keeping your anonymity
     layman_desc: >
       The internet allows for anonymous participation. While this is great for protecting people like
@@ -22,7 +23,6 @@ projects:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
     tags:
-      - Government & Humanitarian
       - Anonymity
     type: Application
     code:
@@ -444,7 +444,8 @@ projects:
         email: gaurav.narula@epfl.ch
     url: https://www.twins-project.org
     tags:
-      - Health
+      - Access Control
+      - Consensus
     type: Application
     date_added: 2021-02-05
     date_updated: 2021-02-05
@@ -464,8 +465,6 @@ projects:
       - name: Noémien Kocher
         email: noemien.kocher@epfl.ch
     tags:
-      - Device and System Security
-      - Critical Infrastructure
       - Simulator
     type: Application
     code:

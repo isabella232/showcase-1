@@ -18,8 +18,7 @@
         % contacts = project['contacts']
         <div class="header">Contact{{ "s" if len(contacts) > 1 else "" }}:</div>
         % for contact in contacts:
-        % include('contact.tpl', contact=contact)
-        &nbsp;
+        %   include('contact.tpl', contact=contact)
         % end
     </div>
     % end
@@ -57,8 +56,8 @@
     <%
     import itertools
     for info_type, infos in itertools.groupby(
-    sorted(project.get('information', []), key=lambda v: v['type']),
-    lambda v: v['type']):
+      sorted(project.get('information', []), key=lambda v: v['type']),
+      lambda v: v['type']):
     %>
     <div>
         <div class="header">{{ info_type }}s:</div>
@@ -76,9 +75,9 @@
         <%
         active = is_active(project)
         if active is None:
-        status = "unknown"
+            status = "unknown"
         else:
-        status = "active" if active else "inactive"
+            status = "active" if active else "inactive"
         end
 
         date_added = project.get('date_added')
@@ -119,9 +118,9 @@
         <div class="header">Source code:</div>
         % code = project['code']
         % if 'url' in code:
-        <a href="{{ code['url'] }}">{{ code['type'] }}</a>
+            <a href="{{ code['url'] }}">{{ code['type'] }}</a>
         % else:
-        {{ code.get('type', 'url') }}
+            {{ code.get('type', 'url') }}
         % end
     </div>
     % end

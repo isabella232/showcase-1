@@ -46,7 +46,7 @@ projects:
       email: christian.grigis@epfl.ch
     tags:
       - Homomorphic Encryption
-      - Secure Multi-party Computation
+      - Secure Multi-Party Computation
     language: GoLang
     type: Library
     license: Apache-2.0
@@ -202,7 +202,7 @@ projects:
             url: https://ieeexplore.ieee.org/document/9019831
     tags:
       - Homomorphic Encryption
-      - Secure Multi-Parti Encryption
+      - Secure Multi-Party Computation
     language: GoLang
     type: Application
     license: non-commercial
