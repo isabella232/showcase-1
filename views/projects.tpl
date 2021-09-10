@@ -405,11 +405,11 @@ applications = {
                             %>
                             <tr class="{{ 'incubated' if incubated else 'not_incubated' }} {{visibility}}">
                                 <td class="proj_name"
-                                    onclick="window.location='/incubator/{{project_id}}'"
+                                    onclick="window.location='products/{{project_id}}'"
                                     style="cursor: pointer">
                                     {{ name }}
                                 </td>
-                                <td onclick="window.location='/incubator/{{project_id}}'"
+                                <td onclick="window.location='products/{{project_id}}'"
                                     style="cursor: pointer">
                                     {{ description }}
                                 </td>
@@ -423,13 +423,13 @@ applications = {
                                     % for artifact in artifacts:
                                         <span style="display: none">artifact_{{artifact}}</span>
                                         <div class="button" style="display: inline-block">
-                                            <a href="../incubator/{{project_id}}/{{artifact}}">
-                                            <img src="../resources/incubator/icons/{{artifact}}.png"
+                                            <a href="{{project_id}}/{{artifact}}">
+                                            <img src="../resources/products/icons/{{artifact}}.png"
                                                  class="dark_invert artifact" title="{{artifact_tags[artifact]}}"/></a>
                                         </div>
                                     % end
                                 </td>
-                                % maturity_image = {1: 'showcase', 2: 'incubator', 3: 'market'}
+                                % maturity_image = {1: 'experimental', 2: 'testing', 3: 'stable'}
                                 <td class="dt-center" data-order="{{ maturity_order }}">
                                     <img
                                             src="/resources/maturity_{{ maturity_image.get(maturity, "na") }}.svg"

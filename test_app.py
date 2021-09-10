@@ -66,21 +66,21 @@ def test_all_projects():
     with patch.object(data, 'load', return_value=labs):
         for lab_id, lab in labs.items():
             for project_id in lab['projects']:
-                for tab in showcase.find_project_tabs(project_id):
-                    showcase.incubator_project_tab(project_id, tab)
+                for tab in showcase.find_project_products(project_id):
+                    showcase.product_tab(project_id, tab)
 
 
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project_does_not_exist(data):
     with pytest.raises(bottle.HTTPResponse) as exc:
-        showcase.incubator_project_tab('dummy', 'technical')
+        showcase.product_tab('dummy', 'technical')
 
     assert exc.value.status.startswith('404')
 
 
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project(test_data):
-    showcase.incubator_project_tab('proj1', 'technical')
+    showcase.product_tab('proj1', 'technical')
 
     # Check proj1 fields were accessed
     proj1 = test_data()['LAB1']['projects']['proj1']

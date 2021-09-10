@@ -51,9 +51,9 @@ def find_project(project_id, lab_id=None):
 
     bottle.abort(404, f"Project '{project_id}' does not exist")
 
-def find_project_tabs(project_id):
+def find_project_products(project_id):
     tabs = [ tab for tab in ["presentation", "details", "demo", "hands-on", "pilot", "app"]
-             if os.path.isfile(os.path.join("views", "incubator", tab, project_id + ".tpl"))]
+             if os.path.isfile(os.path.join("views", "products", tab, project_id + ".tpl"))]
     return tabs + ["technical"]
 
 @bottle.route('/robots.txt')
@@ -78,21 +78,21 @@ def showcase():
     labs = data.load()
 
     return dict(labs=labs, is_active=is_active,
-            maturity_label=MATURITY_LABEL,
-            find_project_tabs=find_project_tabs)
+                maturity_label=MATURITY_LABEL,
+                find_project_tabs=find_project_products)
 
-@bottle.route('/incubator/<project_id>')
-def incubator_project(project_id):
-    tabs = find_project_tabs(project_id)
-    bottle.redirect('/incubator/' + project_id + "/" + tabs[0])
+@bottle.route('/showcase/<project_id>')
+def products(project_id):
+    tabs = find_project_products(project_id)
+    bottle.redirect('/showcase/' + project_id + "/" + tabs[0])
 
-@bottle.route('/incubator/<project_id>/<tab>')
-@bottle.view('incubator/tabs')
-def incubator_project_tab(project_id, tab):
+@bottle.route('/showcase/<project_id>/<product>')
+@bottle.view('products/index')
+def product_tab(project_id, product):
     project, lab = find_project(project_id)
 
     return dict(project=project, lab=lab,
-                tab=tab, tabs=find_project_tabs(project_id),
+                product=product, products=find_project_products(project_id),
                 is_active=is_active, maturity_label=MATURITY_LABEL)
 
 if __name__ == '__main__':
