@@ -66,14 +66,14 @@ div.breadcrumbs a:hover {
   color: var(--orange);
 }
 
-img.artifact {
+img.product {
   height: 2em;
   width: 2em;
   padding: 0.2em;
   margin: 0.1em;
 }
 
-img.artifact:hover {
+img.product:hover {
   border: 0.1em solid white;
 }
 

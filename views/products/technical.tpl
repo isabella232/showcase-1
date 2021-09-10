@@ -98,7 +98,7 @@
         <div class="header">Factory Development:</div>
         {{ incubator['work'] }}
         <ul>
-        % for line in incubator.get('artifacts', []):
+        % for line in incubator.get('products', []):
             <li>{{line['type']}}:
                 <a href="{{line['url']}}">{{line['title']}}</a>
             </li>

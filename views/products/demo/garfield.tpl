@@ -1,7 +1,3 @@
-<a href="https://factory.c4dt.org/incubator/garfield/demo/" class="tab-link">
-    Garfield Demo
-</a>
-
 <img src="../../../resources/products/images/garfield/wip.jpg" class="left"/>
 <p>
     This demonstrator illustrates how Machine Learning is used to
@@ -15,3 +11,7 @@
 
 <p>We're actively working on this demonstrator and hope to have something
     presentable by October 2021.</p>
+
+<a href="https://factory.c4dt.org/incubator/garfield/demo/" class="tab-link">
+    For Demo Click Here
+</a>

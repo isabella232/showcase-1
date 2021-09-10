@@ -1,7 +1,3 @@
-<a href="https://factory.c4dt.org/incubator/drynx/demo" class="tab-link">
-    Drynx Demo
-</a>
-
 <p>Together with our SwissRe partner we created a
     <a href="https://factory.c4dt.org/incubator/drynx/demo">Demonstrator</a> using the Drynx data analysis tool.
     The source data is a list of house insurances and the incurred claims. Supposing that this list
@@ -33,3 +29,7 @@
 <p>You can see that older houses tend to have higher claims than newer houses, which seems
 intuitively correct. To test it out yourself, you can visit the
 <a href="https://factory.c4dt.org/incubator/drynx/demo">Drynx Demonstrator</a></p>
+
+<a href="https://factory.c4dt.org/incubator/drynx/demo" class="tab-link">
+    For Demo Click Here
+</a>

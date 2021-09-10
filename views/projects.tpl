@@ -180,7 +180,7 @@ trail = [
 
 include('breadcrumbs.tpl', trail=trail, here='Showcase')
 
-artifact_tags = {
+product_tags = {
     "app": "Application for mobile or desktop",
     "details": "Detailed information on the technology used",
     "demo": "Demonstrator showing off the capabilities",
@@ -238,14 +238,14 @@ applications = {
                         style="width: 13em;"
                         onchange="search_apply();">
                     <option selected value="">All projects</option>
-                    <option value="project_incubated">C4DT Factory involvement</option>
+                    <option value="project_incubated">C4DT Factory involved</option>
                     <option value="project_active">Updated in last 6 months</option>
-                    <option value="artifact_presentation">Presentation available</option>
-                    <option value="artifact_details">Details available</option>
-                    <option value="artifact_demo">Demo available</option>
-                    <option value="artifact_hands-on">Training available</option>
-                    <option value="artifact_pilot">Pilot available</option>
-                    <option value="artifact_app">App available</option>
+                    <option value="product_presentation">Presentation available</option>
+                    <option value="product_details">Details available</option>
+                    <option value="product_demo">Demo available</option>
+                    <option value="product_hands-on">Training available</option>
+                    <option value="product_pilot">Pilot available</option>
+                    <option value="product_app">App available</option>
                 </select>
             </div>
 
@@ -334,7 +334,7 @@ applications = {
                         <td style="display: none;"></td>
                         <td style="display: none;"></td>
                         <td style="display: none;" data-order="99">
-                            99 - {{ " ".join(list(map(lambda a: "artifact_" + a, ["presentation", "details", "demo", "hands-on", "pilot", "technical", "app"]))) }}
+                            99 - {{ " ".join(list(map(lambda a: "product_" + a, ["presentation", "details", "demo", "hands-on", "pilot", "technical", "app"]))) }}
                         </td>
                         <td style="display: none;" data-order="100"></td>
 
@@ -400,16 +400,16 @@ applications = {
                             active_str = "project_active" if active else "inactive"
                             incubated = project.get('incubator')
                             incubator_str = "project_incubated" if incubated else "no support"
-                            artifacts = find_project_tabs(project_id)
+                            products = find_project_tabs(project_id)
                             maturity_order = maturity + 0.5 if active else maturity
                             %>
                             <tr class="{{ 'incubated' if incubated else 'not_incubated' }} {{visibility}}">
                                 <td class="proj_name"
-                                    onclick="window.location='products/{{project_id}}'"
+                                    onclick="window.location='{{project_id}}'"
                                     style="cursor: pointer">
                                     {{ name }}
                                 </td>
-                                <td onclick="window.location='products/{{project_id}}'"
+                                <td onclick="window.location='{{project_id}}'"
                                     style="cursor: pointer">
                                     {{ description }}
                                 </td>
@@ -419,13 +419,13 @@ applications = {
                                     class="button">{{ tag }}</button>
                                     % end
                                 </td>
-                                <td class="dt-center" data-order="{{len(artifacts)}}">
-                                    % for artifact in artifacts:
-                                        <span style="display: none">artifact_{{artifact}}</span>
+                                <td class="dt-center" data-order="{{len(products)}}">
+                                    % for product in products:
+                                        <span style="display: none">product_{{product}}</span>
                                         <div class="button" style="display: inline-block">
-                                            <a href="{{project_id}}/{{artifact}}">
-                                            <img src="../resources/products/icons/{{artifact}}.png"
-                                                 class="dark_invert artifact" title="{{artifact_tags[artifact]}}"/></a>
+                                            <a href="{{project_id}}/{{product}}">
+                                            <img src="../resources/products/icons/{{product}}.png"
+                                                 class="dark_invert product" title="{{product_tags[product]}}"/></a>
                                         </div>
                                     % end
                                 </td>
@@ -485,7 +485,7 @@ applications = {
                                     <span class="hidden">
                                         category_{{category_key}} {{category_value}}
                                         % for application in project.get('applications', []):
-                                        application_{{application}}
+                                            application_{{application}}
                                         % end
                                         {{ active_str }}
                                         {{ incubator_str }}

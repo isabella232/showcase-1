@@ -213,7 +213,7 @@ projects:
         email: joao.gomesdesaesousa@epfl.ch
     incubator:
       work: 2020/Q1 created demonstrator for SwissRe
-      artifacts:
+      products:
         - type: Demo
           title: Decentralized Data Analysis
           url: https://factory.c4dt.org/incubator/drynx/demo
@@ -288,7 +288,7 @@ projects:
         email: joao.gomesdesaesousa@epfl.ch
     incubator:
       work: 2021/Q1 created Spindle demonstrator
-      artifacts:
+      products:
         - type: Demo
           title: SPINDLE demonstrator
           url: https://factory.c4dt.org/incubator/spindle/demo

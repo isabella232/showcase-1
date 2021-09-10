@@ -1,6 +1,3 @@
-<a href="https://factory.c4dt.org/incubator/stainless/demo/" class="tab-link">
-     Stainless Demo
-</a>
 <p>
     The <a href="https://factory.c4dt.org/incubator/stainless/demo/">Stainless Demonstrator</a>
     shows how Stainless helps develop Smart
@@ -29,3 +26,6 @@
     the user to have a background in software development and blockchain
     technology to fully benefit from it.
 </p>
+<a href="https://factory.c4dt.org/incubator/stainless/demo/" class="tab-link">
+    For Demo Click Here
+</a>

@@ -1,7 +1,3 @@
-<a href="https://factory.c4dt.org/incubator/spindle/demo/" class="tab-link">
-    Spindle Demo
-</a>
-
 <p>In the <a href="https://factory.c4dt.org/incubator/spindle/demo/">Spindle demo</a>,
     three hospitals want to determine if a patient has diabetes or
     not. To avoid invasive procedures, theses only want to proceed with the full
@@ -59,3 +55,7 @@ result is calculated and is ready to predict outcomes.</p>
         <br>Ready to predict outcomes
     </label>
 </div>
+
+<a href="https://factory.c4dt.org/incubator/spindle/demo/" class="tab-link">
+    For Demo Click Here
+</a>

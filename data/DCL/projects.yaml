@@ -36,7 +36,7 @@ projects:
     language: Python, Cuda, C++
     incubator:
       work: Started in Spring 2021, demo in Autumn.
-      artifacts:
+      products:
         - type: Demo
           title: "Demonstrator - work in progress"
           url: https://factory.c4dt.org/incubator/garfield/demo/
@@ -79,7 +79,7 @@ projects:
     maturity: 1
     incubator:
       work: 2021/Q2 started working on demonstrator
-      artifacts:
+      products:
         - type: Demo
           title: AT2 Demonstrator
           url: https://factory.c4dt.org/incubator/at2/demo

@@ -499,7 +499,7 @@ projects:
     maturity: 1
     incubator:
       work: 2021/Q1 worked on improving and integrating with microG and published app
-      artifacts:
+      products:
         - type: App
           title: LibreCHovid
           url: https://f-droid.org/en/packages/ch.corona.tracing/

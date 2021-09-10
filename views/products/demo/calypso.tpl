@@ -1,6 +1,3 @@
-<a href="https://github.com/calypso-demo/filesharing" class="tab-link">
-    Calypso Demo
-</a>
 <p>OmniLedger has already been used for a number of years, and there are a lot of projects that
     interact with this blockchain.
     Together with the <a href="https://dedis.ch">DEDIS</a> lab, C4DT is running a test-network
@@ -28,3 +25,8 @@
     <img src="../../../resources/products/images/calypso/demo-fileshare.png" class="center"
          style="width: 100%"/>
 </p>
+
+This demo needs to be run on your local computer. Find the code here:
+<a href="https://github.com/calypso-demo/filesharing">
+    Calypso Demo Code
+</a>
