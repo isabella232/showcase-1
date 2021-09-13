@@ -1,6 +1,10 @@
 projects:
   powergossip:
     name: PowerGossip
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Practical Low-Rank Communication Compression in Decentralized Deep Learning
     tech_desc: >
       Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps
@@ -11,9 +15,7 @@ projects:
       - name: Thijs Vogels
         email: thijs.vogels@epfl.ch
     tags:
-      - Deep Learning
-      - Machine Learning
-      - Gradient Compression
+      - Deep Neural Networks
     type: Library
     code:
       type: Lab Github
@@ -34,6 +36,10 @@ projects:
 
   chocosgd:
     name: chocoSGD
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Decentralized communication-efficient ML and DL
     tech_desc: >
       code for communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
@@ -46,8 +52,9 @@ projects:
       url: https://github.com/epfml/ChocoSGD
       date_last_commit: 2020-09-10
     tags:
-      - Machine Learning
       - Decentralized
+      - Distributed Learning
+      - PyTorch
     information:
       - type: Paper
         title: Decentralized Stochastic Optimization and Gossip Algorithms with Compressed Communication
@@ -64,6 +71,10 @@ projects:
 
   cola:
     name: cola
+    categories:
+      - Learning
+    applications:
+      - Info
     description: decentralized linear ML
     tech_desc: >
       Decentralized machine learning is a promising emerging paradigm in view of global challenges of data
@@ -93,8 +104,8 @@ projects:
         title: "Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression"
         url: https://arxiv.org/pdf/2101.04816.pdf
     tags:
-      - Machine Learning
       - Decentralized
+      - Distributed Learning
     language: Python
     license: Apache-2.0
     type: Application
@@ -103,6 +114,10 @@ projects:
 
   mlbench:
     name: MLBench
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Benchmarking of distributed ML
     layman_desc: >
       Framework for distributed machine learning. Its purpose is to
@@ -128,22 +143,25 @@ projects:
         title: MLBench Blog
         url: https://mlbench.github.io/blog/
     tags:
-      - Machine Learning
-      - Framework
+      - Benchmark
     language: Python
     type: Framework
     license: Apache-2.0
-    in_incubator: true
+    incubator:
+      work: 2020/Q4 evaluated and tested the project
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
-    c4dt_work:
     date_added: 2019-07-30
     date_updated: 2021-05-22
     maturity: 2
 
   sent2vec:
     name: sent2vec
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Numerical representations for short texts
     layman_desc: >
       Library that delivers numerical representations (features) for short
@@ -157,9 +175,7 @@ projects:
       - name: Matteo Pagliardini
         email: matteo.pagliardini@epfl.ch
     tags:
-      - Machine Learning
-      - Text
-      - Features
+      - Natural Language
     type: Library
     date_added: 2019-03-18
     date_updated: 2021-05-25
@@ -167,6 +183,10 @@ projects:
 
   powersgd:
     name: PowerSGD
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Practical Low-Rank Gradient Compression for Distributed Optimization
     tech_desc: >
       New low-rank gradient compressor based on power iteration that can
@@ -193,8 +213,8 @@ projects:
             text: NeurIPS 2019
             url: https://nips.cc/Conferences/2019/Schedule?showEvent=14346
     tags:
-      - Machine Learning
-      - Distributed Optimization
+      - Decentralized
+      - Distributed Learning
     language: Python
     type: Application
     license: MIT

@@ -1,6 +1,10 @@
 projects:
   choix:
     name: Choix
+    categories:
+      - Security
+    applications:
+      - Info
     description: Library that provides inference algorithms for models based on Luce's choice axiom
     code:
       type: Personal GitHub
@@ -26,8 +30,7 @@ projects:
             text: proceedings of Machine Learning Research Volume 70, August 2017
             url: http://proceedings.mlr.press/v70/
     tags:
-      - Data Mining
-      - Inference
+      - Low-Level
     language: Python
     type: Library
     date_added: 2019-03-18
@@ -35,8 +38,12 @@ projects:
 
   who-is-that:
     name: Who is that?
-    url: https://who-is-th.at/
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Machine Learning framework to search a database via similarity samples
+    url: https://who-is-th.at/
     layman_desc: >
       Use machine learning to organize a collection of objects (e.g. faces
       of actors) so as to make them interactively searchable via similarity
@@ -47,14 +54,17 @@ projects:
       - name: Daniyar Chumbalov
         email: daniyar.chumbalov@epfl.ch
     tags:
-      - Predictor
-      - Machine Learning
+      - Database
     type: Library
     date_added: 2019-09-09
     date_updated: 2021-03-11
 
   kickscore:
     name: kickscore
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Dynamic skill rating system
     layman_desc: >
       Kickscore can be used to understand & visualize the skill of
@@ -95,7 +105,6 @@ projects:
         url: https://kickoff.ai/
     tags:
       - Predictor
-      - Machine Learning
     language: Python
     license: MIT
     type: Library
@@ -104,8 +113,12 @@ projects:
 
   predikon:
     name: Predikon
-    url: http://www.predikon.ch/
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Predictions about votes in Switzerland
+    url: http://www.predikon.ch/
     layman_desc: >
       Predikon provides predictions about votes in Switzerland, as soon as
       municipal results are published by Swiss cantons starting at 12:00
@@ -125,7 +138,6 @@ projects:
         email: victor.kristof@epfl.ch
     tags:
       - Predictor
-      - Machine Learning
     type: Library
     date_added: 2020-05-01
     date_updated: 2021-02-03

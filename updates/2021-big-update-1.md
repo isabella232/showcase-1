@@ -118,7 +118,7 @@ Example mail:
 
 Hi ,
 
-The C4DT Factory keeps a showcase that lists all available projects from the labs that have software artefacts or other potentially interesting projects for our partners.
+The C4DT Factory keeps a showcase that lists all available projects from the labs that have software products or other potentially interesting projects for our partners.
 Our partners look at it in irregular intervals to see if there is something interesting available. For a project to appear in the showcase, all it takes is an email to me and I’ll add it to the list.
 
 Alternatively, 1-2 times a year the C4DT Factory updates the list, which happens to be now ;) The list of projects we’re aware of coming out of your lab can be found here:

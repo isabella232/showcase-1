@@ -1,0 +1,139 @@
+/**
+  The filter and z-index in the div.breadcrumbs and div.products-header are necessary
+  in order for the images with 'dark-invert' to pass under it.
+ */
+div.breadcrumbs {
+  filter: invert(0);
+  z-index: 20;
+}
+
+div.products-header {
+  filter: invert(0);
+  top: 2em;
+  font-size: large;
+  position: sticky;
+  padding-top: 2em;
+  background: white;
+  padding-bottom: 1em;
+  z-index: 10;
+}
+
+div.products-text {
+  padding: 2em 1em 5em 1em;
+  z-index: 5;
+  background-color: #f8f8f8;
+}
+
+div.project-details div.header {
+  font-weight: bold;
+  color: #ffa870;
+  display: inline-block;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+div.project-details ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+div.project-details div.contents {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+div.project-details hr {
+  color: black;
+  border-width: 1px;
+  border-style: dotted;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+div.lab-title {
+  text-align: center;
+}
+
+div.index-image {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1em;
+}
+
+.columns {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tab-link {
+  font-size: 150%;
+  margin-bottom: 1em;
+}
+
+div.columns label {
+  margin: 0.5em;
+}
+
+img.left {
+  float: left;
+  margin: 0.5em;
+  width: 30%;
+}
+
+img.center {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: medium;
+}
+
+strong {
+  font-style: italic;
+  text-underline-style: double;
+  text-decoration: underline;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.products-header {
+    background: var(--dark-grey);
+  }
+
+  div.products-text {
+    background-color: #282828;
+  }
+
+  hr {
+    background-color: white;
+  }
+
+  a.nav-link:hover {
+    color: var(--orange);
+  }
+
+  img.dark_pad {
+    padding: 0.5em;
+  }
+}
+
+img.padded {
+  padding: 0.5em;
+  margin: 0.5em;
+}

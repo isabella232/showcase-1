@@ -1,6 +1,10 @@
 projects:
   garfield:
     name: Garfield
+    categories:
+      - Learning
+    applications:
+      - Info
     description: >
       System Support for Byzantine Machine Learning
     contacts:
@@ -19,10 +23,10 @@ projects:
       in the network. Garfield is a library/tool to ensure the correctness/convergence of training despite the
       presence of these failures. Garfield can be used to do so with various ML applications and architectures.
     tags:
-      - Machine Learning
-      - ML
-      - Byzantine
       - Federated Learning
+      - Distributed Learning
+      - Decentralized
+      - Byzantine Resilience
       - TensorFlow
       - PyTorch
     code:
@@ -30,33 +34,29 @@ projects:
       url: https://github.com/LPD-EPFL/Garfield
       date_last_commit: 2021-02-04
     language: Python, Cuda, C++
-    in_incubator: true
+    incubator:
+      work: Started in Spring 2021, demo in Autumn.
+      products:
+        - type: Demo
+          title: "Demonstrator - work in progress"
+          url: https://factory.c4dt.org/incubator/garfield/demo/
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
-    c4dt_work:
     maturity: 1
     information:
       - type: Paper
         title: "Garfield: System Support for Byzantine Machine Learning"
         url: https://arxiv.org/abs/2010.05888
-    demo:
-      title: Garfield demonstrator
-      description: >
-        <p>
-        This demonstrator illustrates how Machine Learning is used to
-        train a model on known data and how it fares on new data. It describes
-        the Decentralized Learning model, showing how
-        training on more data improves learning, while still keeping control on
-        one’s data. Finally, it shows the negative impact that faulty
-        components have on distributed learning, and how using Garfield helps
-        to develop applications that can tolerate them.
-        </p>
     date_added: 2021-01-20
     date_updated: 2021-02-11
 
   at2:
     name: AT2
+    categories:
+      - Blockchain
+    applications:
+      - Finance
     description: Asset Transfer System using lightweight broadcast-based primitives instead of consensus
     layman_desc: >
       AT2 is a full-fledged asset transfer system (cryptocurrency) without the
@@ -77,20 +77,20 @@ projects:
       url: https://github.com/Distributed-EPFL
       date_last_commit: 2021-02-04
     maturity: 1
-    in_incubator: true
-    demo:
-      title: AT2 demonstrator
-      url: https://factory.c4dt.org/incubator/at2/demo
-      code: https://github.com/Distributed-EPFL/at2-web
-    c4dt_work:
+    incubator:
+      work: 2021/Q2 started working on demonstrator
+      products:
+        - type: Demo
+          title: AT2 Demonstrator
+          url: https://factory.c4dt.org/incubator/at2/demo
+          code: https://github.com/Distributed-EPFL/at2-web
     c4dt_contact:
       name: Valérian Rousset
       email: valerian.rousset@epfl.ch
     tags:
-      - Blockchain
-      - Cryptocurrencies
-      - Scalability
-      - Decentralization
+      - Decentralized
+      - Byzantine Resilience
+      - Consensus
     type: Library
     language: Rust
     information:
@@ -127,6 +127,10 @@ projects:
 
   fegan:
     name: FeGAN
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Scaling Distributed GANs
     layman_desc: >
       The FeGAN system enables training GANs in the Federated Learning setup.
@@ -143,9 +147,7 @@ projects:
       date_last_commit: 2020-12-31
     maturity: 1
     tags:
-      - Machine Learning
-      - GAN
-      - Federated ML
+      - Federated Learning
       - PyTorch
     type: Application
     language: Pyton
@@ -162,6 +164,10 @@ projects:
 
   mvtil:
     name: MVTIL
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Multiversion Timestamp Locking (MVTL)
     layman_desc: >
       MVTL is a new family of concurrency control algorithms.
@@ -175,8 +181,9 @@ projects:
       url: https://github.com/LPD-EPFL/MVTIL
       date_last_commit: 2019-09-19
     tags:
-      - Database
       - Concurrency
+      - Database
+      - Locking
     type: Application
     language: C++
     information:
@@ -192,6 +199,10 @@ projects:
 
   libnvram:
     name: libNVRAM
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Log-Free Concurrent Data Structures
     layman_desc: >
       Storing data structures in non-volatile RAM such that transient
@@ -205,10 +216,9 @@ projects:
       url: https://github.com/LPD-EPFL/nv-lf-structures
       date_last_commit: 2019-09-04
     tags:
-      - NVRAM
-      - Data Structures
       - Concurrency
-      - Transient Failures
+      - Data Structures
+      - Failure
     type: Library, Application
     language: C++
     information:
@@ -224,6 +234,10 @@ projects:
 
   flodb:
     name: FloDB
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Unlocking Memory in Persistent Key-Value Stores
     layman_desc: >
       High performance key-value store for servers with high amount of RAM
@@ -237,9 +251,8 @@ projects:
       - name: Zablotchi Mihail Igor
         email: igor.zablotchi@epfl.ch
     tags:
-      - Key-Value Store
-      - Server
       - Database
+      - Server
     type: Application
     language: C++
     information:
@@ -255,6 +268,10 @@ projects:
 
   fleet:
     name: FLeet
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Federated Machine Learning on Android
     layman_desc: >
       MobNet is a framework for federated machine learning on Android
@@ -270,8 +287,7 @@ projects:
       date_last_commit: 2020-10-31
     tags:
       - Federated Learning
-      - Android
-      - Edge ML
+      - Mobile App
     type: Library, Application
     language: Java
     maturity: 1
@@ -288,6 +304,10 @@ projects:
 
   mctop:
     name: MCTOP
+    categories:
+      - Security
+    applications:
+      - Infra
     description: A Multi-Core Topology Abstraction
     layman_desc: >
       MCTOP is an abstraction of multi-core topologies augmented with
@@ -302,8 +322,7 @@ projects:
       url: https://github.com/LPD-EPFL/mctop
       date_last_commit: 2017-05-04
     tags:
-      - CPU topology
-      - Multiprocessor
+      - Server
     type: Application
     language: C
     information:
@@ -319,6 +338,10 @@ projects:
 
   lockin:
     name: LOCKIN
+    categories:
+      - Security
+    applications:
+      - Infra
     description: Automatically chose the best locking algorithm
     layman_desc: >
       GLS is a middleware that makes lock-based programming simple and
@@ -335,7 +358,7 @@ projects:
       url: https://github.com/LPD-EPFL/lockin
       date_last_commit: 2017-04-19
     tags:
-      - Locking
+      - Concurrency
     type: Library
     language: C/C++
     information:
@@ -358,6 +381,10 @@ projects:
 
   aggregathor:
     name: AggregaThor
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Framework over TensorFlow implementing robust Stochastic Gradient Descent
     layman_desc: >
       Framework built over TensorFlow implementing state-of-the-art
@@ -376,12 +403,9 @@ projects:
       url: https://github.com/LPD-EPFL/AggregaThor
       date_last_commit: 2019-12-06
     tags:
-      - Robust SGD
-      - Distributed ML
+      - Distributed Learning
       - Byzantine Resilience
-      - Gradient Aggregation
       - TensorFlow
-      - UDP
     type: Library, Application
     language: Python / C++
     information:
@@ -397,6 +421,10 @@ projects:
 
   ascylib-optik:
     name: ASCYLIB + OPTIK
+    categories:
+      - Security
+    applications:
+      - Infra
     description: State-of-the-art concurrent data-structure library
     layman_desc: >
       Over 40 implementations of linked lists, hash tables, skip lists,

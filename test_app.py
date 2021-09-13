@@ -13,14 +13,14 @@ TEST_DATA = {
             'prof': MagicMock(),
             'projects': {
                 'proj1': {
-                    'name': None,
+                    'name': 'Project 1',
                     'date_added': MagicMock(),
                     },
                 'proj2': None,
                 },
             },
         'LAB2': {
-            'name': None,
+            'name': 'Project 2',
             'url': None,
             'prof': MagicMock(),
             'projects': {
@@ -41,9 +41,8 @@ def test_consistent_data():
             for p in lab['projects'].values()
             ]:
         # All projects in the incubator have a C4DT contact and a description of work
-        if p.get('in_incubator'):
+        if p.get('incubator'):
             assert 'c4dt_contact' in p, f"'c4dt_contact' missing in {p['name']}"
-            assert 'c4dt_work' in p, f"'c4dt_work' missing in {p['name']}"
 
         # All projects with code have a type
         if 'code' in p:
@@ -56,18 +55,10 @@ def test_consistent_data():
             if 'url' in p['demo']:
                 assert 'code' in p['demo'], f"'code' missing from demo section in {p['name']}"
 
+
 def test_showcase():
     showcase.showcase()
 
-def test_labs():
-    showcase.labs()
-
-def test_all_lab_projects():
-    labs = data.load()
-
-    with patch.object(data, 'load', return_value=labs):
-        for lab_id in labs:
-            showcase.projects(lab_id)
 
 def test_all_projects():
     labs = data.load()
@@ -75,29 +66,26 @@ def test_all_projects():
     with patch.object(data, 'load', return_value=labs):
         for lab_id, lab in labs.items():
             for project_id in lab['projects']:
-                showcase.project(lab_id, project_id)
+                for tab in showcase.find_project_products(project_id):
+                    showcase.product_tab(project_id, tab)
 
-@patch.object(data, 'load', return_value=TEST_DATA)
-def test_project_lab_does_not_exist(data):
-    with pytest.raises(bottle.HTTPResponse) as exc:
-        showcase.project('dummy', 'proj1')
-
-    assert exc.value.status.startswith('404')
 
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project_does_not_exist(data):
     with pytest.raises(bottle.HTTPResponse) as exc:
-        showcase.project('LAB1', 'dummy')
+        showcase.product_tab('dummy', 'technical')
 
     assert exc.value.status.startswith('404')
 
+
 @patch.object(data, 'load', return_value=TEST_DATA)
 def test_project(test_data):
-    showcase.project('LAB1', 'proj1')
+    showcase.product_tab('proj1', 'technical')
 
     # Check proj1 fields were accessed
     proj1 = test_data()['LAB1']['projects']['proj1']
     proj1['date_added'].date.assert_called()
+
 
 def test_index():
     with pytest.raises(bottle.HTTPResponse) as exc:
@@ -107,16 +95,3 @@ def test_index():
     resp = exc.value
     assert resp.status.startswith('302')
     assert resp.headers['Location'] == showcase.FACTORY_URL
-
-def test_incubator():
-    showcase.incubator()
-
-def test_all_incubator_projects():
-    labs = data.load()
-
-    with patch.object(data, 'load', return_value=labs):
-        for lab_id, lab in labs.items():
-            for project_id, project in lab['projects'].items():
-                if project.get('in_incubator', False):
-                    showcase.incubator_project(project_id)
-

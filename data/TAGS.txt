@@ -1,0 +1,121 @@
+# Tags HOWTO
+
+This is a list of used tags in the projects.
+For a tag to be used, it must fulfill all following points:
+- pillars - reflects category/ies and is used to order
+- application verticals
+- technical aspects
+
+The tag-list here is sorted alphabetically, with all tags from one letter comma-separated.
+At the end there is a list of projects and tags they'd like to use.
+Once a second project would like to use one of these tags it's easy to add them.
+If a new tag is added, also add it to `data.py`
+
+# Technical Tags
+
+"Access Control", "Anonymity", "Attack",
+"Benchmark", "Binary", "Bluetooth", "Byzantine Resilience",
+"Cloud", "Code Analysis", "Computer Vision", "Concurrency", "Consensus", "CrowdSource",
+"Data Structures", "Database", "Debug", "Decentralized", "Deep Neural Networks",
+"Distributed Learning",
+"Encryption", "Exploit",
+"Failure", "Features", "Federated Learning", "Fuzzing",
+"Homomorphic Encryption",
+"Image Classification", "Images", "Inductive Bias", "Internet of Things",
+"Locking", "Low-Level",
+"Mobile App",
+"Natural Language", "Network",
+"Predictor", "Protection", "Protocol", "PyTorch",
+"Secure Multi-Party Computation", "Server", "Simulator", "Static Analysis", "Survey",
+"TensorFlow", "Tor",
+"Zero-Knowledge Proofs"
+
+# Desired Tags
+
+SPRING/
+    Petrelic: Pairing-Based
+
+Salathelab/
+    openfoodrepo: Switzerland, API, Barcode
+    foodandyou: Food, Survey
+    aicrowd: AI
+
+PARSA/
+    qFlex: Simulator, CPU
+
+NAL/
+    LINE: Emulator, Measurement
+
+LTS4/
+    DeepFool: Adversarial
+    Universal: Perturbations
+
+LSIR/
+    ai-data-platform-v1: Test Classification
+    media-observatory: News
+
+LDS/
+    Lattigo: Lattice Based Crypto
+
+LCA2/
+    Iprp: Real-Time, Parallel Transmission
+    Comelec-api: Message Format, Encoding, Decoding
+    T-recs: Power
+
+LARA/
+    Inox: Constraint Solver
+
+IVRL/
+    Slico: Image Detection
+    image-completion: Completion
+
+INDY/
+    Choix: Data Mining, Inference
+
+HexHive/
+    USBFuzz: USB, Linux
+    Magma: Ground-truth
+    CFIXX: Protection
+    HexType: Type Safety, Sanitization
+    RetroWrite: Binary, Efficient
+    HexPADS: Intrusion Detection
+    Datashield: Efficient
+
+DSLAB/
+    ASAP: Software Protection, LLVM, Buffer Overflows
+    Dimmunix: Deadlock, Immunity
+
+DEDIS/
+    Omniledger: Sharding, Performance, Proof-of-consensus
+    e-voting: E-Voting, Shuffle
+    drand: Randomness
+    Purbs: Data at Rest, Data in Transit
+    threshold-logical-clocks: Global clocks
+
+DCL/
+    AT2: Cryptocurrency, Scalability
+    FeGAN: GAN
+    libNVRAM: NVRAM, Transient Failures (put Failure)
+    FloDB: Key-Value Store
+    FLeet: Edge ML
+    MCTOP: CPU topology, Multiprocessor
+    AggregaThor: Robust SGD, Gradient Aggregation
+
+# Pillars
+
+Privacy: Privacy Protection & Cryptography
+Blockchain: Blockchains & Smart Contracts
+Verification: Software Verification
+Security: Device and System Security
+Learning: Machine Learning
+Other
+
+# Application
+
+Finance
+Health
+Gov: Government & Humanitarian
+Infra: Critical Infrastructure
+Info: Digital Information
+Other
+

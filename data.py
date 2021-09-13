@@ -36,6 +36,22 @@ PROJECTS_SCHEMA = sy.Map({"projects":
         sy.Map({
             "name": sy.Str(),
             "description": sy.Str(),
+            "categories": sy.Seq(sy.Enum([
+               "Privacy",
+               "Blockchain",
+               "Verification",
+               "Security",
+               "Learning",
+               "Other"
+            ])),
+            "applications": sy.Seq(sy.Enum([
+                "Finance",
+                "Health",
+                "Gov",
+                "Infra",
+                "Info",
+                "Other"
+            ])),
             sy.Optional("notes"): sy.Str(),
             sy.Optional("url"): sy.Url(),
             sy.Optional("layman_desc"): sy.Str(),
@@ -58,8 +74,24 @@ PROJECTS_SCHEMA = sy.Map({"projects":
                 "name": sy.Str(),
                 "email": sy.Email(),
                 }),
-            sy.Optional("c4dt_work"): sy.Str(),
-            "tags": sy.Seq(sy.Str()),
+            "tags": sy.Seq(sy.Enum([
+                "Access Control", "Anonymity", "Attack",
+                "Benchmark", "Binary", "Bluetooth", "Byzantine Resilience",
+                "Cloud", "Code Analysis", "Computer Vision", "Concurrency", "Consensus", "CrowdSource",
+                "Data Structures", "Database", "Debug", "Decentralized", "Deep Neural Networks",
+                "Distributed Learning",
+                "Encryption", "Exploit",
+                "Failure", "Features", "Federated Learning", "Fuzzing",
+                "Homomorphic Encryption",
+                "Image Classification", "Images", "Inductive Bias", "Internet of Things",
+                "Locking", "Low-Level",
+                "Mobile App",
+                "Natural Language", "Network",
+                "Predictor", "Protection", "Protocol", "PyTorch",
+                "Secure Multi-Party Computation", "Server", "Simulator", "Static Analysis", "Survey",
+                "TensorFlow", "Tor",
+                "Zero-Knowledge Proofs"
+            ])),
             sy.Optional("language"): sy.Str(),
             sy.Optional("type"): sy.CommaSeparated(sy.Enum([
                 "Application",
@@ -98,13 +130,17 @@ PROJECTS_SCHEMA = sy.Map({"projects":
             "date_added": sy.Datetime(),
             sy.Optional("date_updated"): sy.Datetime(),
             sy.Optional("maturity"): sy.Int(),
-            sy.Optional("in_incubator"): sy.Bool(),
-            sy.Optional("demo"): sy.Map({
-                "title": sy.Str(),
-                sy.Optional("description"): sy.Str(),
-                sy.Optional("url"): sy.Url(),
-                sy.Optional("code"): sy.Url(),
-                }),
+            sy.Optional("incubator"): sy.Map({
+                "work": sy.Str(),
+                sy.Optional("products"): sy.Seq(
+                    sy.Map({
+                        "type": sy.Enum(["Demo", "Hands-on", "Pilot", "App"]),
+                        "url": sy.Url(),
+                        "title": sy.Str(),
+                        sy.Optional("code"): sy.Str(),
+                        }),
+                    )
+                }) | sy.EmptyList(),
             })
         )
     })

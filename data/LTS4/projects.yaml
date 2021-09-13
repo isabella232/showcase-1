@@ -1,6 +1,10 @@
 projects:
   deepfool:
     name: DeepFool
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Simple algorithm to find the minimum adversarial perturbations in deep networks
     layman_desc: >
       DeepFool is a simple algorithm to find the minimum perturbations
@@ -12,7 +16,7 @@ projects:
       images. Despite the importance of this phenomenon, no effective methods
       have been proposed to accurately compute the robustness of
       state-of-the-art deep classifiers to such perturbations on large-scale
-      datasets. DeepFool proposes efficiently compute perturbations that fool
+      datasets. DeepFool proposes to efficiently compute perturbations that fool
       deep networks, and thus reliably quantify the robustness of these
       classifiers.
     code:
@@ -23,9 +27,7 @@ projects:
       - name: Seyed Moosavi
         email: seyed.moosavi@alumni.epfl.ch
     tags:
-      - Machine Learning
-      - Deep Networks
-      - Adversarial
+      - Deep Neural Networks
     language: MATLAB, Python
     type: Application
     information:
@@ -41,6 +43,10 @@ projects:
 
   manifool:
     name: ManiFool
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Algorithm for evaluating the invariance properties of deep networks
     tech_desc: >
       Deep convolutional neural networks have been shown to be vulnerable to
@@ -58,8 +64,7 @@ projects:
       - name: Seyed Moosavi
         email: seyed.moosavi@alumni.epfl.ch
     tags:
-      - Machine Learning
-      - Deep Networks
+      - Deep Neural Networks
     language: Python
     type: Application
     information:
@@ -75,6 +80,10 @@ projects:
 
   sparsefool:
     name: SparseFool
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Geometry-inspired sparse attack on deep networks
     layman_desc: >
       Deep Neural Networks have achieved extraordinary results on image
@@ -93,8 +102,7 @@ projects:
       - name: Apostolos Modas
         email: apostolos.modas@epfl.ch
     tags:
-      - Machine Learning
-      - Deep Networks
+      - Deep Neural Networks
     language: Python
     license: Apache-2.0
     type: Application
@@ -111,6 +119,10 @@ projects:
 
   universal:
     name: Universal
+    categories:
+      - Learning
+    applications:
+      - Info
     description: Universal adversarial perturbations
     layman_desc: >
       Proposing a universal (image-agnostic) and very small perturbation
@@ -125,9 +137,7 @@ projects:
       - name: Seyed Moosavi
         email: seyed.moosavi@alumni.epfl.ch
     tags:
-      - Machine Learning
-      - Deep Networks
-      - Perturbations
+      - Deep Neural Networks
     language: MATLAB, Python
     type: Application
     information:
@@ -143,6 +153,10 @@ projects:
 
   hold-me-tight:
     name: Hold me tight!
+    categories:
+      - Learning
+    applications:
+      - Info
     description: >
       Influence of discriminative features on deep network boundaries in ML
     tech_desc: >
@@ -161,9 +175,8 @@ projects:
       - name: Apostolos Modas
         email: apostolos.modas@epfl.ch
     tags:
-      - Deep learning
-      - Neural Networks
-      - Inductive bias
+      - Deep Neural Networks
+      - Inductive Bias
       - Features
     type: Application
     code:
@@ -185,6 +198,10 @@ projects:
 
   neural-anisotropy-directions:
     name: Neural Anisotropy Directions
+    categories:
+      - Learning
+    applications:
+      - Info
     description: >
       Analyzing the role of the network architecture in shaping the inductive bias of deep classifiers.
     tech_desc: >
@@ -202,9 +219,8 @@ projects:
       - name: Apostolos Modas
         email: apostolos.modas@epfl.ch
     tags:
-      - Deep learning
-      - Neural Networks
-      - Inductive bias
+      - Deep Neural Networks
+      - Inductive Bias
       - Features
     type: Application
     code:

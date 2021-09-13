@@ -1,6 +1,10 @@
 projects:
   stainless:
     name: Stainless
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Verification framework for a subset of the Scala programming language
     layman_desc: >
       Stainless is a tool for verifying Scala programs developed by the
@@ -22,17 +26,21 @@ projects:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch
     tags:
-      - Software Verification
-      - Scala
-      - Ethereum
+      - Static Analysis
+      - Code Analysis
     language: Scala
     type: Library, Application
     license: Apache-2.0
-    in_incubator: true
+    incubator:
+      work: 2021/Q2 - updated demonstrator with more explanations
+      products:
+        - type: Demo
+          title: Stainless-OmniLedger demonstrator
+          url: https://factory.c4dt.org/incubator/stainless/demo
+          code: https://github.com/c4dt/service-stainless
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
-    c4dt_work:
     information:
       - type: Paper
         title: "Satisfiability Modulo Recursive Programs"
@@ -61,37 +69,16 @@ projects:
       - type: Video
         title: Formal verification of Scala programs with Stainless at Typelevel Summit 2019
         url: https://www.youtube.com/watch?v=K1ZwpumSHCc
-    demo:
-      title: Stainless-OmniLedger demonstrator
-      description: >
-        <p>
-        This demonstrator shows how Stainless helps develop Smart
-        Contracts free of errors.  It provides an interactve environment
-        where the user can verify prewritten Smart Contracts, deploy them on
-        a blockchain, and call their functions.
-        </p>
-        <p>
-        A first introductory scenario involves a Candy Shop that maintains
-        its candy balance with a simple Smart Contract, which prevents people
-        from cheating by taking away more candies than are available.  A second
-        scenario illustrates a bug in a Smart Contract that appeared on the
-        Ethereum blockchain a few years ago, and led to a controversial fork
-        to prevent significant monetary loss. It also explains how Stainless
-        could have prevented it.
-        </p>
-        <p>
-        Please note that this demonstrator is fairly technical, and requires
-        the user to have a background in software development and blockchain
-        technology to fully benefit from it.
-        </p>
-      url: https://factory.c4dt.org/incubator/stainless/demo
-      code: https://github.com/c4dt/service-stainless
     date_added: 2019-03-18
     date_updated: 2021-03-25
     maturity: 2
 
   inox:
     name: Inox
+    categories:
+      - Verification
+    applications:
+      - Infra
     description: Constraint solver for Stainless
     layman_desc: >
       Inox can be used to prove constraints on methods in a program, to
@@ -108,8 +95,7 @@ projects:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch
     tags:
-      - Constraint Solver
-      - Software Verification
+      - Low-Level
     language: Scala
     type: Library, Application
     license: Apache-2.0

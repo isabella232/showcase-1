@@ -1,20 +1,27 @@
 projects:
   proshare:
     name: ProShare
+    categories:
+      - Privacy
+    applications:
+      - Info
     description: Privacy-preserving photo sharing
     layman_desc: >
       Proshare allows you to share your photos, while protecting sensible
       regions and hiding secret messages.
     url: http://grebproshare.epfl.ch/
     tags:
-      - Privacy
-      - Photo
+      - Images
     type: Application
     date_added: 2019-03-18
     date_updated: 2021-05-21
 
   quality-crowd:
     name: QualityCrowd
+    categories:
+      - Other
+    applications:
+      - Info
     description: Crowdsourcing image quality assessment
     layman_desc: >
       Video quality assessment with subjective testing is both time
@@ -29,8 +36,7 @@ projects:
       url: https://github.com/mmspg/qualitycrowd2.1
       date_last_commit: 2021-02-23
     tags:
-      - Quality
-      - Image
+      - Images
     type: Application
     information:
       - type: Paper
@@ -41,6 +47,10 @@ projects:
 
   point-cloud-web-renderer:
     name: Point cloud web renderer
+    categories:
+      - Other
+    applications:
+      - Info
     description: Show point cloud files using three.js
     tech_desc: >
       The renderer supports visualization of point clouds with real-time
@@ -56,8 +66,7 @@ projects:
       url: https://github.com/mmspg/point-cloud-web-renderer
       date_last_commit: 2021-05-11
     tags:
-      - Image
-      - Render
+      - Images
     type: Library
     information:
       - type: Paper
