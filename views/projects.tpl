@@ -78,13 +78,8 @@
         // If visible is false, no headers will be shown, and entries with more than
         // one category will be shown only once.
         function show_headers(visible){
-            let rows = document.getElementsByClassName("shown_with_headers");
-            for (let row = 0; row < rows.length; row++) {
-                rows[row].classList.remove("hidden");
-                if (!visible) {
-                    rows[row].classList.add("hidden");
-                }
-            }
+            const visible_str = visible ? "table-row" : "none";
+            document.documentElement.style.setProperty("--display-headers", visible_str);
         }
 
         // Sets the dropdown-boxes and the search box given a URL-hash string.
@@ -110,6 +105,7 @@
             } catch(e) {
                 console.error("While reading hash:", e);
                 update_url("", "");
+                search_set("");
             }
         }
 
@@ -135,9 +131,10 @@
             const table = $('#projects').DataTable();
             table.order([21, "asc"], [3, "desc"], [4, "desc"], [0, "asc"], [1, "asc"]).draw();
             table.search(`${dropdown} ${search_input}`).draw();
-            let show_categories = search_input === "";
-            update_url(dropdown, search_input, show_categories);
-            show_headers(show_categories);
+            update_url(dropdown, search_input);
+            // This makes sure that double entries are correctly displayed in the corner
+            // case where a text is in the search box and a category is chosen.
+            show_headers(search_input === "" || categories !== "");
             reset_show(dropdown !== "" || search_input !== "");
             search_lock = false;
         }

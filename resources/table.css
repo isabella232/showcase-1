@@ -12,6 +12,7 @@
   --tag-content: #eeeeee88;
   --tag-content-hover: #eeeeee;
   --tag-border: #888888;
+  --display-headers: "table-cell";
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -29,6 +30,10 @@
     --tag-content-hover: #aaaaaaaa;
     --tag-border: #cccccc;
   }
+}
+
+.shown_with_headers {
+  display: var(--display-headers);
 }
 
 html {
