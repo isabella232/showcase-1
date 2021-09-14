@@ -27,5 +27,5 @@
     technology to fully benefit from it.
 </p>
 <a href="https://factory.c4dt.org/incubator/stainless/demo/" class="tab-link">
-    For Demo Click Here
+    For a Live Demo Click Here
 </a>

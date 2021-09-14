@@ -31,5 +31,5 @@ intuitively correct. To test it out yourself, you can visit the
 <a href="https://factory.c4dt.org/incubator/drynx/demo">Drynx Demonstrator</a></p>
 
 <a href="https://factory.c4dt.org/incubator/drynx/demo" class="tab-link">
-    For Demo Click Here
+    For a Live Demo Click Here
 </a>
