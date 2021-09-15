@@ -60,7 +60,7 @@
                 }
             })
 
-            search_from_hash(decodeURIComponent(window.location.hash.substr(1)));
+            search_for_query(window.location.search);
 
             // Set the reset button to either dark or light mode, inverted from the color scheme.
             if (window.matchMedia) {
@@ -84,29 +84,20 @@
 
         // Sets the dropdown-boxes and the search box given a URL-hash string.
         // If the string is invalid, it will reset it to be empty.
-        function search_from_hash(str){
-            if (str === ""){
-                str = '{"dropdown": "", "input": ""}';
-            }
-            try {
-                let search = JSON.parse(str);
+        function search_for_query(str){
+            let search = new URLSearchParams(str);
+            let dropdown = search.get("dropdown")?.split(" ") ?? [];
 
-                let values = search.dropdown.split(" ");
-                ["work", "categories", "applications", "lab"].forEach(id => {
-                    let select = $(`#${id}`)[0];
-                    for (let index = 0; index < select.length; index++){
-                        if (values.includes(select.options[index].value) > 0){
-                            select.selectedIndex = index;
-                        }
+            ["work", "categories", "applications", "lab"].forEach(id => {
+                let select = $(`#${id}`)[0];
+                for (let index = 0; index < select.length; index++){
+                    if (dropdown.includes(select.options[index].value) > 0){
+                        select.selectedIndex = index;
                     }
-                })
+                }
+            })
 
-                search_set(search.input);
-            } catch(e) {
-                console.error("While reading hash:", e);
-                update_url("", "");
-                search_set("");
-            }
+            search_set(search.get("input"));
         }
 
         // Puts the given string in the search box and updates the results
@@ -158,13 +149,12 @@
 
         // Updates the URL using replaceState, so that it doesn't reload the page
         function update_url(dropdown, input){
-            let str = JSON.stringify({
-                dropdown, input
-            });
-            let url = `#${str}`;
-            if (dropdown === "" && input === ""){
-                url = "#";
-            }
+            let search = new URLSearchParams();
+            if (dropdown !== "") search.set("dropdown", dropdown);
+            if (input !== "") search.set("input", input);
+
+            let url = new URL(document.location);
+            url.search = search;
             window.history.replaceState(null, "Search", url);
         }
     </script>
@@ -288,7 +278,7 @@ applications = {
 
             <div>
                 <button id="reset" type="button" class="btn btn-outline-light hidden"
-                    onclick="search_from_hash('')">Reset</button>
+                    onclick="search_for_query('')">Reset</button>
             </div>
 
         </div>
