@@ -13,5 +13,5 @@
     presentable by October 2021.</p>
 
 <a href="https://factory.c4dt.org/incubator/garfield/demo/" class="tab-link">
-    For Demo Click Here
+    For a Live Demo Click Here
 </a>

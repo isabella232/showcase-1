@@ -38,5 +38,5 @@
 </p>
 
 <a href="https://wookiee.ch/columbus" class="tab-link">
-    For Demo Click Here
+    For a Live Demo Click Here
 </a>

@@ -57,5 +57,5 @@ result is calculated and is ready to predict outcomes.</p>
 </div>
 
 <a href="https://factory.c4dt.org/incubator/spindle/demo/" class="tab-link">
-    For Demo Click Here
+    For a Live Demo Click Here
 </a>
