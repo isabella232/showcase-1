@@ -60,7 +60,7 @@
                 }
             })
 
-            search_for_query(window.location.search);
+            search_for_query(window.location.hash.substr(1));
 
             // Set the reset button to either dark or light mode, inverted from the color scheme.
             if (window.matchMedia) {
@@ -154,7 +154,7 @@
             if (input !== "") search.set("input", input);
 
             let url = new URL(document.location);
-            url.search = search;
+            url.hash = search;
             window.history.replaceState(null, "Search", url);
         }
     </script>
