@@ -60,6 +60,12 @@
                 }
             })
 
+            // handle old JSON encoding of query
+            const old_json_matches = decodeURIComponent(window.location.hash)
+                .match(/^#{"dropdown":"([^"]*)","input":"([^"]*)"}$/);
+            if (old_json_matches !== null)
+                update_url(old_json_matches[1], old_json_matches[2]);
+
             search_for_query(window.location.hash.substr(1));
 
             // Set the reset button to either dark or light mode, inverted from the color scheme.
