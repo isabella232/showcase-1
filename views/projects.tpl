@@ -96,6 +96,7 @@
 
             ["work", "categories", "applications", "lab"].forEach(id => {
                 let select = $(`#${id}`)[0];
+		select.selectedIndex = 0;
                 for (let index = 0; index < select.length; index++){
                     if (dropdown.includes(select.options[index].value) > 0){
                         select.selectedIndex = index;
