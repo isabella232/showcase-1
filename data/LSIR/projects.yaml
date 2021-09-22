@@ -45,7 +45,6 @@ projects:
     layman_desc: >
       PrivySeal provides a personalized set of insights about your data on
       google drive before you install other apps.
-    url: https://privyseal.epfl.ch
     code:
       type: Private GitHub
     contacts:
