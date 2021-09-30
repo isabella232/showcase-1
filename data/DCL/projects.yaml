@@ -38,8 +38,9 @@ projects:
       work: Started in Spring 2021, demo in Autumn.
       products:
         - type: Demo
-          title: "Demonstrator - work in progress"
+          title: Garfield Demonstrator
           url: https://factory.c4dt.org/incubator/garfield/demo/
+          code: https://github.com/c4dt/Garfield
     c4dt_contact:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
