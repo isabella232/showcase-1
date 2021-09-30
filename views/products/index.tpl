@@ -60,6 +60,11 @@
 
       try:
         include(f'products/{product}/{p_id}.tpl')
+  %>
+    <hr/>
+
+    For more information, contact the <a href="mailto:factory@c4dt.org">C4DT Factory</a>
+  <%
       except TemplateError as exc:
         pass
       end
