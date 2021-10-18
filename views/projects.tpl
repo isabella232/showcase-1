@@ -435,7 +435,7 @@ applications = {
                                 </td>
 
                                 <td data-order="{{ ' '.join(reversed(prof['name'])) }}" class="dt-nowrap">
-                                    <a href="/showcase/labs/{{ lab_id }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
+                                    <a href="{{ lab['url'] }}">{{ ' '.join(prof['name']) }} &mdash; {{ lab_id }}</a>
                                 </td>
                                 % if url:
                                 <td class=""><a href="{{ url }}">Home page</a></td>
