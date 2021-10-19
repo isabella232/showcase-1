@@ -6,7 +6,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Automated Analysis of Privacy Policies
+    description: Automated analysis of privacy policies
     layman_desc: >
       Pribot uses an automated framework for privacy policy analysis
       (Polisis). It enables scalable, dynamic, and multi-dimensional
@@ -21,7 +21,7 @@ projects:
         email: remi.lebret@epfl.ch
     tags:
       - Natural Language
-    language: Python, Javascript
+    language: Python, JavaScript
     type: Application
     information:
       - type: Paper
@@ -33,7 +33,7 @@ projects:
             url: https://www.usenix.org/conference/usenixsecurity18
     license: commercial
     date_added: 2019-03-18
-    date_updated: 2021-04-22
+    date_updated: 2021-10-19
 
   privyseal:
     name: PrivySeal
@@ -41,10 +41,15 @@ projects:
       - Privacy
     applications:
       - Info
-    description: Privacy Assistant for Installing Cloud Apps
+    description: Privacy assistant for installing third party cloud apps
     layman_desc: >
-      PrivySeal provides a personalized set of insights about your data on
-      google drive before you install other apps.
+      When installing third party apps for cloud services such as Google Drive
+      or DropBox, PrivySeal compares the required permissions to the ones
+      actually needed, and informs users about the data-driven insights that
+      these apps can make about them (e.g. topics of interest, activity
+      patterns, etc.). The goal is to make users aware of these facts and
+      discourage them to install over-privileged apps.
+    url: https://privyseal.epfl.ch/
     code:
       type: Private GitHub
     contacts:
@@ -52,7 +57,7 @@ projects:
         email: hamza.harkous@gmail.com
     tags:
       - Cloud
-    language: Javascript, Python
+    language: JavaScript, Python
     type: Application
     information:
       - type: Paper
@@ -63,7 +68,7 @@ projects:
             text: PETS'16
             url: https://petsymposium.org/2016
     date_added: 2019-03-18
-    date_updated: 2021-04-22
+    date_updated: 2021-10-19
 
   ai-data-platform-v1:
     name: AI Research Aiding Online Children Safety
@@ -147,9 +152,9 @@ projects:
     description: Helper for science news evaluation
     url: https://scilens.epfl.ch
     layman_desc: >
-      A platform that automatically generates indicators using weakly
-      supervised learning, effectively helping non-experts to evaluate more
-      accurately the quality of a science news article.
+      A framework helping non-experts to evaluate the quality of scientific
+      news articles, based on indicators automatically generated using machine
+      learning.
     code:
       type: Lab GitHub
       url: https://github.com/LSIR/SciLens
@@ -181,7 +186,7 @@ projects:
     license: GPL-3.0
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-04-22
+    date_updated: 2021-10-19
 
   media-observatory:
     name: Media Observatory
@@ -192,7 +197,7 @@ projects:
       - Info
     description: News landscape monitoring
     layman_desc: >
-      A model of the news landscape that maps news channels based on their
+      A model of the media landscape that maps news channels based on their
       selection of subjects.
       The observatory has the following key objectives: giving the public
       access to algorithmic solutions to monitor the news landscape,
@@ -224,4 +229,4 @@ projects:
             text: WWW'19
             url: https://www2019.thewebconf.org
     date_added: 2019-09-04
-    date_updated: 2021-04-22
+    date_updated: 2021-10-19
