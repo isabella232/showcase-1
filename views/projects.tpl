@@ -128,7 +128,7 @@
 
             const table = $('#projects').DataTable();
             table.order([21, "asc"], [3, "desc"], [4, "desc"], [0, "asc"], [1, "asc"]).draw();
-            table.search(`${dropdown} ${search_input}`).draw();
+            table.search(search_input).column(21).search(dropdown).draw();
             update_url(dropdown, search_input);
             // This makes sure that double entries are correctly displayed in the corner
             // case where a text is in the search box and a category is chosen.
@@ -272,7 +272,7 @@ applications = {
                     <option selected value="">All labs</option>
                     % for lab_id, lab in labs.items():
                         % prof = " ".join(lab['prof']['name'])
-                        <option value="{{ lab_id }}">{{ prof }} - {{ lab['name'] }}</option>
+                        <option value="lab_{{ lab_id }}">{{ prof }} - {{ lab['name'] }}</option>
                     % end
                 </select>
             </div>
@@ -327,9 +327,7 @@ applications = {
                         <td colspan="24" class="category">{{ category_value }}</td>
                         <td style="display: none;"></td>
                         <td style="display: none;"></td>
-                        <td style="display: none;" data-order="99">
-                            99 - {{ " ".join(list(map(lambda a: "product_" + a, ["presentation", "details", "demo", "hands-on", "pilot", "technical", "app"]))) }}
-                        </td>
+                        <td style="display: none;" data-order="99"></td>
                         <td style="display: none;" data-order="100"></td>
 
                         <td></td><td></td><td></td><td></td><td></td>
@@ -340,6 +338,7 @@ applications = {
                         <td data-order="{{ category_sort }}">
                             <span style="display: none">category_{{category_key}}
                                 project_active project_incubated
+                                99 - {{ " ".join(list(map(lambda a: "product_" + a, ["presentation", "details", "demo", "hands-on", "pilot", "technical", "app"]))) }}
                             </span>
                         </td>
                     </tr>
@@ -415,7 +414,6 @@ applications = {
                                 </td>
                                 <td class="dt-center" data-order="{{len(products)}}">
                                     % for product in products:
-                                        <span style="display: none">product_{{product}}</span>
                                         <div class="button" style="display: inline-block">
                                             <a href="{{project_id}}/{{product}}">
                                             <img src="../resources/products/icons/{{product}}.png"
@@ -483,6 +481,10 @@ applications = {
                                         % end
                                         {{ active_str }}
                                         {{ incubator_str }}
+                                        lab_{{ lab_id }}
+                                        % for product in products:
+                                            product_{{product}}
+                                        % end
                                     </span>
                                 </td>
                             </tr>
