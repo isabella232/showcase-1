@@ -6,7 +6,7 @@ projects:
     applications:
       - Infra
     description: >
-      A Simpler and Faster NIC Driver Model for Network Functions
+      A simpler and faster NIC driver model for network functions
     tech_desc: >
       By merely replacing the state-of-the-art driver with our driver, formal verification of the entire software
       stack completes in 7x less time, while the verified functions’ throughput improves by 160%.
@@ -20,28 +20,28 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/dslab-epfl/tinynf
-      date_last_commit: 2021-01-22
+      date_last_commit: 2021-06-22
     language: C
     license: MIT
     information:
       - type: Paper
         title: "A Simpler and Faster NIC Driver Model for Network Functions"
-        url: https://dslab.epfl.ch/pubs/tinynf.pdf
+        url: https://infoscience.epfl.ch/record/282923
         notes:
           - label: Published in
             text: "Usenix OSDI '20"
             url: https://www.usenix.org/conference/osdi20/presentation/pirelli
     date_added: 2021-01-22
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
 
-  # This is the same as the vigor project from NAL
+  # This is the same as the 'vigor' project from NAL
   vigor:
     name: Vigor
     categories:
       - Verification
     applications:
       - Infra
-    description: Formally verified and performant software Middleboxes
+    description: Formally verified and performant software middleboxes
     tech_desc: >
       Software stack and toolchain for building and running software
       middleboxes that are guaranteed to be correct, while providing
@@ -78,15 +78,16 @@ projects:
     type: Framework
     maturity: 1
     date_added: 2019-07-26
-    date_updated: 2021-05-21
+    date_updated: 2021-10-20
 
+  # This is the same as the 'bolt' project from NAL
   bolt:
     name: BOLT
     categories:
       - Verification
     applications:
       - Infra
-    description: Performance Contracts for Software Network Functions
+    description: Performance contracts for software network functions
     layman_desc: >
       Software network functions (NFs), or middleboxes, promise flexibility and
       easy deployment of network services but face the serious challenge of
@@ -131,7 +132,7 @@ projects:
             text: "USENIX NSDI '19"
             url: https://www.usenix.org/conference/nsdi19/presentation/iyer
     date_added: 2021-02-03
-    date_updated: 2021-05-21
+    date_updated: 2021-10-20
 
   cpi:
     name: CPI
@@ -153,7 +154,7 @@ projects:
       url: https://github.com/cpi-llvm
       date_last_commit: 2015-11-16
     contacts:
-      - name: http://volodymyrkuznetsov.info/
+      - name: Volodymyr Kuznetsov
         url: http://volodymyrkuznetsov.info/
     tags:
       - Network
@@ -161,22 +162,22 @@ projects:
     information:
       - type: Paper
         title: Code-Pointer Integrity
-        url: http://dslab.epfl.ch/pubs/cpi.pdf
+        url: https://infoscience.epfl.ch/record/204783
         notes:
           - label: Published in
             text: "OSDI '14"
             url: https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-kuznetsov.pdf
       - type: Paper
-        title: "Missing the pointer"
+        title: "Missing the Point(er): On the Effectiveness of Code Pointer Integrity"
         url: http://people.csail.mit.edu/rinard/paper/oakland15.pdf
         notes:
           - label: Published in
             text: "Usenix S&P '15"
     date_added: 2019-07-26
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
 
   s2e:
-    name: s2e
+    name: S²E
     categories:
       - Security
     applications:
@@ -191,7 +192,9 @@ projects:
     code:
       type: Project GitHub
       url: https://github.com/s2e
-      date_last_commit: 2021-01-30
+      date_last_commit: 2021-10-16
+    language: C, C++
+    license: MIT
     contacts:
       - name: Vitaly Chipounov
         email: vitaly@cyberheaven.io
@@ -209,7 +212,7 @@ projects:
             url: https://dl.acm.org/doi/10.1145/2110356.2110358
     type: Library
     date_added: 2019-03-18
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
 
   asap:
     name: ASAP
@@ -226,6 +229,8 @@ projects:
       type: Lab GitHub
       url: https://github.com/dslab-epfl/asap
       date_last_commit: 2015-12-03
+    language: C++, assembly
+    license: BSD-2-Clause
     contacts:
       - name: Jonas Wagner
         email: ltlygwayh@gmail.com
@@ -235,7 +240,7 @@ projects:
     information:
       - type: Paper
         title: "High System-Code Security with Low Overhead"
-        url: https://dslab.epfl.ch/pubs/asap.pdf
+        url: https://infoscience.epfl.ch/record/205055
         notes:
           - label: Published in
             text: "IEEE S&P '15"
@@ -248,7 +253,7 @@ projects:
             text: "OSDI '14"
             url: https://www.usenix.org/conference/osdi14/poster-sessions
     date_added: 2019-03-18
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
 
   cloud9:
     name: Cloud 9
@@ -265,6 +270,8 @@ projects:
       type: Lab GitHub
       url: https://github.com/dslab-epfl/cloud9
       date_last_commit: 2013-09-11
+    language: C, C++
+    license: BSD-3-Clause
     contacts:
       - name: Stefan Bucur
         email: stefan.bucur@gmail.com
@@ -274,7 +281,7 @@ projects:
     information:
       - type: Paper
         title: "Parallel Symbolic Execution for Automated Real-World Software Testing"
-        url: http://dslab.epfl.ch/pubs/cloud9.pdf
+        url: https://infoscience.epfl.ch/record/166069
         notes:
           - label: Published in
             text: "EuroSys 2011"
@@ -295,7 +302,7 @@ projects:
             url: https://dl.acm.org/toc/sigops/2010/43/4
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
 
   dimmunix:
     name: Dimmunix
@@ -311,6 +318,8 @@ projects:
     code:
       type: Google Code
       url: https://code.google.com/archive/p/dimmunix/
+      date_last_commit: 2012-04-24
+    language: C, C++, Java
     contacts:
       - name: Horatiu Jula
         url: https://www.linkedin.com/in/horatiu-jula-63a02a7
@@ -320,13 +329,13 @@ projects:
     information:
       - type: Paper
         title: "Platform-wide Deadlock Immunity for Mobile Phones"
-        url: https://dslab.epfl.ch/pubs/android_dimmunix.pdf
+        url: https://infoscience.epfl.ch/record/166080
         notes:
           - label: Published in
             text: "7th HotDep"
             url: http://hotdep2011.cis.upenn.edu/
     date_added: 2019-03-18
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
 
   failure-sketching:
     name: Failure Sketching
@@ -347,6 +356,9 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dslab-epfl/bugbase
+      date_last_commit: 2015-10-06
+    language: Python
+    license: BSD-3-Clause
     contacts:
       - name: Baris Kasici
         email: barisk@umich.edu
@@ -364,4 +376,75 @@ projects:
             text: "SOSP '15"
             url: https://dl.acm.org/doi/10.1145/2815400.2815412
     date_added: 2019-03-18
-    date_updated: 2021-02-24
+    date_updated: 2021-10-20
+
+  conferr:
+    name: ConfErr
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Quantify the resilience of software systems to human-induced configuration errors
+    layman_desc: >
+      ConfErr uses human error models rooted in psychology and linguistics to
+      generate realistic configuration mistakes; it then injects these mistakes
+      and measures their effects, producing a resilience profile of the system
+      under test. The resilience profile, capturing succinctly how sensitive
+      the target software is to different classes of configuration errors, can
+      be used for improving the software or to compare systems to each other.
+    url: https://dslab.epfl.ch/research/conferr/
+    code:
+      type: Personal GitHub
+      url: https://github.com/lokeller/conferr
+      date_last_commit: 2015-03-14
+    language: Java
+    type: Application
+    tags:
+      - Debug
+      - Failure
+    information:
+      - type: Paper
+        title: "ConfErr: A Tool for Assessing Resilience to Human Configuration Errors"
+        url: https://infoscience.epfl.ch/record/129043?ln=en
+        notes:
+          - label: Published at
+            text: DSN 2008
+            url: https://2008.dsn.org/
+      - type: Poster
+        title: "Arugula: A programming language for describing human errors"
+        url: http://lorenzo.nodo.ch/media/files/papers/eurosys10-arugula.pdf
+    date_added: 2021-11-03
+    date_updated: 2021-11-03
+
+  lfi:
+    name: LFI
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Library-level fault injection toolkit
+    layman_desc: >
+      LFI automatically identifies the errors exposed by shared libraries,
+      finds potentially buggy error recovery code in program binaries, and
+      produces corresponding injection scenarios.
+    url: https://dslab.epfl.ch/research/lfi/
+    code:
+      type: Lab GitHub
+      url: https://github.com/dslab-epfl/lfi
+      date_last_commit: 2014-05-28
+    language: C++
+    license: GPL-3.0
+    type: Application
+    tags:
+      - Debug
+      - Failure
+    information:
+      - type: Paper
+        title: "Efficient Testing of Recovery Code Using Fault Injection"
+        url: https://dslab.epfl.ch/pubs/faultInjection.pdf
+        notes:
+          - label: Published in
+            text: ACM Transactions on Computer Systems, December 2011
+            url: https://dl.acm.org/doi/10.1145/2063509.2063511
+    date_added: 2021-11-03
+    date_updated: 2021-11-03
