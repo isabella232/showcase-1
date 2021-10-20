@@ -7,14 +7,14 @@ projects:
       - Info
     description: Privacy-preserving photo sharing
     layman_desc: >
-      Proshare allows you to share your photos, while protecting sensible
+      Proshare allows you to share your photos, while protecting sensitive
       regions and hiding secret messages.
     url: http://grebproshare.epfl.ch/
     tags:
       - Images
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-05-21
+    date_updated: 2021-10-20
 
   quality-crowd:
     name: QualityCrowd
@@ -35,6 +35,8 @@ projects:
       type: Lab GitHub
       url: https://github.com/mmspg/qualitycrowd2.1
       date_last_commit: 2021-02-23
+    language: PHP, JavaScript
+    license: BSD-3-Clause
     tags:
       - Images
     type: Application
@@ -43,7 +45,7 @@ projects:
         title: QualityCrowd - A Framework for Crowd-based Quality Evaluation
         url: https://mediatum.ub.tum.de/doc/1098076/1098076.pdf
     date_added: 2021-05-21
-    date_updated: 2021-05-21
+    date_updated: 2021-10-20
 
   point-cloud-web-renderer:
     name: Point cloud web renderer
@@ -65,6 +67,8 @@ projects:
       type: Lab GitHub
       url: https://github.com/mmspg/point-cloud-web-renderer
       date_last_commit: 2021-05-11
+    language: JavaScript
+    license: GPL-3.0
     tags:
       - Images
     type: Library
@@ -77,4 +81,81 @@ projects:
             text: APSIPA
             url: http://apsipa.org
     date_added: 2021-05-21
-    date_updated: 2021-05-21
+    date_updated: 2021-10-20
+
+  learned-residual-pcc:
+    name: Learned Residual PCC
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Learning residual coding for point clouds
+    layman_desc: >
+    tech_desc: >
+      Recent  advancements  in  acquisition  of  three-dimensional  models have
+      been  increasingly  drawing  attention  toimaging modalities based on the
+      plenoptic representations, such as light fields and point clouds.  Since
+      point cloudmodels can often contain millions of points, each including
+      both geometric positions and associated attributes,efficient compression
+      schemes are needed to enable transmission and storage of this type of
+      media. This project presents a detachable learning-based residual module
+      for point cloud compression that allows for efficientscalable coding.
+    contacts:
+      - name: Davi Nachtigall Lazzarotto
+        email: davi.nachtigalllazzarotto@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/learned-residual-pcc
+      date_last_commit: 2021-09-01
+    language: Python
+    license: GPL-3.0
+    type: Application
+    tags:
+      - Images
+    information:
+      - type: Paper
+        title: "Learning residual coding for point clouds"
+        url: https://infoscience.epfl.ch/record/288000
+        notes:
+          - label: Published in
+            text: Proceedings of SPIE - Applications of Digital Image Processing XLIV
+            url: https://spie.org/Publications/Proceedings/Volume/11842
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  errgb:
+    name: Error Resilient Recurring Gallery Building
+    categories:
+      - Learning
+    applications:
+      - Gov
+    description: Correctly re-identify people in different images
+    layman_desc: >
+      In person re-identification, people must to be correctly identified in
+      images that come from different cameras or are captured at different
+      points in time. In the open-set case, the above needs be achieved for
+      persons that have not been previously observed. We propose a universal
+      method for building a multi-shot gallery of observed reference identities
+      recurrently online.
+    contacts:
+      - name: Evgeniy Upenik
+        email: evgeniy.upenik@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/ERRGB
+      date_last_commit: 2021-02-03
+    language: Python
+    license: GPL-3.0
+    type: Application
+    tags:
+      - Computer Vision
+    information:
+      - type: Paper
+        title: "Open-Set Person Re-Identification through Error Resilient Recurring Gallery Building"
+        url: https://infoscience.epfl.ch/record/286318
+        notes:
+          - label: Published at
+            text: IEEE ICIP 2021
+            url: https://www.2021.ieeeicip.org/
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
