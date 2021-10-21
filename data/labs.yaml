@@ -173,11 +173,9 @@ labs:
         - Kunčak
       email: viktor.kuncak@epfl.ch
     description: >
-      Helping construct software that does what we expect
-      <br>LARA is a research group led by Viktor Kunčak. 
-      We develop precise automated reasoning techniques : tools,
-      algorithms and languages. The goal of these techniques is to help
-      construction of verified computer systems.
+      We develop precise automated reasoning techniques: tools, algorithms and
+      languages. The goal of these techniques is to help construction of
+      verified computer systems.
     contacts:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch

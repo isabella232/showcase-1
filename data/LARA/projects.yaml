@@ -16,7 +16,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-lara/stainless
-      date_last_commit: 2021-03-23
+      date_last_commit: 2021-10-20
     doc: https://epfl-lara.github.io/stainless/
     contacts:
       - name: Viktor Kunčak
@@ -50,8 +50,8 @@ projects:
             text: SAS 2011
             url: https://staticanalysis.org
       - type: Paper
-        title: "Counter-Example Complete Verification for Higher-Order Functions"
-        url: https://lara.epfl.ch/~kuncak/papers/VoirolETAL15CounterExampleCompleteVerificationHigherOrderFunctions.pdf
+        title: "On Counter-Example Complete Verification for Higher-Order Functions"
+        url: https://infoscience.epfl.ch/record/207420
         notes:
           - label: Published at
             text: Scala Symposium 2015
@@ -69,8 +69,11 @@ projects:
       - type: Video
         title: Formal verification of Scala programs with Stainless at Typelevel Summit 2019
         url: https://www.youtube.com/watch?v=K1ZwpumSHCc
+      - type: Tutorial
+        title: Stainless Verification System Tutorial
+        url: https://raw.githubusercontent.com/epfl-lara/fmcad2021tutorial/main/Stainless-Tutorial-FMCAD2021.pdf
     date_added: 2019-03-18
-    date_updated: 2021-03-25
+    date_updated: 2021-10-21
     maturity: 2
 
   inox:
@@ -86,7 +89,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-lara/inox
-      date_last_commit: 2021-02-23
+      date_last_commit: 2021-09-23
     contacts:
       - name: Viktor Kunčak
         email: viktor.kuncak@epfl.ch
@@ -102,4 +105,28 @@ projects:
     notes: >
       Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
     date_added: 2019-03-18
-    date_updated: 2021-03-25
+    date_updated: 2021-10-21
+
+  rust-stainless:
+    name: Rust-Stainless
+    categories:
+      - Verification
+    applications:
+      - Infra
+    description: Rust frontend for Stainless
+    contacts:
+      - name: Georg Stefan Schmid
+        email: georg.schmid@epfl.ch
+      - name: Yann Bolliger
+        email: yann.bolliger@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/rust-stainless
+      date_last_commit: 2021-07-22
+    language: Rust
+    license: Apache-2.0
+    tags:
+      - Static Analysis
+      - Code Analysis
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
