@@ -31,7 +31,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/ldsec/lattigo
-      date_last_commit: 2021-03-18
+      date_last_commit: 2021-10-14
     contacts:
       - name: Jean-Philippe Bossuat
         email: jean-philippe.bossuat@epfl.ch
@@ -51,7 +51,7 @@ projects:
     type: Library
     license: Apache-2.0
     date_added: 2019-08-15
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
     maturity: 1
 
   prifi:
@@ -60,7 +60,7 @@ projects:
       - Privacy
     applications:
       - Infra
-    description: Anonymous communication system
+    description: Anonymous communication protocol for wireless networks
     layman_desc: >
       PriFi provides a network access mechanism for protecting members of
       an organization who access the Internet while on-site.
@@ -94,7 +94,7 @@ projects:
     type: Application, Library
     license: AGPL-3.0
     date_added: 2019-03-18
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
 
   unlynx:
     name: Unlynx
@@ -111,11 +111,11 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/ldsec/unlynx
-      date_last_commit: 2021-03-26
+      date_last_commit: 2021-10-11
     information:
       - type: Paper
         title: "UnLynx: A Decentralized System for Privacy-Conscious Data Sharing"
-        url: https://infoscience.epfl.ch/record/229308
+        url: https://doi.org/10.1515/popets-2017-0047
         notes:
           - label: Published at
             text: "Privacy Enhancing Technologies Symposium, Minneapolis, MN, USA, July 18–21, 2017"
@@ -134,7 +134,7 @@ projects:
       - name: Joao de Sá
         email: joao.gomesdesaesousa@epfl.ch
     date_added: 2019-03-18
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
 
   medco:
     name: MedCo
@@ -152,7 +152,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://medco.epfl.ch/software/
-      date_last_commit: 2021-04-14
+      date_last_commit: 2021-10-18
     lines_of_code: 16000
     tags:
       - Homomorphic Encryption
@@ -169,7 +169,7 @@ projects:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
     date_added: 2019-03-18
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
     maturity: 2
 
   drynx:
@@ -178,7 +178,7 @@ projects:
       - Privacy
     applications:
       - Health
-    description: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets
+    description: Decentralized, secure, verifiable system for statistical queries and machine learning on distributed datasets
     layman_desc: >
       Drynx allows to create privacy-preserving queries on encrypted
       datasets that are stored at different data providers who don't
@@ -195,7 +195,7 @@ projects:
     information:
       - type: Paper
         title: "Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets"
-        url: https://infoscience.epfl.ch/record/277406
+        url: https://arxiv.org/abs/1902.03785
         notes:
           - label: Published in
             text: "IEEE Transactions On Information Forensics And Security"
@@ -222,7 +222,7 @@ projects:
       name: Valérian Rousset
       email: valerian.rousset@epfl.ch
     date_added: 2019-03-18
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
     maturity: 1
 
   pdci2b2:
@@ -241,12 +241,14 @@ projects:
       type: Personal GitHub
       url: https://github.com/JLRgithub/PDCi2b2
       date_last_commit: 2018-02-12
+    language: GoLang
+    license: non-commercial
     lines_of_code: 5000 - 10000
     tags:
       - Decentralized
     type: Application
     date_added: 2019-03-18
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
 
   spindle:
     name: SPINDLE
@@ -256,8 +258,8 @@ projects:
     applications:
       - Info
     description: >
-      Scalable, Privacy-Preserving, Distributed Learning on Distributed
-      Datasets
+      Scalable, privacy-preserving, distributed learning on distributed
+      datasets
     layman_desc: >
       SPINDLE allows to train and evaluate generalized linear models on
       datasets that are stored at different data providers who don't
@@ -265,14 +267,14 @@ projects:
     code:
       type: Private GitHub
       url: https://github.com/ldsec/spindle
-      date_last_commit: 2021-04-12
+      date_last_commit: 2021-10-12
     lines_of_code: 20000
     information:
       - type: Paper
         title: Scalable Privacy-Preserving Distributed Learning
         url: https://petsymposium.org/2021/files/papers/issue2/popets-2021-0030.pdf
         notes:
-          - label: published at
+          - label: Published at
             text: PETS 2021
             url: https://petsymposium.org/2021/
     tags:
@@ -297,7 +299,7 @@ projects:
       name: Valérian Rousset
       email: valerian.rousset@epfl.ch
     date_added: 2021-01-21
-    date_updated: 2021-04-19
+    date_updated: 2021-10-21
 
   poseidon:
     name: POSEIDON
