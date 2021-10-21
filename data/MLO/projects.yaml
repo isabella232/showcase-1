@@ -5,7 +5,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Practical Low-Rank Communication Compression in Decentralized Deep Learning
+    description: Practical low-rank communication compression in decentralized deep learning
     tech_desc: >
       Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps
       to maximize the information transferred per bit. We prove that our method requires no additional
@@ -32,7 +32,7 @@ projects:
             text: NeurIPS 2020
             url: https://proceedings.neurips.cc/paper/2020/hash/a376802c0811f1b9088828288eb0d3f0-Abstract.html
     date_added: 2021-03-05
-    date_updated: 2021-05-25
+    date_updated: 2021-10-21
 
   chocosgd:
     name: chocoSGD
@@ -40,10 +40,10 @@ projects:
       - Learning
     applications:
       - Info
-    description: Decentralized communication-efficient ML and DL
+    description: Decentralized communication-efficient machine learning and deep learning
     tech_desc: >
-      code for communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
-      and traditional convex machine learning models.
+      Communication-efficient decentralized ML training (both deep learning, compatible with PyTorch,
+      and traditional convex machine learning models).
     contacts:
       - name: Tao Lin
         email: tao.lin@epfl.ch
@@ -64,9 +64,10 @@ projects:
             text: ICML 2019
             url: https://icml.cc/Conferences/2019/Schedule?showEvent=4005
     type: Application
+    language: Python
     license: Apache-2.0
     date_added: 2019-07-30
-    date_updated: 2021-05-25
+    date_updated: 2021-10-21
     maturity: 1
 
   cola:
@@ -75,7 +76,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: decentralized linear ML
+    description: Decentralized linear machine learning
     tech_desc: >
       Decentralized machine learning is a promising emerging paradigm in view of global challenges of data
       ownership and privacy. We consider learning of linear classification and regression models, in the
@@ -110,7 +111,7 @@ projects:
     license: Apache-2.0
     type: Application
     date_added: 2019-07-30
-    date_updated: 2021-05-22
+    date_updated: 2021-10-21
 
   mlbench:
     name: MLBench
@@ -132,7 +133,7 @@ projects:
     code:
       type: Project GitHub
       url: https://github.com/mlbench
-      date_last_commit: 2021-05-20
+      date_last_commit: 2021-07-09
     url: https://mlbench.github.io
     doc: https://mlbench.readthedocs.io/
     information:
@@ -153,7 +154,7 @@ projects:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
     date_added: 2019-07-30
-    date_updated: 2021-05-22
+    date_updated: 2021-10-21
     maturity: 2
 
   sent2vec:
@@ -164,13 +165,15 @@ projects:
       - Info
     description: Numerical representations for short texts
     layman_desc: >
-      Library that delivers numerical representations (features) for short
-      texts or sentences, which can be used as input to any machine
+      Library that delivers numerical representations (features) for words,
+      short texts or sentences, which can be used as input to any machine
       learning task later on.
     code:
       type: Lab GitHub
       url: https://github.com/epfml/sent2vec
-      date_last_commit: 2021-02-23
+      date_last_commit: 2021-10-10
+    language: C++
+    license: BSD-3-Clause
     contacts:
       - name: Matteo Pagliardini
         email: matteo.pagliardini@epfl.ch
@@ -178,7 +181,7 @@ projects:
       - Natural Language
     type: Library
     date_added: 2019-03-18
-    date_updated: 2021-05-25
+    date_updated: 2021-10-21
     maturity: 1
 
   powersgd:
@@ -187,7 +190,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Practical Low-Rank Gradient Compression for Distributed Optimization
+    description: Practical low-rank gradient compression for distributed optimization
     tech_desc: >
       New low-rank gradient compressor based on power iteration that can
       i) compress gradients rapidly, ii) efficiently aggregate the
@@ -203,7 +206,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfml/powersgd
-      date_last_commit: 2020-11-20
+      date_last_commit: 2021-10-19
     information:
       - type: Paper
         title: "PowerSGD: Practical Low-Rank Gradient Compression for Distributed Optimization"
@@ -219,4 +222,171 @@ projects:
     type: Application
     license: MIT
     date_added: 2020-05-01
-    date_updated: 2021-05-25
+    date_updated: 2021-10-21
+
+  relaysgd:
+    name: RelaySGD
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Improved information propagation in decentralized learning
+    layman_desc: >
+      Because the workers only communicate with few neighbors without central
+      coordination, these updates propagate progressively over the network.
+      This paradigm enables distributed training on networks without all-to-all
+      connectivity, helping to protect data privacy as well as to reduce the
+      communication cost of distributed training in data centers. A key
+      challenge, primarily in decentralized deep learning, remains the handling
+      of differences between the workers' local data distributions. To tackle
+      this challenge, we introduce the RelaySum mechanism for information
+      propagation in decentralized learning. RelaySum uses spanning trees to
+      distribute information exactly uniformly across all workers with finite
+      delays depending on the distance between nodes. In contrast, the typical
+      gossip averaging mechanism only distributes data uniformly asymptotically
+      while using the same communication volume per step as RelaySum.
+    contacts:
+      - name: Thijs Vogels
+        email: thijs.vogels@epfl.ch
+    code:
+      type: La GitHub
+      url: https://github.com/epfml/relaysgd
+      date_last_commit: 2021-10-27
+    language: Python
+    license: MIT
+    tags:
+      - Distributed Learning
+      - PyTorch
+      - Decentralized
+    information:
+      - type: Paper
+        title: RelaySum for Decentralized Deep Learningon Heterogeneous Data
+        url: https://arxiv.org/pdf/2110.04175v1.pdf
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  feai:
+    name: FeAI
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Federated Learning with TensorFlow.js
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/FeAI
+      date_last_commit: 2021-11-04
+    language: JavaScript
+    license: Apache-2.0
+    type: Library
+    tags:
+      - Distributed Learning
+      - TensorFlow
+      - Decentralized
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  byzantine-robust-optimizer:
+    name: Byzantine Robust Optimizer
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Improved federated learning with Byzantine robustness
+    layman_desc: >
+      Byzantine robustness has received significant attention recently given
+      its importance for distributed and federated learning. In spite of this,
+      there are severe flaws in existing algorithms even when the data across
+      the participants is identically distributed. To address these issues, we
+      present two surprisingly simple strategies: a new robust iterative clipping
+      procedure, and incorporating worker momentum to overcome time-coupled
+      attacks. This is the first provably robust method for the standard
+      stochastic optimization setting.
+    contacts:
+      - name: Sai Praneeth Reddy Karimireddy
+        email: sai.karimireddy@epfl.ch
+      - name: Lie He
+        email: lie.he@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/byzantine-robust-optimizer
+      date_last_commit: 2021-06-11
+    language: Python
+    license: MIT
+    tags:
+      - Distributed Learning
+      - TensorFlow
+      - Decentralized
+    information:
+      - type: Paper
+        title: Learning from History for Byzantine Robust Optimization
+        url: https://arxiv.org/pdf/2012.10333.pdf
+        notes:
+          - label: Published at
+            text: ICML 2021
+            url: https://icml.cc/Conferences/2021
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  quasi-global-momentum:
+    name: Quasi-Global Momentum
+    categories:
+      - Learning
+    applications:
+      - Infra
+    description: Improved decentralized training with data heterogeneity
+    layman_desc: >
+      Decentralized training of deep learning models is a key element for
+      enabling data privacy and on-device learning over networks. In realistic
+      learning scenarios, the presence of heterogeneity across different
+      clients' local datasets poses an optimization challenge and may severely
+      deteriorate the generalization performance. We propose a novel
+      momentum-based method to mitigate this decentralized training difficulty.
+    contacts:
+      - name: Tao Lin
+        email: tao.lin@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/quasi-global-momentum
+      date_last_commit: 2021-10-18
+    language: Python
+    tags:
+      - Decentralized
+      - Distributed Learning
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: "Quasi-Global Momentum: Accelerating Decentralized Deep Learning on Heterogeneous Data"
+        url: https://arxiv.org/pdf/2102.04761
+        notes:
+          - label: Published at
+            text: ICML 2021
+            url: https://icml.cc/Conferences/2021
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  hyperaggregate:
+    name: HyperAggregate
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Sublinear aggregation algorithm
+    layman_desc: >
+      Novel decentralizedaggregation protocol that can be parameterized so that
+      the overall com-putation overhead scales logarithmically with the number
+      of nodes.
+    code:
+      type: Personal GitHub
+      url: https://github.com/mvujas/HyperAggregate
+      date_last_commit: 2021-07-03
+    language: Python, JavaScript
+    tags:
+      - Decentralized
+      - Distributed Learning
+    information:
+      - type: Report
+        title: "HyperAggregate: A sublinear secure aggregation protocol"
+        url: https://infoscience.epfl.ch/record/286909
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
