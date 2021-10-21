@@ -22,7 +22,7 @@ projects:
       date_last_commit: 2020-08-24
     tags:
       - Database
-    language: Javascript
+    language: JavaScript
     information:
       - type: Mobile App
         title: My Food Repo
@@ -60,7 +60,7 @@ projects:
       - Learning
     applications:
       - Health
-    description: Help us track health trends in real time.
+    description: Track health trends using public social media data and crowdsourcing
     url: https://www.crowdbreaks.org
     maturity: 3
     contacts:
@@ -72,7 +72,7 @@ projects:
     code:
       type: Project GitHub
       url: https://github.com/crowdbreaks
-      date_last_commit: 2021-06-07
+      date_last_commit: 2021-09-16
     type:
     information:
       - type: Paper
@@ -83,7 +83,7 @@ projects:
             text: Frontiers Public Health 2019
             url: https://www.frontiersin.org/articles/10.3389/fpubh.2019.00081
     date_added: 2021-01-21
-    date_updated: 2021-06-14
+    date_updated: 2021-10-21
 
   aicrowd:
     name: AIcrowd
@@ -91,7 +91,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Crowdsourcing AI to solve real-world problems
+    description: Open platform for data science challenges
     url: https://www.aicrowd.com
     contacts:
       - name: contact
@@ -99,10 +99,12 @@ projects:
     code:
       type: Project GitHub
       url: https://github.com/AIcrowd
-      date_last_commit: 2021-06-10
+      date_last_commit: 2021-10-12
+    language: JavaScript, Ruby
+    license: AGPL-3.0
     tags:
       - CrowdSource
     type: Application
     maturity: 3
     date_added: 2021-01-21
-    date_updated: 2021-06-14
+    date_updated: 2021-10-21
