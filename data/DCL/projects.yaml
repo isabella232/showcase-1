@@ -6,7 +6,7 @@ projects:
     applications:
       - Info
     description: >
-      System Support for Byzantine Machine Learning
+      System support for byzantine machine learning
     contacts:
       - name: Arsany Guirguis
         email: arsany.guirguis@epfl.ch
@@ -32,8 +32,9 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/LPD-EPFL/Garfield
-      date_last_commit: 2021-02-04
+      date_last_commit: 2021-09-24
     language: Python, Cuda, C++
+    license: MIT
     incubator:
       work: Started in Spring 2021, demo in Autumn.
       products:
@@ -48,9 +49,13 @@ projects:
     information:
       - type: Paper
         title: "Garfield: System Support for Byzantine Machine Learning"
-        url: https://arxiv.org/abs/2010.05888
+        url: https://infoscience.epfl.ch/record/288430
+        notes:
+          - label: Published at
+            text: DSN 2021
+            url: https://dsn2021.ntu.edu.tw/
     date_added: 2021-01-20
-    date_updated: 2021-02-11
+    date_updated: 2021-10-21
 
   at2:
     name: AT2
@@ -76,7 +81,8 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/Distributed-EPFL
-      date_last_commit: 2021-02-04
+      date_last_commit: 2021-10-21
+    license: AGPL-3.0
     maturity: 1
     incubator:
       work: 2021/Q2 started working on demonstrator
@@ -103,10 +109,18 @@ projects:
         title: "Low Cost Cryptocurrency"
       - type: Paper
         title: "Scalable Byzantine Reliable Broadcast"
-        url: https://drops.dagstuhl.de/opus/volltexte/2019/11329/
+        url: https://infoscience.epfl.ch/record/276218
+        notes:
+          - label: Published at
+            text: DISC 2019
+            url: http://www.disc-conference.org/wp/disc2019/
       - type: Paper
         title: "Online Payments by Merely Broadcasting Messages"
-        url: https://dcl.epfl.ch/site/_media/research/efficient_asset_transfer_winter_20_dsn_extended_version_.pdf
+        url: https://infoscience.epfl.ch/record/280772
+        notes:
+          - label: Published at
+            text: DSN 2020
+            url: https://dsn2020.webs.upv.es/
       - type: Paper
         title: "AT2: Asynchronous Trustworthy Transfers"
         url: https://arxiv.org/abs/1812.10844
@@ -124,7 +138,7 @@ projects:
         title: "Presentation of Dynamic Byzantine Reliable Broadcast"
         url: https://www.youtube.com/watch?v=WIm8XGopqIA
     date_added: 2019-03-18
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   fegan:
     name: FeGAN
@@ -132,7 +146,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Scaling Distributed GANs
+    description: Scaling distributed Generative Adversarial Networks (GANs)
     layman_desc: >
       The FeGAN system enables training GANs in the Federated Learning setup.
       GANs are generative adversarial networks, a class of machine learning
@@ -151,17 +165,18 @@ projects:
       - Federated Learning
       - PyTorch
     type: Application
-    language: Pyton
+    language: Python
+    license: MIT
     information:
       - type: Paper
         title: "FeGAN: Scaling Distributed GANs"
-        url: https://hal.archives-ouvertes.fr/hal-02953314
+        url: https://infoscience.epfl.ch/record/282767
         notes:
           - label: Published at
             text: ACM/IFIP Middleware 2020
             url: https://2020.middleware-conference.org
     date_added: 2020-11-11
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   mvtil:
     name: MVTIL
@@ -187,6 +202,7 @@ projects:
       - Locking
     type: Application
     language: C++
+    license: GPL-2.0
     information:
       - type: Paper
         title: Locking Timestamps versus Locking Objects
@@ -196,7 +212,7 @@ projects:
             text: PODC 2018
             url: https://www.podc.org/podc2018
     date_added: 2019-09-19
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   libnvram:
     name: libNVRAM
@@ -204,7 +220,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Log-Free Concurrent Data Structures
+    description: Log-free concurrent data structures
     layman_desc: >
       Storing data structures in non-volatile RAM such that transient
       failures don't corrupt the data.
@@ -215,23 +231,24 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/LPD-EPFL/nv-lf-structures
-      date_last_commit: 2019-09-04
+      date_last_commit: 2019-11-04
     tags:
       - Concurrency
       - Data Structures
       - Failure
     type: Library, Application
     language: C++
+    license: MIT
     information:
       - type: Paper
         title: Log-Free Concurrent Data Structures
-        url: https://www.usenix.org/system/files/conference/atc18/atc18-david.pdf
+        url: https://infoscience.epfl.ch/record/232485
         notes:
           - label: Published at
             text: ATC 2018
             url: https://www.usenix.org/conference/atc18/presentation/david
     date_added: 2019-03-18
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   flodb:
     name: FloDB
@@ -239,7 +256,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Unlocking Memory in Persistent Key-Value Stores
+    description: Unlocking memory in persistent key-value stores
     layman_desc: >
       High performance key-value store for servers with high amount of RAM
       and lots of CPUs.
@@ -256,6 +273,7 @@ projects:
       - Server
     type: Application
     language: C++
+    license: BSD-3-Clause
     information:
       - type: Paper
         title: "FloDB: Unlocking Memory in Persistent Key-Value Stores"
@@ -265,7 +283,7 @@ projects:
             text: EuroSys 2017
             url: https://eurosys2017.github.io
     date_added: 2019-03-18
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   fleet:
     name: FLeet
@@ -273,7 +291,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Federated Machine Learning on Android
+    description: Federated machine learning on Android
     layman_desc: >
       MobNet is a framework for federated machine learning on Android
       devices. It consumes much less battery than Standard FL while
@@ -290,18 +308,19 @@ projects:
       - Federated Learning
       - Mobile App
     type: Library, Application
-    language: Java
+    language: Java, C++
+    license: MIT
     maturity: 1
     information:
       - type: Paper
         title: "FLeet: Online Federated Learning via Staleness Awareness and Performance Prediction"
-        url: https://arxiv.org/abs/2006.07273
+        url: https://infoscience.epfl.ch/record/282766
         notes:
           - label: Published at
             text: ACM/IFIP Middleware 2020
             url: https://2020.middleware-conference.org
     date_added: 2019-07-01
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   mctop:
     name: MCTOP
@@ -309,7 +328,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: A Multi-Core Topology Abstraction
+    description: A multi-core topology abstraction
     layman_desc: >
       MCTOP is an abstraction of multi-core topologies augmented with
       important low-level hardware information, such as memory bandwidths
@@ -326,6 +345,7 @@ projects:
       - Server
     type: Application
     language: C
+    license: MIT
     information:
       - type: Paper
         title: Abstracting Multi-Core Topologies with MCTOP
@@ -335,7 +355,7 @@ projects:
             text: EuroSys 2017
             url: https://eurosys2017.github.io
     date_added: 2019-07-26
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   lockin:
     name: LOCKIN
@@ -345,6 +365,10 @@ projects:
       - Infra
     description: Automatically chose the best locking algorithm
     layman_desc: >
+      LOCKIN is a lock library that includes several lock algorithm
+      implementations mainly in header files for ease of use. Essentially, you
+      can use LOCKIN to easily modify the pthread mutex locks in a system with
+      practically zero effort.
       GLS is a middleware that makes lock-based programming simple and
       effective. GLS offers the classic lock-unlock interface of locks.
       However, in contrast to classic lock libraries, GLS does not require
@@ -362,6 +386,7 @@ projects:
       - Concurrency
     type: Library
     language: C/C++
+    license: MIT
     information:
       - type: Paper
         title: Unlocking Energy
@@ -378,7 +403,7 @@ projects:
             text: ACM/IFIP Middleware 2016
             url: http://2016.middleware-conference.org
     date_added: 2019-07-01
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   aggregathor:
     name: AggregaThor
@@ -386,7 +411,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Framework over TensorFlow implementing robust Stochastic Gradient Descent
+    description: Framework over TensorFlow implementing robust stochastic gradient descent
     layman_desc: >
       Framework built over TensorFlow implementing state-of-the-art
       Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
@@ -418,7 +443,7 @@ projects:
             text: SysML 2019
             url: https://mlsys.org/Conferences/2019
     date_added: 2019-03-18
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
 
   ascylib-optik:
     name: ASCYLIB + OPTIK
@@ -448,6 +473,7 @@ projects:
       - Locking
     type: Library
     language: C
+    license: GPL-2.0
     information:
       - type: Paper
         url: https://infoscience.epfl.ch/record/207109
@@ -467,4 +493,4 @@ projects:
         url: https://infoscience.epfl.ch/record/203822
         title: Designing ASCY-compliant Concurrent Search Data Structures
     date_added: 2021-02-09
-    date_updated: 2021-02-09
+    date_updated: 2021-10-21
