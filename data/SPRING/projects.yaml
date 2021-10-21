@@ -6,7 +6,7 @@ projects:
       - Learning
     applications:
       - Info
-    description: Privacy evaluation framework for synthetic data releases
+    description: Privacy evaluation framework for synthetic data publishing
     layman_desc: >
       The framework implemented in this library allows data holders to evaluate
       how much publishing a synthetic dataset in place of a sensitive raw
@@ -36,16 +36,15 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/spring-epfl/synthetic_data_release
-      date_last_commit: 2021-03-26
+      date_last_commit: 2021-10-13
     language: Python
     license: BSD-3-Clause
-    # (The paper is still under review so we can hold-off with publishing this as well)
-    #        info:
-    #	        - type: Paper
-    #	          title: Synthetic Data - A Privacy Mirage
-    #	          url: https://arxiv.org/abs/2011.07018
+    information:
+      - type: Paper
+        title: "Synthetic Data -- Anonymisation Groundhog Day"
+        url: https://arxiv.org/abs/2011.07018
     date_added: 2021-02-08
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
 
   claimchain:
     name: ClaimChain
@@ -60,7 +59,7 @@ projects:
     url: https://claimchain.github.io/
     code:
       type: Project GitHub
-      url: https://github.com/claimchain/claimchain-simulations
+      url: https://github.com/claimchain
       date_last_commit: 2018-10-13
     contacts:
       - name: Bogdan Kulynych
@@ -72,14 +71,14 @@ projects:
     information:
       - type: Paper
         title: "ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging"
-        url: https://infoscience.epfl.ch/record/266698
+        url: https://arxiv.org/abs/1707.06279
         notes:
           - label: Published at
             text: WPES 2018
             url: https://wpes.tech/2018/program.html
     license: MIT
     date_added: 2019-03-18
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
 
   lightnion:
     name: Lightnion
@@ -173,14 +172,14 @@ projects:
     information:
       - type: Paper
         title: "ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging"
-        url: https://infoscience.epfl.ch/record/266698
+        url: https://arxiv.org/pdf/1707.06279.pdf
         notes:
           - label: Published at
             text: WPES 2018
             url: https://wpes.tech/2018/program.html
     license: MIT
     date_added: 2019-03-18
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
 
   mcsauditing:
     name: MCSAuditing
@@ -204,14 +203,14 @@ projects:
     information:
       - type: Paper
         title: "On (The Lack Of) Location Privacy in Crowdsourcing Applications"
-        url: https://infoscience.epfl.ch/record/275442
+        url: https://arxiv.org/abs/1901.04923
         notes:
           - label: Published at
             text: USENIX Security Symposium 2019
             url: https://www.usenix.org/conference/usenixsecurity19/presentation/boukoros
     license: GPL-3.0
     date_added: 2019-07-30
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
 
   zksk:
     name: Zero-Knowledge Swiss Knife
@@ -219,11 +218,11 @@ projects:
       - Privacy
     applications:
       - Info
-    description: Library for prototyping composable zero-knowledge proofs in the discrete-log setting.
+    description: Library for prototyping composable zero-knowledge proofs in the discrete-log setting
     code:
       type: Lab GitHub
       url: https://github.com/spring-epfl/zksk
-      date_last_commit: 2021-05-03
+      date_last_commit: 2021-08-10
     doc: https://zksk.readthedocs.io/
     contacts:
       - name: Bogdan Kulynych
@@ -243,7 +242,7 @@ projects:
             url: https://crises-deim.urv.cat/wpes2019/
     license: MIT
     date_added: 2020-02-06
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
     maturity: 2
 
   dp3t:
@@ -265,7 +264,7 @@ projects:
     code:
       type: Public Github
       url: https://github.com/DP-3T/
-      date_last_commit: 2021-04-29
+      date_last_commit: 2021-09-10
     doc: https://github.com/DP-3T/documents
     tags:
       - Protocol
@@ -281,7 +280,7 @@ projects:
         url: https://github.com/SwissCovid/swisscovid-app-ios
     license: MPL-2.0
     date_added: 2020-10-05
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
     maturity: 3
     incubator:
       work: 2020/Q4 documentation and testing of the app
@@ -306,7 +305,7 @@ projects:
     code:
       type: Public Github
       url: https://github.com/CrowdNotifier/libcrowdnotifier
-      date_last_commit: 2021-05-11
+      date_last_commit: 2021-09-09
     doc: https://github.com/CrowdNotifier/documents
     maturity: 3
     incubator:
@@ -327,7 +326,7 @@ projects:
         url: https://github.com/notifyme-app/notifyme-app-ios
     license: MPL-2.0
     date_added: 2021-01-21
-    date_updated: 2021-06-07
+    date_updated: 2021-10-21
 
   petrelic:
     name: Petrelic
@@ -335,7 +334,7 @@ projects:
       - Privacy
     applications:
       - Info
-    description: A wrapper around RELIC pairings
+    description: Wrapper around RELIC pairings
     tech_desc: >
       petrelic is a Python wrapper around RELIC. It provides a simple python
       interface to the BLS-381 pairing and RELIC's big number class.
@@ -361,14 +360,12 @@ projects:
       - Privacy
     applications:
       - Info
-    description: A library to facilitate anonymous authentication
+    description: Library to facilitate anonymous authentication
     tech_desc: >
       SSCred provides the following primitives:
-      <ul>
-      <li>Anonymous credential light (ACL)</li>
-      <li>Abe's Blind signature</li>
-      <li>Blinded Pedersen commitment</li>
-      </ul>
+      1) Anonymous credential light (ACL)
+      2) Abe's Blind signature
+      3) Blinded Pedersen commitment
     contacts:
       - name: Kasra Edalat
         email: kasra.edalat@epfl.ch
@@ -382,7 +379,7 @@ projects:
     language: Python
     license: BSD-3-Clause
     date_added: 2021-01-21
-    date_updated: 2020-06-07
+    date_updated: 2020-10-21
 
   mia:
     name: mia
@@ -390,7 +387,7 @@ projects:
       - Privacy
     applications:
       - Info
-    description: A library for running membership inference attacks (MIA) against machine learning models
+    description: Library for running membership inference attacks (MIA) against machine learning models
     tech_desc: >
       These are attacks against privacy of the training data. In MIA, an
       attacker tries to guess whether a given example was used during training
@@ -439,8 +436,124 @@ projects:
     code:
       type: C4DT Github
       url: https://github.com/C4DT/lightarti-rest
-      date_last_commit: 2021-08-26
-    language: Rest, Swift, Kotlin
+      date_last_commit: 2021-10-21
+    language: Rust, Swift, Java
     license: MIT
     date_added: 2021-08-26
-    date_updated: 2021-08-26
+    date_updated: 2021-10-21
+
+  voteagain:
+    name: VoteAgain
+    categories:
+      - Security
+      - Privacy
+    applications:
+      - Gov
+    description: Scalable coercion-resistant voting system
+    layman_desc: >
+      The strongest threat model for voting systems considerscoercion
+      resistance: protection against coercers that force voters to modify their
+      votes, or to abstain. Existing remote voting systems either do not
+      provide this property; require an ex-pensive tallying phase; or burden
+      users with the need to store cryptographic key material and with the
+      responsibility to deceive their coercers. VoteAgain is a scalable voting
+      scheme that relies on the revoting paradigm to provide coercion
+      resistance.
+    contacts:
+      - name: Wouter Lueks
+        email: wouter.lueks@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/voteagain
+      date_last_commit: 2020-08-13
+    language: Python
+    license: MIT
+    tags:
+      - Anonymity
+    information:
+      - type: Paper
+        title: "VoteAgain: A scalable coercion-resistant voting system"
+        url: https://arxiv.org/pdf/2005.11189.pdf
+        notes:
+          - label: Published at
+            text: USENIX Security 2020
+            url: https://www.usenix.org/conference/usenixsecurity20
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  datashare-network:
+    name: DatashareNetwork
+    categories:
+      - Security
+      - Privacy
+    applications:
+      - Info
+    description: Decentralized privacy-preserving search engine for investigative journalists
+    layman_desc: >
+      Investigative journalists collect large numbers of digital documents
+      during their investigations. These documents can greatly benefit other
+      journalists’ work. However, many of these documents contain sensitive
+      information. Hence, possessing such documents can endanger reporters,
+      their stories, and their sources.  Consequently, many documents are used
+      only for single, local, investigations. DatashareNetwork is a
+      decentralized and privacy-preserving search system that enables
+      journalists world-wide to find documents via a dedicated network of
+      peers.
+    contacts:
+      - name: Kasra Edalatnejadkhamene
+        email: kasra.edalat@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/datashare-network-crypto
+      date_last_commit: 2020-07-06
+    language: Python
+    license: BSD-3-Clause
+    tags:
+      - Decentralized
+    information:
+      - type: Paper
+        title: "DatashareNetwork: A Decentralized Privacy-Preserving Search Engine for Investigative Journalists"
+        url: https://arxiv.org/pdf/2005.14645.pdf
+        notes:
+          - label: Published at
+            text: USENIX 2020
+            url: https://www.usenix.org/conference/usenixsecurity20
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  tandem:
+    name: Tandem
+    categories:
+      - Security
+      - Privacy
+    applications:
+      - Info
+    description: Centralized privacy-preserving secure key storage
+    layman_desc: >
+      Users’ devices, e.g., smartphones or laptops, are typically incapable of
+      securely storing and processing cryptographic keys. Tandem is a novel set
+      of protocols for securing cryptographic keys with support from a central
+      server.
+    contacts:
+      - name: Wouter Lueks
+        email: wouter.lueks@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/spring-epfl/tandem
+      date_last_commit: 2020-06-14
+    language: C
+    license: BSD-3-Clause
+    tags:
+      - Encryption
+      - Anonymity
+      - Protocol
+    information:
+      - type: Paper
+        title: "Tandem: Securing Keys by Using a Central Server While Preserving Privacy"
+        url: https://arxiv.org/pdf/1809.03390.pdf
+        notes:
+          - label: Published at
+            text: PETS 2020
+            url: https://petsymposium.org/2020/
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
