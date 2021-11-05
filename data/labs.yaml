@@ -68,6 +68,24 @@ labs:
         email: philipp.jovanovic@epfl.ch
     url: https://dedis.epfl.ch
 
+  DLAB:
+    name: Data Science Lab
+    prof:
+      name:
+        - Robert
+        - West
+      email: robert.west@epfl.ch
+    description: >
+      Our research aims to make sense of large amounts of data. Frequently, the
+      data we analyze is collected on the Web, e.g., using server logs, social
+      media, wikis, online news, online games, etc. We distill heaps of raw
+      data into meaningful insights by developing and applying algorithms and
+      techniques in areas including social and information network analysis,
+      machine learning, computational social science, data mining, natural
+      language processing, and human computation.
+    contacts:
+    url: https://dlab.epfl.ch/
+
   DSLAB:
     name: Dependable Systems Lab
     prof:

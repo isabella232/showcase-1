@@ -1,0 +1,95 @@
+projects:
+  secvm:
+    name: SecVM
+    categories:
+      - Learning
+      - Privacy
+    applications:
+      - Infra
+    description: Privacy-preserving classification
+    layman_desc: >
+      Today, large amounts of valuable data are distributed among millions of
+      user-held devices, such as personal computers, phones, or
+      Internet-of-things devices. Many companies collect such data with the
+      goal of using it for training machine learning models allowingthem to
+      improve their services. User-held data is, however, often sensitive, and
+      collecting it is problematic in terms of privacy.  We propose a novel way
+      of training a supervised classifier in a distributed setting akin to the
+      recently proposed federated learning paradigm, but under the stricter
+      privacy requirement that the server that trains the model is assumed to
+      be untrusted and potentially malicious. We thus preserve user privacy by
+      design, rather than by trust.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/secvm-server
+      date_last_commit: 2020-08-17
+    language: Java
+    tags:
+      - Decentralized
+      - Distributed Learning
+    information:
+      - type: Paper
+        title: Privacy-Preserving Classification with Secret Vector Machines
+        url: https://arxiv.org/pdf/1907.03373.pdf
+      - type: Source code
+        title: Client source code
+        url: https://github.com/cliqz-oss/browser-core/tree/6945afff7be667ed74b0b7476195678262120baf/modules/secvm/sources
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
+
+  invariant-language-models:
+    name: Invariant Language Modeling
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Invariant natural language modeling
+    layman_desc: >
+      Modern pretrained language models are critical components for natural
+      language processing. Yet, they suffer from spurious correlations, poor
+      out-of-domain generalization, and biases. This is a framework to learn
+      invariant representations that should generalize across training
+      environments.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/invariant-language-models
+      date_last_commit: 2021-10-14
+    language: Python
+    license: Apache-2.0
+    tags:
+      - Natural Language
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
+
+  eighenthemes:
+    name: Eigenthemes
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Improved entity linking
+    layman_desc: >
+      In natural language processing, entity linking, i.e. the task of
+      assigning a unique identity to entities (for example "Paris" in a
+      sentence refers to the city, not to someone's name), is an important
+      problem. Most previous solutions rely on annotated data, which is however
+      not available in many domains. We propose a method for entity linking
+      without the need for annotated data.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/eigenthemes
+      date_last_commit: 2021-09-23
+    language: Python
+    license: Apache-2.0
+    tags:
+      - Natural Language
+    information:
+      - type: Paper
+        title: Low-Rank Subspaces for Unsupervised Entity Linking
+        url: https://arxiv.org/pdf/2104.08737.pdf
+        notes:
+          - label: Published at
+            text: EMNLP 2021
+            url: https://2021.emnlp.org/
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
