@@ -333,6 +333,21 @@ labs:
     contacts:
     url: https://lia.epfl.ch/
 
+  LIONS:
+    name: Laboratory for Information and Inference Systems
+    prof:
+      name:
+        - Volkan
+        - Cevher
+      email: volkan.cevher@epfl.ch
+    description: >
+      At LIONS, we are concerned with optimized information extraction from
+      signals or data volumes. We therefore develop mathematical theory and
+      computational methods for information recovery from highly incomplete
+      data.
+    contacts:
+    url: https://people.epfl.ch/volkan.cevher?lang=en
+
   LSIR:
     name: Distributed Information Systems Laboratory
     prof:
