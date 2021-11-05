@@ -1,0 +1,35 @@
+projects:
+  gem5-x:
+    name: gem5-X
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: gem5-based simulator with architectural etensions
+    layman_desc: >
+      gem5-X stands for a gem5-based full-system simulator with architectural
+      eXtensions. It is a gem5-based simulator that allows architectural
+      exploration and optimization of heterogeneous systems
+    url: https://www.epfl.ch/labs/esl/research/2d-3d-system-on-chip/gem5-x/
+    doc: https://www.epfl.ch/labs/esl/wp-content/uploads/2021/08/gem5_X_TechnicalManual_v2.pdf
+    code:
+      type: Lab GitHub
+      url: https://github.com/esl-epfl/gem5-X
+      date_last_commit: 2021-08-03
+    language: C++, Python
+    type: Framework
+    tags:
+      - Simulator
+    information:
+      - type: Paper
+        title: "Gem5-X: A Many-Core Heterogeneous Simulation Platform for Architectural Exploration and Optimization"
+        url: https://infoscience.epfl.ch/record/285129
+      - type: Paper
+        title: "Gem5-X: A Gem5-Based System Level Simulation Framework to Optimize Many-Core Platforms"
+        url: https://infoscience.epfl.ch/record/264182
+        notes:
+          - label: Published at
+            text: HPC 2019
+            url: https://hosting.cs.vt.edu/hpc2019/
+    date_added: 2021-11-04
+    date_updated: 2021-11-04

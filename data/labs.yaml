@@ -124,6 +124,23 @@ labs:
         email: beatriz.descloux@epfl.ch
     url: https://dslab.epfl.ch
 
+  ESL:
+    name: Embedded Systems Laboratory
+    prof:
+      name:
+        - David
+        - Atienza
+      email: david.atienza@epfl.ch
+    description: >
+      The Embedded Systems Laboratory (ESL) is part of the Institute of
+      Electrical Engineering at EPFL, and focuses on the definition of
+      system-level multi-objective design methods, optimization methodologies
+      and tools for high-performance embedded systems and nano-scale
+      Multi-Processor System-on-Chip (MPSoC) architectures targeting the
+      Internet-of-Things (IoT) Era.
+    contacts:
+    url: https://www.epfl.ch/labs/esl/
+
   HexHive:
     name: HexHive Group
     prof:
