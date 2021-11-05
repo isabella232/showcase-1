@@ -1,0 +1,97 @@
+projects:
+  ffmalloc:
+    name: ffmalloc
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Memory allocation preventing "use-after-free" exploits
+    layman_desc: >
+      ffmalloc is a "one time allocator" where any given virtual memory address
+      is only returned to the calling application once. Since exploitation of
+      use-after-free errors relies on being able to modify memory associated
+      with "dangling pointers," by not reusing a virtual address region in
+      subsequent allocation, an adversary cannot negatively impact the dangling
+      memory region.
+    code:
+      type: Personal GitHub
+      url: https://github.com/bwickman97/ffmalloc
+      date_last_commit: 2021-04-14
+    language: C
+    type: Library
+    tags:
+      - Protection
+    information:
+      - type: Paper
+        title: Preventing Use-After-Free Attacks with Fast Forward Allocation
+        url: https://raw.githubusercontent.com/bwickman97/ffmalloc/master/ffmalloc_post_publication_revision.pdf
+        notes:
+          - label: Published at
+            text: USENIX Security 2021
+            url: https://www.usenix.org/conference/usenixsecurity21
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  pactree:
+    name: PACTree
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Efficient Non-Volatile Memory (NVM) access
+    layman_desc: >
+      Non-Volatile Memory (NVM), which provides relatively fast and
+      byte-addressable persistence, is now commercially available. However, we
+      cannot equate a real NVM with a slow DRAM, as it is much more complicated
+      than we expect. We propose guidelines for designing high-performance
+      persistent index structures, allowing to increase performance and tail
+      latency.
+    code:
+      type: Non-lab GitHub
+      url: https://github.com/cosmoss-vt/pactree
+      date_last_commit: 2021-09-03
+    language: C++
+    license: Apache-2.0
+    tags:
+      - Data Structures
+      - Concurrency
+    information:
+      - type: Paper
+        title: "PACTree: A High Performance Persistent RangeIndex Using PAC Guidelines"
+        url: https://multics69.github.io/pages/pubs/pactree-kim-sosp21.pdf
+        notes:
+          - label: Published at
+            text: SOSP 2021
+            url: https://sosp2021.mpi-sws.org/
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
+
+  nros:
+    name: NrOS
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: OS kernel with safer approach to synchronization
+    layman_desc: >
+      NrOS is an operating system primarily constructed as a simple, sequential
+      kernel with no concurrency, making it easier to develop and reason
+      aboutits correctness.
+    code:
+      type: Non-lab GitHub
+      url: https://github.com/vmware-labs/node-replicated-kernel
+      date_last_commit: 2021-11-05
+    language: Rust
+    license: Apache-2.0
+    tags:
+      - Concurrency
+    information:
+      - type: Paper
+        title: "NrOS: Effective Replication and Sharing in an Operating System"
+        url: https://ankitbhrdwj.github.io/papers/osdi21-bhardwaj.pdf
+        notes:
+          - label: Published at
+            text: USENIX OSDI 2021
+            url: https://www.usenix.org/conference/osdi21
+    date_added: 2021-11-05
+    date_updated: 2021-11-05

@@ -504,6 +504,23 @@ labs:
       - name: Hossein Ajallooiean
     url: https://parsa.epfl.ch/
 
+  RS3LAB:
+    name: Robust Scalable Systems Software Lab
+    prof:
+      name:
+        - Sanidhya
+        - Kashyap
+      email: sanidhya.kashyap@epfl.ch
+    description: >
+      We focus on building systems with performance, efficiency, and
+      robustness. We try to build practical systems by understanding the
+      intricacies of existing layers in both software and hardware; and
+      revisiting the design in a principled manner. Our research contributions
+      have been published in top academic conferences, and have made great
+      impacts on real-world programs, such as the Linux kernel.
+    contacts:
+    url: https://rs3lab.github.io/
+
   SalatheLab:
     name: Salathe Lab
     prof:
