@@ -320,6 +320,19 @@ labs:
     contacts:
     url: http://lca2.epfl.ch/
 
+  LIA:
+    name: Artificial Intelligence Laboratory
+    prof:
+      name:
+        - Boi
+        - Faltings
+      email: boi.faltings@epfl.ch
+    description: >
+      We develop knowledge-based technologies that allow humans and computers
+      to deal better with the artificial world that surrounds us.
+    contacts:
+    url: https://lia.epfl.ch/
+
   LSIR:
     name: Distributed Information Systems Laboratory
     prof:
