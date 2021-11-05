@@ -214,6 +214,28 @@ labs:
       - name: Siavash Arjomand Bigdeli
     url: https://ivrl.epfl.ch/
 
+  LAMP:
+    name: Programming Methods Laboratory
+    prof:
+      name:
+        - Martin
+        - Odersky
+      email: martin.odersky@epfl.ch
+    description: >
+      Today, we experience an unprecedented integration of previously
+      disconnected systems. Consequently, there is a leap in the complexity of
+      the software controlling these systems. The challenge we are facing is
+      how to master this complexity while at the same time increasing the
+      reliability of programs. A key element for tackling that challenge will
+      be a better understanding of software composition. Good techniques for
+      software composition are the keys to scalable systems. The principal
+      means of writing and composing software is a programming language.
+      Consequently, advances in programming language design are an important
+      factor in solutions of the software composition problem. This is what we
+      work on in our group.
+    contacts:
+    url: https://www.epfl.ch/labs/lamp/
+
   LARA:
     name: Lab for Automated Reasoning and Analysis
     prof:

@@ -1,0 +1,52 @@
+projects:
+  scala-js:
+    name: Scala.js
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Use Scala to develop Web frontends
+    layman_desc: >
+      Scala.js optimizes your Scala code into highly efficient JavaScript.
+      Strong typing guarantees your code is free of silly mistakes. You can
+      use any JavaScript library right from your Scala.js code, either in a
+      statically or dynamically typed way.
+    url: https://www.scala-js.org/
+    code:
+      type: Project GitHub
+      url: https://github.com/scala-js/scala-js
+      date_last_commit: 2021-11-03
+    language: Scala
+    license: Apache-2.0
+    tags:
+      - Development
+    information:
+      - type: Tutorial
+        title: Scala.js Tutorial
+        url: https://www.scala-js.org/doc/tutorial/
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
+
+  scala-native:
+    name: Scala Native
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Generate native code from Scala
+    layman_desc: >
+      Native is an optimizing ahead-of-time compiler and lightweight managed
+      runtime designed specifically for Scala. It features low-level
+      primitices, seamless interop with native code and instant startup time.
+    url: http://scala-native.org/
+    doc: https://scala-native.readthedocs.io/
+    code:
+      type: Project GitHub
+      url: https://github.com/scala-native/scala-native
+      date_last_commit: 2021-11-03
+    language: Scala, C
+    license: Apache-2.0
+    tags:
+      - Development
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
