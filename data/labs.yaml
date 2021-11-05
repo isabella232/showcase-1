@@ -348,6 +348,21 @@ labs:
     contacts:
     url: https://people.epfl.ch/volkan.cevher?lang=en
 
+  LSI:
+    name: Integrated Systems Laboratory
+    prof:
+      name:
+        - Giovanni
+        - De Micheli
+      email: giovanni.demicheli@epfl.ch
+    description: >
+      The Integrated Systems Laboratory studies design technologies for
+      circuits and systems. The objective is to research the interplay of
+      hardware and software design for traditional (computation on silicon) and
+      non-traditional (nanotechnology and biosensors) systems.
+    contacts:
+    url: https://www.epfl.ch/labs/lsi/
+
   LSIR:
     name: Distributed Information Systems Laboratory
     prof:
