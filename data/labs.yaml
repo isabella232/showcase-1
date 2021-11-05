@@ -236,6 +236,23 @@ labs:
     contacts:
     url: https://www.epfl.ch/labs/lamp/
 
+  LAP:
+    name: Processor Architecture Laboratory
+    prof:
+      name:
+        - Paolo
+        - Ienne
+      email: paolo.ienne@epfl.ch
+    description: >
+      Excellent performance in computing systems is the result of a judicious
+      blend of computer architecture, compiler technology, and hardware
+      implementation. The choices in each of these areas must strongly depend
+      on the technical possibilities offered in the others. We want to
+      understand better how to exploit synergies across the above fields and we
+      wish to pass this knowledge over to our students.
+    contacts:
+    url: https://www.epfl.ch/labs/lap/
+
   LARA:
     name: Lab for Automated Reasoning and Analysis
     prof:

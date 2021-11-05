@@ -1,0 +1,39 @@
+projects:
+  dynamatic:
+    name: Dynamatic
+    categories:
+      - Other
+    applications:
+      - Info
+    description: High-level synthesis compiler
+    layman_desc: >
+      Dynamatic is an academic, open-source high-level synthesis compiler that
+      produces synchronous dynamically-scheduled circuits from C/C++ code. It
+      delivers significant performance improvements compared to
+      state-of-the-art commercial tools in specific situations.
+    url: https://dynamatic.epfl.ch/
+    code:
+      type: Personal GitHub
+      url: https://github.com/lana555/dynamatic
+      date_last_commit: 2021-06-04
+    language: C++
+    license: MIT
+    tags:
+      - Low-Level
+    information:
+      - type: Paper
+        title: Dynamically Scheduled High-level Synthesis
+        url: https://www.epfl.ch/labs/lap/wp-content/uploads/2018/11/JosipovicFeb18_DynamicallyScheduledHighLevelSynthesis_FPGA18.pdf
+        notes:
+          - label: Published in
+            text: Proceedings of the 2018 ACM/SIGDA International Symposium on FPGAs
+            url: https://dl.acm.org/doi/proceedings/10.1145/3174243
+      - type: Tutorial
+        title: "Dynamatic: From C/C++ to Dynamically Scheduled Circuits"
+        url: https://dynamatic.epfl.ch/papers/FPGA_20_Dynamatic_From_C_C_to_Dynamically_Scheduled_Circuits.pdf
+        notes:
+          - label: Published in
+            text: Proceedings of the 2020 ACM/SIGDA International Symposium on FPGAs
+            url: https://www.sigda.org/publications/fpga-2020-toc/
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
