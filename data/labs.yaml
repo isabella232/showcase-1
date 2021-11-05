@@ -590,3 +590,21 @@ labs:
       - name: Wouter Lueks
         email: wouter.lueks@epfl.ch
     url: https://spring.epfl.ch
+
+  VLSC:
+    name: Very Large Scale Computing Lab
+    prof:
+      name:
+        - James
+        - Larus
+      email: james.larus@epfl.ch
+    description: >
+      The Very Large Scale Computing Lab (VLSC) is trying to solve some of the
+      critical software and hardware challenges of building large-scale
+      services. These services may encompass tens of geo-distributed data
+      centers, each of which can contain tens of thousands of servers.
+      Compounded by challenges of scale and distribution, services also have
+      very high availability and responsiveness requirements, and they are
+      under continual development and evolution.
+    contacts:
+    url: https://www.epfl.ch/labs/vlsc/
