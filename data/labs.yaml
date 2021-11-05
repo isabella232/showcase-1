@@ -31,6 +31,20 @@ labs:
     url: https://dcl.epfl.ch/site/
     contacts:
 
+  DCSL:
+    name: Data Center Systems Laboratory
+    prof:
+      name:
+        - Edouard
+        - Bugnion
+      email: edouard.bugnion@epfl.ch
+    description: >
+      The Data Center Systems Laboratory (DCSL) focuses on systems-level
+      problems within datacenters combining operating systems, networks, and
+      computer architecture.
+    contacts:
+    url: https://www.epfl.ch/labs/dcsl/
+
   DEDIS:
     name: Decentralized Distributed Systems Laboratory
     prof:
