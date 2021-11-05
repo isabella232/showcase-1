@@ -521,6 +521,29 @@ labs:
     contacts:
     url: https://rs3lab.github.io/
 
+  SACS:
+    name: Scalable Computing Systems Laboratory
+    prof:
+      name:
+        - Anne-Marie
+        - Kermarrec
+      email: anne-marie.kermarrec@epfl.ch
+    description: >
+      Computing systems that make human sense of big data are now ubiquitous.
+      Equipped with powerful AI algorithms, they are now present in all aspects
+      of our life: they drive cars, do surgery, control the lighting in your
+      home, recommend movies and books, and are even about to replace banks.
+      Beyond the AI algorithms and the availability of large volume of data,
+      this is now possible because we can  scale systems to thousand, even
+      millions of distributed entities. Yet, designing efficient distributed
+      systems come with many challenges that we address in our team.  We are
+      interested in all aspects of such large-scale distributed systems be they
+      datacenters, edge computing, fully decentralized systems, self organizing
+      systems, and we are working on scalable design,  failure resilience,
+      performance and privacy-preservation.
+    contacts:
+    url: https://www.epfl.ch/labs/sacs/
+
   SalatheLab:
     name: Salathe Lab
     prof:
