@@ -271,6 +271,19 @@ labs:
         email: nicolas.voirol@epfl.ch
     url: https://lara.epfl.ch
 
+  LASEC:
+    name: Security and Cryptography Laboratory
+    prof:
+      name:
+        - Serge
+        - Vaudenay
+      email: serge.vaudenay@epfl.ch
+    description: >
+      The main activities of LASEC are research and education on the security
+      of communication and information systems, cryptography, and applications.
+    contacts:
+    url: https://lasec.epfl.ch/
+
   LDS:
     name: Laboratory for Data Security
     prof:
