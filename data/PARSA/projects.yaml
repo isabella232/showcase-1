@@ -7,15 +7,15 @@ projects:
       - Infra
     description: Benchmark suite for cloud services
     layman_desc: >
-      CloudSuite is a benchmark suite for cloud services. The third release
-      consists of eight applications that have been selected based on their
-      popularity in today's datacenters. The benchmarks are based on
-      real-world software stacks and represent real-world setups.
+      CloudSuite is a benchmark suite for cloud services. It consists of a
+      number of applications that have been selected based on their popularity
+      in today's datacenters. The benchmarks are based on real-world software
+      stacks and represent real-world setups.
     url: http://cloudsuite.ch/
     code:
       type: Lab GitHub
       url: https://github.com/parsa-epfl/cloudsuite
-      date_last_commit: 2020-05-14
+      date_last_commit: 2021-09-17
     contacts:
       - name: Siddharth Gupta
         email: siddharth.gupta@epfl.ch
@@ -34,7 +34,7 @@ projects:
             url: https://dblp.org/db/conf/asplos/asplos2012.html
     license: CloudSuite, other
     date_added: 2019-03-18
-    date_updated: 2021-05-27
+    date_updated: 2021-10-20
 
   qflex:
     name: QFlex
@@ -42,7 +42,7 @@ projects:
       - Other
     applications:
       - Infra
-    description: A QEMU-based family of full-system ARM simulators
+    description: State-of-the-art modeling tools for the computer architecture community
     layman_desc: >
       QFlex is a full-system cycle-accurate computer architecture simulator
       of multi-node computer systems.
@@ -50,7 +50,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/parsa-epfl/qflex
-      date_last_commit: 2020-08-25
+      date_last_commit: 2021-03-05
     lines_of_code: "Flexus: 50000, Qemu: 100000"
     contacts:
       - name: Siddharth Gupta
@@ -58,6 +58,7 @@ projects:
     tags:
       - Network
     language: C, C++
+    license: BSD-3-Clause
     type: Toolset
     information:
       - type: Paper
@@ -70,7 +71,7 @@ projects:
     notes: >
       Some issues with regard to Oracle licenses
     date_added: 2019-03-18
-    date_updated: 2021-05-27
+    date_updated: 2021-10-20
 
   hbfpemulator:
     name: ColTraIn HBFP Training Emulator
@@ -79,7 +80,7 @@ projects:
     applications:
       - Info
     description: >
-      Co-located DNN Training and Inference
+      Co-located deep neural network training and inference
     tech_desc: >
       HBFP is a hybrid Block Floating-Point (BFP) - Floating-Point (FP) number representation for
       DNN training introduced by ColTraIn: Co-located DNN Training and Inference team of PARSA and
@@ -109,5 +110,12 @@ projects:
           - label: Published in
             text: ICLR 2020
             url: https://iclr.cc/virtual_2020/poster_SJem8lSFwB.html
+      - type: Blog post
+        title: "Numerical Encoding for DNN Accelerators"
+        url: https://www.sigarch.org/numerical-encoding-for-dnn-accelerators/
+        notes:
+          - label: Published on
+            text: ACM SigArch Computer Architecture Today
+            url: https://www.sigarch.org/blog/
     date_added: 2021-05-27
-    date_updated: 2021-05-27
+    date_updated: 2021-10-20

@@ -1,0 +1,75 @@
+projects:
+  memoro:
+    name: Memoro
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Highly detailed heap profiler
+    layman_desc: >
+      Modern software systems heavily use the memory heap. As systems grow more
+      complex and compute with increasing amounts of data, it can be difficult
+      for developers to understand how their programs actually use the bytes
+      that they allocate on the heap and whether improvements are possible.
+      Memoro as built to answer this question of heap usage efficiency. It uses
+      a combination of static instrumentation, subroutine interception, and
+      runtime data collection to build a clear picture of exactly when and
+      where a program performs heap allocation, and crucially how it actually
+      uses that memory. Memoro also introduces a new visualization application
+      that can distill collected data into scores and visual cues that allow
+      developers to quickly pinpoint and eliminate inefficient heap usage in
+      their software.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-vlsc/memoro
+      date_last_commit: 2021-01-14
+    language: C++, JavaScript
+    license: MIT
+    tags:
+      - Low-Level
+      - Development
+    information:
+      - type: Paper
+        title: Detailed Heap Profiling
+        url: https://infoscience.epfl.ch/record/255550
+        notes:
+          - label: Published at
+            text: ISMM 2018
+            url: https://conf.researchr.org/home/ismm-2018
+    date_added: 2021-11-05
+    date_updated: 2021-11-05
+
+  abacus:
+    name: Abacus
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Precise side-channel analysis
+    layman_desc: >
+      Side-channel attacks allow adversaries to infer sensitive information
+      from non-functional characteristics. Typical side-channel detection tools
+      are able to identify many potential vulnerabilities, but do not provide
+      information regarding their severity, making it difficult for developers
+      to decide whether to address them, as their leaks are often negligible in
+      practice. Abacus is able to precisely quantify the leaked information and
+      finds flaws that would otherwise be difficult for a developer to find.
+    code:
+      type: Non-lab GitHub
+      url: https://github.com/s3team/Abacus
+      date_last_commit: 2021-08-16
+    language: C
+    license: MIT
+    tags:
+      - Development
+      - Protection
+    information:
+      - type: Paper
+        title: "Abacus: Precise Side-Channel Analysis"
+        url: https://faculty.ist.psu.edu/wu/papers/abacus.pdf
+        notes:
+          - label: Published at
+            text: ICSE 2021
+            url: https://conf.researchr.org/track/icse-2021/icse-2021-papers
+    date_added: 2021-11-05
+    date_updated: 2021-11-05

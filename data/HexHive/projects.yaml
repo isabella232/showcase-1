@@ -5,7 +5,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Enabling a faster Address Sanitization, improving fuzzing speed by 2x
+    description: Faster address sanitization to improve fuzzing speed
     tech_desc: >
       Our evaluation shows that on the Google fuzzer test suite, FuZZan improves fuzzing throughput over ASan by 48%
       starting with Google’s provided seeds (52% when starting with empty seeds on the same applications). Due to this
@@ -16,18 +16,19 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/HexHive/FuZZan
-      date_last_commit: 2020-08-01
+      date_last_commit: 2021-03-31
     language: C++
+    license: Apache-2.0
     information:
       - type: Paper
         title: "FuZZan: Efficient Sanitizer Metadata Design for Fuzzing"
         url: https://hexhive.epfl.ch/publications/files/20ATC.pdf
         notes:
           - label: Published at
-            text: Usenix ATC '20
+            text: "Usenix ATC '20"
             url: https://www.usenix.org/conference/atc20/presentation/jeon
     date_added: 2021-03-05
-    date_updated: 2021-03-05
+    date_updated: 2021-10-21
 
   usbfuzz:
     name: USBFuzz
@@ -45,7 +46,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/HexHive/USBFuzz
-      date_last_commit: 2020-10-14
+      date_last_commit: 2021-03-05
     language: C
     information:
       - type: Paper
@@ -53,10 +54,10 @@ projects:
         url: https://hexhive.epfl.ch/publications/files/20SEC3.pdf
         notes:
           - label: Published at
-            text: Usenix S&P '20
+            text: "Usenix S&P '20"
             url: https://www.usenix.org/conference/usenixsecurity20/presentation/peng
     date_added: 2021-03-05
-    date_updated: 2021-03-05
+    date_updated: 2021-10-21
 
   magma:
     name: Magma
@@ -64,7 +65,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: A Ground-Truth Fuzzing Benchmark
+    description: A ground-truth fuzzing benchmark suite based on real programs with real bugs
     tech_desc: >
       Magma is a collection of open-source libraries with widespread usage and a long history of security-critical
       bugs and vulnerabilities. In light of the need for better fuzzer evaluation, we front-ported bugs from
@@ -81,7 +82,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/HexHive/magma
-      date_last_commit: 2020-12-17
+      date_last_commit: 2021-09-22
     information:
       - type: Paper
         title: "Magma: A Ground-Truth Fuzzing Benchmark"
@@ -91,7 +92,7 @@ projects:
             text: SIGMETRICS 2021
             url: http://www.sigmetrics.org/sigmetrics2021
     date_added: 2020-02-21
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   t-fuzz:
     name: T-Fuzz
@@ -99,7 +100,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Fuzzing and crash analyzer
+    description: Fuzzing tool and crash analyzer
     layman_desc: >
       T-Fuzz (transformational fuzzing) improves fuzzing by detecting
       whenever the fuzzer is stuck and then modifying the underlying
@@ -124,7 +125,7 @@ projects:
             text: SP 2018
             url: https://ieeexplore.ieee.org/document/8418632
     date_added: 2019-03-18
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   bopc:
     name: BOPC
@@ -132,7 +133,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Block Oriented Programming Compiler
+    description: Block-oriented programming compiler
     layman_desc: >
       BOPC searches for exploits in the code that can be put together to
       execute new functions, while not tipping off any of the verifications
@@ -157,7 +158,7 @@ projects:
             text: CCS 2018
             url: https://dl.acm.org/doi/10.1145/3243734.3243739
     date_added: 2019-03-18
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   cfixx:
     name: CFIXX
@@ -195,7 +196,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Efficient detection of Type Confusion Errors for C++
+    description: Efficient detection of type confusion errors for C++
     layman_desc: >
       HexType is a sanitizer for C++ cast safety. The primary use case is
       during testing to detect type confusion issues in the code.
@@ -218,7 +219,7 @@ projects:
             text: CCS 2017
             url: https://ccs2017.sigsac.org
     date_added: 2019-03-18
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   retrowrite:
     name: RetroWrite
@@ -226,7 +227,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Retrofitting compiler passes though binary rewriting
+    description: Static instrumentation of binaries for fuzzing and sanitation
     layman_desc: >
       RetroWrite can analyze the security of closed source binaries by applying
       an efficient fuzzing technique that usually only works when the source
@@ -236,11 +237,12 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/HexHive/retrowrite
-      date_last_commit: 2021-01-25
+      date_last_commit: 2021-08-18
     tags:
       - Fuzzing
       - Binary
     language: Python
+    license: MIT
     type: Application
     information:
       - type: Paper
@@ -250,8 +252,11 @@ projects:
           - label: Published at
             text: Oakland 2020
             url: https://ieeexplore.ieee.org/document/9152762
+      - type: Tutorial
+        title: RetroWrite Tutorial
+        url: https://github.com/HexHive/RetroWrite-Tutorial
     date_added: 2019-09-02
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   shadowstack:
     name: ShadowStack
@@ -298,7 +303,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Host-based, Performance-counter-based Attack Detection System
+    description: Host-based, performance-counter-based attack detection system
     layman_desc: >
       Attacks change the execution behavior of a system. Our attack
       detection system HexPADS detects attacks through divergences from
@@ -328,7 +333,7 @@ projects:
             text: ESSoS 2016
             url: https://dl.acm.org/conference/essos
     date_added: 2020-02-21
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   fuzzgen:
     name: FuzzGen
@@ -336,7 +341,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Automatic Fuzzer Generation
+    description: Automatic fuzzer generation
     layman_desc: >
       FuzzGen is a tool for automatically synthesizing fuzzers for complex
       libraries in a given environment. From a given library, it allow for
@@ -346,6 +351,8 @@ projects:
       type: Lab GitHub
       url: https://github.com/HexHive/FuzzGen
       date_last_commit: 2020-11-30
+    language: C++
+    license: Apache-2.0
     tags:
       - Fuzzing
       - Debug
@@ -360,7 +367,7 @@ projects:
             text: SEC 2020
             url: https://www.usenix.org/conference/usenixsecurity20
     date_added: 2020-02-21
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   datashield:
     name: DataShield
@@ -382,6 +389,7 @@ projects:
       - Debug
       - Failure
     language: C++
+    license: GPL-3.0
     type: Library
     information:
       - type: Paper
@@ -392,7 +400,7 @@ projects:
             text: AsiaCCS 2017
             url: https://dl.acm.org/doi/10.1145/3052973.3052983
     date_added: 2020-02-21
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   halucinator:
     name: HALucinator
@@ -400,7 +408,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: Firmware Re-hosting Through Abstraction Layer Emulation
+    description: Firmware re-hosting through abstraction layer emulation
     layman_desc: >
       HALucinator allow for running a firmware outside of its physical
       implementation. When extracting it, one can recreate the same
@@ -409,12 +417,13 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/embedded-sec/halucinator
-      date_last_commit: 2020-10-27
+      date_last_commit: 2021-10-06
     tags:
       - Binary
       - Exploit
       - Debug
     language: Python
+    license: GPL-3.0
     type: Application
     information:
       - type: Paper
@@ -425,7 +434,7 @@ projects:
             text: SEC 2020
             url: https://www.usenix.org/conference/usenixsecurity20
     date_added: 2020-02-24
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
     maturity: 1
 
   benchiot:
@@ -448,6 +457,7 @@ projects:
       - Benchmark
       - Internet of Things
     language: C
+    license: Apache-2.0
     type: Application
     information:
       - type: Paper
@@ -459,7 +469,7 @@ projects:
             url: https://ieeexplore.ieee.org/document/8809492
     maturity: 1
     date_added: 2020-02-24
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
 
   freegaen:
     name: Free GAEN alternative
@@ -481,7 +491,7 @@ projects:
     code:
       type: C4DT GitHub
       url: https://github.com/c4dt/dp3t-app-android-ch/tree/microg-nearby
-      date_last_commit: 2021-03-01
+      date_last_commit: 2021-07-15
     contacts:
       - name: Mathias Payer
         email: mathias.payer@epfl.ch
@@ -507,7 +517,7 @@ projects:
       name: Christian Grigis
       email: christian.grigis@epfl.ch
     date_added: 2020-10-05
-    date_updated: 2021-03-01
+    date_updated: 2021-10-21
 
   lightblue:
     name: LightBlue
@@ -515,7 +525,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: "LightBlue: Automatic Profile-Aware Debloating of Bluetooth Stacks"
+    description: "Automatic profile-aware debloating of bluetooth stacks"
     layman_desc: >
       The Bluetooth standard is complex, many commands are defined but
       aren't needed in many use cases. It allows for a big surface attack
@@ -524,7 +534,6 @@ projects:
       the number of exposed commands understood by the firmware and the
       runtime, thus greatly reducing the potential future attacks that
       might arise.
-    url: https://github.com/purseclab/lightblue
     tags:
       - Attack
       - Bluetooth
@@ -532,6 +541,100 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/purseclab/lightblue
-      date_last_commit: 2021-02-23
+      date_last_commit: 2021-07-14
+    information:
+      - type: Paper
+        title: "LIGHTBLUE : Automatic Profile-Aware Debloating of Bluetooth Stacks"
+        url: https://github.com/purseclab/lightblue/blob/master/lightblue.pdf
+        notes:
+          - label: Published at
+            text: 30th USENIX Security Symposium
+            url: https://www.usenix.org/conference/usenixsecurity21/
+    language: C++, Python
     date_added: 2020-02-26
-    date_updated: 2021-02-26
+    date_updated: 2021-10-21
+
+  igor:
+    name: Igor
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Crash deduplication through root-cause clustering
+    layman_desc: >
+      Fuzzing has emerged as the most effective bug-finding technique. The
+      output of a fuzzer is a set of proof-of-concept (PoC) test cases for all
+      observed “unique” crashes. It costs developers substantial efforts to
+      analyze each crashing test case. This, mostly manual, process has lead to
+      the number of reported crashes out-pacing the number of bug fixes.
+      Igor is a tool for automated crash grouping/deduplication.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/Igor
+      date_last_commit: 2021-09-20
+    language: C
+    type: Application
+    tags:
+      - Fuzzing
+    information:
+      - type: Paper
+        title: "Igor: Crash Deduplication Through Root-Cause Clustering"
+        url: https://nebelwelt.net/files/21CCS.pdf
+        notes:
+          - label: Published at
+            text: ACM CCS 2021
+            url: https://sigsac.org/ccs/CCS2021/
+      - type: Video
+        title: "Igor: Crash Deduplication Through Root-Cause Clustering (CCS'21)"
+        url: https://www.youtube.com/watch?v=V06x1Ad5dRo
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  dis-cover:
+    name: dis-cover
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Disassemble binaries and recover as much info as possible
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/dis-cover
+      date_last_commit: 2021-09-03
+    language: Python
+    license: MIT
+    type: Application
+    tags:
+      - Binary
+      - Low-Level
+    date_added: 2021-11-04
+    date_updated: 2021-11-04
+
+  gramatron:
+    name: Gramatron
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Grammar-aware fuzzing
+    layman_desc: >
+      Coverage-guided fuzzer that uses grammar automatons to perform grammar-aware fuzzing.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/Gramatron
+      date_last_commit: 2021-07-08
+    language: C
+    license: Apache-2.0
+    type: Application
+    tags:
+      - Fuzzing
+    information:
+      - type: Paper
+        title: "Gramatron: Effective Grammar-Aware Fuzzing"
+        url: https://nebelwelt.net/files/21ISSTA.pdf
+        notes:
+          - label: Published at
+            text: ISSTA 2021
+            url: https://conf.researchr.org/home/issta-2021
+    date_added: 2021-11-04
+    date_updated: 2021-11-04

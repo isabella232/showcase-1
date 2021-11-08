@@ -5,7 +5,7 @@ projects:
       - Security
     applications:
       - Infra
-    description: IP Parallel Redundancy Protocol
+    description: Parallel redundancy protocol for IP networks
     layman_desc: >
       iPRP allows parallel transmission of data over a network for hard
       real time applications with simply installing an app on both the
@@ -22,13 +22,13 @@ projects:
     information:
       - type: Paper
         title: "iPRP - the Parallel Redundancy Protofol for IP Networks: Protocol Design and Operation"
-        url: https://infoscience.epfl.ch/record/216985/files/07406725.pdf
+        url: https://infoscience.epfl.ch/record/216985
         notes:
           - label: Published in
             text: IEEE Transactions on Industrial Informatics 12, Issue 5 (2016)
             url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=7742433
     date_added: 2019-03-18
-    date_updated: 2021-03-30
+    date_updated: 2021-10-21
 
   commelec-api:
     name: commelec-api

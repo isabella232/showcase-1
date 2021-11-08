@@ -70,13 +70,13 @@ projects:
     information:
       - type: Paper
         title: "Geometric Robustness of Deep Networks: Analysis and Improvement"
-        url: https://infoscience.epfl.ch/record/253668
+        url: https://arxiv.org/abs/1711.09115
         notes:
           - label: Published in
             text: proceedings of the 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition
             url: https://www.computer.org/csdl/proceedings/cvpr/2018/17D45VtKirt
     date_added: 2019-03-18
-    date_updated: 2021-04-26
+    date_updated: 2021-10-21
 
   sparsefool:
     name: SparseFool
@@ -128,7 +128,6 @@ projects:
       Proposing a universal (image-agnostic) and very small perturbation
       vector that causes natural images to be misclassified with high
       probability in a deep neuronal network.
-    url: https://arxiv.org/pdf/1610.08401.pdf
     code:
       type: Lab GitHub
       url: https://github.com/LTS4/universal
@@ -143,13 +142,13 @@ projects:
     information:
       - type: Paper
         title: "Universal adversarial perturbations"
-        url: https://infoscience.epfl.ch/record/226156
+        url: https://arxiv.org/pdf/1610.08401.pdf
         notes:
           - label: Published in
             text: proceedings of 2017 IEEE Conference on Computer Vision and Pattern Recognition
             url: https://www.computer.org/csdl/proceedings/cvpr/2017/12OmNyoiYVr
     date_added: 2019-03-18
-    date_updated: 2021-04-26
+    date_updated: 2021-10-21
 
   hold-me-tight:
     name: Hold me tight!
@@ -182,7 +181,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/LTS4/hold-me-tight
-      date_last_commit: 2020-10-12
+      date_last_commit: 2021-06-22
     language: Python
     license: Apache-2.0
     information:
@@ -194,7 +193,7 @@ projects:
             text: Neural Information Processing Systems (NeurIPS) 2020
             url: https://neurips.cc/virtual/2020/public/papers.html?filter=sessions&search=poster+session+2
     date_added: 2021-01-27
-    date_updated: 2021-04-26
+    date_updated: 2021-10-21
 
   neural-anisotropy-directions:
     name: Neural Anisotropy Directions
@@ -239,3 +238,47 @@ projects:
             url: https://neurips.cc/virtual/2020/public/papers.html?filter=sessions&search=Poster+Session+4
     date_added: 2021-01-27
     date_updated: 2021-04-26
+
+  orthonet:
+    name: OrthoNet
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Multilayer network data clustering
+    layman_desc: >
+      Network data appears in very diverse applications, like biological,
+      social, or sensor networks. Clustering of network nodes into categories
+      or communities has thus become a very common task in machine learning and
+      data mining. Network data comes with some information about the network
+      edges. In some cases, this network information can even be given with
+      multiple views or multiple layers, each one representing a different type
+      of relationship between the network nodes. Increasingly often, network
+      nodes also carry a feature vector. We propose to extend the node
+      clustering problem, that commonly considers only the network information,
+      to a problem where both the network information and the node features are
+      considered together for learning a clustering-friendly representation of
+      the feature space.
+    contacts:
+      - name: Apostolos Modas
+        email: apostolos.modas@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/LTS4/OrthoNet
+      date_last_commit: 2020-07-28
+    language: Python
+    license: CeCILL-B
+    type: Library
+    tags:
+      - Features
+      - PyTorch
+    information:
+      - type: Paper
+        title: "OrthoNet: Multilayer Network Data Clustering"
+        url: https://arxiv.org/pdf/1811.00821.pdf
+        notes:
+          - label: Published in
+            text: IEEE Transactions on Signal and Information Processing over Networks, Volume 6
+            url: https://ieeexplore.ieee.org/document/8974205
+    date_added: 2021-11-04
+    date_updated: 2021-11-04

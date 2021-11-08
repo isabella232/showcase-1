@@ -31,6 +31,20 @@ labs:
     url: https://dcl.epfl.ch/site/
     contacts:
 
+  DCSL:
+    name: Data Center Systems Laboratory
+    prof:
+      name:
+        - Edouard
+        - Bugnion
+      email: edouard.bugnion@epfl.ch
+    description: >
+      The Data Center Systems Laboratory (DCSL) focuses on systems-level
+      problems within datacenters combining operating systems, networks, and
+      computer architecture.
+    contacts:
+    url: https://www.epfl.ch/labs/dcsl/
+
   DEDIS:
     name: Decentralized Distributed Systems Laboratory
     prof:
@@ -53,6 +67,24 @@ labs:
       - name: Philipp Svetolik Jovanovic
         email: philipp.jovanovic@epfl.ch
     url: https://dedis.epfl.ch
+
+  DLAB:
+    name: Data Science Lab
+    prof:
+      name:
+        - Robert
+        - West
+      email: robert.west@epfl.ch
+    description: >
+      Our research aims to make sense of large amounts of data. Frequently, the
+      data we analyze is collected on the Web, e.g., using server logs, social
+      media, wikis, online news, online games, etc. We distill heaps of raw
+      data into meaningful insights by developing and applying algorithms and
+      techniques in areas including social and information network analysis,
+      machine learning, computational social science, data mining, natural
+      language processing, and human computation.
+    contacts:
+    url: https://dlab.epfl.ch/
 
   DSLAB:
     name: Dependable Systems Lab
@@ -91,6 +123,23 @@ labs:
       - name: Beatriz Descloux
         email: beatriz.descloux@epfl.ch
     url: https://dslab.epfl.ch
+
+  ESL:
+    name: Embedded Systems Laboratory
+    prof:
+      name:
+        - David
+        - Atienza
+      email: david.atienza@epfl.ch
+    description: >
+      The Embedded Systems Laboratory (ESL) is part of the Institute of
+      Electrical Engineering at EPFL, and focuses on the definition of
+      system-level multi-objective design methods, optimization methodologies
+      and tools for high-performance embedded systems and nano-scale
+      Multi-Processor System-on-Chip (MPSoC) architectures targeting the
+      Internet-of-Things (IoT) Era.
+    contacts:
+    url: https://www.epfl.ch/labs/esl/
 
   HexHive:
     name: HexHive Group
@@ -165,6 +214,45 @@ labs:
       - name: Siavash Arjomand Bigdeli
     url: https://ivrl.epfl.ch/
 
+  LAMP:
+    name: Programming Methods Laboratory
+    prof:
+      name:
+        - Martin
+        - Odersky
+      email: martin.odersky@epfl.ch
+    description: >
+      Today, we experience an unprecedented integration of previously
+      disconnected systems. Consequently, there is a leap in the complexity of
+      the software controlling these systems. The challenge we are facing is
+      how to master this complexity while at the same time increasing the
+      reliability of programs. A key element for tackling that challenge will
+      be a better understanding of software composition. Good techniques for
+      software composition are the keys to scalable systems. The principal
+      means of writing and composing software is a programming language.
+      Consequently, advances in programming language design are an important
+      factor in solutions of the software composition problem. This is what we
+      work on in our group.
+    contacts:
+    url: https://www.epfl.ch/labs/lamp/
+
+  LAP:
+    name: Processor Architecture Laboratory
+    prof:
+      name:
+        - Paolo
+        - Ienne
+      email: paolo.ienne@epfl.ch
+    description: >
+      Excellent performance in computing systems is the result of a judicious
+      blend of computer architecture, compiler technology, and hardware
+      implementation. The choices in each of these areas must strongly depend
+      on the technical possibilities offered in the others. We want to
+      understand better how to exploit synergies across the above fields and we
+      wish to pass this knowledge over to our students.
+    contacts:
+    url: https://www.epfl.ch/labs/lap/
+
   LARA:
     name: Lab for Automated Reasoning and Analysis
     prof:
@@ -173,17 +261,28 @@ labs:
         - Kunčak
       email: viktor.kuncak@epfl.ch
     description: >
-      Helping construct software that does what we expect
-      <br>LARA is a research group led by Viktor Kunčak. 
-      We develop precise automated reasoning techniques : tools,
-      algorithms and languages. The goal of these techniques is to help
-      construction of verified computer systems.
+      We develop precise automated reasoning techniques: tools, algorithms and
+      languages. The goal of these techniques is to help construction of
+      verified computer systems.
     contacts:
       - name: Jad Hamza
         email: jad.hamza@epfl.ch
       - name: Nicolas Voirol
         email: nicolas.voirol@epfl.ch
     url: https://lara.epfl.ch
+
+  LASEC:
+    name: Security and Cryptography Laboratory
+    prof:
+      name:
+        - Serge
+        - Vaudenay
+      email: serge.vaudenay@epfl.ch
+    description: >
+      The main activities of LASEC are research and education on the security
+      of communication and information systems, cryptography, and applications.
+    contacts:
+    url: https://lasec.epfl.ch/
 
   LDS:
     name: Laboratory for Data Security
@@ -220,6 +319,49 @@ labs:
       grids and optimization of mobility.
     contacts:
     url: http://lca2.epfl.ch/
+
+  LIA:
+    name: Artificial Intelligence Laboratory
+    prof:
+      name:
+        - Boi
+        - Faltings
+      email: boi.faltings@epfl.ch
+    description: >
+      We develop knowledge-based technologies that allow humans and computers
+      to deal better with the artificial world that surrounds us.
+    contacts:
+    url: https://lia.epfl.ch/
+
+  LIONS:
+    name: Laboratory for Information and Inference Systems
+    prof:
+      name:
+        - Volkan
+        - Cevher
+      email: volkan.cevher@epfl.ch
+    description: >
+      At LIONS, we are concerned with optimized information extraction from
+      signals or data volumes. We therefore develop mathematical theory and
+      computational methods for information recovery from highly incomplete
+      data.
+    contacts:
+    url: https://people.epfl.ch/volkan.cevher?lang=en
+
+  LSI:
+    name: Integrated Systems Laboratory
+    prof:
+      name:
+        - Giovanni
+        - De Micheli
+      email: giovanni.demicheli@epfl.ch
+    description: >
+      The Integrated Systems Laboratory studies design technologies for
+      circuits and systems. The objective is to research the interplay of
+      hardware and software design for traditional (computation on silicon) and
+      non-traditional (nanotechnology and biosensors) systems.
+    contacts:
+    url: https://www.epfl.ch/labs/lsi/
 
   LSIR:
     name: Distributed Information Systems Laboratory
@@ -362,6 +504,46 @@ labs:
       - name: Hossein Ajallooiean
     url: https://parsa.epfl.ch/
 
+  RS3LAB:
+    name: Robust Scalable Systems Software Lab
+    prof:
+      name:
+        - Sanidhya
+        - Kashyap
+      email: sanidhya.kashyap@epfl.ch
+    description: >
+      We focus on building systems with performance, efficiency, and
+      robustness. We try to build practical systems by understanding the
+      intricacies of existing layers in both software and hardware; and
+      revisiting the design in a principled manner. Our research contributions
+      have been published in top academic conferences, and have made great
+      impacts on real-world programs, such as the Linux kernel.
+    contacts:
+    url: https://rs3lab.github.io/
+
+  SACS:
+    name: Scalable Computing Systems Laboratory
+    prof:
+      name:
+        - Anne-Marie
+        - Kermarrec
+      email: anne-marie.kermarrec@epfl.ch
+    description: >
+      Computing systems that make human sense of big data are now ubiquitous.
+      Equipped with powerful AI algorithms, they are now present in all aspects
+      of our life: they drive cars, do surgery, control the lighting in your
+      home, recommend movies and books, and are even about to replace banks.
+      Beyond the AI algorithms and the availability of large volume of data,
+      this is now possible because we can  scale systems to thousand, even
+      millions of distributed entities. Yet, designing efficient distributed
+      systems come with many challenges that we address in our team.  We are
+      interested in all aspects of such large-scale distributed systems be they
+      datacenters, edge computing, fully decentralized systems, self organizing
+      systems, and we are working on scalable design,  failure resilience,
+      performance and privacy-preservation.
+    contacts:
+    url: https://www.epfl.ch/labs/sacs/
+
   SalatheLab:
     name: Salathe Lab
     prof:
@@ -408,3 +590,21 @@ labs:
       - name: Wouter Lueks
         email: wouter.lueks@epfl.ch
     url: https://spring.epfl.ch
+
+  VLSC:
+    name: Very Large Scale Computing Lab
+    prof:
+      name:
+        - James
+        - Larus
+      email: james.larus@epfl.ch
+    description: >
+      The Very Large Scale Computing Lab (VLSC) is trying to solve some of the
+      critical software and hardware challenges of building large-scale
+      services. These services may encompass tens of geo-distributed data
+      centers, each of which can contain tens of thousands of servers.
+      Compounded by challenges of scale and distribution, services also have
+      very high availability and responsiveness requirements, and they are
+      under continual development and evolution.
+    contacts:
+    url: https://www.epfl.ch/labs/vlsc/
