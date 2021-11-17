@@ -373,8 +373,8 @@ projects:
       - Info
     description: Sublinear aggregation algorithm
     layman_desc: >
-      Novel decentralizedaggregation protocol that can be parameterized so that
-      the overall com-putation overhead scales logarithmically with the number
+      Novel decentralized aggregation protocol that can be parameterized so that
+      the overall computation overhead scales logarithmically with the number
       of nodes.
     code:
       type: Personal GitHub

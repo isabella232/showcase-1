@@ -52,7 +52,7 @@ projects:
     description: Fast and energy-efficient video encoder and decoder
     layman_desc: >
       ADEFAN (Adaptive Depth Efficient Filtering by Adaptive Normaliztion) is a
-      state-of-the-art tehcnology for encoding and decoding videos that
+      state-of-the-art technology for encoding and decoding videos that
       presents many advantages over other available methods. It features
       extremely energy-efficient encoder, extremely fast encoding process, no
       specialized hardware for encoding and added security with encoding key.

@@ -5,7 +5,7 @@ projects:
       - Other
     applications:
       - Infra
-    description: gem5-based simulator with architectural etensions
+    description: gem5-based simulator with architectural extensions
     layman_desc: >
       gem5-X stands for a gem5-based full-system simulator with architectural
       eXtensions. It is a gem5-based simulator that allows architectural
