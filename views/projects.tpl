@@ -398,13 +398,15 @@ applications = {
                             %>
                             <tr class="{{ 'incubated' if incubated else 'not_incubated' }} {{visibility}}">
                                 <td class="proj_name"
-                                    onclick="window.location='{{project_id}}'"
                                     style="cursor: pointer">
-                                    {{ name }}
+                                    <a href="{{project_id}}"><div>
+                                        {{ name }}
+                                    </div></a>
                                 </td>
-                                <td onclick="window.location='{{project_id}}'"
-                                    style="cursor: pointer">
-                                    {{ description }}
+                                <td style="cursor: pointer">
+                                    <a href="{{project_id}}"><div>
+                                        {{ description }}
+                                    </div></a>
                                 </td>
                                 <td class="dt-center">
                                     % for tag in tags:

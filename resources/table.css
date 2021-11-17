@@ -163,6 +163,11 @@ table.dataTable tbody tr td {
   color: black;
 }
 
+table.dataTable tbody tr td a {
+  color: white;
+  text-decoration: none;
+}
+
 table.dataTable tbody tr td.proj_name {
   font-weight: bold;
 }

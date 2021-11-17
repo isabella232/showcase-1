@@ -122,6 +122,9 @@
         % else:
             {{ code.get('type', 'url') }}
         % end
+        % if 'date_last_commit' in code:
+          - last commit: {{ code['date_last_commit'].date()}}
+        % end
     </div>
     % end
 
