@@ -164,7 +164,7 @@ table.dataTable tbody tr td {
 }
 
 table.dataTable tbody tr td a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -252,6 +252,10 @@ div.dataTables_wrapper div.dt-button-collection button.dt-button.active:hover {
   table.dataTable thead,
   table.dataTable tfoot {
     background-color: #333333;
+  }
+
+  table.dataTable tbody tr td a {
+    color: white;
   }
 
   table.dataTable tbody tr td {
