@@ -571,3 +571,44 @@ projects:
         title: Designing ASCY-compliant Concurrent Search Data Structures
     date_added: 2021-02-09
     date_updated: 2021-10-21
+
+  carbon:
+    name: carbon
+    categories:
+      - Blockchain
+    applications:
+      - Finance
+    description: Blockchain using lightweight broadcast-based primitives instead of consensus
+    layman_desc: >
+      Carbon is a blockchain not using global consensus for transactions,
+      allowing for faster transactions and better scalability than many other
+      chains.
+    tech_desc: >
+      Carbon is the next iteration on AT2, adding many new features,
+      such as minting and a dynamic network. By decoupling leader selection
+      from transaction processing, this system is more efficient and more
+      scalable compared with Bitcoin and consensus-based solutions.
+    contacts:
+      - name: Matteo Monti
+        email: matteo.monti@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/Distributed-EPFL/carbon
+      date_last_commit: 2021-12-01
+    license: AGPL-3.0
+    maturity: 1
+    c4dt_contact:
+      name: Valérian Rousset
+      email: valerian.rousset@epfl.ch
+    tags:
+      - Decentralized
+      - Byzantine Resilience
+      - Consensus
+    type: Library
+    language: Rust
+    information:
+      - type: Paper
+        title: "AT2: Asynchronous Trustworthy Transfers"
+        url: https://arxiv.org/abs/1812.10844
+    date_added: 2021-12-01
+    date_updated: 2021-12-01
