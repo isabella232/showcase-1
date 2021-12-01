@@ -54,6 +54,83 @@ projects:
           - label: Published at
             text: DSN 2021
             url: https://dsn2021.ntu.edu.tw/
+      - type: Relevant paper
+        title: "Collaborative Learning in the Jungle"
+        url: https://arxiv.org/abs/2008.00742
+        notes:
+          - label: Published in
+            text: Proceedings of NeurIPS 2021
+            url: https://proceedings.neurips.cc/paper/2021
+      - type: Relevant paper
+        title: "Differential Privacy and Byzantine Resilience in SGD: Do They Add Up?"
+        url: https://arxiv.org/abs/2102.08166
+        notes:
+          - label: Published in
+            text: Proceedings of PODC 2021
+            url: https://dl.acm.org/doi/proceedings/10.1145/3465084
+      - type: Relevant paper
+        title: "Distributed Momentum for Byzantine-resilient Stochastic Gradient Descent"
+        url: https://infoscience.epfl.ch/record/287261
+        notes:
+          - label: Published at
+            text: ICLR 2021
+            url: https://iclr.cc/Conferences/2021
+      - type: Relevant paper
+        title: "AKSEL: Fast Byzantine SGD"
+        url: https://drops.dagstuhl.de/opus/volltexte/2021/13493/pdf/LIPIcs-OPODIS-2020-8.pdf
+        notes:
+          - label: Published at
+            text: OPODIS 2020
+            url: https://opodis2020.unistra.fr/
+      - type: Relevant paper
+        title: "Genuinely Distributed Byzantine Machine Learning"
+        url: https://arxiv.org/abs/1905.03853
+        notes:
+          - label: Published in
+            text: Proceedings of PODC 2020
+            url: https://dl.acm.org/doi/proceedings/10.1145/3382734
+      - type: Relevant paper
+        title: "Fast and Robust Distributed Learning in High Dimension"
+        url: https://infoscience.epfl.ch/record/282832
+        notes:
+          - label: Published at
+            text: SRDS 2020
+            url: https://ieeexplore.ieee.org/xpl/conhome/9251916/proceeding
+      - type: Relevant paper
+        title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation"
+        url: https://infoscience.epfl.ch/record/265684
+        notes:
+          - label: Published at
+            text: SysML 2019
+            url: https://mlsys.org/Conferences/2019
+      - type: Relevant paper
+        title: "Asynchronous Byzantine Machine Learning (the case of SGD)"
+        url: https://infoscience.epfl.ch/record/269788
+        notes:
+          - label: Published at
+            text: ICML 2018
+            url: https://icml.cc/Conferences/2018
+      - type: Relevant paper
+        title: "The Hidden Vulnerability of Distributed Learning in Byzantium"
+        url: https://infoscience.epfl.ch/record/256124
+        notes:
+          - label: Published at
+            text: ICML 2018
+            url: https://icml.cc/Conferences/2018
+      - type: Relevant paper
+        title: "On The Robustness of a Neural Network"
+        url: https://infoscience.epfl.ch/record/230013
+        notes:
+          - label: Published at
+            text: SRDS 2017
+            url: http://srds2017.comp.polyu.edu.hk/
+      - type: Relevant paper
+        title: "Machine Learning with Adversaries:Byzantine Tolerant Gradient Descent"
+        url: https://proceedings.neurips.cc/paper/2017/file/f4b9ec30ad9f68f89b29639786cb62ef-Paper.pdf
+        notes:
+          - label: Published in
+            text: Proceedings of NeurIPS 2017
+            url: https://proceedings.neurips.cc/paper/2017
     date_added: 2021-01-20
     date_updated: 2021-10-21
 
