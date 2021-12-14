@@ -1,0 +1,45 @@
+name: Test and deploy on target
+
+env:
+  DEPLOY_USER: factory
+  DEPLOY_HOST: c4dtsrv1.epfl.ch
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+
+jobs:
+  build:
+    name: "Test and deploy"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run `prettier`
+        uses: actionsx/prettier@v2
+        with:
+          args: --check .
+
+      - name: Test
+        uses: fylein/python-pytest-github-action@v2
+        with:
+          args: pip3 install -r requirements.txt && pytest
+
+      - name: Setup ssh key
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1.2.0
+        if: github.event_name == 'push'
+        with:
+          ssh-private-key: "${{ secrets.SSH_DEPLOY_KEY }}"
+          ssh-host: "${{ env.DEPLOY_HOST }}"
+
+      - name: Deploy
+        if: github.event_name == 'push'
+        run: |
+          ssh "${{ env.DEPLOY_USER }}"@"${{ env.DEPLOY_HOST }}" mkdir -p bin
+          scp update.sh "${{ env.DEPLOY_USER }}"@"${{ env.DEPLOY_HOST }}":bin/
+          ssh "${{ env.DEPLOY_USER }}"@"${{ env.DEPLOY_HOST }}" bin/update.sh
