@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/c4dt/showcase.svg?token=eGgaGnqUTtqEwfsaYsLd&branch=main)](https://travis-ci.com/c4dt/showcase)
+[![Build Status](https://github.com/c4dt/showcase/actions/workflows/main.yml/badge.svg)](https://github.com/c4dt/showcase/actions/workflows/main.yml)
 
 # Showcase
 
