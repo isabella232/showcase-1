@@ -321,7 +321,7 @@ projects:
     information:
       - type: Paper
         title: Privacy-Preserving Federated Neural Network Learning
-        url: https://arxiv.org/abs/2009.00349
+        url: https://infoscience.epfl.ch/record/288464
         notes:
           - label: Published at
             text: NDSS 2021
