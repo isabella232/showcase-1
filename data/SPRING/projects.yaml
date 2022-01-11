@@ -43,8 +43,12 @@ projects:
       - type: Paper
         title: "Synthetic Data -- Anonymisation Groundhog Day"
         url: https://arxiv.org/abs/2011.07018
+        notes:
+          - label: Published at
+            text: "31st USENIX Security Symposium, 2022"
+            url: https://www.usenix.org/conference/usenixsecurity22/presentation/stadler
     date_added: 2021-02-08
-    date_updated: 2021-10-21
+    date_updated: 2022-01-11
 
   claimchain:
     name: ClaimChain
