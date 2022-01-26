@@ -622,12 +622,13 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/HexHive/Gramatron
-      date_last_commit: 2021-07-08
+      date_last_commit: 2021-11-28
     language: C
     license: Apache-2.0
     type: Application
     tags:
       - Fuzzing
+    maturity: 1
     information:
       - type: Paper
         title: "Gramatron: Effective Grammar-Aware Fuzzing"
@@ -637,4 +638,4 @@ projects:
             text: ISSTA 2021
             url: https://conf.researchr.org/home/issta-2021
     date_added: 2021-11-04
-    date_updated: 2021-11-04
+    date_updated: 2022-01-26

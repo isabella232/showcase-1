@@ -27,6 +27,7 @@ projects:
     tags:
       - Protection
       - Development
+    maturity: 1
     information:
       - type: Paper
         title: "Secured Routines: Language-based Construction of Trusted Execution Environments"
@@ -36,7 +37,7 @@ projects:
             text: USENIX ATC 2019
             url: https://www.usenix.org/conference/atc19
     date_added: 2021-11-04
-    date_updated: 2021-11-04
+    date_updated: 2022-01-26
 
   raft:
     name: Raft consensus protocol
