@@ -11,7 +11,7 @@
 </p>
 
 <p>
-    Supervised machine learning try to match inputs to outputs, by finding links
+    Supervised machine learning tries to match inputs to outputs, by finding links
     between both. First, the program is given a list of known links, with that, it
     creates what is called a "model" of the data, which can be used to determine
     what would probably be the output based solely on the inputs.
@@ -75,8 +75,8 @@
 <p>By manually analysing it, you can find some relations</p>
 
 <ul>
-    <li>Pen corp only produce red pens</li>
-    <li>Pen of chaos only produce black pens</li>
+    <li>Pen corp only produces red pens</li>
+    <li>Pen of chaos only produces black pens</li>
     <li>
         The pen is red if its price is below or equal to 1 CHF, else it is black
     </li>
