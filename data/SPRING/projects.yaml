@@ -559,5 +559,6 @@ projects:
           - label: Published at
             text: PETS 2020
             url: https://petsymposium.org/2020/
+    maturity: 2
     date_added: 2021-11-04
-    date_updated: 2021-11-04
+    date_updated: 2022-01-25

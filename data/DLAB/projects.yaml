@@ -21,8 +21,8 @@ projects:
       design, rather than by trust.
     code:
       type: Lab GitHub
-      url: https://github.com/epfl-dlab/secvm-server
-      date_last_commit: 2020-08-17
+      url: https://github.com/cliqz-oss/browser-core/tree/6945afff7be667ed74b0b7476195678262120baf/modules/secvm/sources
+      date_last_commit: 2018-02-02
     language: Java
     tags:
       - Decentralized
@@ -31,11 +31,15 @@ projects:
       - type: Paper
         title: Privacy-Preserving Classification with Secret Vector Machines
         url: https://arxiv.org/pdf/1907.03373.pdf
+      - type: Paper
+        title: Privacy-Preserving Distributed Learning with Secret Gradient Descent
+        url: https://arxiv.org/pdf/1906.11993.pdf
       - type: Source code
-        title: Client source code
-        url: https://github.com/cliqz-oss/browser-core/tree/6945afff7be667ed74b0b7476195678262120baf/modules/secvm/sources
+        title: Server source code
+        url: https://github.com/epfl-dlab/secvm-server
     date_added: 2021-11-05
-    date_updated: 2021-11-05
+    date_updated: 2022-01-25
+    maturity: 1
 
   invariant-language-models:
     name: Invariant Language Modeling
