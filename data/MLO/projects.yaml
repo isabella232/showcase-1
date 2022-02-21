@@ -265,26 +265,28 @@ projects:
     date_added: 2021-11-04
     date_updated: 2021-11-04
 
-  feai:
-    name: FeAI
+  deai:
+    name: DeAI
     categories:
       - Learning
     applications:
       - Info
-    description: Federated Learning with TensorFlow.js
+    description: Decentralized Collaborative Machine Learning
+    url: https://epfml.github.io/DeAI
     code:
       type: Lab GitHub
-      url: https://github.com/epfml/FeAI
-      date_last_commit: 2021-11-04
-    language: JavaScript
+      url: https://github.com/epfml/DeAI
+      date_last_commit: 2022-02-17
+    language: JavaScript / TypeScript
     license: Apache-2.0
-    type: Library
+    type: Framework
     tags:
       - Distributed Learning
       - TensorFlow
       - Decentralized
-    date_added: 2021-11-04
-    date_updated: 2021-11-04
+    maturity: 2
+    date_added: 2022-02-18
+    date_updated: 2022-02-18
 
   byzantine-robust-optimizer:
     name: Byzantine Robust Optimizer
