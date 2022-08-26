@@ -1,12 +1,1 @@
-<svg version="1.1"
-     baseProfile="full"
-     xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 100 100">
-
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#289CAE;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#48BCAE;stop-opacity:1" />
-    </linearGradient>
-
-    <circle cx="50" cy="50" r="50" fill="url(#grad)" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" viewBox="0 0 100 100"><linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" style="stop-color:#289cae;stop-opacity:1"/><stop offset="100%" style="stop-color:#48bcae;stop-opacity:1"/></linearGradient><circle cx="50" cy="50" r="50" fill="url(#grad)"/></svg>
